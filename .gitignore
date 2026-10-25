@@ -1,0 +1,21 @@
+# Gradle / Build
+.gradle/
+build/
+local.properties
+*.apk
+*.aab
+
+# Signing – NIEMALS committen
+*.jks
+*.keystore
+keystore.properties
+play-service-account*.json
+
+# IDE
+.idea/
+*.iml
+.kotlin/
+
+# OS
+.DS_Store
+Thumbs.db
