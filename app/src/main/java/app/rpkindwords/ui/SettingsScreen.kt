@@ -14,6 +14,8 @@ import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.ExperimentalLayoutApi
+import androidx.compose.foundation.layout.FlowRow
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
@@ -85,6 +87,7 @@ private fun openNotificationSettings(context: Context) {
 }
 
 @Composable
+@OptIn(ExperimentalLayoutApi::class)
 fun SettingsScreen(vm: MainViewModel, modifier: Modifier = Modifier) {
     val context = LocalContext.current
     val s by vm.reminder.collectAsStateWithLifecycle()
@@ -160,7 +163,7 @@ fun SettingsScreen(vm: MainViewModel, modifier: Modifier = Modifier) {
                 }
             }
             Text(stringResource(R.string.reminders_days), style = MaterialTheme.typography.titleSmall)
-            Row(Modifier.horizontalScroll(rememberScrollState()), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+            FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp), verticalArrangement = Arrangement.spacedBy(4.dp)) {
                 for (d in DayOfWeek.entries) {
                     FilterChip(
                         selected = d in s.days,

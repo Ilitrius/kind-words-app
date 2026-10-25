@@ -2,7 +2,7 @@
 
 Grundlage: Google-Hilfe „Data safety“ (Erhebung = Übertragung vom Gerät weg; rein lokal verarbeitete Daten müssen nicht angegeben werden) und tatsächlicher Code/Manifest. Du bist für die Richtigkeit verantwortlich – bei neuen Funktionen/SDKs neu prüfen.
 
-Belegt durch das gemergte Release-Manifest: **keine `INTERNET`-Berechtigung**, kein Werbe-ID-Zugriff (`AD_ID` fehlt), keine Analytics-/Werbe-/Crash-SDKs. Berechtigungen: `POST_NOTIFICATIONS`, `RECEIVE_BOOT_COMPLETED`, `WAKE_LOCK`, `FOREGROUND_SERVICE`, `ACCESS_NETWORK_STATE` (Letztere vier von WorkManager; `SystemForegroundService` hat keinen `foregroundServiceType`, die App nutzt keine Foreground-Arbeit → keine FGS-Deklaration nötig).
+Belegt durch das gemergte Release-Manifest: **keine `INTERNET`-Berechtigung**, kein Werbe-ID-Zugriff (`AD_ID` fehlt), keine Analytics-/Werbe-/Crash-SDKs, kein WorkManager. Berechtigungen: nur `POST_NOTIFICATIONS` und `RECEIVE_BOOT_COMPLETED`; Erinnerungen laufen über inexakte Alarme (`setAndAllowWhileIdle`, keine Exact-Alarm-Berechtigung, keine Foreground-Services → keine FGS-Deklaration).
 
 ## 1. Datenschutzerklärung
 - URL (de): https://ilitrius.github.io/kind-words-app/datenschutz.html

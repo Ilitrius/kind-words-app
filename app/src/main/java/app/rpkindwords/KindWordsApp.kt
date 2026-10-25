@@ -29,8 +29,9 @@ class KindWordsApp : Application() {
         NotificationHelper.createChannel(this)
         appScope.launch {
             messages.ensureSeeded()
-            // Plan nach App-Start/Update/Reboot (nächster Start) sicherstellen
-            ReminderScheduler.reschedule(this@KindWordsApp, settings.reminder.first())
+            // Plan sicherstellen, aber einen vorhandenen (ggf. gerade laufenden) Auftrag NICHT ersetzen:
+            // Startet WorkManager den Prozess für einen fälligen Worker, würde REPLACE ihn sofort abbrechen.
+            ReminderScheduler.reschedule(this@KindWordsApp, settings.reminder.first(), replace = false)
         }
     }
 }

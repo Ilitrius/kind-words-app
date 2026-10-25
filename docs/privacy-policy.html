@@ -52,7 +52,7 @@
 
 <h2>4. Storage on the device only</h2>
 <p>All data is stored locally in the app's protected storage on your device (local database and app settings). There are no developer servers, no user account and no cloud sync. The app has <strong>no internet permission</strong>, so data cannot leave the app on its own. Android Auto Backup is disabled for the app.</p>
-<p>Permissions: when you enable reminders, the app asks for the <em>notifications</em> permission (Android 13 and later). To schedule reminders reliably, the app uses the Android WorkManager component, which also declares system permissions for boot notification, keeping the device awake and network state. These serve local scheduling only; no data is transmitted.</p>
+<p>Permissions: when you enable reminders, the app asks for the <em>notifications</em> permission (Android 13 and later). It also uses the permission to be started after the device restarts (<em>RECEIVE_BOOT_COMPLETED</em>) so that reminders can be scheduled again after a reboot, and Android's built-in alarm service, which needs no special permission. These serve local scheduling only; no data is transmitted.</p>
 
 <h2>5. No sharing, no third parties</h2>
 <p>The app contains no ads, no analytics, tracking or crash-reporting services and no third-party data-collection SDKs. No data is shared, sold or transferred to third parties or third countries.</p>

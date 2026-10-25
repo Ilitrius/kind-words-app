@@ -3,7 +3,9 @@ package app.rpkindwords.reminder
 import android.Manifest
 import android.app.NotificationChannel
 import android.app.NotificationManager
+import android.app.AlarmManager
 import android.app.PendingIntent
+import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
@@ -11,19 +13,15 @@ import android.os.Build
 import androidx.core.app.NotificationCompat
 import androidx.core.app.NotificationManagerCompat
 import androidx.core.content.ContextCompat
-import androidx.work.CoroutineWorker
-import androidx.work.ExistingWorkPolicy
-import androidx.work.OneTimeWorkRequestBuilder
-import androidx.work.WorkManager
-import androidx.work.WorkerParameters
 import app.rpkindwords.KindWordsApp
 import app.rpkindwords.MainActivity
 import app.rpkindwords.R
 import app.rpkindwords.data.Languages
-import java.time.Duration
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 import java.time.ZonedDateTime
 import java.util.Locale
-import java.util.concurrent.TimeUnit
 import kotlinx.coroutines.flow.first
 
 object ShareIntents {
@@ -70,33 +68,59 @@ object NotificationHelper {
     }
 }
 
+/**
+ * Erinnerungen laufen über AlarmManager.setAndAllowWhileIdle (inexakt, ohne Sonderberechtigung).
+ * Anders als WorkManager/JobScheduler wird der Alarm auch im App-Standby (Bucket "Rare") und in Doze zugestellt.
+ */
 object ReminderScheduler {
-    private const val WORK_NAME = "kindwords_reminder"
+    private const val REQUEST_CODE = 42
 
-    /** Plant genau einen inexakten Work-Request für den nächsten Zeitpunkt (ersetzt den alten). */
-    fun reschedule(context: Context, settings: ReminderSettings, now: ZonedDateTime = ZonedDateTime.now()) {
-        val wm = WorkManager.getInstance(context)
+    private fun pendingIntent(context: Context, flags: Int): PendingIntent? =
+        PendingIntent.getBroadcast(context, REQUEST_CODE, Intent(context, ReminderReceiver::class.java), flags or PendingIntent.FLAG_IMMUTABLE)
+
+    /**
+     * Plant genau einen Alarm für den nächsten Zeitpunkt.
+     * [replace] = true ersetzt einen vorhandenen Alarm (Einstellungen/Zeit geändert, nach Auslösung),
+     * false behält ihn (App-Start) und plant nur, falls keiner existiert.
+     */
+    fun reschedule(
+        context: Context,
+        settings: ReminderSettings,
+        now: ZonedDateTime = ZonedDateTime.now(),
+        replace: Boolean = true,
+    ) {
+        val alarms = context.getSystemService(AlarmManager::class.java)
         val next = ReminderPlanner.nextTrigger(settings, now)
         if (next == null) {
-            wm.cancelUniqueWork(WORK_NAME)
+            pendingIntent(context, PendingIntent.FLAG_NO_CREATE)?.let { alarms.cancel(it); it.cancel() }
             return
         }
-        val delay = Duration.between(now, next).toMillis().coerceAtLeast(0)
-        val req = OneTimeWorkRequestBuilder<ReminderWorker>().setInitialDelay(delay, TimeUnit.MILLISECONDS).build()
-        wm.enqueueUniqueWork(WORK_NAME, ExistingWorkPolicy.REPLACE, req)
+        if (!replace && pendingIntent(context, PendingIntent.FLAG_NO_CREATE) != null) return
+        val pi = pendingIntent(context, PendingIntent.FLAG_UPDATE_CURRENT)!!
+        alarms.setAndAllowWhileIdle(AlarmManager.RTC_WAKEUP, next.toInstant().toEpochMilli(), pi)
     }
 }
 
-class ReminderWorker(context: Context, params: WorkerParameters) : CoroutineWorker(context, params) {
-    override suspend fun doWork(): Result {
-        val app = applicationContext as KindWordsApp
-        val settings = app.settings.reminder.first()
-        if (settings.enabled) {
-            app.messages.ensureSeeded()
-            val lang = app.settings.contentLanguageOverride.first() ?: Languages.resolve(Locale.getDefault().language)
-            app.messages.random(lang, null, null)?.let { NotificationHelper.show(applicationContext, it.text) }
+/** Löst die Erinnerung aus und plant den nächsten Alarm; reagiert außerdem auf Boot, Update und Zeitänderungen. */
+class ReminderReceiver : BroadcastReceiver() {
+    override fun onReceive(context: Context, intent: Intent) {
+        val app = context.applicationContext as KindWordsApp
+        val fire = intent.action == null // eigener Alarm (explizite Intent ohne Action)
+        val pending = goAsync()
+        CoroutineScope(Dispatchers.Default).launch {
+            try {
+                val settings = app.settings.reminder.first()
+                if (fire && settings.enabled) {
+                    app.messages.ensureSeeded()
+                    val lang = app.settings.contentLanguageOverride.first() ?: Languages.resolve(Locale.getDefault().language)
+                    app.messages.random(lang, null, null)?.let { NotificationHelper.show(app, it.text) }
+                }
+                // Boot/Update: Alarme sind weg -> neu planen. Zeit-/Zonenwechsel und Auslösung: ersetzen.
+                val keep = intent.action == Intent.ACTION_BOOT_COMPLETED || intent.action == Intent.ACTION_MY_PACKAGE_REPLACED
+                ReminderScheduler.reschedule(app, settings, replace = !keep)
+            } finally {
+                pending.finish()
+            }
         }
-        ReminderScheduler.reschedule(applicationContext, settings)
-        return Result.success()
     }
 }
