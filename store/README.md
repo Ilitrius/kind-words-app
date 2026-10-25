@@ -5,7 +5,7 @@ Listings: `store/listings/en-US/`, `store/listings/de-DE/` (Titel ≤30, Kurzbes
 - [ ] Play-Console-Entwicklerkonto (Anforderungen für neue Konten aktuell prüfen, u. a. Closed-Testing-Pflicht)
 - [x] Package-Name `app.rpkindwords` (vom Nutzer bestätigt, final)
 - [x] Upload-Keystore: `D:AI_KIkind-words-keys` (außerhalb des Repos, SICHERN!), `keystore.properties` lokal (gitignored)
-- [x] `bundleRelease` signiert gebaut (`app/build/outputs/bundle/release/app-release.aab`, versionCode 1 / 1.0.0)
+- [x] `bundleRelease` signiert gebaut (`app/build/outputs/bundle/release/app-release.aab`, versionCode 2 / 1.0.0)
 - [ ] In der Play Console: Play App Signing aktivieren, AAB hochladen, Mapping `app/build/outputs/mapping/release/mapping.txt` hochladen
 - [ ] Datenschutz-URL: GitHub Pages `docs/datenschutz.html` / `privacy-policy.html`
 - [x] Antworten für Data Safety, Content Rating, Zielgruppe, Anzeigen, App-Zugriff: `store/play-console-answers.md` (Eintragen in der Console steht aus)

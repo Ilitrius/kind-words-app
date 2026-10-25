@@ -34,7 +34,7 @@ Das „Gehirn“ des Projekts: Entscheidungen, Fakten, Fallstricke. Wird von Men
 
 ## Release / Signing
 - Upload-Keystore `D:\AI_KI\kind-words-keys\kindwords-upload.jks` (PKCS12, Alias `kindwords-upload`, RSA 4096, gültig ~27 Jahre) + `keystore.properties` (Kopie dort und im Projektroot, gitignored). Key-Passwort = Store-Passwort (PKCS12). SHA-256 des Upload-Zertifikats: 9B:C5:0C:86:B3:54:EE:0E:75:01:C5:2B:95:27:40:93:A2:EC:81:27:3F:AC:24:AD:4F:05:4D:75:03:48:A5:7E
-- Gradle liest `keystore.properties`; ohne Datei wird unsigniert gebaut. Release: `.\gradlew.bat lintRelease bundleRelease` · Version 1.0.0 (versionCode 1; pro Upload erhöhen).
+- Gradle liest `keystore.properties`; ohne Datei wird unsigniert gebaut. Release: `.\gradlew.bat lintRelease bundleRelease` · Version 1.0.0 (aktuell versionCode 2; pro Upload erhöhen).
 - Release-APK (R8, Room) startet im Emulator ohne Absturz; Erinnerung und Teilen im Release getestet (siehe unten).
 
 ## Erinnerungen (Stand 2026-10-25, im Emulator getestet)
