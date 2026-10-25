@@ -42,3 +42,4 @@ Das „Gehirn“ des Projekts: Entscheidungen, Fakten, Fallstricke. Wird von Men
 - Warum nicht WorkManager: Job blieb im App-Standby-Bucket "Rare" (Job-Quota) über zwei Minuten nach Fälligkeit blockiert; selten geöffnete Apps hätten Erinnerungen nicht pünktlich bekommen.
 - Getestet (Release-Build, Emulator API 35): Alarm gesetzt, nach Neustart neu geplant, Benachrichtigung erscheint, Teilen öffnet System-Dialog mit dem Satz. Im Emulator steht eine frisch gestartete App nach Reboot im Bucket NEVER/Rare (Alarm +364 Tage) → zum Testen `adb shell am set-standby-bucket app.rpkindwords active`.
 - Wochentage-Chips: FlowRow statt horizontalem Scrollen (Sonntag war sonst nicht sichtbar).
+- 2026-10-25 · Offen · Sprachumstellung stellt nur die Sätze um, nicht die UI-Texte; Nutzer will beides (siehe TODO.md, nächste Session).

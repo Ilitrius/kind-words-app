@@ -30,3 +30,6 @@ Legende: `[ ]` offen · `[x]` erledigt · Agent in Klammern
 - [x] Spendenlink: vom Nutzer bestätigt (bereits getestet)
 - [ ] Testphasen, Produktion
 
+
+## Nächste Session (vom Nutzer am 2026-10-25 notiert)
+- [ ] Sprachumstellung: In den Einstellungen ändert "Inhaltssprache" nur die Sätze, nicht die App-Oberfläche (Buttons, Menüs, Tabs bleiben in der Systemsprache). Soll vollständig umgestellt werden (UI + Sätze). Ansatz prüfen: `AppCompatDelegate.setApplicationLocales` bzw. `LocaleManager` (per-App-Sprache, bereits über `locales_config` vorbereitet), Inhaltssprache daran koppeln.
