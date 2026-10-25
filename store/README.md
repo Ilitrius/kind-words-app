@@ -3,7 +3,7 @@
 Listings: `store/listings/en-US/`, `store/listings/de-DE/` (Titel ≤30, Kurzbeschreibung ≤80, Beschreibung ≤4000 Zeichen).
 
 - [ ] Play-Console-Entwicklerkonto (Anforderungen für neue Konten aktuell prüfen, u. a. Closed-Testing-Pflicht)
-- [ ] Package-Name `app.kindwords` final bestätigen (nach Veröffentlichung unveränderbar)
+- [x] Package-Name `app.rpkindwords` (vom Nutzer bestätigt, final)
 - [ ] Upload-Keystore erzeugen, außerhalb des Repos sichern, `keystore.properties` lokal (gitignored)
 - [ ] Play App Signing aktivieren, `bundleRelease` bauen, Mapping-Datei hochladen
 - [ ] Datenschutz-URL: GitHub Pages `docs/datenschutz.html` / `privacy-policy.html`

@@ -1,4 +1,4 @@
-package app.kindwords.ui
+package app.rpkindwords.ui
 
 import android.Manifest
 import android.content.Context
@@ -52,11 +52,11 @@ import androidx.compose.ui.unit.dp
 import androidx.core.net.toUri
 import androidx.lifecycle.compose.LifecycleResumeEffect
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import app.kindwords.MainViewModel
-import app.kindwords.R
-import app.kindwords.reminder.NotificationHelper
-import app.kindwords.reminder.ReminderMode
-import app.kindwords.reminder.ReminderPlanner
+import app.rpkindwords.MainViewModel
+import app.rpkindwords.R
+import app.rpkindwords.reminder.NotificationHelper
+import app.rpkindwords.reminder.ReminderMode
+import app.rpkindwords.reminder.ReminderPlanner
 import java.time.DayOfWeek
 import java.time.LocalTime
 import java.time.format.DateTimeFormatter

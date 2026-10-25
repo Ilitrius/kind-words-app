@@ -1,12 +1,12 @@
-package app.kindwords
+package app.rpkindwords
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
-import app.kindwords.data.Languages
-import app.kindwords.data.MessageEntity
-import app.kindwords.reminder.ReminderScheduler
-import app.kindwords.reminder.ReminderSettings
+import app.rpkindwords.data.Languages
+import app.rpkindwords.data.MessageEntity
+import app.rpkindwords.reminder.ReminderScheduler
+import app.rpkindwords.reminder.ReminderSettings
 import java.util.Locale
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.MutableStateFlow

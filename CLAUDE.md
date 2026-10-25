@@ -1,6 +1,6 @@
 # Kind Words App – Projektregeln
 
-Android-App (Kotlin, Jetpack Compose, Material 3). Package `app.kindwords`, compileSdk/targetSdk **36**, minSdk 26.
+Android-App (Kotlin, Jetpack Compose, Material 3). Package `app.rpkindwords`, compileSdk/targetSdk **36**, minSdk 26.
 Sprachen: **Englisch (Standard, `values/`) und Deutsch (`values-de/`)**. Zweck/Funktionen der App: siehe `docs/PRODUCT.md` (wird ergänzt).
 
 Wissen: `BRAIN.md` (Entscheidungen/Fakten, beim Start lesen, laufend pflegen) · Aufgaben: `TODO.md` (Status aktuell halten).

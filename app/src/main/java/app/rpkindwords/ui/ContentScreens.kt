@@ -1,4 +1,4 @@
-package app.kindwords.ui
+package app.rpkindwords.ui
 
 import android.content.ClipData
 import android.content.ClipboardManager
@@ -55,11 +55,11 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import app.kindwords.MainViewModel
-import app.kindwords.R
-import app.kindwords.data.MessageEntity
-import app.kindwords.data.MessageRepository
-import app.kindwords.reminder.ShareIntents
+import app.rpkindwords.MainViewModel
+import app.rpkindwords.R
+import app.rpkindwords.data.MessageEntity
+import app.rpkindwords.data.MessageRepository
+import app.rpkindwords.reminder.ShareIntents
 import kotlinx.coroutines.launch
 
 @Composable

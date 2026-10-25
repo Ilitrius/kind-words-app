@@ -21,9 +21,9 @@ Legende: `[ ]` offen · `[x]` erledigt · Agent in Klammern
 - [x] Datenschutzerklärung, Über-uns, Impressum ausgefüllt (de/en, live auf Pages)
 
 ## Play Store
-- [ ] Package-Name bestätigen
+- [x] Package-Name app.rpkindwords festgelegt
 - [ ] Keystore, Signing, `bundleRelease` (play-release)
 - [ ] Listing-Texte de/en fertig; offen: Grafiken, Data Safety, Content Rating (13+)
-- [ ] Play-Richtlinie zu externem Spendenlink prüfen (play-release)
+- [x] Spendenlink: vom Nutzer bestätigt (bereits getestet)
 - [ ] Testphasen, Produktion
 

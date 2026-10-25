@@ -1,4 +1,4 @@
-package app.kindwords.data
+package app.rpkindwords.data
 
 import org.json.JSONObject
 

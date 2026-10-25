@@ -1,4 +1,4 @@
-package app.kindwords.reminder
+package app.rpkindwords.reminder
 
 import android.Manifest
 import android.app.NotificationChannel
@@ -16,10 +16,10 @@ import androidx.work.ExistingWorkPolicy
 import androidx.work.OneTimeWorkRequestBuilder
 import androidx.work.WorkManager
 import androidx.work.WorkerParameters
-import app.kindwords.KindWordsApp
-import app.kindwords.MainActivity
-import app.kindwords.R
-import app.kindwords.data.Languages
+import app.rpkindwords.KindWordsApp
+import app.rpkindwords.MainActivity
+import app.rpkindwords.R
+import app.rpkindwords.data.Languages
 import java.time.Duration
 import java.time.ZonedDateTime
 import java.util.Locale

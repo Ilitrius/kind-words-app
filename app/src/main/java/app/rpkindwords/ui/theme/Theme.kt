@@ -1,4 +1,4 @@
-package app.kindwords.ui.theme
+package app.rpkindwords.ui.theme
 
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme

@@ -5,7 +5,7 @@ Das „Gehirn“ des Projekts: Entscheidungen, Fakten, Fallstricke. Wird von Men
 ## Entscheidungen
 - 2026-10-25 · Plattform · Kotlin + Jetpack Compose, Material 3, compileSdk/targetSdk 36, minSdk 26 · Nutzervorgabe SDK 36.
 - 2026-10-25 · Sprachen · Englisch (Standard) + Deutsch; Texte ausschließlich in `strings.xml`; Lint erzwingt es · Nutzervorgabe.
-- 2026-10-25 · Package · `app.kindwords` (vorläufig; nach Play-Veröffentlichung unveränderbar) · Platzhalter, vor Release bestätigen.
+- 2026-10-25 · Package · `app.rpkindwords` (Nutzerentscheidung; namespace + applicationId; nach Play-Veröffentlichung unveränderbar) · Nutzervorgabe.
 - 2026-10-25 · Hosting · Rechtstexte/Infoseiten in `docs/` via GitHub Pages · Nutzervorgabe: im Repo erreichbar.
 
 ## Technik-Fakten

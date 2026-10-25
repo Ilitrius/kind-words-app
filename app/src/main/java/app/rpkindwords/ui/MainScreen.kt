@@ -1,4 +1,4 @@
-package app.kindwords.ui
+package app.rpkindwords.ui
 
 import androidx.activity.compose.BackHandler
 import androidx.compose.foundation.layout.padding
@@ -23,8 +23,8 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.res.stringResource
-import app.kindwords.MainViewModel
-import app.kindwords.R
+import app.rpkindwords.MainViewModel
+import app.rpkindwords.R
 
 private enum class Tab(val label: Int, val icon: ImageVector) {
     Home(R.string.nav_home, Icons.Filled.Home),

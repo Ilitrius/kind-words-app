@@ -1,4 +1,4 @@
-package app.kindwords.data
+package app.rpkindwords.data
 
 import androidx.room.Dao
 import androidx.room.Database

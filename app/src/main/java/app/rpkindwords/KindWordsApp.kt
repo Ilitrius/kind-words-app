@@ -1,13 +1,13 @@
-package app.kindwords
+package app.rpkindwords
 
 import android.app.Application
 import androidx.room.Room
-import app.kindwords.data.AppDatabase
-import app.kindwords.data.AssetContentSource
-import app.kindwords.data.MessageRepository
-import app.kindwords.data.SettingsRepository
-import app.kindwords.reminder.ReminderScheduler
-import app.kindwords.reminder.NotificationHelper
+import app.rpkindwords.data.AppDatabase
+import app.rpkindwords.data.AssetContentSource
+import app.rpkindwords.data.MessageRepository
+import app.rpkindwords.data.SettingsRepository
+import app.rpkindwords.reminder.ReminderScheduler
+import app.rpkindwords.reminder.NotificationHelper
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.SupervisorJob

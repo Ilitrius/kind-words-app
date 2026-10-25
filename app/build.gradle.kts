@@ -9,11 +9,11 @@ ksp {
 }
 
 android {
-    namespace = "app.kindwords"
+    namespace = "app.rpkindwords"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "app.kindwords"
+        applicationId = "app.rpkindwords"
         minSdk = 26
         targetSdk = 36
         versionCode = 1

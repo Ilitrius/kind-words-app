@@ -1,4 +1,4 @@
-package app.kindwords.reminder
+package app.rpkindwords.reminder
 
 import java.time.DayOfWeek
 import java.time.LocalDate
