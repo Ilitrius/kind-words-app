@@ -12,7 +12,7 @@ Legende: `[ ]` offen · `[x]` erledigt · Agent in Klammern
 
 ## Produkt
 - [x] Produkt-Briefing vom Nutzer → `docs/PRODUCT.md`
-- [x] MVP umgesetzt (android-dev): Room + Seeding, Home/Favoriten/Eigene/Einstellungen, Erinnerungen (WorkManager), Spenden-Button, Unit-Tests
+- [x] MVP umgesetzt (android-dev): Room + Seeding, Home/Favoriten/Eigene/Einstellungen, Erinnerungen (AlarmManager), Spenden-Button, Unit-Tests
 - [x] Test im Emulator (Release): Benachrichtigung, Teilen-Aktion, Neustart (siehe BRAIN.md); echtes Gerät steht aus
 - [x] App-Icon (Verlauf, Sprechblase mit Herz) und Marken-Theme (Rose/Orange, kein Dynamic Color)
 
