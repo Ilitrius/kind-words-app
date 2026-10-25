@@ -25,7 +25,8 @@ Legende: `[ ]` offen · `[x]` erledigt · Agent in Klammern
 - [x] Keystore, Signing, signiertes Release-AAB gebaut und im Emulator (R8) gestartet
 - [ ] Keystore + Passwörter extern sichern (Passwortmanager/Backup)
 - [x] Grafiken: Icon 512, Feature-Graphic de/en, 4 Screenshots je Sprache (store/graphics)
-- [ ] Listing-Texte fertig; offen: Data Safety, Content Rating (13+)
+- [x] Listing-Texte fertig; Data Safety, Content Rating, Zielgruppe 13+ als Antworten vorbereitet (`store/play-console-answers.md`)
+- [ ] Antworten in der Play Console eintragen (Nutzer)
 - [x] Spendenlink: vom Nutzer bestätigt (bereits getestet)
 - [ ] Testphasen, Produktion
 

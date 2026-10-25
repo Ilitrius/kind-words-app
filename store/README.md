@@ -8,7 +8,7 @@ Listings: `store/listings/en-US/`, `store/listings/de-DE/` (Titel ≤30, Kurzbes
 - [x] `bundleRelease` signiert gebaut (`app/build/outputs/bundle/release/app-release.aab`, versionCode 1 / 1.0.0)
 - [ ] In der Play Console: Play App Signing aktivieren, AAB hochladen, Mapping `app/build/outputs/mapping/release/mapping.txt` hochladen
 - [ ] Datenschutz-URL: GitHub Pages `docs/datenschutz.html` / `privacy-policy.html`
-- [ ] Data-Safety-Formular, Content Rating, Zielgruppe, Anzeigen-Angabe, App-Zugriff
+- [x] Antworten für Data Safety, Content Rating, Zielgruppe, Anzeigen, App-Zugriff: `store/play-console-answers.md` (Eintragen in der Console steht aus)
 - [ ] Grafiken: Icon 512×512, Feature-Graphic 1024×500, Telefon-Screenshots (en + de)
 - [ ] Tests: intern → geschlossen → Produktion
 
