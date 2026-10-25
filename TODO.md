@@ -22,7 +22,8 @@ Legende: `[ ]` offen · `[x]` erledigt · Agent in Klammern
 
 ## Play Store
 - [x] Package-Name app.rpkindwords festgelegt
-- [ ] Keystore, Signing, `bundleRelease` (play-release)
+- [x] Keystore, Signing, signiertes Release-AAB gebaut und im Emulator (R8) gestartet
+- [ ] Keystore + Passwörter extern sichern (Passwortmanager/Backup)
 - [x] Grafiken: Icon 512, Feature-Graphic de/en, 4 Screenshots je Sprache (store/graphics)
 - [ ] Listing-Texte fertig; offen: Data Safety, Content Rating (13+)
 - [x] Spendenlink: vom Nutzer bestätigt (bereits getestet)

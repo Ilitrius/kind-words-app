@@ -15,3 +15,4 @@ Format: `YYYY-MM-DD · Thema · Regel · Warum`
 - 2026-10-25 · Entscheidungen · Package app.rpkindwords final; Spendenlink (Stripe, wie RPCT) und Anbieterdaten vom Nutzer bestätigt; Texte freigegeben · Nutzer.
 - 2026-10-25 · Design · App-Theme fest in Markenfarben (Rose #D6245F / Orange #E8590C), Dynamic Color entfernt; Icon = Verlauf Orange→Rose, weisse Sprechblase, Herz; Store-Grafiken per Skripte in store/tools · Nutzer wollte modern und HD.
 - 2026-10-25 · Emulator · AVD Pixel_API35 vorhanden; UI-Knoten per uiautomator-dump finden (Extended-FAB-Text ist nicht auffindbar → Koordinate), Tab-Labels doppeln Titel → letzten Treffer nehmen; adb input text kann keine Umlaute · für Screenshot-Skript.
+- 2026-10-25 · Signing · keytool auf PKCS12: -keypass wird ignoriert, Key-Passwort muss = Store-Passwort sein, sonst 'Get Key failed' beim Packen; 'java.util.Properties' in .kts per import nutzen (im android-Block löst 'java' auf die Extension auf) · Release-Build.
