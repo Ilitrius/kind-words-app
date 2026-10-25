@@ -1,0 +1,8 @@
+{ "language": "de", "version": 2,
+  "messages": [
+    { "id": "de-love-001", "category": "love", "text": "Neuer Text eins" },
+    { "id": "de-love-002", "category": "morning", "text": "Text zwei" },
+    { "id": "de-love-003", "category": "humor", "text": "Text drei" },
+    { "id": "", "category": "love", "text": "ohne id" },
+    { "id": "de-love-002", "category": "love", "text": "doppelte id" }
+  ] }

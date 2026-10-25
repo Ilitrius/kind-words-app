@@ -5,17 +5,36 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Über die App – Kind Words</title>
 <style>
-:root{--bg:#fff8f0;--fg:#2b2118;--ac:#e8590c}
-@media (prefers-color-scheme:dark){:root{--bg:#1c1612;--fg:#f3e9de;--ac:#ff8a4c}}
-body{font-family:system-ui,sans-serif;background:var(--bg);color:var(--fg);max-width:40rem;margin:0 auto;padding:1.5rem 1rem;line-height:1.6}
-a{color:var(--ac)}
+  :root { --bg:#fff; --fg:#1d2329; --muted:#5b6670; --accent:#c2410c; --line:#dde3e7; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#12181b; --fg:#e8edf0; --muted:#9aa7b0; --accent:#ff8a4c; --line:#2a353b; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+  main { max-width:760px; margin:0 auto; padding:24px 16px 56px; }
+  h1 { font-size:1.7rem; line-height:1.25; margin:0 0 4px; }
+  h2 { font-size:1.2rem; margin:2rem 0 .5rem; padding-top:1rem; border-top:1px solid var(--line); color:var(--accent); }
+  .meta { color:var(--muted); font-size:.9rem; margin-bottom:1.2rem; }
+  a { color:var(--accent); }
 </style>
 </head>
 <body>
-<p><a href="index.html">&larr; Start</a> · <a href="about.html">English</a></p>
+<main>
+<p class="meta"><a href="index.html">&larr; Start</a> · <a href="about.html">English</a></p>
 <h1>Über Kind Words</h1>
-<p>TODO: Was die App kann und für wen sie gedacht ist (wird nach dem Produkt-Briefing ergänzt).</p>
+<p>Kleine nette Worte machen große Unterschiede. Kind Words schlägt dir liebevolle Sätze vor, die du deinem Partner oder deiner Partnerin sagst oder per Messenger schickst, und erinnert dich auf Wunsch daran.</p>
+<h2>Was die App kann</h2>
+<ul>
+  <li>Nette Sätze aus 10 Kategorien, zum Beispiel Liebe, Wertschätzung, Guten Morgen, Gute Nacht und Humor</li>
+  <li>Teilen mit einem Tipp in jedem Messenger oder Kopieren</li>
+  <li>Favoriten speichern und eigene Sätze schreiben</li>
+  <li>Erinnerungen zufällig oder zu festen Uhrzeiten</li>
+  <li>Deutsch und Englisch</li>
+</ul>
+<h2>Privatsphäre</h2>
+<p>Alles bleibt auf deinem Gerät. Keine Werbung, kein Tracking, kein Konto. Mehr in der <a href="datenschutz.html">Datenschutzerklärung</a>.</p>
 <h2>Kontakt</h2>
-<p>TODO</p>
+<p><a href="mailto:rene.puf@gmail.com">rene.puf@gmail.com</a> · <a href="impressum.html">Impressum</a></p>
+</main>
 </body>
 </html>

@@ -2,5 +2,76 @@
 <resources>
     <string name="app_name">Kind Words</string>
     <string name="home_title">Kind Words</string>
-    <string name="home_subtitle">Ein bisschen Freundlichkeit für jeden Tag.</string>
+
+    <string name="nav_home">Start</string>
+    <string name="nav_favorites">Favoriten</string>
+    <string name="nav_mine">Eigene Sätze</string>
+    <string name="nav_settings">Einstellungen</string>
+
+    <string name="category_all">Alle</string>
+    <string name="category_love">Liebe</string>
+    <string name="category_appreciation">Wertschätzung</string>
+    <string name="category_morning">Guten Morgen</string>
+    <string name="category_goodnight">Gute Nacht</string>
+    <string name="category_encouragement">Ermutigung</string>
+    <string name="category_missyou">Vermissen</string>
+    <string name="category_compliment">Kompliment</string>
+    <string name="category_humor">Humor</string>
+    <string name="category_thanks">Danke</string>
+    <string name="category_apology">Entschuldigung</string>
+    <string name="category_custom">Eigene</string>
+
+    <string name="action_new_suggestion">Neuer Vorschlag</string>
+    <string name="action_share">Teilen</string>
+    <string name="action_copy">Kopieren</string>
+    <string name="action_edit">Bearbeiten</string>
+    <string name="action_delete">Löschen</string>
+    <string name="action_save">Speichern</string>
+    <string name="action_cancel">Abbrechen</string>
+    <string name="action_ok">OK</string>
+    <string name="copied">In die Zwischenablage kopiert</string>
+    <string name="favorite_add">Zu Favoriten hinzufügen</string>
+    <string name="favorite_remove">Aus Favoriten entfernen</string>
+
+    <string name="home_empty">Für diese Auswahl gibt es noch keine Sätze.</string>
+    <string name="favorites_empty">Noch keine Favoriten. Tippe bei einem Vorschlag auf das Herz, um ihn hier zu speichern.</string>
+    <string name="mine_empty">Du hast noch keine eigenen Sätze geschrieben. Füge hier deine eigenen netten Worte hinzu.</string>
+    <string name="mine_add">Hinzufügen</string>
+    <string name="mine_dialog_add_title">Neuer Satz</string>
+    <string name="mine_dialog_edit_title">Satz bearbeiten</string>
+    <string name="mine_hint">Deine netten Worte</string>
+    <string name="mine_delete_title">Satz löschen?</string>
+    <string name="mine_delete_text">Das lässt sich nicht rückgängig machen.</string>
+
+    <string name="settings_reminders">Erinnerungen</string>
+    <string name="reminders_enable">Erinnere mich an nette Worte</string>
+    <string name="reminders_permission_info">Erinnerungen sind Benachrichtigungen. Android fragt beim Einschalten nach der Erlaubnis. Es verlässt nichts dein Gerät.</string>
+    <string name="reminders_permission_denied">Benachrichtigungen sind für diese App ausgeschaltet, daher können keine Erinnerungen angezeigt werden.</string>
+    <string name="open_notification_settings">Benachrichtigungseinstellungen öffnen</string>
+    <string name="mode_random">Zufällig</string>
+    <string name="mode_fixed">Feste Uhrzeiten</string>
+    <plurals name="times_per_day">
+        <item quantity="one">%d Mal pro Tag</item>
+        <item quantity="other">%d Mal pro Tag</item>
+    </plurals>
+    <string name="window_from">Von</string>
+    <string name="window_to">bis</string>
+    <string name="time_add">Uhrzeit hinzufügen</string>
+    <string name="time_remove">%1$s entfernen</string>
+    <string name="reminders_days">Wochentage</string>
+
+    <string name="settings_language">Inhaltssprache</string>
+    <string name="settings_language_info">Sprache der vorgeschlagenen Sätze.</string>
+    <string name="lang_system">Systemsprache</string>
+    <string name="lang_de">Deutsch</string>
+    <string name="lang_en">English</string>
+
+    <string name="donate_title">Kind Words unterstützen</string>
+    <string name="donate_text">Kind Words ist kostenlos, ohne Werbung und ohne Tracking. Wenn dir die App gefällt, kannst du freiwillig spenden. Das ist nicht nötig, schaltet nichts frei und läuft über einen externen Anbieter in deinem Browser. Die App selbst übermittelt keine Daten.</string>
+    <string name="donate_button">Spenden (öffnet Browser)</string>
+    <string name="donate_error">Kein Browser zum Öffnen des Links gefunden.</string>
+
+    <string name="channel_reminders_name">Erinnerungen</string>
+    <string name="channel_reminders_desc">Gelegentliche nette Worte zum Teilen</string>
+    <string name="notification_title">Ein nettes Wort für heute</string>
 </resources>

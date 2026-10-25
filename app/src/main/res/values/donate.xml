@@ -1,0 +1,4 @@
+<resources>
+    <!-- Spendenlink (extern). Leer oder ohne https:// = Spenden-Karte wird ausgeblendet. -->
+    <string name="donate_url" translatable="false">https://buy.stripe.com/dRmaEY3Me3TO5Z54R1eUU00</string>
+</resources>

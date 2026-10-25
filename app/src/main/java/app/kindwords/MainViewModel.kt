@@ -1,0 +1,96 @@
+package app.kindwords
+
+import android.app.Application
+import androidx.lifecycle.AndroidViewModel
+import androidx.lifecycle.viewModelScope
+import app.kindwords.data.Languages
+import app.kindwords.data.MessageEntity
+import app.kindwords.reminder.ReminderScheduler
+import app.kindwords.reminder.ReminderSettings
+import java.util.Locale
+import kotlinx.coroutines.ExperimentalCoroutinesApi
+import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.SharingStarted
+import kotlinx.coroutines.flow.StateFlow
+import kotlinx.coroutines.flow.combine
+import kotlinx.coroutines.flow.distinctUntilChanged
+import kotlinx.coroutines.flow.first
+import kotlinx.coroutines.flow.flatMapLatest
+import kotlinx.coroutines.flow.flowOf
+import kotlinx.coroutines.flow.map
+import kotlinx.coroutines.flow.stateIn
+import kotlinx.coroutines.launch
+
+@OptIn(ExperimentalCoroutinesApi::class)
+class MainViewModel(application: Application) : AndroidViewModel(application) {
+    private val app = application as KindWordsApp
+    private val messages = app.messages
+    private val settings = app.settings
+
+    val languageOverride: StateFlow<String?> =
+        settings.contentLanguageOverride.stateIn(viewModelScope, SharingStarted.Eagerly, null)
+
+    private val contentLang = settings.contentLanguageOverride
+        .map { it ?: Languages.resolve(Locale.getDefault().language) }
+        .distinctUntilChanged()
+
+    val reminder: StateFlow<ReminderSettings> =
+        settings.reminder.stateIn(viewModelScope, SharingStarted.Eagerly, ReminderSettings())
+
+    private val _category = MutableStateFlow<String?>(null)
+    val category: StateFlow<String?> = _category
+
+    private val currentId = MutableStateFlow<String?>(null)
+    val current: StateFlow<MessageEntity?> = currentId
+        .flatMapLatest { id -> if (id == null) flowOf(null) else messages.observe(id) }
+        .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), null)
+
+    val favorites: StateFlow<List<MessageEntity>> =
+        messages.favorites().stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), emptyList())
+    val userMessages: StateFlow<List<MessageEntity>> =
+        messages.userMessages().stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), emptyList())
+
+    private val _loaded = MutableStateFlow(false)
+    val loaded: StateFlow<Boolean> = _loaded
+
+    init {
+        viewModelScope.launch {
+            messages.ensureSeeded()
+            combine(contentLang, _category) { l, c -> l to c }.collect { (l, c) ->
+                currentId.value = messages.random(l, c, null)?.id
+                _loaded.value = true
+            }
+        }
+    }
+
+    fun newSuggestion() {
+        viewModelScope.launch {
+            val lang = contentLang.first()
+            val next = messages.random(lang, _category.value, currentId.value)
+                ?: messages.random(lang, _category.value, null)
+            currentId.value = next?.id
+        }
+    }
+
+    fun selectCategory(c: String?) { _category.value = c }
+    fun setContentLanguage(lang: String?) { viewModelScope.launch { settings.setContentLanguage(lang) } }
+    fun toggleFavorite(m: MessageEntity) { viewModelScope.launch { messages.setFavorite(m.id, !m.favorite) } }
+
+    fun addUserMessage(text: String) {
+        viewModelScope.launch { messages.addUser(contentLang.first(), text) }
+    }
+    fun editUserMessage(id: String, text: String) { viewModelScope.launch { messages.editUser(id, text) } }
+    fun deleteUserMessage(id: String) {
+        viewModelScope.launch {
+            messages.deleteUser(id)
+            if (currentId.value == id) newSuggestion()
+        }
+    }
+
+    fun updateReminder(transform: (ReminderSettings) -> ReminderSettings) {
+        viewModelScope.launch {
+            settings.updateReminder(transform)
+            ReminderScheduler.reschedule(app, settings.reminder.first())
+        }
+    }
+}

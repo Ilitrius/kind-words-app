@@ -11,8 +11,10 @@ Legende: `[ ]` offen · `[x]` erledigt · Agent in Klammern
 - [x] GitHub-Repo Ilitrius/kind-words-app + Pages (https://ilitrius.github.io/kind-words-app/)
 
 ## Produkt
-- [ ] Produkt-Briefing vom Nutzer → `docs/PRODUCT.md`
-- [ ] Features planen und umsetzen (android-dev)
+- [x] Produkt-Briefing vom Nutzer → `docs/PRODUCT.md`
+- [x] MVP umgesetzt (android-dev): Room + Seeding, Home/Favoriten/Eigene/Einstellungen, Erinnerungen (WorkManager), Spenden-Button, Unit-Tests
+- [ ] Manueller Test auf Gerät/Emulator (Benachrichtigung, Teilen, Reboot) (qa-tester)
+- [ ] App-Icon/Design-Feinschliff, Monetarisierung final klären
 
 ## Recht & Webseiten
 - [ ] Anbieterdaten vom Nutzer erhalten
@@ -23,3 +25,4 @@ Legende: `[ ]` offen · `[x]` erledigt · Agent in Klammern
 - [ ] Keystore, Signing, `bundleRelease` (play-release)
 - [ ] Listing de/en, Grafiken, Data Safety, Content Rating
 - [ ] Testphasen, Produktion
+
