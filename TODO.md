@@ -8,7 +8,7 @@ Legende: `[ ]` offen · `[x]` erledigt · Agent in Klammern
 - [x] Agenten + Lernprotokoll (`.claude/agents/`, `SHARED.md`)
 - [x] `BRAIN.md`, `TODO.md`
 - [x] Build + Lint grün (assembleDebug, lintDebug)
-- [ ] Git-Repo auf GitHub, Pages für `docs/` aktivieren
+- [x] GitHub-Repo Ilitrius/kind-words-app + Pages (https://ilitrius.github.io/kind-words-app/)
 
 ## Produkt
 - [ ] Produkt-Briefing vom Nutzer → `docs/PRODUCT.md`
