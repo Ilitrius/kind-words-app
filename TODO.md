@@ -17,12 +17,13 @@ Legende: `[ ]` offen · `[x]` erledigt · Agent in Klammern
 - [ ] App-Icon/Design-Feinschliff, Monetarisierung final klären
 
 ## Recht & Webseiten
-- [ ] Anbieterdaten vom Nutzer erhalten
-- [ ] Datenschutzerklärung, Über-uns, Impressum ausfüllen (legal-docs)
+- [x] Anbieterdaten aus RPCT übernommen (Nutzer soll bestätigen)
+- [x] Datenschutzerklärung, Über-uns, Impressum ausgefüllt (de/en, live auf Pages)
 
 ## Play Store
 - [ ] Package-Name bestätigen
 - [ ] Keystore, Signing, `bundleRelease` (play-release)
-- [ ] Listing de/en, Grafiken, Data Safety, Content Rating
+- [ ] Listing-Texte de/en fertig; offen: Grafiken, Data Safety, Content Rating (13+)
+- [ ] Play-Richtlinie zu externem Spendenlink prüfen (play-release)
 - [ ] Testphasen, Produktion
 
