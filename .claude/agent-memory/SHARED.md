@@ -13,3 +13,5 @@ Format: `YYYY-MM-DD · Thema · Regel · Warum`
 - 2026-10-25 · Inhalte · Neue Texte in `assets/messages/messages_<lang>.json`: `version` erhöhen, ids stabil halten (`<lang>-<kategorie>-NNN`), Kategorien nur aus der Liste in PRODUCT.md, sonst Test `realAssetsAreValid` schlägt fehl · Update-Logik id-/versionsbasiert.
 - 2026-10-25 · Strings · Kategorienamen als `category_<id>` in strings.xml (en+de); neue Kategorie braucht Eintrag in `MessageRepository.categories` und `categoryLabel()`.
 - 2026-10-25 · Entscheidungen · Package app.rpkindwords final; Spendenlink (Stripe, wie RPCT) und Anbieterdaten vom Nutzer bestätigt; Texte freigegeben · Nutzer.
+- 2026-10-25 · Design · App-Theme fest in Markenfarben (Rose #D6245F / Orange #E8590C), Dynamic Color entfernt; Icon = Verlauf Orange→Rose, weisse Sprechblase, Herz; Store-Grafiken per Skripte in store/tools · Nutzer wollte modern und HD.
+- 2026-10-25 · Emulator · AVD Pixel_API35 vorhanden; UI-Knoten per uiautomator-dump finden (Extended-FAB-Text ist nicht auffindbar → Koordinate), Tab-Labels doppeln Titel → letzten Treffer nehmen; adb input text kann keine Umlaute · für Screenshot-Skript.

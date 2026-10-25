@@ -14,7 +14,7 @@ Legende: `[ ]` offen · `[x]` erledigt · Agent in Klammern
 - [x] Produkt-Briefing vom Nutzer → `docs/PRODUCT.md`
 - [x] MVP umgesetzt (android-dev): Room + Seeding, Home/Favoriten/Eigene/Einstellungen, Erinnerungen (WorkManager), Spenden-Button, Unit-Tests
 - [ ] Manueller Test auf Gerät/Emulator (Benachrichtigung, Teilen, Reboot) (qa-tester)
-- [ ] App-Icon/Design-Feinschliff, Monetarisierung final klären
+- [x] App-Icon (Verlauf, Sprechblase mit Herz) und Marken-Theme (Rose/Orange, kein Dynamic Color)
 
 ## Recht & Webseiten
 - [x] Anbieterdaten aus RPCT übernommen (Nutzer soll bestätigen)
@@ -23,7 +23,8 @@ Legende: `[ ]` offen · `[x]` erledigt · Agent in Klammern
 ## Play Store
 - [x] Package-Name app.rpkindwords festgelegt
 - [ ] Keystore, Signing, `bundleRelease` (play-release)
-- [ ] Listing-Texte de/en fertig; offen: Grafiken, Data Safety, Content Rating (13+)
+- [x] Grafiken: Icon 512, Feature-Graphic de/en, 4 Screenshots je Sprache (store/graphics)
+- [ ] Listing-Texte fertig; offen: Data Safety, Content Rating (13+)
 - [x] Spendenlink: vom Nutzer bestätigt (bereits getestet)
 - [ ] Testphasen, Produktion
 
