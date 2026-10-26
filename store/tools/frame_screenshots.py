@@ -2,7 +2,7 @@
 
 Aufruf:  python -I store/tools/frame_screenshots.py   (nach capture_screenshots.py)
 Eingabe: store/graphics/screenshots/<lang>_<n>_<name>.png
-Ausgabe: store/graphics/play-screenshots/<lang>/<n>_<name>.png  (1200x2400, Verhaeltnis 1:2 - erlaubt)
+Ausgabe: store/graphics/play-screenshots/<lang>/<n>_<name>.png  (1350x2400, 9:16 wie von Play verlangt)
 """
 import os
 
@@ -11,7 +11,7 @@ from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 BASE = os.path.join(os.path.dirname(__file__), "..", "graphics")
 SRC = os.path.join(BASE, "screenshots")
-W, H = 1200, 2400
+W, H = 1350, 2400
 SS = 2
 
 CAPTIONS = {
@@ -46,12 +46,12 @@ def frame(shot_path, caption, out_path):
     d = ImageDraw.Draw(img)
     d.multiline_text((90 * SS, 120 * SS), caption, font=font(96 * SS), fill=(255, 255, 255), spacing=14 * SS)
     shot = Image.open(shot_path).convert("RGB")
-    pw = 800 * SS
+    pw = 880 * SS
     ph = int(shot.height * pw / shot.width)
     shot = shot.resize((pw, ph), Image.LANCZOS)
     mask = Image.new("L", (pw, ph), 0)
     ImageDraw.Draw(mask).rounded_rectangle((0, 0, pw - 1, ph - 1), radius=80 * SS, fill=255)
-    x, y = (w - pw) // 2, 480 * SS
+    x, y = (w - pw) // 2, 470 * SS
     sh = Image.new("L", (w, h), 0)
     sh.paste(mask.point(lambda v: int(v * 0.45)), (x, y + 30 * SS))
     sh = sh.filter(ImageFilter.GaussianBlur(40 * SS))
