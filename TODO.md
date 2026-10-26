@@ -47,3 +47,9 @@ Legende: `[ ]` offen · `[x]` erledigt · Agent in Klammern
 - [ ] Geschlossener Test: ≥12 Tester, ≥14 Tage, danach Produktionszugriff beantragen; Zahlungskonto-Hinweis in der Console prüfen
 - [ ] Grafiken/Screenshots mit dem neuen Namen "RP Kind Words" neu erzeugen (hochauflösend, "cool/genial" laut Nutzer)
 - [ ] Favoriten häufiger vorschlagen (gewichtete Zufallsauswahl)
+
+## Stand 2026-10-26 (Abend)
+- [x] Release 4 (1.0.0) im geschlossenen Test (Alpha, Google-Gruppe rp-kind-words@googlegroups.com) – 16 Änderungen zur Google-Überprüfung eingereicht (Vorabprüfung läuft, Prüfung meist bis 7 Tage)
+- [ ] Nutzer: KI-Asset-Erklärung im Store-Eintrag prüfen; Kurzbeschreibung beginnt mit "RP " (vom Nutzer?); Zahlungskonto-Hinweis klären
+- [ ] Nach Freigabe: ≥12 Tester der Gruppe anmelden, 14 Tage testen, Produktionszugriff beantragen
+- [ ] Neue Grafiken "RP Kind Words" (hochauflösend/cool), Favoriten-Gewichtung, Debug-Symbole (ndk.debugSymbolLevel)
