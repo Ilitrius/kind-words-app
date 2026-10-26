@@ -24,3 +24,5 @@ Format: `YYYY-MM-DD · Thema · Regel · Warum`
 - 2026-10-26 · Sprache · UI-Sprache per attachBaseContext + recreate(); LocaleContext.wrap für Benachrichtigungen; nach Sprachwechsel Settings-Tab bleibt erhalten · ersetzt reine Inhaltssprache.
 - 2026-10-26 · Inhalte · Sätze kurz/natürlich ohne KI-Muster (keine Gedankenstriche, 'nicht nur…sondern', Kitsch-Wörter); Texte ändern nur über ids stabil + version erhöhen; Favoriten bevorzugt (40 %) · Nutzerwunsch.
 - 2026-10-26 · UI · Einstellungen zeigen 'Version <name> (<code>)' am Ende (stringResource settings_version, PackageInfoCompat; LocalContext.getString ist per Lint verboten) · Nutzerwunsch.
+- 2026-10-26 · Inhalte · KEINE negativen/neckenden Wörter in Sätzen (ContentToneTest prüft); 'Ich liebe dich' ist erwünscht; Entschuldigungen warm statt schuldzentriert; Neufassung nur mit ids stabil + version erhöhen (jetzt 3) · Nutzerwunsch.
+- 2026-10-26 · Stil · Lokale Stilauswertung der eigenen Sätze steuert Auswahl und Satzende (siehe BRAIN.md); Profil nie speichern/übertragen.

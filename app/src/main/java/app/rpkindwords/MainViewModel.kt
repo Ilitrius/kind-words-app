@@ -5,6 +5,7 @@ import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import app.rpkindwords.data.Languages
 import app.rpkindwords.data.MessageEntity
+import app.rpkindwords.data.StyleProfile
 import app.rpkindwords.reminder.ReminderScheduler
 import app.rpkindwords.reminder.ReminderSettings
 import java.util.Locale
@@ -41,8 +42,15 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
     val category: StateFlow<String?> = _category
 
     private val currentId = MutableStateFlow<String?>(null)
-    val current: StateFlow<MessageEntity?> = currentId
-        .flatMapLatest { id -> if (id == null) flowOf(null) else messages.observe(id) }
+    /** Stil der eigenen Sätze: steuert Auswahl (Repository) und Satzende des angezeigten Vorschlags. */
+    private val styleProfile: StateFlow<StyleProfile> =
+        messages.userMessages().map { list -> StyleProfile.from(list.map { it.text }) }
+            .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), StyleProfile.EMPTY)
+
+    val current: StateFlow<MessageEntity?> = combine(
+        currentId.flatMapLatest { id -> if (id == null) flowOf(null) else messages.observe(id) },
+        styleProfile,
+    ) { message, profile -> message?.let { messages.styled(it, profile) } }
         .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), null)
 
     val favorites: StateFlow<List<MessageEntity>> =

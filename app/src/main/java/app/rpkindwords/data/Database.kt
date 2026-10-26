@@ -65,6 +65,15 @@ interface MessageDao {
     )
     suspend fun randomFavorite(language: String, category: String?, excludeId: String): MessageEntity?
 
+    @Query(
+        "SELECT * FROM messages WHERE language = :language AND hidden = 0 " +
+            "AND (:category IS NULL OR category = :category) AND id != :excludeId",
+    )
+    suspend fun candidates(language: String, category: String?, excludeId: String): List<MessageEntity>
+
+    @Query("SELECT text FROM messages WHERE source = 'USER'")
+    suspend fun userTexts(): List<String>
+
     @Query("SELECT * FROM messages WHERE id = :id")
     fun observe(id: String): Flow<MessageEntity?>
 

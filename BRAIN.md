@@ -54,3 +54,7 @@ Das „Gehirn“ des Projekts: Entscheidungen, Fakten, Fallstricke. Wird von Men
 - `ndk.debugSymbolLevel = SYMBOL_TABLE` gesetzt; AndroidX-.so sind schon gestrippt → Play-Warnung "keine Debug-Symbole" bleibt (nur Hinweis).
 - Store-Grafiken v2 (Icon plastisch mit Glanz/Funkeln, Feature-Graphic mit Sprechblasen, Name "RP Kind Words"); Screenshots 1350x2400 (9:16). Quelle: store/tools/*.py, Veröffentlichung via docs/store-assets.
 - App-Name "RP Kind Words" (Launcher, Store). versionCode aktuell 5 (noch nicht hochgeladen; Alpha-Release 4 ist bei Google in Prüfung).
+
+## Stil-Anpassung & Ton (2026-10-26)
+- Lokale Stilauswertung der eigenen Sätze (`data/StyleProfile.kt`): Achsen Intensität, Verspieltheit, Energie, Länge, Lockerheit; Profil = Durchschnitt (volle Wirkung ab 3 Sätzen). Ziehgewicht `1 + 4·confidence·sim²` (passende Sätze bis 5× wahrscheinlicher), nie 0. `StyleAdapter` gleicht nur das Satzende an ("!" bzw. kein Punkt, ab 2 eigenen Sätzen und ≥60 %); eigene Sätze bleiben unverändert. Wirkt in Home-Vorschlag und Benachrichtigung. Tests: StyleProfileTest. Datenschutztext ergänzt (nur lokal, nichts gespeichert).
+- Ton-Regel (Nutzer): "Ich liebe dich" ist gut; keine Neckereien/Beleidigungen/negativen Wörter (Nervensäge, Schnarchnase, pain in the neck, Mist, leer/leise, schlechter Tag, wehtun …). Durchgesetzt durch `ContentToneTest`; Content-Version 3. Auch Entschuldigungen freundlich formulieren (Wertschätzung statt Schuld).

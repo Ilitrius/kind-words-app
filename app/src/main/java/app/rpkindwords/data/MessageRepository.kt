@@ -62,11 +62,21 @@ class MessageRepository(
         category: String?,
         excludeId: String?,
         roll: Double = Random.nextDouble(),
+        rng: Random = Random.Default,
     ): MessageEntity? {
         val exclude = excludeId ?: ""
         if (FavoriteBias.preferFavorite(roll)) dao.randomFavorite(language, category, exclude)?.let { return it }
-        return dao.random(language, category, exclude)
+        // Sonst: passend zum Stil der eigenen Sätze gewichtet (ohne eigene Sätze: gleichverteilt)
+        val candidates = dao.candidates(language, category, exclude)
+        return StyleMatcher.pick(candidates, styleProfile(), rng) { it.text }
     }
+
+    /** Stilprofil aus allen eigenen Sätzen (lokal berechnet). */
+    suspend fun styleProfile(): StyleProfile = StyleProfile.from(dao.userTexts())
+
+    /** Passt einen vorgeschlagenen Satz dem Satzende-Stil der eigenen Sätze an; eigene Sätze bleiben unverändert. */
+    fun styled(message: MessageEntity, profile: StyleProfile): MessageEntity =
+        if (message.source == Source.USER) message else message.copy(text = StyleAdapter.adapt(message.text, profile))
 
     fun observe(id: String): Flow<MessageEntity?> = dao.observe(id)
     fun favorites(): Flow<List<MessageEntity>> = dao.observeFavorites()

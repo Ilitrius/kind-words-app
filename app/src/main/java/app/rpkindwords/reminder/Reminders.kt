@@ -116,7 +116,10 @@ class ReminderReceiver : BroadcastReceiver() {
                 if (fire && settings.enabled) {
                     app.messages.ensureSeeded()
                     val lang = app.settings.contentLanguageOverride.first() ?: Languages.resolve(Locale.getDefault().language)
-                    app.messages.random(lang, null, null)?.let { NotificationHelper.show(app, it.text, lang) }
+                    app.messages.random(lang, null, null)?.let {
+                        val text = app.messages.styled(it, app.messages.styleProfile()).text
+                        NotificationHelper.show(app, text, lang)
+                    }
                 }
                 // Boot/Update: Alarme sind weg -> neu planen. Zeit-/Zonenwechsel und Auslösung: ersetzen.
                 val keep = intent.action == Intent.ACTION_BOOT_COMPLETED || intent.action == Intent.ACTION_MY_PACKAGE_REPLACED
