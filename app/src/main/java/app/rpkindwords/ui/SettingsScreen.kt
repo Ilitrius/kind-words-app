@@ -54,6 +54,7 @@ import kotlinx.coroutines.launch
 import androidx.compose.ui.res.pluralStringResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
+import androidx.core.content.pm.PackageInfoCompat
 import androidx.core.net.toUri
 import androidx.lifecycle.compose.LifecycleResumeEffect
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
@@ -212,6 +213,15 @@ fun SettingsScreen(vm: MainViewModel, modifier: Modifier = Modifier) {
                 }
             }
         }
+
+        HorizontalDivider()
+        val packageInfo = remember(context) { context.packageManager.getPackageInfo(context.packageName, 0) }
+        val versionText = stringResource(
+            R.string.settings_version,
+            packageInfo.versionName.orEmpty(),
+            PackageInfoCompat.getLongVersionCode(packageInfo),
+        )
+        Text(versionText, style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
     }
 
     picking?.let { target ->

@@ -23,3 +23,4 @@ Format: `YYYY-MM-DD · Thema · Regel · Warum`
 - 2026-10-26 · Daten · Room-Schema ändern ⇒ Migration schreiben + Schema exportieren, nie destruktiv; bundled-IDs nie ändern (Favoriten hängen an ihnen) · Nutzer: Favoriten/eigene Sätze müssen Updates überleben (getestet).
 - 2026-10-26 · Sprache · UI-Sprache per attachBaseContext + recreate(); LocaleContext.wrap für Benachrichtigungen; nach Sprachwechsel Settings-Tab bleibt erhalten · ersetzt reine Inhaltssprache.
 - 2026-10-26 · Inhalte · Sätze kurz/natürlich ohne KI-Muster (keine Gedankenstriche, 'nicht nur…sondern', Kitsch-Wörter); Texte ändern nur über ids stabil + version erhöhen; Favoriten bevorzugt (40 %) · Nutzerwunsch.
+- 2026-10-26 · UI · Einstellungen zeigen 'Version <name> (<code>)' am Ende (stringResource settings_version, PackageInfoCompat; LocalContext.getString ist per Lint verboten) · Nutzerwunsch.
