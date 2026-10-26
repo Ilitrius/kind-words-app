@@ -31,5 +31,11 @@ Legende: `[ ]` offen · `[x]` erledigt · Agent in Klammern
 - [ ] Testphasen, Produktion
 
 
-## Nächste Session (vom Nutzer am 2026-10-25 notiert)
-- [ ] Sprachumstellung: In den Einstellungen ändert "Inhaltssprache" nur die Sätze, nicht die App-Oberfläche (Buttons, Menüs, Tabs bleiben in der Systemsprache). Soll vollständig umgestellt werden (UI + Sätze). Ansatz prüfen: `AppCompatDelegate.setApplicationLocales` bzw. `LocaleManager` (per-App-Sprache, bereits über `locales_config` vorbereitet), Inhaltssprache daran koppeln.
+## Erledigt am 2026-10-26
+- [x] Sprachumstellung: Einstellung "Sprache" stellt jetzt die ganze App um (Oberfläche, Kategorien, Sätze, Benachrichtigung); Activity wird neu erstellt. Im Emulator getestet (de <-> en <-> System).
+- [x] Update-Test: Favoriten und eigene Sätze bleiben nach Update (versionCode 2 -> 3) erhalten.
+
+## Offen
+- [ ] Spenden-Button: vorhanden in Einstellungen; Nutzer wünscht evtl. weitere Platzierung (Rückfrage).
+- [ ] Play Console ausfüllen und Bundle hochladen (Nutzer; Anmeldung/Zahlungsdaten nicht durch Claude)
+- [ ] Optional: Auto-Backup für Favoriten/eigene Sätze bei Gerätewechsel (würde Datenschutztext + Data Safety ändern)

@@ -73,7 +73,7 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
     }
 
     fun selectCategory(c: String?) { _category.value = c }
-    fun setContentLanguage(lang: String?) { viewModelScope.launch { settings.setContentLanguage(lang) } }
+    suspend fun setContentLanguage(lang: String?) { settings.setContentLanguage(lang) }
     fun toggleFavorite(m: MessageEntity) { viewModelScope.launch { messages.setFavorite(m.id, !m.favorite) } }
 
     fun addUserMessage(text: String) {

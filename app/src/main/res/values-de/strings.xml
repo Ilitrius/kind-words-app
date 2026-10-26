@@ -60,8 +60,8 @@
     <string name="time_remove">%1$s entfernen</string>
     <string name="reminders_days">Wochentage</string>
 
-    <string name="settings_language">Inhaltssprache</string>
-    <string name="settings_language_info">Sprache der vorgeschlagenen Sätze.</string>
+    <string name="settings_language">Sprache</string>
+    <string name="settings_language_info">Sprache der App und der vorgeschlagenen Sätze.</string>
     <string name="lang_system">Systemsprache</string>
     <string name="lang_de">Deutsch</string>
     <string name="lang_en">English</string>

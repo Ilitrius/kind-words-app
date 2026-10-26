@@ -43,3 +43,7 @@ Das „Gehirn“ des Projekts: Entscheidungen, Fakten, Fallstricke. Wird von Men
 - Getestet (Release-Build, Emulator API 35): Alarm gesetzt, nach Neustart neu geplant, Benachrichtigung erscheint, Teilen öffnet System-Dialog mit dem Satz. Im Emulator steht eine frisch gestartete App nach Reboot im Bucket NEVER/Rare (Alarm +364 Tage) → zum Testen `adb shell am set-standby-bucket app.rpkindwords active`.
 - Wochentage-Chips: FlowRow statt horizontalem Scrollen (Sonntag war sonst nicht sichtbar).
 - 2026-10-25 · Offen · Sprachumstellung stellt nur die Sätze um, nicht die UI-Texte; Nutzer will beides (siehe TODO.md, nächste Session).
+
+## Sprache & Datenpflege (2026-10-26)
+- Sprache: `MainActivity.attachBaseContext` lädt Ressourcen in der gewählten Sprache (DataStore `content_lang`, null = System); Wechsel in den Einstellungen speichert und ruft `recreate()` auf. Benachrichtigungen nutzen `LocaleContext.wrap(…, lang)`.
+- Updates: Room ohne Destructive-Fallback; `USER`-Sätze und Favoriten bleiben (getestet). **Jede Schema-Änderung braucht eine Migration + exportiertes Schema, nie `fallbackToDestructiveMigration`.** Bundled-IDs stabil halten (Favoriten hängen an der ID). Neuinstallation/Gerätewechsel verliert Daten (allowBackup=false).

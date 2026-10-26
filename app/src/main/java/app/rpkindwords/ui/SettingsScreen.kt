@@ -48,6 +48,9 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
+import android.app.Activity
+import androidx.compose.runtime.rememberCoroutineScope
+import kotlinx.coroutines.launch
 import androidx.compose.ui.res.pluralStringResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
@@ -97,6 +100,14 @@ fun SettingsScreen(vm: MainViewModel, modifier: Modifier = Modifier) {
     var picking by remember { mutableStateOf<PickTarget?>(null) }
     LifecycleResumeEffect(Unit) { tick++; onPauseOrDispose { } }
     val canPost = remember(tick, s.enabled, permissionDenied) { NotificationHelper.canPost(context) }
+
+    val scope = rememberCoroutineScope()
+    val changeLanguage: (String?) -> Unit = { lang ->
+        scope.launch {
+            vm.setContentLanguage(lang)
+            (context as? Activity)?.recreate() // lädt alle Texte in der neuen Sprache
+        }
+    }
 
     val launcher = rememberLauncherForActivityResult(ActivityResultContracts.RequestPermission()) { granted ->
         permissionDenied = !granted
@@ -178,9 +189,9 @@ fun SettingsScreen(vm: MainViewModel, modifier: Modifier = Modifier) {
         SectionTitle(R.string.settings_language)
         Text(stringResource(R.string.settings_language_info), style = MaterialTheme.typography.bodyMedium)
         Row(Modifier.horizontalScroll(rememberScrollState()), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-            FilterChip(selected = langOverride == null, onClick = { vm.setContentLanguage(null) }, label = { Text(stringResource(R.string.lang_system)) })
-            FilterChip(selected = langOverride == "de", onClick = { vm.setContentLanguage("de") }, label = { Text(stringResource(R.string.lang_de)) })
-            FilterChip(selected = langOverride == "en", onClick = { vm.setContentLanguage("en") }, label = { Text(stringResource(R.string.lang_en)) })
+            FilterChip(selected = langOverride == null, onClick = { changeLanguage(null) }, label = { Text(stringResource(R.string.lang_system)) })
+            FilterChip(selected = langOverride == "de", onClick = { changeLanguage("de") }, label = { Text(stringResource(R.string.lang_de)) })
+            FilterChip(selected = langOverride == "en", onClick = { changeLanguage("en") }, label = { Text(stringResource(R.string.lang_en)) })
         }
 
         val donateUrl = stringResource(R.string.donate_url)

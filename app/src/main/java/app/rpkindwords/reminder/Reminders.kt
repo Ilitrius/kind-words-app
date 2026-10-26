@@ -17,6 +17,7 @@ import app.rpkindwords.KindWordsApp
 import app.rpkindwords.MainActivity
 import app.rpkindwords.R
 import app.rpkindwords.data.Languages
+import app.rpkindwords.data.LocaleContext
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -48,8 +49,10 @@ object NotificationHelper {
         return NotificationManagerCompat.from(context).areNotificationsEnabled()
     }
 
-    fun show(context: Context, text: String) {
+    fun show(base: Context, text: String, lang: String? = null) {
+        val context = LocaleContext.wrap(base, lang)
         if (!canPost(context)) return
+        createChannel(context)
         val flags = PendingIntent.FLAG_IMMUTABLE or PendingIntent.FLAG_UPDATE_CURRENT
         val open = PendingIntent.getActivity(context, 0, Intent(context, MainActivity::class.java), flags)
         val chooser = Intent.createChooser(ShareIntents.send(text), null).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
@@ -113,7 +116,7 @@ class ReminderReceiver : BroadcastReceiver() {
                 if (fire && settings.enabled) {
                     app.messages.ensureSeeded()
                     val lang = app.settings.contentLanguageOverride.first() ?: Languages.resolve(Locale.getDefault().language)
-                    app.messages.random(lang, null, null)?.let { NotificationHelper.show(app, it.text) }
+                    app.messages.random(lang, null, null)?.let { NotificationHelper.show(app, it.text, lang) }
                 }
                 // Boot/Update: Alarme sind weg -> neu planen. Zeit-/Zonenwechsel und Auslösung: ersetzen.
                 val keep = intent.action == Intent.ACTION_BOOT_COMPLETED || intent.action == Intent.ACTION_MY_PACKAGE_REPLACED
