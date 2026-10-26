@@ -18,7 +18,7 @@ android {
         applicationId = "app.rpkindwords"
         minSdk = 26
         targetSdk = 36
-        versionCode = 4
+        versionCode = 5
         versionName = "1.0.0"
     }
 
@@ -47,6 +47,8 @@ android {
     buildTypes {
         release {
             signingConfigs.findByName("release")?.let { signingConfig = it }
+            // Symboltabelle für nativen Code (AndroidX-Libs) im Bundle: bessere Absturz-/ANR-Analyse in der Play Console
+            ndk.debugSymbolLevel = "SYMBOL_TABLE"
             isMinifyEnabled = true
             isShrinkResources = true
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")

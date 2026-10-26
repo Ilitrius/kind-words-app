@@ -2,6 +2,7 @@ package app.rpkindwords.data
 
 import android.content.Context
 import java.util.UUID
+import kotlin.random.Random
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.sync.Mutex
@@ -19,6 +20,12 @@ class AssetContentSource(private val context: Context) : ContentSource {
     } catch (_: Exception) {
         null
     }
+}
+
+/** Anteil der Vorschläge, die bevorzugt aus den Favoriten kommen. */
+object FavoriteBias {
+    const val SHARE = 0.4
+    fun preferFavorite(roll: Double): Boolean = roll < SHARE
 }
 
 class MessageRepository(
@@ -46,8 +53,20 @@ class MessageRepository(
         }
     }
 
-    suspend fun random(language: String, category: String?, excludeId: String?): MessageEntity? =
-        dao.random(language, category, excludeId ?: "")
+    /**
+     * Zufälliger Vorschlag. Favoriten werden bevorzugt: in [FavoriteBias.SHARE] der Fälle kommt – falls vorhanden –
+     * ein Favorit (passend zu Sprache/Kategorie), sonst ein beliebiger Satz.
+     */
+    suspend fun random(
+        language: String,
+        category: String?,
+        excludeId: String?,
+        roll: Double = Random.nextDouble(),
+    ): MessageEntity? {
+        val exclude = excludeId ?: ""
+        if (FavoriteBias.preferFavorite(roll)) dao.randomFavorite(language, category, exclude)?.let { return it }
+        return dao.random(language, category, exclude)
+    }
 
     fun observe(id: String): Flow<MessageEntity?> = dao.observe(id)
     fun favorites(): Flow<List<MessageEntity>> = dao.observeFavorites()

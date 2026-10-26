@@ -58,6 +58,13 @@ interface MessageDao {
     )
     suspend fun random(language: String, category: String?, excludeId: String): MessageEntity?
 
+    @Query(
+        "SELECT * FROM messages WHERE language = :language AND hidden = 0 AND favorite = 1 " +
+            "AND (:category IS NULL OR category = :category) AND id != :excludeId " +
+            "ORDER BY RANDOM() LIMIT 1",
+    )
+    suspend fun randomFavorite(language: String, category: String?, excludeId: String): MessageEntity?
+
     @Query("SELECT * FROM messages WHERE id = :id")
     fun observe(id: String): Flow<MessageEntity?>
 

@@ -47,3 +47,10 @@ Das „Gehirn“ des Projekts: Entscheidungen, Fakten, Fallstricke. Wird von Men
 ## Sprache & Datenpflege (2026-10-26)
 - Sprache: `MainActivity.attachBaseContext` lädt Ressourcen in der gewählten Sprache (DataStore `content_lang`, null = System); Wechsel in den Einstellungen speichert und ruft `recreate()` auf. Benachrichtigungen nutzen `LocaleContext.wrap(…, lang)`.
 - Updates: Room ohne Destructive-Fallback; `USER`-Sätze und Favoriten bleiben (getestet). **Jede Schema-Änderung braucht eine Migration + exportiertes Schema, nie `fallbackToDestructiveMigration`.** Bundled-IDs stabil halten (Favoriten hängen an der ID). Neuinstallation/Gerätewechsel verliert Daten (allowBackup=false).
+
+## Inhalte & Auswahl (2026-10-26)
+- Sätze neu formuliert (kurz, alltagsnah, wenig "KI-Klang"): Ø 50/44 Zeichen (de/en), Content-Version 2, ids/Kategorien unverändert (Favoriten bleiben; Update-Pfad im Emulator getestet). Stilregeln: .claude/agent-memory/content/notes.md.
+- Zufallsauswahl bevorzugt Favoriten: `FavoriteBias.SHARE = 0.4` (MessageRepository.random), Test FavoriteBiasTest.
+- `ndk.debugSymbolLevel = SYMBOL_TABLE` gesetzt; AndroidX-.so sind schon gestrippt → Play-Warnung "keine Debug-Symbole" bleibt (nur Hinweis).
+- Store-Grafiken v2 (Icon plastisch mit Glanz/Funkeln, Feature-Graphic mit Sprechblasen, Name "RP Kind Words"); Screenshots 1350x2400 (9:16). Quelle: store/tools/*.py, Veröffentlichung via docs/store-assets.
+- App-Name "RP Kind Words" (Launcher, Store). versionCode aktuell 5 (noch nicht hochgeladen; Alpha-Release 4 ist bei Google in Prüfung).
