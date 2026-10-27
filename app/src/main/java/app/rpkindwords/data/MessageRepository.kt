@@ -99,6 +99,25 @@ class MessageRepository(
 
     suspend fun deleteUser(id: String) = dao.deleteUser(id)
 
+    /** Eigene Sätze und Favoriten für das Backup; Einstellungen ergänzt der Aufrufer. */
+    suspend fun backupContent(): Pair<List<BackupCustom>, List<String>> =
+        dao.allUser().map { BackupCustom(it.language, it.text, it.favorite) } to dao.bundledFavoriteIds()
+
+    /** Fügt Backup-Inhalte hinzu (löscht nichts, überspringt vorhandene eigene Sätze). Ergebnis: (neue Sätze, gesetzte Favoriten). */
+    suspend fun restoreContent(custom: List<BackupCustom>, favorites: List<String>): Pair<Int, Int> {
+        val existing = dao.allUser().map { it.language to it.text }.toMutableSet()
+        val now = clock()
+        val fresh = custom.filter { existing.add(it.language to it.text) }
+            .map { MessageEntity("user-${UUID.randomUUID()}", it.language, CATEGORY_CUSTOM, it.text, Source.USER, it.favorite, false, now) }
+        if (fresh.isNotEmpty()) dao.insertAll(fresh)
+        var favs = fresh.count { it.favorite }
+        for (id in favorites) {
+            val m = dao.get(id) ?: continue
+            if (m.source == Source.BUNDLED && !m.favorite) { dao.setFavorite(id, true); favs++ }
+        }
+        return fresh.size to favs
+    }
+
     companion object {
         const val CATEGORY_CUSTOM = "custom"
         val categories = listOf(

@@ -23,6 +23,10 @@ Das „Gehirn“ des Projekts: Entscheidungen, Fakten, Fallstricke. Wird von Men
 - Spenden-Button (Einstellungen): `donate_url` in `res/values/donate.xml` (`translatable=false`, gleicher Stripe-Link wie RPCT-App); öffnet per `ACTION_VIEW` den Browser; ist die URL leer/nicht `https://`, wird die Karte ausgeblendet. Freiwillig, schaltet nichts frei; die App übermittelt selbst keine Daten, keine zusätzliche Berechtigung.
 - Zielgruppe: ab 13 Jahren; keine Konten, kein Tracking (Vorgabe Koordinator 2026-10-25).
 
+## Pflichtanforderungen-Abgleich (2026-10-27)
+- Plan: `docs/APP-PLAN.md`. Neu im Code (versionCode 6, **noch nicht gebaut/getestet**, in der Cloud ohne Android-SDK geschrieben): Splash (`core-splashscreen`, Theme `Theme.KindWords.Starting`), Datenschutzlink in Einstellungen (`privacy_url` je Sprache), Update-Hinweis (`update/UpdateController`, Play `app-update` 2.1.0, flexibel, max. 1×/24 h via DataStore `last_update_check`), Export/Import JSON (`data/Backup.kt`, Format v1, nur ergänzend, Test `BackupCodecTest`).
+- Zu prüfen beim ersten Build: Manifest-Merge (fügt `app-update` Berechtigungen hinzu?), Lint, Splash-Optik, Backup-Roundtrip im Emulator. Crash-Reporting bewusst nicht (siehe Plan 8).
+
 ## Fallstricke
 - `Icons.Filled.*` braucht `material-icons-core` explizit als Dependency (kommt nicht transitiv durch material3); `ContentCopy` etc. sind nur in `-extended` (bewusst nicht genutzt, zu groß).
 - Dynamic Color nur ab API 31 (`Build.VERSION_CODES.S`), minSdk ist 26 – sonst Lint-Fehler.

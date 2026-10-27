@@ -33,6 +33,12 @@ interface MessageDao {
     @Query("SELECT * FROM messages WHERE language = :language AND source = 'BUNDLED'")
     suspend fun bundledForLanguage(language: String): List<MessageEntity>
 
+    @Query("SELECT * FROM messages WHERE source = 'USER'")
+    suspend fun allUser(): List<MessageEntity>
+
+    @Query("SELECT id FROM messages WHERE source = 'BUNDLED' AND favorite = 1")
+    suspend fun bundledFavoriteIds(): List<String>
+
     @Query("SELECT id FROM messages WHERE source = 'USER'")
     suspend fun userIds(): List<String>
 

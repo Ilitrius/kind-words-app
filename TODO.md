@@ -36,6 +36,9 @@ Legende: `[ ]` offen · `[x]` erledigt · Agent in Klammern
 - [x] Update-Test: Favoriten und eigene Sätze bleiben nach Update (versionCode 2 -> 3) erhalten.
 
 ## Offen
+- [ ] Build 6 (Splash, Datenschutzlink, Update-Hinweis, Export/Import) bauen: `.\gradlew.bat lintDebug testDebugUnitTest assembleDebug`, im Emulator prüfen; Manifest-Berechtigungen und Data Safety gegenprüfen (Code ist geschrieben, nie kompiliert)
+- [ ] Doppelte KI-Prüfung (zweites Modell eines anderen Anbieters) vor Release dokumentieren (`docs/APP-PLAN.md` Abschnitt 8)
+- [ ] Doku-Lücken laut Plan: Prüfkriterien Energie, Abhängigkeits-Scan
 - [ ] Spenden-Button: vorhanden in Einstellungen; Nutzer wünscht evtl. weitere Platzierung (Rückfrage).
 - [ ] Play Console ausfüllen und Bundle hochladen (Nutzer; Anmeldung/Zahlungsdaten nicht durch Claude)
 - [ ] Optional: Auto-Backup für Favoriten/eigene Sätze bei Gerätewechsel (würde Datenschutztext + Data Safety ändern)

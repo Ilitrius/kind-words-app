@@ -75,4 +75,22 @@
     <string name="channel_reminders_name">Erinnerungen</string>
     <string name="channel_reminders_desc">Gelegentliche nette Worte zum Teilen</string>
     <string name="notification_title">Ein nettes Wort für heute</string>
+
+    <string name="backup_title">Sicherung</string>
+    <string name="backup_text">Speichere deine eigenen Sätze, Favoriten und Einstellungen in einer Datei deiner Wahl oder stelle sie aus einer solchen Datei wieder her. Es wird nichts versendet. Beim Import wird nur ergänzt, nichts gelöscht.</string>
+    <string name="backup_export">Exportieren</string>
+    <string name="backup_import">Importieren</string>
+    <string name="backup_export_done">Sicherung gespeichert.</string>
+    <string name="backup_export_failed">Die Sicherung konnte nicht gespeichert werden.</string>
+    <string name="backup_import_done">Importiert: %1$d neue Sätze, %2$d Favoriten.</string>
+    <string name="backup_import_invalid">Diese Datei ist keine gültige Kind-Words-Sicherung.</string>
+
+    <string name="privacy_link">Datenschutzerklärung</string>
+    <string name="privacy_url">https://ilitrius.github.io/kind-words-app/datenschutz.html</string>
+
+    <string name="update_available">Eine neue Version ist verfügbar.</string>
+    <string name="update_action">Aktualisieren</string>
+    <string name="update_later">Später</string>
+    <string name="update_ready">Das Update ist bereit.</string>
+    <string name="update_restart">Neu starten</string>
 </resources>

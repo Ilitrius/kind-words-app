@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <style name="Theme.KindWords" parent="android:Theme.Material.Light.NoActionBar" />
+
+    <!-- Splash-Screen beim Start: Logo auf Markenfarbe, ohne Animation (akkuschonend); danach Theme.KindWords -->
+    <style name="Theme.KindWords.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">#DE1E5A</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_launcher_foreground</item>
+        <item name="postSplashScreenTheme">@style/Theme.KindWords</item>
+    </style>
 </resources>
