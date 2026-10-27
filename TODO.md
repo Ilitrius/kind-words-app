@@ -61,3 +61,22 @@ Legende: `[ ]` offen · `[x]` erledigt · Agent in Klammern
 - [x] (2026-10-27, geprüft, keine Lücken) Akkuschonend: App soll möglichst wenig Energie verbrauchen — keine unnötigen Hintergrund-Jobs/Wakelocks/Polling, Alarme nur wenn nötig (inexakt statt exakt), Coroutines/Flows nur bei sichtbarer UI sammeln (`collectAsStateWithLifecycle`), Animationen/Render-Schleifen im Hintergrund stoppen, Wiederholungen und Neuzeichnen minimieren. Per Profiler/Battery Historian prüfen. Gilt für alle Apps.
 
 - [ ] Nächster Build: `.\gradlew.bat assembleDebug lintDebug test` ausführen (2026-10-27 ohne SDK geschrieben, ungebaut); gemergtes Manifest auf fehlendes INTERNET prüfen; Update-Flow nur über Play-Internal-Test-Track testbar.
+
+## Stand 2026-10-27 (Abend) – To-do für morgen
+Ziel: Am Ende steht ein neues, komplettes Release im geschlossenen Test (Alpha) bereit.
+
+Stand: Branch `claude/zen-keller-65rvby`; in der Cloud grün: `assembleDebug`, `lintDebug`, 33 Unit-Tests. Neu seit Build 5: Update-Hinweis, Locale-Fix, Zielgruppe (Für sie/Für ihn/Divers, Room v2, Content v5), Couch/Sofa-Regel, Backup-Ausschluss, Erinnerungs-Fix.
+
+1. [ ] Lokal: `git pull`, dann `.\gradlew.bat clean assembleDebug lintDebug test` (JDK 17) – alle Unit-Tests durchführen (qa-tester)
+2. [ ] Emulator `Pixel_API35` (qa-tester): Zielgruppen-Auswahl (sie/ihn/divers, abwählen, Hinweis), Sätze passen zur Auswahl; Sprachumschaltung System/DE/EN in allen Menüfeldern inkl. Benachrichtigung, Wochentage, Uhrzeit; Erinnerung (zufällig + feste Zeiten, Neustart/Boot, Aktion "Teilen"); Favoriten, eigene Sätze; Spenden-Button; Rotation; Dark Mode
+3. [ ] Update-Test auf Daten: Installation Build 5 (versionCode 5) -> neuer Build: Favoriten und eigene Sätze bleiben, Room-Migration 1->2 ohne Absturz
+4. [ ] Entscheidung: `feature/pflichtanforderungen-build6` mergen (Splash, Datenschutzlink, Export/Import, `docs/APP-PLAN.md`)? Konflikte in 14 Dateien, Update-Hinweis doppelt (`InAppUpdater` vs `UpdateController`) – einen wählen; Room-Version zusammenführen. Danach APP-PLAN.md mit neuem Stand aktualisieren (Zielgruppe, Review, Änderungsprotokoll) (android-dev)
+5. [ ] Gemergtes Manifest prüfen (kein INTERNET, keine neue Berechtigung); Lint-Warnung `AppBundleLocaleChanges` (LocaleContext) für das Bundle beurteilen
+6. [ ] Datenschutz + Data Safety gegenprüfen: Zielgruppen-Auswahl (nur lokal gespeichert), Backup-Ausschluss, Update-Prüfung (legal-docs, play-release)
+7. [ ] Offene Review-Punkte (optional, Opus-Review): `runBlocking` in `MainActivity.attachBaseContext`, Updater bei Rotation, Kategorie nach Prozess-Tod (SavedStateHandle), Favoritenliste ohne Zielgruppenfilter (Entscheid), `countVisible` entfernen
+8. [ ] Doppelte KI-Prüfung (Pflicht 9): zweites Modell eines ANDEREN Anbieters festlegen und Review wiederholen; Ergebnis im Plan protokollieren (bisher nur Opus 5.5 = gleicher Anbieter)
+9. [ ] Inhalte durchlesen: neue Sätze für sie/ihn (je 100 pro Sprache) auf Ton, Kosenamen, Klischees prüfen (i18n-guardian)
+10. [ ] Store-Texte und Screenshots um Zielgruppen-Auswahl ergänzen (de/en, Titel ≤30, Kurz ≤80, Beschreibung ≤4000) (play-release)
+11. [ ] Release bauen: versionCode/versionName erhöhen (mind. 6 / z. B. 1.1.0), `.\gradlew.bat bundleRelease` (Keystore unter `D:\AI_KI\...`), AAB im Emulator (R8) starten, `mapping.txt` sichern
+12. [ ] Upload in die Play Console, Alpha/Geschlossener Test (Nutzer); Release-Notes de/en; danach ≥12 Tester, 14 Tage
+13. [ ] Weiterhin offen: Keystore + Passwörter extern sichern; Anbieterdaten und Zahlungskonto-Hinweis bestätigen; weitere Platzierung des Spenden-Buttons; Crash-Reporting später (Opt-in)
