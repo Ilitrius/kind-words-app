@@ -34,6 +34,10 @@
     <string name="favorite_remove">Remove from favorites</string>
 
     <string name="home_empty">No words found for this selection yet.</string>
+    <string name="audience_female">For her</string>
+    <string name="audience_male">For him</string>
+    <string name="audience_diverse">Diverse</string>
+    <string name="audience_hint">Choose who the words are for. Until then you only see neutral ones, which fit everyone.</string>
     <string name="favorites_empty">No favorites yet. Tap the heart on a suggestion to keep it here.</string>
     <string name="mine_empty">You have not written any words yet. Add your own kind sentences here.</string>
     <string name="mine_add">Add</string>

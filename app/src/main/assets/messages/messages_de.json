@@ -1,6 +1,6 @@
 {
   "language": "de",
-  "version": 3,
+  "version": 4,
   "messages": [
     {
       "id": "de-love-001",
@@ -1001,6 +1001,1206 @@
       "id": "de-apology-020",
       "category": "apology",
       "text": "Sorry. Ich hab dich lieb, auch wenn ich es grad nicht so zeige."
+    },
+    {
+      "id": "de-f-love-001",
+      "category": "love",
+      "text": "Ich liebe dich, Schatz. Heute genauso wie gestern und morgen noch ein Stück mehr.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-love-002",
+      "category": "love",
+      "text": "Du bist mein Lieblingsmensch, meine Liebste.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-love-003",
+      "category": "love",
+      "text": "Wenn du lachst, fühlt sich die ganze Welt ein bisschen wärmer an.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-love-004",
+      "category": "love",
+      "text": "Mit dir ist jeder Moment wie ein kleines Geschenk.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-love-005",
+      "category": "love",
+      "text": "Ich bin so dankbar, dass wir uns gefunden haben.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-love-006",
+      "category": "love",
+      "text": "Dein Herz ist mein liebster Ort auf der Welt.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-love-007",
+      "category": "love",
+      "text": "Du machst mein Leben bunter, einfach weil du du bist.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-love-008",
+      "category": "love",
+      "text": "Ich denke an dich und mein Herz wird ganz weich.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-love-009",
+      "category": "love",
+      "text": "Bei dir bin ich angekommen, und das fühlt sich wunderschön an.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-love-010",
+      "category": "love",
+      "text": "Ich liebe es, wie du mich ansiehst. Da fühlt sich alles richtig an.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-appreciation-001",
+      "category": "appreciation",
+      "text": "Ich bewundere, wie liebevoll du mit allen umgehst.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-appreciation-002",
+      "category": "appreciation",
+      "text": "Du hast ein Herz, das jeden Raum wärmer macht. Danke, dass du es mit mir teilst.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-appreciation-003",
+      "category": "appreciation",
+      "text": "Wie du dich für andere einsetzt, berührt mich jedes Mal.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-appreciation-004",
+      "category": "appreciation",
+      "text": "Du gibst so viel und merkst es oft gar nicht. Ich sehe es, Schatz.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-appreciation-005",
+      "category": "appreciation",
+      "text": "Deine Art, an alles mit Herz heranzugehen, ist wunderbar.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-appreciation-006",
+      "category": "appreciation",
+      "text": "Ich schätze an dir, wie ehrlich und weich du zugleich bist.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-appreciation-007",
+      "category": "appreciation",
+      "text": "Du bist stärker, als du denkst, und dabei so sanft.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-appreciation-008",
+      "category": "appreciation",
+      "text": "Was du Tag für Tag leistest, verdient viel mehr Applaus.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-appreciation-009",
+      "category": "appreciation",
+      "text": "Ich bin stolz auf dich und auf alles, was du bist.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-appreciation-010",
+      "category": "appreciation",
+      "text": "Deine Fürsorge macht unser Zuhause zu einem Wohlfühlort.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-morning-001",
+      "category": "morning",
+      "text": "Guten Morgen, Liebste! Der Tag wartet schon auf dich.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-morning-002",
+      "category": "morning",
+      "text": "Guten Morgen, mein Schatz. Ich wünsche dir einen sanften, schönen Start.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-morning-003",
+      "category": "morning",
+      "text": "Ein neuer Tag, und ich freue mich darauf, an dich zu denken.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-morning-004",
+      "category": "morning",
+      "text": "Guten Morgen, meine Schöne. Heute darf alles leicht gehen.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-morning-005",
+      "category": "morning",
+      "text": "Ich hoffe, du hast süß geträumt. Komm gut in den Tag.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-morning-006",
+      "category": "morning",
+      "text": "Guten Morgen! Nimm dir einen Kaffee und ein Lächeln mit.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-morning-007",
+      "category": "morning",
+      "text": "Heute ist ein guter Tag für dich, ich spür das.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-morning-008",
+      "category": "morning",
+      "text": "Aufwachen mit dem Gedanken an dich ist mein liebster Anfang.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-morning-009",
+      "category": "morning",
+      "text": "Guten Morgen, Maus. Ich drück dich in Gedanken ganz fest.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-morning-010",
+      "category": "morning",
+      "text": "Die Sonne scheint heute extra für dich, das ist ganz sicher so.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-goodnight-001",
+      "category": "goodnight",
+      "text": "Gute Nacht, Schatz. Träum etwas ganz Schönes.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-goodnight-002",
+      "category": "goodnight",
+      "text": "Schlaf gut, meine Liebste. Ich bin in Gedanken bei dir.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-goodnight-003",
+      "category": "goodnight",
+      "text": "Kuschel dich ein und lass den Tag los. Du hast es dir verdient.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-goodnight-004",
+      "category": "goodnight",
+      "text": "Gute Nacht und süße Träume. Morgen wartet wieder ein neuer Tag mit dir.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-goodnight-005",
+      "category": "goodnight",
+      "text": "Ich schick dir einen Kuss durch die Nacht.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-goodnight-006",
+      "category": "goodnight",
+      "text": "Atme tief durch, mein Herz. Der Tag darf jetzt sanft ausklingen.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-goodnight-007",
+      "category": "goodnight",
+      "text": "Der Mond passt auf dich auf, und ich auch.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-goodnight-008",
+      "category": "goodnight",
+      "text": "Schlaf gut, Maus. Ich freu mich schon auf morgen mit dir.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-goodnight-009",
+      "category": "goodnight",
+      "text": "Ich wünsche dir eine weiche, warme Nacht.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-goodnight-010",
+      "category": "goodnight",
+      "text": "Gute Nacht, meine Schöne. Du darfst jetzt ganz zur Ruhe kommen.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-encouragement-001",
+      "category": "encouragement",
+      "text": "Du schaffst das, Schatz. Ich glaube fest an dich.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-encouragement-002",
+      "category": "encouragement",
+      "text": "Du bist mutiger, als du gerade denkst.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-encouragement-003",
+      "category": "encouragement",
+      "text": "Geh deinen Weg mit deinem Herzen. Es führt dich richtig.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-encouragement-004",
+      "category": "encouragement",
+      "text": "Egal wie der Tag läuft, du bist wundervoll, so wie du bist.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-encouragement-005",
+      "category": "encouragement",
+      "text": "Atme durch, Liebste. Du musst nicht alles heute lösen.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-encouragement-006",
+      "category": "encouragement",
+      "text": "Ich bin an deiner Seite, Liebste, was auch kommt.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-encouragement-007",
+      "category": "encouragement",
+      "text": "Du hast schon so viel gemeistert. Das hier wird auch gut.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-encouragement-008",
+      "category": "encouragement",
+      "text": "Vertrau dir. Deine Intuition kennt den Weg.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-encouragement-009",
+      "category": "encouragement",
+      "text": "Du verdienst alles Schöne, und es kommt zu dir.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-encouragement-010",
+      "category": "encouragement",
+      "text": "Kleine Schritte zählen auch, und du gehst sie wunderbar.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-missyou-001",
+      "category": "missyou",
+      "text": "Ich vermisse dich, Schatz. Komm bald in meine Arme.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-missyou-002",
+      "category": "missyou",
+      "text": "Dein Lachen fehlt mir heute. Ich zähle die Stunden bis zu dir.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-missyou-003",
+      "category": "missyou",
+      "text": "Jeder Gedanke an dich zieht mein Herz zu dir.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-missyou-004",
+      "category": "missyou",
+      "text": "Ich vermisse dich mehr, als Worte sagen können.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-missyou-005",
+      "category": "missyou",
+      "text": "Ohne dich fehlt dem Tag sein Mittelpunkt. Bis bald, Liebste.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-missyou-006",
+      "category": "missyou",
+      "text": "Ich sehne mich nach deiner Umarmung.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-missyou-007",
+      "category": "missyou",
+      "text": "Ich träume schon von dem Moment, in dem ich dich wiedersehe.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-missyou-008",
+      "category": "missyou",
+      "text": "Du fehlst mir, Maus. Ich freu mich so auf dich.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-missyou-009",
+      "category": "missyou",
+      "text": "Ich vermisse deine Stimme und dein Lächeln.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-missyou-010",
+      "category": "missyou",
+      "text": "Bald sind wir wieder beieinander. Bis dahin schick ich dir einen Kuss.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-compliment-001",
+      "category": "compliment",
+      "text": "Du siehst heute wunderschön aus, meine Schöne.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-compliment-002",
+      "category": "compliment",
+      "text": "Deine Wirkung auf mich ist unglaublich. Ich werde ganz warm, wenn du reinkommst.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-compliment-003",
+      "category": "compliment",
+      "text": "Dein Lächeln ist das Schönste, was ich kenne.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-compliment-004",
+      "category": "compliment",
+      "text": "Du hast eine Art, Menschen glücklich zu machen. Mich zuerst.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-compliment-005",
+      "category": "compliment",
+      "text": "Deine Augen sind einfach wunderschön.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-compliment-006",
+      "category": "compliment",
+      "text": "Du bist elegant und herzlich zugleich. Das ist selten.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-compliment-007",
+      "category": "compliment",
+      "text": "Wie du lachst, bringt jeden Raum zum Leuchten.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-compliment-008",
+      "category": "compliment",
+      "text": "Du bist schön von innen und von außen, Schatz.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-compliment-009",
+      "category": "compliment",
+      "text": "Alles an dir wirkt so wohltuend und weich.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-compliment-010",
+      "category": "compliment",
+      "text": "Du siehst in Jeans und Pulli genauso hinreißend aus wie im Kleid.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-humor-001",
+      "category": "humor",
+      "text": "Ich hab dich so lieb, dass ich dir sogar das letzte Stück Schokolade überlasse. Fast.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-humor-002",
+      "category": "humor",
+      "text": "Du und Kaffee: meine zwei liebsten Morgenmomente.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-humor-003",
+      "category": "humor",
+      "text": "Wenn du lachst, lachen meine Gedanken mit. Ganz ohne Grund.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-humor-004",
+      "category": "humor",
+      "text": "Ich würde dir jederzeit mein Sofaplätzchen überlassen, Schatz.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-humor-005",
+      "category": "humor",
+      "text": "Mein Herz hat dich als Favoriten gespeichert, ganz oben.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-humor-006",
+      "category": "humor",
+      "text": "Ich schau so oft aufs Handy, weil ich hoffe, dass du schreibst.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-humor-007",
+      "category": "humor",
+      "text": "Ich hab dich lieber als Pizza. Und das will was heißen.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-humor-008",
+      "category": "humor",
+      "text": "Maus, du bist mein persönliches Highlight des Tages, noch vor dem Feierabend.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-humor-009",
+      "category": "humor",
+      "text": "Wenn Umarmungen Währung wären, wäre ich mit dir sofort reich.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-humor-010",
+      "category": "humor",
+      "text": "Ich wollte nur sagen: Du bist ziemlich großartig. Das war's, tschüss!",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-thanks-001",
+      "category": "thanks",
+      "text": "Danke, dass du immer ein offenes Ohr für mich hast, Schatz.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-thanks-002",
+      "category": "thanks",
+      "text": "Danke für deine Wärme. Sie trägt mich durch viele Tage.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-thanks-003",
+      "category": "thanks",
+      "text": "Ich danke dir für jede liebe Geste, auch die kleinen.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-thanks-004",
+      "category": "thanks",
+      "text": "Danke, dass du an mich glaubst, selbst wenn ich zweifle.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-thanks-005",
+      "category": "thanks",
+      "text": "Du machst mein Leben reicher. Danke dafür, Liebste.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-thanks-006",
+      "category": "thanks",
+      "text": "Danke für deine Geduld und dein großes Herz.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-thanks-007",
+      "category": "thanks",
+      "text": "Danke für die Umarmungen, die alles gut machen.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-thanks-008",
+      "category": "thanks",
+      "text": "Danke, dass du mich so nimmst, wie ich bin.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-thanks-009",
+      "category": "thanks",
+      "text": "Ich bin dir so dankbar für alles, was du für uns tust.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-thanks-010",
+      "category": "thanks",
+      "text": "Danke für dein Lächeln heute Morgen. Es hat meinen Tag getragen.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-apology-001",
+      "category": "apology",
+      "text": "Es tut mir leid, Schatz. Du bedeutest mir so viel, und ich möchte es besser machen.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-apology-002",
+      "category": "apology",
+      "text": "Entschuldige bitte. Du bist mir wichtig, und ich will, dass es dir gut geht.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-apology-003",
+      "category": "apology",
+      "text": "Verzeih mir, Liebste. Ich hab dich von Herzen lieb.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-apology-004",
+      "category": "apology",
+      "text": "Das wollte ich so nicht. Entschuldige, mein Schatz.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-apology-005",
+      "category": "apology",
+      "text": "Ich wünsche mir, dass wir wieder ganz leicht miteinander sind. Verzeihst du mir?",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-apology-006",
+      "category": "apology",
+      "text": "Entschuldige, dass ich nicht aufmerksam war. Ich bin jetzt ganz für dich da.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-apology-007",
+      "category": "apology",
+      "text": "Mir ist unser Miteinander wichtig. Lass uns einen Neuanfang machen.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-apology-008",
+      "category": "apology",
+      "text": "Ich nehme dich in den Arm, sobald du magst. Es tut mir leid.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-apology-009",
+      "category": "apology",
+      "text": "Danke für deine Größe, Maus. Entschuldige bitte, ich lerne daraus.",
+      "audience": "f"
+    },
+    {
+      "id": "de-f-apology-010",
+      "category": "apology",
+      "text": "Du bist mir kostbar. Entschuldige, dass ich dich nicht gesehen hab.",
+      "audience": "f"
+    },
+    {
+      "id": "de-m-love-001",
+      "category": "love",
+      "text": "Ich liebe dich, Großer.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-love-002",
+      "category": "love",
+      "text": "Mit dir fühl ich mich zuhause.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-love-003",
+      "category": "love",
+      "text": "Du bist mein Mensch. Einfach so.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-love-004",
+      "category": "love",
+      "text": "Schön, dass wir uns haben.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-love-005",
+      "category": "love",
+      "text": "Ich bin gern an deiner Seite.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-love-006",
+      "category": "love",
+      "text": "Ich hab dich lieb, das wollte ich mal gesagt haben.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-love-007",
+      "category": "love",
+      "text": "Du bist mein Fels. Das weißt du hoffentlich.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-love-008",
+      "category": "love",
+      "text": "Mit dir ist alles ein Stück leichter.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-love-009",
+      "category": "love",
+      "text": "Ich liebe uns, so wie wir sind.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-love-010",
+      "category": "love",
+      "text": "Bei dir ist mein liebster Platz.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-appreciation-001",
+      "category": "appreciation",
+      "text": "Auf dich ist Verlass. Das schätze ich sehr.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-appreciation-002",
+      "category": "appreciation",
+      "text": "Ich find gut, wie du die Dinge anpackst.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-appreciation-003",
+      "category": "appreciation",
+      "text": "Du hast eine ruhige Stärke, die mir guttut.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-appreciation-004",
+      "category": "appreciation",
+      "text": "Danke, dass du immer da bist, wenn es drauf ankommt.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-appreciation-005",
+      "category": "appreciation",
+      "text": "Du machst das richtig gut, mein Mann.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-appreciation-006",
+      "category": "appreciation",
+      "text": "Ich bin stolz auf dich.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-appreciation-007",
+      "category": "appreciation",
+      "text": "Du bist ein Mensch, auf den man bauen kann.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-appreciation-008",
+      "category": "appreciation",
+      "text": "Ich vertraue dir, einfach so, von Herzen.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-appreciation-009",
+      "category": "appreciation",
+      "text": "Dein Einsatz fällt mir auf. Und ich schätze ihn.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-appreciation-010",
+      "category": "appreciation",
+      "text": "Du gibst Halt, ohne viele Worte.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-morning-001",
+      "category": "morning",
+      "text": "Guten Morgen, Schatz. Mach was Schönes aus dem Tag.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-morning-002",
+      "category": "morning",
+      "text": "Moin, Großer. Ich wünsch dir einen guten Start.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-morning-003",
+      "category": "morning",
+      "text": "Guten Morgen. Du packst das heute.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-morning-004",
+      "category": "morning",
+      "text": "Kaffee, tief durchatmen, los. Guten Morgen!",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-morning-005",
+      "category": "morning",
+      "text": "Schönen Morgen dir. Ich denk an dich.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-morning-006",
+      "category": "morning",
+      "text": "Guten Morgen, mein Mann. Heute läuft's.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-morning-007",
+      "category": "morning",
+      "text": "Einen entspannten Start wünsch ich dir.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-morning-008",
+      "category": "morning",
+      "text": "Guten Morgen. Schön, dass du da bist.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-morning-009",
+      "category": "morning",
+      "text": "Neuer Tag, neue Chance. Ich glaub an dich.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-morning-010",
+      "category": "morning",
+      "text": "Morgen, Großer. Ich freu mich auf heute Abend.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-goodnight-001",
+      "category": "goodnight",
+      "text": "Gute Nacht, Schatz. Schlaf gut.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-goodnight-002",
+      "category": "goodnight",
+      "text": "Schlaf gut, mein Fels. Du hast heute viel geschafft.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-goodnight-003",
+      "category": "goodnight",
+      "text": "Gute Nacht. Bis morgen früh.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-goodnight-004",
+      "category": "goodnight",
+      "text": "Lass den Tag los und ruh dich aus.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-goodnight-005",
+      "category": "goodnight",
+      "text": "Schlaf gut, Großer. Ich bin stolz auf dich.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-goodnight-006",
+      "category": "goodnight",
+      "text": "Feierabend für den Kopf. Gute Nacht.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-goodnight-007",
+      "category": "goodnight",
+      "text": "Gute Nacht und träum was Schönes.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-goodnight-008",
+      "category": "goodnight",
+      "text": "Du hast dir deinen Schlaf verdient.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-goodnight-009",
+      "category": "goodnight",
+      "text": "Gute Nacht, mein Mann. Morgen ist wieder ein guter Tag.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-goodnight-010",
+      "category": "goodnight",
+      "text": "Ich wünsch dir eine ruhige Nacht.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-encouragement-001",
+      "category": "encouragement",
+      "text": "Du schaffst das. Ich bin sicher.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-encouragement-002",
+      "category": "encouragement",
+      "text": "Schritt für Schritt, du machst das gut.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-encouragement-003",
+      "category": "encouragement",
+      "text": "Ich glaub an dich, Großer.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-encouragement-004",
+      "category": "encouragement",
+      "text": "Du hast schon ganz anderes gemeistert.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-encouragement-005",
+      "category": "encouragement",
+      "text": "Bleib ruhig. Du weißt, was du kannst.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-encouragement-006",
+      "category": "encouragement",
+      "text": "Ich steh hinter dir, egal wie es ausgeht.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-encouragement-007",
+      "category": "encouragement",
+      "text": "Mach in deinem Tempo. Es passt.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-encouragement-008",
+      "category": "encouragement",
+      "text": "Du bist besser vorbereitet, als du denkst.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-encouragement-009",
+      "category": "encouragement",
+      "text": "Tief durchatmen. Das kriegst du hin.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-encouragement-010",
+      "category": "encouragement",
+      "text": "Vertrau deinem Bauchgefühl. Meistens liegst du richtig.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-missyou-001",
+      "category": "missyou",
+      "text": "Ich vermiss dich, Schatz.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-missyou-002",
+      "category": "missyou",
+      "text": "Du fehlst mir heute.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-missyou-003",
+      "category": "missyou",
+      "text": "Komm bald heim, ich vermiss dich.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-missyou-004",
+      "category": "missyou",
+      "text": "Ich freu mich schon auf dich.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-missyou-005",
+      "category": "missyou",
+      "text": "Der Tag ist ohne dich nur halb so schön.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-missyou-006",
+      "category": "missyou",
+      "text": "Bis später. Ich denk an dich.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-missyou-007",
+      "category": "missyou",
+      "text": "Das Sofa vermisst dich auch. Und ich erst.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-missyou-008",
+      "category": "missyou",
+      "text": "Ich zähl die Stunden bis zum Wiedersehen.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-missyou-009",
+      "category": "missyou",
+      "text": "Hoffentlich bist du bald da, Großer.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-missyou-010",
+      "category": "missyou",
+      "text": "Ich wär jetzt gern bei dir.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-compliment-001",
+      "category": "compliment",
+      "text": "Du siehst gut aus heute.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-compliment-002",
+      "category": "compliment",
+      "text": "Ich mag, wie du bist. Wirklich.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-compliment-003",
+      "category": "compliment",
+      "text": "Du hast ein tolles Lächeln.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-compliment-004",
+      "category": "compliment",
+      "text": "Du bist ein richtig feiner Kerl.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-compliment-005",
+      "category": "compliment",
+      "text": "Das steht dir richtig gut.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-compliment-006",
+      "category": "compliment",
+      "text": "Dein Humor ist genau meiner.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-compliment-007",
+      "category": "compliment",
+      "text": "Du hast eine Art, die mich beruhigt.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-compliment-008",
+      "category": "compliment",
+      "text": "Ich find dich einfach klasse, mein Mann.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-compliment-009",
+      "category": "compliment",
+      "text": "Du bist ziemlich beeindruckend.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-compliment-010",
+      "category": "compliment",
+      "text": "Schön, wie gelassen du bleibst.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-humor-001",
+      "category": "humor",
+      "text": "Du und Kaffee: meine zwei Lieblinge am Morgen.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-humor-002",
+      "category": "humor",
+      "text": "Ich hab dich lieb, sogar vor dem ersten Kaffee.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-humor-003",
+      "category": "humor",
+      "text": "Du bist mein Held des Alltags, auch ohne Umhang.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-humor-004",
+      "category": "humor",
+      "text": "Mit dir macht sogar Einkaufen Spaß.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-humor-005",
+      "category": "humor",
+      "text": "Ich nominiere dich hiermit zum Mann des Tages.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-humor-006",
+      "category": "humor",
+      "text": "Ich geb dir fünf Sterne. Würde wieder buchen.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-humor-007",
+      "category": "humor",
+      "text": "Du bist die beste Entscheidung, die ich je getroffen hab.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-humor-008",
+      "category": "humor",
+      "text": "Dein Platz auf dem Sofa ist reserviert. Für immer.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-humor-009",
+      "category": "humor",
+      "text": "Heute gibt es Applaus für dich. Bitte einmal verbeugen.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-humor-010",
+      "category": "humor",
+      "text": "Ich hab dich lieb. Mehr Pointe hab ich nicht.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-thanks-001",
+      "category": "thanks",
+      "text": "Danke für alles, Großer.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-thanks-002",
+      "category": "thanks",
+      "text": "Danke, dass du da bist.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-thanks-003",
+      "category": "thanks",
+      "text": "Danke für deinen Einsatz. Ich seh ihn.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-thanks-004",
+      "category": "thanks",
+      "text": "Danke, dass ich mich auf dich verlassen kann.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-thanks-005",
+      "category": "thanks",
+      "text": "Danke fürs Zuhören.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-thanks-006",
+      "category": "thanks",
+      "text": "Danke für deine Ruhe, wenn es hektisch wird.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-thanks-007",
+      "category": "thanks",
+      "text": "Danke, dass du mir den Rücken freihältst.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-thanks-008",
+      "category": "thanks",
+      "text": "Danke für heute, Schatz.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-thanks-009",
+      "category": "thanks",
+      "text": "Danke für deine Geduld mit mir, Großer.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-thanks-010",
+      "category": "thanks",
+      "text": "Danke für alles, was du für uns tust.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-apology-001",
+      "category": "apology",
+      "text": "Tut mir leid, Schatz. Du bist mir wichtig.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-apology-002",
+      "category": "apology",
+      "text": "Entschuldige. Lass uns neu starten.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-apology-003",
+      "category": "apology",
+      "text": "Das wollte ich so nicht. Sorry, Großer.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-apology-004",
+      "category": "apology",
+      "text": "Verzeih mir. Ich hab dich gern.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-apology-005",
+      "category": "apology",
+      "text": "Mir ist wichtig, dass es uns gut geht. Entschuldige.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-apology-006",
+      "category": "apology",
+      "text": "Ich nehm dich gleich in den Arm. Tut mir leid.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-apology-007",
+      "category": "apology",
+      "text": "Danke für deine Geduld. Entschuldige bitte.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-apology-008",
+      "category": "apology",
+      "text": "Entschuldige. Ich bin jetzt ganz bei dir.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-apology-009",
+      "category": "apology",
+      "text": "Es tut mir leid. Wir kriegen das gut hin.",
+      "audience": "m"
+    },
+    {
+      "id": "de-m-apology-010",
+      "category": "apology",
+      "text": "Sorry, mein Mann. Du bist mir einfach wichtig.",
+      "audience": "m"
     }
   ]
 }

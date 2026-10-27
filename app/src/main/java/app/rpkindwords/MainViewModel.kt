@@ -38,6 +38,9 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
     val reminder: StateFlow<ReminderSettings> =
         settings.reminder.stateIn(viewModelScope, SharingStarted.Eagerly, ReminderSettings())
 
+    val audience: StateFlow<String?> =
+        settings.audience.stateIn(viewModelScope, SharingStarted.Eagerly, null)
+
     private val _category = MutableStateFlow<String?>(null)
     val category: StateFlow<String?> = _category
 
@@ -64,7 +67,7 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
     init {
         viewModelScope.launch {
             messages.ensureSeeded()
-            combine(contentLang, _category) { l, c -> l to c }.collect { (l, c) ->
+            combine(contentLang, _category, settings.audience) { l, c, _ -> l to c }.collect { (l, c) ->
                 currentId.value = messages.random(l, c, null)?.id
                 _loaded.value = true
             }
@@ -78,6 +81,11 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
                 ?: messages.random(lang, _category.value, null)
             currentId.value = next?.id
         }
+    }
+
+    /** Tippen auf die schon gewählte Seite hebt die Auswahl auf (dann nur neutrale Sätze). */
+    fun selectAudience(value: String) {
+        viewModelScope.launch { settings.setAudience(if (audience.value == value) null else value) }
     }
 
     fun selectCategory(c: String?) { _category.value = c }

@@ -34,6 +34,10 @@
     <string name="favorite_remove">Aus Favoriten entfernen</string>
 
     <string name="home_empty">Für diese Auswahl gibt es noch keine Sätze.</string>
+    <string name="audience_female">Für sie</string>
+    <string name="audience_male">Für ihn</string>
+    <string name="audience_diverse">Divers</string>
+    <string name="audience_hint">Wähle, für wen die Sätze sind. Bis dahin siehst du nur neutrale, die für alle passen.</string>
     <string name="favorites_empty">Noch keine Favoriten. Tippe bei einem Vorschlag auf das Herz, um ihn hier zu speichern.</string>
     <string name="mine_empty">Du hast noch keine eigenen Sätze geschrieben. Füge hier deine eigenen netten Worte hinzu.</string>
     <string name="mine_add">Hinzufügen</string>

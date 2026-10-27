@@ -88,3 +88,46 @@ class ContentSyncTest {
         }
     }
 }
+
+class AudienceContentTest {
+    @Test fun parserReadsAudienceAndDefaultsToAny() {
+        val json = """{"language":"de","version":4,"messages":[
+            {"id":"a","category":"love","text":"x","audience":"f"},
+            {"id":"b","category":"love","text":"y","audience":"m"},
+            {"id":"c","category":"love","text":"z"},
+            {"id":"d","category":"love","text":"w","audience":"bogus"}]}"""
+        val items = ContentParser.parse(json)!!.items.associateBy { it.id }
+        org.junit.Assert.assertEquals(Audience.FEMALE, items.getValue("a").audience)
+        org.junit.Assert.assertEquals(Audience.MALE, items.getValue("b").audience)
+        org.junit.Assert.assertEquals(Audience.ANY, items.getValue("c").audience)
+        org.junit.Assert.assertEquals(Audience.ANY, items.getValue("d").audience)
+    }
+
+    @Test fun audienceChangeIsSyncedAndFavoriteKept() {
+        val old = MessageEntity("a", "de", "love", "x", Source.BUNDLED, true, false, 1L)
+        val file = ContentFile("de", 4, listOf(ContentItem("a", "love", "x", Audience.FEMALE)))
+        val plan = ContentSync.plan(listOf(old), emptySet(), file, 5L)
+        org.junit.Assert.assertEquals(1, plan.updates.size)
+        org.junit.Assert.assertEquals(Audience.FEMALE, plan.updates[0].audience)
+        org.junit.Assert.assertTrue(plan.updates[0].favorite)
+    }
+
+    @Test fun filterWithoutChoiceShowsOnlyNeutral() {
+        org.junit.Assert.assertEquals(Audience.ANY, Audience.filter(null))
+        org.junit.Assert.assertEquals(Audience.ANY, Audience.filter("x"))
+        org.junit.Assert.assertEquals(Audience.MALE, Audience.filter(Audience.MALE))
+        org.junit.Assert.assertEquals(Audience.ANY, Audience.filter(Audience.DIVERSE))
+        org.junit.Assert.assertTrue(Audience.isChoice(Audience.DIVERSE) && !Audience.isValid(Audience.DIVERSE))
+    }
+
+    @Test fun bundledFilesHaveBothAudiencesInEveryCategory() {
+        for (lang in Languages.supported) {
+            val f = java.io.File("src/main/assets/messages/messages_$lang.json")
+            org.junit.Assume.assumeTrue(f.exists())
+            val items = ContentParser.parse(f.readText())!!.items
+            for (aud in listOf(Audience.FEMALE, Audience.MALE)) for (cat in MessageRepository.categories) {
+                org.junit.Assert.assertTrue("$lang/$aud/$cat", items.count { it.audience == aud && it.category == cat } >= 5)
+            }
+        }
+    }
+}

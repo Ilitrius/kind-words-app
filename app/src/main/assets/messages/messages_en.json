@@ -1,6 +1,6 @@
 {
   "language": "en",
-  "version": 3,
+  "version": 4,
   "messages": [
     {
       "id": "en-love-001",
@@ -1001,6 +1001,1206 @@
       "id": "en-apology-020",
       "category": "apology",
       "text": "Sorry. I love you, even when I don't show it well."
+    },
+    {
+      "id": "en-f-love-001",
+      "category": "love",
+      "text": "You make my heart feel like home, sweetheart.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-love-002",
+      "category": "love",
+      "text": "I love you. Today, tomorrow and every little moment between.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-love-003",
+      "category": "love",
+      "text": "Loving you is the sweetest thing I do all day.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-love-004",
+      "category": "love",
+      "text": "You walk into a room and everything gets softer and brighter.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-love-005",
+      "category": "love",
+      "text": "My heart still skips a little when you smile at me, love.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-love-006",
+      "category": "love",
+      "text": "I fall for you a bit more every single morning.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-love-007",
+      "category": "love",
+      "text": "You're my favorite person, my safest place, my whole heart.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-love-008",
+      "category": "love",
+      "text": "Every love song suddenly makes sense because of you.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-love-009",
+      "category": "love",
+      "text": "I love the way you light up when you're happy.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-love-010",
+      "category": "love",
+      "text": "With you, even ordinary days feel like a love story.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-appreciation-001",
+      "category": "appreciation",
+      "text": "I adore how thoughtful you are with everyone around you, love.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-appreciation-002",
+      "category": "appreciation",
+      "text": "The care you put into little things means the world to me.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-appreciation-003",
+      "category": "appreciation",
+      "text": "You have such a warm heart, and I feel it every day.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-appreciation-004",
+      "category": "appreciation",
+      "text": "Thank you for being so wonderfully you.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-appreciation-005",
+      "category": "appreciation",
+      "text": "I admire your strength and your gentleness equally, babe.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-appreciation-006",
+      "category": "appreciation",
+      "text": "You make everything around you feel cared for.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-appreciation-007",
+      "category": "appreciation",
+      "text": "Your kindness is one of my favorite things about you.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-appreciation-008",
+      "category": "appreciation",
+      "text": "I notice everything you do for us, and I'm grateful for it all.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-appreciation-009",
+      "category": "appreciation",
+      "text": "You handle life with such grace, and I'm so proud of you.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-appreciation-010",
+      "category": "appreciation",
+      "text": "You are a gift to everyone who knows you, especially me.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-morning-001",
+      "category": "morning",
+      "text": "Good morning! I hope today wraps you in sunshine.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-morning-002",
+      "category": "morning",
+      "text": "Good morning, beautiful. Your day deserves a slow, lovely start.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-morning-003",
+      "category": "morning",
+      "text": "Waking up knowing you're mine is the best part of my morning.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-morning-004",
+      "category": "morning",
+      "text": "Morning. Sip something warm and know I'm thinking of you.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-morning-005",
+      "category": "morning",
+      "text": "Rise and glow, love. The day is lucky to have you in it.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-morning-006",
+      "category": "morning",
+      "text": "I hope the first light finds you smiling this morning.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-morning-007",
+      "category": "morning",
+      "text": "Good morning, my love. Go gently into today, you've got this.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-morning-008",
+      "category": "morning",
+      "text": "Hello, sunshine. Today already looks brighter with you in it.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-morning-009",
+      "category": "morning",
+      "text": "Sending you a big warm hug to start your morning!",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-morning-010",
+      "category": "morning",
+      "text": "Good morning. Today is ready for your sparkle.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-goodnight-001",
+      "category": "goodnight",
+      "text": "Goodnight, sweetheart. Sleep softly, I'll be dreaming of you.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-goodnight-002",
+      "category": "goodnight",
+      "text": "Sweet dreams. Tomorrow gets to have you again.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-goodnight-003",
+      "category": "goodnight",
+      "text": "Close your eyes, babe, and let the day melt away.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-goodnight-004",
+      "category": "goodnight",
+      "text": "Goodnight. You did beautifully today.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-goodnight-005",
+      "category": "goodnight",
+      "text": "Wrapping you in a big cozy hug before you drift off.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-goodnight-006",
+      "category": "goodnight",
+      "text": "Rest well, love. The stars are keeping watch over you tonight.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-goodnight-007",
+      "category": "goodnight",
+      "text": "Goodnight. I love you more than words can say.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-goodnight-008",
+      "category": "goodnight",
+      "text": "May your dreams be gentle and your sleep be deep, sweetheart.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-goodnight-009",
+      "category": "goodnight",
+      "text": "Snuggle in. I'm sending you all my love tonight.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-goodnight-010",
+      "category": "goodnight",
+      "text": "Sleep tight, my love. I'm so happy you're mine.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-encouragement-001",
+      "category": "encouragement",
+      "text": "You are stronger than you know, and I believe in you.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-encouragement-002",
+      "category": "encouragement",
+      "text": "Go shine today, gorgeous. You were made for this!",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-encouragement-003",
+      "category": "encouragement",
+      "text": "Whatever comes, you have so much grace to meet it.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-encouragement-004",
+      "category": "encouragement",
+      "text": "Take a deep breath, sweetheart. You're doing wonderfully.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-encouragement-005",
+      "category": "encouragement",
+      "text": "Your courage is beautiful, and I'm cheering for you loudly!",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-encouragement-006",
+      "category": "encouragement",
+      "text": "One step at a time. I'm right here with you.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-encouragement-007",
+      "category": "encouragement",
+      "text": "You have everything it takes, and so much heart on top.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-encouragement-008",
+      "category": "encouragement",
+      "text": "I've seen you do amazing things, so trust yourself today.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-encouragement-009",
+      "category": "encouragement",
+      "text": "Be as gentle with yourself as you are with everyone else.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-encouragement-010",
+      "category": "encouragement",
+      "text": "Your dreams are lucky to have you chasing them, babe.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-missyou-001",
+      "category": "missyou",
+      "text": "I miss you. Counting down until I see you.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-missyou-002",
+      "category": "missyou",
+      "text": "Thinking of your smile and missing you so much, love.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-missyou-003",
+      "category": "missyou",
+      "text": "Every hour apart makes me want your hug even more.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-missyou-004",
+      "category": "missyou",
+      "text": "I miss you today, gorgeous. Come home to my arms soon.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-missyou-005",
+      "category": "missyou",
+      "text": "My heart is with you wherever you are.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-missyou-006",
+      "category": "missyou",
+      "text": "I keep reaching for my phone just to feel close to you.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-missyou-007",
+      "category": "missyou",
+      "text": "Missing your laugh, your warmth, and your hand in mine.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-missyou-008",
+      "category": "missyou",
+      "text": "Can't wait to hold you again.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-missyou-009",
+      "category": "missyou",
+      "text": "Wherever you are, know that I'm missing you tenderly.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-missyou-010",
+      "category": "missyou",
+      "text": "I miss you, beautiful. You're worth every minute of the wait.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-compliment-001",
+      "category": "compliment",
+      "text": "You look absolutely radiant today!",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-compliment-002",
+      "category": "compliment",
+      "text": "Your smile could light up the whole city, babe.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-compliment-003",
+      "category": "compliment",
+      "text": "You have the loveliest eyes, and I get lost in them.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-compliment-004",
+      "category": "compliment",
+      "text": "Everything about you is effortlessly beautiful.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-compliment-005",
+      "category": "compliment",
+      "text": "You carry yourself with such elegance, and I adore it.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-compliment-006",
+      "category": "compliment",
+      "text": "That glow of yours is simply irresistible, sweetheart.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-compliment-007",
+      "category": "compliment",
+      "text": "You're stunning inside and out, and I mean it.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-compliment-008",
+      "category": "compliment",
+      "text": "I love how confident and graceful you are.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-compliment-009",
+      "category": "compliment",
+      "text": "Your laugh is pure sunshine.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-compliment-010",
+      "category": "compliment",
+      "text": "You make every outfit look like a dream.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-humor-001",
+      "category": "humor",
+      "text": "You're my favorite person to share the last bite with, babe.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-humor-002",
+      "category": "humor",
+      "text": "If cuddles were currency, we'd be the richest couple around.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-humor-003",
+      "category": "humor",
+      "text": "I'd happily share my fries with you, and that's real love.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-humor-004",
+      "category": "humor",
+      "text": "You and me on the couch with snacks is my kind of party.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-humor-005",
+      "category": "humor",
+      "text": "Plot twist: you're even more wonderful than my coffee, sweetheart.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-humor-006",
+      "category": "humor",
+      "text": "You're the cherry on my sundae.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-humor-007",
+      "category": "humor",
+      "text": "Warning: my love for you may cause constant smiling, babe.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-humor-008",
+      "category": "humor",
+      "text": "I'd choose you over dessert, and that's saying something!",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-humor-009",
+      "category": "humor",
+      "text": "My heart does a happy dance whenever your name pops up on my phone.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-humor-010",
+      "category": "humor",
+      "text": "You had me at hello, and you've kept me with your hugs.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-thanks-001",
+      "category": "thanks",
+      "text": "Thank you for being my soft place to land, sweetheart.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-thanks-002",
+      "category": "thanks",
+      "text": "I'm so grateful for your patience and your big heart.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-thanks-003",
+      "category": "thanks",
+      "text": "Thank you for making our home feel so warm, babe.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-thanks-004",
+      "category": "thanks",
+      "text": "Thanks for all the little things you do. I see every one of them.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-thanks-005",
+      "category": "thanks",
+      "text": "You brighten my life, and I thank you for it every day.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-thanks-006",
+      "category": "thanks",
+      "text": "Thank you for listening so lovingly.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-thanks-007",
+      "category": "thanks",
+      "text": "I'm thankful for your hugs, your laugh and your gentle ways.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-thanks-008",
+      "category": "thanks",
+      "text": "Thank you for always believing in me, beautiful.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-thanks-009",
+      "category": "thanks",
+      "text": "Thank you for the way you care for me. It means everything.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-thanks-010",
+      "category": "thanks",
+      "text": "Grateful for you today and always.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-apology-001",
+      "category": "apology",
+      "text": "I'm sorry, sweetheart. You mean the world to me.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-apology-002",
+      "category": "apology",
+      "text": "Forgive me? I want us to feel close and happy again.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-apology-003",
+      "category": "apology",
+      "text": "I'm sorry, babe. I'll be gentler and listen better.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-apology-004",
+      "category": "apology",
+      "text": "You're so precious to me, and I'm sorry for the tension earlier.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-apology-005",
+      "category": "apology",
+      "text": "I'm sorry. Come here, I want to hold you.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-apology-006",
+      "category": "apology",
+      "text": "I'd love to make it up to you with a long, warm hug.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-apology-007",
+      "category": "apology",
+      "text": "I'm sorry, my love. I care about your feelings so much.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-apology-008",
+      "category": "apology",
+      "text": "Let's start fresh with a smile. I'm sorry.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-apology-009",
+      "category": "apology",
+      "text": "I'm sorry for the rough moment today. You deserve all my tenderness.",
+      "audience": "f"
+    },
+    {
+      "id": "en-f-apology-010",
+      "category": "apology",
+      "text": "Sorry, beautiful. My heart is always on your side.",
+      "audience": "f"
+    },
+    {
+      "id": "en-m-love-001",
+      "category": "love",
+      "text": "Love you, man. Glad it's you.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-love-002",
+      "category": "love",
+      "text": "I love you. Simple as that.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-love-003",
+      "category": "love",
+      "text": "You're my favorite person, babe.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-love-004",
+      "category": "love",
+      "text": "Every day with you just feels right.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-love-005",
+      "category": "love",
+      "text": "I'd pick you again every time.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-love-006",
+      "category": "love",
+      "text": "You make me feel at home, handsome.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-love-007",
+      "category": "love",
+      "text": "Happy to be on your team, always.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-love-008",
+      "category": "love",
+      "text": "Love you more than my morning coffee.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-love-009",
+      "category": "love",
+      "text": "I love our easy evenings together.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-love-010",
+      "category": "love",
+      "text": "You and me. Still my favorite plan.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-appreciation-001",
+      "category": "appreciation",
+      "text": "I really appreciate how steady you are.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-appreciation-002",
+      "category": "appreciation",
+      "text": "You're a calm presence, and I value that a lot.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-appreciation-003",
+      "category": "appreciation",
+      "text": "The way you show up for people says everything.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-appreciation-004",
+      "category": "appreciation",
+      "text": "I notice how hard you work. It means a lot to me.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-appreciation-005",
+      "category": "appreciation",
+      "text": "You're dependable in the best way, my rock.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-appreciation-006",
+      "category": "appreciation",
+      "text": "Proud to be with a guy who keeps his word.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-appreciation-007",
+      "category": "appreciation",
+      "text": "Your sense of humor makes any day better.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-appreciation-008",
+      "category": "appreciation",
+      "text": "I admire how you handle things without fuss.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-appreciation-009",
+      "category": "appreciation",
+      "text": "You've got a big heart, and I see it.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-appreciation-010",
+      "category": "appreciation",
+      "text": "Good people are rare. You're one of them.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-morning-001",
+      "category": "morning",
+      "text": "Morning, handsome. Have a great day.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-morning-002",
+      "category": "morning",
+      "text": "Good morning. Hope your coffee is strong and your day smooth.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-morning-003",
+      "category": "morning",
+      "text": "Rise and shine, babe. You've got this.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-morning-004",
+      "category": "morning",
+      "text": "Morning! Go get today.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-morning-005",
+      "category": "morning",
+      "text": "Hey you. Hope today treats you well.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-morning-006",
+      "category": "morning",
+      "text": "Good morning. Take it one step at a time.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-morning-007",
+      "category": "morning",
+      "text": "Sending a smile to start your day.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-morning-008",
+      "category": "morning",
+      "text": "Morning, my guy. Make it a good one.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-morning-009",
+      "category": "morning",
+      "text": "Good morning. I'm glad you're mine.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-morning-010",
+      "category": "morning",
+      "text": "Hope your morning goes easy today.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-goodnight-001",
+      "category": "goodnight",
+      "text": "Goodnight, babe. Rest up.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-goodnight-002",
+      "category": "goodnight",
+      "text": "Sleep well. You earned it today.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-goodnight-003",
+      "category": "goodnight",
+      "text": "Goodnight, handsome. See you tomorrow.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-goodnight-004",
+      "category": "goodnight",
+      "text": "Switch off and recharge. Goodnight.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-goodnight-005",
+      "category": "goodnight",
+      "text": "Sweet dreams. I'm glad we're us.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-goodnight-006",
+      "category": "goodnight",
+      "text": "Time to rest, my guy. Goodnight.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-goodnight-007",
+      "category": "goodnight",
+      "text": "Goodnight. Proud of you today.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-goodnight-008",
+      "category": "goodnight",
+      "text": "Sleep tight. Tomorrow's a fresh start.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-goodnight-009",
+      "category": "goodnight",
+      "text": "Lights out, love. Sleep easy.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-goodnight-010",
+      "category": "goodnight",
+      "text": "Goodnight. Thanks for today.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-encouragement-001",
+      "category": "encouragement",
+      "text": "You've got this. I'm in your corner.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-encouragement-002",
+      "category": "encouragement",
+      "text": "I trust you completely on this.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-encouragement-003",
+      "category": "encouragement",
+      "text": "Steady wins it, babe. Keep going.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-encouragement-004",
+      "category": "encouragement",
+      "text": "You've handled harder things than this.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-encouragement-005",
+      "category": "encouragement",
+      "text": "Go show them what you can do.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-encouragement-006",
+      "category": "encouragement",
+      "text": "Whatever happens, I'm proud of you.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-encouragement-007",
+      "category": "encouragement",
+      "text": "Take your time. You'll get there.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-encouragement-008",
+      "category": "encouragement",
+      "text": "I believe in you, always.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-encouragement-009",
+      "category": "encouragement",
+      "text": "One thing at a time. You're doing fine.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-encouragement-010",
+      "category": "encouragement",
+      "text": "You're more capable than you think!",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-missyou-001",
+      "category": "missyou",
+      "text": "Missing you today, babe.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-missyou-002",
+      "category": "missyou",
+      "text": "Come home soon. The couch isn't the same without you.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-missyou-003",
+      "category": "missyou",
+      "text": "Thinking about you. Miss you.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-missyou-004",
+      "category": "missyou",
+      "text": "Can't wait to see you tonight.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-missyou-005",
+      "category": "missyou",
+      "text": "Miss you, handsome. Hurry back.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-missyou-006",
+      "category": "missyou",
+      "text": "Your side of the sofa misses you too.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-missyou-007",
+      "category": "missyou",
+      "text": "Only a few hours until I see you.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-missyou-008",
+      "category": "missyou",
+      "text": "I miss our chats. Call me later?",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-missyou-009",
+      "category": "missyou",
+      "text": "Just wanted you to know I miss you.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-missyou-010",
+      "category": "missyou",
+      "text": "Looking forward to seeing you again.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-compliment-001",
+      "category": "compliment",
+      "text": "You look great today, handsome.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-compliment-002",
+      "category": "compliment",
+      "text": "That smile of yours works every time.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-compliment-003",
+      "category": "compliment",
+      "text": "You wear that shirt really well.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-compliment-004",
+      "category": "compliment",
+      "text": "You're seriously good at what you do.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-compliment-005",
+      "category": "compliment",
+      "text": "Great taste, great heart. Nice combo.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-compliment-006",
+      "category": "compliment",
+      "text": "You carry yourself with real confidence.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-compliment-007",
+      "category": "compliment",
+      "text": "You're easy on the eyes, babe.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-compliment-008",
+      "category": "compliment",
+      "text": "Your laugh is contagious.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-compliment-009",
+      "category": "compliment",
+      "text": "Smart and kind. I'm a lucky one.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-compliment-010",
+      "category": "compliment",
+      "text": "You make looking good seem effortless.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-humor-001",
+      "category": "humor",
+      "text": "You're my favorite plus one, always.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-humor-002",
+      "category": "humor",
+      "text": "Dinner is on me if you share your fries.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-humor-003",
+      "category": "humor",
+      "text": "Plot twist: I like you even before coffee.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-humor-004",
+      "category": "humor",
+      "text": "You're the best teammate I could ask for.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-humor-005",
+      "category": "humor",
+      "text": "I'd share the remote with you. That's love.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-humor-006",
+      "category": "humor",
+      "text": "Fun fact: you make Mondays better.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-humor-007",
+      "category": "humor",
+      "text": "You're my guy, and the snack cabinet agrees.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-humor-008",
+      "category": "humor",
+      "text": "You're the kind of guy I'd give the last slice to.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-humor-009",
+      "category": "humor",
+      "text": "My phone gets way happier when your name shows up.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-humor-010",
+      "category": "humor",
+      "text": "Official ranking: you, then tacos. Close call.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-thanks-001",
+      "category": "thanks",
+      "text": "Thanks for always having my back.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-thanks-002",
+      "category": "thanks",
+      "text": "Thank you for everything you do. I see it.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-thanks-003",
+      "category": "thanks",
+      "text": "Thanks for being so steady, my rock.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-thanks-004",
+      "category": "thanks",
+      "text": "Appreciate you more than I say.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-thanks-005",
+      "category": "thanks",
+      "text": "Thank you for the support lately.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-thanks-006",
+      "category": "thanks",
+      "text": "Thanks for listening. It really helps.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-thanks-007",
+      "category": "thanks",
+      "text": "You pulled through for us again. Thank you.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-thanks-008",
+      "category": "thanks",
+      "text": "Thanks for the effort you put in every day.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-thanks-009",
+      "category": "thanks",
+      "text": "I'm grateful for you, babe.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-thanks-010",
+      "category": "thanks",
+      "text": "Thanks for being you. It's the best.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-apology-001",
+      "category": "apology",
+      "text": "I'm sorry, babe. You matter a lot to me.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-apology-002",
+      "category": "apology",
+      "text": "Sorry about earlier. Let's reset together?",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-apology-003",
+      "category": "apology",
+      "text": "I care about us more than being right. Sorry.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-apology-004",
+      "category": "apology",
+      "text": "Sorry, my guy. Can I make it up to you?",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-apology-005",
+      "category": "apology",
+      "text": "You mean a lot to me. I'm sorry.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-apology-006",
+      "category": "apology",
+      "text": "Let's start fresh. I'm sorry about today.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-apology-007",
+      "category": "apology",
+      "text": "I'm sorry. Dinner's on me tonight.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-apology-008",
+      "category": "apology",
+      "text": "I'll listen better, promise. Sorry.",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-apology-009",
+      "category": "apology",
+      "text": "Sorry, handsome. We're good, right?",
+      "audience": "m"
+    },
+    {
+      "id": "en-m-apology-010",
+      "category": "apology",
+      "text": "I value you. Sorry for the tension.",
+      "audience": "m"
     }
   ]
 }

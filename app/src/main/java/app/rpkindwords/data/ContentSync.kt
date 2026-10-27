@@ -2,7 +2,7 @@ package app.rpkindwords.data
 
 import org.json.JSONObject
 
-data class ContentItem(val id: String, val category: String, val text: String)
+data class ContentItem(val id: String, val category: String, val text: String, val audience: String = Audience.ANY)
 
 data class ContentFile(val language: String, val version: Int, val items: List<ContentItem>)
 
@@ -30,7 +30,8 @@ object ContentParser {
                 val text = o.optString("text").trim()
                 val category = o.optString("category").trim()
                 if (id.isEmpty() || text.isEmpty() || category.isEmpty() || !seen.add(id)) continue
-                add(ContentItem(id, category, text))
+                val audience = o.optString("audience").takeIf { Audience.isValid(it) } ?: Audience.ANY
+                add(ContentItem(id, category, text, audience))
             }
         }
         ContentFile(language, version, items)
@@ -55,9 +56,9 @@ object ContentSync {
             if (item.id in existingUserIds) continue
             val old = byId[item.id]
             if (old == null) {
-                inserts += MessageEntity(item.id, file.language, item.category, item.text, Source.BUNDLED, false, false, now)
-            } else if (old.text != item.text || old.category != item.category) {
-                updates += old.copy(category = item.category, text = item.text, updatedAt = now)
+                inserts += MessageEntity(item.id, file.language, item.category, item.text, Source.BUNDLED, false, false, now, item.audience)
+            } else if (old.text != item.text || old.category != item.category || old.audience != item.audience) {
+                updates += old.copy(category = item.category, text = item.text, audience = item.audience, updatedAt = now)
             }
         }
         val fileIds = file.items.mapTo(HashSet()) { it.id }

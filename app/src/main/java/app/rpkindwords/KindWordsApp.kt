@@ -23,7 +23,9 @@ class KindWordsApp : Application() {
 
     override fun onCreate() {
         super.onCreate()
-        val db = Room.databaseBuilder(this, AppDatabase::class.java, "kindwords.db").build()
+        val db = Room.databaseBuilder(this, AppDatabase::class.java, "kindwords.db")
+            .addMigrations(AppDatabase.MIGRATION_1_2)
+            .build()
         settings = SettingsRepository(this)
         messages = MessageRepository(db.messageDao(), settings, AssetContentSource(this))
         NotificationHelper.createChannel(this)

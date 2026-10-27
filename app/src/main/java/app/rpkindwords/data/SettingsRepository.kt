@@ -36,6 +36,7 @@ class SettingsRepository(private val context: Context) {
         val fixed = stringPreferencesKey("rem_fixed")
         val days = stringPreferencesKey("rem_days")
         val contentLang = stringPreferencesKey("content_lang")
+        val audience = stringPreferencesKey("audience")
         fun contentVersion(lang: String) = intPreferencesKey("content_version_$lang")
     }
 
@@ -45,6 +46,13 @@ class SettingsRepository(private val context: Context) {
 
     /** Explizit gewählte Inhaltssprache oder null = der Systemsprache folgen. */
     val contentLanguageOverride: Flow<String?> = context.dataStore.data.map { it[K.contentLang]?.takeIf { l -> l in Languages.supported } }
+
+    /** Für wen die Sätze sind ([Audience.FEMALE]/[Audience.MALE]/[Audience.DIVERSE]) oder null = noch nicht gewählt (nur neutrale Sätze). */
+    val audience: Flow<String?> = context.dataStore.data.map { it[K.audience]?.takeIf(Audience::isChoice) }
+
+    suspend fun setAudience(value: String?) {
+        context.dataStore.edit { if (value == null || !Audience.isChoice(value)) it.remove(K.audience) else it[K.audience] = value }
+    }
 
     suspend fun updateReminder(transform: (ReminderSettings) -> ReminderSettings) {
         context.dataStore.edit { p ->

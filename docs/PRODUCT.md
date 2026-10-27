@@ -11,6 +11,8 @@ Die App schlägt nette Worte oder kleine, liebevolle Sätze vor, die man seinem 
 5. **Erinnerungen:** Modus *Zufällig* (z. B. 1–3× pro Tag innerhalb eines Zeitfensters) oder *Feste Uhrzeiten* (Wochentage wählbar); Benachrichtigung zeigt direkt einen Vorschlag mit Aktion „Teilen“. Berechtigung `POST_NOTIFICATIONS` (Android 13+) wird erst bei Aktivierung erfragt.
 6. **Sprachen:** UI und Inhalte Deutsch + Englisch (Sprache folgt dem System, per-App-Sprache einstellbar). Architektur erlaubt weitere Sprachen.
 
+7. **Zielgruppe:** Auswahl Für sie / Für ihn / Divers; Sätze sind je Geschlecht formuliert (Ton, Temperatur, Stil), "Divers" zeigt nur neutrale Sätze.
+
 ## Datenbank der Texte
 - Lokal: Room/SQLite. Erststart-Befüllung aus `app/src/main/assets/messages/messages_<lang>.json`.
 - Tabelle `messages`: `id` (String, stabil), `language`, `category`, `text`, `source` (`BUNDLED` | `USER`), `favorite`, `hidden`, `updatedAt`.

@@ -62,3 +62,9 @@ Das „Gehirn“ des Projekts: Entscheidungen, Fakten, Fallstricke. Wird von Men
 - 2026-10-27 · Update-Hinweis · `update/InAppUpdater.kt`: Play `app-update` 2.1.0 (Listener-API, kein ktx), flexibler Flow, Check nur in onResume (max. alle 6 h), Fehler still verworfen; Snackbar Aktualisieren/Neu starten. Datenschutz + play-console-answers ergänzt · ungebaut, Manifest auf INTERNET prüfen.
 - 2026-10-27 · Sprache · Zeit/Wochentage in Einstellungen nutzen `LocalConfiguration.current.locales[0]` statt `Locale.getDefault()` (JVM-Default folgt dem In-App-Override nicht) · sonst gemischte Sprache.
 - 2026-10-27 · Akku · Geprüft: nur inexakter AlarmManager, kein WorkManager/Wakelock/Polling/Endlosanimation, UI-Flows `collectAsStateWithLifecycle`, ViewModel-Flows WhileSubscribed bzw. nur DataStore.
+
+## Zielgruppe der Sätze (2026-10-27)
+- Auswahl auf dem Home-Screen: Für sie / Für ihn / Divers (DataStore `audience`: f/m/d; Tippen auf die gewählte Option hebt auf). Sätze tragen `audience` (`f`, `m`, sonst `any` = neutral). Filter: sie -> any+f, ihn -> any+m, divers/keine Auswahl -> nur any. Gilt auch für Benachrichtigungen (Repository liest die Einstellung). Favoriten und eigene Sätze (any) bleiben immer sichtbar.
+- Inhalte v4: je Sprache 200 neutrale + 100 für sie (wärmer, ausdrucksstärker) + 100 für ihn (kürzer, direkter, ruhiger); ids `<lang>-<f|m>-<cat>-NNN`. Room v2 (Migration 1->2, Spalte `audience`). Stil-Analyse der eigenen Sätze wirkt weiter innerhalb der Auswahl.
+- Die frühere Regel "keine Kosenamen/geschlechtsneutral" gilt nur noch für die neutralen Sätze; f/m dürfen Kosenamen (max. ~25 %).
+- Fallstrick: androidx.fragment explizit auf 1.9.1 (app-update zieht 1.0.0, Lint-Fehler).

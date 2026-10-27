@@ -5,6 +5,7 @@ import java.util.UUID
 import kotlin.random.Random
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.sync.Mutex
 import kotlinx.coroutines.sync.withLock
 import kotlinx.coroutines.withContext
@@ -65,9 +66,10 @@ class MessageRepository(
         rng: Random = Random.Default,
     ): MessageEntity? {
         val exclude = excludeId ?: ""
-        if (FavoriteBias.preferFavorite(roll)) dao.randomFavorite(language, category, exclude)?.let { return it }
+        val audience = Audience.filter(settings.audience.first())
+        if (FavoriteBias.preferFavorite(roll)) dao.randomFavorite(language, category, exclude, audience)?.let { return it }
         // Sonst: passend zum Stil der eigenen Sätze gewichtet (ohne eigene Sätze: gleichverteilt)
-        val candidates = dao.candidates(language, category, exclude)
+        val candidates = dao.candidates(language, category, exclude, audience)
         return StyleMatcher.pick(candidates, styleProfile(), rng) { it.text }
     }
 

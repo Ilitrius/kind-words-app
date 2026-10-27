@@ -57,6 +57,7 @@ import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import app.rpkindwords.MainViewModel
 import app.rpkindwords.R
+import app.rpkindwords.data.Audience
 import app.rpkindwords.data.MessageEntity
 import app.rpkindwords.data.MessageRepository
 import app.rpkindwords.reminder.ShareIntents
@@ -94,10 +95,19 @@ fun HomeScreen(vm: MainViewModel, snackbar: SnackbarHostState, modifier: Modifie
     val current by vm.current.collectAsStateWithLifecycle()
     val category by vm.category.collectAsStateWithLifecycle()
     val loaded by vm.loaded.collectAsStateWithLifecycle()
+    val audience by vm.audience.collectAsStateWithLifecycle()
     val copiedText = stringResource(R.string.copied)
 
     Column(modifier.fillMaxSize().verticalScroll(rememberScrollState()).padding(16.dp), verticalArrangement = Arrangement.spacedBy(16.dp)) {
         Text(stringResource(R.string.home_title), style = MaterialTheme.typography.headlineMedium)
+        Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
+            Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                FilterChip(selected = audience == Audience.FEMALE, onClick = { vm.selectAudience(Audience.FEMALE) }, label = { Text(stringResource(R.string.audience_female)) })
+                FilterChip(selected = audience == Audience.MALE, onClick = { vm.selectAudience(Audience.MALE) }, label = { Text(stringResource(R.string.audience_male)) })
+                FilterChip(selected = audience == Audience.DIVERSE, onClick = { vm.selectAudience(Audience.DIVERSE) }, label = { Text(stringResource(R.string.audience_diverse)) })
+            }
+            if (audience == null) Text(stringResource(R.string.audience_hint), style = MaterialTheme.typography.bodySmall)
+        }
         LazyRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
             item {
                 FilterChip(selected = category == null, onClick = { vm.selectCategory(null) }, label = { Text(stringResource(R.string.category_all)) })
