@@ -10,11 +10,13 @@ import app.rpkindwords.data.LocaleContext
 import app.rpkindwords.data.SettingsRepository
 import app.rpkindwords.ui.MainScreen
 import app.rpkindwords.ui.theme.KindWordsTheme
+import app.rpkindwords.update.InAppUpdater
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.runBlocking
 
 class MainActivity : ComponentActivity() {
     private val vm: MainViewModel by viewModels()
+    private lateinit var updater: InAppUpdater
 
     /** Oberfläche in der gewählten Sprache anzeigen (Einstellungen > Sprache), sonst Systemsprache. */
     override fun attachBaseContext(newBase: Context) {
@@ -25,8 +27,19 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
+        updater = InAppUpdater(this)
         setContent {
-            KindWordsTheme { MainScreen(vm) }
+            KindWordsTheme { MainScreen(vm, updater) }
         }
+    }
+
+    override fun onResume() {
+        super.onResume()
+        updater.check()
+    }
+
+    override fun onDestroy() {
+        updater.release()
+        super.onDestroy()
     }
 }

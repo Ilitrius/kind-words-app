@@ -75,4 +75,9 @@
     <string name="channel_reminders_name">Reminders</string>
     <string name="channel_reminders_desc">Occasional kind words to share</string>
     <string name="notification_title">A kind word for today</string>
+
+    <string name="update_available">A new version of Kind Words is available.</string>
+    <string name="update_action">Update</string>
+    <string name="update_ready">The update is ready to install.</string>
+    <string name="update_restart">Restart</string>
 </resources>

@@ -75,4 +75,9 @@
     <string name="channel_reminders_name">Erinnerungen</string>
     <string name="channel_reminders_desc">Gelegentliche nette Worte zum Teilen</string>
     <string name="notification_title">Ein nettes Wort für heute</string>
+
+    <string name="update_available">Eine neue Version von Kind Words ist verfügbar.</string>
+    <string name="update_action">Aktualisieren</string>
+    <string name="update_ready">Das Update ist bereit zur Installation.</string>
+    <string name="update_restart">Neu starten</string>
 </resources>

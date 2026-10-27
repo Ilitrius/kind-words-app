@@ -47,6 +47,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.platform.LocalContext
 import android.app.Activity
 import androidx.compose.runtime.rememberCoroutineScope
@@ -79,8 +80,9 @@ private sealed interface PickTarget {
     data object NewFixed : PickTarget
 }
 
-private fun fmt(min: Int): String =
-    LocalTime.of(min / 60, min % 60).format(DateTimeFormatter.ofLocalizedTime(FormatStyle.SHORT))
+/** Uhrzeit in der gewählten App-Sprache (nicht in der JVM-Standardsprache). */
+private fun fmt(min: Int, locale: Locale): String =
+    LocalTime.of(min / 60, min % 60).format(DateTimeFormatter.ofLocalizedTime(FormatStyle.SHORT).withLocale(locale))
 
 private fun openNotificationSettings(context: Context) {
     context.startActivity(
@@ -94,6 +96,7 @@ private fun openNotificationSettings(context: Context) {
 @OptIn(ExperimentalLayoutApi::class)
 fun SettingsScreen(vm: MainViewModel, modifier: Modifier = Modifier) {
     val context = LocalContext.current
+    val appLocale = LocalConfiguration.current.locales[0]
     val s by vm.reminder.collectAsStateWithLifecycle()
     val langOverride by vm.languageOverride.collectAsStateWithLifecycle()
     var permissionDenied by remember { mutableStateOf(false) }
@@ -157,16 +160,16 @@ fun SettingsScreen(vm: MainViewModel, modifier: Modifier = Modifier) {
                 }
                 Row(horizontalArrangement = Arrangement.spacedBy(8.dp), verticalAlignment = Alignment.CenterVertically) {
                     Text(stringResource(R.string.window_from))
-                    FilledTonalButton(onClick = { picking = PickTarget.WindowStart }) { Text(fmt(s.windowStartMin)) }
+                    FilledTonalButton(onClick = { picking = PickTarget.WindowStart }) { Text(fmt(s.windowStartMin, appLocale)) }
                     Text(stringResource(R.string.window_to))
-                    FilledTonalButton(onClick = { picking = PickTarget.WindowEnd }) { Text(fmt(s.windowEndMin)) }
+                    FilledTonalButton(onClick = { picking = PickTarget.WindowEnd }) { Text(fmt(s.windowEndMin, appLocale)) }
                 }
             } else {
                 s.fixedTimesMin.forEachIndexed { i, m ->
                     Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                        FilledTonalButton(onClick = { picking = PickTarget.Fixed(i) }) { Text(fmt(m)) }
+                        FilledTonalButton(onClick = { picking = PickTarget.Fixed(i) }) { Text(fmt(m, appLocale)) }
                         IconButton(onClick = { vm.updateReminder { it.copy(fixedTimesMin = it.fixedTimesMin.filterIndexed { j, _ -> j != i }) } }) {
-                            Icon(Icons.Filled.Close, contentDescription = stringResource(R.string.time_remove, fmt(m)))
+                            Icon(Icons.Filled.Close, contentDescription = stringResource(R.string.time_remove, fmt(m, appLocale)))
                         }
                     }
                 }
@@ -180,7 +183,7 @@ fun SettingsScreen(vm: MainViewModel, modifier: Modifier = Modifier) {
                     FilterChip(
                         selected = d in s.days,
                         onClick = { vm.updateReminder { it.copy(days = if (d in it.days) it.days - d else it.days + d) } },
-                        label = { Text(d.getDisplayName(TextStyle.SHORT, Locale.getDefault())) },
+                        label = { Text(d.getDisplayName(TextStyle.SHORT, appLocale)) },
                     )
                 }
             }

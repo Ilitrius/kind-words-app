@@ -7,3 +7,5 @@
 - 2026-10-25 · Erinnerungen · AlarmManager.setAndAllowWhileIdle + ReminderReceiver (Boot/Update/Zeitwechsel planen neu); WorkManager wurde ersetzt, weil Jobs im App-Standby blockierten · siehe BRAIN.md.
 - 2026-10-25 · Inhalte · Neue/geänderte Texte nur wirksam, wenn `version` in der JSON erhöht wird.
 - 2026-10-25 · Spenden · `donate_url` in values/donate.xml (translatable=false), Karte nur bei https://.
+- 2026-10-27 · Locale · In Compose nie Locale.getDefault() für Anzeige; LocalConfiguration nutzen (In-App-Sprache wirkt nur auf Context-Resources).
+- 2026-10-27 · Sandbox ohne Android-SDK (dl.google.com 403): Code ungebaut geschrieben; beim nächsten Windows-Build prüfen.

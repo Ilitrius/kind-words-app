@@ -15,7 +15,7 @@ Belegt durch das gemergte Release-Manifest: **keine `INTERNET`-Berechtigung**, k
 | Erhebt oder teilt deine App Nutzerdaten? | **Nein** (nichts verlässt das Gerät) |
 | Verschlüsselung bei der Übertragung / Löschanfrage | werden nicht abgefragt, wenn „Nein“ gewählt ist |
 | Datentypen | keine ausgewählt |
-| Hinweis | Spenden-Link öffnet den Browser; die Zahlung verarbeitet der externe Anbieter direkt (laut Google ausgenommen, App greift nicht darauf zu). Teilen läuft nutzerinitiiert über den Android-Teilen-Dialog. |
+| Hinweis | In-App-Updates (`com.google.android.play:app-update`): Abfrage läuft über die Play-Store-App, die App sendet/erhebt selbst nichts, keine INTERNET-Berechtigung nötig (nach jedem Build im gemergten Manifest prüfen!) – daher weiterhin „Nein“. Spenden-Link öffnet den Browser; die Zahlung verarbeitet der externe Anbieter direkt (laut Google ausgenommen, App greift nicht darauf zu). Teilen läuft nutzerinitiiert über den Android-Teilen-Dialog. |
 | Sicherheitsüberprüfung/Badges | nicht nötig |
 
 ## 3. Inhaltsfreigabe (IARC-Fragebogen)

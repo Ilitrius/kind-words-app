@@ -25,6 +25,8 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.res.stringResource
 import app.rpkindwords.MainViewModel
 import app.rpkindwords.R
+import app.rpkindwords.update.InAppUpdater
+import app.rpkindwords.update.UpdateSnackbars
 
 private enum class Tab(val label: Int, val icon: ImageVector) {
     Home(R.string.nav_home, Icons.Filled.Home),
@@ -34,9 +36,10 @@ private enum class Tab(val label: Int, val icon: ImageVector) {
 }
 
 @Composable
-fun MainScreen(vm: MainViewModel) {
+fun MainScreen(vm: MainViewModel, updater: InAppUpdater? = null) {
     var tab by rememberSaveable { mutableIntStateOf(0) }
     val snackbar = remember { SnackbarHostState() }
+    UpdateSnackbars(updater, snackbar)
     BackHandler(enabled = tab != 0) { tab = 0 }
     Scaffold(
         snackbarHost = { SnackbarHost(snackbar) },
