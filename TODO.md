@@ -57,3 +57,4 @@ Legende: `[ ]` offen · `[x]` erledigt · Agent in Klammern
 
 ## Stand 2026-10-27
 - [ ] Update-Hinweis: App merkt sich, wenn es ein Update gibt (Play In-App Updates API, `app-update`-Bibliothek über `gradle/libs.versions.toml`), und benachrichtigt den Nutzer (Hinweis/Snackbar mit "Aktualisieren"). Texte in `values/` + `values-de/`; Datenschutz/Data Safety prüfen (Play-Dienste-Abfrage). (android-dev, i18n-guardian)
+- [x] Sprachumschaltung geprüft (System/DE/EN): String-Paritat de/en vollständig, keine hartkodierten Texte im Code, Benachrichtigung nutzt gewählte Sprache. Emulator-Sichtprüfung der Menüfelder steht aus (qa-tester).
