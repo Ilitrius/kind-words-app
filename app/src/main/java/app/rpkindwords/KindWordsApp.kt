@@ -31,8 +31,8 @@ class KindWordsApp : Application() {
         NotificationHelper.createChannel(this)
         appScope.launch {
             messages.ensureSeeded()
-            // Plan sicherstellen, aber einen vorhandenen (ggf. gerade laufenden) Auftrag NICHT ersetzen:
-            // Startet WorkManager den Prozess für einen fälligen Worker, würde REPLACE ihn sofort abbrechen.
+            // Plan sicherstellen, aber einen vorhandenen Alarm NICHT ersetzen (sonst würde jeder App-Start die Zeit neu würfeln).
+            // Die Kette reißt nicht ab: ReminderReceiver plant nach jeder Auslösung den nächsten Alarm, auch bei Fehlern.
             ReminderScheduler.reschedule(this@KindWordsApp, settings.reminder.first(), replace = false)
         }
     }
