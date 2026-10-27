@@ -25,6 +25,8 @@ Das „Gehirn“ des Projekts: Entscheidungen, Fakten, Fallstricke. Wird von Men
 
 ## Pflichtanforderungen-Abgleich (2026-10-27)
 - Plan: `docs/APP-PLAN.md`. Neu im Code (versionCode 6, **noch nicht gebaut/getestet**, in der Cloud ohne Android-SDK geschrieben): Splash (`core-splashscreen`, Theme `Theme.KindWords.Starting`), Datenschutzlink in Einstellungen (`privacy_url` je Sprache), Update-Hinweis (`update/UpdateController`, Play `app-update` 2.1.0, flexibel, max. 1×/24 h via DataStore `last_update_check`), Export/Import JSON (`data/Backup.kt`, Format v1, nur ergänzend, Test `BackupCodecTest`).
+- Stand 2026-10-27: Branch `feature/pflichtanforderungen-build6` (gepusht, nicht in `main`; `docs/` ist GitHub Pages, deshalb erst nach erfolgreichem Build mergen). Nur `BackupCodec` + `BackupCodecTest` wurden auf der JVM kompiliert und ausgeführt (4/4 grün, Scratch-Projekt mit Kotlin-JVM-Plugin). Voller Android-Build in der Cloud unmöglich: `dl.google.com` (SDK-Plattform 36, Build-Tools) ist per Netzwerkrichtlinie gesperrt; Maven Central, maven.google.com, Gradle sind erreichbar. Entsperren: Cloud-Umgebung > Edit > Network access / Allowed domains. Sonst lokal bauen und Fehler melden.
+- Nutzer-Wunsch-Ablauf: erst Plan (`docs/APP-PLAN.md`), dann Umsetzung, dann bauen/testen. Offen: Build, Lint, Emulator, zweite KI-Prüfung, PR.
 - Zu prüfen beim ersten Build: Manifest-Merge (fügt `app-update` Berechtigungen hinzu?), Lint, Splash-Optik, Backup-Roundtrip im Emulator. Crash-Reporting bewusst nicht (siehe Plan 8).
 
 ## Fallstricke
