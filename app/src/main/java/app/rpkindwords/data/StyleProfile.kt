@@ -36,7 +36,7 @@ object StyleAnalyzer {
     )
     private val humor = listOf(
         "haha", "hihi", "lol", "witz", "lustig", "lach", "funny", "joke", "laugh", "silly", "nervensäge", "schnarch",
-        "chaos", "pizza", "snack", "couch", "grumpy", "pain in the neck", "verrückt", "crazy", "albern",
+        "chaos", "pizza", "snack", "grumpy", "pain in the neck", "verrückt", "crazy", "albern",
     )
     private val casualWords = listOf(
         " hab ", " ne ", " nen ", " grad ", " mal ", " ey ", "moin", " hey ", "gonna", "wanna", "kinda", "bisschen",

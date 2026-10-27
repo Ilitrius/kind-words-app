@@ -14,6 +14,8 @@ class ContentToneTest {
         "katastrophe", "versag", "peinlich", "deine schuld", "meine schuld",
         "pain in the", "grumpy", "annoying", "stupid", "messed up", "selfish", "embarrass", "disaster", "my fault",
         "your fault", "wrong of me", "terrible", "awful", "snorer", "lonely",
+        // Couch/Sofa ist kein romantisches Wort (Nutzerregel 2026-10-27)
+        "couch", "sofa",
     )
 
     /** Kurze Wörter, die nur als ganzes Wort gelten (vermeidet z. B. "whatever" -> "hate"). */

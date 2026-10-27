@@ -1,6 +1,6 @@
 {
   "language": "en",
-  "version": 4,
+  "version": 5,
   "messages": [
     {
       "id": "en-love-001",
@@ -45,7 +45,7 @@
     {
       "id": "en-love-009",
       "category": "love",
-      "text": "My favorite place in the world is next to you on the couch."
+      "text": "My favorite place in the world is next to you."
     },
     {
       "id": "en-love-010",
@@ -525,7 +525,7 @@
     {
       "id": "en-missyou-005",
       "category": "missyou",
-      "text": "I'd love to be on the couch with you right now. Blanket and all."
+      "text": "I'd love to be with you right now. Close, blanket and all."
     },
     {
       "id": "en-missyou-006",
@@ -710,7 +710,7 @@
     {
       "id": "en-humor-002",
       "category": "humor",
-      "text": "You're my favorite person. The couch is a close second."
+      "text": "You're my favorite person. Coffee in the morning is a close second."
     },
     {
       "id": "en-humor-003",
@@ -740,7 +740,7 @@
     {
       "id": "en-humor-008",
       "category": "humor",
-      "text": "You're my favorite person on the whole couch."
+      "text": "You're my favorite person in the whole world."
     },
     {
       "id": "en-humor-009",
@@ -1443,7 +1443,7 @@
     {
       "id": "en-f-humor-004",
       "category": "humor",
-      "text": "You and me on the couch with snacks is my kind of party.",
+      "text": "You and me with a pizza is my kind of party.",
       "audience": "f"
     },
     {
@@ -1911,7 +1911,7 @@
     {
       "id": "en-m-missyou-002",
       "category": "missyou",
-      "text": "Come home soon. The couch isn't the same without you.",
+      "text": "Come home soon. I miss you.",
       "audience": "m"
     },
     {
@@ -1935,7 +1935,7 @@
     {
       "id": "en-m-missyou-006",
       "category": "missyou",
-      "text": "Your side of the sofa misses you too.",
+      "text": "Your spot next to me is waiting for you.",
       "audience": "m"
     },
     {

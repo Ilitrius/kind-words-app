@@ -1,6 +1,6 @@
 {
   "language": "de",
-  "version": 4,
+  "version": 5,
   "messages": [
     {
       "id": "de-love-001",
@@ -45,7 +45,7 @@
     {
       "id": "de-love-009",
       "category": "love",
-      "text": "Neben dir auf dem Sofa ist mein liebster Platz auf der Welt."
+      "text": "Neben dir ist mein liebster Platz auf der Welt."
     },
     {
       "id": "de-love-010",
@@ -525,7 +525,7 @@
     {
       "id": "de-missyou-005",
       "category": "missyou",
-      "text": "Ich wär jetzt gern bei dir. Auf dem Sofa, mit Decke."
+      "text": "Ich wär jetzt gern bei dir. Ganz nah, mit Decke."
     },
     {
       "id": "de-missyou-006",
@@ -710,7 +710,7 @@
     {
       "id": "de-humor-002",
       "category": "humor",
-      "text": "Du bist mein Lieblingsmensch. Das Sofa ist knapp dahinter."
+      "text": "Du bist mein Lieblingsmensch. Mein Lieblingskaffee ist knapp dahinter."
     },
     {
       "id": "de-humor-003",
@@ -740,7 +740,7 @@
     {
       "id": "de-humor-008",
       "category": "humor",
-      "text": "Du bist mein liebster Mensch auf der ganzen Couch."
+      "text": "Du bist mein liebster Mensch auf der ganzen Welt."
     },
     {
       "id": "de-humor-009",
@@ -1443,7 +1443,7 @@
     {
       "id": "de-f-humor-004",
       "category": "humor",
-      "text": "Ich würde dir jederzeit mein Sofaplätzchen überlassen, Schatz.",
+      "text": "Ich würde dir jederzeit mein letztes Stück Schokolade überlassen, Schatz.",
       "audience": "f"
     },
     {
@@ -1941,7 +1941,7 @@
     {
       "id": "de-m-missyou-007",
       "category": "missyou",
-      "text": "Das Sofa vermisst dich auch. Und ich erst.",
+      "text": "Ich vermiss dich. Komm bald heim.",
       "audience": "m"
     },
     {
@@ -2067,7 +2067,7 @@
     {
       "id": "de-m-humor-008",
       "category": "humor",
-      "text": "Dein Platz auf dem Sofa ist reserviert. Für immer.",
+      "text": "Dein Platz neben mir ist reserviert. Für immer.",
       "audience": "m"
     },
     {

@@ -11,3 +11,7 @@
 - Keine Neckereien, Beleidigungen oder negativ gefärbten Wörter (Nervensäge, Schnarchnase, pain in the neck, grumpy, Mist gebaut, leer/leise/empty/quiet, schlechter Tag, wehtun/hurt, Schuld/fault, streiten/fight). "Ich liebe dich" ist ausdrücklich gut.
 - Entschuldigungen: kurz, warm, wertschätzend ("Du bist mir wichtig"), keine Schuldzuweisung/Selbstanklage.
 - Prüfung: ContentToneTest (Stämme + ganze Wörter; Fehlalarme vermeiden: "whatever"≠"hate", "Entschuldige"≠"Schuld").
+
+## 2026-10-27 Wortregel (Nutzer)
+- Couch/Sofa ist KEIN romantisches Wort: nie in Sätzen verwenden (auch nicht Sofaplätzchen, "auf dem Sofa", "on the couch", sofa/couch). Romantik über Nähe, Zuhause, Hände, Blicke, Kaffee, Decke ausdrücken. ContentToneTest prüft "couch" und "sofa". Bestehende Sätze wurden umformuliert (ids stabil, Content-Version 5).
+- Zielgruppen f/m/neutral siehe BRAIN.md; die frühere Kosenamen-Sperre gilt nur für neutrale Sätze.
