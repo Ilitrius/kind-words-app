@@ -10,6 +10,7 @@ room = "2.8.5"
 datastore = "1.2.1"
 orgJson = "20250517"
 playAppUpdate = "2.1.0"
+fragment = "1.9.1"
 
 [libraries]
 androidx-core-ktx = { module = "androidx.core:core-ktx", version.ref = "coreKtx" }
@@ -26,6 +27,7 @@ androidx-room-runtime = { module = "androidx.room:room-runtime", version.ref = "
 androidx-room-compiler = { module = "androidx.room:room-compiler", version.ref = "room" }
 androidx-datastore-preferences = { module = "androidx.datastore:datastore-preferences", version.ref = "datastore" }
 play-app-update = { module = "com.google.android.play:app-update", version.ref = "playAppUpdate" }
+androidx-fragment = { module = "androidx.fragment:fragment", version.ref = "fragment" }
 junit = { module = "junit:junit", version = "4.13.2" }
 org-json = { module = "org.json:json", version.ref = "orgJson" }
 
