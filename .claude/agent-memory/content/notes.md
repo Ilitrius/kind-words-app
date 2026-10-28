@@ -11,3 +11,5 @@
 - Keine Neckereien, Beleidigungen oder negativ gefärbten Wörter (Nervensäge, Schnarchnase, pain in the neck, grumpy, Mist gebaut, leer/leise/empty/quiet, schlechter Tag, wehtun/hurt, Schuld/fault, streiten/fight). "Ich liebe dich" ist ausdrücklich gut.
 - Entschuldigungen: kurz, warm, wertschätzend ("Du bist mir wichtig"), keine Schuldzuweisung/Selbstanklage.
 - Prüfung: ContentToneTest (Stämme + ganze Wörter; Fehlalarme vermeiden: "whatever"≠"hate", "Entschuldige"≠"Schuld").
+
+- 2026-10-28 Content v4: 26 DE / 19 EN Texte natürlicher (Aphorismen, "ich schätze/bewundere/dankbar"-Sätze entschärft), ids stabil.

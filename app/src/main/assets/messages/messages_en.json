@@ -1,6 +1,6 @@
 {
   "language": "en",
-  "version": 3,
+  "version": 4,
   "messages": [
     {
       "id": "en-love-001",
@@ -55,7 +55,7 @@
     {
       "id": "en-love-011",
       "category": "love",
-      "text": "When I think of you, my whole day gets better."
+      "text": "One thought of you and my day's already better."
     },
     {
       "id": "en-love-012",
@@ -80,7 +80,7 @@
     {
       "id": "en-love-016",
       "category": "love",
-      "text": "I'm happy with you on every kind of day."
+      "text": "I like you on good days and tired days."
     },
     {
       "id": "en-love-017",
@@ -100,7 +100,7 @@
     {
       "id": "en-love-020",
       "category": "love",
-      "text": "Love you more than I can say."
+      "text": "Love you. Seriously, a lot."
     },
     {
       "id": "en-appreciation-001",
@@ -130,7 +130,7 @@
     {
       "id": "en-appreciation-006",
       "category": "appreciation",
-      "text": "I really value how honest you are with me."
+      "text": "I like how honest you are with me."
     },
     {
       "id": "en-appreciation-007",
@@ -140,12 +140,12 @@
     {
       "id": "en-appreciation-008",
       "category": "appreciation",
-      "text": "I can count on you. It means more than I usually say."
+      "text": "I can count on you. I should say that more."
     },
     {
       "id": "en-appreciation-009",
       "category": "appreciation",
-      "text": "The way you treat people keeps impressing me."
+      "text": "I love how you treat people."
     },
     {
       "id": "en-appreciation-010",
@@ -165,7 +165,7 @@
     {
       "id": "en-appreciation-013",
       "category": "appreciation",
-      "text": "You stay calm when I'm panicking. I'm grateful for that."
+      "text": "You stay calm when I'm panicking. It really helps."
     },
     {
       "id": "en-appreciation-014",
@@ -180,7 +180,7 @@
     {
       "id": "en-appreciation-016",
       "category": "appreciation",
-      "text": "You make me want to be better."
+      "text": "I like who I am with you."
     },
     {
       "id": "en-appreciation-017",
@@ -190,7 +190,7 @@
     {
       "id": "en-appreciation-018",
       "category": "appreciation",
-      "text": "I admire how you keep going when things get tough."
+      "text": "Love how you keep going when it gets tough."
     },
     {
       "id": "en-appreciation-019",
@@ -200,7 +200,7 @@
     {
       "id": "en-appreciation-020",
       "category": "appreciation",
-      "text": "I'm grateful for you. Today especially."
+      "text": "Glad I've got you. Today especially."
     },
     {
       "id": "en-morning-001",
@@ -405,12 +405,12 @@
     {
       "id": "en-encouragement-001",
       "category": "encouragement",
-      "text": "You can do this. I believe in you."
+      "text": "You've got this. I'm sure of it."
     },
     {
       "id": "en-encouragement-002",
       "category": "encouragement",
-      "text": "One step at a time. That's all today asks."
+      "text": "One thing at a time. That's plenty for today."
     },
     {
       "id": "en-encouragement-003",
@@ -435,7 +435,7 @@
     {
       "id": "en-encouragement-007",
       "category": "encouragement",
-      "text": "You don't have to be perfect. Just be you."
+      "text": "It doesn't have to be perfect. You're enough for me."
     },
     {
       "id": "en-encouragement-008",
@@ -470,7 +470,7 @@
     {
       "id": "en-encouragement-014",
       "category": "encouragement",
-      "text": "I'm on your side, whatever comes."
+      "text": "I'm on your side, whatever happens."
     },
     {
       "id": "en-encouragement-015",
@@ -480,7 +480,7 @@
     {
       "id": "en-encouragement-016",
       "category": "encouragement",
-      "text": "Doubt is normal. Giving up just isn't you."
+      "text": "Everyone doubts sometimes. Giving up just isn't your style."
     },
     {
       "id": "en-encouragement-017",
@@ -560,7 +560,7 @@
     {
       "id": "en-missyou-012",
       "category": "missyou",
-      "text": "Funny how much you can miss someone after two days."
+      "text": "Funny how I miss you after just two days."
     },
     {
       "id": "en-missyou-013",
@@ -620,7 +620,7 @@
     {
       "id": "en-compliment-004",
       "category": "compliment",
-      "text": "You make people feel good. Me first of all."
+      "text": "You make other people happy without trying. Me too."
     },
     {
       "id": "en-compliment-005",
@@ -660,7 +660,7 @@
     {
       "id": "en-compliment-012",
       "category": "compliment",
-      "text": "You're a great listener. It's one of the best things about you."
+      "text": "You're a really good listener. I love that."
     },
     {
       "id": "en-compliment-013",
@@ -875,7 +875,7 @@
     {
       "id": "en-thanks-015",
       "category": "thanks",
-      "text": "I'm so thankful you're by my side."
+      "text": "Glad you're by my side. Thank you for that."
     },
     {
       "id": "en-thanks-016",

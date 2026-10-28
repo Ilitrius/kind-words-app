@@ -1,6 +1,6 @@
 {
   "language": "de",
-  "version": 3,
+  "version": 4,
   "messages": [
     {
       "id": "de-love-001",
@@ -55,7 +55,7 @@
     {
       "id": "de-love-011",
       "category": "love",
-      "text": "Wenn ich an dich denke, wird jeder Tag besser."
+      "text": "Ein Gedanke an dich, und der Tag ist gleich besser."
     },
     {
       "id": "de-love-012",
@@ -80,7 +80,7 @@
     {
       "id": "de-love-016",
       "category": "love",
-      "text": "Ich hab dich an jedem einzelnen Tag furchtbar gern."
+      "text": "Ich hab dich gern. An guten Tagen und an müden auch."
     },
     {
       "id": "de-love-017",
@@ -100,12 +100,12 @@
     {
       "id": "de-love-020",
       "category": "love",
-      "text": "Ich lieb dich. Mehr, als ich sagen kann."
+      "text": "Ich lieb dich. Echt sehr."
     },
     {
       "id": "de-appreciation-001",
       "category": "appreciation",
-      "text": "Ich seh, wie viel du gibst. Und ich vergess das nicht."
+      "text": "Ich seh, wie viel du für uns machst."
     },
     {
       "id": "de-appreciation-002",
@@ -130,22 +130,22 @@
     {
       "id": "de-appreciation-006",
       "category": "appreciation",
-      "text": "Ich schätze es sehr, dass du so ehrlich zu mir bist."
+      "text": "Ich find gut, dass du so ehrlich zu mir bist."
     },
     {
       "id": "de-appreciation-007",
       "category": "appreciation",
-      "text": "Du hörst wirklich zu. Das ist selten und ich mag es sehr."
+      "text": "Du hörst wirklich zu. Das ist selten, und ich mag das."
     },
     {
       "id": "de-appreciation-008",
       "category": "appreciation",
-      "text": "Auf dich ist Verlass. Das bedeutet mir mehr, als ich oft sage."
+      "text": "Auf dich ist Verlass. Das sag ich viel zu selten."
     },
     {
       "id": "de-appreciation-009",
       "category": "appreciation",
-      "text": "Wie du mit anderen umgehst, beeindruckt mich immer wieder."
+      "text": "Wie du mit anderen umgehst, find ich richtig gut."
     },
     {
       "id": "de-appreciation-010",
@@ -165,7 +165,7 @@
     {
       "id": "de-appreciation-013",
       "category": "appreciation",
-      "text": "Du bleibst ruhig, wenn bei mir alles brennt. Das rechne ich dir hoch an."
+      "text": "Du bleibst ruhig, wenn bei mir alles brennt. Das hilft mir enorm."
     },
     {
       "id": "de-appreciation-014",
@@ -180,7 +180,7 @@
     {
       "id": "de-appreciation-016",
       "category": "appreciation",
-      "text": "Du machst mich zu einem besseren Menschen."
+      "text": "Mit dir will ich ein bisschen besser sein."
     },
     {
       "id": "de-appreciation-017",
@@ -190,17 +190,17 @@
     {
       "id": "de-appreciation-018",
       "category": "appreciation",
-      "text": "Ich bewundere, wie du dranbleibst, auch wenn es zäh wird."
+      "text": "Wie du dranbleibst, auch wenn es zäh wird, find ich stark."
     },
     {
       "id": "de-appreciation-019",
       "category": "appreciation",
-      "text": "Du merkst immer, wann ich dich brauche. Wie machst du das?"
+      "text": "Du merkst immer, wann ich dich brauche. Wie machst du das nur?"
     },
     {
       "id": "de-appreciation-020",
       "category": "appreciation",
-      "text": "Ich bin dankbar für dich. Heute ganz besonders."
+      "text": "Gut, dass ich dich hab. Heute ganz besonders."
     },
     {
       "id": "de-morning-001",
@@ -315,7 +315,7 @@
     {
       "id": "de-goodnight-003",
       "category": "goodnight",
-      "text": "Der Tag war lang. Komm gut zur Ruhe."
+      "text": "Langer Tag heute. Ruh dich aus."
     },
     {
       "id": "de-goodnight-004",
@@ -345,7 +345,7 @@
     {
       "id": "de-goodnight-009",
       "category": "goodnight",
-      "text": "Gute Nacht. Der Tag ist geschafft, jetzt darfst du träumen."
+      "text": "Gute Nacht. Für heute ist es geschafft."
     },
     {
       "id": "de-goodnight-010",
@@ -385,7 +385,7 @@
     {
       "id": "de-goodnight-017",
       "category": "goodnight",
-      "text": "Heute war nicht leicht, aber du hast es geschafft. Gute Nacht."
+      "text": "Das hast du heute gut gemacht. Gute Nacht."
     },
     {
       "id": "de-goodnight-018",
@@ -405,12 +405,12 @@
     {
       "id": "de-encouragement-001",
       "category": "encouragement",
-      "text": "Du schaffst das. Ich glaub fest an dich."
+      "text": "Das kriegst du hin. Da bin ich sicher."
     },
     {
       "id": "de-encouragement-002",
       "category": "encouragement",
-      "text": "Einen Schritt nach dem anderen. Mehr musst du heute nicht."
+      "text": "Eins nach dem anderen. Mehr muss heute nicht."
     },
     {
       "id": "de-encouragement-003",
@@ -420,7 +420,7 @@
     {
       "id": "de-encouragement-004",
       "category": "encouragement",
-      "text": "Du hast schon ganz anderes gemeistert. Das hier auch."
+      "text": "Du hast schon Schwierigeres hingekriegt. Das hier auch."
     },
     {
       "id": "de-encouragement-005",
@@ -435,7 +435,7 @@
     {
       "id": "de-encouragement-007",
       "category": "encouragement",
-      "text": "Du musst nicht perfekt sein. Du musst nur du sein."
+      "text": "Es muss nicht perfekt sein. Du reichst mir völlig."
     },
     {
       "id": "de-encouragement-008",
@@ -470,7 +470,7 @@
     {
       "id": "de-encouragement-014",
       "category": "encouragement",
-      "text": "Ich bin an deiner Seite, was auch kommt."
+      "text": "Ich bin auf deiner Seite, egal was kommt."
     },
     {
       "id": "de-encouragement-015",
@@ -480,7 +480,7 @@
     {
       "id": "de-encouragement-016",
       "category": "encouragement",
-      "text": "Zweifeln ist menschlich. Aufgeben passt nicht zu dir."
+      "text": "Zweifel hat jeder mal. Aufgeben ist aber nicht dein Ding."
     },
     {
       "id": "de-encouragement-017",
@@ -560,7 +560,7 @@
     {
       "id": "de-missyou-012",
       "category": "missyou",
-      "text": "Es ist komisch, wie sehr man jemanden nach zwei Tagen vermissen kann."
+      "text": "Komisch, wie du mir nach zwei Tagen schon fehlst."
     },
     {
       "id": "de-missyou-013",
@@ -620,7 +620,7 @@
     {
       "id": "de-compliment-004",
       "category": "compliment",
-      "text": "Du hast eine Art, Leute froh zu machen. Mich zuerst."
+      "text": "Du machst andere froh, ohne es zu merken. Mich auch."
     },
     {
       "id": "de-compliment-005",
@@ -660,7 +660,7 @@
     {
       "id": "de-compliment-012",
       "category": "compliment",
-      "text": "Du kannst so gut zuhören. Das macht dich besonders."
+      "text": "Du kannst richtig gut zuhören. Ich liebe das."
     },
     {
       "id": "de-compliment-013",
@@ -875,7 +875,7 @@
     {
       "id": "de-thanks-015",
       "category": "thanks",
-      "text": "Ich bin so dankbar, dass du an meiner Seite bist."
+      "text": "Schön, dass du bei mir bist. Danke dafür."
     },
     {
       "id": "de-thanks-016",
