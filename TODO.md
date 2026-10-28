@@ -36,6 +36,9 @@ Legende: `[ ]` offen · `[x]` erledigt · Agent in Klammern
 - [x] Update-Test: Favoriten und eigene Sätze bleiben nach Update (versionCode 2 -> 3) erhalten.
 
 ## Offen
+- [ ] Build 6 (Splash, Datenschutzlink, Update-Hinweis, Export/Import) bauen: `.\gradlew.bat lintDebug testDebugUnitTest assembleDebug`, im Emulator prüfen; Manifest-Berechtigungen und Data Safety gegenprüfen (Code ist geschrieben, nie kompiliert)
+- [ ] Doppelte KI-Prüfung (zweites Modell eines anderen Anbieters) vor Release dokumentieren (`docs/APP-PLAN.md` Abschnitt 8)
+- [ ] Doku-Lücken laut Plan: Prüfkriterien Energie, Abhängigkeits-Scan
 - [ ] Spenden-Button: vorhanden in Einstellungen; Nutzer wünscht evtl. weitere Platzierung (Rückfrage).
 - [ ] Play Console ausfüllen und Bundle hochladen (Nutzer; Anmeldung/Zahlungsdaten nicht durch Claude)
 - [ ] Optional: Auto-Backup für Favoriten/eigene Sätze bei Gerätewechsel (würde Datenschutztext + Data Safety ändern)
@@ -60,4 +63,4 @@ Legende: `[ ]` offen · `[x]` erledigt · Agent in Klammern
 - [x] (2026-10-27, ohne Build) Systemsprache umschalten ergänzen bzw. prüfen: Auswahl System/Deutsch/Englisch in den Optionen, und kontrollieren, dass wirklich alle Menüfelder und In-App-Texte (inkl. Benachrichtigungen, Datum/Zahlen) auf die gewählte Sprache wechseln. Gilt für alle Apps.
 - [x] (2026-10-27, geprüft, keine Lücken) Akkuschonend: App soll möglichst wenig Energie verbrauchen — keine unnötigen Hintergrund-Jobs/Wakelocks/Polling, Alarme nur wenn nötig (inexakt statt exakt), Coroutines/Flows nur bei sichtbarer UI sammeln (`collectAsStateWithLifecycle`), Animationen/Render-Schleifen im Hintergrund stoppen, Wiederholungen und Neuzeichnen minimieren. Per Profiler/Battery Historian prüfen. Gilt für alle Apps.
 
-- [ ] Nächster Build: `.\gradlew.bat assembleDebug lintDebug test` ausführen (2026-10-27 ohne SDK geschrieben, ungebaut); gemergtes Manifest auf fehlendes INTERNET prüfen; Update-Flow nur über Play-Internal-Test-Track testbar.
+- [x] (2026-10-28) Build + Lint + Tests grün nach Merge von `feature/pflichtanforderungen-build6` (UpdateController statt InAppUpdater; Fragment 1.8.9 explizit wegen Lint, LocalResources in Settings). Gemergtes Manifest: kein INTERNET nötig. Update-Flow nur über Play-Internal-Test-Track testbar.

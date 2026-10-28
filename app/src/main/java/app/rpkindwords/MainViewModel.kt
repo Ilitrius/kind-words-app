@@ -3,9 +3,12 @@ package app.rpkindwords
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
+import app.rpkindwords.data.BackupCodec
+import app.rpkindwords.data.BackupData
 import app.rpkindwords.data.Languages
 import app.rpkindwords.data.MessageEntity
 import app.rpkindwords.data.StyleProfile
+import app.rpkindwords.reminder.NotificationHelper
 import app.rpkindwords.reminder.ReminderScheduler
 import app.rpkindwords.reminder.ReminderSettings
 import java.util.Locale
@@ -93,6 +96,24 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
             messages.deleteUser(id)
             if (currentId.value == id) newSuggestion()
         }
+    }
+
+    /** Backup als JSON-Text (eigene Sätze, Favoriten, Sprache, Erinnerungen). */
+    suspend fun exportBackup(): String {
+        val (custom, favs) = messages.backupContent()
+        return BackupCodec.encode(BackupData(custom, favs, settings.contentLanguageOverride.first(), settings.reminder.first()))
+    }
+
+    /** Spielt ein Backup ein; null = ungültige Datei, sonst (neue Sätze, gesetzte Favoriten). */
+    suspend fun importBackup(json: String): Pair<Int, Int>? {
+        val data = BackupCodec.decode(json) ?: return null
+        val result = messages.restoreContent(data.custom, data.favorites)
+        settings.setContentLanguage(data.contentLang)
+        // Erinnerung nur aktiv lassen, wenn Benachrichtigungen erlaubt sind (sonst bliebe der Schalter wirkungslos).
+        val rem = data.reminder.let { if (it.enabled && !NotificationHelper.canPost(app)) it.copy(enabled = false) else it }
+        settings.updateReminder { rem }
+        ReminderScheduler.reschedule(app, settings.reminder.first())
+        return result
     }
 
     fun updateReminder(transform: (ReminderSettings) -> ReminderSettings) {

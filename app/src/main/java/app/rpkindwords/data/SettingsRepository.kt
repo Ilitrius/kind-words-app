@@ -5,6 +5,7 @@ import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.core.edit
 import androidx.datastore.preferences.core.intPreferencesKey
+import androidx.datastore.preferences.core.longPreferencesKey
 import androidx.datastore.preferences.core.booleanPreferencesKey
 import androidx.datastore.preferences.core.stringPreferencesKey
 import androidx.datastore.preferences.preferencesDataStore
@@ -36,6 +37,7 @@ class SettingsRepository(private val context: Context) {
         val fixed = stringPreferencesKey("rem_fixed")
         val days = stringPreferencesKey("rem_days")
         val contentLang = stringPreferencesKey("content_lang")
+        val lastUpdateCheck = longPreferencesKey("last_update_check")
         fun contentVersion(lang: String) = intPreferencesKey("content_version_$lang")
     }
 
@@ -79,5 +81,17 @@ class SettingsRepository(private val context: Context) {
 
     suspend fun setContentVersion(lang: String, v: Int) {
         context.dataStore.edit { it[K.contentVersion(lang)] = v }
+    }
+
+    /** Höchstens alle 24 h auf Updates prüfen (spart Akku und Netz); merkt sich den Zeitpunkt, wenn geprüft werden soll. */
+    suspend fun shouldCheckUpdate(now: Long = System.currentTimeMillis()): Boolean {
+        val last = context.dataStore.data.first()[K.lastUpdateCheck] ?: 0L
+        if (now - last in 0 until UPDATE_CHECK_INTERVAL_MS) return false
+        context.dataStore.edit { it[K.lastUpdateCheck] = now }
+        return true
+    }
+
+    private companion object {
+        const val UPDATE_CHECK_INTERVAL_MS = 24L * 60 * 60 * 1000
     }
 }

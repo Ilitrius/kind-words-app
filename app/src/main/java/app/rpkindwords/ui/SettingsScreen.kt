@@ -49,9 +49,12 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.platform.LocalResources
 import android.app.Activity
 import androidx.compose.runtime.rememberCoroutineScope
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 import androidx.compose.ui.res.pluralStringResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
@@ -61,6 +64,7 @@ import androidx.lifecycle.compose.LifecycleResumeEffect
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import app.rpkindwords.MainViewModel
 import app.rpkindwords.R
+import app.rpkindwords.data.BackupCodec
 import app.rpkindwords.reminder.NotificationHelper
 import app.rpkindwords.reminder.ReminderMode
 import app.rpkindwords.reminder.ReminderPlanner
@@ -110,6 +114,39 @@ fun SettingsScreen(vm: MainViewModel, modifier: Modifier = Modifier) {
         scope.launch {
             vm.setContentLanguage(lang)
             (context as? Activity)?.recreate() // lädt alle Texte in der neuen Sprache
+        }
+    }
+
+    val backupFile = "kindwords-backup.json"
+    val exportDone = stringResource(R.string.backup_export_done)
+    val exportFailed = stringResource(R.string.backup_export_failed)
+    val importInvalid = stringResource(R.string.backup_import_invalid)
+    val resources = LocalResources.current
+    val exportLauncher = rememberLauncherForActivityResult(ActivityResultContracts.CreateDocument("application/json")) { uri ->
+        if (uri != null) scope.launch {
+            val ok = runCatching {
+                val json = vm.exportBackup()
+                withContext(Dispatchers.IO) {
+                    context.contentResolver.openOutputStream(uri, "wt")!!.use { it.write(json.toByteArray(Charsets.UTF_8)) }
+                }
+            }.isSuccess
+            Toast.makeText(context, if (ok) exportDone else exportFailed, Toast.LENGTH_LONG).show()
+        }
+    }
+    val importLauncher = rememberLauncherForActivityResult(ActivityResultContracts.OpenDocument()) { uri ->
+        if (uri != null) scope.launch {
+            val json = runCatching {
+                withContext(Dispatchers.IO) {
+                    context.contentResolver.openInputStream(uri)!!.use { BackupCodec.readLimited(it) }
+                }
+            }.getOrNull()
+            val result = json?.let { vm.importBackup(it) }
+            if (result == null) {
+                Toast.makeText(context, importInvalid, Toast.LENGTH_LONG).show()
+            } else {
+                Toast.makeText(context, resources.getString(R.string.backup_import_done, result.first, result.second), Toast.LENGTH_LONG).show()
+                (context as? Activity)?.recreate() // Sprache aus dem Backup übernehmen
+            }
         }
     }
 
@@ -218,6 +255,24 @@ fun SettingsScreen(vm: MainViewModel, modifier: Modifier = Modifier) {
         }
 
         HorizontalDivider()
+        SectionTitle(R.string.backup_title)
+        Text(stringResource(R.string.backup_text), style = MaterialTheme.typography.bodyMedium)
+        Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+            OutlinedButton(onClick = { exportLauncher.launch(backupFile) }) { Text(stringResource(R.string.backup_export)) }
+            OutlinedButton(onClick = { importLauncher.launch(arrayOf("application/json", "text/plain")) }) { Text(stringResource(R.string.backup_import)) }
+        }
+
+        HorizontalDivider()
+        val privacyUrl = stringResource(R.string.privacy_url)
+        val privacyError = stringResource(R.string.donate_error)
+        TextButton(onClick = {
+            try {
+                context.startActivity(Intent(Intent.ACTION_VIEW, privacyUrl.toUri()).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK))
+            } catch (_: Exception) {
+                Toast.makeText(context, privacyError, Toast.LENGTH_SHORT).show()
+            }
+        }) { Text(stringResource(R.string.privacy_link)) }
+
         val packageInfo = remember(context) { context.packageManager.getPackageInfo(context.packageName, 0) }
         val versionText = stringResource(
             R.string.settings_version,

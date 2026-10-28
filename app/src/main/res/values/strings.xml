@@ -76,8 +76,21 @@
     <string name="channel_reminders_desc">Occasional kind words to share</string>
     <string name="notification_title">A kind word for today</string>
 
-    <string name="update_available">A new version of Kind Words is available.</string>
+    <string name="backup_title">Backup</string>
+    <string name="backup_text">Save your own sentences, favorites and settings to a file you choose, or restore them from such a file. Nothing is sent anywhere. Importing only adds data and deletes nothing.</string>
+    <string name="backup_export">Export</string>
+    <string name="backup_import">Import</string>
+    <string name="backup_export_done">Backup saved.</string>
+    <string name="backup_export_failed">The backup could not be saved.</string>
+    <string name="backup_import_done">Imported: %1$d new sentences, %2$d favorites.</string>
+    <string name="backup_import_invalid">This file is not a valid Kind Words backup.</string>
+
+    <string name="privacy_link">Privacy policy</string>
+    <string name="privacy_url">https://ilitrius.github.io/kind-words-app/privacy-policy.html</string>
+
+    <string name="update_available">A new version is available.</string>
     <string name="update_action">Update</string>
-    <string name="update_ready">The update is ready to install.</string>
+    <string name="update_later">Later</string>
+    <string name="update_ready">The update is ready.</string>
     <string name="update_restart">Restart</string>
 </resources>

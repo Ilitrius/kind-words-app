@@ -31,6 +31,8 @@ Belegt durch das gemergte Release-Manifest: **keine `INTERNET`-Berechtigung**, k
 - Erwartetes Ergebnis: niedrigste Altersstufe (z. B. USK 0 / PEGI 3 / Everyone). Das Alter der Zielgruppe (13+) ist davon getrennt und wird unter „Zielgruppe“ gesetzt.
 - Grenzfall: Falls der Fragebogen „Teilen von Nutzerinhalten“ so versteht, dass das System-Teilen zählt, ehrlich „Ja, nur an andere Apps über System-Teilen“ wählen; das ändert die Einstufung kaum.
 
+> **Nachtrag 2026-10-27 (Build 6, vor Upload prüfen):** Neu sind die Play-In-App-Update-Bibliothek (`com.google.android.play:app-update`; der Play Store fragt die Version ab, die App sendet keine Daten) und Export/Import per Dateiauswahl (lokal). Data Safety: weiterhin „keine Daten erhoben/geteilt“ – im gemergten Manifest prüfen, ob die Bibliothek `INTERNET`/`ACCESS_NETWORK_STATE` hinzufügt (`aapt dump permissions` am AAB); falls ja, Datenschutz-Abschnitt 4 und diese Datei anpassen.
+
 ## 4. Zielgruppe und Inhalt
 - Altersgruppen: **13–15, 16–17, 18+** (alle unter 13 abwählen)
 - Spricht die App Kinder unter 13 an: **Nein**; Aufmachung/Inhalte nicht kindgerecht beworben (keine Comic-Figuren o. Ä.)

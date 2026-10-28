@@ -23,6 +23,12 @@ Das „Gehirn“ des Projekts: Entscheidungen, Fakten, Fallstricke. Wird von Men
 - Spenden-Button (Einstellungen): `donate_url` in `res/values/donate.xml` (`translatable=false`, gleicher Stripe-Link wie RPCT-App); öffnet per `ACTION_VIEW` den Browser; ist die URL leer/nicht `https://`, wird die Karte ausgeblendet. Freiwillig, schaltet nichts frei; die App übermittelt selbst keine Daten, keine zusätzliche Berechtigung.
 - Zielgruppe: ab 13 Jahren; keine Konten, kein Tracking (Vorgabe Koordinator 2026-10-25).
 
+## Pflichtanforderungen-Abgleich (2026-10-27)
+- Plan: `docs/APP-PLAN.md`. Neu im Code (versionCode 6, **noch nicht gebaut/getestet**, in der Cloud ohne Android-SDK geschrieben): Splash (`core-splashscreen`, Theme `Theme.KindWords.Starting`), Datenschutzlink in Einstellungen (`privacy_url` je Sprache), Update-Hinweis (`update/UpdateController`, Play `app-update` 2.1.0, flexibel, max. 1×/24 h via DataStore `last_update_check`), Export/Import JSON (`data/Backup.kt`, Format v1, nur ergänzend, Test `BackupCodecTest`).
+- Stand 2026-10-27: Branch `feature/pflichtanforderungen-build6` (gepusht, nicht in `main`; `docs/` ist GitHub Pages, deshalb erst nach erfolgreichem Build mergen). Nur `BackupCodec` + `BackupCodecTest` wurden auf der JVM kompiliert und ausgeführt (4/4 grün, Scratch-Projekt mit Kotlin-JVM-Plugin). Voller Android-Build in der Cloud unmöglich: `dl.google.com` (SDK-Plattform 36, Build-Tools) ist per Netzwerkrichtlinie gesperrt; Maven Central, maven.google.com, Gradle sind erreichbar. Entsperren: Cloud-Umgebung > Edit > Network access / Allowed domains. Sonst lokal bauen und Fehler melden.
+- Nutzer-Wunsch-Ablauf: erst Plan (`docs/APP-PLAN.md`), dann Umsetzung, dann bauen/testen. Offen: Build, Lint, Emulator, zweite KI-Prüfung, PR.
+- Zu prüfen beim ersten Build: Manifest-Merge (fügt `app-update` Berechtigungen hinzu?), Lint, Splash-Optik, Backup-Roundtrip im Emulator. Crash-Reporting bewusst nicht (siehe Plan 8).
+
 ## Fallstricke
 - `Icons.Filled.*` braucht `material-icons-core` explizit als Dependency (kommt nicht transitiv durch material3); `ContentCopy` etc. sind nur in `-extended` (bewusst nicht genutzt, zu groß).
 - Dynamic Color nur ab API 31 (`Build.VERSION_CODES.S`), minSdk ist 26 – sonst Lint-Fehler.
@@ -62,3 +68,8 @@ Das „Gehirn“ des Projekts: Entscheidungen, Fakten, Fallstricke. Wird von Men
 - 2026-10-27 · Update-Hinweis · `update/InAppUpdater.kt`: Play `app-update` 2.1.0 (Listener-API, kein ktx), flexibler Flow, Check nur in onResume (max. alle 6 h), Fehler still verworfen; Snackbar Aktualisieren/Neu starten. Datenschutz + play-console-answers ergänzt · ungebaut, Manifest auf INTERNET prüfen.
 - 2026-10-27 · Sprache · Zeit/Wochentage in Einstellungen nutzen `LocalConfiguration.current.locales[0]` statt `Locale.getDefault()` (JVM-Default folgt dem In-App-Override nicht) · sonst gemischte Sprache.
 - 2026-10-27 · Akku · Geprüft: nur inexakter AlarmManager, kein WorkManager/Wakelock/Polling/Endlosanimation, UI-Flows `collectAsStateWithLifecycle`, ViewModel-Flows WhileSubscribed bzw. nur DataStore.
+
+## 2026-10-28 Merge
+- `feature/pflichtanforderungen-build6` und Update-Hinweis-Branch zusammengeführt: Es gilt `update/UpdateController` (Banner in MainScreen); `InAppUpdater` entfernt. Play `app-update` zieht Fragment 1.0.0 mit → `androidx.fragment` 1.8.9 explizit (sonst Lint-Fehler InvalidFragmentVersionForActivityResult).
+- Compose: Strings in Launcher-Callbacks vorab per `stringResource`/`LocalResources.current` holen (Lint LocalContextGetResourceValueCall).
+- Gradle-Cache nach abgebrochenem Build kann korrupte .aar enthalten → `--stop`, `~/.gradle/caches/9.8.2/transforms` und defekte Dateien löschen.
