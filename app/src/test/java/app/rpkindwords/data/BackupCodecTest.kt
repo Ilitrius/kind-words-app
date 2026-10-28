@@ -20,6 +20,12 @@ class BackupCodecTest {
         assertEquals(data, BackupCodec.decode(BackupCodec.encode(data)))
     }
 
+    @Test fun specialCharactersSurvive() {
+        val text = "Zeile\n mit \"Zitat\" <b>&</b> 😊"
+        val d = data.copy(custom = listOf(BackupCustom("de", text, false)))
+        assertEquals(text, BackupCodec.decode(BackupCodec.encode(d))!!.custom.single().text)
+    }
+
     @Test fun systemLanguageRoundTrip() {
         val d = data.copy(contentLang = null)
         assertNull(BackupCodec.decode(BackupCodec.encode(d))!!.contentLang)

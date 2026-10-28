@@ -1,0 +1,2 @@
+- [Emulator-Befehle & Fallstricke](emulator-howto.md) — adb/Git-Bash-Tricks, Zeit setzen für Alarm-Tests, Picker-Koordinaten
+- [QA-Lauf 2026-10-28 (bf5fe3b, Build 6)](qa-run-2026-10-28.md) — Ergebnis, offene Findings

@@ -26,3 +26,4 @@ Format: `YYYY-MM-DD · Thema · Regel · Warum`
 - 2026-10-26 · UI · Einstellungen zeigen 'Version <name> (<code>)' am Ende (stringResource settings_version, PackageInfoCompat; LocalContext.getString ist per Lint verboten) · Nutzerwunsch.
 - 2026-10-26 · Inhalte · KEINE negativen/neckenden Wörter in Sätzen (ContentToneTest prüft); 'Ich liebe dich' ist erwünscht; Entschuldigungen warm statt schuldzentriert; Neufassung nur mit ids stabil + version erhöhen (jetzt 3) · Nutzerwunsch.
 - 2026-10-26 · Stil · Lokale Stilauswertung der eigenen Sätze steuert Auswahl und Satzende (siehe BRAIN.md); Profil nie speichern/übertragen.
+- 2026-10-28 · QA-Lauf Build 6 · Voller Emulator-Lauf grün bis auf: Bottom-Nav bricht bei font_scale 2.0 mitten im Wort um; Link-Buttons ohne Browser geben kein Feedback · Details `.claude/agent-memory/qa-tester/qa-run-2026-10-28.md`; Test-Rezepte `emulator-howto.md`.

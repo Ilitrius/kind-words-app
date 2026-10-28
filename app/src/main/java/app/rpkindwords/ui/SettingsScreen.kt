@@ -107,7 +107,8 @@ fun SettingsScreen(vm: MainViewModel, modifier: Modifier = Modifier) {
     var tick by remember { mutableIntStateOf(0) }
     var picking by remember { mutableStateOf<PickTarget?>(null) }
     LifecycleResumeEffect(Unit) { tick++; onPauseOrDispose { } }
-    val canPost = remember(tick, s.enabled, permissionDenied) { NotificationHelper.canPost(context) }
+    @Suppress("UNUSED_EXPRESSION") tick // bei jedem Wiederkehren in die App neu prüfen
+    val canPost = NotificationHelper.canPost(context)
 
     val scope = rememberCoroutineScope()
     val changeLanguage: (String?) -> Unit = { lang ->

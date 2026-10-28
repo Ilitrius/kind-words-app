@@ -32,6 +32,10 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.platform.LocalDensity
+import androidx.compose.ui.text.style.TextOverflow
+import androidx.compose.ui.unit.Density
+import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.ui.unit.dp
 import app.rpkindwords.MainViewModel
 import app.rpkindwords.R
@@ -77,15 +81,19 @@ fun MainScreen(
     Scaffold(
         snackbarHost = { SnackbarHost(snackbar) },
         bottomBar = {
+            // Große Systemschrift: Labels der Leiste begrenzen, damit sie nicht mitten im Wort umbrechen.
+            val density = LocalDensity.current
+            CompositionLocalProvider(LocalDensity provides Density(density.density, density.fontScale.coerceAtMost(1.3f))) {
             NavigationBar {
                 Tab.entries.forEachIndexed { i, t ->
                     NavigationBarItem(
                         selected = tab == i,
                         onClick = { tab = i },
                         icon = { Icon(t.icon, contentDescription = null) },
-                        label = { Text(stringResource(t.label)) },
+                        label = { Text(stringResource(t.label), maxLines = 1, softWrap = false, overflow = TextOverflow.Ellipsis) },
                     )
                 }
+            }
             }
         },
     ) { padding ->
