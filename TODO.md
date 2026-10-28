@@ -64,3 +64,8 @@ Legende: `[ ]` offen · `[x]` erledigt · Agent in Klammern
 - [x] (2026-10-27, geprüft, keine Lücken) Akkuschonend: App soll möglichst wenig Energie verbrauchen — keine unnötigen Hintergrund-Jobs/Wakelocks/Polling, Alarme nur wenn nötig (inexakt statt exakt), Coroutines/Flows nur bei sichtbarer UI sammeln (`collectAsStateWithLifecycle`), Animationen/Render-Schleifen im Hintergrund stoppen, Wiederholungen und Neuzeichnen minimieren. Per Profiler/Battery Historian prüfen. Gilt für alle Apps.
 
 - [x] (2026-10-28) Build + Lint + Tests grün nach Merge von `feature/pflichtanforderungen-build6` (UpdateController statt InAppUpdater; Fragment 1.8.9 explizit wegen Lint, LocalResources in Settings). Gemergtes Manifest: kein INTERNET nötig. Update-Flow nur über Play-Internal-Test-Track testbar.
+
+## Stand 2026-10-28 (Abend)
+- [x] Merge, Content v4, Store-Texte neu, QA-Lauf, Fixes (Nav-Labels, Banner); Bundle versionCode 6 gebaut
+- [ ] Nutzer: Bundle + mapping.txt hochladen, Store-Texte/Grafiken in Console, Keystore sichern, Tester/14 Tage
+- [ ] Toast ohne Browser im Emulator verifizieren; AAB per bundletool testen; Update-Banner im Play-Internal-Test prüfen

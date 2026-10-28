@@ -73,3 +73,7 @@ Das „Gehirn“ des Projekts: Entscheidungen, Fakten, Fallstricke. Wird von Men
 - `feature/pflichtanforderungen-build6` und Update-Hinweis-Branch zusammengeführt: Es gilt `update/UpdateController` (Banner in MainScreen); `InAppUpdater` entfernt. Play `app-update` zieht Fragment 1.0.0 mit → `androidx.fragment` 1.8.9 explizit (sonst Lint-Fehler InvalidFragmentVersionForActivityResult).
 - Compose: Strings in Launcher-Callbacks vorab per `stringResource`/`LocalResources.current` holen (Lint LocalContextGetResourceValueCall).
 - Gradle-Cache nach abgebrochenem Build kann korrupte .aar enthalten → `--stop`, `~/.gradle/caches/9.8.2/transforms` und defekte Dateien löschen.
+
+## Stand 2026-10-28 (Abend)
+- main = 1c6347e, gepusht. Bundle versionCode 6 gebaut, noch nicht hochgeladen. QA-Lauf: keine Crashes; Nav-Labels (große Schrift) und Benachrichtigungs-Banner gefixt.
+- Morgen: ggf. Spenden-/Datenschutz-Toast ohne Browser im Emulator verifizieren; Upload/Console durch Nutzer; AAB per bundletool testen.
