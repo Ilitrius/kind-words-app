@@ -15,6 +15,7 @@ Wissen: `BRAIN.md` (Entscheidungen/Fakten, beim Start lesen, laufend pflegen) ·
 
 ## Befehle
 - Build: `.\gradlew.bat assembleDebug` · Lint: `.\gradlew.bat lintDebug` · Release-Bundle: `.\gradlew.bat bundleRelease`
+- Release-Ablage: `dist/kindwords-<version>-release.aab` (Play), `.apk` (Test), `mapping.txt` (R8, mit hochladen); `dist/` ist gitignored. Version steht in `app/build.gradle.kts`.
 - SDK: `ANDROID_HOME=D:\Android\Sdk` (`local.properties` ist gitignored), JDK 17.
 
 ## Agenten (`.claude/agents/`)
