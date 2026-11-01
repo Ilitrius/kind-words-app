@@ -82,3 +82,6 @@ Das „Gehirn“ des Projekts: Entscheidungen, Fakten, Fallstricke. Wird von Men
 - Content v5 (290 Sätze/Sprache): Emoji-Sätze in allen Kategorien + neue Kategorien `emoji`, `ascii` (Strings category_emoji/category_ascii, MessageRepository.categories). Im Emulator getestet (Rendering, Teilen, Update 4->5 synct). Home-Karte füllt jetzt die Breite (kurze Texte mittig).
 
 - 2026-11-01: Release 1.0.7 (versionCode 7) gebaut: app/build/outputs/bundle/release/app-release.aab + mapping.txt; nicht hochgeladen.
+
+## 2026-11-01 Spendenbitte
+- DonateDialog (ui/DonateDialog.kt): Pop-up mit Spenden (öffnet donate_url) und Abbrechen bei jedem echten App-Start (Flag im MainViewModel, nicht bei Drehen/Sprachwechsel). Nur wenn donate_url https ist. Im Emulator getestet. Noch nicht in einem Release (nächste Version 1.0.8/Build 8 nötig, 1.0.7 ist schon gebaut).

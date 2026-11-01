@@ -23,6 +23,7 @@ import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
+import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -78,6 +79,8 @@ fun MainScreen(
     var bannerDismissed by rememberSaveable { mutableStateOf(false) }
     val snackbar = remember { SnackbarHostState() }
     BackHandler(enabled = tab != 0) { tab = 0 }
+    val donatePrompt by vm.donatePrompt.collectAsStateWithLifecycle()
+    if (donatePrompt && stringResource(R.string.donate_url).startsWith("https://")) DonateDialog(onDismiss = vm::dismissDonatePrompt)
     Scaffold(
         snackbarHost = { SnackbarHost(snackbar) },
         bottomBar = {

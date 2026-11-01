@@ -31,6 +31,11 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
     private val messages = app.messages
     private val settings = app.settings
 
+    /** Spendenbitte: einmal pro Prozessstart (überlebt Drehen/Sprachwechsel, nicht den Neustart der App). */
+    private val _donatePrompt = MutableStateFlow(true)
+    val donatePrompt: StateFlow<Boolean> = _donatePrompt
+    fun dismissDonatePrompt() { _donatePrompt.value = false }
+
     val languageOverride: StateFlow<String?> =
         settings.contentLanguageOverride.stateIn(viewModelScope, SharingStarted.Eagerly, null)
 

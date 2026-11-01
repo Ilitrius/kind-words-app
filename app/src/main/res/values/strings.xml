@@ -72,6 +72,10 @@
     <string name="donate_title">Support Kind Words</string>
     <string name="donate_text">Kind Words is free, has no ads and no tracking. If you like it, you can make a voluntary donation. It is not required, unlocks nothing and is handled by an external provider in your browser. The app itself sends no data.</string>
     <string name="donate_button">Donate (opens browser)</string>
+    <string name="donate_prompt_title">Enjoying Kind Words?</string>
+    <string name="donate_prompt_text">Kind Words is free and has no ads. If it makes your days a little kinder, a small donation helps keep it that way. It is voluntary and unlocks nothing.</string>
+    <string name="donate_prompt_donate">Donate</string>
+    <string name="donate_prompt_cancel">Cancel</string>
     <string name="donate_error">No browser found to open the link.</string>
 
     <string name="channel_reminders_name">Reminders</string>

@@ -72,6 +72,10 @@
     <string name="donate_title">Kind Words unterstützen</string>
     <string name="donate_text">Kind Words ist kostenlos, ohne Werbung und ohne Tracking. Wenn dir die App gefällt, kannst du freiwillig spenden. Das ist nicht nötig, schaltet nichts frei und läuft über einen externen Anbieter in deinem Browser. Die App selbst übermittelt keine Daten.</string>
     <string name="donate_button">Spenden (öffnet Browser)</string>
+    <string name="donate_prompt_title">Gefällt dir Kind Words?</string>
+    <string name="donate_prompt_text">Kind Words ist kostenlos und ohne Werbung. Wenn die App deine Tage ein bisschen freundlicher macht, hilft eine kleine Spende, dass das so bleibt. Sie ist freiwillig und schaltet nichts frei.</string>
+    <string name="donate_prompt_donate">Spenden</string>
+    <string name="donate_prompt_cancel">Abbrechen</string>
     <string name="donate_error">Kein Browser zum Öffnen des Links gefunden.</string>
 
     <string name="channel_reminders_name">Erinnerungen</string>
