@@ -18,8 +18,8 @@ android {
         applicationId = "app.rpkindwords"
         minSdk = 26
         targetSdk = 36
-        versionCode = 6
-        versionName = "1.0.0"
+        versionCode = 7
+        versionName = "1.0.7"
     }
 
     androidResources {

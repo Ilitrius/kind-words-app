@@ -109,3 +109,4 @@ Gilt nur für den Entwicklungsprozess, die App enthält keine KI.
 ## 13. Änderungsprotokoll
 - 2026-10-27 · Plan angelegt aus Abgleich mit den Pflichtanforderungen; Umsetzung Splash, Datenschutzlink, Update-Hinweis, Export/Import beschlossen.
 - 2026-10-27 · Umsetzung der vier Punkte im Code (versionCode 6); Datenschutz de/en (Abschnitt 5a, Sicherung) und `store/play-console-answers.md` ergänzt. Status 🟡 = ungebaut/ungetestet.
+- 2026-11-01 · Release 1.0.7 (Build 7): Content v5 (Emoji + Textsymbole, 290 Sätze je Sprache, neue Kategorien), überarbeitete Store-Texte, Fixes aus dem QA-Lauf (Navigationsleiste bei großer Schrift, Banner-Aktualisierung). Pflichtanforderung 13: Version/Build wird in den Einstellungen aus der Build-Konfiguration angezeigt. Build, Lint, Unit-Tests und Emulator-Lauf (Claude); zweite unabhängige KI-Prüfung (Pflichtanforderung 9) steht noch aus.

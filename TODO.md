@@ -70,3 +70,4 @@ Legende: `[ ]` offen · `[x]` erledigt · Agent in Klammern
 - [ ] Nutzer: Bundle + mapping.txt hochladen, Store-Texte/Grafiken in Console, Keystore sichern, Tester/14 Tage
 - [ ] Toast ohne Browser im Emulator verifizieren; AAB per bundletool testen; Update-Banner im Play-Internal-Test prüfen
 - [x] (2026-11-01) Emoji + ASCII-Katalog (Content v5, Kategorien emoji/ascii), Store-Texte angepasst; Bundle muss neu gebaut werden (versionCode ggf. 7)
+- [ ] Nutzer: Bundle 1.0.7 (Build 7) + mapping.txt in Play Console hochladen

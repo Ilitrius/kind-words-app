@@ -75,8 +75,10 @@ Das „Gehirn“ des Projekts: Entscheidungen, Fakten, Fallstricke. Wird von Men
 - Gradle-Cache nach abgebrochenem Build kann korrupte .aar enthalten → `--stop`, `~/.gradle/caches/9.8.2/transforms` und defekte Dateien löschen.
 
 ## Stand 2026-10-28 (Abend)
-- main = 1c6347e, gepusht. Bundle versionCode 6 gebaut, noch nicht hochgeladen. QA-Lauf: keine Crashes; Nav-Labels (große Schrift) und Benachrichtigungs-Banner gefixt.
+- main = 1c6347e, gepusht. Bundle versionCode 7 (1.0.7) gebaut, noch nicht hochgeladen. QA-Lauf: keine Crashes; Nav-Labels (große Schrift) und Benachrichtigungs-Banner gefixt.
 - Morgen: ggf. Spenden-/Datenschutz-Toast ohne Browser im Emulator verifizieren; Upload/Console durch Nutzer; AAB per bundletool testen.
 
 ## 2026-11-01 Emoji/ASCII
 - Content v5 (290 Sätze/Sprache): Emoji-Sätze in allen Kategorien + neue Kategorien `emoji`, `ascii` (Strings category_emoji/category_ascii, MessageRepository.categories). Im Emulator getestet (Rendering, Teilen, Update 4->5 synct). Home-Karte füllt jetzt die Breite (kurze Texte mittig).
+
+- 2026-11-01: Release 1.0.7 (versionCode 7) gebaut: app/build/outputs/bundle/release/app-release.aab + mapping.txt; nicht hochgeladen.
