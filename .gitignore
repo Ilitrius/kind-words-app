@@ -19,3 +19,6 @@ play-service-account*.json
 # OS
 .DS_Store
 Thumbs.db
+
+# Release-Ausgabe (Konvention wie rpct-app)
+dist/
