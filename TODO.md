@@ -73,3 +73,4 @@ Legende: `[ ]` offen · `[x]` erledigt · Agent in Klammern
 - [ ] Nutzer: Bundle 1.0.7 (Build 7) + mapping.txt in Play Console hochladen
 - [ ] Nutzer: Bundle 1.0.8 (Build 8) statt 1.0.7 + mapping.txt hochladen
 - [ ] Nächster Release (1.0.9/Build 9): Content v6 (mehr Emoji-Sätze) enthalten; Store-Beschreibung de/en auf "rund 330" ändern
+- [ ] Nutzer: Bundle 1.0.9 (Build 9) + mapping.txt hochladen; Store-Beschreibung (store/listings) in Console eintragen
