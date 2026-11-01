@@ -85,3 +85,5 @@ Das „Gehirn“ des Projekts: Entscheidungen, Fakten, Fallstricke. Wird von Men
 
 ## 2026-11-01 Spendenbitte
 - DonateDialog (ui/DonateDialog.kt): Pop-up mit Spenden (öffnet donate_url) und Abbrechen bei jedem echten App-Start (Flag im MainViewModel, nicht bei Drehen/Sprachwechsel). Nur wenn donate_url https ist. Im Emulator getestet. Noch nicht in einem Release (nächste Version 1.0.8/Build 8 nötig, 1.0.7 ist schon gebaut).
+
+- 2026-11-01: Spendenbitte nur bei jedem 4. Start (DONATE_PROMPT_EVERY, Zähler in DataStore). Release 1.0.8 (versionCode 8) in dist/ gebaut, nicht hochgeladen; 1.0.7 ersetzt.

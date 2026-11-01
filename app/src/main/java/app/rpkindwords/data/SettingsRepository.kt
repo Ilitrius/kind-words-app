@@ -29,6 +29,7 @@ object Languages {
 
 class SettingsRepository(private val context: Context) {
     private object K {
+        val startCount = intPreferencesKey("start_count")
         val enabled = booleanPreferencesKey("rem_enabled")
         val mode = stringPreferencesKey("rem_mode")
         val perDay = intPreferencesKey("rem_per_day")
@@ -91,7 +92,21 @@ class SettingsRepository(private val context: Context) {
         return true
     }
 
+    /** Zählt einen echten App-Start; true, wenn die Spendenbitte fällig ist (jeder DONATE_PROMPT_EVERY-te Start). */
+    suspend fun registerStartAndCheckDonatePrompt(): Boolean {
+        var count = 0
+        context.dataStore.edit { p ->
+            count = (p[K.startCount] ?: 0) + 1
+            p[K.startCount] = count
+        }
+        return isDonatePromptDue(count)
+    }
+
     private companion object {
         const val UPDATE_CHECK_INTERVAL_MS = 24L * 60 * 60 * 1000
     }
 }
+
+const val DONATE_PROMPT_EVERY = 4
+
+fun isDonatePromptDue(startCount: Int): Boolean = startCount > 0 && startCount % DONATE_PROMPT_EVERY == 0
