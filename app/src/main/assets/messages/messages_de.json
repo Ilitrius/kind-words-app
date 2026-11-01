@@ -1,6 +1,6 @@
 {
   "language": "de",
-  "version": 5,
+  "version": 6,
   "messages": [
     {
       "id": "de-love-001",
@@ -1451,6 +1451,206 @@
       "id": "de-ascii-030",
       "category": "ascii",
       "text": "(◕‿◕)♥"
+    },
+    {
+      "id": "de-love-024",
+      "category": "love",
+      "text": "Du bist mein Zuhause 🏡❤️"
+    },
+    {
+      "id": "de-love-025",
+      "category": "love",
+      "text": "Jeden Tag ein bisschen mehr verliebt 😍"
+    },
+    {
+      "id": "de-love-026",
+      "category": "love",
+      "text": "Wir zwei, das ist mein Lieblingsteam 👫💕"
+    },
+    {
+      "id": "de-love-027",
+      "category": "love",
+      "text": "Ich schick dir einen Kuss 😘 Fang ihn auf"
+    },
+    {
+      "id": "de-appreciation-024",
+      "category": "appreciation",
+      "text": "Du bist ein Schatz 💎 Danke für alles"
+    },
+    {
+      "id": "de-appreciation-025",
+      "category": "appreciation",
+      "text": "Ohne dich wär vieles nur halb so schön 🌷"
+    },
+    {
+      "id": "de-appreciation-026",
+      "category": "appreciation",
+      "text": "Ich bin stolz auf dich 🏅"
+    },
+    {
+      "id": "de-appreciation-027",
+      "category": "appreciation",
+      "text": "Danke, dass du immer da bist 🤝"
+    },
+    {
+      "id": "de-morning-024",
+      "category": "morning",
+      "text": "Guten Morgen ☀️ Ich wünsch dir einen leichten Tag"
+    },
+    {
+      "id": "de-morning-025",
+      "category": "morning",
+      "text": "Der Kaffee wartet ☕ und ich freu mich auf dich"
+    },
+    {
+      "id": "de-morning-026",
+      "category": "morning",
+      "text": "Aufstehen, Sonne! 🌞 Ich denk an dich"
+    },
+    {
+      "id": "de-morning-027",
+      "category": "morning",
+      "text": "Moin 🌻 Heute wird ein guter Tag"
+    },
+    {
+      "id": "de-goodnight-024",
+      "category": "goodnight",
+      "text": "Schlaf schön 🌙 Ich träum von uns"
+    },
+    {
+      "id": "de-goodnight-025",
+      "category": "goodnight",
+      "text": "Gute Nacht 😴 Bis gleich im Traum 💫"
+    },
+    {
+      "id": "de-goodnight-026",
+      "category": "goodnight",
+      "text": "Kuscheln gedanklich schon mal 🛌💕"
+    },
+    {
+      "id": "de-goodnight-027",
+      "category": "goodnight",
+      "text": "Der Mond passt auf dich auf 🌛 Gute Nacht"
+    },
+    {
+      "id": "de-encouragement-024",
+      "category": "encouragement",
+      "text": "Du schaffst das 💪 Ich bin bei dir"
+    },
+    {
+      "id": "de-encouragement-025",
+      "category": "encouragement",
+      "text": "Ein Schritt nach dem anderen 👣 Ich glaub an dich"
+    },
+    {
+      "id": "de-encouragement-026",
+      "category": "encouragement",
+      "text": "Atme durch 🌬️ Du machst das gut"
+    },
+    {
+      "id": "de-encouragement-027",
+      "category": "encouragement",
+      "text": "Heute drück ich dir ganz fest die Daumen 🤞"
+    },
+    {
+      "id": "de-missyou-024",
+      "category": "missyou",
+      "text": "Ich vermiss dich 💭 Komm bald heim"
+    },
+    {
+      "id": "de-missyou-025",
+      "category": "missyou",
+      "text": "Gedanken fliegen zu dir ✈️💕"
+    },
+    {
+      "id": "de-missyou-026",
+      "category": "missyou",
+      "text": "Ich zähl die Stunden ⏳ bis zu unserem Wiedersehen"
+    },
+    {
+      "id": "de-missyou-027",
+      "category": "missyou",
+      "text": "Heimweg ohne dich ist halb so schön 🌆"
+    },
+    {
+      "id": "de-compliment-024",
+      "category": "compliment",
+      "text": "Du strahlst heute wieder 🌟"
+    },
+    {
+      "id": "de-compliment-025",
+      "category": "compliment",
+      "text": "Dein Lächeln ist mein Lieblingsanblick 😊"
+    },
+    {
+      "id": "de-compliment-026",
+      "category": "compliment",
+      "text": "Du bist so klug 🧠 und so lieb 💛"
+    },
+    {
+      "id": "de-compliment-027",
+      "category": "compliment",
+      "text": "Du siehst toll aus 😍 Wie immer"
+    },
+    {
+      "id": "de-humor-024",
+      "category": "humor",
+      "text": "Ich hab dich lieb wie Pizza 🍕 und Sofa 🛋️"
+    },
+    {
+      "id": "de-humor-025",
+      "category": "humor",
+      "text": "Du bist mein liebster Mensch 🏆 Knapp vor dem Kaffee ☕"
+    },
+    {
+      "id": "de-humor-026",
+      "category": "humor",
+      "text": "Mein Herz macht Überstunden ❤️⏰"
+    },
+    {
+      "id": "de-humor-027",
+      "category": "humor",
+      "text": "Ich teil mein Essen nur mit dir 🍟😉"
+    },
+    {
+      "id": "de-thanks-024",
+      "category": "thanks",
+      "text": "Danke für den schönen Tag 🌈"
+    },
+    {
+      "id": "de-thanks-025",
+      "category": "thanks",
+      "text": "Danke fürs Zuhören 👂💛"
+    },
+    {
+      "id": "de-thanks-026",
+      "category": "thanks",
+      "text": "Danke für deine Umarmung 🤗 Genau die hab ich gebraucht"
+    },
+    {
+      "id": "de-thanks-027",
+      "category": "thanks",
+      "text": "Das war lieb von dir 🎁 Danke"
+    },
+    {
+      "id": "de-apology-024",
+      "category": "apology",
+      "text": "Es tut mir leid 🙏 Du bist mir wichtig"
+    },
+    {
+      "id": "de-apology-025",
+      "category": "apology",
+      "text": "Können wir reden? ☕ Ich hör dir zu"
+    },
+    {
+      "id": "de-apology-026",
+      "category": "apology",
+      "text": "Entschuldige 💐 Ich will, dass es dir gut geht"
+    },
+    {
+      "id": "de-apology-027",
+      "category": "apology",
+      "text": "Neuer Anfang? 🤝 Ich hab dich lieb ❤️"
     }
   ]
 }

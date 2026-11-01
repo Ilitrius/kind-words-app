@@ -1,6 +1,6 @@
 {
   "language": "en",
-  "version": 5,
+  "version": 6,
   "messages": [
     {
       "id": "en-love-001",
@@ -1451,6 +1451,206 @@
       "id": "en-ascii-030",
       "category": "ascii",
       "text": "(◕‿◕)♥"
+    },
+    {
+      "id": "en-love-024",
+      "category": "love",
+      "text": "You're my home 🏡❤️"
+    },
+    {
+      "id": "en-love-025",
+      "category": "love",
+      "text": "A little more in love every day 😍"
+    },
+    {
+      "id": "en-love-026",
+      "category": "love",
+      "text": "You and me, my favorite team 👫💕"
+    },
+    {
+      "id": "en-love-027",
+      "category": "love",
+      "text": "Sending you a kiss 😘 Catch it"
+    },
+    {
+      "id": "en-appreciation-024",
+      "category": "appreciation",
+      "text": "You're a treasure 💎 Thank you for everything"
+    },
+    {
+      "id": "en-appreciation-025",
+      "category": "appreciation",
+      "text": "Without you a lot of things would be half as nice 🌷"
+    },
+    {
+      "id": "en-appreciation-026",
+      "category": "appreciation",
+      "text": "I'm proud of you 🏅"
+    },
+    {
+      "id": "en-appreciation-027",
+      "category": "appreciation",
+      "text": "Thanks for always being there 🤝"
+    },
+    {
+      "id": "en-morning-024",
+      "category": "morning",
+      "text": "Good morning ☀️ Hope your day goes smoothly"
+    },
+    {
+      "id": "en-morning-025",
+      "category": "morning",
+      "text": "Coffee's waiting ☕ and so am I"
+    },
+    {
+      "id": "en-morning-026",
+      "category": "morning",
+      "text": "Rise and shine! 🌞 Thinking of you"
+    },
+    {
+      "id": "en-morning-027",
+      "category": "morning",
+      "text": "Morning 🌻 Today's going to be a good one"
+    },
+    {
+      "id": "en-goodnight-024",
+      "category": "goodnight",
+      "text": "Sleep well 🌙 I'll dream of us"
+    },
+    {
+      "id": "en-goodnight-025",
+      "category": "goodnight",
+      "text": "Good night 😴 See you in dreams 💫"
+    },
+    {
+      "id": "en-goodnight-026",
+      "category": "goodnight",
+      "text": "Cuddling in my head already 🛌💕"
+    },
+    {
+      "id": "en-goodnight-027",
+      "category": "goodnight",
+      "text": "The moon's watching over you 🌛 Good night"
+    },
+    {
+      "id": "en-encouragement-024",
+      "category": "encouragement",
+      "text": "You've got this 💪 I'm with you"
+    },
+    {
+      "id": "en-encouragement-025",
+      "category": "encouragement",
+      "text": "One step at a time 👣 I believe in you"
+    },
+    {
+      "id": "en-encouragement-026",
+      "category": "encouragement",
+      "text": "Breathe 🌬️ You're doing great"
+    },
+    {
+      "id": "en-encouragement-027",
+      "category": "encouragement",
+      "text": "Fingers crossed for you today 🤞"
+    },
+    {
+      "id": "en-missyou-024",
+      "category": "missyou",
+      "text": "Miss you 💭 Come home soon"
+    },
+    {
+      "id": "en-missyou-025",
+      "category": "missyou",
+      "text": "My thoughts are flying to you ✈️💕"
+    },
+    {
+      "id": "en-missyou-026",
+      "category": "missyou",
+      "text": "Counting the hours ⏳ until I see you"
+    },
+    {
+      "id": "en-missyou-027",
+      "category": "missyou",
+      "text": "The walk home is half as nice without you 🌆"
+    },
+    {
+      "id": "en-compliment-024",
+      "category": "compliment",
+      "text": "You're glowing again today 🌟"
+    },
+    {
+      "id": "en-compliment-025",
+      "category": "compliment",
+      "text": "Your smile is my favorite sight 😊"
+    },
+    {
+      "id": "en-compliment-026",
+      "category": "compliment",
+      "text": "You're so smart 🧠 and so sweet 💛"
+    },
+    {
+      "id": "en-compliment-027",
+      "category": "compliment",
+      "text": "You look great 😍 As always"
+    },
+    {
+      "id": "en-humor-024",
+      "category": "humor",
+      "text": "I love you like pizza 🍕 and the couch 🛋️"
+    },
+    {
+      "id": "en-humor-025",
+      "category": "humor",
+      "text": "You're my favorite person 🏆 Just ahead of coffee ☕"
+    },
+    {
+      "id": "en-humor-026",
+      "category": "humor",
+      "text": "My heart is working overtime ❤️⏰"
+    },
+    {
+      "id": "en-humor-027",
+      "category": "humor",
+      "text": "I only share my fries with you 🍟😉"
+    },
+    {
+      "id": "en-thanks-024",
+      "category": "thanks",
+      "text": "Thanks for a lovely day 🌈"
+    },
+    {
+      "id": "en-thanks-025",
+      "category": "thanks",
+      "text": "Thanks for listening 👂💛"
+    },
+    {
+      "id": "en-thanks-026",
+      "category": "thanks",
+      "text": "Thanks for the hug 🤗 Exactly what I needed"
+    },
+    {
+      "id": "en-thanks-027",
+      "category": "thanks",
+      "text": "That was sweet of you 🎁 Thank you"
+    },
+    {
+      "id": "en-apology-024",
+      "category": "apology",
+      "text": "I'm sorry 🙏 You matter to me"
+    },
+    {
+      "id": "en-apology-025",
+      "category": "apology",
+      "text": "Can we talk? ☕ I'm listening"
+    },
+    {
+      "id": "en-apology-026",
+      "category": "apology",
+      "text": "Sorry 💐 I want you to feel good"
+    },
+    {
+      "id": "en-apology-027",
+      "category": "apology",
+      "text": "Fresh start? 🤝 I love you ❤️"
     }
   ]
 }

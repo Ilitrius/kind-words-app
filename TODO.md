@@ -72,3 +72,4 @@ Legende: `[ ]` offen · `[x]` erledigt · Agent in Klammern
 - [x] (2026-11-01) Emoji + ASCII-Katalog (Content v5, Kategorien emoji/ascii), Store-Texte angepasst; Bundle muss neu gebaut werden (versionCode ggf. 7)
 - [ ] Nutzer: Bundle 1.0.7 (Build 7) + mapping.txt in Play Console hochladen
 - [ ] Nutzer: Bundle 1.0.8 (Build 8) statt 1.0.7 + mapping.txt hochladen
+- [ ] Nächster Release (1.0.9/Build 9): Content v6 (mehr Emoji-Sätze) enthalten; Store-Beschreibung de/en auf "rund 330" ändern
