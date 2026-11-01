@@ -74,6 +74,8 @@ fun categoryLabel(id: String): String = when (id) {
     "humor" -> stringResource(R.string.category_humor)
     "thanks" -> stringResource(R.string.category_thanks)
     "apology" -> stringResource(R.string.category_apology)
+    "emoji" -> stringResource(R.string.category_emoji)
+    "ascii" -> stringResource(R.string.category_ascii)
     MessageRepository.CATEGORY_CUSTOM -> stringResource(R.string.category_custom)
     else -> id
 }
@@ -108,7 +110,7 @@ fun HomeScreen(vm: MainViewModel, snackbar: SnackbarHostState, modifier: Modifie
         }
         val msg = current
         Card(Modifier.fillMaxWidth()) {
-            Column(Modifier.padding(24.dp), horizontalAlignment = Alignment.CenterHorizontally, verticalArrangement = Arrangement.spacedBy(12.dp)) {
+            Column(Modifier.fillMaxWidth().padding(24.dp), horizontalAlignment = Alignment.CenterHorizontally, verticalArrangement = Arrangement.spacedBy(12.dp)) {
                 if (msg != null) {
                     Text(categoryLabel(msg.category), style = MaterialTheme.typography.labelLarge, color = MaterialTheme.colorScheme.primary)
                     Text(msg.text, style = MaterialTheme.typography.headlineSmall, textAlign = TextAlign.Center)

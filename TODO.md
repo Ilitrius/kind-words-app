@@ -69,3 +69,4 @@ Legende: `[ ]` offen · `[x]` erledigt · Agent in Klammern
 - [x] Merge, Content v4, Store-Texte neu, QA-Lauf, Fixes (Nav-Labels, Banner); Bundle versionCode 6 gebaut
 - [ ] Nutzer: Bundle + mapping.txt hochladen, Store-Texte/Grafiken in Console, Keystore sichern, Tester/14 Tage
 - [ ] Toast ohne Browser im Emulator verifizieren; AAB per bundletool testen; Update-Banner im Play-Internal-Test prüfen
+- [x] (2026-11-01) Emoji + ASCII-Katalog (Content v5, Kategorien emoji/ascii), Store-Texte angepasst; Bundle muss neu gebaut werden (versionCode ggf. 7)

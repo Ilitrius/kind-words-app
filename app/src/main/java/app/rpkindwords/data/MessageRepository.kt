@@ -122,7 +122,7 @@ class MessageRepository(
         const val CATEGORY_CUSTOM = "custom"
         val categories = listOf(
             "love", "appreciation", "morning", "goodnight", "encouragement",
-            "missyou", "compliment", "humor", "thanks", "apology",
+            "missyou", "compliment", "humor", "thanks", "apology", "emoji", "ascii",
         )
     }
 }

@@ -19,6 +19,8 @@
     <string name="category_humor">Humor</string>
     <string name="category_thanks">Danke</string>
     <string name="category_apology">Entschuldigung</string>
+    <string name="category_emoji">Emoji</string>
+    <string name="category_ascii">Textsymbole</string>
     <string name="category_custom">Eigene</string>
 
     <string name="action_new_suggestion">Neuer Vorschlag</string>

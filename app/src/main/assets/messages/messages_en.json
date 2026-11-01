@@ -1,6 +1,6 @@
 {
   "language": "en",
-  "version": 4,
+  "version": 5,
   "messages": [
     {
       "id": "en-love-001",
@@ -1001,6 +1001,456 @@
       "id": "en-apology-020",
       "category": "apology",
       "text": "Sorry. I love you, even when I don't show it well."
+    },
+    {
+      "id": "en-love-021",
+      "category": "love",
+      "text": "Love you ❤️"
+    },
+    {
+      "id": "en-love-022",
+      "category": "love",
+      "text": "You and me, we just fit 💕"
+    },
+    {
+      "id": "en-love-023",
+      "category": "love",
+      "text": "Thinking of you 😘"
+    },
+    {
+      "id": "en-appreciation-021",
+      "category": "appreciation",
+      "text": "Thanks for being you 💛"
+    },
+    {
+      "id": "en-appreciation-022",
+      "category": "appreciation",
+      "text": "I see everything you do. Thank you 🙏"
+    },
+    {
+      "id": "en-appreciation-023",
+      "category": "appreciation",
+      "text": "You're a gift to me ✨"
+    },
+    {
+      "id": "en-morning-021",
+      "category": "morning",
+      "text": "Good morning ☀️ Today's going to be nice"
+    },
+    {
+      "id": "en-morning-022",
+      "category": "morning",
+      "text": "Morning ☕ The first coffee is yours"
+    },
+    {
+      "id": "en-morning-023",
+      "category": "morning",
+      "text": "Morning, you 😊 See you later"
+    },
+    {
+      "id": "en-goodnight-021",
+      "category": "goodnight",
+      "text": "Good night 🌙 Sleep well"
+    },
+    {
+      "id": "en-goodnight-022",
+      "category": "goodnight",
+      "text": "Dream something nice 💤✨"
+    },
+    {
+      "id": "en-goodnight-023",
+      "category": "goodnight",
+      "text": "Night, you 😘 See you tomorrow"
+    },
+    {
+      "id": "en-encouragement-021",
+      "category": "encouragement",
+      "text": "You've got this 💪"
+    },
+    {
+      "id": "en-encouragement-022",
+      "category": "encouragement",
+      "text": "I believe in you ✨"
+    },
+    {
+      "id": "en-encouragement-023",
+      "category": "encouragement",
+      "text": "Chin up, I'm with you 🤗"
+    },
+    {
+      "id": "en-missyou-021",
+      "category": "missyou",
+      "text": "Miss you 💕"
+    },
+    {
+      "id": "en-missyou-022",
+      "category": "missyou",
+      "text": "Come home soon 🏡"
+    },
+    {
+      "id": "en-missyou-023",
+      "category": "missyou",
+      "text": "I miss you 😘"
+    },
+    {
+      "id": "en-compliment-021",
+      "category": "compliment",
+      "text": "You look great 😍"
+    },
+    {
+      "id": "en-compliment-022",
+      "category": "compliment",
+      "text": "You're awesome 🌟"
+    },
+    {
+      "id": "en-compliment-023",
+      "category": "compliment",
+      "text": "Your smile makes my day 😊"
+    },
+    {
+      "id": "en-humor-021",
+      "category": "humor",
+      "text": "I love you more than pizza 🍕❤️"
+    },
+    {
+      "id": "en-humor-022",
+      "category": "humor",
+      "text": "The couch is waiting for us 🛋️😄"
+    },
+    {
+      "id": "en-humor-023",
+      "category": "humor",
+      "text": "You make me laugh 😂"
+    },
+    {
+      "id": "en-thanks-021",
+      "category": "thanks",
+      "text": "Thanks for everything 🙏❤️"
+    },
+    {
+      "id": "en-thanks-022",
+      "category": "thanks",
+      "text": "Thank you from the heart 💐"
+    },
+    {
+      "id": "en-thanks-023",
+      "category": "thanks",
+      "text": "You're the best, thanks 🌟"
+    },
+    {
+      "id": "en-apology-021",
+      "category": "apology",
+      "text": "I'm sorry. You matter to me 💕"
+    },
+    {
+      "id": "en-apology-022",
+      "category": "apology",
+      "text": "Can we talk? 🤗"
+    },
+    {
+      "id": "en-apology-023",
+      "category": "apology",
+      "text": "I'm sorry, I love you ❤️"
+    },
+    {
+      "id": "en-emoji-001",
+      "category": "emoji",
+      "text": "❤️❤️❤️"
+    },
+    {
+      "id": "en-emoji-002",
+      "category": "emoji",
+      "text": "😘💕"
+    },
+    {
+      "id": "en-emoji-003",
+      "category": "emoji",
+      "text": "💑"
+    },
+    {
+      "id": "en-emoji-004",
+      "category": "emoji",
+      "text": "🌹❤️🌹"
+    },
+    {
+      "id": "en-emoji-005",
+      "category": "emoji",
+      "text": "☀️😊❤️"
+    },
+    {
+      "id": "en-emoji-006",
+      "category": "emoji",
+      "text": "🌙💤💕"
+    },
+    {
+      "id": "en-emoji-007",
+      "category": "emoji",
+      "text": "☕❤️"
+    },
+    {
+      "id": "en-emoji-008",
+      "category": "emoji",
+      "text": "🏡💞"
+    },
+    {
+      "id": "en-emoji-009",
+      "category": "emoji",
+      "text": "😍✨"
+    },
+    {
+      "id": "en-emoji-010",
+      "category": "emoji",
+      "text": "🤗💖"
+    },
+    {
+      "id": "en-emoji-011",
+      "category": "emoji",
+      "text": "💪❤️"
+    },
+    {
+      "id": "en-emoji-012",
+      "category": "emoji",
+      "text": "🍕❤️"
+    },
+    {
+      "id": "en-emoji-013",
+      "category": "emoji",
+      "text": "🛋️🍿❤️"
+    },
+    {
+      "id": "en-emoji-014",
+      "category": "emoji",
+      "text": "You're my 🌟"
+    },
+    {
+      "id": "en-emoji-015",
+      "category": "emoji",
+      "text": "I ❤️ you"
+    },
+    {
+      "id": "en-emoji-016",
+      "category": "emoji",
+      "text": "You + Me = ❤️"
+    },
+    {
+      "id": "en-emoji-017",
+      "category": "emoji",
+      "text": "Good night 😴💫"
+    },
+    {
+      "id": "en-emoji-018",
+      "category": "emoji",
+      "text": "Good morning ☀️☕"
+    },
+    {
+      "id": "en-emoji-019",
+      "category": "emoji",
+      "text": "Missing you 💭❤️"
+    },
+    {
+      "id": "en-emoji-020",
+      "category": "emoji",
+      "text": "Thanks 🙏💐"
+    },
+    {
+      "id": "en-emoji-021",
+      "category": "emoji",
+      "text": "Hugs 🤗🤗🤗"
+    },
+    {
+      "id": "en-emoji-022",
+      "category": "emoji",
+      "text": "Kiss 😚💋"
+    },
+    {
+      "id": "en-emoji-023",
+      "category": "emoji",
+      "text": "See you soon 😉💕"
+    },
+    {
+      "id": "en-emoji-024",
+      "category": "emoji",
+      "text": "🎉 We make a great team 🎉"
+    },
+    {
+      "id": "en-emoji-025",
+      "category": "emoji",
+      "text": "My favorite person 💘"
+    },
+    {
+      "id": "en-emoji-026",
+      "category": "emoji",
+      "text": "🌈😊🌈"
+    },
+    {
+      "id": "en-emoji-027",
+      "category": "emoji",
+      "text": "All my love 💝"
+    },
+    {
+      "id": "en-emoji-028",
+      "category": "emoji",
+      "text": "You rock 😎🔥"
+    },
+    {
+      "id": "en-emoji-029",
+      "category": "emoji",
+      "text": "Can't wait to see you 😊💞"
+    },
+    {
+      "id": "en-emoji-030",
+      "category": "emoji",
+      "text": "Stronger together 💪💑"
+    },
+    {
+      "id": "en-ascii-001",
+      "category": "ascii",
+      "text": "<3"
+    },
+    {
+      "id": "en-ascii-002",
+      "category": "ascii",
+      "text": "<3 <3 <3"
+    },
+    {
+      "id": "en-ascii-003",
+      "category": "ascii",
+      "text": "(^_^)"
+    },
+    {
+      "id": "en-ascii-004",
+      "category": "ascii",
+      "text": "(^_^)/"
+    },
+    {
+      "id": "en-ascii-005",
+      "category": "ascii",
+      "text": "\\(^o^)/"
+    },
+    {
+      "id": "en-ascii-006",
+      "category": "ascii",
+      "text": "(>^_^)>"
+    },
+    {
+      "id": "en-ascii-007",
+      "category": "ascii",
+      "text": "(^3^)"
+    },
+    {
+      "id": "en-ascii-008",
+      "category": "ascii",
+      "text": "(*^_^*)"
+    },
+    {
+      "id": "en-ascii-009",
+      "category": "ascii",
+      "text": ":-*"
+    },
+    {
+      "id": "en-ascii-010",
+      "category": "ascii",
+      "text": ":-)"
+    },
+    {
+      "id": "en-ascii-011",
+      "category": "ascii",
+      "text": ";-)"
+    },
+    {
+      "id": "en-ascii-012",
+      "category": "ascii",
+      "text": "xoxo"
+    },
+    {
+      "id": "en-ascii-013",
+      "category": "ascii",
+      "text": "XOXO <3"
+    },
+    {
+      "id": "en-ascii-014",
+      "category": "ascii",
+      "text": "You + Me = <3"
+    },
+    {
+      "id": "en-ascii-015",
+      "category": "ascii",
+      "text": "@}->--"
+    },
+    {
+      "id": "en-ascii-016",
+      "category": "ascii",
+      "text": "@};-"
+    },
+    {
+      "id": "en-ascii-017",
+      "category": "ascii",
+      "text": "*hug*"
+    },
+    {
+      "id": "en-ascii-018",
+      "category": "ascii",
+      "text": "(>'-')> <('-'<) ^('-')^"
+    },
+    {
+      "id": "en-ascii-019",
+      "category": "ascii",
+      "text": "<3 ~ <3"
+    },
+    {
+      "id": "en-ascii-020",
+      "category": "ascii",
+      "text": "=^.^="
+    },
+    {
+      "id": "en-ascii-021",
+      "category": "ascii",
+      "text": "(^-^)v"
+    },
+    {
+      "id": "en-ascii-022",
+      "category": "ascii",
+      "text": "(^_-)"
+    },
+    {
+      "id": "en-ascii-023",
+      "category": "ascii",
+      "text": "8-)"
+    },
+    {
+      "id": "en-ascii-024",
+      "category": "ascii",
+      "text": "(^_^)b"
+    },
+    {
+      "id": "en-ascii-025",
+      "category": "ascii",
+      "text": "~(^_^)~"
+    },
+    {
+      "id": "en-ascii-026",
+      "category": "ascii",
+      "text": "^_^ <3"
+    },
+    {
+      "id": "en-ascii-027",
+      "category": "ascii",
+      "text": "(o^_^o)"
+    },
+    {
+      "id": "en-ascii-028",
+      "category": "ascii",
+      "text": "Good night (-.-)Zzz <3"
+    },
+    {
+      "id": "en-ascii-029",
+      "category": "ascii",
+      "text": "Good morning \\(^o^)/"
+    },
+    {
+      "id": "en-ascii-030",
+      "category": "ascii",
+      "text": "(◕‿◕)♥"
     }
   ]
 }

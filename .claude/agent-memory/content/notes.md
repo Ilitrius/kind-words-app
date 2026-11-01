@@ -13,3 +13,4 @@
 - Prüfung: ContentToneTest (Stämme + ganze Wörter; Fehlalarme vermeiden: "whatever"≠"hate", "Entschuldige"≠"Schuld").
 
 - 2026-10-28 Content v4: 26 DE / 19 EN Texte natürlicher (Aphorismen, "ich schätze/bewundere/dankbar"-Sätze entschärft), ids stabil.
+- 2026-11-01 Nutzerwunsch: Emoji + ASCII aufnehmen. Content v5: je Sprache +30 Sätze mit Emoji in den 10 Kategorien (ids *-021..023), neue Kategorien `emoji` (30, Emoji-Folgen) und `ascii` (30, Textsymbole/Kaomoji), insgesamt 290. Emoji-Regel gilt NICHT mehr (nur Emoji bis Unicode 8/Emoji 5, damit API 26 sie zeigt); keine Satz-Endpunkte bei reinen Symbolen (StyleAdapter ändert "." am Ende).
