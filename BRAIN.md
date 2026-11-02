@@ -93,3 +93,4 @@ Das „Gehirn“ des Projekts: Entscheidungen, Fakten, Fallstricke. Wird von Men
 - Befehl: `ANDROID_HOME=/opt/android-sdk sh ./gradlew --no-daemon --max-workers=2 lintDebug testDebugUnitTest assembleDebug` (`gradlew` ohne Ausführrecht → `sh`). Stand: Lint sauber, 35 Unit-Tests grün, Debug-APK gebaut; läuft auch mit JDK 21.
 - Maven Central liefert beim ersten Lauf oft HTTP 429 → Build mehrfach mit Pause wiederholen, der Gradle-Cache wächst mit jedem Versuch.
 - Kein Release-Bundle in der Cloud (Upload-Keystore nur lokal), kein Emulator.
+- 2026-11-02 · Release-Build 1.0.8 (versionCode 8) in der Cloud: `lintRelease bundleRelease` laufen sauber durch (R8 ok). Ergebnis ist **unsigniert** (kein Upload-Keystore in der Cloud) → `dist/kindwords-1.0.8-unsigned.aab` + `mapping.txt`, nur als Build-Nachweis, nicht für Play. Signiertes Bundle weiterhin lokal bauen: `.\gradlew.bat lintRelease bundleRelease` → `dist/kindwords-1.0.8-release.aab`. Upload durch Nutzer steht aus.
