@@ -87,3 +87,9 @@ Das „Gehirn“ des Projekts: Entscheidungen, Fakten, Fallstricke. Wird von Men
 - DonateDialog (ui/DonateDialog.kt): Pop-up mit Spenden (öffnet donate_url) und Abbrechen bei jedem echten App-Start (Flag im MainViewModel, nicht bei Drehen/Sprachwechsel). Nur wenn donate_url https ist. Im Emulator getestet. Noch nicht in einem Release (nächste Version 1.0.8/Build 8 nötig, 1.0.7 ist schon gebaut).
 
 - 2026-11-01: Spendenbitte nur bei jedem 4. Start (DONATE_PROMPT_EVERY, Zähler in DataStore). Release 1.0.8 (versionCode 8) in dist/ gebaut, nicht hochgeladen; 1.0.7 ersetzt.
+
+## 2026-11-02 Cloud-Build
+- `dl.google.com` ist in der Cloud jetzt erreichbar; der Android-Build läuft dort. SDK per cmdline-tools nach `/opt/android-sdk` (Plattform 36, Build-Tools 36.0.0, platform-tools), `local.properties` mit `sdk.dir=/opt/android-sdk` (gitignored). Ersetzt den Hinweis "Voller Android-Build in der Cloud unmöglich" oben.
+- Befehl: `ANDROID_HOME=/opt/android-sdk sh ./gradlew --no-daemon --max-workers=2 lintDebug testDebugUnitTest assembleDebug` (`gradlew` ohne Ausführrecht → `sh`). Stand: Lint sauber, 35 Unit-Tests grün, Debug-APK gebaut; läuft auch mit JDK 21.
+- Maven Central liefert beim ersten Lauf oft HTTP 429 → Build mehrfach mit Pause wiederholen, der Gradle-Cache wächst mit jedem Versuch.
+- Kein Release-Bundle in der Cloud (Upload-Keystore nur lokal), kein Emulator.
