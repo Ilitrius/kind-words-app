@@ -113,3 +113,4 @@ Gilt nur für den Entwicklungsprozess, die App enthält keine KI.
 - 2026-11-01 · Release 1.0.8 (Build 8): Spendenbitte als Pop-up bei jedem 4. App-Start (lokaler Zähler); Store-Beschreibung überarbeitet. Build, Lint, Unit-Tests, Emulator (Start 1-5) durch Claude; zweite KI-Prüfung (Pflichtanforderung 9) weiter offen.
 - 2026-11-01 · Content v6 (mehr Emoji-Sätze) vorgemerkt für Release 1.0.9.
 - 2026-11-01 · Release 1.0.9 (Build 9): Content v6 (330 Sätze je Sprache, mehr Emoji-Sätze), Store-Beschreibung auf "rund 330" angepasst. Build, Lint, Tests durch Claude.
+- 2026-11-06 · Tester-Feedback (Onboarding, Bewerten-Button, ASO, Screenshots) in TODO.md übernommen; Übersetzung unter docs/TESTER-FEEDBACK-2026-11.md.

@@ -91,3 +91,6 @@ Das „Gehirn“ des Projekts: Entscheidungen, Fakten, Fallstricke. Wird von Men
 - 2026-11-01: Content v6 (330 Sätze/Sprache, mehr Emoji-Sätze) committet, NOCH NICHT im Release 1.0.8. Nächster Release: 1.0.9/Build 9, Store-Text "rund 330 Sätze" anpassen.
 
 - 2026-11-01: Release 1.0.9 (Build 9) in dist/ gebaut (Content v6, Store-Text "rund 330"); nicht hochgeladen.
+
+## 2026-11-06 Tester-Feedback
+- Bericht der Tester-Community übersetzt (docs/TESTER-FEEDBACK-2026-11.md), 8 Aufgaben in TODO.md übernommen: ASO, Screenshots, Onboarding, Bewerten-Button, Feedback, Reviews. Keine Abstürze gemeldet.
