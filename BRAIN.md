@@ -94,3 +94,9 @@ Das „Gehirn“ des Projekts: Entscheidungen, Fakten, Fallstricke. Wird von Men
 
 ## 2026-11-06 Tester-Feedback
 - Bericht der Tester-Community übersetzt (docs/TESTER-FEEDBACK-2026-11.md), 8 Aufgaben in TODO.md übernommen: ASO, Screenshots, Onboarding, Bewerten-Button, Feedback, Reviews. Keine Abstürze gemeldet.
+
+## 2026-11-02 Cloud-Build
+- `dl.google.com` ist in der Cloud jetzt erreichbar; der Android-Build läuft dort. SDK per cmdline-tools nach `/opt/android-sdk` (Plattform 36, Build-Tools 36.0.0, platform-tools), `local.properties` mit `sdk.dir=/opt/android-sdk` (gitignored). Ersetzt den Hinweis "Voller Android-Build in der Cloud unmöglich" oben.
+- Befehl: `ANDROID_HOME=/opt/android-sdk sh ./gradlew --no-daemon --max-workers=2 lintDebug testDebugUnitTest assembleDebug` (`gradlew` ohne Ausführrecht → `sh`). Stand: Lint sauber, 35 Unit-Tests grün, Debug-APK gebaut; läuft auch mit JDK 21.
+- Maven Central liefert beim ersten Lauf oft HTTP 429 → Build mehrfach mit Pause wiederholen, der Gradle-Cache wächst mit jedem Versuch.
+- Kein Release-Bundle in der Cloud (Upload-Keystore nur lokal), kein Emulator.
