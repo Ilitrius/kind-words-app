@@ -18,10 +18,10 @@ os.makedirs(OUT, exist_ok=True)
 
 L = {
     "en": dict(new="New suggestion", fav_add="Add to favorites", nav_fav="Favorites", nav_mine="My words",
-               nav_set="Settings", add="Add", save="Save", cat="Love",
+               nav_set="Settings", add="Add", save="Save", cat="Love", skip="Skip", share="Share", emoji="Emoji",
                own=["You%smake%smy%sday.", "Thanks%sfor%sbeing%syou."]),
     "de": dict(new="Neuer Vorschlag", fav_add="Zu Favoriten hinzufügen", nav_fav="Favoriten", nav_mine="Eigene Sätze",
-               nav_set="Einstellungen", add="Hinzufügen", save="Speichern", cat="Liebe",
+               nav_set="Einstellungen", add="Hinzufügen", save="Speichern", cat="Liebe", skip="Überspringen", share="Teilen", emoji="Emoji",
                own=["Du%sbringst%smich%szum%sLachen.", "Du%smachst%smeinen%sTag%sheller."]),
 }
 
@@ -73,6 +73,10 @@ def run(lang):
     adb("shell", "am", "force-stop", PKG)
     adb("shell", "am", "start", "-n", f"{PKG}/.MainActivity")
     time.sleep(5)
+    try:  # Einführung beim ersten Start überspringen
+        tap(s["skip"], 1.5)
+    except RuntimeError:
+        pass
     # Favoriten anlegen
     tap(s["cat"])
     for _ in range(3):
@@ -83,9 +87,20 @@ def run(lang):
             pass
     tap(s["new"])
     shot(lang, 1, "home")
+    # Kategorie Emoji (Chip ist erst nach Wischen sichtbar) + Teilen-Dialog
+    for _ in range(3):
+        adb("shell", "input", "swipe", "900", "378", "100", "378", "300")
+        time.sleep(0.6)
+    tap(s["emoji"], 1.2)
+    tap(s["new"])
+    shot(lang, 2, "emoji")
+    tap(s["share"], 2.5)
+    shot(lang, 3, "share")
+    adb("shell", "input", "keyevent", "KEYCODE_BACK")
+    time.sleep(1)
     # Favoriten
     tap(s["nav_fav"], 1.5, last=True)
-    shot(lang, 2, "favorites")
+    shot(lang, 4, "favorites")
     # Eigene Saetze
     tap(s["nav_mine"], 1.5, last=True)
     for text in s["own"]:
@@ -94,10 +109,10 @@ def run(lang):
         adb("shell", "input", "text", text)
         time.sleep(0.5)
         tap(s["save"])
-    shot(lang, 3, "mine")
+    shot(lang, 5, "mine")
     # Einstellungen
     tap(s["nav_set"], 1.5, last=True)
-    shot(lang, 4, "settings")
+    shot(lang, 6, "settings")
 
 
 for lg in ("en", "de"):

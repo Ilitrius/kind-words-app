@@ -85,4 +85,6 @@ Legende: `[ ]` offen · `[x]` erledigt · Agent in Klammern
 - [ ] Wiederkehr: Erinnerungen existieren; prüfen, ob Hinweis auf neue Inhalte (Content-Updates) sinnvoll ist
 - [ ] Bewertungen/Rezensionen nach Freigabe beobachten und Aufgaben daraus ableiten
 - [ ] Nutzer: Bundle 1.0.10 (Build 10) + mapping.txt hochladen; Store-Beschreibung de/en (store/listings) eintragen; Data Safety bleibt "keine Daten"
-- [ ] Offen: Nutzerstimmen (nur echte, mit Zustimmung; Play-Richtlinie verbietet anonyme Testimonials), Screenshots mit Textüberlagerung (Design), Rezensionen beobachten, optional In-App-Review (Play-Review-Bibliothek, einmalig ab Start 10, nie am Spendenbitte-Start; Manifest/Datenschutz prüfen)
+- [ ] Offen: Nutzerstimmen (nur echte, mit Zustimmung; Play-Richtlinie verbietet anonyme Testimonials), Rezensionen beobachten, optional In-App-Review (Play-Review-Bibliothek, einmalig ab Start 10, nie am Spendenbitte-Start; Manifest/Datenschutz prüfen)
+
+- [x] (2026-11-06) Screenshots neu: 6 je Sprache mit Überschriften (Home, Emoji-Kategorie, Teilen, Favoriten, Eigene Sätze, Einstellungen); Tools store/tools/capture_screenshots.py + frame_screenshots.py. In Play Console hochladen (store/graphics/play-screenshots/<lang>/). Hinweis: Teilen-Dialog ist Systemoberfläche (englisch) auch im DE-Satz.

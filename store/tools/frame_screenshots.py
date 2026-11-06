@@ -15,10 +15,22 @@ W, H = 1350, 2400
 SS = 2
 
 CAPTIONS = {
-    "en": {"1_home": "Kind words,\none tap away", "2_favorites": "Keep your\nfavorites",
-           "3_mine": "Add your\nown words", "4_settings": "Gentle reminders,\nyour way"},
-    "de": {"1_home": "Nette Worte,\nein Tipp entfernt", "2_favorites": "Behalte deine\nFavoriten",
-           "3_mine": "Schreibe deine\neigenen Worte", "4_settings": "Sanfte Erinnerungen,\nnach deinem Takt"},
+    "en": {
+        "1_home": "Kind words,\none tap away",
+        "2_emoji": "12 categories,\nalso emoji & symbols",
+        "3_share": "Share in any\nmessenger",
+        "4_favorites": "Keep your\nfavorites",
+        "5_mine": "Add your\nown words",
+        "6_settings": "Gentle reminders,\nyour way",
+    },
+    "de": {
+        "1_home": "Nette Worte,\nein Tipp entfernt",
+        "2_emoji": "12 Kategorien,\nauch Emoji & Symbole",
+        "3_share": "In jedem Messenger\nteilen",
+        "4_favorites": "Behalte deine\nFavoriten",
+        "5_mine": "Schreibe deine\neigenen Worte",
+        "6_settings": "Sanfte Erinnerungen,\nnach deinem Takt",
+    },
 }
 
 
