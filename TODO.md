@@ -76,11 +76,13 @@ Legende: `[ ]` offen · `[x]` erledigt · Agent in Klammern
 - [ ] Nutzer: Bundle 1.0.9 (Build 9) + mapping.txt hochladen; Store-Beschreibung (store/listings) in Console eintragen
 
 ## Tester-Feedback 2026-11-06 (siehe docs/TESTER-FEEDBACK-2026-11.md)
-- [ ] ASO: Beschreibung de/en um Schlüsselwörter (Partner, Liebe, nette Worte, Komplimente, Erinnerung, Gute-Nacht-Nachricht) und Anwendungsfälle erweitern; Datenschutz-Absatz ausführlicher; beide Sprachen getrennt optimieren; später regelmäßig prüfen (play-release, i18n-guardian)
+- [x] (2026-11-06, 1.0.10) ASO: Beschreibung de/en um Schlüsselwörter (Partner, Liebe, nette Worte, Komplimente, Erinnerung, Gute-Nacht-Nachricht) und Anwendungsfälle erweitern; Datenschutz-Absatz ausführlicher; beide Sprachen getrennt optimieren; später regelmäßig prüfen (play-release, i18n-guardian)
 - [ ] Nutzerstimmen in die Beschreibung: nur echte Zitate mit Zustimmung, sobald vorhanden (nichts erfinden)
 - [ ] Screenshots neu: Textüberlagerungen (Kategorien, Teilen, Erinnerungen, Emoji/Textsymbole), Anwendungs-Kontext, hochwertiges Design, je Sprache (Nutzer/Designer + play-release)
-- [ ] Onboarding: kurze interaktive Einführung beim ersten Start (nach Splash) mit Überspringen; optional Tooltips bei neuen Funktionen; Texte in `values/` + `values-de/` (android-dev, i18n-guardian)
-- [ ] Button "App bewerten" in den Einstellungen (Play-Store-Bewertungsseite) + optional In-App-Review-API zu passendem Zeitpunkt (nicht zusammen mit der Spendenbitte); Data Safety/Datenschutz prüfen (android-dev, legal-docs)
-- [ ] Feedback senden: Eintrag in den Einstellungen (E-Mail-Intent, keine Internetberechtigung nötig) (android-dev)
+- [x] (2026-11-06, 1.0.10) Onboarding: kurze interaktive Einführung beim ersten Start (nach Splash) mit Überspringen; optional Tooltips bei neuen Funktionen; Texte in `values/` + `values-de/` (android-dev, i18n-guardian)
+- [x] (2026-11-06, 1.0.10; ohne In-App-Review-API, bewusst) Button "App bewerten" in den Einstellungen (Play-Store-Bewertungsseite) + optional In-App-Review-API zu passendem Zeitpunkt (nicht zusammen mit der Spendenbitte); Data Safety/Datenschutz prüfen (android-dev, legal-docs)
+- [x] (2026-11-06, 1.0.10) Feedback senden: Eintrag in den Einstellungen (E-Mail-Intent, keine Internetberechtigung nötig) (android-dev)
 - [ ] Wiederkehr: Erinnerungen existieren; prüfen, ob Hinweis auf neue Inhalte (Content-Updates) sinnvoll ist
 - [ ] Bewertungen/Rezensionen nach Freigabe beobachten und Aufgaben daraus ableiten
+- [ ] Nutzer: Bundle 1.0.10 (Build 10) + mapping.txt hochladen; Store-Beschreibung de/en (store/listings) eintragen; Data Safety bleibt "keine Daten"
+- [ ] Offen: Nutzerstimmen (nur echte, mit Zustimmung; Play-Richtlinie verbietet anonyme Testimonials), Screenshots mit Textüberlagerung (Design), Rezensionen beobachten, optional In-App-Review (Play-Review-Bibliothek, einmalig ab Start 10, nie am Spendenbitte-Start; Manifest/Datenschutz prüfen)

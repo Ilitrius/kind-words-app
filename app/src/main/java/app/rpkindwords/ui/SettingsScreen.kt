@@ -88,6 +88,30 @@ private sealed interface PickTarget {
 private fun fmt(min: Int, locale: Locale): String =
     LocalTime.of(min / 60, min % 60).format(DateTimeFormatter.ofLocalizedTime(FormatStyle.SHORT).withLocale(locale))
 
+/** Play-Store-App bevorzugt, sonst Webseite; false, wenn beides nicht geht (z. B. Emulator ohne Play Store und ohne Browser). */
+private fun openRate(context: Context, marketUrl: String, webUrl: String): Boolean {
+    for (url in listOf(marketUrl, webUrl)) {
+        try {
+            context.startActivity(Intent(Intent.ACTION_VIEW, url.toUri()).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK))
+            return true
+        } catch (_: Exception) {
+        }
+    }
+    return false
+}
+
+private fun sendFeedback(context: Context, email: String, subject: String): Boolean = try {
+    context.startActivity(
+        Intent(Intent.ACTION_SENDTO, "mailto:".toUri())
+            .putExtra(Intent.EXTRA_EMAIL, arrayOf(email))
+            .putExtra(Intent.EXTRA_SUBJECT, subject)
+            .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK),
+    )
+    true
+} catch (_: Exception) {
+    false
+}
+
 private fun openNotificationSettings(context: Context) {
     context.startActivity(
         Intent(Settings.ACTION_APP_NOTIFICATION_SETTINGS)
@@ -234,6 +258,29 @@ fun SettingsScreen(vm: MainViewModel, modifier: Modifier = Modifier) {
             FilterChip(selected = langOverride == null, onClick = { changeLanguage(null) }, label = { Text(stringResource(R.string.lang_system)) })
             FilterChip(selected = langOverride == "de", onClick = { changeLanguage("de") }, label = { Text(stringResource(R.string.lang_de)) })
             FilterChip(selected = langOverride == "en", onClick = { changeLanguage("en") }, label = { Text(stringResource(R.string.lang_en)) })
+        }
+
+        HorizontalDivider()
+        Card(Modifier.fillMaxWidth()) {
+            Column(Modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
+                Text(stringResource(R.string.feedback_title), style = MaterialTheme.typography.titleMedium)
+                Text(stringResource(R.string.feedback_text), style = MaterialTheme.typography.bodyMedium)
+                val marketUrl = stringResource(R.string.rate_url_market)
+                val webUrl = stringResource(R.string.rate_url_web)
+                val email = stringResource(R.string.feedback_email)
+                val version = remember(context) { context.packageManager.getPackageInfo(context.packageName, 0).versionName.orEmpty() }
+                val subject = stringResource(R.string.feedback_subject, version)
+                val rateError = stringResource(R.string.rate_error)
+                val feedbackError = stringResource(R.string.feedback_error)
+                Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                    FilledTonalButton(onClick = {
+                        if (!openRate(context, marketUrl, webUrl)) Toast.makeText(context, rateError, Toast.LENGTH_SHORT).show()
+                    }) { Text(stringResource(R.string.rate_button)) }
+                    OutlinedButton(onClick = {
+                        if (!sendFeedback(context, email, subject)) Toast.makeText(context, feedbackError, Toast.LENGTH_SHORT).show()
+                    }) { Text(stringResource(R.string.feedback_button)) }
+                }
+            }
         }
 
         val donateUrl = stringResource(R.string.donate_url)

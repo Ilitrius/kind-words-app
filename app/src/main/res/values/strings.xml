@@ -99,4 +99,22 @@
     <string name="update_later">Later</string>
     <string name="update_ready">The update is ready.</string>
     <string name="update_restart">Restart</string>
+
+    <string name="feedback_title">Rate &amp; feedback</string>
+    <string name="feedback_text">Enjoying Kind Words? A rating in the Play Store helps others find it. Ideas or problems? Write to us, we read every message.</string>
+    <string name="rate_button">Rate the app</string>
+    <string name="feedback_button">Send feedback</string>
+    <string name="rate_error">The Play Store could not be opened.</string>
+    <string name="feedback_error">No email app found.</string>
+    <string name="feedback_subject">Kind Words feedback (%1$s)</string>
+
+    <string name="onboarding_skip">Skip</string>
+    <string name="onboarding_next">Next</string>
+    <string name="onboarding_done">Let&#8217;s go</string>
+    <string name="onboarding_1_title">Welcome to Kind Words</string>
+    <string name="onboarding_1_text">Short, warm sentences for the person who matters to you. Say them out loud or send them in a message.</string>
+    <string name="onboarding_2_title">Suggest, share, save</string>
+    <string name="onboarding_2_text">Tap \"New suggestion\" for a fresh sentence. Share it in any messenger, copy it or save it as a favorite with the heart.</string>
+    <string name="onboarding_3_title">Reminders and your own words</string>
+    <string name="onboarding_3_text">In the settings you choose when the app reminds you. Under \"My words\" you write your own sentences. Everything stays on your device.</string>
 </resources>

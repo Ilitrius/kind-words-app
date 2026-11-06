@@ -37,6 +37,10 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
     init { viewModelScope.launch { _donatePrompt.value = settings.registerStartAndCheckDonatePrompt() } }
     fun dismissDonatePrompt() { _donatePrompt.value = false }
 
+    /** null = noch nicht geladen (weder Einführung noch Inhalt zeigen, kein Aufblitzen). */
+    val onboardingSeen: StateFlow<Boolean?> = settings.onboardingSeen.map<Boolean, Boolean?> { it }.stateIn(viewModelScope, SharingStarted.Eagerly, null)
+    fun markOnboardingSeen() { viewModelScope.launch { settings.setOnboardingSeen() } }
+
     val languageOverride: StateFlow<String?> =
         settings.contentLanguageOverride.stateIn(viewModelScope, SharingStarted.Eagerly, null)
 

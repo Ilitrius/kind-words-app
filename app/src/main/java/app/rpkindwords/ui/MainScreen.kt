@@ -4,6 +4,7 @@ import androidx.activity.compose.BackHandler
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
@@ -80,7 +81,16 @@ fun MainScreen(
     val snackbar = remember { SnackbarHostState() }
     BackHandler(enabled = tab != 0) { tab = 0 }
     val donatePrompt by vm.donatePrompt.collectAsStateWithLifecycle()
-    if (donatePrompt && stringResource(R.string.donate_url).startsWith("https://")) DonateDialog(onDismiss = vm::dismissDonatePrompt)
+    val onboardingSeen by vm.onboardingSeen.collectAsStateWithLifecycle()
+    // Einführung und Spendenbitte nie am selben Start: wurde die Einführung gezeigt, entfällt die Bitte bis zum nächsten Start.
+    var onboardingShownThisStart by rememberSaveable { mutableStateOf(false) }
+    if (onboardingSeen == false) onboardingShownThisStart = true
+    when (onboardingSeen) {
+        null -> { Box(Modifier.fillMaxSize()); return }
+        false -> { OnboardingScreen(onFinished = vm::markOnboardingSeen); return }
+        else -> Unit
+    }
+    if (donatePrompt && !onboardingShownThisStart && stringResource(R.string.donate_url).startsWith("https://")) DonateDialog(onDismiss = vm::dismissDonatePrompt)
     Scaffold(
         snackbarHost = { SnackbarHost(snackbar) },
         bottomBar = {

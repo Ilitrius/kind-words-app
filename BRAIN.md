@@ -100,3 +100,7 @@ Das „Gehirn“ des Projekts: Entscheidungen, Fakten, Fallstricke. Wird von Men
 - Befehl: `ANDROID_HOME=/opt/android-sdk sh ./gradlew --no-daemon --max-workers=2 lintDebug testDebugUnitTest assembleDebug` (`gradlew` ohne Ausführrecht → `sh`). Stand: Lint sauber, 35 Unit-Tests grün, Debug-APK gebaut; läuft auch mit JDK 21.
 - Maven Central liefert beim ersten Lauf oft HTTP 429 → Build mehrfach mit Pause wiederholen, der Gradle-Cache wächst mit jedem Versuch.
 - Kein Release-Bundle in der Cloud (Upload-Keystore nur lokal), kein Emulator.
+
+## 2026-11-06 Release 1.0.10 (Build 10)
+- Onboarding (3 Schritte, Überspringen, DataStore-Flag onboarding_seen; Update-Nutzer sehen es einmal; nie am selben Start wie die Spendenbitte), Einstellungen: "App bewerten" (market:// mit Web-Fallback) + "Feedback senden" (mailto, Adresse aus links.xml wie im Impressum), ASO-Beschreibung de/en erweitert (keine Markennamen, keine Testimonials), Datenschutz 12a. Kein INTERNET, keine neue Bibliothek. Im Emulator getestet (de/en, Release-APK). In-App-Review bewusst nicht umgesetzt.
+- Stolperstein: Apostroph in strings.xml als &#8217; (sed/Python-Escape griff nicht).

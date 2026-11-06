@@ -99,4 +99,22 @@
     <string name="update_later">Später</string>
     <string name="update_ready">Das Update ist bereit.</string>
     <string name="update_restart">Neu starten</string>
+
+    <string name="feedback_title">Bewerten &amp; Feedback</string>
+    <string name="feedback_text">Gefällt dir Kind Words? Eine Bewertung im Play Store hilft anderen, die App zu finden. Ideen oder Probleme? Schreib uns, wir lesen jede Nachricht.</string>
+    <string name="rate_button">App bewerten</string>
+    <string name="feedback_button">Feedback senden</string>
+    <string name="rate_error">Der Play Store konnte nicht geöffnet werden.</string>
+    <string name="feedback_error">Keine E-Mail-App gefunden.</string>
+    <string name="feedback_subject">Kind-Words-Feedback (%1$s)</string>
+
+    <string name="onboarding_skip">Überspringen</string>
+    <string name="onboarding_next">Weiter</string>
+    <string name="onboarding_done">Los geht&#8217;s</string>
+    <string name="onboarding_1_title">Willkommen bei Kind Words</string>
+    <string name="onboarding_1_text">Kurze, warme Sätze für die Person, die dir wichtig ist. Sag sie laut oder schick sie per Nachricht.</string>
+    <string name="onboarding_2_title">Vorschlagen, teilen, merken</string>
+    <string name="onboarding_2_text">Tippe auf \"Neuer Vorschlag\" für einen frischen Satz. Teile ihn in jedem Messenger, kopiere ihn oder merke ihn dir mit dem Herz als Favorit.</string>
+    <string name="onboarding_3_title">Erinnerungen und eigene Sätze</string>
+    <string name="onboarding_3_text">In den Einstellungen legst du fest, wann dich die App erinnert. Unter \"Eigene Sätze\" schreibst du deine eigenen. Alles bleibt auf deinem Gerät.</string>
 </resources>

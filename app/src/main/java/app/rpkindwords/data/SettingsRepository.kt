@@ -30,6 +30,7 @@ object Languages {
 class SettingsRepository(private val context: Context) {
     private object K {
         val startCount = intPreferencesKey("start_count")
+        val onboardingSeen = booleanPreferencesKey("onboarding_seen")
         val enabled = booleanPreferencesKey("rem_enabled")
         val mode = stringPreferencesKey("rem_mode")
         val perDay = intPreferencesKey("rem_per_day")
@@ -91,6 +92,11 @@ class SettingsRepository(private val context: Context) {
         context.dataStore.edit { it[K.lastUpdateCheck] = now }
         return true
     }
+
+    /** Einführung schon gesehen? Ohne Eintrag (neue Installation oder Update) false. */
+    val onboardingSeen: Flow<Boolean> = context.dataStore.data.map { it[K.onboardingSeen] ?: false }
+
+    suspend fun setOnboardingSeen() { context.dataStore.edit { it[K.onboardingSeen] = true } }
 
     /** Zählt einen echten App-Start; true, wenn die Spendenbitte fällig ist (jeder DONATE_PROMPT_EVERY-te Start). */
     suspend fun registerStartAndCheckDonatePrompt(): Boolean {

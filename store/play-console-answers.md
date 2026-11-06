@@ -60,3 +60,5 @@ Belegt durch das gemergte Release-Manifest: **keine `INTERNET`-Berechtigung**, k
 3. Store-Eintrag: Texte aus `store/listings/`, Grafiken aus `store/graphics/`.
 4. Release: Play App Signing akzeptieren, `app-release.aab` und `mapping.txt` hochladen, zunächst interne Tests. Für neue persönliche Entwicklerkonten gelten ggf. Pflicht-Testphasen (geschlossener Test mit Mindestzahl Tester über Mindestdauer) – aktuelle Anforderungen im Konto prüfen.
 5. Änderungen am Verhalten (Internet, SDKs, Werbung) → Datenschutzerklärung, Data safety und diese Datei zuerst aktualisieren.
+
+> **Nachtrag 2026-11-06 (Build 10):** Neu in den Einstellungen: "App bewerten" (öffnet Play Store/Browser) und "Feedback senden" (E-Mail-App, ACTION_SENDTO), plus lokale Einführung beim ersten Start. Keine neue Bibliothek, keine neue Berechtigung, keine Datenerhebung durch die App; Data Safety unverändert "keine Daten". Datenschutz Abschnitt 12a ergänzt. Keine In-App-Review-API (bewusst, siehe Play-Richtlinie zu Bewertungsaufforderungen).

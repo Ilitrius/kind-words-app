@@ -1,4 +1,16 @@
-Ein nettes Wort kostet nichts und bedeutet oft viel. Nur fällt einem im Alltag nicht immer das Richtige ein. Kind Words schlägt dir kurze, warme Sätze für deine Partnerin oder deinen Partner vor. Du schickst sie ab oder sagst sie laut, und die App erinnert dich ab und zu daran.
+Ein nettes Wort kostet nichts und bedeutet oft viel. Nur fällt einem im Alltag nicht immer das Richtige ein. Kind Words schlägt dir kurze, warme Sätze für deine Partnerin oder deinen Partner vor. Du schickst sie per Nachricht ab oder sagst sie laut, und die App erinnert dich ab und zu daran.
+
+SO FUNKTIONIERT'S
+1. Tippe auf „Neuer Vorschlag“ und lies den Satz.
+2. Teile ihn mit einem Tipp in jedem Messenger oder per SMS, oder kopiere ihn.
+3. Gefällt er dir, merk ihn dir als Favorit. Favoriten bekommst du öfter vorgeschlagen.
+
+WANN PASST DAS?
+• Zum Guten Morgen oder zur Guten Nacht, wenn man getrennt aufwacht oder einschläft
+• Für ein Kompliment, ein Danke oder ein „Ich denk an dich“ zwischendurch
+• Wenn du jemanden aufmuntern oder um Entschuldigung bitten willst und die Worte fehlen
+• In einer Fernbeziehung, wenn du den Alltag trotzdem teilen möchtest
+• Zum Jahrestag, für kleine Überraschungen oder einfach so
 
 DAS KANNST DU
 • Rund 330 Sätze in 12 Kategorien: Liebe, Wertschätzung, Guten Morgen, Gute Nacht, Ermutigung, Vermissen, Komplimente, Humor, Danke, Entschuldigung, Emoji und Textsymbole
@@ -7,13 +19,16 @@ DAS KANNST DU
 • Eigene Sätze schreiben, ändern und behalten. Die Vorschläge passen sich nach und nach deinem Stil an
 • Erinnerungen zu festen Uhrzeiten oder zufällig in einem Zeitfenster, an den Tagen, die du willst
 • Sicherung deiner Sätze, Favoriten und Einstellungen als Datei, zum Beispiel für ein neues Handy
+• Kurze Einführung beim ersten Start, die du überspringen kannst
 • Auf Deutsch und Englisch, die Sprache stellst du in den Einstellungen um
 • Heller und dunkler Modus
 
 DATENSCHUTZ
-• Deine Sätze und Einstellungen bleiben auf deinem Gerät
-• Kein Konto, keine Werbung, kein Tracking
-• Die App hat keine Internetberechtigung
+• Deine Sätze, Favoriten und Einstellungen bleiben auf deinem Gerät
+• Kein Konto, keine Werbung, kein Tracking, keine Analyse-Software
+• Die App hat keine Internetberechtigung und sendet selbst keine Daten
+• Hinweise auf neue Versionen kommen über Google Play
+• Bewerten, Spenden und Feedback öffnen den Play Store, den Browser oder deine Mail-App, nur wenn du es antippst
 • Die Datenschutzerklärung findest du in den Einstellungen
 
-Kind Words ist kostenlos. Wenn es dir gefällt, kannst du in den Einstellungen etwas spenden. Du musst nicht, und dafür gibt es auch nichts extra.
+Kind Words ist kostenlos. Wenn es dir gefällt, kannst du die App bewerten oder in den Einstellungen etwas spenden. Du musst nicht, und dafür gibt es auch nichts extra. Ideen oder Fehler? Schreib uns über „Feedback senden“.

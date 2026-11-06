@@ -1,0 +1,6 @@
+<resources>
+    <!-- Bewerten: Play-Store-App bevorzugt, sonst Webseite. Feedback: Kontaktadresse wie im Impressum. -->
+    <string name="rate_url_market" translatable="false">market://details?id=app.rpkindwords</string>
+    <string name="rate_url_web" translatable="false">https://play.google.com/store/apps/details?id=app.rpkindwords</string>
+    <string name="feedback_email" translatable="false">rene.puf@gmail.com</string>
+</resources>
