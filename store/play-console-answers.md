@@ -62,3 +62,5 @@ Belegt durch das gemergte Release-Manifest: **keine `INTERNET`-Berechtigung**, k
 5. Änderungen am Verhalten (Internet, SDKs, Werbung) → Datenschutzerklärung, Data safety und diese Datei zuerst aktualisieren.
 
 > **Nachtrag 2026-11-06 (Build 10):** Neu in den Einstellungen: "App bewerten" (öffnet Play Store/Browser) und "Feedback senden" (E-Mail-App, ACTION_SENDTO), plus lokale Einführung beim ersten Start. Keine neue Bibliothek, keine neue Berechtigung, keine Datenerhebung durch die App; Data Safety unverändert "keine Daten". Datenschutz Abschnitt 12a ergänzt. Keine In-App-Review-API (bewusst, siehe Play-Richtlinie zu Bewertungsaufforderungen).
+
+> **Nachtrag 2026-11-08 (Build 11):** Lernen auf dem Gerät (lokale Gewichte aus Teilen/Kopieren/Favorit/Überspringen, DataStore, nicht in der Sicherung) und "Diesen Satz vorschlagen" (E-Mail-Entwurf per ACTION_SENDTO, nutzerinitiiert). Keine neue Berechtigung/Bibliothek, keine Datenerhebung durch die App; Data Safety unverändert. Datenschutz Abschnitte 12b/12c ergänzt.

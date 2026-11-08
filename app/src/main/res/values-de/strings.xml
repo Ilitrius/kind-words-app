@@ -117,4 +117,10 @@
     <string name="onboarding_2_text">Tippe auf \"Neuer Vorschlag\" für einen frischen Satz. Teile ihn in jedem Messenger, kopiere ihn oder merke ihn dir mit dem Herz als Favorit.</string>
     <string name="onboarding_3_title">Erinnerungen und eigene Sätze</string>
     <string name="onboarding_3_text">In den Einstellungen legst du fest, wann dich die App erinnert. Unter \"Eigene Sätze\" schreibst du deine eigenen. Alles bleibt auf deinem Gerät.</string>
+
+    <string name="suggest_action">Diesen Satz vorschlagen</string>
+    <string name="suggest_title">Diesen Satz vorschlagen?</string>
+    <string name="suggest_text">Deine Mail-App öffnet sich mit diesem Satz:\n\n%1$s\n\nNur wenn du dort auf Senden tippst, erreicht er uns. Gute Sätze können umformuliert und für alle in die App aufgenommen werden. Bitte keine Namen oder privaten Angaben.</string>
+    <string name="suggest_open_mail">Mail-App öffnen</string>
+    <string name="suggest_subject">Satzvorschlag für Kind Words</string>
 </resources>

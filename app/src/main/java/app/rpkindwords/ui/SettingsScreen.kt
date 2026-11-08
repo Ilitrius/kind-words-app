@@ -100,11 +100,12 @@ private fun openRate(context: Context, marketUrl: String, webUrl: String): Boole
     return false
 }
 
-private fun sendFeedback(context: Context, email: String, subject: String): Boolean = try {
+internal fun sendFeedback(context: Context, email: String, subject: String, body: String? = null): Boolean = try {
     context.startActivity(
         Intent(Intent.ACTION_SENDTO, "mailto:".toUri())
             .putExtra(Intent.EXTRA_EMAIL, arrayOf(email))
             .putExtra(Intent.EXTRA_SUBJECT, subject)
+            .also { if (body != null) it.putExtra(Intent.EXTRA_TEXT, body) }
             .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK),
     )
     true

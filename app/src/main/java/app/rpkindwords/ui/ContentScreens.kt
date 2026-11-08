@@ -3,6 +3,7 @@ package app.rpkindwords.ui
 import android.content.ClipData
 import android.content.ClipboardManager
 import android.content.Context
+import android.widget.Toast
 import android.content.Intent
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -20,6 +21,7 @@ import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.filled.Send
 import androidx.compose.material.icons.filled.Add
 import androidx.compose.material.icons.filled.Delete
 import androidx.compose.material.icons.filled.Edit
@@ -126,12 +128,13 @@ fun HomeScreen(vm: MainViewModel, snackbar: SnackbarHostState, modifier: Modifie
         }
         if (msg != null) {
             Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(8.dp), verticalAlignment = Alignment.CenterVertically) {
-                FilledTonalButton(onClick = { share(context, msg.text) }, modifier = Modifier.weight(1f)) {
+                FilledTonalButton(onClick = { vm.recordPositive(msg.id); share(context, msg.text) }, modifier = Modifier.weight(1f)) {
                     Icon(Icons.Filled.Share, contentDescription = null)
                     Spacer(Modifier.padding(horizontal = 4.dp))
                     Text(stringResource(R.string.action_share))
                 }
                 OutlinedButton(onClick = {
+                    vm.recordPositive(msg.id)
                     copy(context, msg.text)
                     scope.launch { snackbar.showSnackbar(copiedText) }
                 }, modifier = Modifier.weight(1f)) { Text(stringResource(R.string.action_copy)) }
@@ -165,7 +168,7 @@ fun FavoritesScreen(vm: MainViewModel, modifier: Modifier = Modifier) {
                     Card(Modifier.fillMaxWidth()) {
                         Row(Modifier.padding(start = 16.dp, top = 8.dp, bottom = 8.dp, end = 4.dp), verticalAlignment = Alignment.CenterVertically) {
                             Text(m.text, Modifier.weight(1f), style = MaterialTheme.typography.bodyLarge)
-                            IconButton(onClick = { share(context, m.text) }) {
+                            IconButton(onClick = { vm.recordPositive(m.id); share(context, m.text) }) {
                                 Icon(Icons.Filled.Share, contentDescription = stringResource(R.string.action_share))
                             }
                             FavoriteButton(m) { vm.toggleFavorite(m) }
@@ -183,6 +186,7 @@ fun MineScreen(vm: MainViewModel, modifier: Modifier = Modifier) {
     var editing by remember { mutableStateOf<MessageEntity?>(null) }
     var adding by rememberSaveable { mutableStateOf(false) }
     var deleting by remember { mutableStateOf<MessageEntity?>(null) }
+    var suggesting by remember { mutableStateOf<MessageEntity?>(null) }
 
     Box(modifier.fillMaxSize()) {
         Column(Modifier.fillMaxSize().padding(horizontal = 16.dp)) {
@@ -195,6 +199,9 @@ fun MineScreen(vm: MainViewModel, modifier: Modifier = Modifier) {
                         Card(Modifier.fillMaxWidth()) {
                             Row(Modifier.padding(start = 16.dp, top = 8.dp, bottom = 8.dp, end = 4.dp), verticalAlignment = Alignment.CenterVertically) {
                                 Text(m.text, Modifier.weight(1f), style = MaterialTheme.typography.bodyLarge)
+                                IconButton(onClick = { suggesting = m }) {
+                                    Icon(Icons.AutoMirrored.Filled.Send, contentDescription = stringResource(R.string.suggest_action))
+                                }
                                 IconButton(onClick = { editing = m }) {
                                     Icon(Icons.Filled.Edit, contentDescription = stringResource(R.string.action_edit))
                                 }
@@ -220,6 +227,24 @@ fun MineScreen(vm: MainViewModel, modifier: Modifier = Modifier) {
     }
     editing?.let { m ->
         TextDialog(R.string.mine_dialog_edit_title, m.text, onDismiss = { editing = null }) { vm.editUserMessage(m.id, it); editing = null }
+    }
+    suggesting?.let { m ->
+        val context = LocalContext.current
+        val email = stringResource(R.string.feedback_email)
+        val subject = stringResource(R.string.suggest_subject)
+        val mailError = stringResource(R.string.feedback_error)
+        AlertDialog(
+            onDismissRequest = { suggesting = null },
+            title = { Text(stringResource(R.string.suggest_title)) },
+            text = { Text(stringResource(R.string.suggest_text, m.text)) },
+            confirmButton = {
+                TextButton(onClick = {
+                    if (!sendFeedback(context, email, subject, "${m.text}\n\n(${m.language})")) Toast.makeText(context, mailError, Toast.LENGTH_SHORT).show()
+                    suggesting = null
+                }) { Text(stringResource(R.string.suggest_open_mail)) }
+            },
+            dismissButton = { TextButton(onClick = { suggesting = null }) { Text(stringResource(R.string.action_cancel)) } },
+        )
     }
     deleting?.let { m ->
         AlertDialog(

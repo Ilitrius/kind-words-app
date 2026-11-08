@@ -117,4 +117,10 @@
     <string name="onboarding_2_text">Tap \"New suggestion\" for a fresh sentence. Share it in any messenger, copy it or save it as a favorite with the heart.</string>
     <string name="onboarding_3_title">Reminders and your own words</string>
     <string name="onboarding_3_text">In the settings you choose when the app reminds you. Under \"My words\" you write your own sentences. Everything stays on your device.</string>
+
+    <string name="suggest_action">Suggest this sentence</string>
+    <string name="suggest_title">Suggest this sentence?</string>
+    <string name="suggest_text">Your mail app opens with this sentence:\n\n%1$s\n\nOnly if you tap Send there, it reaches us. Good sentences may be reworded and added to the app for everyone. Please include no names or private details.</string>
+    <string name="suggest_open_mail">Open mail app</string>
+    <string name="suggest_subject">Sentence suggestion for Kind Words</string>
 </resources>

@@ -30,6 +30,7 @@ object Languages {
 class SettingsRepository(private val context: Context) {
     private object K {
         val startCount = intPreferencesKey("start_count")
+        val learning = stringPreferencesKey("learning_v1")
         val onboardingSeen = booleanPreferencesKey("onboarding_seen")
         val enabled = booleanPreferencesKey("rem_enabled")
         val mode = stringPreferencesKey("rem_mode")
@@ -91,6 +92,13 @@ class SettingsRepository(private val context: Context) {
         if (now - last in 0 until UPDATE_CHECK_INTERVAL_MS) return false
         context.dataStore.edit { it[K.lastUpdateCheck] = now }
         return true
+    }
+
+    /** Lokal gelerntes Nutzungsverhalten (siehe [LearningState]); verlässt das Gerät nie. */
+    suspend fun learning(): LearningState = LearningState.decode(context.dataStore.data.first()[K.learning])
+
+    suspend fun updateLearning(transform: (LearningState) -> LearningState) {
+        context.dataStore.edit { p -> p[K.learning] = transform(LearningState.decode(p[K.learning])).encode() }
     }
 
     /** Einführung schon gesehen? Ohne Eintrag (neue Installation oder Update) false. */

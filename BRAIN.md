@@ -104,3 +104,9 @@ Das „Gehirn“ des Projekts: Entscheidungen, Fakten, Fallstricke. Wird von Men
 ## 2026-11-06 Release 1.0.10 (Build 10)
 - Onboarding (3 Schritte, Überspringen, DataStore-Flag onboarding_seen; Update-Nutzer sehen es einmal; nie am selben Start wie die Spendenbitte), Einstellungen: "App bewerten" (market:// mit Web-Fallback) + "Feedback senden" (mailto, Adresse aus links.xml wie im Impressum), ASO-Beschreibung de/en erweitert (keine Markennamen, keine Testimonials), Datenschutz 12a. Kein INTERNET, keine neue Bibliothek. Im Emulator getestet (de/en, Release-APK). In-App-Review bewusst nicht umgesetzt.
 - Stolperstein: Apostroph in strings.xml als &#8217; (sed/Python-Escape griff nicht).
+
+## 2026-11-08 Lernen auf dem Gerät, Satzvorschlag, Texter-Agent
+- On-Device-Lernen (data/Learning.kt, LearningState in DataStore `learning_v1`, max. 600 Einträge, nicht in der Sicherung): positiv = Teilen/Kopieren/Favorit, übersprungen = "Neuer Vorschlag" ohne positive Aktion. Gewichte: pro Satz (0.4-1.6), Frische (24 h), Kategorie (0.6-1.8, ab 20 gezeigten Sätzen); dazu Geschmacksprofil = eigene Sätze + Favoriten (StyleMatcher.pick mit extraWeight). Satzende-Anpassung nutzt weiter nur eigene Sätze. 7 Unit-Tests (LearningTest).
+- "Diesen Satz vorschlagen" bei eigenen Sätzen: Dialog, dann Mail-Entwurf (ACTION_SENDTO, Adresse aus links.xml), nutzerinitiiert; Datenschutz 12b/12c ergänzt. Kuratieren übernimmt der texter-Agent, Freigabe durch den Entwickler.
+- Neuer Agent `.claude/agents/texter.md` (Opus): schreibt und prüft Sätze/Emojis/Store-Texte (Checkliste, KI-Klang-Marker, Ton-Regel). CLAUDE.md Delegation ergänzt.
+- Stolperstein: In Python-Heredocs wurde `\n` zu echtem Zeilenumbruch -> für `\n` in Kotlin/XML `chr(92)+'n'` benutzen.

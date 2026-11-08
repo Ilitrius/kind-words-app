@@ -68,8 +68,17 @@ class MessageRepository(
         if (FavoriteBias.preferFavorite(roll)) dao.randomFavorite(language, category, exclude)?.let { return it }
         // Sonst: passend zum Stil der eigenen Sätze gewichtet (ohne eigene Sätze: gleichverteilt)
         val candidates = dao.candidates(language, category, exclude)
-        return StyleMatcher.pick(candidates, styleProfile(), rng) { it.text }
+        val learning = settings.learning()
+        val now = clock()
+        return StyleMatcher.pick(candidates, tasteProfile(), rng, extraWeight = { learning.weight(it.id, it.category, now) }) { it.text }
     }
+
+    /** Geschmacksprofil für die Auswahl: eigene Sätze plus als Favorit gemerkte Sätze (beides lokal). */
+    suspend fun tasteProfile(): StyleProfile = StyleProfile.from(dao.userTexts() + dao.bundledFavoriteTexts())
+
+    suspend fun recordShown(id: String) = settings.updateLearning { it.shown(id, clock()) }
+    suspend fun recordPositive(id: String) = settings.updateLearning { it.positive(id) }
+    suspend fun recordSkipped(id: String) = settings.updateLearning { it.skipped(id) }
 
     /** Stilprofil aus allen eigenen Sätzen (lokal berechnet). */
     suspend fun styleProfile(): StyleProfile = StyleProfile.from(dao.userTexts())

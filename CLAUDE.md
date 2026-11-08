@@ -19,11 +19,11 @@ Wissen: `BRAIN.md` (Entscheidungen/Fakten, beim Start lesen, laufend pflegen) ·
 - SDK: `ANDROID_HOME=D:\Android\Sdk` (`local.properties` ist gitignored), JDK 17.
 
 ## Agenten (`.claude/agents/`)
-`android-dev`, `i18n-guardian`, `play-release`, `legal-docs`, `qa-tester`. Jeder hat persistentes Projekt-Gedächtnis (`memory: project` → `.claude/agent-memory/<name>/`).
+`android-dev`, `i18n-guardian`, `play-release`, `legal-docs`, `qa-tester`, `texter` (Opus). Jeder hat persistentes Projekt-Gedächtnis (`memory: project` → `.claude/agent-memory/<name>/`).
 
 ### Lern- und Zusammenarbeitsprotokoll (für alle Agenten)
 1. **Start:** eigenes Memory und `.claude/agent-memory/SHARED.md` lesen.
 2. **Ende jeder Aufgabe:** Gelerntes (Fallstricke, funktionierende Befehle, Entscheidungen, Korrekturen des Nutzers) in das eigene Memory schreiben; Erkenntnisse, die andere Agenten betreffen, zusätzlich in `SHARED.md` (ein Eintrag = Datum, Thema, Regel, Warum).
 3. **Übergabe:** Ergebnis immer mit Format *Was getan · Dateien · offen/Risiken · Hinweis an Agent X* zurückgeben.
 4. Veraltete oder falsche Einträge löschen statt anhäufen.
-5. Delegation: UI/Logik → `android-dev`; Strings → `i18n-guardian`; Verteilung/Store → `play-release`; Rechtstexte/Webseiten → `legal-docs`; Tests/Verifikation → `qa-tester`.
+5. Delegation: UI/Logik → `android-dev`; Sätze/Emojis/Store-Texte schreiben und prüfen → `texter`; Strings → `i18n-guardian`; Verteilung/Store → `play-release`; Rechtstexte/Webseiten → `legal-docs`; Tests/Verifikation → `qa-tester`.

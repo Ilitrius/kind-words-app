@@ -55,6 +55,8 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
     val category: StateFlow<String?> = _category
 
     private val currentId = MutableStateFlow<String?>(null)
+    /** Lernen auf dem Gerät: wurde der angezeigte Satz geteilt/kopiert/als Favorit gemerkt? Sonst gilt Weiterklicken als "übersprungen". */
+    private var positiveForCurrent = false
     /** Stil der eigenen Sätze: steuert Auswahl (Repository) und Satzende des angezeigten Vorschlags. */
     private val styleProfile: StateFlow<StyleProfile> =
         messages.userMessages().map { list -> StyleProfile.from(list.map { it.text }) }
@@ -78,7 +80,10 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
         viewModelScope.launch {
             messages.ensureSeeded()
             combine(contentLang, _category) { l, c -> l to c }.collect { (l, c) ->
-                currentId.value = messages.random(l, c, null)?.id
+                val first = messages.random(l, c, null)?.id
+                currentId.value = first
+                positiveForCurrent = false
+                first?.let { messages.recordShown(it) }
                 _loaded.value = true
             }
         }
@@ -89,13 +94,26 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
             val lang = contentLang.first()
             val next = messages.random(lang, _category.value, currentId.value)
                 ?: messages.random(lang, _category.value, null)
+            val previous = currentId.value
+            if (previous != null && !positiveForCurrent) messages.recordSkipped(previous)
             currentId.value = next?.id
+            positiveForCurrent = false
+            next?.let { messages.recordShown(it.id) }
         }
+    }
+
+    /** Teilen oder Kopieren eines Satzes zählt als positive Rückmeldung (nur lokal gespeichert). */
+    fun recordPositive(id: String) {
+        if (id == currentId.value) positiveForCurrent = true
+        viewModelScope.launch { messages.recordPositive(id) }
     }
 
     fun selectCategory(c: String?) { _category.value = c }
     suspend fun setContentLanguage(lang: String?) { settings.setContentLanguage(lang) }
-    fun toggleFavorite(m: MessageEntity) { viewModelScope.launch { messages.setFavorite(m.id, !m.favorite) } }
+    fun toggleFavorite(m: MessageEntity) {
+        if (!m.favorite) recordPositive(m.id)
+        viewModelScope.launch { messages.setFavorite(m.id, !m.favorite) }
+    }
 
     fun addUserMessage(text: String) {
         viewModelScope.launch { messages.addUser(contentLang.first(), text) }

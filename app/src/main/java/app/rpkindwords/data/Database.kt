@@ -80,6 +80,9 @@ interface MessageDao {
     @Query("SELECT text FROM messages WHERE source = 'USER'")
     suspend fun userTexts(): List<String>
 
+    @Query("SELECT text FROM messages WHERE source = 'BUNDLED' AND favorite = 1")
+    suspend fun bundledFavoriteTexts(): List<String>
+
     @Query("SELECT * FROM messages WHERE id = :id")
     fun observe(id: String): Flow<MessageEntity?>
 

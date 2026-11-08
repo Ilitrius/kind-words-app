@@ -118,9 +118,9 @@ object StyleMatcher {
         return BASE_WEIGHT + MAX_BONUS * profile.confidence * s * s
     }
 
-    fun <T> pick(items: List<T>, profile: StyleProfile, rng: Random, textOf: (T) -> String): T? {
+    fun <T> pick(items: List<T>, profile: StyleProfile, rng: Random, extraWeight: (T) -> Double = { 1.0 }, textOf: (T) -> String): T? {
         if (items.isEmpty()) return null
-        val weights = items.map { weight(textOf(it), profile) }
+        val weights = items.map { weight(textOf(it), profile) * extraWeight(it) }
         var r = rng.nextDouble() * weights.sum()
         for (i in items.indices) {
             r -= weights[i]
