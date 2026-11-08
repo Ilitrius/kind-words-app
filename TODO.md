@@ -93,3 +93,4 @@ Legende: `[ ]` offen · `[x]` erledigt · Agent in Klammern
 - [x] (2026-11-08) Lernen auf dem Gerät, "Satz vorschlagen" per Mail, texter-Agent
 - [ ] Nutzer: Bundle 1.0.11 (Build 11) + mapping.txt hochladen (ersetzt 1.0.10); Beschreibung de/en eintragen
 - [ ] Offen: Nutzersätze per Mail kuratieren (texter), zweite KI-Prüfung (Pflichtanforderung 9), Rezensionen beobachten
+- [ ] Sätze vorlesen: Button "Vorlesen" auf Home/Favoriten (Android TextToSpeech, offline mit der Systemstimme, keine Berechtigung/Internet nötig); Sprache = Satzsprache, Emoji/Textsymbole nicht mitsprechen (oder kurz beschreiben), Hinweis bei fehlender Stimme, TTS beim Verlassen freigeben (akkuschonend); Texte in values/ + values-de/; Datenschutz prüfen (Systemdienst, App sendet nichts); im Emulator testen (android-dev, qa-tester)
