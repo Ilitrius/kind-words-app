@@ -88,7 +88,12 @@ fun MainScreen(
         app.rpkindwords.speech.Speaker.Problem.UNAVAILABLE to stringResource(R.string.speech_unavailable),
         app.rpkindwords.speech.Speaker.Problem.FAILED to stringResource(R.string.speech_failed),
         app.rpkindwords.speech.Speaker.Problem.NOTHING_TO_READ to stringResource(R.string.speech_nothing),
+        app.rpkindwords.speech.Speaker.Problem.TRANSLATION_MODEL_MISSING to stringResource(R.string.translation_model_missing),
+        app.rpkindwords.speech.Speaker.Problem.TRANSLATION_FAILED to stringResource(R.string.translation_failed),
     )
+    androidx.compose.runtime.LaunchedEffect(Unit) {
+        vm.translatedText.collect { text -> android.widget.Toast.makeText(speechContext, text, android.widget.Toast.LENGTH_LONG).show() }
+    }
     androidx.compose.runtime.LaunchedEffect(Unit) {
         vm.speechProblems.collect { problem ->
             android.widget.Toast.makeText(speechContext, speechMessages[problem].orEmpty(), android.widget.Toast.LENGTH_LONG).show()

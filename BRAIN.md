@@ -118,3 +118,11 @@ Das „Gehirn“ des Projekts: Entscheidungen, Fakten, Fallstricke. Wird von Men
 
 ## 2026-11-08 Vorlesen (Phase 1, offline)
 - speech/Speaker.kt (TextToSpeech, nur lokale Stimmen, keine Netzwerk-Stimmen, Tempo 80 %, Tonhöhe 0.95), speech/SpeechText.kt (Emoji/Symbole werden nicht gesprochen; Button deaktiviert, wenn nichts lesbar), Einstellungen: Tempo (70/80/100), Stimme je Sprache, Probehören; <queries> TTS_SERVICE im Manifest. Im Emulator getestet (Google-TTS, lokale Stimme). Phase 2: Übersetzung (ML Kit) mit Einwilligung.
+
+## 2026-11-08 Übersetzen + Vorlesen (Release 1.0.12 / Build 12)
+- Option A umgesetzt: Google ML Kit On-Device-Translation (`com.google.mlkit:translate:17.0.3`). Manifest hat jetzt INTERNET + ACCESS_NETWORK_STATE (vom SDK). `MlKitInitProvider` per `tools:node="remove"` entfernt: SDK startet nur nach Einwilligung (TranslationService.init via MlKitContext.initializeIfNeeded). Einwilligung mit Zeitstempel + Version (TRANSLATION_CONSENT_VERSION), Widerruf löscht Zielsprache, Modelle optional löschen. Modelle nur per Knopfdruck, WLAN-Standard.
+- Vorlesen: lokale TTS (keine Netzwerk-Stimmen), Tempo 70/80/100, Stimme je Sprache, Probehören; Übersetzung vor dem Vorlesen (12 Zielsprachen), übersetzter Text wird als Toast gezeigt.
+- R8-Falle (nur im Release-Build aufgefallen!): ML-Kit-Registrare (`NaturalLanguageTranslateRegistrar`, `CommonComponentRegistrar`) werden nur per Name geladen und von R8 entfernt -> NPE in RemoteModelManager.getInstance(). Fix: Keep-Regeln in app/proguard-rules.pro. IMMER das Release-APK im Emulator testen.
+- Datenschutz/Store/Data Safety: Aussagen "keine Internetberechtigung/keine Daten" angepasst, Datenschutz 12d de/en, `store/play-console-answers.md` Nachtrag mit Data-Safety-Entwurf (ML Kit sendet Diagnosedaten an Google). VOR Upload Data Safety in der Console ändern.
+- Bundle wächst von 3,8 MB auf ca. 32 MB (ML-Kit-Bibliotheken).
+

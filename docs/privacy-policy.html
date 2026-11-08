@@ -30,8 +30,8 @@
 <div class="summary">
   <strong>Summary</strong>
   <ul>
-    <li>The app does <strong>not</strong> collect, transmit or share any data. Everything stays on your device.</li>
-    <li>The app has no internet permission of its own (the update notice runs through Google Play, see section 5a), no ads, no analytics or tracking, and no user account. An optional donate button only opens an external link in your browser (see section 11).</li>
+    <li>The app does <strong>not</strong> collect, transmit or share any data on its own. Your sentences, favorites and settings stay on your device. The only exception is the <strong>optional</strong> translation feature using Google ML Kit, after your explicit consent (see section 12d).</li>
+    <li>The app uses the internet permission only for the optional translation (downloading language models, section 12d); without that feature it sends nothing (the update notice runs through Google Play, see section 5a). It has no ads, no analytics or tracking, and no user account. An optional donate button only opens an external link in your browser (see section 11).</li>
     <li>You can delete your data in the app at any time or remove it by uninstalling.</li>
   </ul>
 </div>
@@ -58,7 +58,7 @@
 <p>Update notice: if the app was installed through Google Play, it asks the Google Play Store app on your device (Play Core / In-App Updates) at start whether a newer version exists and, if so, shows a hint. This query is handled by the Play Store app on your device under Google's own terms; Kind Words sends no data of its own and receives only the information that an update is available.</p>
 
 <h2>5. No sharing, no third parties</h2>
-<p>The app contains no ads, no analytics, tracking or crash-reporting services and no third-party data-collection SDKs. No data is shared, sold or transferred to third parties or third countries.</p>
+<p>The app contains no ads, no tracking or crash-reporting services and no analytics of its own. The exception is the optional translation (section 12d): only after your consent is the Google ML Kit SDK started, which may send technical diagnostics data to Google. No data is sold, and the app does not pass on your sentences.</p>
 
 <h2>5a. Update notice via Google Play</h2>
 <p>At start, at most once a day, the app asks the Google Play services whether a new version is available and then shows a notice. The query is handled by the Google Play Store on your device; the app itself transmits no data and only learns that an update is available. Google's privacy policy applies to the processing by Google Play. If the app was not installed through Google Play, no notice appears.</p>
@@ -76,7 +76,7 @@
 <p>Because the developer receives no data from you, there is no data to disclose. You are in full control and can view and delete everything yourself in the app. Irrespective of this, under the GDPR you have the right of access, rectification, erasure, restriction, data portability and objection, and the right to lodge a complaint with a supervisory authority.</p>
 
 <h2>10. Children and teens</h2>
-<p>The app is intended for users aged 13 and over. It contains no mature content, no ads, no communication with other users and collects no data.</p>
+<p>The app is intended for users aged 13 and over. It contains no mature content, no ads, no communication with other users and collects no data on its own.</p>
 
 <h2>11. Voluntary donation (external link)</h2>
 <p>The app's settings include an optional donate button. It opens a link in your browser. The app transmits no data in doing so and learns neither of your payment nor of your name. The donation is handled entirely by an external payment provider whose privacy policy applies. Donating is voluntary, unlocks no features and is not required.</p>
@@ -90,6 +90,10 @@
 <p>To make suggestions fit you better, the app remembers locally which sentences you share, copy, save as favorites or skip, and analyzes the style of your own sentences. This only produces weights for choosing suggestions. The data stays on your device, is not transmitted, not used for advertising and not written to the backup file. It is removed when you clear the app data or uninstall. No external AI model is trained.</p>
 <h2>12c. Suggest a sentence (voluntary)</h2>
 <p>For your own sentences there is a "Suggest this sentence" button. It opens your email app with the sentence as a draft to the contact address. Only if you tap "Send" there yourself does the sentence reach us (together with your email address as sender). The app sends nothing on its own. We use submitted sentences only to possibly add them, reworded and without any link to you, to the app; please send no names or private details. The legal basis is your voluntary submission (Art. 6(1)(a)/(b) GDPR); on request we delete your email.</p>
+<h2>12d. Reading aloud and translation (optional)</h2>
+<p><strong>Reading aloud:</strong> The app reads sentences with your device's text-to-speech. Only locally installed voices are used; network voices are excluded. The app stores tempo and chosen voice locally. Nothing is transmitted.</p>
+<p><strong>Translation:</strong> This feature is off by default. When you turn it on, we ask for your consent (Art. 6(1)(a) GDPR). Only then is <em>Google ML Kit</em> (on-device translation, Google Ireland Limited / Google LLC) started. Your sentences are translated on the device and not sent. For translation to work, the app downloads language models from the internet on your explicit action (about 30 MB per language, Wi-Fi only by default); for this the app holds the permissions <em>INTERNET</em> and <em>ACCESS_NETWORK_STATE</em>. According to Google, the ML Kit SDK may then send technical diagnostics and usage-analytics data to Google: device information (manufacturer, model, Android version), app information (package name, version), a per-installation identifier, performance metrics, the chosen languages, events such as model downloads and error codes. Google encrypts this transfer (HTTPS) and states it does not pass the data on to third parties; Google's privacy policy and the ML Kit data disclosure apply (<a href="https://developers.google.com/ml-kit/android-data-disclosure">developers.google.com/ml-kit/android-data-disclosure</a>). Without your consent the SDK is not started.</p>
+<p><strong>Withdrawal:</strong> In the settings you can turn translation off at any time. The SDK is then no longer used, and the app can delete the downloaded language models on request. Withdrawal does not affect the lawfulness of processing before it. The app stores your consent locally with a timestamp and the version of the consent text.</p>
 <h2>13. Contact</h2>
 <p>Questions about privacy: <a href="mailto:rene.puf@gmail.com">rene.puf@gmail.com</a></p>
 </main>

@@ -18,6 +18,7 @@ class KindWordsApp : Application() {
     lateinit var settings: SettingsRepository
         private set
     lateinit var messages: MessageRepository
+    lateinit var translation: app.rpkindwords.translate.TranslationService
         private set
     private val appScope = CoroutineScope(SupervisorJob() + Dispatchers.Default)
 
@@ -26,6 +27,7 @@ class KindWordsApp : Application() {
         val db = Room.databaseBuilder(this, AppDatabase::class.java, "kindwords.db").build()
         settings = SettingsRepository(this)
         messages = MessageRepository(db.messageDao(), settings, AssetContentSource(this))
+        translation = app.rpkindwords.translate.TranslationService(this, settings)
         NotificationHelper.createChannel(this)
         appScope.launch {
             messages.ensureSeeded()

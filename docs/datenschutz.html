@@ -30,8 +30,8 @@
 <div class="summary">
   <strong>Kurzfassung</strong>
   <ul>
-    <li>Die App sammelt, überträgt und teilt <strong>keine</strong> Daten. Alles bleibt auf Ihrem Gerät.</li>
-    <li>Die App hat keinen eigenen Internetzugriff (der Update-Hinweis läuft über Google Play, siehe Abschnitt 5a), keine Werbung, keine Analyse- oder Tracking-Dienste und kein Benutzerkonto. Ein optionaler Spenden-Button öffnet lediglich einen externen Link in Ihrem Browser (siehe Abschnitt 11).</li>
+    <li>Die App sammelt, überträgt und teilt von sich aus <strong>keine</strong> Daten. Ihre Sätze, Favoriten und Einstellungen bleiben auf Ihrem Gerät. Einzige Ausnahme ist die <strong>optionale</strong> Übersetzungsfunktion mit Google ML Kit nach Ihrer ausdrücklichen Einwilligung (siehe Abschnitt 12d).</li>
+    <li>Die App nutzt die Internetberechtigung nur für die optionale Übersetzung (Sprachmodelle laden, Abschnitt 12d); ohne diese Funktion sendet sie nichts (der Update-Hinweis läuft über Google Play, siehe Abschnitt 5a). Sie hat keine Werbung, keine Analyse- oder Tracking-Dienste und kein Benutzerkonto. Ein optionaler Spenden-Button öffnet lediglich einen externen Link in Ihrem Browser (siehe Abschnitt 11).</li>
     <li>Sie können Ihre Daten jederzeit in der App löschen oder durch Deinstallation entfernen.</li>
   </ul>
 </div>
@@ -58,7 +58,7 @@
 <p>Update-Hinweis: Wurde die App über Google Play installiert, fragt sie beim Start über die Play-Store-App auf Ihrem Gerät (Play Core / In-App-Updates) ab, ob eine neuere Version vorhanden ist, und zeigt dann einen Hinweis. Die Abfrage wickelt die Play-Store-App nach Googles eigenen Bedingungen ab; Kind Words sendet dabei keine eigenen Daten und erhält nur die Information, dass ein Update verfügbar ist.</p>
 
 <h2>5. Keine Weitergabe, keine Dritten</h2>
-<p>Die App enthält keine Werbung, keine Analyse-, Tracking- oder Absturzberichts-Dienste und keine Drittanbieter-SDKs zur Datenerhebung. Es erfolgt keine Weitergabe, kein Verkauf und keine Übermittlung von Daten an Dritte oder in Drittländer.</p>
+<p>Die App enthält keine Werbung, keine Tracking- oder Absturzberichts-Dienste und keine eigenen Analyse-Dienste. Eine Ausnahme bildet die optionale Übersetzung (Abschnitt 12d): Erst nach Ihrer Einwilligung wird das Google-ML-Kit-SDK gestartet, das technische Diagnosedaten an Google senden kann. Es erfolgt kein Verkauf von Daten, und die App gibt Ihre Sätze nicht weiter.</p>
 
 <h2>5a. Update-Hinweis über Google Play</h2>
 <p>Beim Start prüft die App höchstens einmal täglich über die Google-Play-Dienste, ob eine neue Version verfügbar ist, und zeigt dann einen Hinweis an. Die Abfrage übernimmt der Google-Play-Store auf Ihrem Gerät; die App selbst übermittelt keine Daten und erhält nur die Information „Update verfügbar“. Für die Verarbeitung durch Google Play gilt die Datenschutzerklärung von Google. Wurde die App nicht über Google Play installiert, erscheint kein Hinweis.</p>
@@ -76,7 +76,7 @@
 <p>Da der Entwickler keine Daten von Ihnen erhält, kann er keine Auskunft zu Ihren Inhalten geben. Sie haben die volle Kontrolle und führen Einsicht und Löschung selbst in der App durch. Unabhängig davon haben Sie nach der DSGVO das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit und Widerspruch sowie das Recht auf Beschwerde bei einer Datenschutz-Aufsichtsbehörde.</p>
 
 <h2>10. Kinder und Jugendliche</h2>
-<p>Die App ist für Nutzerinnen und Nutzer ab 13 Jahren vorgesehen. Sie enthält keine nicht jugendfreien Inhalte, keine Werbung, keine Kommunikation mit anderen Nutzern und erhebt keine Daten.</p>
+<p>Die App ist für Nutzerinnen und Nutzer ab 13 Jahren vorgesehen. Sie enthält keine nicht jugendfreien Inhalte, keine Werbung, keine Kommunikation mit anderen Nutzern und erhebt von sich aus keine Daten.</p>
 
 <h2>11. Freiwillige Spende (externer Link)</h2>
 <p>In den Einstellungen der App gibt es optional einen Spenden-Button. Er öffnet einen Link in Ihrem Browser. Die App übermittelt dabei keine Daten und erfährt weder von Ihrer Zahlung noch von Ihrem Namen. Die Spende wird vollständig von einem externen Zahlungsanbieter abgewickelt; für die Verarbeitung dort gilt dessen Datenschutzerklärung. Eine Spende ist freiwillig, schaltet keine Funktionen frei und ist nicht erforderlich.</p>
@@ -90,6 +90,10 @@
 <p>Damit die Vorschläge besser zu Ihnen passen, merkt sich die App lokal, welche Sätze Sie teilen, kopieren, als Favorit speichern oder überspringen, und wertet den Stil Ihrer eigenen Sätze aus. Daraus entstehen nur Gewichte für die Vorschlagsauswahl. Diese Daten liegen ausschließlich auf Ihrem Gerät, werden nicht übertragen, nicht für Werbung genutzt und nicht in die Sicherungsdatei geschrieben. Sie werden beim Löschen der App-Daten oder Deinstallieren entfernt. Es findet kein Training externer KI-Modelle statt.</p>
 <h2>12c. Satz vorschlagen (freiwillig)</h2>
 <p>Bei eigenen Sätzen gibt es die Schaltfläche „Diesen Satz vorschlagen“. Sie öffnet Ihre E-Mail-App mit dem Satz als Entwurf an die Kontaktadresse. Nur wenn Sie dort selbst auf „Senden“ tippen, erreicht uns der Satz (und Ihre E-Mail-Adresse als Absender). Die App sendet nichts selbst. Wir verwenden eingesandte Sätze nur, um sie ggf. umformuliert und ohne Bezug zu Ihnen in die App aufzunehmen; bitte keine Namen oder privaten Angaben senden. Rechtsgrundlage ist Ihre freiwillige Zusendung (Art. 6 Abs. 1 lit. a/b DSGVO); auf Wunsch löschen wir Ihre Mail.</p>
+<h2>12d. Vorlesen und Übersetzen (optional)</h2>
+<p><strong>Vorlesen:</strong> Die App liest Sätze mit der Sprachausgabe Ihres Geräts vor. Es werden nur lokal installierte Stimmen genutzt; Netzwerk-Stimmen werden ausgeschlossen. Tempo und gewählte Stimme speichert die App lokal. Nichts wird übertragen.</p>
+<p><strong>Übersetzen:</strong> Die Funktion ist standardmäßig aus. Wenn Sie sie einschalten, bitten wir um Ihre Einwilligung (Art. 6 Abs. 1 lit. a DSGVO). Erst danach wird <em>Google ML Kit</em> (On-Device-Übersetzung, Google Ireland Limited / Google LLC) gestartet. Ihre Sätze werden auf dem Gerät übersetzt und nicht gesendet. Damit die Übersetzung funktioniert, lädt die App auf Ihre ausdrückliche Aktion Sprachmodelle (etwa 30 MB je Sprache, standardmäßig nur per WLAN) aus dem Internet; dafür besitzt die App die Berechtigungen <em>INTERNET</em> und <em>ACCESS_NETWORK_STATE</em>. Nach Angaben von Google kann das ML-Kit-SDK dabei technische Daten zu Diagnose und Nutzungsanalyse an Google senden: Geräteinformationen (Hersteller, Modell, Android-Version), App-Informationen (Paketname, Version), eine Kennung pro Installation, Leistungsdaten, die gewählten Sprachen, Ereignisse wie Modell-Downloads und Fehlercodes. Google verschlüsselt diese Übertragung (HTTPS) und gibt die Daten nach eigenen Angaben nicht an Dritte weiter; es gelten Googles Datenschutzbestimmungen und die ML-Kit-Datenoffenlegung (<a href="https://developers.google.com/ml-kit/android-data-disclosure">developers.google.com/ml-kit/android-data-disclosure</a>). Ohne Ihre Einwilligung wird das SDK nicht gestartet.</p>
+<p><strong>Widerruf:</strong> In den Einstellungen können Sie die Übersetzung jederzeit ausschalten. Das SDK wird nicht mehr genutzt; auf Wunsch löscht die App die geladenen Sprachmodelle. Der Widerruf berührt die Rechtmäßigkeit der bis dahin erfolgten Verarbeitung nicht. Die App speichert Ihre Einwilligung lokal mit Zeitstempel und Version des Einwilligungstextes.</p>
 <h2>13. Kontakt</h2>
 <p>Fragen zum Datenschutz richten Sie bitte an: <a href="mailto:rene.puf@gmail.com">rene.puf@gmail.com</a></p>
 </main>

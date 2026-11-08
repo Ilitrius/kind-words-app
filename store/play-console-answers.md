@@ -2,7 +2,7 @@
 
 Grundlage: Google-Hilfe „Data safety“ (Erhebung = Übertragung vom Gerät weg; rein lokal verarbeitete Daten müssen nicht angegeben werden) und tatsächlicher Code/Manifest. Du bist für die Richtigkeit verantwortlich – bei neuen Funktionen/SDKs neu prüfen.
 
-Belegt durch das gemergte Release-Manifest: **keine `INTERNET`-Berechtigung**, kein Werbe-ID-Zugriff (`AD_ID` fehlt), keine Analytics-/Werbe-/Crash-SDKs, kein WorkManager. Berechtigungen: nur `POST_NOTIFICATIONS` und `RECEIVE_BOOT_COMPLETED`; Erinnerungen laufen über inexakte Alarme (`setAndAllowWhileIdle`, keine Exact-Alarm-Berechtigung, keine Foreground-Services → keine FGS-Deklaration).
+STAND BIS BUILD 11 (ab Build 12 gilt der Nachtrag am Ende dieser Datei, INTERNET ist dann im Manifest): Belegt durch das gemergte Release-Manifest: **keine `INTERNET`-Berechtigung**, kein Werbe-ID-Zugriff (`AD_ID` fehlt), keine Analytics-/Werbe-/Crash-SDKs, kein WorkManager. Berechtigungen: nur `POST_NOTIFICATIONS` und `RECEIVE_BOOT_COMPLETED`; Erinnerungen laufen über inexakte Alarme (`setAndAllowWhileIdle`, keine Exact-Alarm-Berechtigung, keine Foreground-Services → keine FGS-Deklaration).
 
 ## 1. Datenschutzerklärung
 - URL (de): https://ilitrius.github.io/kind-words-app/datenschutz.html
@@ -64,3 +64,15 @@ Belegt durch das gemergte Release-Manifest: **keine `INTERNET`-Berechtigung**, k
 > **Nachtrag 2026-11-06 (Build 10):** Neu in den Einstellungen: "App bewerten" (öffnet Play Store/Browser) und "Feedback senden" (E-Mail-App, ACTION_SENDTO), plus lokale Einführung beim ersten Start. Keine neue Bibliothek, keine neue Berechtigung, keine Datenerhebung durch die App; Data Safety unverändert "keine Daten". Datenschutz Abschnitt 12a ergänzt. Keine In-App-Review-API (bewusst, siehe Play-Richtlinie zu Bewertungsaufforderungen).
 
 > **Nachtrag 2026-11-08 (Build 11):** Lernen auf dem Gerät (lokale Gewichte aus Teilen/Kopieren/Favorit/Überspringen, DataStore, nicht in der Sicherung) und "Diesen Satz vorschlagen" (E-Mail-Entwurf per ACTION_SENDTO, nutzerinitiiert). Keine neue Berechtigung/Bibliothek, keine Datenerhebung durch die App; Data Safety unverändert. Datenschutz Abschnitte 12b/12c ergänzt.
+
+
+> **WICHTIG, Nachtrag 2026-11-08 (Build 12, VOR dem Upload erledigen): Vorlesen + Übersetzung (Google ML Kit).**
+> - Manifest enthält jetzt `INTERNET` und `ACCESS_NETWORK_STATE` (durch `com.google.mlkit:translate`). Der `MlKitInitProvider` ist per `tools:node="remove"` entfernt: das SDK startet nur nach Einwilligung (Einstellungen → Vorlesen → "Vor dem Vorlesen übersetzen"), nie beim App-Start.
+> - **Data Safety muss geändert werden:** "Erhebt deine App Nutzerdaten?" → **Ja** (nur wenn die Nutzerin/der Nutzer die optionale Übersetzung einschaltet). Entwurf aus der ML-Kit-Datenoffenlegung (https://developers.google.com/ml-kit/android-data-disclosure, Stand 14.05.2025), **von dir zu prüfen, du bist für die Angaben verantwortlich**:
+>   - Datentypen: *App-Info und -Leistung* (Diagnose / sonstige Leistungsdaten), *Geräte- oder andere Kennungen* (Kennung pro Installation), Geräteinformationen (Hersteller, Modell, Android-Version) als Teil der Diagnose.
+>   - Zweck: Analysen / App-Funktionen (Diagnose und Nutzungsanalyse des SDK).
+>   - Weitergabe an Dritte: laut Google **nein** (SDK-Daten gehen nicht an Dritte); Verarbeitung durch Google als SDK-Anbieter.
+>   - Verschlüsselung bei der Übertragung: **Ja** (HTTPS laut Google).
+>   - Datenerhebung ist **optional** (Nutzer kann die Funktion ablehnen); Löschung: Widerruf in der App stoppt das SDK, Daten bei Google nicht löschbar durch die App (Datenschutzerklärung 12d).
+> - Sätze und Texte verlassen das Gerät nicht (On-Device-Übersetzung); Modelle laden nur auf Knopfdruck (WLAN-Standard).
+> - Datenschutzerklärung de/en Abschnitt 12d, Store-Beschreibung de/en und In-App-Einwilligungstext sind angepasst. Ohne Aktualisierung der Data Safety nicht hochladen (Richtlinienverstoß-Risiko).

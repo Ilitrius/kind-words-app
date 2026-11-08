@@ -8,8 +8,10 @@ import app.rpkindwords.data.BackupData
 import app.rpkindwords.data.Languages
 import app.rpkindwords.data.MessageEntity
 import app.rpkindwords.data.StyleProfile
+import app.rpkindwords.data.TranslationPrefs
 import app.rpkindwords.reminder.NotificationHelper
 import app.rpkindwords.speech.Speaker
+import app.rpkindwords.translate.TranslationService
 import app.rpkindwords.reminder.ReminderScheduler
 import app.rpkindwords.reminder.ReminderSettings
 import java.util.Locale
@@ -30,6 +32,7 @@ import kotlinx.coroutines.launch
 class MainViewModel(application: Application) : AndroidViewModel(application) {
     private val app = application as KindWordsApp
     private val messages = app.messages
+    private val translation = app.translation
     private val settings = app.settings
 
     /** Spendenbitte: nur bei jedem 4. echten App-Start (Zähler lokal, überlebt Drehen/Sprachwechsel ohne erneute Zählung). */
@@ -116,17 +119,60 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
 
     init { speaker.onProblem = { _speechProblems.tryEmit(it) } }
 
-    /** Liest einen Satz vor (lokale Sprachausgabe, Satzsprache, gewählte Stimme und Tempo). */
+    /** Der übersetzte Text, der gerade vorgelesen wird (zum Mitlesen). */
+    private val _translatedText = kotlinx.coroutines.flow.MutableSharedFlow<String>(extraBufferCapacity = 4)
+    val translatedText: kotlinx.coroutines.flow.SharedFlow<String> = _translatedText
+
+    val translationPrefs: StateFlow<TranslationPrefs> =
+        settings.translationPrefs.stateIn(viewModelScope, SharingStarted.Eagerly, TranslationPrefs())
+
+    /** Liest einen Satz vor (lokale Sprachausgabe, gewählte Stimme und Tempo; bei aktiver Übersetzung zuerst übersetzt). */
     fun speak(m: MessageEntity) {
         viewModelScope.launch {
             recordPositive(m.id)
-            speaker.speak(m.text, m.language, settings.voiceFor(m.language).first(), speechRate.value / 100f)
+            speakText(m.text, m.language)
         }
     }
 
     fun speakSample(text: String, lang: String) {
-        viewModelScope.launch { speaker.speak(text, lang, settings.voiceFor(lang).first(), speechRate.value / 100f) }
+        viewModelScope.launch { speakText(text, lang) }
     }
+
+    private suspend fun speakText(text: String, from: String) {
+        val prefs = translationPrefs.value
+        val target = prefs.target
+        if (!prefs.active || target == null || target == from) {
+            speaker.speak(text, from, settings.voiceFor(from).first(), speechRate.value / 100f)
+            return
+        }
+        when (val r = translation.translate(text, from, target)) {
+            is TranslationService.Result.Ok -> {
+                _translatedText.tryEmit(r.text)
+                speaker.speak(r.text, target, settings.voiceFor(target).first(), speechRate.value / 100f)
+            }
+            is TranslationService.Result.Fail -> speaker.report(
+                if (r.reason == TranslationService.Reason.MODEL_MISSING) Speaker.Problem.TRANSLATION_MODEL_MISSING else Speaker.Problem.TRANSLATION_FAILED,
+            )
+        }
+    }
+
+    fun grantTranslationConsent() { viewModelScope.launch { settings.grantTranslationConsent() } }
+
+    /** Widerruf: stoppt die Übersetzung sofort; auf Wunsch werden die geladenen Modelle gelöscht. */
+    fun revokeTranslationConsent(deleteModels: Boolean) {
+        viewModelScope.launch {
+            if (deleteModels) translation.deleteAllModels() else translation.close()
+            settings.revokeTranslationConsent()
+        }
+    }
+
+    fun setTranslationTarget(lang: String?) { viewModelScope.launch { settings.setTranslationTarget(lang) } }
+    fun setTranslationAllowMobile(allow: Boolean) { viewModelScope.launch { settings.setTranslationAllowMobile(allow) } }
+    fun checkModels(from: String, to: String, result: (Boolean) -> Unit) { viewModelScope.launch { result(translation.modelsReady(from, to)) } }
+    fun downloadModels(from: String, to: String, result: (Boolean) -> Unit) {
+        viewModelScope.launch { result(translation.download(from, to, translationPrefs.value.allowMobile) == null) }
+    }
+    fun deleteModels(done: () -> Unit) { viewModelScope.launch { translation.deleteAllModels(); done() } }
 
     fun stopSpeaking() = speaker.stop()
     fun loadVoices(lang: String, result: (List<String>) -> Unit) = speaker.voices(lang, result)

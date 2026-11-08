@@ -10,7 +10,7 @@ import java.util.Locale
  * Alle Aufrufe auf dem Hauptthread.
  */
 class Speaker(context: Context) {
-    enum class Problem { UNAVAILABLE, MISSING_VOICE_DATA, NOTHING_TO_READ, FAILED }
+    enum class Problem { UNAVAILABLE, MISSING_VOICE_DATA, NOTHING_TO_READ, FAILED, TRANSLATION_MODEL_MISSING, TRANSLATION_FAILED }
 
     private val appContext = context.applicationContext
     private var tts: TextToSpeech? = null
@@ -19,6 +19,8 @@ class Speaker(context: Context) {
     private val pending = ArrayDeque<() -> Unit>()
 
     var onProblem: ((Problem) -> Unit)? = null
+
+    fun report(problem: Problem) { onProblem?.invoke(problem) }
 
     private fun ensure(block: () -> Unit) {
         if (ready) { block(); return }

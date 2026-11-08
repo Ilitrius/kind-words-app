@@ -294,7 +294,10 @@ fun SettingsScreen(vm: MainViewModel, modifier: Modifier = Modifier) {
             FilterChip(selected = speechRate == 80, onClick = { vm.setSpeechRate(80) }, label = { Text(stringResource(R.string.speech_rate_slow)) })
             FilterChip(selected = speechRate == 100, onClick = { vm.setSpeechRate(100) }, label = { Text(stringResource(R.string.speech_rate_normal)) })
         }
-        val speechLang = langOverride ?: appLocale.language
+        val uiLang = langOverride ?: appLocale.language
+        TranslationSettings(vm, uiLang)
+        val translation by vm.translationPrefs.collectAsStateWithLifecycle()
+        val speechLang = if (translation.active) translation.target.orEmpty() else uiLang
         var voices by remember(speechLang) { mutableStateOf(emptyList<String>()) }
         LaunchedEffect(speechLang) { vm.loadVoices(speechLang) { voices = it } }
         val selectedVoice by remember(speechLang) { vm.voiceFlow(speechLang) }.collectAsStateWithLifecycle(initialValue = null)
@@ -307,7 +310,7 @@ fun SettingsScreen(vm: MainViewModel, modifier: Modifier = Modifier) {
             }
         }
         val sample = stringResource(R.string.speech_sample)
-        OutlinedButton(onClick = { vm.speakSample(sample, speechLang) }) { Text(stringResource(R.string.speech_listen)) }
+        OutlinedButton(onClick = { vm.speakSample(sample, uiLang) }) { Text(stringResource(R.string.speech_listen)) }
 
         val donateUrl = stringResource(R.string.donate_url)
         if (donateUrl.startsWith("https://")) {

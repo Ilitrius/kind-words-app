@@ -21,13 +21,15 @@ WHAT YOU CAN DO
 • Back up your sentences, favorites and settings to a file, for example for a new phone
 • A short introduction at first start that you can skip
 • In English and German, switchable in the settings
+• Read sentences aloud, slowly and warmly, with a voice and tempo you choose, optionally translated first into one of 12 languages (for example German to Italian)
 • Light and dark mode
 
 PRIVACY
 • Your sentences, favorites and settings stay on your device
-• No account, no ads, no tracking, no analytics software
-• The app has no internet permission and sends no data of its own
-• Notices about new versions come through Google Play
+• No account, no ads, no tracking
+• Reading aloud uses your device's own text-to-speech, without internet
+• Translation is optional and off by default. Only after your consent does the app use Google ML Kit: sentences are translated on the device, the app downloads the language models once from the internet, and Google may receive technical diagnostics data while doing so
+• Without translation the app sends no data of its own; notices about new versions come through Google Play
 • Rating, donating and feedback open the Play Store, your browser or your mail app, only when you tap them
 • You'll find the privacy policy in the settings
 

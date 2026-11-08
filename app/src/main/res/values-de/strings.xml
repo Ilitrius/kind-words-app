@@ -70,7 +70,7 @@
     <string name="lang_en">English</string>
 
     <string name="donate_title">Kind Words unterstützen</string>
-    <string name="donate_text">Kind Words ist kostenlos, ohne Werbung und ohne Tracking. Wenn dir die App gefällt, kannst du freiwillig spenden. Das ist nicht nötig, schaltet nichts frei und läuft über einen externen Anbieter in deinem Browser. Die App selbst übermittelt keine Daten.</string>
+    <string name="donate_text">Kind Words ist kostenlos, ohne Werbung und ohne Tracking. Wenn dir die App gefällt, kannst du freiwillig spenden. Das ist nicht nötig, schaltet nichts frei und läuft über einen externen Anbieter in deinem Browser. Beim Antippen sendet die App selbst nichts.</string>
     <string name="donate_button">Spenden (öffnet Browser)</string>
     <string name="donate_prompt_title">Gefällt dir Kind Words?</string>
     <string name="donate_prompt_text">Kind Words ist kostenlos und ohne Werbung. Wenn die App deine Tage ein bisschen freundlicher macht, hilft eine kleine Spende, dass das so bleibt. Sie ist freiwillig und schaltet nichts frei.</string>
@@ -116,7 +116,7 @@
     <string name="onboarding_2_title">Vorschlagen, teilen, merken</string>
     <string name="onboarding_2_text">Tippe auf \"Neuer Vorschlag\" für einen frischen Satz. Teile ihn in jedem Messenger, kopiere ihn oder merke ihn dir mit dem Herz als Favorit.</string>
     <string name="onboarding_3_title">Erinnerungen und eigene Sätze</string>
-    <string name="onboarding_3_text">In den Einstellungen legst du fest, wann dich die App erinnert. Unter \"Eigene Sätze\" schreibst du deine eigenen. Alles bleibt auf deinem Gerät.</string>
+    <string name="onboarding_3_text">In den Einstellungen legst du fest, wann dich die App erinnert. Unter \"Eigene Sätze\" schreibst du deine eigenen. Deine Sätze bleiben auf deinem Gerät.</string>
 
     <string name="suggest_action">Diesen Satz vorschlagen</string>
     <string name="suggest_title">Diesen Satz vorschlagen?</string>
@@ -138,4 +138,27 @@
     <string name="speech_unavailable">Die Sprachausgabe ist auf diesem Gerät nicht verfügbar.</string>
     <string name="speech_failed">Das Vorlesen hat nicht geklappt.</string>
     <string name="speech_nothing">Hier gibt es nichts zum Vorlesen.</string>
+
+    <string name="translation_switch">Vor dem Vorlesen übersetzen</string>
+    <string name="translation_hint">Optional: einen Satz in eine andere Sprache übersetzen und in dieser Sprache vorlesen, zum Beispiel Deutsch nach Italienisch. Standardmäßig aus.</string>
+    <string name="translation_target_label">Vorlesen auf</string>
+    <string name="translation_models_ready">Sprachmodelle sind geladen. Übersetzen funktioniert offline.</string>
+    <string name="translation_models_missing">Sprachmodelle sind noch nicht geladen (etwa 30 MB je Sprache).</string>
+    <string name="translation_download">Sprachmodelle laden</string>
+    <string name="translation_downloading">Lädt…</string>
+    <string name="translation_mobile">Auch über mobile Daten laden</string>
+    <string name="translation_delete_models">Sprachmodelle löschen</string>
+    <string name="translation_download_done">Sprachmodelle geladen.</string>
+    <string name="translation_download_failed">Laden fehlgeschlagen. Prüfe deine Verbindung (standardmäßig nur WLAN).</string>
+    <string name="translation_models_deleted">Sprachmodelle gelöscht.</string>
+    <string name="translation_model_missing">Lade zuerst in den Einstellungen die Sprachmodelle.</string>
+    <string name="translation_failed">Das Übersetzen hat nicht geklappt.</string>
+    <string name="translation_consent_title">Übersetzen erlauben?</string>
+    <string name="translation_consent_text">Zum Übersetzen wird Google ML Kit genutzt. Deine Sätze werden auf deinem Telefon übersetzt und nirgendwohin gesendet. Damit es funktioniert, braucht die App Internetzugriff, um Sprachmodelle zu laden (etwa 30 MB je Sprache). Die ML-Kit-Software von Google kann technische Daten an Google senden: Geräteinformationen (Hersteller, Modell, Android-Version), App-Informationen (Paketname und Version), eine Kennung pro Installation und Nutzungsdiagnose wie gewählte Sprachen, Modell-Downloads und Fehlercodes. Ohne deine Einwilligung wird diese Software nicht gestartet. Du kannst die Einwilligung jederzeit in den Einstellungen widerrufen.</string>
+    <string name="translation_consent_accept">Erlauben</string>
+    <string name="translation_consent_decline">Nicht jetzt</string>
+    <string name="translation_revoke_title">Übersetzen ausschalten?</string>
+    <string name="translation_revoke_text">Das Übersetzen stoppt sofort. Du kannst auch die geladenen Sprachmodelle löschen, um Speicher freizugeben.</string>
+    <string name="translation_revoke_delete">Ausschalten und Modelle löschen</string>
+    <string name="translation_revoke_keep">Ausschalten, Modelle behalten</string>
 </resources>

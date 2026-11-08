@@ -30,6 +30,10 @@ object Languages {
 class SettingsRepository(private val context: Context) {
     private object K {
         val startCount = intPreferencesKey("start_count")
+        val trConsentVersion = intPreferencesKey("tr_consent_version")
+        val trConsentAt = longPreferencesKey("tr_consent_at")
+        val trTarget = stringPreferencesKey("tr_target")
+        val trMobile = booleanPreferencesKey("tr_mobile")
         val speechRate = intPreferencesKey("speech_rate_pct")
         val learning = stringPreferencesKey("learning_v1")
         val onboardingSeen = booleanPreferencesKey("onboarding_seen")
@@ -110,6 +114,33 @@ class SettingsRepository(private val context: Context) {
         }
     }
 
+    /** Einwilligung zur Übersetzung (Google ML Kit) und Zielsprache; verlässt das Gerät nie. */
+    val translationPrefs: Flow<TranslationPrefs> = context.dataStore.data.map {
+        TranslationPrefs(
+            consent = (it[K.trConsentVersion] ?: 0) >= TRANSLATION_CONSENT_VERSION,
+            consentAt = it[K.trConsentAt] ?: 0L,
+            target = it[K.trTarget],
+            allowMobile = it[K.trMobile] ?: false,
+        )
+    }
+
+    suspend fun hasTranslationConsent(): Boolean = translationPrefs.first().consent
+
+    suspend fun grantTranslationConsent(now: Long = System.currentTimeMillis()) {
+        context.dataStore.edit { it[K.trConsentVersion] = TRANSLATION_CONSENT_VERSION; it[K.trConsentAt] = now }
+    }
+
+    /** Widerruf: Einwilligung und Zielsprache entfernen. */
+    suspend fun revokeTranslationConsent() {
+        context.dataStore.edit { it.remove(K.trConsentVersion); it.remove(K.trConsentAt); it.remove(K.trTarget) }
+    }
+
+    suspend fun setTranslationTarget(lang: String?) {
+        context.dataStore.edit { p -> if (lang == null) p.remove(K.trTarget) else p[K.trTarget] = lang }
+    }
+
+    suspend fun setTranslationAllowMobile(allow: Boolean) { context.dataStore.edit { it[K.trMobile] = allow } }
+
     /** Lokal gelerntes Nutzungsverhalten (siehe [LearningState]); verlässt das Gerät nie. */
     suspend fun learning(): LearningState = LearningState.decode(context.dataStore.data.first()[K.learning])
 
@@ -141,3 +172,11 @@ class SettingsRepository(private val context: Context) {
 const val DONATE_PROMPT_EVERY = 4
 
 fun isDonatePromptDue(startCount: Int): Boolean = startCount > 0 && startCount % DONATE_PROMPT_EVERY == 0
+
+/** Version des Einwilligungstextes zur Übersetzung; bei wesentlicher Änderung erhöhen (dann erneut fragen). */
+const val TRANSLATION_CONSENT_VERSION = 1
+
+data class TranslationPrefs(val consent: Boolean = false, val consentAt: Long = 0L, val target: String? = null, val allowMobile: Boolean = false) {
+    /** Übersetzt wird nur mit Einwilligung und gewählter Zielsprache. */
+    val active: Boolean get() = consent && target != null
+}

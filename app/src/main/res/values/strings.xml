@@ -70,7 +70,7 @@
     <string name="lang_en">English</string>
 
     <string name="donate_title">Support Kind Words</string>
-    <string name="donate_text">Kind Words is free, has no ads and no tracking. If you like it, you can make a voluntary donation. It is not required, unlocks nothing and is handled by an external provider in your browser. The app itself sends no data.</string>
+    <string name="donate_text">Kind Words is free, has no ads and no tracking. If you like it, you can make a voluntary donation. It is not required, unlocks nothing and is handled by an external provider in your browser. Tapping the button sends nothing from the app itself.</string>
     <string name="donate_button">Donate (opens browser)</string>
     <string name="donate_prompt_title">Enjoying Kind Words?</string>
     <string name="donate_prompt_text">Kind Words is free and has no ads. If it makes your days a little kinder, a small donation helps keep it that way. It is voluntary and unlocks nothing.</string>
@@ -116,7 +116,7 @@
     <string name="onboarding_2_title">Suggest, share, save</string>
     <string name="onboarding_2_text">Tap \"New suggestion\" for a fresh sentence. Share it in any messenger, copy it or save it as a favorite with the heart.</string>
     <string name="onboarding_3_title">Reminders and your own words</string>
-    <string name="onboarding_3_text">In the settings you choose when the app reminds you. Under \"My words\" you write your own sentences. Everything stays on your device.</string>
+    <string name="onboarding_3_text">In the settings you choose when the app reminds you. Under \"My words\" you write your own sentences. Your sentences stay on your device.</string>
 
     <string name="suggest_action">Suggest this sentence</string>
     <string name="suggest_title">Suggest this sentence?</string>
@@ -138,4 +138,27 @@
     <string name="speech_unavailable">Text-to-speech is not available on this device.</string>
     <string name="speech_failed">Reading aloud did not work.</string>
     <string name="speech_nothing">There is nothing to read aloud here.</string>
+
+    <string name="translation_switch">Translate before reading</string>
+    <string name="translation_hint">Optional: translate a sentence into another language and read it in that language, for example German to Italian. Off by default.</string>
+    <string name="translation_target_label">Read in</string>
+    <string name="translation_models_ready">Language models are downloaded. Translating works offline.</string>
+    <string name="translation_models_missing">Language models are not downloaded yet (about 30 MB per language).</string>
+    <string name="translation_download">Download language models</string>
+    <string name="translation_downloading">Downloading…</string>
+    <string name="translation_mobile">Also download over mobile data</string>
+    <string name="translation_delete_models">Delete language models</string>
+    <string name="translation_download_done">Language models downloaded.</string>
+    <string name="translation_download_failed">Download failed. Check your connection (Wi-Fi only by default).</string>
+    <string name="translation_models_deleted">Language models deleted.</string>
+    <string name="translation_model_missing">Download the language models first in the settings.</string>
+    <string name="translation_failed">Translation did not work.</string>
+    <string name="translation_consent_title">Allow translation?</string>
+    <string name="translation_consent_text">Translating uses Google ML Kit. Your sentences are translated on your phone and are not sent anywhere. To work, the app needs internet access to download language models (about 30 MB per language). Google\'s ML Kit software may send technical data to Google: device information (manufacturer, model, Android version), app information (package name and version), a per-installation identifier and usage diagnostics such as the chosen languages, model downloads and error codes. Without your consent none of this software is started. You can withdraw your consent at any time in the settings.</string>
+    <string name="translation_consent_accept">Allow</string>
+    <string name="translation_consent_decline">Not now</string>
+    <string name="translation_revoke_title">Turn off translation?</string>
+    <string name="translation_revoke_text">Translating stops right away. You can also delete the downloaded language models to free space.</string>
+    <string name="translation_revoke_delete">Turn off and delete models</string>
+    <string name="translation_revoke_keep">Turn off, keep models</string>
 </resources>
