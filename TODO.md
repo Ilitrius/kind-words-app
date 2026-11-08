@@ -88,3 +88,4 @@ Legende: `[ ]` offen · `[x]` erledigt · Agent in Klammern
 - [ ] Offen: Nutzerstimmen (nur echte, mit Zustimmung; Play-Richtlinie verbietet anonyme Testimonials), Rezensionen beobachten, optional In-App-Review (Play-Review-Bibliothek, einmalig ab Start 10, nie am Spendenbitte-Start; Manifest/Datenschutz prüfen)
 
 - [x] (2026-11-06) Screenshots neu: 6 je Sprache mit Überschriften (Home, Emoji-Kategorie, Teilen, Favoriten, Eigene Sätze, Einstellungen); Tools store/tools/capture_screenshots.py + frame_screenshots.py. In Play Console hochladen (store/graphics/play-screenshots/<lang>/). Hinweis: Teilen-Dialog ist Systemoberfläche (englisch) auch im DE-Satz.
+- [ ] Mehr nette und liebe Worte hinzufügen (neue Sätze in allen Kategorien, de + en eigenständig formuliert, Ton-Regel beachten, ids fortlaufend, Content-Version erhöhen, Store-Text "rund N Sätze" anpassen) (content, i18n-guardian)
