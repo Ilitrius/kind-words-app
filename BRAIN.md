@@ -115,3 +115,6 @@ Das „Gehirn“ des Projekts: Entscheidungen, Fakten, Fallstricke. Wird von Men
 - +240 Sätze je Sprache (20 je Kategorie, 12 Kategorien), insgesamt 570 je Sprache. Geschrieben von einem Opus-Agenten, geprüft/überarbeitet vom texter-Agenten (380 ok, 70 überarbeitet, 30 ersetzt). ids: Textkategorien 028-047, emoji/ascii 031-050. ContentToneTest grün. Store-Text "rund 570".
 - Lehren: "gemeinsam" enthält Stamm "einsam" (Ton-Test) -> "zusammen"; "lazy", "mist", "awful", "leise/leer/quiet" meiden; Dubletten auch auf 4-Wort-Ebene prüfen.
 - Release in dist/kindwords-1.0.11-release.aab/.apk + mapping.txt; Lernen auf dem Gerät und Satzvorschlag sind enthalten.
+
+## 2026-11-08 Vorlesen (Phase 1, offline)
+- speech/Speaker.kt (TextToSpeech, nur lokale Stimmen, keine Netzwerk-Stimmen, Tempo 80 %, Tonhöhe 0.95), speech/SpeechText.kt (Emoji/Symbole werden nicht gesprochen; Button deaktiviert, wenn nichts lesbar), Einstellungen: Tempo (70/80/100), Stimme je Sprache, Probehören; <queries> TTS_SERVICE im Manifest. Im Emulator getestet (Google-TTS, lokale Stimme). Phase 2: Übersetzung (ML Kit) mit Einwilligung.

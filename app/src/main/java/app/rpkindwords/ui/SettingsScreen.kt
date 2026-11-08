@@ -43,6 +43,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
@@ -283,6 +284,30 @@ fun SettingsScreen(vm: MainViewModel, modifier: Modifier = Modifier) {
                 }
             }
         }
+
+        HorizontalDivider()
+        SectionTitle(R.string.speech_title)
+        Text(stringResource(R.string.speech_text), style = MaterialTheme.typography.bodyMedium)
+        val speechRate by vm.speechRate.collectAsStateWithLifecycle()
+        FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+            FilterChip(selected = speechRate == 70, onClick = { vm.setSpeechRate(70) }, label = { Text(stringResource(R.string.speech_rate_slower)) })
+            FilterChip(selected = speechRate == 80, onClick = { vm.setSpeechRate(80) }, label = { Text(stringResource(R.string.speech_rate_slow)) })
+            FilterChip(selected = speechRate == 100, onClick = { vm.setSpeechRate(100) }, label = { Text(stringResource(R.string.speech_rate_normal)) })
+        }
+        val speechLang = langOverride ?: appLocale.language
+        var voices by remember(speechLang) { mutableStateOf(emptyList<String>()) }
+        LaunchedEffect(speechLang) { vm.loadVoices(speechLang) { voices = it } }
+        val selectedVoice by remember(speechLang) { vm.voiceFlow(speechLang) }.collectAsStateWithLifecycle(initialValue = null)
+        if (voices.isNotEmpty()) {
+            FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                FilterChip(selected = selectedVoice == null, onClick = { vm.setVoice(speechLang, null) }, label = { Text(stringResource(R.string.speech_voice_default)) })
+                voices.forEachIndexed { i, name ->
+                    FilterChip(selected = selectedVoice == name, onClick = { vm.setVoice(speechLang, name) }, label = { Text(stringResource(R.string.speech_voice_n, i + 1)) })
+                }
+            }
+        }
+        val sample = stringResource(R.string.speech_sample)
+        OutlinedButton(onClick = { vm.speakSample(sample, speechLang) }) { Text(stringResource(R.string.speech_listen)) }
 
         val donateUrl = stringResource(R.string.donate_url)
         if (donateUrl.startsWith("https://")) {

@@ -9,6 +9,7 @@ import app.rpkindwords.data.Languages
 import app.rpkindwords.data.MessageEntity
 import app.rpkindwords.data.StyleProfile
 import app.rpkindwords.reminder.NotificationHelper
+import app.rpkindwords.speech.Speaker
 import app.rpkindwords.reminder.ReminderScheduler
 import app.rpkindwords.reminder.ReminderSettings
 import java.util.Locale
@@ -57,6 +58,11 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
     private val currentId = MutableStateFlow<String?>(null)
     /** Lernen auf dem Gerät: wurde der angezeigte Satz geteilt/kopiert/als Favorit gemerkt? Sonst gilt Weiterklicken als "übersprungen". */
     private var positiveForCurrent = false
+
+    private val speaker = Speaker(application)
+    private val _speechProblems = kotlinx.coroutines.flow.MutableSharedFlow<Speaker.Problem>(extraBufferCapacity = 4)
+    val speechProblems: kotlinx.coroutines.flow.SharedFlow<Speaker.Problem> = _speechProblems
+    val speechRate: StateFlow<Int> = settings.speechRatePct.stateIn(viewModelScope, SharingStarted.Eagerly, 80)
     /** Stil der eigenen Sätze: steuert Auswahl (Repository) und Satzende des angezeigten Vorschlags. */
     private val styleProfile: StateFlow<StyleProfile> =
         messages.userMessages().map { list -> StyleProfile.from(list.map { it.text }) }
@@ -106,6 +112,31 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
     fun recordPositive(id: String) {
         if (id == currentId.value) positiveForCurrent = true
         viewModelScope.launch { messages.recordPositive(id) }
+    }
+
+    init { speaker.onProblem = { _speechProblems.tryEmit(it) } }
+
+    /** Liest einen Satz vor (lokale Sprachausgabe, Satzsprache, gewählte Stimme und Tempo). */
+    fun speak(m: MessageEntity) {
+        viewModelScope.launch {
+            recordPositive(m.id)
+            speaker.speak(m.text, m.language, settings.voiceFor(m.language).first(), speechRate.value / 100f)
+        }
+    }
+
+    fun speakSample(text: String, lang: String) {
+        viewModelScope.launch { speaker.speak(text, lang, settings.voiceFor(lang).first(), speechRate.value / 100f) }
+    }
+
+    fun stopSpeaking() = speaker.stop()
+    fun loadVoices(lang: String, result: (List<String>) -> Unit) = speaker.voices(lang, result)
+    fun voiceFlow(lang: String) = settings.voiceFor(lang)
+    fun setVoice(lang: String, name: String?) { viewModelScope.launch { settings.setVoice(lang, name) } }
+    fun setSpeechRate(pct: Int) { viewModelScope.launch { settings.setSpeechRate(pct) } }
+
+    override fun onCleared() {
+        speaker.shutdown()
+        super.onCleared()
     }
 
     fun selectCategory(c: String?) { _category.value = c }

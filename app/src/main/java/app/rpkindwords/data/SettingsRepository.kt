@@ -30,6 +30,7 @@ object Languages {
 class SettingsRepository(private val context: Context) {
     private object K {
         val startCount = intPreferencesKey("start_count")
+        val speechRate = intPreferencesKey("speech_rate_pct")
         val learning = stringPreferencesKey("learning_v1")
         val onboardingSeen = booleanPreferencesKey("onboarding_seen")
         val enabled = booleanPreferencesKey("rem_enabled")
@@ -94,6 +95,21 @@ class SettingsRepository(private val context: Context) {
         return true
     }
 
+    /** Sprechtempo beim Vorlesen in Prozent (Standard 80: ruhig und langsam). */
+    val speechRatePct: Flow<Int> = context.dataStore.data.map { it[K.speechRate] ?: DEFAULT_SPEECH_RATE_PCT }
+
+    suspend fun setSpeechRate(pct: Int) { context.dataStore.edit { it[K.speechRate] = pct.coerceIn(50, 120) } }
+
+    /** Gewählte Stimme je Sprache (Stimmenname der Sprachausgabe) oder null für die Standardstimme. */
+    fun voiceFor(lang: String): Flow<String?> = context.dataStore.data.map { it[stringPreferencesKey("voice_$lang")] }
+
+    suspend fun setVoice(lang: String, name: String?) {
+        context.dataStore.edit { p ->
+            val k = stringPreferencesKey("voice_$lang")
+            if (name == null) p.remove(k) else p[k] = name
+        }
+    }
+
     /** Lokal gelerntes Nutzungsverhalten (siehe [LearningState]); verlässt das Gerät nie. */
     suspend fun learning(): LearningState = LearningState.decode(context.dataStore.data.first()[K.learning])
 
@@ -117,6 +133,7 @@ class SettingsRepository(private val context: Context) {
     }
 
     private companion object {
+        const val DEFAULT_SPEECH_RATE_PCT = 80
         const val UPDATE_CHECK_INTERVAL_MS = 24L * 60 * 60 * 1000
     }
 }

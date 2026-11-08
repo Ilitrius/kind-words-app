@@ -82,6 +82,26 @@ fun MainScreen(
     BackHandler(enabled = tab != 0) { tab = 0 }
     val donatePrompt by vm.donatePrompt.collectAsStateWithLifecycle()
     val onboardingSeen by vm.onboardingSeen.collectAsStateWithLifecycle()
+    val speechContext = androidx.compose.ui.platform.LocalContext.current
+    val speechMessages = mapOf(
+        app.rpkindwords.speech.Speaker.Problem.MISSING_VOICE_DATA to stringResource(R.string.speech_missing_voice),
+        app.rpkindwords.speech.Speaker.Problem.UNAVAILABLE to stringResource(R.string.speech_unavailable),
+        app.rpkindwords.speech.Speaker.Problem.FAILED to stringResource(R.string.speech_failed),
+        app.rpkindwords.speech.Speaker.Problem.NOTHING_TO_READ to stringResource(R.string.speech_nothing),
+    )
+    androidx.compose.runtime.LaunchedEffect(Unit) {
+        vm.speechProblems.collect { problem ->
+            android.widget.Toast.makeText(speechContext, speechMessages[problem].orEmpty(), android.widget.Toast.LENGTH_LONG).show()
+            if (problem == app.rpkindwords.speech.Speaker.Problem.MISSING_VOICE_DATA) {
+                try {
+                    speechContext.startActivity(
+                        android.content.Intent(android.speech.tts.TextToSpeech.Engine.ACTION_INSTALL_TTS_DATA).addFlags(android.content.Intent.FLAG_ACTIVITY_NEW_TASK),
+                    )
+                } catch (_: Exception) {
+                }
+            }
+        }
+    }
     // Einführung und Spendenbitte nie am selben Start: wurde die Einführung gezeigt, entfällt die Bitte bis zum nächsten Start.
     var onboardingShownThisStart by rememberSaveable { mutableStateOf(false) }
     if (onboardingSeen == false) onboardingShownThisStart = true

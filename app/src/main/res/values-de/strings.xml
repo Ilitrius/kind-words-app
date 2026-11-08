@@ -123,4 +123,19 @@
     <string name="suggest_text">Deine Mail-App öffnet sich mit diesem Satz:\n\n%1$s\n\nNur wenn du dort auf Senden tippst, erreicht er uns. Gute Sätze können umformuliert und für alle in die App aufgenommen werden. Bitte keine Namen oder privaten Angaben.</string>
     <string name="suggest_open_mail">Mail-App öffnen</string>
     <string name="suggest_subject">Satzvorschlag für Kind Words</string>
+
+    <string name="action_read_aloud">Vorlesen</string>
+    <string name="speech_title">Vorlesen</string>
+    <string name="speech_text">Sätze werden mit der Stimme deines Telefons gelesen, langsam und ruhig. Beim Vorlesen verlässt nichts dein Gerät. Die Stimmen kommen aus den Systemeinstellungen (Sprachausgabe).</string>
+    <string name="speech_rate_slower">Sehr langsam</string>
+    <string name="speech_rate_slow">Langsam</string>
+    <string name="speech_rate_normal">Normal</string>
+    <string name="speech_voice_default">Standardstimme</string>
+    <string name="speech_voice_n">Stimme %1$d</string>
+    <string name="speech_listen">Probehören</string>
+    <string name="speech_sample">Ich bin so froh, dass es dich gibt.</string>
+    <string name="speech_missing_voice">Für diese Sprache ist keine Stimme installiert. Installiere eine in den Systemeinstellungen unter Sprachausgabe.</string>
+    <string name="speech_unavailable">Die Sprachausgabe ist auf diesem Gerät nicht verfügbar.</string>
+    <string name="speech_failed">Das Vorlesen hat nicht geklappt.</string>
+    <string name="speech_nothing">Hier gibt es nichts zum Vorlesen.</string>
 </resources>

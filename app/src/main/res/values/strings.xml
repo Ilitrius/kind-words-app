@@ -123,4 +123,19 @@
     <string name="suggest_text">Your mail app opens with this sentence:\n\n%1$s\n\nOnly if you tap Send there, it reaches us. Good sentences may be reworded and added to the app for everyone. Please include no names or private details.</string>
     <string name="suggest_open_mail">Open mail app</string>
     <string name="suggest_subject">Sentence suggestion for Kind Words</string>
+
+    <string name="action_read_aloud">Read aloud</string>
+    <string name="speech_title">Read aloud</string>
+    <string name="speech_text">Sentences are read with your phone\'s own voice, slowly and calmly. Nothing leaves your device while reading. Voices come from the system settings (text-to-speech).</string>
+    <string name="speech_rate_slower">Very slow</string>
+    <string name="speech_rate_slow">Slow</string>
+    <string name="speech_rate_normal">Normal</string>
+    <string name="speech_voice_default">Standard voice</string>
+    <string name="speech_voice_n">Voice %1$d</string>
+    <string name="speech_listen">Listen</string>
+    <string name="speech_sample">I am so glad you are in my life.</string>
+    <string name="speech_missing_voice">No voice installed for this language. Install one in the system settings under text-to-speech.</string>
+    <string name="speech_unavailable">Text-to-speech is not available on this device.</string>
+    <string name="speech_failed">Reading aloud did not work.</string>
+    <string name="speech_nothing">There is nothing to read aloud here.</string>
 </resources>

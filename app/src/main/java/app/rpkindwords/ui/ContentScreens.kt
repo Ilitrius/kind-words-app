@@ -27,6 +27,7 @@ import androidx.compose.material.icons.filled.Delete
 import androidx.compose.material.icons.filled.Edit
 import androidx.compose.material.icons.filled.Favorite
 import androidx.compose.material.icons.filled.FavoriteBorder
+import androidx.compose.material.icons.filled.PlayArrow
 import androidx.compose.material.icons.filled.Refresh
 import androidx.compose.material.icons.filled.Share
 import androidx.compose.material3.AlertDialog
@@ -62,6 +63,7 @@ import app.rpkindwords.R
 import app.rpkindwords.data.MessageEntity
 import app.rpkindwords.data.MessageRepository
 import app.rpkindwords.reminder.ShareIntents
+import app.rpkindwords.speech.SpeechText
 import kotlinx.coroutines.launch
 
 @Composable
@@ -140,6 +142,11 @@ fun HomeScreen(vm: MainViewModel, snackbar: SnackbarHostState, modifier: Modifie
                 }, modifier = Modifier.weight(1f)) { Text(stringResource(R.string.action_copy)) }
                 FavoriteButton(msg) { vm.toggleFavorite(msg) }
             }
+            OutlinedButton(onClick = { vm.speak(msg) }, enabled = SpeechText.speakable(msg.text), modifier = Modifier.fillMaxWidth()) {
+                Icon(Icons.Filled.PlayArrow, contentDescription = null)
+                Spacer(Modifier.padding(horizontal = 4.dp))
+                Text(stringResource(R.string.action_read_aloud))
+            }
         }
     }
 }
@@ -168,6 +175,11 @@ fun FavoritesScreen(vm: MainViewModel, modifier: Modifier = Modifier) {
                     Card(Modifier.fillMaxWidth()) {
                         Row(Modifier.padding(start = 16.dp, top = 8.dp, bottom = 8.dp, end = 4.dp), verticalAlignment = Alignment.CenterVertically) {
                             Text(m.text, Modifier.weight(1f), style = MaterialTheme.typography.bodyLarge)
+                            if (SpeechText.speakable(m.text)) {
+                                IconButton(onClick = { vm.speak(m) }) {
+                                    Icon(Icons.Filled.PlayArrow, contentDescription = stringResource(R.string.action_read_aloud))
+                                }
+                            }
                             IconButton(onClick = { vm.recordPositive(m.id); share(context, m.text) }) {
                                 Icon(Icons.Filled.Share, contentDescription = stringResource(R.string.action_share))
                             }

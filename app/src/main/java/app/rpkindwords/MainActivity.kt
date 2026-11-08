@@ -52,6 +52,11 @@ class MainActivity : ComponentActivity() {
         }
     }
 
+    override fun onStop() {
+        vm.stopSpeaking()
+        super.onStop()
+    }
+
     override fun onDestroy() {
         updates.unregister()
         super.onDestroy()
