@@ -31,14 +31,16 @@ Ergänzende Dokumente: `PRODUCT.md` (Funktionen), `../BRAIN.md` (Entscheidungen)
 | Could | Weitere Sprachen, weitere Inhaltspakete | offen |
 
 ## 4. Nicht-funktionale Anforderungen
-- **Sicherheit:** nur `POST_NOTIFICATIONS` + `RECEIVE_BOOT_COMPLETED`; keine `INTERNET`-Berechtigung (Ausnahme: Update-Prüfung über Play-Core, siehe 5); Receiver nicht exportiert; keine Secrets im Repo; Eingabevalidierung beim Import.
+- **Sicherheit:** `POST_NOTIFICATIONS`, `RECEIVE_BOOT_COMPLETED` sowie seit 1.0.12 `INTERNET` + `ACCESS_NETWORK_STATE` (nur wegen der optionalen Übersetzung mit Google ML Kit, SDK startet erst nach Einwilligung, `MlKitInitProvider` entfernt); Update-Prüfung über Play-Core; Receiver nicht exportiert; keine Secrets im Repo; Eingabevalidierung beim Import (Größenlimit, Format-Prüfung).
 - **Performance/Energie (messbare Kriterien):**
-  - Kein Hintergrunddienst, keine Netzwerkaufrufe außerhalb der Update-Prüfung (max. 1× pro Start, höchstens alle 24 h).
+  - Kein Hintergrunddienst; Netzwerk nur für die Update-Prüfung (höchstens alle 24 h) und das ausdrücklich ausgelöste Laden der Sprachmodelle (standardmäßig nur WLAN); ohne Einwilligung kein ML-Kit-Start.
+  - Sprachausgabe wird bei `onStop` gestoppt und bei `onCleared` freigegeben; Übersetzer werden geschlossen (`TranslationService.close`).
+  - Prüfmethode Energie: `adb shell dumpsys batterystats --reset`, 10 Minuten typische Nutzung inkl. Vorlesen, danach `dumpsys batterystats app.rpkindwords`; Sollwert: kein Wakelock, keine Jobs/Syncs im Leerlauf, App-Anteil < 1 % im Hintergrund. Vor jedem Release wiederholen (Ergebnis in `BRAIN.md`).
   - Alarme inexakt (`setAndAllowWhileIdle`), kein Polling, kein WorkManager.
   - Kaltstart < 1,5 s auf Mittelklasse-Gerät (Prüfung mit `adb shell am start -W`).
   - Dark Mode unterstützt.
-- **Offline:** Die gesamte App ist offline-first (Room + gebündelte JSON-Inhalte). Einzige netzabhängige Funktion: Update-Prüfung; bei fehlendem Netz stilles Überspringen, keine Fehlermeldung.
-- **Datenschutz/DSGVO:** keine personenbezogenen Daten verlassen das Gerät. `allowBackup=false`; Export liegt in der Hand des Nutzers (Dateiauswahl über Storage Access Framework).
+- **Offline:** Die gesamte App ist offline-first (Room + gebündelte JSON-Inhalte). Netzabhängig sind nur die Update-Prüfung (stilles Überspringen) und das einmalige Laden der Sprachmodelle; nach dem Laden übersetzt die App offline (im Flugmodus getestet). Fehlt das Modell, erscheint ein Hinweis statt eines Absturzes.
+- **Datenschutz/DSGVO:** Die App selbst sendet keine Daten; Sätze verlassen das Gerät nie. Einzige Ausnahme: optionale Übersetzung, bei der Google ML Kit nach Einwilligung technische Diagnosedaten an Google senden kann (Datenschutz 12d, Data Safety). Lernen auf dem Gerät bleibt lokal. `allowBackup=false`; Export liegt in der Hand des Nutzers (Dateiauswahl über Storage Access Framework).
 
 ## 5. Architektur & Tech-Stack
 Kotlin, Jetpack Compose, Material 3, Room, DataStore, AlarmManager. Manuelle DI in `KindWordsApp`, eine `MainViewModel`, State-Routing mit 4 Tabs.
@@ -72,7 +74,7 @@ Gilt nur für den Entwicklungsprozess, die App enthält keine KI.
   | Release | Claude | 2. Modell | Freigabe |
   |---|---|---|---|
   | 1.0.0 (Build 5) | offen | offen | offen |
-- Abhängigkeits-Prüfung: Gradle-Dependency-Check oder Renovate vor Release (offen).
+- Abhängigkeits-Prüfung vor jedem Release: (1) `./gradlew :app:dependencies --configuration releaseRuntimeClasspath` sichten, (2) direkte Abhängigkeiten in `gradle/libs.versions.toml` gegen die aktuellen Versionen auf Google Maven/Maven Central prüfen (z. B. `curl https://dl.google.com/dl/android/maven2/<gruppe>/<artefakt>/maven-metadata.xml`), (3) Hinweise des Play-Console-Prüfberichts und des Google Play SDK Index (gefährdete SDK-Versionen) beachten, (4) Ergebnis hier eintragen. Stand 2026-11-08: ML Kit Translate 17.0.3 ist die neueste Version auf Google Maven; AGP 9.4.1, Kotlin 2.4.21, Compose BOM 2025.12.01 (an compileSdk 36 gebunden). Ein automatisches Werkzeug (OWASP Dependency-Check) ist bewusst noch nicht eingerichtet (Download- und Pflegeaufwand für ein Ein-Personen-Projekt).
 - **Crash-Reporting (Should):** bewusst nicht eingebaut – würde `INTERNET`, Einwilligungsdialog und Datenschutz-Änderungen erfordern. Stattdessen Play Console Android Vitals (anonym, ohne App-SDK). Entscheidung 2026-10-27, Revision möglich.
 
 ## 9. Rechtliches & Altersfreigabe
@@ -100,7 +102,7 @@ Gilt nur für den Entwicklungsprozess, die App enthält keine KI.
 ## 12. Offene Punkte
 - Zweites KI-Modell für die Doppelprüfung festlegen (Anbieter, Zugang).
 - Konsolidierungs- und PR-Freigabeprozess für Agenten-Wissen (Pflichtanforderung 14) – Aufwand/Nutzen für ein Ein-Personen-Projekt klären.
-- Abhängigkeits-Scan-Werkzeug wählen.
+- Optional: automatisches Abhängigkeits-Scan-Werkzeug (OWASP Dependency-Check oder Renovate) einführen.
 - Anbieterdaten und Zahlungskonto-Hinweis bestätigen.
 - Weitere Platzierung des Spenden-Buttons (Rückfrage aus `TODO.md`).
 - Crash-Reporting später einführen? (Opt-in mit Consent-Dialog nötig.)
