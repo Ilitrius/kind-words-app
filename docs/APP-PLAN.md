@@ -115,3 +115,4 @@ Gilt nur für den Entwicklungsprozess, die App enthält keine KI.
 - 2026-11-01 · Release 1.0.9 (Build 9): Content v6 (330 Sätze je Sprache, mehr Emoji-Sätze), Store-Beschreibung auf "rund 330" angepasst. Build, Lint, Tests durch Claude.
 - 2026-11-06 · Tester-Feedback (Onboarding, Bewerten-Button, ASO, Screenshots) in TODO.md übernommen; Übersetzung unter docs/TESTER-FEEDBACK-2026-11.md.
 - 2026-11-06 · Release 1.0.10 (Build 10): Onboarding, App bewerten, Feedback senden, erweiterte Beschreibung (Tester-Feedback). Pflichtanforderung 9: zweite KI-Prüfung weiter offen.
+- 2026-11-08 · Release 1.0.11 (Build 11): Content v7 (570 Sätze je Sprache), Lernen auf dem Gerät (Gewichte aus Teilen/Kopieren/Favorit/Überspringen), "Satz vorschlagen" per Mail, texter-Agent (Opus). Datenschutz 12b/12c. Build, Lint, Tests, Emulator durch Claude; zweite KI-Prüfung offen.

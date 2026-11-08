@@ -110,3 +110,8 @@ Das „Gehirn“ des Projekts: Entscheidungen, Fakten, Fallstricke. Wird von Men
 - "Diesen Satz vorschlagen" bei eigenen Sätzen: Dialog, dann Mail-Entwurf (ACTION_SENDTO, Adresse aus links.xml), nutzerinitiiert; Datenschutz 12b/12c ergänzt. Kuratieren übernimmt der texter-Agent, Freigabe durch den Entwickler.
 - Neuer Agent `.claude/agents/texter.md` (Opus): schreibt und prüft Sätze/Emojis/Store-Texte (Checkliste, KI-Klang-Marker, Ton-Regel). CLAUDE.md Delegation ergänzt.
 - Stolperstein: In Python-Heredocs wurde `\n` zu echtem Zeilenumbruch -> für `\n` in Kotlin/XML `chr(92)+'n'` benutzen.
+
+## 2026-11-08 Content v7 / Release 1.0.11 (Build 11)
+- +240 Sätze je Sprache (20 je Kategorie, 12 Kategorien), insgesamt 570 je Sprache. Geschrieben von einem Opus-Agenten, geprüft/überarbeitet vom texter-Agenten (380 ok, 70 überarbeitet, 30 ersetzt). ids: Textkategorien 028-047, emoji/ascii 031-050. ContentToneTest grün. Store-Text "rund 570".
+- Lehren: "gemeinsam" enthält Stamm "einsam" (Ton-Test) -> "zusammen"; "lazy", "mist", "awful", "leise/leer/quiet" meiden; Dubletten auch auf 4-Wort-Ebene prüfen.
+- Release in dist/kindwords-1.0.11-release.aab/.apk + mapping.txt; Lernen auf dem Gerät und Satzvorschlag sind enthalten.

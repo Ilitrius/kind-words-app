@@ -89,3 +89,7 @@ Legende: `[ ]` offen · `[x]` erledigt · Agent in Klammern
 
 - [x] (2026-11-06) Screenshots neu: 6 je Sprache mit Überschriften (Home, Emoji-Kategorie, Teilen, Favoriten, Eigene Sätze, Einstellungen); Tools store/tools/capture_screenshots.py + frame_screenshots.py. In Play Console hochladen (store/graphics/play-screenshots/<lang>/). Hinweis: Teilen-Dialog ist Systemoberfläche (englisch) auch im DE-Satz.
 - [ ] Mehr nette und liebe Worte hinzufügen (neue Sätze in allen Kategorien, de + en eigenständig formuliert, Ton-Regel beachten, ids fortlaufend, Content-Version erhöhen, Store-Text "rund N Sätze" anpassen) (content, i18n-guardian)
+- [x] (2026-11-08) Mehr nette und liebe Worte: +240 je Sprache (Content v7, 570 je Sprache), Beschreibung "rund 570"
+- [x] (2026-11-08) Lernen auf dem Gerät, "Satz vorschlagen" per Mail, texter-Agent
+- [ ] Nutzer: Bundle 1.0.11 (Build 11) + mapping.txt hochladen (ersetzt 1.0.10); Beschreibung de/en eintragen
+- [ ] Offen: Nutzersätze per Mail kuratieren (texter), zweite KI-Prüfung (Pflichtanforderung 9), Rezensionen beobachten

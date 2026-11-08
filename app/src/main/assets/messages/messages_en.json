@@ -1,6 +1,6 @@
 {
   "language": "en",
-  "version": 6,
+  "version": 7,
   "messages": [
     {
       "id": "en-love-001",
@@ -1651,6 +1651,1206 @@
       "id": "en-apology-027",
       "category": "apology",
       "text": "Fresh start? 🤝 I love you ❤️"
+    },
+    {
+      "id": "en-love-028",
+      "category": "love",
+      "text": "You text me songs that remind you of me. I love that."
+    },
+    {
+      "id": "en-love-029",
+      "category": "love",
+      "text": "After all this time, you still give me butterflies."
+    },
+    {
+      "id": "en-love-030",
+      "category": "love",
+      "text": "Every time you laugh at my jokes, I fall for you a little more."
+    },
+    {
+      "id": "en-love-031",
+      "category": "love",
+      "text": "Save me a spot at all your future birthdays."
+    },
+    {
+      "id": "en-love-032",
+      "category": "love",
+      "text": "Hearing you hum while you cook makes me love you even more."
+    },
+    {
+      "id": "en-love-033",
+      "category": "love",
+      "text": "I live for our late night talks."
+    },
+    {
+      "id": "en-love-034",
+      "category": "love",
+      "text": "Being yours is my favorite thing about me."
+    },
+    {
+      "id": "en-love-035",
+      "category": "love",
+      "text": "I think about our first kiss more often than I'd admit."
+    },
+    {
+      "id": "en-love-036",
+      "category": "love",
+      "text": "Happy anniversary. I'd say yes to you all over again."
+    },
+    {
+      "id": "en-love-037",
+      "category": "love",
+      "text": "I love that we have our own little words nobody else understands."
+    },
+    {
+      "id": "en-love-038",
+      "category": "love",
+      "text": "Slow Sunday mornings with you are kind of my whole thing."
+    },
+    {
+      "id": "en-love-039",
+      "category": "love",
+      "text": "I could listen to you talk for hours. About anything."
+    },
+    {
+      "id": "en-love-040",
+      "category": "love",
+      "text": "I get so happy when I hear your key in the door."
+    },
+    {
+      "id": "en-love-041",
+      "category": "love",
+      "text": "Nothing beats coming home to you."
+    },
+    {
+      "id": "en-love-042",
+      "category": "love",
+      "text": "Plain and simple: I love you. Every single day."
+    },
+    {
+      "id": "en-love-043",
+      "category": "love",
+      "text": "Reading side by side with you is the coziest thing ever."
+    },
+    {
+      "id": "en-love-044",
+      "category": "love",
+      "text": "Every kiss with you still feels new."
+    },
+    {
+      "id": "en-love-045",
+      "category": "love",
+      "text": "Head over heels for you, as always 😍"
+    },
+    {
+      "id": "en-love-046",
+      "category": "love",
+      "text": "Late breakfast and slow kisses. My kind of weekend 🥐"
+    },
+    {
+      "id": "en-love-047",
+      "category": "love",
+      "text": "I'm so glad I get to love you 💕"
+    },
+    {
+      "id": "en-appreciation-028",
+      "category": "appreciation",
+      "text": "My coffee order? You know it by heart. That got me."
+    },
+    {
+      "id": "en-appreciation-029",
+      "category": "appreciation",
+      "text": "You show up for your friends every time. I think that's beautiful."
+    },
+    {
+      "id": "en-appreciation-030",
+      "category": "appreciation",
+      "text": "When I'm tired, you notice and take things off my plate."
+    },
+    {
+      "id": "en-appreciation-031",
+      "category": "appreciation",
+      "text": "The last cookie is always left for me. I know that's you."
+    },
+    {
+      "id": "en-appreciation-032",
+      "category": "appreciation",
+      "text": "Our weekends feel so good because of you."
+    },
+    {
+      "id": "en-appreciation-033",
+      "category": "appreciation",
+      "text": "You keep every promise. Even the tiny ones."
+    },
+    {
+      "id": "en-appreciation-034",
+      "category": "appreciation",
+      "text": "So much patience with me. I really love that about you."
+    },
+    {
+      "id": "en-appreciation-035",
+      "category": "appreciation",
+      "text": "You ask about my day and actually want the long version."
+    },
+    {
+      "id": "en-appreciation-036",
+      "category": "appreciation",
+      "text": "Your curiosity is one of my favorite things about you."
+    },
+    {
+      "id": "en-appreciation-037",
+      "category": "appreciation",
+      "text": "Last-minute plans? You always say yes. Love that."
+    },
+    {
+      "id": "en-appreciation-038",
+      "category": "appreciation",
+      "text": "When I can't decide, you're the first person I ask."
+    },
+    {
+      "id": "en-appreciation-039",
+      "category": "appreciation",
+      "text": "Whenever a friend moves, you show up with boxes and snacks."
+    },
+    {
+      "id": "en-appreciation-040",
+      "category": "appreciation",
+      "text": "You always say thank you to the bus driver. It's so you."
+    },
+    {
+      "id": "en-appreciation-041",
+      "category": "appreciation",
+      "text": "Thanks to you, we never miss a family birthday. Lifesaver."
+    },
+    {
+      "id": "en-appreciation-042",
+      "category": "appreciation",
+      "text": "You remember all my coworkers' names. That's so sweet."
+    },
+    {
+      "id": "en-appreciation-043",
+      "category": "appreciation",
+      "text": "You always check that I've eaten. It's such a small thing and I love it."
+    },
+    {
+      "id": "en-appreciation-044",
+      "category": "appreciation",
+      "text": "Whenever something good happens, you're happier for me than I am."
+    },
+    {
+      "id": "en-appreciation-045",
+      "category": "appreciation",
+      "text": "Our mornings run so much smoother with you. Total legend 🙌"
+    },
+    {
+      "id": "en-appreciation-046",
+      "category": "appreciation",
+      "text": "You watered my plant before I even noticed it was dry 🌼"
+    },
+    {
+      "id": "en-appreciation-047",
+      "category": "appreciation",
+      "text": "Look how far you've come. Seriously impressive 🌱"
+    },
+    {
+      "id": "en-morning-028",
+      "category": "morning",
+      "text": "Morning. The heater's on, so the bathroom is nice and warm."
+    },
+    {
+      "id": "en-morning-029",
+      "category": "morning",
+      "text": "Look in your coat pocket before you leave."
+    },
+    {
+      "id": "en-morning-030",
+      "category": "morning",
+      "text": "Didn't hit snooze once today. Thinking about you does that."
+    },
+    {
+      "id": "en-morning-031",
+      "category": "morning",
+      "text": "Made it to work. Dinner with you tonight is my reward."
+    },
+    {
+      "id": "en-morning-032",
+      "category": "morning",
+      "text": "The sun's out and I'm in such a good mood. Pretty sure that's you."
+    },
+    {
+      "id": "en-morning-033",
+      "category": "morning",
+      "text": "Three more workdays until our trip. Good morning!"
+    },
+    {
+      "id": "en-morning-034",
+      "category": "morning",
+      "text": "Your favorite song was on the radio this morning. Thought of you."
+    },
+    {
+      "id": "en-morning-035",
+      "category": "morning",
+      "text": "Hope your first meeting is easy and your lunch is delicious."
+    },
+    {
+      "id": "en-morning-036",
+      "category": "morning",
+      "text": "Saw the sunrise on my way in. Wish you'd been in the car with me."
+    },
+    {
+      "id": "en-morning-037",
+      "category": "morning",
+      "text": "Let's go get coffee somewhere new this morning. My treat."
+    },
+    {
+      "id": "en-morning-038",
+      "category": "morning",
+      "text": "Big day today. Walk in there like you own the place."
+    },
+    {
+      "id": "en-morning-039",
+      "category": "morning",
+      "text": "First text of the day goes to you, like always."
+    },
+    {
+      "id": "en-morning-040",
+      "category": "morning",
+      "text": "Wishing you a parking spot right by the door today."
+    },
+    {
+      "id": "en-morning-041",
+      "category": "morning",
+      "text": "Your toast is buttered and waiting on the table."
+    },
+    {
+      "id": "en-morning-042",
+      "category": "morning",
+      "text": "Woke up thinking about how lucky I am. That's you, by the way."
+    },
+    {
+      "id": "en-morning-043",
+      "category": "morning",
+      "text": "Morning! Today's forecast: sunny, with a chance of kisses."
+    },
+    {
+      "id": "en-morning-044",
+      "category": "morning",
+      "text": "It snowed overnight. Walk together before work? ❄️"
+    },
+    {
+      "id": "en-morning-045",
+      "category": "morning",
+      "text": "Have the sweetest day, you 🍩"
+    },
+    {
+      "id": "en-morning-046",
+      "category": "morning",
+      "text": "Wishing you a day full of small wins 🏆"
+    },
+    {
+      "id": "en-morning-047",
+      "category": "morning",
+      "text": "Good morning. I'm counting down to lunch, when I can call you."
+    },
+    {
+      "id": "en-goodnight-028",
+      "category": "goodnight",
+      "text": "Already in pajamas and smiling about today. Night."
+    },
+    {
+      "id": "en-goodnight-029",
+      "category": "goodnight",
+      "text": "Your pillow's fluffed and waiting. Come to bed."
+    },
+    {
+      "id": "en-goodnight-030",
+      "category": "goodnight",
+      "text": "Big day tomorrow, so rest up. I'll text you in the morning."
+    },
+    {
+      "id": "en-goodnight-031",
+      "category": "goodnight",
+      "text": "Counting down until I can kiss you good morning."
+    },
+    {
+      "id": "en-goodnight-032",
+      "category": "goodnight",
+      "text": "Different cities tonight. Good night from my side of the map."
+    },
+    {
+      "id": "en-goodnight-033",
+      "category": "goodnight",
+      "text": "Snuggle in. Emails can wait until tomorrow."
+    },
+    {
+      "id": "en-goodnight-034",
+      "category": "goodnight",
+      "text": "Warm up my side, I'll be there in five."
+    },
+    {
+      "id": "en-goodnight-035",
+      "category": "goodnight",
+      "text": "Send me a text once you're in bed so I can say good night properly."
+    },
+    {
+      "id": "en-goodnight-036",
+      "category": "goodnight",
+      "text": "You did so much today. Time to rest that brilliant head."
+    },
+    {
+      "id": "en-goodnight-037",
+      "category": "goodnight",
+      "text": "Hearing you breathe next to me is the best way to fall asleep."
+    },
+    {
+      "id": "en-goodnight-038",
+      "category": "goodnight",
+      "text": "I love the sleepy version of you. Good night."
+    },
+    {
+      "id": "en-goodnight-039",
+      "category": "goodnight",
+      "text": "Tomorrow's pancakes are on me. Now get some sleep."
+    },
+    {
+      "id": "en-goodnight-040",
+      "category": "goodnight",
+      "text": "Good night. Waking up next to you is my favorite part of tomorrow."
+    },
+    {
+      "id": "en-goodnight-041",
+      "category": "goodnight",
+      "text": "Another kiss before lights out? Fine, make it two."
+    },
+    {
+      "id": "en-goodnight-042",
+      "category": "goodnight",
+      "text": "That was such a nice evening. Sleep well, you."
+    },
+    {
+      "id": "en-goodnight-043",
+      "category": "goodnight",
+      "text": "Did you set your alarm? Okay, now sleep well."
+    },
+    {
+      "id": "en-goodnight-044",
+      "category": "goodnight",
+      "text": "If you dream about me, I'll bring snacks. Good night."
+    },
+    {
+      "id": "en-goodnight-045",
+      "category": "goodnight",
+      "text": "Proud of you today. Rest well 🌙"
+    },
+    {
+      "id": "en-goodnight-046",
+      "category": "goodnight",
+      "text": "Tucked in and thinking of you 🛌"
+    },
+    {
+      "id": "en-goodnight-047",
+      "category": "goodnight",
+      "text": "Night night. Dream of somewhere warm 🌴"
+    },
+    {
+      "id": "en-encouragement-028",
+      "category": "encouragement",
+      "text": "Remember last time you thought you couldn't? You totally did."
+    },
+    {
+      "id": "en-encouragement-029",
+      "category": "encouragement",
+      "text": "You don't have to do it all today. Pick one thing and I'll help with the rest."
+    },
+    {
+      "id": "en-encouragement-030",
+      "category": "encouragement",
+      "text": "Go crush that interview. I'll be waiting with tacos."
+    },
+    {
+      "id": "en-encouragement-031",
+      "category": "encouragement",
+      "text": "Keep going. It's amazing to watch you build this."
+    },
+    {
+      "id": "en-encouragement-032",
+      "category": "encouragement",
+      "text": "Whatever today brings, you'll handle it like you always do."
+    },
+    {
+      "id": "en-encouragement-033",
+      "category": "encouragement",
+      "text": "You're making real progress, even on days it doesn't feel like it."
+    },
+    {
+      "id": "en-encouragement-034",
+      "category": "encouragement",
+      "text": "I'm so proud of you for even trying. That took guts."
+    },
+    {
+      "id": "en-encouragement-035",
+      "category": "encouragement",
+      "text": "First day at the new job. They have no idea how lucky they are."
+    },
+    {
+      "id": "en-encouragement-036",
+      "category": "encouragement",
+      "text": "Deep breath, shoulders down. You know this stuff."
+    },
+    {
+      "id": "en-encouragement-037",
+      "category": "encouragement",
+      "text": "Close the laptop for tonight. You've done plenty."
+    },
+    {
+      "id": "en-encouragement-038",
+      "category": "encouragement",
+      "text": "Hey, you've got a whole team behind you. Starting with me."
+    },
+    {
+      "id": "en-encouragement-039",
+      "category": "encouragement",
+      "text": "You've been waiting for this one. Go enjoy every minute."
+    },
+    {
+      "id": "en-encouragement-040",
+      "category": "encouragement",
+      "text": "The prep is done. Now go have some fun with it."
+    },
+    {
+      "id": "en-encouragement-041",
+      "category": "encouragement",
+      "text": "Show them what I see in you every day."
+    },
+    {
+      "id": "en-encouragement-042",
+      "category": "encouragement",
+      "text": "Whatever the result, I'll be the one cheering the loudest."
+    },
+    {
+      "id": "en-encouragement-043",
+      "category": "encouragement",
+      "text": "Go do your thing. I'll keep dinner warm for you."
+    },
+    {
+      "id": "en-encouragement-044",
+      "category": "encouragement",
+      "text": "Your ideas are good. Trust them a little more."
+    },
+    {
+      "id": "en-encouragement-045",
+      "category": "encouragement",
+      "text": "You were totally made for this 🚀"
+    },
+    {
+      "id": "en-encouragement-046",
+      "category": "encouragement",
+      "text": "Sending you all my good luck 🍀"
+    },
+    {
+      "id": "en-encouragement-047",
+      "category": "encouragement",
+      "text": "I already know you'll be great today 🌟"
+    },
+    {
+      "id": "en-missyou-028",
+      "category": "missyou",
+      "text": "Four more days. I've got a countdown on the fridge."
+    },
+    {
+      "id": "en-missyou-029",
+      "category": "missyou",
+      "text": "Saved the last episode so we can watch it together."
+    },
+    {
+      "id": "en-missyou-030",
+      "category": "missyou",
+      "text": "I keep picturing you walking out of arrivals."
+    },
+    {
+      "id": "en-missyou-031",
+      "category": "missyou",
+      "text": "Just booked a table for the night you're back."
+    },
+    {
+      "id": "en-missyou-032",
+      "category": "missyou",
+      "text": "Tell me one good thing about your day. I'm collecting them till you're back."
+    },
+    {
+      "id": "en-missyou-033",
+      "category": "missyou",
+      "text": "Let's watch the same movie tonight and text the whole time."
+    },
+    {
+      "id": "en-missyou-034",
+      "category": "missyou",
+      "text": "Saturday can't come fast enough. I've packed my bag twice already."
+    },
+    {
+      "id": "en-missyou-035",
+      "category": "missyou",
+      "text": "Your side of the couch is reserved. Nobody else allowed."
+    },
+    {
+      "id": "en-missyou-036",
+      "category": "missyou",
+      "text": "I miss your jokes. Mine aren't half as funny without you laughing."
+    },
+    {
+      "id": "en-missyou-037",
+      "category": "missyou",
+      "text": "Can't stop thinking about the first hug when I see you."
+    },
+    {
+      "id": "en-missyou-038",
+      "category": "missyou",
+      "text": "I miss making two cups of coffee in the morning."
+    },
+    {
+      "id": "en-missyou-039",
+      "category": "missyou",
+      "text": "When you're back, we're sleeping in. That's the plan."
+    },
+    {
+      "id": "en-missyou-040",
+      "category": "missyou",
+      "text": "Halfway through the wait already. Not that I'm counting."
+    },
+    {
+      "id": "en-missyou-041",
+      "category": "missyou",
+      "text": "Every little thing today made me want to text you. So I did."
+    },
+    {
+      "id": "en-missyou-042",
+      "category": "missyou",
+      "text": "Wherever you are right now, you're on my mind."
+    },
+    {
+      "id": "en-missyou-043",
+      "category": "missyou",
+      "text": "Hugging your pillow tonight. Not quite you, but close."
+    },
+    {
+      "id": "en-missyou-044",
+      "category": "missyou",
+      "text": "Can I just teleport to you? 🚀"
+    },
+    {
+      "id": "en-missyou-045",
+      "category": "missyou",
+      "text": "Keeping a stack of kisses ready for you 😘"
+    },
+    {
+      "id": "en-missyou-046",
+      "category": "missyou",
+      "text": "Morning here, night there. Thinking of you either way 🌍"
+    },
+    {
+      "id": "en-missyou-047",
+      "category": "missyou",
+      "text": "Our song came on in the store and I just stood there grinning."
+    },
+    {
+      "id": "en-compliment-028",
+      "category": "compliment",
+      "text": "Watching you get excited about little things is the best."
+    },
+    {
+      "id": "en-compliment-029",
+      "category": "compliment",
+      "text": "That shirt looks so good on you. Wear it more often."
+    },
+    {
+      "id": "en-compliment-030",
+      "category": "compliment",
+      "text": "Your good mood is so contagious. I caught it again today."
+    },
+    {
+      "id": "en-compliment-031",
+      "category": "compliment",
+      "text": "You have such a kind face. People trust you right away."
+    },
+    {
+      "id": "en-compliment-032",
+      "category": "compliment",
+      "text": "You're the coolest person I know, and I get to date you."
+    },
+    {
+      "id": "en-compliment-033",
+      "category": "compliment",
+      "text": "You give the best hugs. It's not even close."
+    },
+    {
+      "id": "en-compliment-034",
+      "category": "compliment",
+      "text": "Even your texts make me smile. You just know what to say."
+    },
+    {
+      "id": "en-compliment-035",
+      "category": "compliment",
+      "text": "I love watching you dance in the kitchen."
+    },
+    {
+      "id": "en-compliment-036",
+      "category": "compliment",
+      "text": "You're so good at what you do. It's impressive to watch."
+    },
+    {
+      "id": "en-compliment-037",
+      "category": "compliment",
+      "text": "Your taste in music is great. Your taste in partners too."
+    },
+    {
+      "id": "en-compliment-038",
+      "category": "compliment",
+      "text": "At every party, you're the most interesting person there."
+    },
+    {
+      "id": "en-compliment-039",
+      "category": "compliment",
+      "text": "I love the way your mind works."
+    },
+    {
+      "id": "en-compliment-040",
+      "category": "compliment",
+      "text": "How do you always come up with the good ideas? Teach me."
+    },
+    {
+      "id": "en-compliment-041",
+      "category": "compliment",
+      "text": "Anyone feels welcome around you in two minutes flat."
+    },
+    {
+      "id": "en-compliment-042",
+      "category": "compliment",
+      "text": "You stay so calm under pressure. It's seriously attractive."
+    },
+    {
+      "id": "en-compliment-043",
+      "category": "compliment",
+      "text": "Is there anything you don't look good in? Asking for me."
+    },
+    {
+      "id": "en-compliment-044",
+      "category": "compliment",
+      "text": "You walk into a room and I forget what I was saying."
+    },
+    {
+      "id": "en-compliment-045",
+      "category": "compliment",
+      "text": "Tonight's outfit is really working on you ✨"
+    },
+    {
+      "id": "en-compliment-046",
+      "category": "compliment",
+      "text": "Kind to everyone, even on busy days. That's you 🌻"
+    },
+    {
+      "id": "en-compliment-047",
+      "category": "compliment",
+      "text": "You make brave look easy, you know that? 🦁"
+    },
+    {
+      "id": "en-humor-028",
+      "category": "humor",
+      "text": "My face does this goofy smiling thing whenever you text."
+    },
+    {
+      "id": "en-humor-029",
+      "category": "humor",
+      "text": "I told my coworker about you again. They've started taking notes."
+    },
+    {
+      "id": "en-humor-030",
+      "category": "humor",
+      "text": "We should get matching pajamas. Hear me out."
+    },
+    {
+      "id": "en-humor-031",
+      "category": "humor",
+      "text": "My plants know all about you by now."
+    },
+    {
+      "id": "en-humor-032",
+      "category": "humor",
+      "text": "Just smiled at a random dog. That's what thinking of you does to me."
+    },
+    {
+      "id": "en-humor-033",
+      "category": "humor",
+      "text": "This text is just here to say you're cute."
+    },
+    {
+      "id": "en-humor-034",
+      "category": "humor",
+      "text": "Scientists confirm hugs from you are the best kind."
+    },
+    {
+      "id": "en-humor-035",
+      "category": "humor",
+      "text": "I tried to be mysterious today. Lasted four minutes, then I texted you."
+    },
+    {
+      "id": "en-humor-036",
+      "category": "humor",
+      "text": "Do you want to come over and do absolutely nothing with me?"
+    },
+    {
+      "id": "en-humor-037",
+      "category": "humor",
+      "text": "I'd let you pick the movie every time. Okay, most times."
+    },
+    {
+      "id": "en-humor-038",
+      "category": "humor",
+      "text": "Warning: I'm about to be very affectionate when you get home."
+    },
+    {
+      "id": "en-humor-039",
+      "category": "humor",
+      "text": "Your texts are on loud. Everyone else is on silent."
+    },
+    {
+      "id": "en-humor-040",
+      "category": "humor",
+      "text": "I miss you while you're in the shower. Is that normal?"
+    },
+    {
+      "id": "en-humor-041",
+      "category": "humor",
+      "text": "You're cuter than a puppy in a sweater 🐶"
+    },
+    {
+      "id": "en-humor-042",
+      "category": "humor",
+      "text": "Calling dibs on your next hug. And the one after 🤗"
+    },
+    {
+      "id": "en-humor-043",
+      "category": "humor",
+      "text": "Texting you from the next room because I'm too comfy to move 😄"
+    },
+    {
+      "id": "en-humor-044",
+      "category": "humor",
+      "text": "Breaking news: I like you. More at eleven."
+    },
+    {
+      "id": "en-humor-045",
+      "category": "humor",
+      "text": "My hobbies lately are snacks and thinking about you."
+    },
+    {
+      "id": "en-humor-046",
+      "category": "humor",
+      "text": "Can we skip to the part where we're on the couch together?"
+    },
+    {
+      "id": "en-humor-047",
+      "category": "humor",
+      "text": "I'm keeping you. Just so you know."
+    },
+    {
+      "id": "en-thanks-028",
+      "category": "thanks",
+      "text": "Thank you for warming up the car before I left."
+    },
+    {
+      "id": "en-thanks-029",
+      "category": "thanks",
+      "text": "You took out the trash without me even asking. My hero."
+    },
+    {
+      "id": "en-thanks-030",
+      "category": "thanks",
+      "text": "You charged my phone overnight. That saved my morning."
+    },
+    {
+      "id": "en-thanks-031",
+      "category": "thanks",
+      "text": "I really appreciate you handling dinner tonight."
+    },
+    {
+      "id": "en-thanks-032",
+      "category": "thanks",
+      "text": "Your playlist made my commute so much better. Thanks."
+    },
+    {
+      "id": "en-thanks-033",
+      "category": "thanks",
+      "text": "Thanks for packing my lunch. It made my whole workday."
+    },
+    {
+      "id": "en-thanks-034",
+      "category": "thanks",
+      "text": "You fixed the wifi and my whole mood. Thank you."
+    },
+    {
+      "id": "en-thanks-035",
+      "category": "thanks",
+      "text": "Thanks for remembering my big meeting. Your text came at the perfect time."
+    },
+    {
+      "id": "en-thanks-036",
+      "category": "thanks",
+      "text": "Thank you for planning our weekend. All I have to do is show up and enjoy it."
+    },
+    {
+      "id": "en-thanks-037",
+      "category": "thanks",
+      "text": "Coming home to a made bed felt like a hotel. Thanks, you."
+    },
+    {
+      "id": "en-thanks-038",
+      "category": "thanks",
+      "text": "That surprise coffee on my desk? Thank you. Seriously."
+    },
+    {
+      "id": "en-thanks-039",
+      "category": "thanks",
+      "text": "Big thanks for driving so I could nap. Best road trip ever."
+    },
+    {
+      "id": "en-thanks-040",
+      "category": "thanks",
+      "text": "Found your note in my pocket and read it ten times. Thank you."
+    },
+    {
+      "id": "en-thanks-041",
+      "category": "thanks",
+      "text": "Thanks so much for the surprise date night. I'm still smiling."
+    },
+    {
+      "id": "en-thanks-042",
+      "category": "thanks",
+      "text": "My parents can't stop talking about you. You were so lovely, thanks."
+    },
+    {
+      "id": "en-thanks-043",
+      "category": "thanks",
+      "text": "Cheers for sorting out the bills today. One less thing on my mind."
+    },
+    {
+      "id": "en-thanks-044",
+      "category": "thanks",
+      "text": "Someone put an extra blanket on me last night. I slept so well, thank you."
+    },
+    {
+      "id": "en-thanks-045",
+      "category": "thanks",
+      "text": "That soup was exactly right. Thank you 🍲"
+    },
+    {
+      "id": "en-thanks-046",
+      "category": "thanks",
+      "text": "Sharing your umbrella with me was so sweet ☔"
+    },
+    {
+      "id": "en-thanks-047",
+      "category": "thanks",
+      "text": "Fresh flowers on the table again. Thank you, they're beautiful 💐"
+    },
+    {
+      "id": "en-apology-028",
+      "category": "apology",
+      "text": "Brought you your favorite pastry. Consider it a little sorry."
+    },
+    {
+      "id": "en-apology-029",
+      "category": "apology",
+      "text": "I was a bit short with you earlier. Let me give you a proper hug now."
+    },
+    {
+      "id": "en-apology-030",
+      "category": "apology",
+      "text": "I'd like a do-over on that conversation. Can we try again?"
+    },
+    {
+      "id": "en-apology-031",
+      "category": "apology",
+      "text": "If it helps, you can have the good pillow for a week."
+    },
+    {
+      "id": "en-apology-032",
+      "category": "apology",
+      "text": "I love that you tell me how you feel. Let's talk it through."
+    },
+    {
+      "id": "en-apology-033",
+      "category": "apology",
+      "text": "My to-do list can wait. You come first. Sorry for today."
+    },
+    {
+      "id": "en-apology-034",
+      "category": "apology",
+      "text": "We sorted that out so well together. I love us."
+    },
+    {
+      "id": "en-apology-035",
+      "category": "apology",
+      "text": "Your feelings matter to me. I'm glad you told me."
+    },
+    {
+      "id": "en-apology-036",
+      "category": "apology",
+      "text": "I want to understand you better. Help me get there?"
+    },
+    {
+      "id": "en-apology-037",
+      "category": "apology",
+      "text": "Phone's down, TV's off. Tell me what's on your mind."
+    },
+    {
+      "id": "en-apology-038",
+      "category": "apology",
+      "text": "Sorry for moving our plans. This Saturday is all ours."
+    },
+    {
+      "id": "en-apology-039",
+      "category": "apology",
+      "text": "Let's put earlier behind us and go get ice cream."
+    },
+    {
+      "id": "en-apology-040",
+      "category": "apology",
+      "text": "Breakfast in bed tomorrow is on me. Sorry about this morning."
+    },
+    {
+      "id": "en-apology-041",
+      "category": "apology",
+      "text": "We're a good team. Let's figure this out together."
+    },
+    {
+      "id": "en-apology-042",
+      "category": "apology",
+      "text": "Now I know how much that meant to you. Next time I'll remember."
+    },
+    {
+      "id": "en-apology-043",
+      "category": "apology",
+      "text": "Thanks for waiting for me. The rest of the night is yours."
+    },
+    {
+      "id": "en-apology-044",
+      "category": "apology",
+      "text": "One hug with no expiration date. Yours if you want it 🤗"
+    },
+    {
+      "id": "en-apology-045",
+      "category": "apology",
+      "text": "Walk with me later? I'd love to talk 🌳"
+    },
+    {
+      "id": "en-apology-046",
+      "category": "apology",
+      "text": "Nothing's more important to me than us ❤️"
+    },
+    {
+      "id": "en-apology-047",
+      "category": "apology",
+      "text": "I hear you. And I love you."
+    },
+    {
+      "id": "en-emoji-031",
+      "category": "emoji",
+      "text": "Nighty night 🌜💤"
+    },
+    {
+      "id": "en-emoji-032",
+      "category": "emoji",
+      "text": "Brunch date? 🍳☕"
+    },
+    {
+      "id": "en-emoji-033",
+      "category": "emoji",
+      "text": "Be home in ten 🏠😘"
+    },
+    {
+      "id": "en-emoji-034",
+      "category": "emoji",
+      "text": "You make my heart go 💓💓"
+    },
+    {
+      "id": "en-emoji-035",
+      "category": "emoji",
+      "text": "Weekend mode 😎🙌"
+    },
+    {
+      "id": "en-emoji-036",
+      "category": "emoji",
+      "text": "Kisses incoming 😘💨"
+    },
+    {
+      "id": "en-emoji-037",
+      "category": "emoji",
+      "text": "Date night? 🍣😍"
+    },
+    {
+      "id": "en-emoji-038",
+      "category": "emoji",
+      "text": "Go get 'em 💪✨"
+    },
+    {
+      "id": "en-emoji-039",
+      "category": "emoji",
+      "text": "You nailed it 👏🎉"
+    },
+    {
+      "id": "en-emoji-040",
+      "category": "emoji",
+      "text": "Yours, always 💌"
+    },
+    {
+      "id": "en-emoji-041",
+      "category": "emoji",
+      "text": "Sand in our toes soon 🏖️☀️"
+    },
+    {
+      "id": "en-emoji-042",
+      "category": "emoji",
+      "text": "Pillow fort tonight? 🏰😄"
+    },
+    {
+      "id": "en-emoji-043",
+      "category": "emoji",
+      "text": "Best decision ever: us 💞"
+    },
+    {
+      "id": "en-emoji-044",
+      "category": "emoji",
+      "text": "Pancakes on the way 🥞😋"
+    },
+    {
+      "id": "en-emoji-045",
+      "category": "emoji",
+      "text": "Road trip playlist ready 🚗🎶"
+    },
+    {
+      "id": "en-emoji-046",
+      "category": "emoji",
+      "text": "My lucky charm 🍀😊"
+    },
+    {
+      "id": "en-emoji-047",
+      "category": "emoji",
+      "text": "Hot chocolate and you ☕❄️"
+    },
+    {
+      "id": "en-emoji-048",
+      "category": "emoji",
+      "text": "Text me when you land ✈️😘"
+    },
+    {
+      "id": "en-emoji-049",
+      "category": "emoji",
+      "text": "Cuddles on demand 🤗💕"
+    },
+    {
+      "id": "en-emoji-050",
+      "category": "emoji",
+      "text": "Happy birthday, gorgeous 🎂🎈"
+    },
+    {
+      "id": "en-ascii-031",
+      "category": "ascii",
+      "text": "ILY <3"
+    },
+    {
+      "id": "en-ascii-032",
+      "category": "ascii",
+      "text": "Love you lots <3333"
+    },
+    {
+      "id": "en-ascii-033",
+      "category": "ascii",
+      "text": "*squeeze*"
+    },
+    {
+      "id": "en-ascii-034",
+      "category": "ascii",
+      "text": "*cuddles* <3"
+    },
+    {
+      "id": "en-ascii-035",
+      "category": "ascii",
+      "text": "Mwah :-*"
+    },
+    {
+      "id": "en-ascii-036",
+      "category": "ascii",
+      "text": "Off to dreamland zzZ <3"
+    },
+    {
+      "id": "en-ascii-037",
+      "category": "ascii",
+      "text": "Hi you o/"
+    },
+    {
+      "id": "en-ascii-038",
+      "category": "ascii",
+      "text": "<(^_^<) <3"
+    },
+    {
+      "id": "en-ascii-039",
+      "category": "ascii",
+      "text": "*happy dance*"
+    },
+    {
+      "id": "en-ascii-040",
+      "category": "ascii",
+      "text": "Team us o/\\o"
+    },
+    {
+      "id": "en-ascii-041",
+      "category": "ascii",
+      "text": "Yay you \\o/"
+    },
+    {
+      "id": "en-ascii-042",
+      "category": "ascii",
+      "text": "@->-- just because"
+    },
+    {
+      "id": "en-ascii-043",
+      "category": "ascii",
+      "text": "Thx <3"
+    },
+    {
+      "id": "en-ascii-044",
+      "category": "ascii",
+      "text": "XD you crack me up <3"
+    },
+    {
+      "id": "en-ascii-045",
+      "category": "ascii",
+      "text": "Just winked at you (^_~)"
+    },
+    {
+      "id": "en-ascii-046",
+      "category": "ascii",
+      "text": "Proud of you (^_^)b"
+    },
+    {
+      "id": "en-ascii-047",
+      "category": "ascii",
+      "text": "(づ￣ ³￣)づ"
+    },
+    {
+      "id": "en-ascii-048",
+      "category": "ascii",
+      "text": "(♥ω♥)"
+    },
+    {
+      "id": "en-ascii-049",
+      "category": "ascii",
+      "text": "Lookin' good B-)"
+    },
+    {
+      "id": "en-ascii-050",
+      "category": "ascii",
+      "text": "Hey cutie ^.^"
     }
   ]
 }

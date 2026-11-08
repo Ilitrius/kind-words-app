@@ -1,0 +1,2 @@
+- [Review-Prüfregeln](feedback_review_checks.md) — Wortlisten, Emoji-5.0-Check, häufigste Mängel fremder Entwürfe, Snapshot bei Fremdeingaben
+- [Content v7](project_content_v7.md) — 240 neue Sätze je Sprache, ids ab 028/031, Review 2026-11-08, noch nicht eingebaut

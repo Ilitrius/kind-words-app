@@ -1,6 +1,6 @@
 {
   "language": "de",
-  "version": 6,
+  "version": 7,
   "messages": [
     {
       "id": "de-love-001",
@@ -1651,6 +1651,1206 @@
       "id": "de-apology-027",
       "category": "apology",
       "text": "Neuer Anfang? 🤝 Ich hab dich lieb ❤️"
+    },
+    {
+      "id": "de-love-028",
+      "category": "love",
+      "text": "Wie du meine Hand nimmst, ohne hinzuschauen. Das liebe ich."
+    },
+    {
+      "id": "de-love-029",
+      "category": "love",
+      "text": "Unsere Zahnbürsten im selben Becher. Ich find das so schön."
+    },
+    {
+      "id": "de-love-030",
+      "category": "love",
+      "text": "Einkaufen mit dir ist das Romantischste an meiner Woche."
+    },
+    {
+      "id": "de-love-031",
+      "category": "love",
+      "text": "Wir zwei im Auto, Musik laut. Von mir aus ewig so."
+    },
+    {
+      "id": "de-love-032",
+      "category": "love",
+      "text": "Du bist der Mensch, dem ich alles zuerst erzählen will."
+    },
+    {
+      "id": "de-love-033",
+      "category": "love",
+      "text": "Ich liebe dich auch um sechs Uhr früh. Das sagt eigentlich alles."
+    },
+    {
+      "id": "de-love-034",
+      "category": "love",
+      "text": "Dein Stirnkuss vorhin, einfach so. Den spür ich immer noch."
+    },
+    {
+      "id": "de-love-035",
+      "category": "love",
+      "text": "Deine Hand in meiner Jackentasche. Dafür mag ich den Winter."
+    },
+    {
+      "id": "de-love-036",
+      "category": "love",
+      "text": "Ich verlieb mich immer wieder neu in dich. Meistens bei Kleinigkeiten."
+    },
+    {
+      "id": "de-love-037",
+      "category": "love",
+      "text": "Seit unserem ersten Date freu ich mich jeden Tag auf dich."
+    },
+    {
+      "id": "de-love-038",
+      "category": "love",
+      "text": "Noch ein Jahr mit dir. Davon nehm ich gern noch ganz viele."
+    },
+    {
+      "id": "de-love-039",
+      "category": "love",
+      "text": "Du schläfst noch neben mir. Ich rühr mich extra nicht."
+    },
+    {
+      "id": "de-love-040",
+      "category": "love",
+      "text": "Wenn du mir heimlich zuzwinkerst, werd ich jedes Mal weich."
+    },
+    {
+      "id": "de-love-041",
+      "category": "love",
+      "text": "Grad gemerkt, wie sehr ich mich auf unser Wochenende freu."
+    },
+    {
+      "id": "de-love-042",
+      "category": "love",
+      "text": "Am liebsten mag ich uns, wenn wir zusammen in der Küche stehen."
+    },
+    {
+      "id": "de-love-043",
+      "category": "love",
+      "text": "Du bist meine liebste Gewohnheit."
+    },
+    {
+      "id": "de-love-044",
+      "category": "love",
+      "text": "Dich gibt's nur im Komplettpaket. Genau so lieb ich dich."
+    },
+    {
+      "id": "de-love-045",
+      "category": "love",
+      "text": "Ich bin so gern mit dir zusammen. Auch wenn wir gar nichts machen 💛"
+    },
+    {
+      "id": "de-love-046",
+      "category": "love",
+      "text": "Wenn du zur Tür reinkommst, hüpft mein Herz 💓"
+    },
+    {
+      "id": "de-love-047",
+      "category": "love",
+      "text": "Draußen Regen, wir zwei unter einer Decke. Perfekt 🌧️"
+    },
+    {
+      "id": "de-appreciation-028",
+      "category": "appreciation",
+      "text": "Du denkst an Sachen, die ich längst vergessen hab. Das find ich so lieb."
+    },
+    {
+      "id": "de-appreciation-029",
+      "category": "appreciation",
+      "text": "Dass du morgens meinen Kaffee gleich mitmachst, rührt mich."
+    },
+    {
+      "id": "de-appreciation-030",
+      "category": "appreciation",
+      "text": "Du erklärst mir alles auch beim dritten Mal ganz geduldig."
+    },
+    {
+      "id": "de-appreciation-031",
+      "category": "appreciation",
+      "text": "Unser Zuhause ist so gemütlich, weil du dich drum kümmerst."
+    },
+    {
+      "id": "de-appreciation-032",
+      "category": "appreciation",
+      "text": "Bei dir darf ich auch mal müde sein. Das ist mir viel wert."
+    },
+    {
+      "id": "de-appreciation-033",
+      "category": "appreciation",
+      "text": "Komm ich spät heim, brennt im Flur noch Licht für mich."
+    },
+    {
+      "id": "de-appreciation-034",
+      "category": "appreciation",
+      "text": "Jeden Sonntag rufst du deine Oma an. Ich mag das so an dir."
+    },
+    {
+      "id": "de-appreciation-035",
+      "category": "appreciation",
+      "text": "Wenn ich was erzähle, legst du sofort das Handy weg. Danke dafür."
+    },
+    {
+      "id": "de-appreciation-036",
+      "category": "appreciation",
+      "text": "Mein Termin heute? Du hast dran gedacht, ohne dass ich was gesagt hab."
+    },
+    {
+      "id": "de-appreciation-037",
+      "category": "appreciation",
+      "text": "Meine Freunde fragen dauernd nach dir. Kein Wunder."
+    },
+    {
+      "id": "de-appreciation-038",
+      "category": "appreciation",
+      "text": "Ich finde, du bist ein richtig guter Mensch. Einfach so."
+    },
+    {
+      "id": "de-appreciation-039",
+      "category": "appreciation",
+      "text": "Wie oft du einfach für mich mit aufräumst. Ich seh jede einzelne Tasse."
+    },
+    {
+      "id": "de-appreciation-040",
+      "category": "appreciation",
+      "text": "Aus wenig Zeit machst du immer was Schönes für uns."
+    },
+    {
+      "id": "de-appreciation-041",
+      "category": "appreciation",
+      "text": "Du nimmst meine Ideen ernst, sogar die ganz spontanen. Das tut so gut."
+    },
+    {
+      "id": "de-appreciation-042",
+      "category": "appreciation",
+      "text": "Deine Geschenke treffen jedes Mal genau meinen Geschmack."
+    },
+    {
+      "id": "de-appreciation-043",
+      "category": "appreciation",
+      "text": "Du schaffst so viel und machst nie ein großes Ding draus."
+    },
+    {
+      "id": "de-appreciation-044",
+      "category": "appreciation",
+      "text": "Mit dir zu planen macht Spaß, ob Urlaub oder Wocheneinkauf."
+    },
+    {
+      "id": "de-appreciation-045",
+      "category": "appreciation",
+      "text": "Wie du dich in neue Sachen reinfuchst. Das steckt mich an."
+    },
+    {
+      "id": "de-appreciation-046",
+      "category": "appreciation",
+      "text": "Du kümmerst dich um alle. Heute koch ich mal für dich 💛"
+    },
+    {
+      "id": "de-appreciation-047",
+      "category": "appreciation",
+      "text": "Du hältst bei uns so viel zusammen. Danke, dass du das machst ❤️"
+    },
+    {
+      "id": "de-morning-028",
+      "category": "morning",
+      "text": "Guten Morgen. Dein Kaffee steht schon da, noch schön heiß."
+    },
+    {
+      "id": "de-morning-029",
+      "category": "morning",
+      "text": "Am Spiegel klebt ein Zettel. Erst lesen, dann Zähne putzen."
+    },
+    {
+      "id": "de-morning-030",
+      "category": "morning",
+      "text": "Morgen! Ich bin mit einem Grinsen aufgewacht. Rate mal, warum."
+    },
+    {
+      "id": "de-morning-031",
+      "category": "morning",
+      "text": "Bin schon los. Den Abschiedskuss hol ich heute Abend nach."
+    },
+    {
+      "id": "de-morning-032",
+      "category": "morning",
+      "text": "Die Amsel vorm Fenster und ich sagen: Guten Morgen."
+    },
+    {
+      "id": "de-morning-033",
+      "category": "morning",
+      "text": "Heute für dich: grüne Ampeln und ein Sitzplatz in der Bahn."
+    },
+    {
+      "id": "de-morning-034",
+      "category": "morning",
+      "text": "Brötchen sind geholt, der Tisch ist gedeckt. Komm frühstücken."
+    },
+    {
+      "id": "de-morning-035",
+      "category": "morning",
+      "text": "Du sahst so friedlich aus, da hab ich dich schlafen lassen."
+    },
+    {
+      "id": "de-morning-036",
+      "category": "morning",
+      "text": "Freitagmorgen. Heute Abend gehört nur uns."
+    },
+    {
+      "id": "de-morning-037",
+      "category": "morning",
+      "text": "Süße Träume gehabt? Ich hoffe, ich war dabei."
+    },
+    {
+      "id": "de-morning-038",
+      "category": "morning",
+      "text": "Zehn Minuten kuscheln, bevor der Wecker wieder klingelt?"
+    },
+    {
+      "id": "de-morning-039",
+      "category": "morning",
+      "text": "Ich hab Tee für uns aufgesetzt. Kommst du in die Küche?"
+    },
+    {
+      "id": "de-morning-040",
+      "category": "morning",
+      "text": "Schönen Start in deinen Tag. Heute Abend bin ich früh zu Hause."
+    },
+    {
+      "id": "de-morning-041",
+      "category": "morning",
+      "text": "Lass dir Zeit. Das Frühstück läuft dir nicht weg."
+    },
+    {
+      "id": "de-morning-042",
+      "category": "morning",
+      "text": "Heute ist dein großer Tag. Guten Morgen und ganz viel Glück."
+    },
+    {
+      "id": "de-morning-043",
+      "category": "morning",
+      "text": "Hoffentlich klappt heute alles, was du dir vorgenommen hast."
+    },
+    {
+      "id": "de-morning-044",
+      "category": "morning",
+      "text": "Sonntagmorgen mit dir im Bett. So mag ich das."
+    },
+    {
+      "id": "de-morning-045",
+      "category": "morning",
+      "text": "Die Autoscheiben sind frei gekratzt. Fahr entspannt los ❄️"
+    },
+    {
+      "id": "de-morning-046",
+      "category": "morning",
+      "text": "Moin! Heute gibt's Pfannkuchen zum Frühstück 🥞"
+    },
+    {
+      "id": "de-morning-047",
+      "category": "morning",
+      "text": "Nimm heute deinen Schirm mit. Guten Morgen ☔"
+    },
+    {
+      "id": "de-goodnight-028",
+      "category": "goodnight",
+      "text": "Licht aus, Decke bis zur Nase. Gute Nacht, du."
+    },
+    {
+      "id": "de-goodnight-029",
+      "category": "goodnight",
+      "text": "Ich hab dir die Wärmflasche schon ins Bett gelegt. Schlaf schön."
+    },
+    {
+      "id": "de-goodnight-030",
+      "category": "goodnight",
+      "text": "Morgen ist Samstag. Schlaf aus, so lange du willst."
+    },
+    {
+      "id": "de-goodnight-031",
+      "category": "goodnight",
+      "text": "Stell dir keinen Wecker. Morgen früh weck ich dich mit Kaffee."
+    },
+    {
+      "id": "de-goodnight-032",
+      "category": "goodnight",
+      "text": "Der Mond scheint grad direkt in mein Fenster. Ich schick ihn dir rüber."
+    },
+    {
+      "id": "de-goodnight-033",
+      "category": "goodnight",
+      "text": "Auf deinem Kopfkissen liegt eine Kleinigkeit für dich. Träum süß."
+    },
+    {
+      "id": "de-goodnight-034",
+      "category": "goodnight",
+      "text": "Ich putz mir noch die Zähne, dann komm ich kuscheln."
+    },
+    {
+      "id": "de-goodnight-035",
+      "category": "goodnight",
+      "text": "Ich halt dich fest, bis du eingeschlafen bist."
+    },
+    {
+      "id": "de-goodnight-036",
+      "category": "goodnight",
+      "text": "Handy aus, Kopf aus. Den Schlaf hast du dir heute verdient."
+    },
+    {
+      "id": "de-goodnight-037",
+      "category": "goodnight",
+      "text": "Träum heute vom Meer. Ich komm mit."
+    },
+    {
+      "id": "de-goodnight-038",
+      "category": "goodnight",
+      "text": "Danke für den Abend auf dem Sofa. Schlaf gut, du."
+    },
+    {
+      "id": "de-goodnight-039",
+      "category": "goodnight",
+      "text": "Schlaf schön. Morgen machen wir einen langen Spaziergang."
+    },
+    {
+      "id": "de-goodnight-040",
+      "category": "goodnight",
+      "text": "Die Sterne sind heute richtig klar. Ich hab einen für dich ausgesucht."
+    },
+    {
+      "id": "de-goodnight-041",
+      "category": "goodnight",
+      "text": "Egal wie spät es wird, ein Gute-Nacht-Kuss von dir muss sein."
+    },
+    {
+      "id": "de-goodnight-042",
+      "category": "goodnight",
+      "text": "Morgen früh hol ich Brötchen. Bis dahin schlaf gut."
+    },
+    {
+      "id": "de-goodnight-043",
+      "category": "goodnight",
+      "text": "Ich sing dir noch was vor. Nur eine Strophe, versprochen."
+    },
+    {
+      "id": "de-goodnight-044",
+      "category": "goodnight",
+      "text": "Ein Glas Wasser steht neben deinem Bett. Schlaf schön."
+    },
+    {
+      "id": "de-goodnight-045",
+      "category": "goodnight",
+      "text": "Gute Nacht. Morgen sehen wir uns endlich wieder 🌙"
+    },
+    {
+      "id": "de-goodnight-046",
+      "category": "goodnight",
+      "text": "Beim letzten Schluck Tee denk ich noch an dich 🍵"
+    },
+    {
+      "id": "de-goodnight-047",
+      "category": "goodnight",
+      "text": "Ich bin froh, dass ich heute neben dir einschlafen darf 💕"
+    },
+    {
+      "id": "de-encouragement-028",
+      "category": "encouragement",
+      "text": "Du hast dich so gut vorbereitet. Jetzt geh rein und zeig's ihnen."
+    },
+    {
+      "id": "de-encouragement-029",
+      "category": "encouragement",
+      "text": "Dein Glücksbringer steckt in der Tasche. Hab nachgeguckt."
+    },
+    {
+      "id": "de-encouragement-030",
+      "category": "encouragement",
+      "text": "Nach der Prüfung gehen wir Eis essen. Das steht schon fest."
+    },
+    {
+      "id": "de-encouragement-031",
+      "category": "encouragement",
+      "text": "Du darfst stolz auf dich sein. Ich bin's schon lange."
+    },
+    {
+      "id": "de-encouragement-032",
+      "category": "encouragement",
+      "text": "Mach dir einen Tee und fang einfach mit dem ersten Satz an."
+    },
+    {
+      "id": "de-encouragement-033",
+      "category": "encouragement",
+      "text": "Was auch immer heute passiert, heute Abend gibt's Pizza und mich."
+    },
+    {
+      "id": "de-encouragement-034",
+      "category": "encouragement",
+      "text": "Dein Vortrag wird gut. Ich hab dich üben hören, du bist bereit."
+    },
+    {
+      "id": "de-encouragement-035",
+      "category": "encouragement",
+      "text": "Sag mir einfach, wo ich mit anpacken kann. Wir kriegen das hin."
+    },
+    {
+      "id": "de-encouragement-036",
+      "category": "encouragement",
+      "text": "Die vielen Abende am Schreibtisch zahlen sich jetzt aus."
+    },
+    {
+      "id": "de-encouragement-037",
+      "category": "encouragement",
+      "text": "Ich hab so ein gutes Gefühl für heute. Du auch?"
+    },
+    {
+      "id": "de-encouragement-038",
+      "category": "encouragement",
+      "text": "Du traust dich immer mehr. Das ist so schön zu sehen."
+    },
+    {
+      "id": "de-encouragement-039",
+      "category": "encouragement",
+      "text": "Erster Tag im neuen Job. Bin gespannt, wie's dir gefällt."
+    },
+    {
+      "id": "de-encouragement-040",
+      "category": "encouragement",
+      "text": "Geh kurz eine Runde an die frische Luft. Danach geht's leichter."
+    },
+    {
+      "id": "de-encouragement-041",
+      "category": "encouragement",
+      "text": "Bevor du anfängst: Du kannst das. Wirklich."
+    },
+    {
+      "id": "de-encouragement-042",
+      "category": "encouragement",
+      "text": "Ich halt dir heute in Gedanken die Hand. Und jetzt los."
+    },
+    {
+      "id": "de-encouragement-043",
+      "category": "encouragement",
+      "text": "Zieh dein Lieblingsshirt an. Darin fühlst du dich stark."
+    },
+    {
+      "id": "de-encouragement-044",
+      "category": "encouragement",
+      "text": "Schreib mir, sobald du raus bist. Ich will alles wissen."
+    },
+    {
+      "id": "de-encouragement-045",
+      "category": "encouragement",
+      "text": "Der Sekt ist schon kalt gestellt. Für nachher, wenn du's geschafft hast 🍾"
+    },
+    {
+      "id": "de-encouragement-046",
+      "category": "encouragement",
+      "text": "Mit jedem Tag wirst du sicherer. Ich merk das genau 💪"
+    },
+    {
+      "id": "de-encouragement-047",
+      "category": "encouragement",
+      "text": "Du musst heute nichts beweisen. Für mich bist du schon toll 🌟"
+    },
+    {
+      "id": "de-missyou-028",
+      "category": "missyou",
+      "text": "Noch dreimal schlafen, dann bist du wieder da."
+    },
+    {
+      "id": "de-missyou-029",
+      "category": "missyou",
+      "text": "Hab deine Lieblingsäpfel gekauft. Die warten jetzt auf dich."
+    },
+    {
+      "id": "de-missyou-030",
+      "category": "missyou",
+      "text": "Wie war dein Tag? Ich will alles hören, auch die kleinen Sachen."
+    },
+    {
+      "id": "de-missyou-031",
+      "category": "missyou",
+      "text": "Dein Becher steht schon bereit für den Tag, an dem du zurückkommst."
+    },
+    {
+      "id": "de-missyou-032",
+      "category": "missyou",
+      "text": "Unser Foto ist jetzt mein Sperrbildschirm."
+    },
+    {
+      "id": "de-missyou-033",
+      "category": "missyou",
+      "text": "Videocall heute Abend? Ich hab dir so viel zu erzählen."
+    },
+    {
+      "id": "de-missyou-034",
+      "category": "missyou",
+      "text": "Am Wochenende hab ich dich endlich wieder. Alles ist schon geplant."
+    },
+    {
+      "id": "de-missyou-035",
+      "category": "missyou",
+      "text": "Wie ist das Wetter bei dir? Hier wär's perfekt für uns zwei."
+    },
+    {
+      "id": "de-missyou-036",
+      "category": "missyou",
+      "text": "Ich hab mir deine letzte Sprachnachricht schon fünfmal angehört."
+    },
+    {
+      "id": "de-missyou-037",
+      "category": "missyou",
+      "text": "Du fehlst mir beim Frühstück. Und den restlichen Tag auch."
+    },
+    {
+      "id": "de-missyou-038",
+      "category": "missyou",
+      "text": "In zwei Wochen sitzen wir wieder zusammen auf dem Balkon."
+    },
+    {
+      "id": "de-missyou-039",
+      "category": "missyou",
+      "text": "Dein Ankunftstag hat im Kalender ein dickes Herz."
+    },
+    {
+      "id": "de-missyou-040",
+      "category": "missyou",
+      "text": "Sogar das Klimpern deiner Schlüssel fehlt mir."
+    },
+    {
+      "id": "de-missyou-041",
+      "category": "missyou",
+      "text": "Im Bus roch jemand nach deinem Parfum. Ich musste lächeln."
+    },
+    {
+      "id": "de-missyou-042",
+      "category": "missyou",
+      "text": "Ich sammel schon Sachen, die ich dir zeigen will. Die Liste wird lang."
+    },
+    {
+      "id": "de-missyou-043",
+      "category": "missyou",
+      "text": "Schick mir ein Foto von da, wo du grad bist."
+    },
+    {
+      "id": "de-missyou-044",
+      "category": "missyou",
+      "text": "Heute schlaf ich auf deiner Seite vom Bett. Fühlt sich näher an."
+    },
+    {
+      "id": "de-missyou-045",
+      "category": "missyou",
+      "text": "Noch ein paar Tage, dann halt ich dich wieder fest 🤗"
+    },
+    {
+      "id": "de-missyou-046",
+      "category": "missyou",
+      "text": "Gedanklich sitz ich schon im Zug zu dir 🚆"
+    },
+    {
+      "id": "de-missyou-047",
+      "category": "missyou",
+      "text": "Ganz egal, wie weit weg du grad bist. Ich hab dich lieb 💌"
+    },
+    {
+      "id": "de-compliment-028",
+      "category": "compliment",
+      "text": "Wie deine Augen leuchten, wenn du von etwas erzählst, das dich begeistert."
+    },
+    {
+      "id": "de-compliment-029",
+      "category": "compliment",
+      "text": "Mir sind heute beim Kochen wieder deine schönen Hände aufgefallen."
+    },
+    {
+      "id": "de-compliment-030",
+      "category": "compliment",
+      "text": "Die neue Frisur steht dir richtig gut."
+    },
+    {
+      "id": "de-compliment-031",
+      "category": "compliment",
+      "text": "Du riechst so gut. Ich könnt ständig an dir schnuppern."
+    },
+    {
+      "id": "de-compliment-032",
+      "category": "compliment",
+      "text": "Blau ist echt deine Farbe."
+    },
+    {
+      "id": "de-compliment-033",
+      "category": "compliment",
+      "text": "Deine Ideen sind immer so kreativ. Ich frag mich jedes Mal, wo du die herhast."
+    },
+    {
+      "id": "de-compliment-034",
+      "category": "compliment",
+      "text": "Dein Essen ist besser als jedes Restaurant hier in der Gegend."
+    },
+    {
+      "id": "de-compliment-035",
+      "category": "compliment",
+      "text": "Du siehst morgens verschlafen schon richtig süß aus."
+    },
+    {
+      "id": "de-compliment-036",
+      "category": "compliment",
+      "text": "Du kannst so gut Geschichten erzählen. Ich hör dir stundenlang zu."
+    },
+    {
+      "id": "de-compliment-037",
+      "category": "compliment",
+      "text": "Bei dir versteh ich sogar Steuern. Das ist echt ein Talent."
+    },
+    {
+      "id": "de-compliment-038",
+      "category": "compliment",
+      "text": "Wenn du dich auf was konzentrierst, find ich dich unwiderstehlich."
+    },
+    {
+      "id": "de-compliment-039",
+      "category": "compliment",
+      "text": "Ich find dich in jedem Licht schön. Auch im Kühlschranklicht um Mitternacht."
+    },
+    {
+      "id": "de-compliment-040",
+      "category": "compliment",
+      "text": "Deine Handschrift ist so schön, ich heb jeden Zettel von dir auf."
+    },
+    {
+      "id": "de-compliment-041",
+      "category": "compliment",
+      "text": "Du packst Geschenke so schön ein. Fast zu schade zum Öffnen."
+    },
+    {
+      "id": "de-compliment-042",
+      "category": "compliment",
+      "text": "Deine Ruhe tut mir so gut."
+    },
+    {
+      "id": "de-compliment-043",
+      "category": "compliment",
+      "text": "Du bist so großzügig, sogar mit der letzten Schokolade."
+    },
+    {
+      "id": "de-compliment-044",
+      "category": "compliment",
+      "text": "Wenn du unter der Dusche singst, bleib ich extra vor der Tür stehen."
+    },
+    {
+      "id": "de-compliment-045",
+      "category": "compliment",
+      "text": "Ich kann heute kaum die Augen von dir lassen 😍"
+    },
+    {
+      "id": "de-compliment-046",
+      "category": "compliment",
+      "text": "Dein Pulli heute ist so schön. Den leihst du mir mal, ja? 💛"
+    },
+    {
+      "id": "de-compliment-047",
+      "category": "compliment",
+      "text": "Wie du dich für andere freust, find ich wunderschön 🌸"
+    },
+    {
+      "id": "de-humor-028",
+      "category": "humor",
+      "text": "Das größere Kuchenstück ist deins. Mehr Liebe geht nicht."
+    },
+    {
+      "id": "de-humor-029",
+      "category": "humor",
+      "text": "Wenn du heimkommst, tu ich so, als hätte ich nicht auf dich gewartet."
+    },
+    {
+      "id": "de-humor-030",
+      "category": "humor",
+      "text": "Auf dem Einkaufszettel steht unter Milch einfach dein Name. Ups."
+    },
+    {
+      "id": "de-humor-031",
+      "category": "humor",
+      "text": "Deine Lieblingschips sind gekauft. Bezahlt wird in Küssen."
+    },
+    {
+      "id": "de-humor-032",
+      "category": "humor",
+      "text": "Ich üb immer noch, dich anzulächeln, ohne rot zu werden."
+    },
+    {
+      "id": "de-humor-033",
+      "category": "humor",
+      "text": "Grad gegoogelt, wie man jemanden noch mehr lieben kann. Keine Treffer."
+    },
+    {
+      "id": "de-humor-034",
+      "category": "humor",
+      "text": "Hab grad eine Laterne angelächelt. Ich glaub, ich bin verliebt."
+    },
+    {
+      "id": "de-humor-035",
+      "category": "humor",
+      "text": "Wir zwei sind wie ein Paar Socken. Nur im Doppelpack gut."
+    },
+    {
+      "id": "de-humor-036",
+      "category": "humor",
+      "text": "Dreimal dein Foto angeschaut heute. Nur für die Statistik."
+    },
+    {
+      "id": "de-humor-037",
+      "category": "humor",
+      "text": "Wenn Kuscheln ein Sport wär, wären wir Weltmeister."
+    },
+    {
+      "id": "de-humor-038",
+      "category": "humor",
+      "text": "Der Kühlschrank ist voll mit Sachen, die du magst. Reiner Zufall."
+    },
+    {
+      "id": "de-humor-039",
+      "category": "humor",
+      "text": "Probeumarmung mit dem Kissen erledigt. Du bist als Nächstes dran."
+    },
+    {
+      "id": "de-humor-040",
+      "category": "humor",
+      "text": "Heute bin ich so gut drauf, ich mach sogar freiwillig den Abwasch."
+    },
+    {
+      "id": "de-humor-041",
+      "category": "humor",
+      "text": "Mein Navi kennt nur noch einen Weg: zu dir."
+    },
+    {
+      "id": "de-humor-042",
+      "category": "humor",
+      "text": "Ich hab dich lieber als ausschlafen. Und das heißt was."
+    },
+    {
+      "id": "de-humor-043",
+      "category": "humor",
+      "text": "Bei dir hab ich eine Kuschel-Flatrate. Kündigen ausgeschlossen."
+    },
+    {
+      "id": "de-humor-044",
+      "category": "humor",
+      "text": "Offizielle Einladung zum Date. Dresscode: Jogginghose."
+    },
+    {
+      "id": "de-humor-045",
+      "category": "humor",
+      "text": "Popcorn ist fertig. Du bist für die Filmauswahl zuständig 🍿"
+    },
+    {
+      "id": "de-humor-046",
+      "category": "humor",
+      "text": "Hab grad laut über deine Nachricht gelacht. Im Supermarkt 😄"
+    },
+    {
+      "id": "de-humor-047",
+      "category": "humor",
+      "text": "Ich hab dich zum Fressen gern. Ehrlich 😋"
+    },
+    {
+      "id": "de-thanks-028",
+      "category": "thanks",
+      "text": "Danke fürs Abholen vom Bahnhof. Im Regen, um elf Uhr nachts."
+    },
+    {
+      "id": "de-thanks-029",
+      "category": "thanks",
+      "text": "Du hast mir einfach so Blumen mitgebracht. Ich freu mich immer noch."
+    },
+    {
+      "id": "de-thanks-030",
+      "category": "thanks",
+      "text": "Den ganzen Einkauf hast du heute geschleppt. Danke dir."
+    },
+    {
+      "id": "de-thanks-031",
+      "category": "thanks",
+      "text": "Dass du meine Mama angerufen hast, fand ich so lieb. Danke."
+    },
+    {
+      "id": "de-thanks-032",
+      "category": "thanks",
+      "text": "Danke für den Tee, den du mir ans Bett gebracht hast."
+    },
+    {
+      "id": "de-thanks-033",
+      "category": "thanks",
+      "text": "Letzter Umzugskarton ausgepackt. Danke für deine Muskeln."
+    },
+    {
+      "id": "de-thanks-034",
+      "category": "thanks",
+      "text": "Dein Päckchen ist angekommen. Danke, ich grins seitdem die ganze Zeit."
+    },
+    {
+      "id": "de-thanks-035",
+      "category": "thanks",
+      "text": "Danke für die Massage gestern. Ich fühl mich wie neu."
+    },
+    {
+      "id": "de-thanks-036",
+      "category": "thanks",
+      "text": "Du hast heute an alles gedacht. Danke, das war so entspannt."
+    },
+    {
+      "id": "de-thanks-037",
+      "category": "thanks",
+      "text": "Merci für den schönen Ausflug. Den Tag behalt ich lange im Kopf."
+    },
+    {
+      "id": "de-thanks-038",
+      "category": "thanks",
+      "text": "Mein Fahrrad läuft wieder, und ich musste nicht mal fragen. Danke!"
+    },
+    {
+      "id": "de-thanks-039",
+      "category": "thanks",
+      "text": "Nach dem Spaziergang mit dir ist mein Kopf frei. Danke."
+    },
+    {
+      "id": "de-thanks-040",
+      "category": "thanks",
+      "text": "Ich danke dir für jede Tasse Kaffee, die du mir je gemacht hast."
+    },
+    {
+      "id": "de-thanks-041",
+      "category": "thanks",
+      "text": "Die Überraschung zum Jahrestag hat mich umgehauen. Danke dir."
+    },
+    {
+      "id": "de-thanks-042",
+      "category": "thanks",
+      "text": "Lieb, dass du dich gemeldet hast, als du angekommen bist."
+    },
+    {
+      "id": "de-thanks-043",
+      "category": "thanks",
+      "text": "Dank dir hab ich den Zug noch erwischt. Was würd ich ohne dich machen?"
+    },
+    {
+      "id": "de-thanks-044",
+      "category": "thanks",
+      "text": "Danke, dass du meine Pflanzen gegossen hast, während ich weg war."
+    },
+    {
+      "id": "de-thanks-045",
+      "category": "thanks",
+      "text": "Was für ein schönes Wochenende. Danke dafür 🌞"
+    },
+    {
+      "id": "de-thanks-046",
+      "category": "thanks",
+      "text": "Mit der Schokolade hast du mir den Tag versüßt. Danke 🍫"
+    },
+    {
+      "id": "de-thanks-047",
+      "category": "thanks",
+      "text": "Ein riesiges Danke für das Picknick im Park 🌳"
+    },
+    {
+      "id": "de-apology-028",
+      "category": "apology",
+      "text": "Heute Abend hab ich nur Zeit für dich. Lass uns in Ruhe reden."
+    },
+    {
+      "id": "de-apology-029",
+      "category": "apology",
+      "text": "Was du gesagt hast, nehm ich mir zu Herzen. Wirklich."
+    },
+    {
+      "id": "de-apology-030",
+      "category": "apology",
+      "text": "Sorry, Anruf verpasst. Ich ruf dich gleich zurück."
+    },
+    {
+      "id": "de-apology-031",
+      "category": "apology",
+      "text": "Ich hab dir einen Kuchen gebacken. Mit extra viel Sorry."
+    },
+    {
+      "id": "de-apology-032",
+      "category": "apology",
+      "text": "Verzeihst du mir? Ich hab Schokolade dabei."
+    },
+    {
+      "id": "de-apology-033",
+      "category": "apology",
+      "text": "Hab drüber nachgedacht. Du hast da einen guten Punkt."
+    },
+    {
+      "id": "de-apology-034",
+      "category": "apology",
+      "text": "Lass uns heute noch einen schönen Abend draus machen, ja?"
+    },
+    {
+      "id": "de-apology-035",
+      "category": "apology",
+      "text": "Nächstes Mal sag ich dir früher Bescheid. Versprochen."
+    },
+    {
+      "id": "de-apology-036",
+      "category": "apology",
+      "text": "Bei mir sollst du dich immer wohlfühlen. Entschuldige wegen vorhin."
+    },
+    {
+      "id": "de-apology-037",
+      "category": "apology",
+      "text": "Lass uns morgen was Schönes unternehmen. Nur wir zwei, zur Versöhnung."
+    },
+    {
+      "id": "de-apology-038",
+      "category": "apology",
+      "text": "Tut mir leid wegen gestern. Heute bin ich pünktlich da."
+    },
+    {
+      "id": "de-apology-039",
+      "category": "apology",
+      "text": "Ich hör dir jetzt richtig zu. Erzähl mir alles noch mal von vorn."
+    },
+    {
+      "id": "de-apology-040",
+      "category": "apology",
+      "text": "Komm her, lass dich drücken. Dann reden wir weiter."
+    },
+    {
+      "id": "de-apology-041",
+      "category": "apology",
+      "text": "Sorry für heute Morgen. Ich mach's heute Abend mit Küssen wieder gut."
+    },
+    {
+      "id": "de-apology-042",
+      "category": "apology",
+      "text": "Wir finden da zusammen eine Lösung. Da bin ich mir sicher."
+    },
+    {
+      "id": "de-apology-043",
+      "category": "apology",
+      "text": "Wünsch dir was fürs Wochenende. Ich mach's dir schön."
+    },
+    {
+      "id": "de-apology-044",
+      "category": "apology",
+      "text": "Sag mir immer, wenn dich was beschäftigt. Dafür bin ich da."
+    },
+    {
+      "id": "de-apology-045",
+      "category": "apology",
+      "text": "Mir ist wichtig, wie es dir geht. Was brauchst du gerade? 🤗"
+    },
+    {
+      "id": "de-apology-046",
+      "category": "apology",
+      "text": "Frieden? Ich bring Kaffee mit ☕"
+    },
+    {
+      "id": "de-apology-047",
+      "category": "apology",
+      "text": "Wir dürfen verschiedener Meinung sein. Lieb hab ich dich trotzdem 💕"
+    },
+    {
+      "id": "de-emoji-031",
+      "category": "emoji",
+      "text": "Süße Träume 🌙⭐"
+    },
+    {
+      "id": "de-emoji-032",
+      "category": "emoji",
+      "text": "Kaffee ist fertig ☕😊"
+    },
+    {
+      "id": "de-emoji-033",
+      "category": "emoji",
+      "text": "Auf dem Heimweg zu dir 🚆❤️"
+    },
+    {
+      "id": "de-emoji-034",
+      "category": "emoji",
+      "text": "Eis essen? 🍦😋"
+    },
+    {
+      "id": "de-emoji-035",
+      "category": "emoji",
+      "text": "Endlich Wochenende 🙌😊"
+    },
+    {
+      "id": "de-emoji-036",
+      "category": "emoji",
+      "text": "Dicker Schmatzer 😘😘"
+    },
+    {
+      "id": "de-emoji-037",
+      "category": "emoji",
+      "text": "Freu mich auf heute Abend 🍷🕯️"
+    },
+    {
+      "id": "de-emoji-038",
+      "category": "emoji",
+      "text": "Daumen sind gedrückt 🤞🍀"
+    },
+    {
+      "id": "de-emoji-039",
+      "category": "emoji",
+      "text": "Du warst großartig 👏🏆"
+    },
+    {
+      "id": "de-emoji-040",
+      "category": "emoji",
+      "text": "Geburtstagskuss für dich 🎂😘"
+    },
+    {
+      "id": "de-emoji-041",
+      "category": "emoji",
+      "text": "Ausflug am Sonntag? 🚲☀️"
+    },
+    {
+      "id": "de-emoji-042",
+      "category": "emoji",
+      "text": "Filmabend? 🎬🍿"
+    },
+    {
+      "id": "de-emoji-043",
+      "category": "emoji",
+      "text": "Alles Gute zum Jahrestag 🎉💕"
+    },
+    {
+      "id": "de-emoji-044",
+      "category": "emoji",
+      "text": "Auf uns 🥂❤️"
+    },
+    {
+      "id": "de-emoji-045",
+      "category": "emoji",
+      "text": "Frühstück ans Bett? 🥐☕"
+    },
+    {
+      "id": "de-emoji-046",
+      "category": "emoji",
+      "text": "Urlaub mit dir 🌴😎"
+    },
+    {
+      "id": "de-emoji-047",
+      "category": "emoji",
+      "text": "Mein Glücksgriff 🎁💛"
+    },
+    {
+      "id": "de-emoji-048",
+      "category": "emoji",
+      "text": "Bis nachher 👋😘"
+    },
+    {
+      "id": "de-emoji-049",
+      "category": "emoji",
+      "text": "Gute Fahrt 🚗💕"
+    },
+    {
+      "id": "de-emoji-050",
+      "category": "emoji",
+      "text": "Kuschelzeit 🤗🛋️"
+    },
+    {
+      "id": "de-ascii-031",
+      "category": "ascii",
+      "text": "HDL <333"
+    },
+    {
+      "id": "de-ascii-032",
+      "category": "ascii",
+      "text": "HDGDL :-*"
+    },
+    {
+      "id": "de-ascii-033",
+      "category": "ascii",
+      "text": "*knuddel*"
+    },
+    {
+      "id": "de-ascii-034",
+      "category": "ascii",
+      "text": "{{{drück dich}}}"
+    },
+    {
+      "id": "de-ascii-035",
+      "category": "ascii",
+      "text": "*schmatz* :-*"
+    },
+    {
+      "id": "de-ascii-036",
+      "category": "ascii",
+      "text": "Ab ins Bett zzZ <3"
+    },
+    {
+      "id": "de-ascii-037",
+      "category": "ascii",
+      "text": "Moin (^_^)/"
+    },
+    {
+      "id": "de-ascii-038",
+      "category": "ascii",
+      "text": "(^_^)<3(^_^)"
+    },
+    {
+      "id": "de-ascii-039",
+      "category": "ascii",
+      "text": "(*^3^)/~<3"
+    },
+    {
+      "id": "de-ascii-040",
+      "category": "ascii",
+      "text": "( ^_^)/\\(^_^ )"
+    },
+    {
+      "id": "de-ascii-041",
+      "category": "ascii",
+      "text": "Wochenende \\o/"
+    },
+    {
+      "id": "de-ascii-042",
+      "category": "ascii",
+      "text": "Für dich @}-,-'--"
+    },
+    {
+      "id": "de-ascii-043",
+      "category": "ascii",
+      "text": "<3 Danke <3"
+    },
+    {
+      "id": "de-ascii-044",
+      "category": "ascii",
+      "text": "Hihi :-D"
+    },
+    {
+      "id": "de-ascii-045",
+      "category": "ascii",
+      "text": "Juhu \\(^_^)/"
+    },
+    {
+      "id": "de-ascii-046",
+      "category": "ascii",
+      "text": "Bis heute Abend ^_^"
+    },
+    {
+      "id": "de-ascii-047",
+      "category": "ascii",
+      "text": "Gleich Feierabend o(^_^)o"
+    },
+    {
+      "id": "de-ascii-048",
+      "category": "ascii",
+      "text": "(づ｡◕‿‿◕｡)づ"
+    },
+    {
+      "id": "de-ascii-049",
+      "category": "ascii",
+      "text": "Verliebt ♥‿♥"
+    },
+    {
+      "id": "de-ascii-050",
+      "category": "ascii",
+      "text": "Bis morgen (^_^)/~~"
     }
   ]
 }
