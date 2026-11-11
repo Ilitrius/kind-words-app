@@ -126,3 +126,7 @@ Das „Gehirn“ des Projekts: Entscheidungen, Fakten, Fallstricke. Wird von Men
 - Datenschutz/Store/Data Safety: Aussagen "keine Internetberechtigung/keine Daten" angepasst, Datenschutz 12d de/en, `store/play-console-answers.md` Nachtrag mit Data-Safety-Entwurf (ML Kit sendet Diagnosedaten an Google). VOR Upload Data Safety in der Console ändern.
 - Bundle wächst von 3,8 MB auf ca. 32 MB (ML-Kit-Bibliotheken).
 
+
+## 2026-11-11 Release 1.0.13 (Build 13)
+- Nutzermeldung: Auf einem Tablet ließ sich "keine Sprache installieren". Umgesetzt: Vorlesen ohne TTS-Installer öffnet die Sprachausgabe-Einstellungen mit Hinweis; Modell-Download meldet Fehlerarten (kein Netz, nur Mobilfunk bei WLAN-Pflicht, Speicher); `ACCESS_NETWORK_STATE` explizit im Manifest; Datenschutz Abschnitt 4 zur Internetberechtigung korrigiert. Auf dem Tablet nicht verifiziert (Ursache vermutet; offen, ob ML Kit ohne Play-Dienste Modelle lädt).
+- Cloud-Build grün (lintDebug, 42 Unit-Tests, assembleDebug). Bundle 1.0.13 noch nicht gebaut/hochgeladen; Signatur nur lokal (Keystore).
