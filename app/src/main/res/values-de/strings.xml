@@ -149,6 +149,10 @@
     <string name="translation_mobile">Auch über mobile Daten laden</string>
     <string name="translation_delete_models">Sprachmodelle löschen</string>
     <string name="translation_download_done">Sprachmodelle geladen.</string>
+    <string name="translation_download_no_network">Keine Internetverbindung. Verbinde dich mit dem WLAN und versuche es erneut.</string>
+    <string name="translation_download_wifi_required">Nur Mobilfunk verfügbar. Verbinde dich mit dem WLAN oder erlaube unten mobile Daten.</string>
+    <string name="translation_download_no_space">Nicht genug freier Speicher für die Sprachmodelle (etwa 150 MB nötig).</string>
+    <string name="speech_no_voice_installer">Dieses Gerät hat keine App zum Installieren von Stimmen. Ich öffne stattdessen die Sprachausgabe-Einstellungen. Fehlt dort eine Stimme für diese Sprache, installiere eine Sprachausgabe wie die Sprachdienste von Google.</string>
     <string name="translation_download_failed">Laden fehlgeschlagen. Prüfe deine Verbindung (standardmäßig nur WLAN).</string>
     <string name="translation_models_deleted">Sprachmodelle gelöscht.</string>
     <string name="translation_model_missing">Lade zuerst in den Einstellungen die Sprachmodelle.</string>

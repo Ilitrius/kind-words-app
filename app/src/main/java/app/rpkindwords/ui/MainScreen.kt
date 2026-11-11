@@ -83,6 +83,7 @@ fun MainScreen(
     val donatePrompt by vm.donatePrompt.collectAsStateWithLifecycle()
     val onboardingSeen by vm.onboardingSeen.collectAsStateWithLifecycle()
     val speechContext = androidx.compose.ui.platform.LocalContext.current
+    val noVoiceInstaller = stringResource(R.string.speech_no_voice_installer)
     val speechMessages = mapOf(
         app.rpkindwords.speech.Speaker.Problem.MISSING_VOICE_DATA to stringResource(R.string.speech_missing_voice),
         app.rpkindwords.speech.Speaker.Problem.UNAVAILABLE to stringResource(R.string.speech_unavailable),
@@ -98,11 +99,16 @@ fun MainScreen(
         vm.speechProblems.collect { problem ->
             android.widget.Toast.makeText(speechContext, speechMessages[problem].orEmpty(), android.widget.Toast.LENGTH_LONG).show()
             if (problem == app.rpkindwords.speech.Speaker.Problem.MISSING_VOICE_DATA) {
-                try {
-                    speechContext.startActivity(
-                        android.content.Intent(android.speech.tts.TextToSpeech.Engine.ACTION_INSTALL_TTS_DATA).addFlags(android.content.Intent.FLAG_ACTIVITY_NEW_TASK),
-                    )
+                fun open(action: String) = try {
+                    speechContext.startActivity(android.content.Intent(action).addFlags(android.content.Intent.FLAG_ACTIVITY_NEW_TASK))
+                    true
                 } catch (_: Exception) {
+                    false
+                }
+                // Ohne Installer (z. B. Tablets ohne Google-Sprachausgabe): Sprachausgabe-Einstellungen, sonst Hinweis.
+                if (!open(android.speech.tts.TextToSpeech.Engine.ACTION_INSTALL_TTS_DATA)) {
+                    open("com.android.settings.TTS_SETTINGS")
+                    android.widget.Toast.makeText(speechContext, noVoiceInstaller, android.widget.Toast.LENGTH_LONG).show()
                 }
             }
         }

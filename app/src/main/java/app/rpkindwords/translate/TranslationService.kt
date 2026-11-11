@@ -1,6 +1,8 @@
 package app.rpkindwords.translate
 
 import android.content.Context
+import android.net.ConnectivityManager
+import android.net.NetworkCapabilities
 import app.rpkindwords.data.SettingsRepository
 import com.google.android.gms.tasks.Task
 import com.google.mlkit.common.model.DownloadConditions
@@ -23,7 +25,7 @@ import kotlinx.coroutines.suspendCancellableCoroutine
  * werden nicht gesendet. Sprachmodelle (ca. 30 MB je Sprache) werden nur auf ausdrückliche Aktion geladen.
  */
 class TranslationService(private val context: Context, private val settings: SettingsRepository) {
-    enum class Reason { NO_CONSENT, UNSUPPORTED, MODEL_MISSING, DOWNLOAD_FAILED, FAILED }
+    enum class Reason { NO_CONSENT, UNSUPPORTED, MODEL_MISSING, DOWNLOAD_FAILED, FAILED, NO_NETWORK, WIFI_REQUIRED, NO_SPACE }
 
     sealed interface Result {
         data class Ok(val text: String) : Result
@@ -75,13 +77,23 @@ class TranslationService(private val context: Context, private val settings: Set
         if (!settings.hasTranslationConsent()) return Reason.NO_CONSENT
         init()
         val t = translator(from, to) ?: return Reason.UNSUPPORTED
+        networkProblem(allowMobile)?.let { return it }
         val conditions = DownloadConditions.Builder().apply { if (!allowMobile) requireWifi() }.build()
         return try {
             t.downloadModelIfNeeded(conditions).await()
             null
         } catch (_: Exception) {
-            Reason.DOWNLOAD_FAILED
+            if (context.filesDir.usableSpace < MIN_FREE_BYTES) Reason.NO_SPACE else Reason.DOWNLOAD_FAILED
         }
+    }
+
+    /** Vorab-Prüfung, damit der Nutzer erfährt, woran es liegt (kein Netz, nur Mobilfunk bei WLAN-Pflicht). */
+    private fun networkProblem(allowMobile: Boolean): Reason? {
+        val cm = context.getSystemService(ConnectivityManager::class.java) ?: return null
+        val caps = cm.getNetworkCapabilities(cm.activeNetwork) ?: return Reason.NO_NETWORK
+        if (!caps.hasCapability(NetworkCapabilities.NET_CAPABILITY_INTERNET)) return Reason.NO_NETWORK
+        if (!allowMobile && !caps.hasCapability(NetworkCapabilities.NET_CAPABILITY_NOT_METERED)) return Reason.WIFI_REQUIRED
+        return null
     }
 
     /** Übersetzt lokal. Lädt nie selbst Modelle nach. */
@@ -130,6 +142,8 @@ class TranslationService(private val context: Context, private val settings: Set
     }
 
     companion object {
+        private const val MIN_FREE_BYTES = 150L * 1024 * 1024
+
         /** Sprachen, die in der Auswahl angeboten werden (ISO-Codes, von ML Kit unterstützt). */
         val TARGET_LANGUAGES = listOf("it", "es", "fr", "pt", "nl", "pl", "sv", "da", "tr", "ru", "en", "de")
     }

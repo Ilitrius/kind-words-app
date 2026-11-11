@@ -49,6 +49,11 @@ fun TranslationSettings(vm: MainViewModel, sourceLang: String) {
     var ready by remember(prefs.target, prefs.consent) { mutableStateOf<Boolean?>(null) }
     var busy by remember { mutableStateOf(false) }
     val downloadDone = stringResource(R.string.translation_download_done)
+    val failMessages = mapOf(
+        TranslationService.Reason.NO_NETWORK to stringResource(R.string.translation_download_no_network),
+        TranslationService.Reason.WIFI_REQUIRED to stringResource(R.string.translation_download_wifi_required),
+        TranslationService.Reason.NO_SPACE to stringResource(R.string.translation_download_no_space),
+    )
     val downloadFailed = stringResource(R.string.translation_download_failed)
     val deleted = stringResource(R.string.translation_models_deleted)
 
@@ -81,9 +86,9 @@ fun TranslationSettings(vm: MainViewModel, sourceLang: String) {
                     enabled = !busy,
                     onClick = {
                         busy = true
-                        vm.downloadModels(sourceLang, target) { ok ->
+                        vm.downloadModels(sourceLang, target) { reason ->
                             busy = false
-                            Toast.makeText(context, if (ok) downloadDone else downloadFailed, Toast.LENGTH_LONG).show()
+                            Toast.makeText(context, if (reason == null) downloadDone else failMessages[reason] ?: downloadFailed, Toast.LENGTH_LONG).show()
                         }
                     },
                 ) { Text(stringResource(if (busy) R.string.translation_downloading else R.string.translation_download)) }

@@ -169,8 +169,8 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
     fun setTranslationTarget(lang: String?) { viewModelScope.launch { settings.setTranslationTarget(lang) } }
     fun setTranslationAllowMobile(allow: Boolean) { viewModelScope.launch { settings.setTranslationAllowMobile(allow) } }
     fun checkModels(from: String, to: String, result: (Boolean) -> Unit) { viewModelScope.launch { result(translation.modelsReady(from, to)) } }
-    fun downloadModels(from: String, to: String, result: (Boolean) -> Unit) {
-        viewModelScope.launch { result(translation.download(from, to, translationPrefs.value.allowMobile) == null) }
+    fun downloadModels(from: String, to: String, result: (TranslationService.Reason?) -> Unit) {
+        viewModelScope.launch { result(translation.download(from, to, translationPrefs.value.allowMobile)) }
     }
     fun deleteModels(done: () -> Unit) { viewModelScope.launch { translation.deleteAllModels(); done() } }
 
