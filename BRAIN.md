@@ -126,3 +126,14 @@ Das „Gehirn“ des Projekts: Entscheidungen, Fakten, Fallstricke. Wird von Men
 - Datenschutz/Store/Data Safety: Aussagen "keine Internetberechtigung/keine Daten" angepasst, Datenschutz 12d de/en, `store/play-console-answers.md` Nachtrag mit Data-Safety-Entwurf (ML Kit sendet Diagnosedaten an Google). VOR Upload Data Safety in der Console ändern.
 - Bundle wächst von 3,8 MB auf ca. 32 MB (ML-Kit-Bibliotheken).
 
+
+## 2026-11-11 Edge-to-Edge-Hinweis, AAB-Test
+- Play-Hinweis "nicht mehr unterstützte APIs für randlose Anzeige": im Release-Dex (dexdump + mapping.txt) rufen nur `androidx.activity.EdgeToEdgeApi*` (activity 1.12.4) `setStatusBarColor`/`setNavigationBarColor` auf. App nutzt bereits `enableEdgeToEdge()`, Theme ohne Bar-Farben. Keine Änderung: ein Ersatz von `enableEdgeToEdge()` würde Android 8-14 riskieren. Prüfweg: APK entpacken, `dexdump -d classes.dex`, nach den Methodennamen suchen, Klasse über `dist/mapping.txt` auflösen.
+- AAB ohne bundletool-Installation testen: `.\gradlew.bat :app:makeApkFromBundleForRelease` -> `app/build/intermediates/apks_from_bundle/release/.../bundle.apks` (Zip); Varianten master (minSdk 26), _2 (29), _3 (32); passende Splits per `adb install-multiple -r`. In Git Bash für adb-Pfade `MSYS_NO_PATHCONV=1` setzen.
+
+## 2026-11-11 Content v8 / Release 1.0.13 (Build 13)
+- Vorgehen: 4 texter-Agenten (de/en je Kategoriegruppe A = Textkategorien 1-6, B = 7-12 inkl. emoji/ascii) liefern je eine JSON-Datei `{revised:[{id,old,text,reason}], new:[...]}`; Zusammenführen per Skript mit Prüfung (ids, `old` = Bestand, Dubletten, Paar-Emojis), dann `version` = 8. Ergebnis 810 Sätze je Sprache (Textkategorien je 67, emoji/ascii je 70). ids bleiben bei Überarbeitung gleich (Favoriten).
+- Typische Befunde: Germanismen im Englischen ("Thank you from the heart", "saved my day"), Selbstanklagen und versteckte Neckereien, die keine Wortliste fängt ("You stole the blanket ... Forgiven"), Fast-Dubletten der Emoji-Sätze zu älteren Sätzen derselben Kategorie, Sätze mit unklarem Bezug ("Oh, and ... too", "Can we talk?" allein).
+- Paar-Emojis (💑 👫 👬 👭 💏) vermeiden: auf Android 8-10 Mann/Frau. Merge-Skript prüft darauf.
+- Stolperstein: `testDebugUnitTest` kann UP-TO-DATE sein, obwohl Assets sich geändert haben -> `--rerun-tasks` nutzen. Python unter Windows: `PYTHONIOENCODING=utf-8` für Emoji-Ausgabe; Git-Bash `/tmp` ist für Python ein anderer Pfad (`cygpath -w`).
+- Agentenlimit: bei "5-hour limit" liegen Ergebnisdateien oft schon fertig im Scratchpad; vor dem Neustart prüfen, ob sie vorhanden sind.

@@ -1,2 +1,3 @@
 - [Review-Prüfregeln](feedback_review_checks.md) — Wortlisten, Emoji-5.0-Check, häufigste Mängel fremder Entwürfe, Snapshot bei Fremdeingaben
-- [Content v7](project_content_v7.md) — 240 neue Sätze je Sprache, ids ab 028/031, Review 2026-11-08, noch nicht eingebaut
+- [Content v7](project_content_v7.md) — 240 neue Sätze je Sprache, ids 028-047/031-050, seit 2026-11 eingebaut (570 je Sprache)
+- [Content v8](project_content_v8.md) — Verfeinern + 20 neu je Kategorie (ids 048-067/051-070), parallel von texter-Instanzen, Merge durch Hauptagent

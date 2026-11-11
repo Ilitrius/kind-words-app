@@ -68,7 +68,8 @@ Legende: `[ ]` offen · `[x]` erledigt · Agent in Klammern
 ## Stand 2026-10-28 (Abend)
 - [x] Merge, Content v4, Store-Texte neu, QA-Lauf, Fixes (Nav-Labels, Banner); Bundle versionCode 6 gebaut
 - [ ] Nutzer: Bundle + mapping.txt hochladen, Store-Texte/Grafiken in Console, Keystore sichern, Tester/14 Tage
-- [ ] AAB per bundletool testen (bundletool nicht installiert); Update-Banner im Play-Internal-Test prüfen. Toast ohne Browser am 2026-11-08 im Emulator verifiziert ("No browser found")
+- [x] (2026-11-11) AAB getestet: Split-APKs aus dem Release-Bundle (Gradle `:app:makeApkFromBundleForRelease`, nutzt bundletool intern) im Emulator API 35 installiert (master_3 + x86_64 + xxhdpi + de); Start, Übersetzen (ML Kit, nativ) und Vorlesen ohne Fehler.
+- [ ] Update-Banner im Play-Internal-Test prüfen (nur über Play testbar). Toast ohne Browser am 2026-11-08 im Emulator verifiziert ("No browser found")
 - [x] (2026-11-01) Emoji + ASCII-Katalog (Content v5, Kategorien emoji/ascii), Store-Texte angepasst; Bundle muss neu gebaut werden (versionCode ggf. 7)
 - [x] Nutzer: Bundle 1.0.7 (Build 7) + mapping.txt in Play Console hochladen (ersetzt durch Build 12)
 - [x] Nutzer: Bundle 1.0.8 (Build 8) statt 1.0.7 + mapping.txt hochladen (ersetzt durch Build 12)
@@ -101,4 +102,11 @@ Legende: `[ ]` offen · `[x]` erledigt · Agent in Klammern
 - [ ] Offen (Stand 2026-11-08, nur durch den Nutzer möglich): Keystore extern sichern; Data Safety ändern, Bundle 1.0.12 + mapping.txt, Beschreibungen und Screenshots in der Play Console eintragen; Tester (≥12, 14 Tage) und Produktionszugriff; zweite KI-Prüfung eines anderen Anbieters (Pflichtanforderung 9); Muttersprachler-Prüfung der Übersetzungen
 - [x] (2026-11-08) Data Safety in der Play Console als Entwurf ausgefüllt (Erhoben, nicht geteilt: Geräte-/andere IDs, Diagnosedaten, Andere App-Leistungsdaten; Zweck Analyse, optional; verschlüsselt; kein Konto; keine Löschanfrage). Gespeichert, aber NICHT bestätigt eingereicht: im Console unter "Veröffentlichungen - Übersicht" prüfen und mit Build 12 einreichen.
 - [ ] Play Console Stand 2026-11-08: Alpha-Track hat Build 11 (1.0.11); Produktionszugriff: 12 Tester angemeldet seit 10 zusammenhängenden Tagen, es fehlen 4 Tage bis 14. Bundle 1.0.12 muss der Nutzer hochladen (Dateiauswahl nicht automatisierbar).
-- [ ] Play-Hinweis "randlose Anzeige" (Android 15, nicht mehr unterstützte Edge-to-Edge-APIs): Quelle suchen (Theme/Splash-Attribute wie statusBarColor/navigationBarColor, Bibliotheken) und beheben (android-dev)
+- [x] (2026-11-11) Play-Hinweis "randlose Anzeige": Quelle gefunden, keine Code-Änderung. Die Aufrufe `Window.setStatusBarColor/setNavigationBarColor` stehen nur in `androidx.activity.EdgeToEdgeApi*` (Bibliothek hinter `enableEdgeToEdge()`, Zweige für ältere Android-Versionen); eigener Code und Theme nutzen sie nicht. Der Hinweis blockiert keinen Release. Nutzer: in der Console prüfen, ob dort nur `androidx.activity.EdgeToEdgeApi…` als Aufrufer steht.
+
+## Stand 2026-11-11 (Content v8, Release 1.0.13)
+- [x] (2026-11-11) Alle 570 Sätze je Sprache auf Sinn, Logik und Natürlichkeit geprüft (4 texter-Läufe): 90 de / 116 en überarbeitet oder ersetzt (gleiche ids), +20 neue Sätze je Kategorie, insgesamt 810 je Sprache, Content v8. Beschreibung de/en "rund 810".
+- [x] (2026-11-11) Release 1.0.13 (Build 13) gebaut: `dist/kindwords-1.0.13-release.aab/.apk`; Unit-Tests (42) und Lint grün; im Emulator Update 1.0.12 -> 1.0.13 getestet (Favorit bleibt, neue Sätze erscheinen, kein Absturz). `mapping.txt` unverändert (Code gleich 1.0.12).
+- [ ] Nutzer: statt 1.0.12 jetzt **1.0.13** (Bundle + `dist/mapping.txt`) hochladen; Data Safety VOR dem Upload einreichen (siehe oben); Beschreibung de/en ("rund 810") eintragen.
+- [ ] Offen: Paar-Emojis (💑 👫) sind auf älteren Android-Versionen nicht geschlechtsneutral; in v8 aus allen Sätzen entfernt. Neue Kaomoji (emoji/ascii 051-070) auf einem Gerät mit API 26 ansehen (qa-tester).
+- [ ] Offen: 5-Wort-Überschneidungen zwischen einzelnen Sätzen (z. B. "du bist mein Lieblingsmensch", "I'm proud of you") sind bewusst geduldet; bei der nächsten Satzrunde glätten.

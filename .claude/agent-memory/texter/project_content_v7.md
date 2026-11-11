@@ -7,7 +7,8 @@ metadata:
 
 Content v7: je Sprache 240 neue Einträge, 20 je Kategorie. Vergeben werden die ids `<lang>-<kat>-028..047` (Textkategorien) und `-031..050` (emoji, ascii). Die `version` in den JSON-Dateien geht auf 7. Danach sind es 570 Einträge je Sprache.
 
-Stand 2026-11-08: Die Entwürfe hat der Hauptagent erstellt. Der texter hat sie geprüft (380 ok, 70 überarbeitet, 30 ersetzt). Das Ergebnis liegt nur im Session-Scratchpad und ist noch nicht in `app/src/main/assets/messages/`. Nichts ist committet, die Freigabe durch den Entwickler steht aus.
+Stand 2026-11-08: Die Entwürfe hat der Hauptagent erstellt. Der texter hat sie geprüft (380 ok, 70 überarbeitet, 30 ersetzt).
+Stand 2026-11-11: v7 ist eingebaut. `messages_en.json` hat version 7 mit 570 Einträgen, ids bis -047 bzw. emoji/ascii bis -050. Nachfolger: [[project-content-v8]].
 
 **Why:** Nutzerwunsch aus TODO.md: "mehr nette und liebe Worte" (commit 2eb664f).
 
