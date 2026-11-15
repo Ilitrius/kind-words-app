@@ -149,3 +149,8 @@ Das „Gehirn“ des Projekts: Entscheidungen, Fakten, Fallstricke. Wird von Men
 - Falle: `ContentToneTest` prüft Stämme als Teilstring, "gemeinsam" enthält "einsam" -> "zusammen" schreiben.
 - Release 1.0.15 enthält auch den Sprachdaten-Helfer (`speech/VoiceSetup.kt`), der im 1.0.14-Bundle in `dist/` (gebaut 11:54) noch fehlt. `dist/mapping.txt` gehört zu 1.0.15, `mapping-1.0.14.txt` zu 1.0.14 (per SHA1 gegen `proguard.map` im Bundle geprüft).
 - Stimme (Vorlesen): lokale Systemstimmen klingen je nach Gerät synthetisch. Optionen (Stand 2026-11-15, noch keine Entscheidung): A Feinschliff der lokalen Ausgabe, B Netzwerk-Stimmen der Geräte-Engine, C vorab erzeugte Audiodateien einer neuronalen Stimme für die mitgelieferten Sätze (offline, privat), D Cloud-TTS zur Laufzeit, E eigenes neuronales Modell im App-Paket (Piper/sherpa-onnx; Lizenz espeak-ng prüfen).
+
+## 2026-11-15 Natürliche Stimme (Release 1.0.16)
+- Nutzerwahl: Jessica (ElevenLabs, eleven_multilingual_v2, stability 0.6, similarity 0.75, style 0.1, speed 0.92, mp3_44100_64, ca. 30 KB/Satz). Erzeugung per `tools/gen_voice.py`; Verbrauch 1 Credit je Zeichen, de ca. 45k + en ca. 39k Zeichen; Tarif payg (Free-Tarif schließt kommerzielle Nutzung aus).
+- App: `Speaker.playClip` (MediaPlayer aus Assets, Dateiname mit SHA-1-Hash des Textes, `SpeechText.clipHash`), `MainViewModel.speak` nutzt es nur ohne Übersetzung. Ohne passende Datei springt die Gerätestimme ein (nach Qualität sortiert, Satzpausen 350 ms). Tempo-Einstellung gilt nur für die Gerätestimme.
+- Hörprobe-Dateien und Schlüssel liegen nur im Session-Scratchpad, nie im Repo. APK wächst auf 102 MB (AAB 68 MB).

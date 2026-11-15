@@ -130,6 +130,9 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
     fun speak(m: MessageEntity) {
         viewModelScope.launch {
             recordPositive(m.id)
+            val prefs = translationPrefs.value
+            val translating = prefs.active && prefs.target != null && prefs.target != m.language
+            if (!translating && speaker.playClip(m.language, m.id, m.text)) return@launch
             speakText(m.text, m.language)
         }
     }

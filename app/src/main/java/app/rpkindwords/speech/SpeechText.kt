@@ -18,4 +18,8 @@ object SpeechText {
 
     /** Lesbar, wenn nach dem Aufbereiten mindestens ein Wort aus zwei Buchstaben übrig bleibt. */
     fun speakable(text: String): Boolean = Regex("\\p{L}{2,}").containsMatchIn(clean(text))
+
+    /** Kurzer Hash des Satztextes für den Dateinamen der Aufnahme (erste 8 Hex-Zeichen von SHA-1 über UTF-8). */
+    fun clipHash(text: String): String =
+        java.security.MessageDigest.getInstance("SHA-1").digest(text.toByteArray(Charsets.UTF_8)).take(4).joinToString("") { "%02x".format(it) }
 }
