@@ -16,3 +16,8 @@
 - 2026-11-01 Nutzerwunsch: Emoji + ASCII aufnehmen. Content v5: je Sprache +30 Sätze mit Emoji in den 10 Kategorien (ids *-021..023), neue Kategorien `emoji` (30, Emoji-Folgen) und `ascii` (30, Textsymbole/Kaomoji), insgesamt 290. Emoji-Regel gilt NICHT mehr (nur Emoji bis Unicode 8/Emoji 5, damit API 26 sie zeigt); keine Satz-Endpunkte bei reinen Symbolen (StyleAdapter ändert "." am Ende).
 - 2026-11-01 Content v6: +4 natürliche Emoji-Sätze je Kategorie und Sprache (ids *-024..027, Emoji sitzen im Satz oder am Ende und passen zum Inhalt), insgesamt 330 je Sprache. Noch in keinem Release (nächster: 1.0.9 / Build 9). Beim nächsten Release Store-Texte "rund 290" -> "rund 330" anpassen.
 - 2026-11-08 Content v7: +20 je Kategorie/Sprache (ids 028-047, emoji/ascii 031-050), 570 je Sprache. Verantwortlich ab jetzt: Agent `texter` (siehe .claude/agents/texter.md).
+
+## 2026-11-15 Content v9 (Nutzerwunsch: fein, geschmeidig, aufeinander abgestimmt, nicht abgehackt)
+- Alle 670 Textsätze je Sprache neu durchgesehen (708 de / 639 en geändert, ids gleich, `version` 9). Stil jetzt: ganze, fließende Sätze statt Fragmente; "Schatz" als Anrede in rund 28 % (EN "sweetheart"/"honey", 30 %), viele "Du bist …"-Sätze; Emoji nur am Satzende; nichts Neckendes oder Bestimmendes. Die Regel "Kosenamen max. 10 %" und "25-75 Zeichen" gilt NICHT mehr (jetzt meist 45-95, max. 110).
+- Entfernt/umgebaut: Vergleiche zu Lasten der Person (Sofa knapp dahinter, almost as much as pizza), Bedingungen ("heute darfst du"), Befehle ("Jetzt wird geschlafen", "Vergiss nicht zu frühstücken"), Selbstanklagen in apology, 🏃 (nicht neutral).
+- Falle: "gemeinsam" enthält "einsam" und fällt im ContentToneTest durch -> "zusammen".

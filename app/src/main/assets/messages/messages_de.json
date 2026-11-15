@@ -1,126 +1,126 @@
 {
   "language": "de",
-  "version": 8,
+  "version": 9,
   "messages": [
     {
       "id": "de-love-001",
       "category": "love",
-      "text": "Ich hab dich lieb. Heute noch ein bisschen mehr als gestern."
+      "text": "Ich hab dich lieb, und heute sogar noch ein bisschen mehr als gestern."
     },
     {
       "id": "de-love-002",
       "category": "love",
-      "text": "Bei dir kann ich einfach ich sein. Das liebe ich so an uns."
+      "text": "Bei dir kann ich ganz ich selbst sein, und genau das liebe ich an uns."
     },
     {
       "id": "de-love-003",
       "category": "love",
-      "text": "Ich hab grad an dich gedacht und gelächelt."
+      "text": "Ich hab gerade an dich gedacht und musste dabei lächeln."
     },
     {
       "id": "de-love-004",
       "category": "love",
-      "text": "Sobald du da bist, fühlt sich die Wohnung nach Zuhause an."
+      "text": "Sobald du da bist, fühlt sich unsere Wohnung nach Zuhause an."
     },
     {
       "id": "de-love-005",
       "category": "love",
-      "text": "Ich bin so froh, dass es dich gibt."
+      "text": "Schatz, ich bin so froh, dass es dich gibt."
     },
     {
       "id": "de-love-006",
       "category": "love",
-      "text": "Mit dir wird sogar Wäschefalten schön."
+      "text": "Mit dir zusammen wird sogar das Wäschefalten schön."
     },
     {
       "id": "de-love-007",
       "category": "love",
-      "text": "Ich würd mich jederzeit wieder für dich entscheiden."
+      "text": "Ich würde mich jederzeit wieder für dich entscheiden."
     },
     {
       "id": "de-love-008",
       "category": "love",
-      "text": "Dein Lachen ist mein Lieblingsgeräusch."
+      "text": "Dein Lachen ist mein Lieblingsgeräusch, Schatz."
     },
     {
       "id": "de-love-009",
       "category": "love",
-      "text": "Neben dir auf dem Sofa ist mein liebster Platz auf der Welt."
+      "text": "Der Platz neben dir auf dem Sofa ist mein liebster auf der ganzen Welt."
     },
     {
       "id": "de-love-010",
       "category": "love",
-      "text": "Ich liebe dich. Einfach so, ohne Grund."
+      "text": "Ich liebe dich, Schatz, einfach so und ohne besonderen Grund."
     },
     {
       "id": "de-love-011",
       "category": "love",
-      "text": "Ein Gedanke an dich, und der Tag ist gleich besser."
+      "text": "Ein Gedanke an dich genügt, und mein Tag wird gleich schöner."
     },
     {
       "id": "de-love-012",
       "category": "love",
-      "text": "Ich glaub, ich hab das große Los gezogen. Mit dir."
+      "text": "Ich glaube, ich hab mit dir das große Los gezogen."
     },
     {
       "id": "de-love-013",
       "category": "love",
-      "text": "Seit du da bist, ist alles ein bisschen leichter."
+      "text": "Seit du bei mir bist, fühlt sich alles ein bisschen leichter an."
     },
     {
       "id": "de-love-014",
       "category": "love",
-      "text": "Ich mag uns. Sehr."
+      "text": "Ich mag uns zwei genau so, wie wir sind, Schatz."
     },
     {
       "id": "de-love-015",
       "category": "love",
-      "text": "Heute Abend bin ich wieder bei dir. Daran denk ich schon den ganzen Tag."
+      "text": "Heute Abend bin ich wieder bei dir, und darauf freu ich mich schon den ganzen Tag."
     },
     {
       "id": "de-love-016",
       "category": "love",
-      "text": "Ich hab dich gern. An guten Tagen und an müden auch."
+      "text": "Ich hab dich gern, an den munteren Tagen genauso wie an den müden."
     },
     {
       "id": "de-love-017",
       "category": "love",
-      "text": "Dein Name auf meinem Display macht mich jedes Mal froh."
+      "text": "Wenn dein Name auf meinem Display erscheint, freu ich mich jedes Mal."
     },
     {
       "id": "de-love-018",
       "category": "love",
-      "text": "Ich wüsste nicht, mit wem ich lieber älter werden würde."
+      "text": "Schatz, ich wüsste niemanden, mit dem ich lieber alt werden möchte als mit dir."
     },
     {
       "id": "de-love-019",
       "category": "love",
-      "text": "Du bist mein Lieblingsmensch. Das wollte ich nur mal sagen."
+      "text": "Du bist mein Lieblingsmensch, und das wollte ich dir einfach mal sagen."
     },
     {
       "id": "de-love-020",
       "category": "love",
-      "text": "Ich lieb dich. Echt sehr."
+      "text": "Ich liebe dich wirklich sehr, Schatz."
     },
     {
       "id": "de-appreciation-001",
       "category": "appreciation",
-      "text": "Ich seh, wie viel du für uns machst."
+      "text": "Schatz, ich sehe, wie viel du jeden Tag für uns machst."
     },
     {
       "id": "de-appreciation-002",
       "category": "appreciation",
-      "text": "Du hältst auch zu mir, wenn ich mal durcheinander bin. Danke."
+      "text": "Danke, dass du immer zu mir hältst, auch wenn ich mal etwas durcheinander bin."
     },
     {
       "id": "de-appreciation-003",
       "category": "appreciation",
-      "text": "Du machst so viele kleine Dinge, die mir viel bedeuten."
+      "text": "Du machst so viele kleine Dinge für mich, die mir sehr viel bedeuten."
     },
     {
       "id": "de-appreciation-004",
       "category": "appreciation",
-      "text": "Ich bin stolz auf dich. Das wollte ich dir mal sagen."
+      "text": "Ich bin so stolz auf dich, Schatz, und das darfst du ruhig öfter von mir hören."
     },
     {
       "id": "de-appreciation-005",
@@ -130,1027 +130,1027 @@
     {
       "id": "de-appreciation-006",
       "category": "appreciation",
-      "text": "Ich find gut, dass du so ehrlich zu mir bist."
+      "text": "Ich mag es sehr, dass du immer so ehrlich zu mir bist."
     },
     {
       "id": "de-appreciation-007",
       "category": "appreciation",
-      "text": "Du hörst wirklich zu. Das ist selten, und ich mag das."
+      "text": "Du hörst mir wirklich zu, und das tut mir unglaublich gut."
     },
     {
       "id": "de-appreciation-008",
       "category": "appreciation",
-      "text": "Auf dich ist Verlass. Das sag ich viel zu selten."
+      "text": "Auf dich kann ich mich immer verlassen, Schatz, und das sag ich dir viel zu selten."
     },
     {
       "id": "de-appreciation-009",
       "category": "appreciation",
-      "text": "Du gehst so liebevoll mit anderen um. Das gefällt mir."
+      "text": "Du gehst so liebevoll mit anderen Menschen um, und das mag ich sehr an dir."
     },
     {
       "id": "de-appreciation-010",
       "category": "appreciation",
-      "text": "Ich hab dir schon lange nicht mehr gesagt, wie wichtig du mir bist."
+      "text": "Schatz, ich möchte dir mal wieder sagen, wie wichtig du mir bist."
     },
     {
       "id": "de-appreciation-011",
       "category": "appreciation",
-      "text": "Du gibst dir so viel Mühe. Ich seh das."
+      "text": "Du gibst dir bei allem so viel Mühe, und ich sehe das jeden Tag."
     },
     {
       "id": "de-appreciation-012",
       "category": "appreciation",
-      "text": "Mit dir kann ich über alles reden. Danke dafür."
+      "text": "Schatz, mit dir kann ich über alles reden, und das ist mir so viel wert."
     },
     {
       "id": "de-appreciation-013",
       "category": "appreciation",
-      "text": "Du bleibst ruhig, wenn bei mir alles brennt. Das hilft mir enorm."
+      "text": "Du bleibst ruhig, wenn es bei mir hektisch wird, und das hilft mir sehr."
     },
     {
       "id": "de-appreciation-014",
       "category": "appreciation",
-      "text": "Ich find's toll, wie du für das einstehst, was dir wichtig ist."
+      "text": "Ich find es toll, wie du für das einstehst, was dir wichtig ist."
     },
     {
       "id": "de-appreciation-015",
       "category": "appreciation",
-      "text": "Dass du mich so nimmst, wie ich bin, ist nicht selbstverständlich."
+      "text": "Du nimmst mich so, wie ich bin, und das weiß ich sehr zu schätzen."
     },
     {
       "id": "de-appreciation-016",
       "category": "appreciation",
-      "text": "Neben dir geb ich mir von allein mehr Mühe."
+      "text": "Du bist der Grund, warum ich jeden Tag mein Bestes geben möchte."
     },
     {
       "id": "de-appreciation-017",
       "category": "appreciation",
-      "text": "Danke, dass du dir immer Zeit für mich nimmst."
+      "text": "Danke, Schatz, dass du dir immer Zeit für mich nimmst."
     },
     {
       "id": "de-appreciation-018",
       "category": "appreciation",
-      "text": "Wie du dranbleibst, auch wenn es zäh wird, find ich stark."
+      "text": "Ich bewundere, wie du an einer Sache dranbleibst, bis sie gelungen ist."
     },
     {
       "id": "de-appreciation-019",
       "category": "appreciation",
-      "text": "Du merkst immer, wann ich dich brauche. Wie machst du das nur?"
+      "text": "Du merkst immer, wann ich dich brauche. Wie machst du das nur, Schatz?"
     },
     {
       "id": "de-appreciation-020",
       "category": "appreciation",
-      "text": "Gut, dass ich dich hab. Heute ganz besonders."
+      "text": "Es ist so gut, dass ich dich hab, und heute spür ich das ganz besonders."
     },
     {
       "id": "de-morning-001",
       "category": "morning",
-      "text": "Guten Morgen. Ich hoffe, du hast gut geschlafen."
+      "text": "Guten Morgen, Schatz. Ich hoffe, du hast gut geschlafen."
     },
     {
       "id": "de-morning-002",
       "category": "morning",
-      "text": "Moin! Ich trink den ersten Kaffee heute auf dich."
+      "text": "Guten Morgen! Meinen ersten Kaffee trinke ich heute auf dich."
     },
     {
       "id": "de-morning-003",
       "category": "morning",
-      "text": "Mein erster Gedanke heute früh warst du."
+      "text": "Mein erster Gedanke heute früh warst du, Schatz."
     },
     {
       "id": "de-morning-004",
       "category": "morning",
-      "text": "Guten Morgen. Ich bleib noch fünf Minuten liegen und denk an dich."
+      "text": "Guten Morgen. Ich bleib noch fünf Minuten liegen und denk dabei an dich."
     },
     {
       "id": "de-morning-005",
       "category": "morning",
-      "text": "Ich bin heute dein zweiter Wecker. Nur mit mehr Liebe."
+      "text": "Heute bin ich dein zweiter Wecker, nur mit viel mehr Liebe."
     },
     {
       "id": "de-morning-006",
       "category": "morning",
-      "text": "Schönen Tag dir. Und iss was Ordentliches."
+      "text": "Ich wünsch dir einen wunderschönen Tag, Schatz."
     },
     {
       "id": "de-morning-007",
       "category": "morning",
-      "text": "Ich wünsch dir einen Tag, der freundlicher ist als dein Wecker."
+      "text": "Ich wünsch dir einen Tag, der genauso freundlich zu dir ist, wie du es verdienst."
     },
     {
       "id": "de-morning-008",
       "category": "morning",
-      "text": "Schon wach oder noch im Bett? Ich lieb dich so oder so."
+      "text": "Bist du schon wach oder liegst du noch im Bett? Ich liebe dich so oder so."
     },
     {
       "id": "de-morning-009",
       "category": "morning",
-      "text": "Kaum wach und schon gut gelaunt. Wegen dir, glaub ich."
+      "text": "Ich bin gerade erst wach und schon gut gelaunt, und ich glaube, das liegt an dir."
     },
     {
       "id": "de-morning-010",
       "category": "morning",
-      "text": "Noch vorm ersten Kaffee ein kleiner Gruß. Du schaffst das heute."
+      "text": "Noch vor dem ersten Kaffee schick ich dir einen kleinen Gruß. Du schaffst das heute, Schatz."
     },
     {
       "id": "de-morning-011",
       "category": "morning",
-      "text": "Hoffentlich fängt dein Tag gut an. Meiner schon, ich hab an dich gedacht."
+      "text": "Ich hoffe, dein Tag fängt genauso schön an wie meiner, denn ich hab gleich an dich gedacht."
     },
     {
       "id": "de-morning-012",
       "category": "morning",
-      "text": "Guten Morgen. Zieh dir was Warmes an, es ist kalt."
+      "text": "Zieh dir heute bitte etwas Warmes an, Schatz, denn draußen ist es frisch."
     },
     {
       "id": "de-morning-013",
       "category": "morning",
-      "text": "Bin grad aufgewacht und wollte dir kurz Hallo sagen."
+      "text": "Ich bin gerade aufgewacht und wollte dir als Erstes Hallo sagen."
     },
     {
       "id": "de-morning-014",
       "category": "morning",
-      "text": "Ein neuer Tag, und ich hab dich an meiner Seite. Mehr brauch ich nicht."
+      "text": "Ein neuer Tag beginnt, und ich hab dich an meiner Seite. Mehr brauche ich nicht."
     },
     {
       "id": "de-morning-015",
       "category": "morning",
-      "text": "Wach auf, die Sonne wartet. Und ich auch."
+      "text": "Guten Morgen, Schatz. Die Sonne wartet schon auf dich, und ich auch."
     },
     {
       "id": "de-morning-016",
       "category": "morning",
-      "text": "Morgen, du. Bis später, ich freu mich auf dich."
+      "text": "Guten Morgen, du. Ich freu mich schon darauf, dich später zu sehen."
     },
     {
       "id": "de-morning-017",
       "category": "morning",
-      "text": "Ich wünsch dir heute nur gute Laune und wenig Termine."
+      "text": "Ich wünsch dir heute ganz viel gute Laune und nur angenehme Termine."
     },
     {
       "id": "de-morning-018",
       "category": "morning",
-      "text": "Guten Morgen. Heute wird gut, ich spür's."
+      "text": "Heute wird ein guter Tag, Schatz, das spür ich schon."
     },
     {
       "id": "de-morning-019",
       "category": "morning",
-      "text": "Vergiss nicht zu frühstücken. Ich meins ernst."
+      "text": "Lass dir dein Frühstück schmecken, Schatz, und starte gut in den Tag."
     },
     {
       "id": "de-morning-020",
       "category": "morning",
-      "text": "Hab einen schönen Tag. Ich denk an dich."
+      "text": "Hab einen schönen Tag, Schatz. Ich schick dir in Gedanken eine Umarmung mit."
     },
     {
       "id": "de-goodnight-001",
       "category": "goodnight",
-      "text": "Gute Nacht. Schlaf gut und träum was Schönes."
+      "text": "Gute Nacht, Schatz. Schlaf gut und träum etwas Schönes."
     },
     {
       "id": "de-goodnight-002",
       "category": "goodnight",
-      "text": "Ich leg jetzt das Handy weg. Mein letzter Gedanke gehört dir."
+      "text": "Ich leg jetzt das Handy weg, und mein letzter Gedanke heute gehört dir."
     },
     {
       "id": "de-goodnight-003",
       "category": "goodnight",
-      "text": "Langer Tag heute. Ruh dich aus."
+      "text": "Das war ein langer Tag, Schatz. Ruh dich jetzt schön aus."
     },
     {
       "id": "de-goodnight-004",
       "category": "goodnight",
-      "text": "Gute Nacht, du. Ich würd jetzt gern neben dir liegen."
+      "text": "Gute Nacht, du. Ich würde jetzt so gern neben dir liegen."
     },
     {
       "id": "de-goodnight-005",
       "category": "goodnight",
-      "text": "Mach die Augen zu, ich bin in Gedanken bei dir."
+      "text": "Mach die Augen zu, Schatz. In Gedanken bin ich ganz nah bei dir."
     },
     {
       "id": "de-goodnight-006",
       "category": "goodnight",
-      "text": "Schlaf schön. Morgen ist wieder ein Tag mit dir."
+      "text": "Schlaf schön. Morgen wartet wieder ein Tag mit dir auf mich."
     },
     {
       "id": "de-goodnight-007",
       "category": "goodnight",
-      "text": "Ich bin müde und glücklich. Das liegt an dir."
+      "text": "Ich bin müde und glücklich, und das Glücklichsein liegt an dir."
     },
     {
       "id": "de-goodnight-008",
       "category": "goodnight",
-      "text": "Kuschel dich ein, ich schick dir eine Umarmung durchs Handy."
+      "text": "Kuschel dich gemütlich ein. Ich schick dir eine Umarmung durchs Handy."
     },
     {
       "id": "de-goodnight-009",
       "category": "goodnight",
-      "text": "Gute Nacht. Für heute ist es geschafft."
+      "text": "Gute Nacht. Für heute hast du alles geschafft."
     },
     {
       "id": "de-goodnight-010",
       "category": "goodnight",
-      "text": "Schlaf gut, ich hab dich lieb."
+      "text": "Schlaf gut, Schatz. Ich hab dich lieb."
     },
     {
       "id": "de-goodnight-011",
       "category": "goodnight",
-      "text": "Nacht, mein Lieblingsmensch. Ich liebe dich."
+      "text": "Gute Nacht, mein Lieblingsmensch. Ich liebe dich."
     },
     {
       "id": "de-goodnight-012",
       "category": "goodnight",
-      "text": "Bevor ich einschlafe: Danke für den schönen Tag."
+      "text": "Bevor ich einschlafe, möchte ich dir noch für den schönen Tag danken."
     },
     {
       "id": "de-goodnight-013",
       "category": "goodnight",
-      "text": "Ich hoffe, du schläfst heute tief und lange."
+      "text": "Ich wünsch dir, dass du heute Nacht tief und fest schläfst."
     },
     {
       "id": "de-goodnight-014",
       "category": "goodnight",
-      "text": "Gute Nacht und bis morgen. Ich freu mich schon."
+      "text": "Gute Nacht und bis morgen. Ich freu mich schon auf dich."
     },
     {
       "id": "de-goodnight-015",
       "category": "goodnight",
-      "text": "Das Bett ist ohne dich zu groß. Komm bald heim."
+      "text": "Das Bett ist viel gemütlicher, wenn du darin liegst. Komm bald heim, Schatz."
     },
     {
       "id": "de-goodnight-016",
       "category": "goodnight",
-      "text": "Schlaf gut. Morgen früh schreib ich dir als Erstes."
+      "text": "Schlaf gut. Morgen früh schreib ich dir als Allererstes."
     },
     {
       "id": "de-goodnight-017",
       "category": "goodnight",
-      "text": "Das hast du heute gut gemacht. Gute Nacht."
+      "text": "Das hast du heute richtig gut gemacht, Schatz. Gute Nacht."
     },
     {
       "id": "de-goodnight-018",
       "category": "goodnight",
-      "text": "Ein Kuss für die Nacht. Schlaf gut."
+      "text": "Ich schick dir einen Kuss für die Nacht. Schlaf gut."
     },
     {
       "id": "de-goodnight-019",
       "category": "goodnight",
-      "text": "Noch kurz an dich gedacht, jetzt kann ich schlafen."
+      "text": "Ich hab noch einmal an dich gedacht, und jetzt kann ich zufrieden einschlafen."
     },
     {
       "id": "de-goodnight-020",
       "category": "goodnight",
-      "text": "Gute Nacht. Du bist das Beste an meinem Tag."
+      "text": "Gute Nacht, Schatz. Du bist das Beste an meinem Tag."
     },
     {
       "id": "de-encouragement-001",
       "category": "encouragement",
-      "text": "Das kriegst du hin. Da bin ich sicher."
+      "text": "Das bekommst du hin, Schatz, da bin ich mir ganz sicher."
     },
     {
       "id": "de-encouragement-002",
       "category": "encouragement",
-      "text": "Eins nach dem anderen. Mehr muss heute nicht."
+      "text": "Mach einfach eins nach dem anderen. Mehr muss heute gar nicht sein."
     },
     {
       "id": "de-encouragement-003",
       "category": "encouragement",
-      "text": "Ich bin da, egal wie der Tag läuft."
+      "text": "Ich bin für dich da, ganz egal, wie der Tag heute läuft."
     },
     {
       "id": "de-encouragement-004",
       "category": "encouragement",
-      "text": "Du hast schon Schwierigeres hingekriegt. Das hier auch."
+      "text": "Du hast schon ganz andere Dinge gemeistert, Schatz, und das hier schaffst du auch."
     },
     {
       "id": "de-encouragement-005",
       "category": "encouragement",
-      "text": "Atme kurz durch. Du machst das besser, als du denkst."
+      "text": "Atme einmal tief durch. Du machst das viel besser, als du denkst."
     },
     {
       "id": "de-encouragement-006",
       "category": "encouragement",
-      "text": "Egal wie es ausgeht, ich bin stolz auf dich."
+      "text": "Egal wie es ausgeht, Schatz, ich bin stolz auf dich."
     },
     {
       "id": "de-encouragement-007",
       "category": "encouragement",
-      "text": "Es muss nicht perfekt sein. Fertig ist auch schön."
+      "text": "Es muss nicht perfekt werden, Schatz. Es darf einfach gut sein."
     },
     {
       "id": "de-encouragement-008",
       "category": "encouragement",
-      "text": "Wenn du magst, red ich heute Abend mit dir drüber. Oder schweig mit dir."
+      "text": "Wenn du magst, reden wir heute Abend darüber, oder ich nehm dich einfach in den Arm."
     },
     {
       "id": "de-encouragement-009",
       "category": "encouragement",
-      "text": "Du bist stärker, als du dich grad fühlst."
+      "text": "Du bist stärker, als du dich gerade fühlst."
     },
     {
       "id": "de-encouragement-010",
       "category": "encouragement",
-      "text": "Kopf hoch. Ich halt dir den Rücken frei."
+      "text": "Kopf hoch, Schatz. Ich halt dir den Rücken frei."
     },
     {
       "id": "de-encouragement-011",
       "category": "encouragement",
-      "text": "Schau mal zurück, was du schon alles gelernt hast."
+      "text": "Schau mal zurück, wie viel du schon gelernt und geschafft hast."
     },
     {
       "id": "de-encouragement-012",
       "category": "encouragement",
-      "text": "Gönn dir eine Pause. Du hast sie dir verdient."
+      "text": "Gönn dir ruhig eine Pause, Schatz. Du hast sie dir verdient."
     },
     {
       "id": "de-encouragement-013",
       "category": "encouragement",
-      "text": "Ich drück dir heute beide Daumen."
+      "text": "Ich drück dir heute ganz fest beide Daumen."
     },
     {
       "id": "de-encouragement-014",
       "category": "encouragement",
-      "text": "Ich bin auf deiner Seite. Immer."
+      "text": "Ich bin immer auf deiner Seite, Schatz."
     },
     {
       "id": "de-encouragement-015",
       "category": "encouragement",
-      "text": "Schlaf heute gut. Morgen gehst du das mit frischem Kopf an."
+      "text": "Schlaf dich heute gut aus. Morgen gehst du das Ganze mit frischem Kopf an."
     },
     {
       "id": "de-encouragement-016",
       "category": "encouragement",
-      "text": "Dranbleiben ist eine deiner Stärken. Das hab ich oft genug gesehen."
+      "text": "Dranbleiben ist eine deiner großen Stärken, und das hab ich schon oft gesehen."
     },
     {
       "id": "de-encouragement-017",
       "category": "encouragement",
-      "text": "Ich kenn niemanden, der das so gut hinkriegt wie du."
+      "text": "Ich kenne niemanden, der das so gut hinbekommt wie du."
     },
     {
       "id": "de-encouragement-018",
       "category": "encouragement",
-      "text": "Heute Abend machen wir es uns richtig schön."
+      "text": "Heute Abend machen wir es uns beiden so richtig schön."
     },
     {
       "id": "de-encouragement-019",
       "category": "encouragement",
-      "text": "Trau dich. Ich steh direkt hinter dir."
+      "text": "Trau dich ruhig, Schatz. Ich steh direkt hinter dir."
     },
     {
       "id": "de-encouragement-020",
       "category": "encouragement",
-      "text": "Du hast mehr geschafft, als du heute siehst."
+      "text": "Du hast heute mehr geschafft, als du selbst gerade siehst."
     },
     {
       "id": "de-missyou-001",
       "category": "missyou",
-      "text": "Ich vermiss dich."
+      "text": "Ich vermiss dich, Schatz."
     },
     {
       "id": "de-missyou-002",
       "category": "missyou",
-      "text": "Ich freu mich so darauf, dich wiederzusehen."
+      "text": "Ich freu mich so sehr darauf, dich wiederzusehen, Schatz."
     },
     {
       "id": "de-missyou-003",
       "category": "missyou",
-      "text": "Ich guck dauernd auf die Uhr. Wann bist du endlich da?"
+      "text": "Ich schau ständig auf die Uhr und freu mich auf den Moment, in dem du da bist."
     },
     {
       "id": "de-missyou-004",
       "category": "missyou",
-      "text": "Mittendrin im Tag fehlst du mir plötzlich. Einfach so."
+      "text": "Mitten am Tag fehlst du mir plötzlich, einfach so."
     },
     {
       "id": "de-missyou-005",
       "category": "missyou",
-      "text": "Ich wär jetzt gern bei dir. Auf dem Sofa, mit Decke."
+      "text": "Ich wäre jetzt so gern bei dir, zusammen auf dem Sofa und unter einer Decke."
     },
     {
       "id": "de-missyou-006",
       "category": "missyou",
-      "text": "Ich zähl die Stunden, bis du wieder da bist."
+      "text": "Ich zähl schon die Stunden, bis du wieder bei mir bist, Schatz."
     },
     {
       "id": "de-missyou-007",
       "category": "missyou",
-      "text": "Hab grad was Lustiges gesehen und wollte es dir sofort erzählen."
+      "text": "Ich hab gerade etwas Lustiges gesehen und wollte es dir am liebsten sofort erzählen."
     },
     {
       "id": "de-missyou-008",
       "category": "missyou",
-      "text": "Komm bald heim. Ich vermiss dein Gesicht."
+      "text": "Komm bald heim, Schatz. Ich vermisse dein Gesicht."
     },
     {
       "id": "de-missyou-009",
       "category": "missyou",
-      "text": "Kurzer Gruß aus der Ferne: Du fehlst mir ziemlich."
+      "text": "Ein kleiner Gruß aus der Ferne: Du fehlst mir sehr."
     },
     {
       "id": "de-missyou-010",
       "category": "missyou",
-      "text": "Ich hör immer noch dein Lachen im Kopf."
+      "text": "Dein Lachen klingt mir immer noch im Ohr."
     },
     {
       "id": "de-missyou-011",
       "category": "missyou",
-      "text": "Wann kann ich dich wieder umarmen?"
+      "text": "Wann darf ich dich endlich wieder in den Arm nehmen, Schatz?"
     },
     {
       "id": "de-missyou-012",
       "category": "missyou",
-      "text": "Komisch, wie du mir nach zwei Tagen schon fehlst."
+      "text": "Es ist erstaunlich, wie sehr du mir schon nach zwei Tagen fehlst."
     },
     {
       "id": "de-missyou-013",
       "category": "missyou",
-      "text": "Jedes Mal, wenn mein Handy brummt, hoff ich, dass du es bist."
+      "text": "Jedes Mal, wenn mein Handy brummt, hoffe ich, dass die Nachricht von dir ist."
     },
     {
       "id": "de-missyou-014",
       "category": "missyou",
-      "text": "Ich vermiss unsere kleinen Alltagssachen mit dir."
+      "text": "Ich vermisse die vielen kleinen Dinge, die wir im Alltag zusammen machen."
     },
     {
       "id": "de-missyou-015",
       "category": "missyou",
-      "text": "Heimweg ohne dich ist nur halb so schön."
+      "text": "Der Heimweg ist mit dir an meiner Seite doppelt so schön."
     },
     {
       "id": "de-missyou-016",
       "category": "missyou",
-      "text": "Ich hab deinen Pulli angezogen. Er riecht nach dir."
+      "text": "Ich hab deinen Pulli angezogen, weil er so schön nach dir riecht."
     },
     {
       "id": "de-missyou-017",
       "category": "missyou",
-      "text": "Bald sehen wir uns wieder. Bis dahin vermiss ich dich einfach weiter."
+      "text": "Bald sehen wir uns wieder, und bis dahin denk ich einfach ganz viel an dich."
     },
     {
       "id": "de-missyou-018",
       "category": "missyou",
-      "text": "Ohne dich fehlt mir die Hälfte vom Tag."
+      "text": "Mit dir zusammen ist jeder Tag erst richtig vollständig, Schatz."
     },
     {
       "id": "de-missyou-019",
       "category": "missyou",
-      "text": "Ich wollt nur sagen, dass du mir fehlst."
+      "text": "Ich wollte dir nur sagen, dass du mir fehlst."
     },
     {
       "id": "de-missyou-020",
       "category": "missyou",
-      "text": "Ruf mich an, wenn du kannst. Ich will deine Stimme hören."
+      "text": "Ruf mich bitte an, wenn du Zeit hast. Ich möchte so gern deine Stimme hören."
     },
     {
       "id": "de-compliment-001",
       "category": "compliment",
-      "text": "Du siehst heute wieder umwerfend aus."
+      "text": "Du siehst heute wieder umwerfend aus, Schatz."
     },
     {
       "id": "de-compliment-002",
       "category": "compliment",
-      "text": "Dein Lächeln hat mich damals schon erwischt."
+      "text": "In dein Lächeln hab ich mich schon damals verliebt."
     },
     {
       "id": "de-compliment-003",
       "category": "compliment",
-      "text": "Ich find dich unfassbar klug."
+      "text": "Du bist unglaublich klug, und ich höre dir so gern zu."
     },
     {
       "id": "de-compliment-004",
       "category": "compliment",
-      "text": "Du machst andere froh, ohne es zu merken. Mich auch."
+      "text": "Du machst andere Menschen froh, ohne es zu merken, und mich ganz besonders."
     },
     {
       "id": "de-compliment-005",
       "category": "compliment",
-      "text": "Ich mag, wie du lachst, wenn du denkst, dass keiner zuschaut."
+      "text": "Ich mag es, wie du lachst, wenn du glaubst, dass gerade niemand zuschaut."
     },
     {
       "id": "de-compliment-006",
       "category": "compliment",
-      "text": "Du bist echt witzig. Und das meine ich ernst."
+      "text": "Du bist wirklich witzig, Schatz, und das meine ich ganz ernst."
     },
     {
       "id": "de-compliment-007",
       "category": "compliment",
-      "text": "Dieser Blick von dir kriegt mich jedes Mal."
+      "text": "Wenn du mich so ansiehst, werde ich jedes Mal ganz weich."
     },
     {
       "id": "de-compliment-008",
       "category": "compliment",
-      "text": "Du hast ein großes Herz. Das sieht man sofort."
+      "text": "Du hast ein großes Herz, und das merkt jeder sofort."
     },
     {
       "id": "de-compliment-009",
       "category": "compliment",
-      "text": "Ich find's schön, wie du dir treu bleibst."
+      "text": "Ich find es schön, dass du dir selbst immer treu bleibst."
     },
     {
       "id": "de-compliment-010",
       "category": "compliment",
-      "text": "In Jogginghose bist du genauso schön wie schick angezogen."
+      "text": "Du bist in Jogginghose genauso schön wie in deinen schicksten Sachen."
     },
     {
       "id": "de-compliment-011",
       "category": "compliment",
-      "text": "Dein Humor ist meine liebste Ablenkung."
+      "text": "Dein Humor ist für mich die schönste Ablenkung, Schatz."
     },
     {
       "id": "de-compliment-012",
       "category": "compliment",
-      "text": "Du kannst richtig gut zuhören. Ich liebe das."
+      "text": "Du hast so eine warme Art, Schatz, bei der man sich sofort wohlfühlt."
     },
     {
       "id": "de-compliment-013",
       "category": "compliment",
-      "text": "Ich glaub, du merkst gar nicht, wie toll du bist."
+      "text": "Ich glaube, du weißt gar nicht, wie wundervoll du bist."
     },
     {
       "id": "de-compliment-014",
       "category": "compliment",
-      "text": "Deine Stimme beruhigt mich sofort."
+      "text": "Deine Stimme beruhigt mich sofort, Schatz."
     },
     {
       "id": "de-compliment-015",
       "category": "compliment",
-      "text": "Du hast einfach Stil. Ganz ohne dich anzustrengen."
+      "text": "Du hast einfach Stil, und das ganz ohne dich anzustrengen."
     },
     {
       "id": "de-compliment-016",
       "category": "compliment",
-      "text": "Mir fällt kaum jemand ein, der so herzlich ist wie du."
+      "text": "Du bist der herzlichste Mensch, den ich kenne."
     },
     {
       "id": "de-compliment-017",
       "category": "compliment",
-      "text": "Wenn du lachst, vergess ich kurz alles andere."
+      "text": "Wenn du lachst, vergesse ich für einen Moment alles andere um mich herum."
     },
     {
       "id": "de-compliment-018",
       "category": "compliment",
-      "text": "Du bist mutiger, als du glaubst."
+      "text": "Du bist mutiger, als du selbst glaubst."
     },
     {
       "id": "de-compliment-019",
       "category": "compliment",
-      "text": "Ich bin immer wieder überrascht, wie viel du kannst."
+      "text": "Ich bin immer wieder beeindruckt, wie viel du kannst, Schatz."
     },
     {
       "id": "de-compliment-020",
       "category": "compliment",
-      "text": "Hübsch bist du übrigens auch noch."
+      "text": "Du bist übrigens auch noch wunderschön, Schatz."
     },
     {
       "id": "de-humor-001",
       "category": "humor",
-      "text": "Ich hab dich lieb. Und zwar in Schriftgröße 72."
+      "text": "Ich hab dich lieb, Schatz, und zwar in Schriftgröße 72."
     },
     {
       "id": "de-humor-002",
       "category": "humor",
-      "text": "Du bist mein Lieblingsmensch. Das Sofa ist knapp dahinter."
+      "text": "Du bist mein Lieblingsmensch, Schatz, mit riesigem Abstand vor dem Sofa."
     },
     {
       "id": "de-humor-003",
       "category": "humor",
-      "text": "Wir passen zusammen wie Käse und extra Käse."
+      "text": "Wir zwei passen zusammen wie Käse und noch mehr Käse."
     },
     {
       "id": "de-humor-004",
       "category": "humor",
-      "text": "Falls du dich fragst, ob ich an dich denke: ja. Dauernd."
+      "text": "Falls du dich fragst, ob ich gerade an dich denke: Ja, und zwar ständig."
     },
     {
       "id": "de-humor-005",
       "category": "humor",
-      "text": "Mein Akku hat noch 3 Prozent. Die heb ich mir für dich auf."
+      "text": "Mein Akku hat nur noch drei Prozent, und die hebe ich mir für dich auf."
     },
     {
       "id": "de-humor-006",
       "category": "humor",
-      "text": "Du darfst mich später gern bekochen. Ich übernehm das Loben."
+      "text": "Wenn du heute kochst, übernehme ich das Loben und den Abwasch."
     },
     {
       "id": "de-humor-007",
       "category": "humor",
-      "text": "Hab dir einen Kuss geschickt. Kommt er nicht an, liefer ich persönlich."
+      "text": "Mein Kuss an dich ist abgeschickt. Falls er nicht ankommt, liefere ich ihn persönlich nach."
     },
     {
       "id": "de-humor-008",
       "category": "humor",
-      "text": "Du bist mein liebster Mensch auf der ganzen Couch."
+      "text": "Du bist mein liebster Mensch auf der ganzen Welt, und die ist ziemlich groß."
     },
     {
       "id": "de-humor-009",
       "category": "humor",
-      "text": "Heute schon ans Abendessen gedacht? Ich schon. Seit dem Frühstück."
+      "text": "Hast du heute schon ans Abendessen gedacht, Schatz? Ich denke seit dem Frühstück daran."
     },
     {
       "id": "de-humor-010",
       "category": "humor",
-      "text": "Mit dir lach ich doppelt so viel. Grob geschätzt."
+      "text": "Mit dir lache ich mindestens doppelt so viel, grob geschätzt."
     },
     {
       "id": "de-humor-011",
       "category": "humor",
-      "text": "Ich wollte was Romantisches schreiben, aber mir fiel nur ein Kaffeewitz ein."
+      "text": "Ich wollte dir etwas Romantisches schreiben, aber mir ist nur ein Kaffeewitz eingefallen."
     },
     {
       "id": "de-humor-012",
       "category": "humor",
-      "text": "Wenn ich dich nicht hätte, müsste ich allein über meine Witze lachen."
+      "text": "Mit dir hab ich endlich jemanden, der über meine Witze lacht. Danke dafür, Schatz."
     },
     {
       "id": "de-humor-013",
       "category": "humor",
-      "text": "Nimm ruhig die ganze Decke. Ich wärm mich dann an dir."
+      "text": "Nimm ruhig die ganze Decke, Schatz. Ich wärme mich dann einfach an dir."
     },
     {
       "id": "de-humor-014",
       "category": "humor",
-      "text": "Bin gerade so verliebt, dass ich fast die Haltestelle verpasst hab."
+      "text": "Ich bin gerade so verliebt, dass ich fast meine Haltestelle verpasst hätte."
     },
     {
       "id": "de-humor-015",
       "category": "humor",
-      "text": "Ich bin zu müde für Komplimente, aber nicht für dich."
+      "text": "Für lange Komplimente bin ich heute zu müde, aber für dich hab ich immer Energie."
     },
     {
       "id": "de-humor-016",
       "category": "humor",
-      "text": "Heute darfst du die Fernbedienung haben. Ich hab ja dich zum Angucken."
+      "text": "Die Fernbedienung gehört heute dir, Schatz. Ich schau sowieso am liebsten dich an."
     },
     {
       "id": "de-humor-017",
       "category": "humor",
-      "text": "Als du mit Snacks vor der Tür standst, war's um mich geschehen."
+      "text": "Als du mit Snacks vor meiner Tür standst, war es endgültig um mich geschehen."
     },
     {
       "id": "de-humor-018",
       "category": "humor",
-      "text": "Im Handy bist du jetzt als Notfallkontakt für gute Laune gespeichert."
+      "text": "Du bist in meinem Handy jetzt als Notfallkontakt für gute Laune gespeichert."
     },
     {
       "id": "de-humor-019",
       "category": "humor",
-      "text": "Puls bei 120, dabei sitz ich nur am Schreibtisch. Das warst du."
+      "text": "Mein Puls liegt bei 120, obwohl ich nur am Schreibtisch sitze. Das liegt an dir, Schatz."
     },
     {
       "id": "de-humor-020",
       "category": "humor",
-      "text": "Jedes Mal, wenn du schreibst, grins ich wie ein Honigkuchenpferd."
+      "text": "Jedes Mal, wenn du mir schreibst, grinse ich wie ein Honigkuchenpferd."
     },
     {
       "id": "de-thanks-001",
       "category": "thanks",
-      "text": "Danke für alles, was du heute für mich getan hast."
+      "text": "Danke für alles, was du heute für mich getan hast, Schatz."
     },
     {
       "id": "de-thanks-002",
       "category": "thanks",
-      "text": "Danke, dass du mir zugehört hast. Das hat gutgetan."
+      "text": "Danke, dass du mir zugehört hast. Das hat mir richtig gutgetan."
     },
     {
       "id": "de-thanks-003",
       "category": "thanks",
-      "text": "Danke, dass du da warst, als ich dich gebraucht hab."
+      "text": "Danke, dass du für mich da warst, als ich dich gebraucht hab."
     },
     {
       "id": "de-thanks-004",
       "category": "thanks",
-      "text": "Das war lieb von dir. Danke, ehrlich."
+      "text": "Das war so lieb von dir, Schatz. Vielen, vielen Dank."
     },
     {
       "id": "de-thanks-005",
       "category": "thanks",
-      "text": "Ich hab mich so über deine Nachricht gefreut. Danke."
+      "text": "Ich hab mich so sehr über deine Nachricht gefreut. Danke, Schatz."
     },
     {
       "id": "de-thanks-006",
       "category": "thanks",
-      "text": "Danke fürs Kochen. Und fürs Abwaschen erst recht."
+      "text": "Danke fürs Kochen, und dass du auch noch abgewaschen hast, ist das Allerschönste."
     },
     {
       "id": "de-thanks-007",
       "category": "thanks",
-      "text": "Danke, dass du an mich gedacht hast."
+      "text": "Danke, dass du an mich gedacht hast, Schatz."
     },
     {
       "id": "de-thanks-008",
       "category": "thanks",
-      "text": "Ohne dich hätt ich das nicht geschafft. Danke dir."
+      "text": "Mit deiner Hilfe hab ich es geschafft. Danke dir, Schatz."
     },
     {
       "id": "de-thanks-009",
       "category": "thanks",
-      "text": "Danke für deine Geduld mit mir."
+      "text": "Danke für deine liebevolle Geduld mit mir."
     },
     {
       "id": "de-thanks-010",
       "category": "thanks",
-      "text": "Dass du mir den Rücken gestärkt hast, vergess ich nicht."
+      "text": "Du hast mir den Rücken gestärkt, und das werde ich dir nie vergessen."
     },
     {
       "id": "de-thanks-011",
       "category": "thanks",
-      "text": "Danke für den schönen Abend. Ich hab ihn sehr genossen."
+      "text": "Danke für den schönen Abend. Ich hab jede Minute mit dir genossen."
     },
     {
       "id": "de-thanks-012",
       "category": "thanks",
-      "text": "Du hast heute meinen Tag gerettet. Danke."
+      "text": "Du hast heute meinen Tag gerettet, Schatz. Danke dafür."
     },
     {
       "id": "de-thanks-013",
       "category": "thanks",
-      "text": "Danke, dass du mich zum Lachen gebracht hast, als mir nicht danach war."
+      "text": "Danke, dass du mich zum Lachen gebracht hast, als ich es gerade gut gebrauchen konnte."
     },
     {
       "id": "de-thanks-014",
       "category": "thanks",
-      "text": "Danke für die Umarmung. Genau die hab ich gebraucht."
+      "text": "Danke für deine Umarmung. Genau die hab ich gebraucht."
     },
     {
       "id": "de-thanks-015",
       "category": "thanks",
-      "text": "Schön, dass du bei mir bist. Danke dafür."
+      "text": "Es ist so schön, dass du bei mir bist, und dafür danke ich dir."
     },
     {
       "id": "de-thanks-016",
       "category": "thanks",
-      "text": "Danke für die kleinen Aufmerksamkeiten. Ich merk sie alle."
+      "text": "Danke für all die kleinen Aufmerksamkeiten, Schatz. Ich bemerke jede einzelne."
     },
     {
       "id": "de-thanks-017",
       "category": "thanks",
-      "text": "Danke, dass du mich nie hängen lässt."
+      "text": "Danke, dass du immer hinter mir stehst, Schatz."
     },
     {
       "id": "de-thanks-018",
       "category": "thanks",
-      "text": "Danke für deine Hilfe. Ich schulde dir was."
+      "text": "Danke für deine Hilfe, Schatz. Dafür hast du etwas bei mir gut."
     },
     {
       "id": "de-thanks-019",
       "category": "thanks",
-      "text": "Das Frühstück war eine tolle Überraschung. Danke dir."
+      "text": "Das Frühstück war eine wunderschöne Überraschung. Danke dir."
     },
     {
       "id": "de-thanks-020",
       "category": "thanks",
-      "text": "Danke, dass es dich gibt. Wirklich."
+      "text": "Danke, dass es dich gibt, Schatz."
     },
     {
       "id": "de-apology-001",
       "category": "apology",
-      "text": "Es tut mir leid. Ich war nicht fair zu dir."
+      "text": "Es tut mir leid, Schatz. Du liegst mir sehr am Herzen."
     },
     {
       "id": "de-apology-002",
       "category": "apology",
-      "text": "Ich seh's jetzt anders als vorhin. Verzeihst du mir?"
+      "text": "Ich sehe es inzwischen anders als vorhin. Verzeihst du mir, Schatz?"
     },
     {
       "id": "de-apology-003",
       "category": "apology",
-      "text": "Tut mir leid, dass ich so heftig reagiert hab."
+      "text": "Es tut mir leid, dass ich vorhin nicht ruhiger geblieben bin."
     },
     {
       "id": "de-apology-004",
       "category": "apology",
-      "text": "Du hattest recht. Entschuldige, und danke, dass du mich so gut kennst."
+      "text": "Du hattest recht, Schatz. Entschuldige bitte, und danke, dass du mich so gut kennst."
     },
     {
       "id": "de-apology-005",
       "category": "apology",
-      "text": "Du bist mir sehr wichtig. Es tut mir leid."
+      "text": "Du bist mir sehr wichtig, und deshalb tut es mir von Herzen leid."
     },
     {
       "id": "de-apology-006",
       "category": "apology",
-      "text": "Sorry für vorhin. Du bedeutest mir viel."
+      "text": "Entschuldige wegen vorhin, Schatz. Du bedeutest mir so viel."
     },
     {
       "id": "de-apology-007",
       "category": "apology",
-      "text": "Reden wir? Mir tut's leid."
+      "text": "Wollen wir in Ruhe darüber reden? Es tut mir leid."
     },
     {
       "id": "de-apology-008",
       "category": "apology",
-      "text": "Ich hab nicht richtig zugehört. Das tut mir leid."
+      "text": "Ich hätte dir besser zuhören sollen, und das tut mir leid."
     },
     {
       "id": "de-apology-009",
       "category": "apology",
-      "text": "Du bedeutest mir mehr als mein Rechthaben."
+      "text": "Du bist mir viel wichtiger, als recht zu behalten."
     },
     {
       "id": "de-apology-010",
       "category": "apology",
-      "text": "Ich lach lieber mit dir, als mit dir zu diskutieren. Tut mir leid."
+      "text": "Ich möchte viel lieber mit dir lachen als diskutieren. Es tut mir leid, Schatz."
     },
     {
       "id": "de-apology-011",
       "category": "apology",
-      "text": "Du musstest auf mich warten, das tut mir leid."
+      "text": "Es tut mir leid, dass du auf mich warten musstest."
     },
     {
       "id": "de-apology-012",
       "category": "apology",
-      "text": "Ich will, dass es zwischen uns gut ist. Entschuldige."
+      "text": "Ich wünsch mir, dass zwischen uns alles gut ist. Entschuldige bitte."
     },
     {
       "id": "de-apology-013",
       "category": "apology",
-      "text": "Das wollte ich so nicht sagen. Verzeih mir."
+      "text": "So wollte ich das nicht sagen, Schatz. Bitte verzeih mir."
     },
     {
       "id": "de-apology-014",
       "category": "apology",
-      "text": "Ich versuch, es besser zu machen. Versprochen."
+      "text": "Ich geb mir Mühe, es beim nächsten Mal besser zu machen. Das verspreche ich dir."
     },
     {
       "id": "de-apology-015",
       "category": "apology",
-      "text": "Es tut mir leid. Wie kann ich das wiedergutmachen?"
+      "text": "Es tut mir leid. Sag mir bitte, wie ich es wiedergutmachen kann."
     },
     {
       "id": "de-apology-016",
       "category": "apology",
-      "text": "Ich hab seit heute Morgen drüber nachgedacht. Jetzt versteh ich dich."
+      "text": "Ich hab seit heute Morgen darüber nachgedacht, und jetzt verstehe ich dich viel besser."
     },
     {
       "id": "de-apology-017",
       "category": "apology",
-      "text": "Entschuldige, ich war nicht ganz bei dir. Jetzt bin ich da."
+      "text": "Entschuldige, ich war mit den Gedanken woanders. Jetzt bin ich ganz bei dir."
     },
     {
       "id": "de-apology-018",
       "category": "apology",
-      "text": "Mir ist klar geworden, wie das bei dir ankam. Tut mir leid."
+      "text": "Mir ist klar geworden, wie das bei dir angekommen ist, und das tut mir leid."
     },
     {
       "id": "de-apology-019",
       "category": "apology",
-      "text": "Können wir neu anfangen? Ich bin ganz Ohr."
+      "text": "Wollen wir noch einmal neu anfangen? Ich bin ganz Ohr, Schatz."
     },
     {
       "id": "de-apology-020",
       "category": "apology",
-      "text": "Sorry. Ich hab dich lieb, auch wenn ich es grad nicht so zeige."
+      "text": "Entschuldige, Schatz. Ich hab dich lieb, auch wenn ich es gerade nicht so gut gezeigt hab."
     },
     {
       "id": "de-love-021",
       "category": "love",
-      "text": "Ich hab dich lieb ❤️"
+      "text": "Ich hab dich lieb, Schatz ❤️"
     },
     {
       "id": "de-love-022",
       "category": "love",
-      "text": "Du und ich, das passt 💕"
+      "text": "Du und ich, wir passen einfach zusammen 💕"
     },
     {
       "id": "de-love-023",
       "category": "love",
-      "text": "Ich denk grad an dich 😘"
+      "text": "Ich denk gerade ganz fest an dich 😘"
     },
     {
       "id": "de-appreciation-021",
       "category": "appreciation",
-      "text": "Danke, dass du so bist, wie du bist 💛"
+      "text": "Danke, dass du genau so bist, wie du bist 💛"
     },
     {
       "id": "de-appreciation-022",
       "category": "appreciation",
-      "text": "Du erledigst so viel nebenbei. Danke dir 🙏"
+      "text": "Du erledigst so vieles ganz nebenbei, Schatz, und ich bin dir sehr dankbar dafür 🙏"
     },
     {
       "id": "de-appreciation-023",
       "category": "appreciation",
-      "text": "Was hab ich für ein Glück mit dir ✨"
+      "text": "Was hab ich nur für ein Glück mit dir ✨"
     },
     {
       "id": "de-morning-021",
       "category": "morning",
-      "text": "Guten Morgen ☀️ Der Tag kann kommen"
+      "text": "Guten Morgen, Schatz. Der Tag kann kommen ☀️"
     },
     {
       "id": "de-morning-022",
       "category": "morning",
-      "text": "Moin ☕ Ich hoffe, die erste Tasse schmeckt"
+      "text": "Guten Morgen. Ich hoffe, die erste Tasse Kaffee schmeckt dir ☕"
     },
     {
       "id": "de-morning-023",
       "category": "morning",
-      "text": "Na, ausgeschlafen? 😊 Bis später"
+      "text": "Na, hast du gut ausgeschlafen? Ich freu mich auf später 😊"
     },
     {
       "id": "de-goodnight-021",
       "category": "goodnight",
-      "text": "Gute Nacht 🌙 Schlaf gut"
+      "text": "Gute Nacht, Schatz, und schlaf gut 🌙"
     },
     {
       "id": "de-goodnight-022",
       "category": "goodnight",
-      "text": "Träum was Schönes 💤✨"
+      "text": "Ich wünsch dir wunderschöne Träume 💤✨"
     },
     {
       "id": "de-goodnight-023",
       "category": "goodnight",
-      "text": "Nacht, du 😘 Bis morgen"
+      "text": "Gute Nacht, du. Wir sehen uns morgen 😘"
     },
     {
       "id": "de-encouragement-021",
       "category": "encouragement",
-      "text": "Du packst das 💪"
+      "text": "Du packst das, Schatz 💪"
     },
     {
       "id": "de-encouragement-022",
       "category": "encouragement",
-      "text": "Ich glaub an dich ✨"
+      "text": "Ich glaub ganz fest an dich ✨"
     },
     {
       "id": "de-encouragement-023",
       "category": "encouragement",
-      "text": "Fühl dich gedrückt 🤗 Das wird schon"
+      "text": "Fühl dich fest gedrückt. Das wird ganz bestimmt gut 🤗"
     },
     {
       "id": "de-missyou-021",
       "category": "missyou",
-      "text": "Ich vermiss dich 💕"
+      "text": "Ich vermiss dich so sehr 💕"
     },
     {
       "id": "de-missyou-022",
       "category": "missyou",
-      "text": "Komm bald wieder 🏡"
+      "text": "Komm bald wieder nach Hause, Schatz 🏡"
     },
     {
       "id": "de-missyou-023",
       "category": "missyou",
-      "text": "Du fehlst mir 😘"
+      "text": "Du fehlst mir sehr 😘"
     },
     {
       "id": "de-compliment-021",
       "category": "compliment",
-      "text": "Du siehst toll aus 😍"
+      "text": "Du siehst heute toll aus, Schatz 😍"
     },
     {
       "id": "de-compliment-022",
       "category": "compliment",
-      "text": "Du bist klasse 🌟"
+      "text": "Du bist einfach klasse 🌟"
     },
     {
       "id": "de-compliment-023",
       "category": "compliment",
-      "text": "Von deinem Lächeln vorhin zehr ich immer noch 😊"
+      "text": "Wenn du lächelst, muss ich einfach mitlächeln 😊"
     },
     {
       "id": "de-humor-021",
       "category": "humor",
-      "text": "Ich liebe dich mehr als Pizza 🍕❤️"
+      "text": "Ich liebe dich sogar mehr als Pizza, Schatz 🍕❤️"
     },
     {
       "id": "de-humor-022",
       "category": "humor",
-      "text": "Das Sofa wartet auf uns 🛋️😄"
+      "text": "Das Sofa wartet schon auf uns zwei 🛋️😄"
     },
     {
       "id": "de-humor-023",
       "category": "humor",
-      "text": "Du bringst mich zum Lachen 😂"
+      "text": "Du bringst mich immer zum Lachen, Schatz 😂"
     },
     {
       "id": "de-thanks-021",
       "category": "thanks",
-      "text": "Danke für alles 🙏❤️"
+      "text": "Danke für alles, Schatz 🙏❤️"
     },
     {
       "id": "de-thanks-022",
       "category": "thanks",
-      "text": "Danke von Herzen 💐"
+      "text": "Ich danke dir von Herzen 💐"
     },
     {
       "id": "de-thanks-023",
       "category": "thanks",
-      "text": "Du bist spitze, danke 🌟"
+      "text": "Du bist spitze, und ich danke dir 🌟"
     },
     {
       "id": "de-apology-021",
       "category": "apology",
-      "text": "Es tut mir leid. Du bist mir wichtig 💕"
+      "text": "Es tut mir leid. Du bist mir so wichtig 💕"
     },
     {
       "id": "de-apology-022",
       "category": "apology",
-      "text": "Können wir reden? 🤗"
+      "text": "Können wir in Ruhe miteinander reden? 🤗"
     },
     {
       "id": "de-apology-023",
       "category": "apology",
-      "text": "Entschuldige, ich hab dich lieb ❤️"
+      "text": "Entschuldige bitte. Ich hab dich lieb ❤️"
     },
     {
       "id": "de-emoji-001",
@@ -1235,12 +1235,12 @@
     {
       "id": "de-emoji-017",
       "category": "emoji",
-      "text": "Gute Nacht 😴💫"
+      "text": "Gute Nacht, Schatz 😴💫"
     },
     {
       "id": "de-emoji-018",
       "category": "emoji",
-      "text": "Guten Morgen ☀️☕"
+      "text": "Guten Morgen, Schatz ☀️☕"
     },
     {
       "id": "de-emoji-019",
@@ -1250,22 +1250,22 @@
     {
       "id": "de-emoji-020",
       "category": "emoji",
-      "text": "Danke 🙏💐"
+      "text": "Danke, Schatz 🙏💐"
     },
     {
       "id": "de-emoji-021",
       "category": "emoji",
-      "text": "Umarmung 🤗🤗🤗"
+      "text": "Eine Umarmung für dich 🤗🤗🤗"
     },
     {
       "id": "de-emoji-022",
       "category": "emoji",
-      "text": "Kuss 😚💋"
+      "text": "Ein Kuss für dich 😚💋"
     },
     {
       "id": "de-emoji-023",
       "category": "emoji",
-      "text": "Bis gleich 😉💕"
+      "text": "Bis gleich, Schatz 😉💕"
     },
     {
       "id": "de-emoji-024",
@@ -1285,12 +1285,12 @@
     {
       "id": "de-emoji-027",
       "category": "emoji",
-      "text": "Alles Liebe 💝"
+      "text": "Alles Liebe für dich 💝"
     },
     {
       "id": "de-emoji-028",
       "category": "emoji",
-      "text": "Du rockst 😎🔥"
+      "text": "Du bist einfach toll 😎🔥"
     },
     {
       "id": "de-emoji-029",
@@ -1440,12 +1440,12 @@
     {
       "id": "de-ascii-028",
       "category": "ascii",
-      "text": "Gute Nacht (-.-)Zzz <3"
+      "text": "Gute Nacht, Schatz (-.-)Zzz <3"
     },
     {
       "id": "de-ascii-029",
       "category": "ascii",
-      "text": "Guten Morgen \\(^o^)/"
+      "text": "Guten Morgen, Schatz \\(^o^)/"
     },
     {
       "id": "de-ascii-030",
@@ -1460,502 +1460,502 @@
     {
       "id": "de-love-025",
       "category": "love",
-      "text": "Jeden Tag ein bisschen mehr verliebt 😍"
+      "text": "Ich bin jeden Tag ein bisschen mehr in dich verliebt 😍"
     },
     {
       "id": "de-love-026",
       "category": "love",
-      "text": "Wir zwei, das ist mein Lieblingsteam 🙌💕"
+      "text": "Schatz, wir zwei sind mein Lieblingsteam 🙌💕"
     },
     {
       "id": "de-love-027",
       "category": "love",
-      "text": "Kuss geht raus 😘 Hoffentlich kommt er warm an"
+      "text": "Ein Kuss ist unterwegs zu dir, und ich hoffe, er kommt warm an 😘"
     },
     {
       "id": "de-appreciation-024",
       "category": "appreciation",
-      "text": "Du bist ein Schatz 💎 Danke für alles"
+      "text": "Du bist ein Schatz, und ich danke dir für alles 💎"
     },
     {
       "id": "de-appreciation-025",
       "category": "appreciation",
-      "text": "Du machst so vieles schöner 🌷"
+      "text": "Du machst so vieles in meinem Leben schöner 🌷"
     },
     {
       "id": "de-appreciation-026",
       "category": "appreciation",
-      "text": "Wie du das alles hinkriegst. Respekt 🏅"
+      "text": "Ich hab großen Respekt davor, wie du das alles hinbekommst 🏅"
     },
     {
       "id": "de-appreciation-027",
       "category": "appreciation",
-      "text": "Danke, dass du immer da bist 🤝"
+      "text": "Danke, dass du immer für mich da bist, Schatz 🤝"
     },
     {
       "id": "de-morning-024",
       "category": "morning",
-      "text": "Guten Morgen ☀️ Ich wünsch dir einen leichten Tag"
+      "text": "Guten Morgen. Ich wünsch dir einen ganz leichten Tag ☀️"
     },
     {
       "id": "de-morning-025",
       "category": "morning",
-      "text": "Der Kaffee wartet ☕ und ich freu mich auf dich"
+      "text": "Der Kaffee ist fertig, und ich freu mich darauf, ihn mit dir zu trinken ☕"
     },
     {
       "id": "de-morning-026",
       "category": "morning",
-      "text": "Aufstehen, Sonne! 🌞 Ich denk an dich"
+      "text": "Guten Morgen, mein Sonnenschein. Ich denk an dich 🌞"
     },
     {
       "id": "de-morning-027",
       "category": "morning",
-      "text": "Moin 🌻 Was steht heute bei dir an?"
+      "text": "Guten Morgen, Schatz. Was steht heute bei dir an? 🌻"
     },
     {
       "id": "de-goodnight-024",
       "category": "goodnight",
-      "text": "Schlaf schön 🌙 Ich träum von uns"
+      "text": "Schlaf schön. Ich träum heute Nacht von uns beiden 🌙"
     },
     {
       "id": "de-goodnight-025",
       "category": "goodnight",
-      "text": "Gute Nacht 😴 Bis gleich im Traum 💫"
+      "text": "Gute Nacht. Wir sehen uns gleich im Traum 😴💫"
     },
     {
       "id": "de-goodnight-026",
       "category": "goodnight",
-      "text": "Gedanklich schon mal an dich gekuschelt 🛌💕"
+      "text": "In Gedanken hab ich mich schon an dich gekuschelt 🛌💕"
     },
     {
       "id": "de-goodnight-027",
       "category": "goodnight",
-      "text": "Der Mond passt auf dich auf 🌛 Gute Nacht"
+      "text": "Der Mond passt heute Nacht auf dich auf. Gute Nacht, Schatz 🌛"
     },
     {
       "id": "de-encouragement-024",
       "category": "encouragement",
-      "text": "Du schaffst das 💪 Ich bin bei dir"
+      "text": "Du schaffst das, und ich bin in Gedanken bei dir 💪"
     },
     {
       "id": "de-encouragement-025",
       "category": "encouragement",
-      "text": "Kleine Schritte zählen auch 👣 Und du machst grad viele"
+      "text": "Auch kleine Schritte zählen, und du machst gerade ganz viele davon 👣"
     },
     {
       "id": "de-encouragement-026",
       "category": "encouragement",
-      "text": "Schultern runter 🌬️ Du hast das im Griff"
+      "text": "Lass die Schultern locker, Schatz. Du hast alles im Griff 🌬️"
     },
     {
       "id": "de-encouragement-027",
       "category": "encouragement",
-      "text": "Toi, toi, toi für heute 🤞"
+      "text": "Ich wünsch dir für heute toi, toi, toi 🤞"
     },
     {
       "id": "de-missyou-024",
       "category": "missyou",
-      "text": "Schon wieder an dich gedacht 💭 Du fehlst mir"
+      "text": "Ich hab schon wieder an dich gedacht, weil du mir fehlst 💭"
     },
     {
       "id": "de-missyou-025",
       "category": "missyou",
-      "text": "Am liebsten würd ich gleich zu dir fliegen ✈️💕"
+      "text": "Am liebsten würde ich sofort zu dir fliegen ✈️💕"
     },
     {
       "id": "de-missyou-026",
       "category": "missyou",
-      "text": "Unser Wiedersehen rückt näher ⏳ Ich kann's kaum erwarten"
+      "text": "Unser Wiedersehen rückt näher, und ich kann es kaum erwarten ⏳"
     },
     {
       "id": "de-missyou-027",
       "category": "missyou",
-      "text": "Hier ist grad so ein schöner Abendhimmel 🌆 Mit dir wär's perfekt"
+      "text": "Hier ist gerade ein wunderschöner Abendhimmel, und mit dir wäre er perfekt 🌆"
     },
     {
       "id": "de-compliment-024",
       "category": "compliment",
-      "text": "Heute so gut drauf. Steht dir 🌟"
+      "text": "Du bist heute so gut gelaunt, und das steht dir wunderbar 🌟"
     },
     {
       "id": "de-compliment-025",
       "category": "compliment",
-      "text": "Dein Lächeln ist mein Lieblingsanblick 😊"
+      "text": "Dein Lächeln ist mein liebster Anblick 😊"
     },
     {
       "id": "de-compliment-026",
       "category": "compliment",
-      "text": "Du bist so klug 🧠 und so lieb 💛"
+      "text": "Du bist so klug und dabei so lieb, Schatz 💛"
     },
     {
       "id": "de-compliment-027",
       "category": "compliment",
-      "text": "Das Outfit heute 🔥 Mehr sag ich nicht"
+      "text": "Dein Outfit heute steht dir ganz hervorragend 🔥"
     },
     {
       "id": "de-humor-024",
       "category": "humor",
-      "text": "Ich hab dich lieb wie WLAN 📶 Ohne dich geht hier nix"
+      "text": "Ich hab dich so lieb wie mein WLAN, denn ohne dich läuft hier gar nichts 📶"
     },
     {
       "id": "de-humor-025",
       "category": "humor",
-      "text": "Kaffee oder du? Du, mit Abstand ☕😉"
+      "text": "Wenn ich zwischen Kaffee und dir wählen müsste, würdest du mit großem Abstand gewinnen ☕😉"
     },
     {
       "id": "de-humor-026",
       "category": "humor",
-      "text": "Mein Herz macht Überstunden ❤️⏰"
+      "text": "Mein Herz macht wegen dir schon wieder Überstunden ❤️⏰"
     },
     {
       "id": "de-humor-027",
       "category": "humor",
-      "text": "Ich teil mein Essen nur mit dir 🍟😉"
+      "text": "Mein Essen teile ich mit niemandem so gern wie mit dir 🍟😉"
     },
     {
       "id": "de-thanks-024",
       "category": "thanks",
-      "text": "Danke für den schönen Tag 🌈"
+      "text": "Danke für den wunderschönen Tag mit dir 🌈"
     },
     {
       "id": "de-thanks-025",
       "category": "thanks",
-      "text": "Danke fürs Zuhören 👂💛"
+      "text": "Danke, dass du immer ein offenes Ohr für mich hast 👂💛"
     },
     {
       "id": "de-thanks-026",
       "category": "thanks",
-      "text": "Danke fürs lange Festhalten vorhin 🤗"
+      "text": "Du hast mich vorhin so lange festgehalten, und das hat so gutgetan. Danke 🤗"
     },
     {
       "id": "de-thanks-027",
       "category": "thanks",
-      "text": "Dein Geschenk steht schon auf meinem Schreibtisch 🎁 Danke"
+      "text": "Dein Geschenk steht schon auf meinem Schreibtisch. Danke, Schatz 🎁"
     },
     {
       "id": "de-apology-024",
       "category": "apology",
-      "text": "Versöhnungskuss? 💋 Es tut mir leid"
+      "text": "Es tut mir leid, Schatz. Bekomme ich einen Versöhnungskuss? 💋"
     },
     {
       "id": "de-apology-025",
       "category": "apology",
-      "text": "Gehen wir eine Runde spazieren? 🌳 Ich hör dir zu"
+      "text": "Wollen wir eine Runde spazieren gehen? Ich höre dir zu 🌳"
     },
     {
       "id": "de-apology-026",
       "category": "apology",
-      "text": "Entschuldige 💐 Ich will, dass es dir gut geht"
+      "text": "Entschuldige, Schatz. Ich möchte, dass es dir gut geht 💐"
     },
     {
       "id": "de-apology-027",
       "category": "apology",
-      "text": "Wieder gut? 🤝 Ich hab dich lieb ❤️"
+      "text": "Ist alles wieder gut zwischen uns? Ich hab dich lieb 🤝❤️"
     },
     {
       "id": "de-love-028",
       "category": "love",
-      "text": "Wie du meine Hand nimmst, ohne hinzuschauen. Das liebe ich."
+      "text": "Ich liebe es, wie du meine Hand nimmst, ohne hinzuschauen."
     },
     {
       "id": "de-love-029",
       "category": "love",
-      "text": "Unsere Zahnbürsten im selben Becher. Ich find das so schön."
+      "text": "Ich find es so schön, dass unsere Zahnbürsten im selben Becher stehen."
     },
     {
       "id": "de-love-030",
       "category": "love",
-      "text": "Einkaufen mit dir ist das Romantischste an meiner Woche."
+      "text": "Mit dir einkaufen zu gehen gehört zu den schönsten Momenten meiner Woche."
     },
     {
       "id": "de-love-031",
       "category": "love",
-      "text": "Wir zwei im Auto, Musik laut. Von mir aus ewig so."
+      "text": "Schatz, mit dir im Auto sitzen und laut Musik hören, das könnte ich stundenlang."
     },
     {
       "id": "de-love-032",
       "category": "love",
-      "text": "Du bist der Mensch, dem ich alles zuerst erzählen will."
+      "text": "Du bist der Mensch, dem ich alles zuerst erzählen möchte."
     },
     {
       "id": "de-love-033",
       "category": "love",
-      "text": "Ich liebe dich auch um sechs Uhr früh. Das sagt eigentlich alles."
+      "text": "Ich liebe dich zu jeder Tageszeit, sogar um sechs Uhr in der Früh."
     },
     {
       "id": "de-love-034",
       "category": "love",
-      "text": "Dein Stirnkuss vorhin, einfach so. Den spür ich immer noch."
+      "text": "Deinen Stirnkuss von vorhin spür ich immer noch, Schatz."
     },
     {
       "id": "de-love-035",
       "category": "love",
-      "text": "Deine Hand in meiner Jackentasche. Dafür mag ich den Winter."
+      "text": "Wenn deine Hand in meiner Jackentasche steckt, mag ich sogar den Winter."
     },
     {
       "id": "de-love-036",
       "category": "love",
-      "text": "Ich verlieb mich immer wieder neu in dich. Meistens bei Kleinigkeiten."
+      "text": "Ich verliebe mich immer wieder neu in dich, meistens wegen ganz kleiner Dinge."
     },
     {
       "id": "de-love-037",
       "category": "love",
-      "text": "Seit unserem ersten Date freu ich mich jeden Tag auf dich."
+      "text": "Seit unserem ersten Date freu ich mich jeden Tag aufs Neue auf dich."
     },
     {
       "id": "de-love-038",
       "category": "love",
-      "text": "Wieder ein Jahr mit dir. Davon nehm ich gern noch ganz viele."
+      "text": "Wieder ein Jahr mit dir, Schatz, und ich wünsch mir noch ganz viele davon."
     },
     {
       "id": "de-love-039",
       "category": "love",
-      "text": "Du schläfst noch neben mir. Ich rühr mich extra nicht."
+      "text": "Du schläfst noch neben mir, und ich bleib ganz still liegen, damit du weiterträumen kannst."
     },
     {
       "id": "de-love-040",
       "category": "love",
-      "text": "Wenn du mir heimlich zuzwinkerst, werd ich jedes Mal weich."
+      "text": "Wenn du mir heimlich zuzwinkerst, schmelze ich jedes Mal ein bisschen dahin."
     },
     {
       "id": "de-love-041",
       "category": "love",
-      "text": "Grad gemerkt, wie sehr ich mich auf unser Wochenende freu."
+      "text": "Mir ist gerade aufgefallen, wie sehr ich mich auf unser Wochenende freue."
     },
     {
       "id": "de-love-042",
       "category": "love",
-      "text": "Am liebsten mag ich uns, wenn wir zusammen in der Küche stehen."
+      "text": "Am liebsten mag ich uns, wenn wir zusammen in der Küche stehen und kochen."
     },
     {
       "id": "de-love-043",
       "category": "love",
-      "text": "Du bist meine liebste Gewohnheit."
+      "text": "Du bist meine liebste Gewohnheit, Schatz."
     },
     {
       "id": "de-love-044",
       "category": "love",
-      "text": "Dich gibt's nur im Komplettpaket. Genau so lieb ich dich."
+      "text": "Schatz, ich liebe dich genau so, wie du bist."
     },
     {
       "id": "de-love-045",
       "category": "love",
-      "text": "Ich bin so gern mit dir zusammen. Auch wenn wir gar nichts machen 💛"
+      "text": "Ich bin so gern mit dir zusammen, auch wenn wir gar nichts Besonderes machen 💛"
     },
     {
       "id": "de-love-046",
       "category": "love",
-      "text": "Wenn du zur Tür reinkommst, hüpft mein Herz 💓"
+      "text": "Wenn du zur Tür hereinkommst, macht mein Herz einen kleinen Sprung 💓"
     },
     {
       "id": "de-love-047",
       "category": "love",
-      "text": "Draußen Regen, wir zwei unter einer Decke. Perfekt 🌧️"
+      "text": "Wenn es draußen regnet und wir zwei unter einer Decke liegen, ist alles perfekt 🌧️"
     },
     {
       "id": "de-appreciation-028",
       "category": "appreciation",
-      "text": "Du denkst an Sachen, die ich längst vergessen hab. Das find ich so lieb."
+      "text": "Du denkst an Dinge, die ich längst vergessen hab, und das find ich so lieb von dir."
     },
     {
       "id": "de-appreciation-029",
       "category": "appreciation",
-      "text": "Dass du morgens meinen Kaffee gleich mitmachst, rührt mich."
+      "text": "Es rührt mich jedes Mal, dass du morgens meinen Kaffee gleich mitmachst."
     },
     {
       "id": "de-appreciation-030",
       "category": "appreciation",
-      "text": "Du erklärst mir alles auch beim dritten Mal ganz geduldig."
+      "text": "Du erklärst mir alles mit so viel Geduld, Schatz. Dafür hab ich dich besonders gern."
     },
     {
       "id": "de-appreciation-031",
       "category": "appreciation",
-      "text": "Unser Zuhause ist so gemütlich, weil du dich drum kümmerst."
+      "text": "Unser Zuhause ist so gemütlich, weil du dich so liebevoll darum kümmerst."
     },
     {
       "id": "de-appreciation-032",
       "category": "appreciation",
-      "text": "Bei dir darf ich auch mal müde sein. Das ist mir viel wert."
+      "text": "Bei dir darf ich auch mal müde sein, und das bedeutet mir sehr viel."
     },
     {
       "id": "de-appreciation-033",
       "category": "appreciation",
-      "text": "Komm ich spät heim, brennt im Flur noch Licht für mich."
+      "text": "Wenn ich spät heimkomme, hast du im Flur das Licht für mich angelassen. Das ist so lieb."
     },
     {
       "id": "de-appreciation-034",
       "category": "appreciation",
-      "text": "Du meldest dich so treu bei deiner Familie. Das mag ich an dir."
+      "text": "Du meldest dich so treu bei deiner Familie, und ich find das wunderschön."
     },
     {
       "id": "de-appreciation-035",
       "category": "appreciation",
-      "text": "Wenn ich was erzähle, legst du sofort das Handy weg. Danke dafür."
+      "text": "Wenn ich dir etwas erzähle, legst du sofort das Handy weg. Danke dafür, Schatz."
     },
     {
       "id": "de-appreciation-036",
       "category": "appreciation",
-      "text": "Mein Termin heute? Du hast dran gedacht, ohne dass ich was gesagt hab."
+      "text": "Du hast an meinen Termin heute gedacht, ohne dass ich etwas gesagt hab. Das ist so aufmerksam."
     },
     {
       "id": "de-appreciation-037",
       "category": "appreciation",
-      "text": "Meine Freunde fragen dauernd nach dir. Kein Wunder."
+      "text": "Meine Freunde fragen ständig nach dir, und das wundert mich überhaupt nicht."
     },
     {
       "id": "de-appreciation-038",
       "category": "appreciation",
-      "text": "Ich finde, du bist ein richtig guter Mensch. Einfach so."
+      "text": "Du bist ein richtig guter Mensch, Schatz, durch und durch."
     },
     {
       "id": "de-appreciation-039",
       "category": "appreciation",
-      "text": "Wie oft du einfach für mich mit aufräumst. Ich seh jede einzelne Tasse."
+      "text": "Du räumst so oft einfach für mich mit auf, und ich bemerke jede einzelne Tasse."
     },
     {
       "id": "de-appreciation-040",
       "category": "appreciation",
-      "text": "Aus wenig Zeit machst du immer was Schönes für uns."
+      "text": "Selbst aus wenig Zeit machst du immer etwas Schönes für uns beide."
     },
     {
       "id": "de-appreciation-041",
       "category": "appreciation",
-      "text": "Du nimmst meine Ideen ernst, sogar die ganz spontanen. Das tut so gut."
+      "text": "Du nimmst meine Ideen ernst, sogar die ganz spontanen, und das tut mir so gut."
     },
     {
       "id": "de-appreciation-042",
       "category": "appreciation",
-      "text": "Deine Geschenke treffen jedes Mal genau meinen Geschmack."
+      "text": "Deine Geschenke treffen jedes Mal genau meinen Geschmack, Schatz."
     },
     {
       "id": "de-appreciation-043",
       "category": "appreciation",
-      "text": "Du schaffst so viel und machst nie ein großes Ding draus."
+      "text": "Du schaffst so viel und bleibst dabei immer so bescheiden."
     },
     {
       "id": "de-appreciation-044",
       "category": "appreciation",
-      "text": "Mit dir zu planen macht Spaß, ob Urlaub oder Wocheneinkauf."
+      "text": "Mit dir zu planen macht mir Freude, egal ob es der Urlaub oder der Wocheneinkauf ist."
     },
     {
       "id": "de-appreciation-045",
       "category": "appreciation",
-      "text": "Wie du dich in neue Sachen reinfuchst. Das steckt mich an."
+      "text": "Es steckt mich richtig an, wie begeistert du dich in neue Dinge einarbeitest."
     },
     {
       "id": "de-appreciation-046",
       "category": "appreciation",
-      "text": "Du kümmerst dich um alle. Heute koch ich mal für dich 💛"
+      "text": "Du kümmerst dich um alle, Schatz, und deshalb koch ich heute für dich 💛"
     },
     {
       "id": "de-appreciation-047",
       "category": "appreciation",
-      "text": "Du hältst bei uns so viel zusammen. Danke, dass du das machst ❤️"
+      "text": "Du hältst bei uns so vieles zusammen, und ich danke dir von Herzen dafür ❤️"
     },
     {
       "id": "de-morning-028",
       "category": "morning",
-      "text": "Guten Morgen. Dein Kaffee steht schon da, noch schön heiß."
+      "text": "Guten Morgen. Dein Kaffee steht schon bereit und ist noch schön heiß."
     },
     {
       "id": "de-morning-029",
       "category": "morning",
-      "text": "Am Spiegel klebt ein Zettel. Erst lesen, dann Zähne putzen."
+      "text": "Am Spiegel klebt ein kleiner Zettel für dich. Ich hoffe, er bringt dich zum Lächeln."
     },
     {
       "id": "de-morning-030",
       "category": "morning",
-      "text": "Morgen! Ich bin mit einem Grinsen aufgewacht. Rate mal, warum."
+      "text": "Ich bin heute mit einem Lächeln aufgewacht, und du bist der Grund dafür."
     },
     {
       "id": "de-morning-031",
       "category": "morning",
-      "text": "Bin schon los, ohne Kuss. Den gibt's heute Abend doppelt."
+      "text": "Ich musste heute früh los, deshalb bekommst du deinen Kuss heute Abend doppelt."
     },
     {
       "id": "de-morning-032",
       "category": "morning",
-      "text": "Die Amsel vorm Fenster und ich sagen: Guten Morgen."
+      "text": "Die Amsel vor dem Fenster und ich wünschen dir einen guten Morgen."
     },
     {
       "id": "de-morning-033",
       "category": "morning",
-      "text": "Heute für dich: grüne Ampeln und ein Sitzplatz in der Bahn."
+      "text": "Ich wünsch dir heute lauter grüne Ampeln und einen Sitzplatz in der Bahn."
     },
     {
       "id": "de-morning-034",
       "category": "morning",
-      "text": "Brötchen sind geholt, der Tisch ist gedeckt. Komm frühstücken."
+      "text": "Die Brötchen sind geholt und der Tisch ist gedeckt. Komm frühstücken, Schatz."
     },
     {
       "id": "de-morning-035",
       "category": "morning",
-      "text": "Du sahst so friedlich aus, da hab ich dich schlafen lassen."
+      "text": "Du hast so friedlich ausgesehen, dass ich dich noch ein bisschen schlafen lassen wollte."
     },
     {
       "id": "de-morning-036",
       "category": "morning",
-      "text": "Heute Abend gehört nur uns. Das musste ich dir gleich morgens sagen."
+      "text": "Der heutige Abend gehört nur uns beiden, und das wollte ich dir gleich am Morgen sagen."
     },
     {
       "id": "de-morning-037",
       "category": "morning",
-      "text": "Süße Träume gehabt? Ich hoffe, ich war dabei."
+      "text": "Hast du schön geträumt? Ich hoffe, ich bin in deinem Traum vorgekommen."
     },
     {
       "id": "de-morning-038",
       "category": "morning",
-      "text": "Zehn Minuten kuscheln, bevor der Wecker wieder klingelt?"
+      "text": "Wollen wir noch zehn Minuten kuscheln, bevor der Tag richtig losgeht?"
     },
     {
       "id": "de-morning-039",
       "category": "morning",
-      "text": "Ich hab Tee für uns aufgesetzt. Kommst du in die Küche?"
+      "text": "Ich hab Tee für uns beide aufgesetzt. Kommst du zu mir in die Küche, Schatz?"
     },
     {
       "id": "de-morning-040",
       "category": "morning",
-      "text": "Schönen Start in deinen Tag. Heute Abend bin ich früh zu Hause."
+      "text": "Ich wünsch dir einen schönen Start in den Tag. Heute Abend bin ich früh zu Hause."
     },
     {
       "id": "de-morning-041",
       "category": "morning",
-      "text": "Lass dir Zeit. Das Frühstück läuft dir nicht weg."
+      "text": "Lass dir heute Morgen ruhig Zeit, Schatz. Das Frühstück wartet auf dich."
     },
     {
       "id": "de-morning-042",
       "category": "morning",
-      "text": "Heute ist dein großer Tag. Guten Morgen und ganz viel Glück."
+      "text": "Heute ist dein großer Tag. Guten Morgen, Schatz, und ganz viel Glück."
     },
     {
       "id": "de-morning-043",
       "category": "morning",
-      "text": "Hoffentlich klappt heute alles, was du dir vorgenommen hast."
+      "text": "Ich hoffe, dass dir heute alles gelingt, was du dir vorgenommen hast."
     },
     {
       "id": "de-morning-044",
       "category": "morning",
-      "text": "Sonntagmorgen mit dir im Bett. So mag ich das."
+      "text": "Ein Sonntagmorgen mit dir im Bett ist für mich der schönste Start in den Tag."
     },
     {
       "id": "de-morning-045",
       "category": "morning",
-      "text": "Die Autoscheiben sind frei gekratzt. Fahr entspannt los ❄️"
+      "text": "Ich hab die Autoscheiben schon für dich frei gekratzt. Komm gut an, Schatz ❄️"
     },
     {
       "id": "de-morning-046",
       "category": "morning",
-      "text": "Moin! Heute gibt's Pfannkuchen zum Frühstück 🥞"
+      "text": "Guten Morgen! Heute gibt es Pfannkuchen zum Frühstück 🥞"
     },
     {
       "id": "de-morning-047",
       "category": "morning",
-      "text": "Nimm heute deinen Schirm mit. Guten Morgen ☔"
+      "text": "Nimm heute lieber deinen Schirm mit, Schatz, und komm gut durch den Tag ☔"
     },
     {
       "id": "de-goodnight-028",
       "category": "goodnight",
-      "text": "Licht aus, Decke bis zur Nase. Bis morgen früh."
+      "text": "Jetzt geht das Licht aus, und die Decke kommt bis zur Nase. Bis morgen früh."
     },
     {
       "id": "de-goodnight-029",
@@ -1965,207 +1965,207 @@
     {
       "id": "de-goodnight-030",
       "category": "goodnight",
-      "text": "Morgen ist frei. Schlaf aus, so lange du willst."
+      "text": "Morgen haben wir frei, Schatz. Schlaf einfach so lange, wie du möchtest."
     },
     {
       "id": "de-goodnight-031",
       "category": "goodnight",
-      "text": "Stell dir keinen Wecker. Morgen früh weck ich dich mit Kaffee."
+      "text": "Stell dir keinen Wecker, denn morgen früh wecke ich dich mit einem Kaffee."
     },
     {
       "id": "de-goodnight-032",
       "category": "goodnight",
-      "text": "Der Mond scheint grad direkt in mein Fenster. Ich schick ihn dir rüber."
+      "text": "Der Mond scheint gerade direkt in mein Fenster, und ich schick ihn zu dir hinüber."
     },
     {
       "id": "de-goodnight-033",
       "category": "goodnight",
-      "text": "Auf deinem Kopfkissen liegt eine Kleinigkeit für dich. Träum süß."
+      "text": "Auf deinem Kopfkissen liegt eine Kleinigkeit für dich. Träum süß, Schatz."
     },
     {
       "id": "de-goodnight-034",
       "category": "goodnight",
-      "text": "Ich putz mir noch die Zähne, dann komm ich kuscheln."
+      "text": "Ich putz mir nur noch die Zähne, und dann komm ich zu dir kuscheln."
     },
     {
       "id": "de-goodnight-035",
       "category": "goodnight",
-      "text": "Ich halt dich fest, bis du eingeschlafen bist."
+      "text": "Ich halt dich im Arm, bis du eingeschlafen bist."
     },
     {
       "id": "de-goodnight-036",
       "category": "goodnight",
-      "text": "Handy aus, Kopf aus. Den Schlaf hast du dir heute verdient."
+      "text": "Leg das Handy weg und lass die Gedanken ruhen. Diesen Schlaf hast du dir verdient."
     },
     {
       "id": "de-goodnight-037",
       "category": "goodnight",
-      "text": "Träum heute vom Meer. Ich komm mit."
+      "text": "Träum heute Nacht vom Meer, Schatz. Ich komm in deinem Traum mit."
     },
     {
       "id": "de-goodnight-038",
       "category": "goodnight",
-      "text": "Danke für den Abend auf dem Sofa. Schlaf gut, du."
+      "text": "Danke für den gemütlichen Abend auf dem Sofa. Schlaf gut, Schatz."
     },
     {
       "id": "de-goodnight-039",
       "category": "goodnight",
-      "text": "Schlaf schön. Morgen machen wir einen langen Spaziergang."
+      "text": "Schlaf schön. Morgen machen wir zusammen einen langen Spaziergang."
     },
     {
       "id": "de-goodnight-040",
       "category": "goodnight",
-      "text": "Die Sterne sind heute richtig klar. Ich hab einen für dich ausgesucht."
+      "text": "Die Sterne sind heute besonders klar, und ich hab einen davon für dich ausgesucht."
     },
     {
       "id": "de-goodnight-041",
       "category": "goodnight",
-      "text": "Egal wie spät es wird, ein Gute-Nacht-Kuss von dir muss sein."
+      "text": "Egal wie spät es wird, ein Gutenachtkuss von dir gehört für mich dazu."
     },
     {
       "id": "de-goodnight-042",
       "category": "goodnight",
-      "text": "Morgen früh hol ich Brötchen. Bis dahin schlaf gut."
+      "text": "Morgen früh hol ich uns frische Brötchen. Schlaf bis dahin gut, Schatz."
     },
     {
       "id": "de-goodnight-043",
       "category": "goodnight",
-      "text": "Ich würd dir jetzt glatt was vorsingen. Nur eine Strophe, versprochen."
+      "text": "Am liebsten würde ich dir jetzt noch ein Schlaflied vorsingen. Gute Nacht."
     },
     {
       "id": "de-goodnight-044",
       "category": "goodnight",
-      "text": "Ein Glas Wasser steht neben deinem Bett. Schlaf schön."
+      "text": "Ich hab dir ein Glas Wasser ans Bett gestellt. Schlaf schön."
     },
     {
       "id": "de-goodnight-045",
       "category": "goodnight",
-      "text": "Gute Nacht. Morgen sehen wir uns endlich wieder 🌙"
+      "text": "Gute Nacht, Schatz. Morgen sehen wir uns endlich wieder 🌙"
     },
     {
       "id": "de-goodnight-046",
       "category": "goodnight",
-      "text": "Beim letzten Schluck Tee denk ich noch an dich 🍵"
+      "text": "Beim letzten Schluck Tee denk ich noch einmal an dich 🍵"
     },
     {
       "id": "de-goodnight-047",
       "category": "goodnight",
-      "text": "Ich bin froh, dass ich heute neben dir einschlafen darf 💕"
+      "text": "Ich bin so froh, dass ich heute neben dir einschlafen darf 💕"
     },
     {
       "id": "de-encouragement-028",
       "category": "encouragement",
-      "text": "Du hast dich so gut vorbereitet. Jetzt geh rein und zeig's ihnen."
+      "text": "Du hast dich so gut vorbereitet. Jetzt geh hinein und zeig, was du kannst."
     },
     {
       "id": "de-encouragement-029",
       "category": "encouragement",
-      "text": "Dein Glücksbringer steckt in der Tasche. Hab nachgeguckt."
+      "text": "Dein Glücksbringer steckt in deiner Tasche. Ich hab extra nachgeschaut."
     },
     {
       "id": "de-encouragement-030",
       "category": "encouragement",
-      "text": "Nach der Prüfung gehen wir Eis essen. Das steht schon fest."
+      "text": "Nach deiner Prüfung gehen wir zusammen Eis essen. Das steht schon fest, Schatz."
     },
     {
       "id": "de-encouragement-031",
       "category": "encouragement",
-      "text": "Du darfst stolz auf dich sein. Ich bin's schon lange."
+      "text": "Du darfst stolz auf dich sein. Ich bin es schon lange."
     },
     {
       "id": "de-encouragement-032",
       "category": "encouragement",
-      "text": "Mach dir einen Tee und fang einfach mit dem ersten Satz an."
+      "text": "Mach dir einen Tee und fang ganz in Ruhe mit dem ersten Satz an."
     },
     {
       "id": "de-encouragement-033",
       "category": "encouragement",
-      "text": "Was auch immer heute passiert, heute Abend gibt's Pizza und mich."
+      "text": "Egal was heute passiert, am Abend warten eine Pizza und ich auf dich."
     },
     {
       "id": "de-encouragement-034",
       "category": "encouragement",
-      "text": "Dein Vortrag wird gut. Ich hab dich üben hören, du bist bereit."
+      "text": "Dein Vortrag wird richtig gut. Ich hab dich üben gehört, und du bist bereit."
     },
     {
       "id": "de-encouragement-035",
       "category": "encouragement",
-      "text": "Sag mir einfach, wo ich mit anpacken kann. Wir kriegen das hin."
+      "text": "Sag mir einfach, wo ich mit anpacken kann. Zusammen bekommen wir das hin."
     },
     {
       "id": "de-encouragement-036",
       "category": "encouragement",
-      "text": "Die vielen Abende am Schreibtisch zahlen sich jetzt aus."
+      "text": "Die vielen Abende am Schreibtisch zahlen sich jetzt für dich aus."
     },
     {
       "id": "de-encouragement-037",
       "category": "encouragement",
-      "text": "Ich hab so ein gutes Gefühl für heute. Du auch?"
+      "text": "Ich hab ein richtig gutes Gefühl für heute. Geht es dir auch so?"
     },
     {
       "id": "de-encouragement-038",
       "category": "encouragement",
-      "text": "Du traust dich immer mehr. Das ist so schön zu sehen."
+      "text": "Du traust dir immer mehr zu, und das ist so schön zu sehen."
     },
     {
       "id": "de-encouragement-039",
       "category": "encouragement",
-      "text": "Erster Tag im neuen Job. Bin gespannt, wie's dir gefällt."
+      "text": "Heute ist dein erster Tag im neuen Job, und ich bin gespannt, wie es dir gefällt."
     },
     {
       "id": "de-encouragement-040",
       "category": "encouragement",
-      "text": "Geh kurz eine Runde an die frische Luft. Danach geht's leichter."
+      "text": "Geh kurz eine Runde an die frische Luft. Danach geht alles gleich leichter."
     },
     {
       "id": "de-encouragement-041",
       "category": "encouragement",
-      "text": "Bevor du anfängst: Du kannst das. Wirklich."
+      "text": "Bevor du anfängst, sollst du wissen: Du kannst das wirklich."
     },
     {
       "id": "de-encouragement-042",
       "category": "encouragement",
-      "text": "Ich halt dir heute in Gedanken die Hand. Und jetzt los."
+      "text": "Ich halt in Gedanken den ganzen Tag deine Hand, Schatz."
     },
     {
       "id": "de-encouragement-043",
       "category": "encouragement",
-      "text": "Zieh dein Lieblingsshirt an. Darin fühlst du dich stark."
+      "text": "Zieh heute dein Lieblingsshirt an. Darin fühlst du dich immer besonders wohl."
     },
     {
       "id": "de-encouragement-044",
       "category": "encouragement",
-      "text": "Schreib mir, sobald du raus bist. Ich will alles wissen."
+      "text": "Schreib mir, sobald du fertig bist. Ich möchte alles ganz genau wissen."
     },
     {
       "id": "de-encouragement-045",
       "category": "encouragement",
-      "text": "Der Sekt ist schon kalt gestellt. Für nachher, wenn du's geschafft hast 🍾"
+      "text": "Der Sekt steht schon kalt, damit wir nachher zusammen auf dich anstoßen können 🍾"
     },
     {
       "id": "de-encouragement-046",
       "category": "encouragement",
-      "text": "Mit jedem Tag wirst du sicherer. Ich merk das genau 💪"
+      "text": "Mit jedem Tag wirst du sicherer, und ich merk das ganz genau 💪"
     },
     {
       "id": "de-encouragement-047",
       "category": "encouragement",
-      "text": "Du musst heute nichts beweisen. Für mich bist du schon toll 🌟"
+      "text": "Du musst heute niemandem etwas beweisen. Für mich bist du jetzt schon großartig 🌟"
     },
     {
       "id": "de-missyou-028",
       "category": "missyou",
-      "text": "Noch dreimal schlafen, dann bist du wieder da."
+      "text": "Nur noch dreimal schlafen, dann bist du wieder bei mir, Schatz."
     },
     {
       "id": "de-missyou-029",
       "category": "missyou",
-      "text": "Hab deine Lieblingsäpfel gekauft. Die warten jetzt auf dich."
+      "text": "Deine Lieblingsäpfel sind gekauft und warten jetzt auf dich."
     },
     {
       "id": "de-missyou-030",
       "category": "missyou",
-      "text": "Wie war dein Tag? Ich will alles hören, auch die kleinen Sachen."
+      "text": "Wie war dein Tag, Schatz? Ich möchte alles hören, auch die kleinen Dinge."
     },
     {
       "id": "de-missyou-031",
@@ -2175,87 +2175,87 @@
     {
       "id": "de-missyou-032",
       "category": "missyou",
-      "text": "Unser Foto ist jetzt mein Sperrbildschirm."
+      "text": "Unser Foto ist jetzt mein Sperrbildschirm, damit ich dich immer bei mir hab."
     },
     {
       "id": "de-missyou-033",
       "category": "missyou",
-      "text": "Videocall heute Abend? Ich hab dir so viel zu erzählen."
+      "text": "Wollen wir heute Abend per Video telefonieren? Ich hab dir so viel zu erzählen."
     },
     {
       "id": "de-missyou-034",
       "category": "missyou",
-      "text": "Am Wochenende hab ich dich endlich wieder. Alles ist schon geplant."
+      "text": "Am Wochenende hab ich dich endlich wieder bei mir, und ich hab schon alles geplant."
     },
     {
       "id": "de-missyou-035",
       "category": "missyou",
-      "text": "Wie ist das Wetter bei dir? Hier wär's perfekt für uns zwei."
+      "text": "Wie ist das Wetter bei dir? Hier wäre es gerade perfekt für uns zwei."
     },
     {
       "id": "de-missyou-036",
       "category": "missyou",
-      "text": "Ich hab mir deine letzte Sprachnachricht schon fünfmal angehört."
+      "text": "Ich hab mir deine letzte Sprachnachricht schon fünfmal angehört, Schatz."
     },
     {
       "id": "de-missyou-037",
       "category": "missyou",
-      "text": "Du fehlst mir beim Frühstück. Und den restlichen Tag auch."
+      "text": "Du fehlst mir beim Frühstück, Schatz, und den restlichen Tag über auch."
     },
     {
       "id": "de-missyou-038",
       "category": "missyou",
-      "text": "In zwei Wochen sitzen wir wieder zusammen auf dem Balkon."
+      "text": "In zwei Wochen sitzen wir wieder zusammen auf dem Balkon, und darauf freu ich mich."
     },
     {
       "id": "de-missyou-039",
       "category": "missyou",
-      "text": "Dein Ankunftstag hat im Kalender ein dickes Herz."
+      "text": "Der Tag deiner Ankunft hat in meinem Kalender ein dickes Herz bekommen."
     },
     {
       "id": "de-missyou-040",
       "category": "missyou",
-      "text": "Sogar das Klimpern deiner Schlüssel fehlt mir."
+      "text": "Sogar das Klimpern deiner Schlüssel fehlt mir, Schatz."
     },
     {
       "id": "de-missyou-041",
       "category": "missyou",
-      "text": "Im Bus roch jemand nach deinem Parfum. Ich musste lächeln."
+      "text": "Im Bus hat es gerade nach deinem Parfum geduftet, und ich musste sofort lächeln."
     },
     {
       "id": "de-missyou-042",
       "category": "missyou",
-      "text": "Ich sammel schon Sachen, die ich dir zeigen will. Die Liste wird lang."
+      "text": "Ich sammle schon lauter Dinge, die ich dir zeigen möchte, und die Liste wird immer länger."
     },
     {
       "id": "de-missyou-043",
       "category": "missyou",
-      "text": "Schick mir ein Foto von da, wo du grad bist."
+      "text": "Schickst du mir ein Foto von dem Ort, an dem du gerade bist, Schatz?"
     },
     {
       "id": "de-missyou-044",
       "category": "missyou",
-      "text": "Heute schlaf ich auf deiner Seite vom Bett. Fühlt sich näher an."
+      "text": "Heute schlaf ich auf deiner Seite vom Bett, weil ich mich dir dort näher fühle."
     },
     {
       "id": "de-missyou-045",
       "category": "missyou",
-      "text": "Noch ein paar Tage, dann halt ich dich wieder fest 🤗"
+      "text": "Nur noch ein paar Tage, dann halt ich dich wieder fest in meinen Armen 🤗"
     },
     {
       "id": "de-missyou-046",
       "category": "missyou",
-      "text": "Gedanklich sitz ich schon im Zug zu dir 🚆"
+      "text": "In Gedanken sitz ich schon im Zug zu dir 🚆"
     },
     {
       "id": "de-missyou-047",
       "category": "missyou",
-      "text": "Ganz egal, wie weit weg du grad bist. Ich hab dich lieb 💌"
+      "text": "Ganz egal, wie weit du gerade weg bist, ich hab dich lieb 💌"
     },
     {
       "id": "de-compliment-028",
       "category": "compliment",
-      "text": "Deine Augen leuchten, wenn du von deinen Plänen erzählst. Ich mag das."
+      "text": "Deine Augen leuchten, wenn du von deinen Plänen erzählst, und das mag ich so sehr."
     },
     {
       "id": "de-compliment-029",
@@ -2265,252 +2265,252 @@
     {
       "id": "de-compliment-030",
       "category": "compliment",
-      "text": "Die neue Frisur steht dir richtig gut."
+      "text": "Deine neue Frisur steht dir richtig gut, Schatz."
     },
     {
       "id": "de-compliment-031",
       "category": "compliment",
-      "text": "Du riechst so gut. Ich könnt ständig an dir schnuppern."
+      "text": "Du riechst so gut, dass ich am liebsten immer ganz nah bei dir wäre."
     },
     {
       "id": "de-compliment-032",
       "category": "compliment",
-      "text": "Blau ist echt deine Farbe."
+      "text": "Blau steht dir ganz besonders gut, Schatz."
     },
     {
       "id": "de-compliment-033",
       "category": "compliment",
-      "text": "Wo nimmst du nur immer diese Ideen her? Ich bin jedes Mal baff."
+      "text": "Woher nimmst du nur immer diese tollen Ideen? Ich bin jedes Mal begeistert."
     },
     {
       "id": "de-compliment-034",
       "category": "compliment",
-      "text": "Du kochst besser als jedes Restaurant hier in der Gegend."
+      "text": "Du kochst so gut, Schatz, dass ich mich schon mittags aufs Abendessen freue."
     },
     {
       "id": "de-compliment-035",
       "category": "compliment",
-      "text": "Verschlafen am Morgen siehst du besonders süß aus."
+      "text": "Wenn du morgens noch ganz verschlafen bist, siehst du besonders süß aus."
     },
     {
       "id": "de-compliment-036",
       "category": "compliment",
-      "text": "Du kannst so gut Geschichten erzählen. Ich hör dir stundenlang zu."
+      "text": "Du kannst so schön erzählen, dass ich dir stundenlang zuhören könnte."
     },
     {
       "id": "de-compliment-037",
       "category": "compliment",
-      "text": "Wenn du's erklärst, versteh ich sogar Steuerkram. Echtes Talent."
+      "text": "Du erklärst so gut, dass ich sogar die Steuererklärung verstehe. Das ist ein echtes Talent."
     },
     {
       "id": "de-compliment-038",
       "category": "compliment",
-      "text": "Wenn du dich auf was konzentrierst, find ich dich unwiderstehlich."
+      "text": "Wenn du dich ganz auf etwas konzentrierst, find ich dich unwiderstehlich."
     },
     {
       "id": "de-compliment-039",
       "category": "compliment",
-      "text": "Ich find dich in jedem Licht schön. Auch im Kühlschranklicht um Mitternacht."
+      "text": "Ich find dich in jedem Licht schön, sogar im Licht des Kühlschranks um Mitternacht."
     },
     {
       "id": "de-compliment-040",
       "category": "compliment",
-      "text": "Deine Handschrift ist so schön, ich heb jeden Zettel von dir auf."
+      "text": "Deine Handschrift ist so schön, dass ich jeden Zettel von dir aufhebe."
     },
     {
       "id": "de-compliment-041",
       "category": "compliment",
-      "text": "Du packst Geschenke so schön ein. Fast zu schade zum Auspacken."
+      "text": "Du packst Geschenke so liebevoll ein, dass sie fast zu schade zum Auspacken sind."
     },
     {
       "id": "de-compliment-042",
       "category": "compliment",
-      "text": "Deine Ruhe tut mir so gut."
+      "text": "Deine ruhige Art tut mir so gut, Schatz."
     },
     {
       "id": "de-compliment-043",
       "category": "compliment",
-      "text": "Du bist so großzügig, sogar mit der letzten Schokolade."
+      "text": "Du bist so großzügig, dass du sogar das letzte Stück Schokolade mit mir teilst."
     },
     {
       "id": "de-compliment-044",
       "category": "compliment",
-      "text": "Wenn du unter der Dusche singst, bleib ich extra vor der Tür stehen."
+      "text": "Wenn du unter der Dusche singst, bleib ich extra vor der Tür stehen und höre zu."
     },
     {
       "id": "de-compliment-045",
       "category": "compliment",
-      "text": "Ich kann heute kaum die Augen von dir lassen 😍"
+      "text": "Ich kann heute kaum die Augen von dir lassen, Schatz 😍"
     },
     {
       "id": "de-compliment-046",
       "category": "compliment",
-      "text": "Dein Pulli heute ist so schön. Den leihst du mir mal, ja? 💛"
+      "text": "Dein Pulli heute ist so schön und steht dir ganz wunderbar 💛"
     },
     {
       "id": "de-compliment-047",
       "category": "compliment",
-      "text": "Wie du dich für andere freust, find ich wunderschön 🌸"
+      "text": "Ich find es wunderschön, wie sehr du dich für andere freuen kannst 🌸"
     },
     {
       "id": "de-humor-028",
       "category": "humor",
-      "text": "Das größere Kuchenstück ist deins. Mehr Liebe geht nicht."
+      "text": "Das größere Stück Kuchen gehört dir, denn mehr Liebe geht wirklich nicht."
     },
     {
       "id": "de-humor-029",
       "category": "humor",
-      "text": "Wenn du heimkommst, tu ich so, als hätte ich nicht auf dich gewartet."
+      "text": "Wenn du heimkommst, tu ich ganz gelassen, obwohl ich mich schon seit Stunden auf dich freue."
     },
     {
       "id": "de-humor-030",
       "category": "humor",
-      "text": "Auf dem Einkaufszettel steht unter Milch einfach dein Name. Ups."
+      "text": "Auf meinem Einkaufszettel steht direkt unter der Milch dein Name, Schatz."
     },
     {
       "id": "de-humor-031",
       "category": "humor",
-      "text": "Deine Lieblingschips sind gekauft. Bezahlt wird in Küssen."
+      "text": "Deine Lieblingschips sind gekauft, und bezahlen darfst du mit Küssen."
     },
     {
       "id": "de-humor-032",
       "category": "humor",
-      "text": "Ich üb immer noch, dich anzulächeln, ohne rot zu werden."
+      "text": "Ich übe immer noch, dich anzulächeln, ohne dabei rot zu werden."
     },
     {
       "id": "de-humor-033",
       "category": "humor",
-      "text": "Grad gegoogelt, wie man jemanden noch mehr lieben kann. Keine Treffer."
+      "text": "Ich wollte nachschlagen, wie man dich noch mehr lieben kann, aber mehr geht offenbar nicht."
     },
     {
       "id": "de-humor-034",
       "category": "humor",
-      "text": "Hab grad eine Laterne angelächelt. Ich glaub, ich bin verliebt."
+      "text": "Gerade hab ich eine Laterne angelächelt. Ich glaube, ich bin sehr in dich verliebt."
     },
     {
       "id": "de-humor-035",
       "category": "humor",
-      "text": "Wir zwei sind wie ein Paar Socken. Nur im Doppelpack gut."
+      "text": "Wir zwei sind wie ein Paar Socken, denn zusammen sind wir am schönsten."
     },
     {
       "id": "de-humor-036",
       "category": "humor",
-      "text": "Dreimal dein Foto angeschaut heute. Nur für die Statistik."
+      "text": "Heute hab ich mir schon dreimal dein Foto angeschaut, nur für die Statistik."
     },
     {
       "id": "de-humor-037",
       "category": "humor",
-      "text": "Wenn Kuscheln olympisch wär, hätten wir Gold."
+      "text": "Wenn Kuscheln olympisch wäre, hätten wir zwei längst die Goldmedaille."
     },
     {
       "id": "de-humor-038",
       "category": "humor",
-      "text": "Der Kühlschrank ist voll mit Sachen, die du magst. Reiner Zufall."
+      "text": "Der Kühlschrank ist voll mit Dingen, die du magst. Das ist natürlich reiner Zufall."
     },
     {
       "id": "de-humor-039",
       "category": "humor",
-      "text": "Probeumarmung mit dem Kissen erledigt. Du bist als Nächstes dran."
+      "text": "Die Probeumarmung mit dem Kissen ist erledigt, und jetzt bist du an der Reihe."
     },
     {
       "id": "de-humor-040",
       "category": "humor",
-      "text": "Heute bin ich so gut drauf, ich mach sogar freiwillig den Abwasch."
+      "text": "Ich bin heute so gut gelaunt, dass ich sogar freiwillig den Abwasch mache."
     },
     {
       "id": "de-humor-041",
       "category": "humor",
-      "text": "Mein Navi kennt nur noch eine Adresse. Deine."
+      "text": "Mein Navi kennt nur noch eine einzige Adresse, und das ist deine."
     },
     {
       "id": "de-humor-042",
       "category": "humor",
-      "text": "Ich hab dich lieber als ausschlafen. Und das heißt was."
+      "text": "Ich hab dich sogar lieber als Ausschlafen, und das will wirklich etwas heißen."
     },
     {
       "id": "de-humor-043",
       "category": "humor",
-      "text": "Bei dir hab ich eine Kuschel-Flatrate. Kündigen ausgeschlossen."
+      "text": "Bei dir hab ich eine Kuschel-Flatrate ohne Kündigungsfrist."
     },
     {
       "id": "de-humor-044",
       "category": "humor",
-      "text": "Offizielle Einladung zum Date. Dresscode: Jogginghose."
+      "text": "Hiermit lade ich dich offiziell zu einem Date ein. Der Dresscode ist Jogginghose."
     },
     {
       "id": "de-humor-045",
       "category": "humor",
-      "text": "Popcorn ist fertig. Du bist für die Filmauswahl zuständig 🍿"
+      "text": "Das Popcorn ist fertig, und du darfst den Film aussuchen 🍿"
     },
     {
       "id": "de-humor-046",
       "category": "humor",
-      "text": "Hab grad laut über deine Nachricht gelacht. Im Supermarkt 😄"
+      "text": "Über deine Nachricht hab ich gerade mitten im Supermarkt laut gelacht 😄"
     },
     {
       "id": "de-humor-047",
       "category": "humor",
-      "text": "Ich hab dich zum Fressen gern. Ehrlich 😋"
+      "text": "Ich hab dich zum Fressen gern, Schatz 😋"
     },
     {
       "id": "de-thanks-028",
       "category": "thanks",
-      "text": "Danke fürs Abholen vom Bahnhof. Im Regen, um elf Uhr nachts."
+      "text": "Du hast mich nachts um elf im Regen vom Bahnhof abgeholt. Danke, das war so lieb."
     },
     {
       "id": "de-thanks-029",
       "category": "thanks",
-      "text": "Du hast mir einfach so Blumen mitgebracht. Ich freu mich immer noch."
+      "text": "Du hast mir einfach so Blumen mitgebracht, und ich freu mich immer noch darüber."
     },
     {
       "id": "de-thanks-030",
       "category": "thanks",
-      "text": "Den ganzen Einkauf hast du heute geschleppt. Meine Arme danken dir."
+      "text": "Du hast heute den ganzen Einkauf getragen, und meine Arme danken es dir."
     },
     {
       "id": "de-thanks-031",
       "category": "thanks",
-      "text": "Dass du meine Mama angerufen hast, fand ich so lieb. Danke."
+      "text": "Ich fand es so lieb, dass du meine Mama angerufen hast. Danke dafür."
     },
     {
       "id": "de-thanks-032",
       "category": "thanks",
-      "text": "Danke für den Tee, den du mir ans Bett gebracht hast."
+      "text": "Danke für den Tee, den du mir ans Bett gebracht hast, Schatz."
     },
     {
       "id": "de-thanks-033",
       "category": "thanks",
-      "text": "Letzter Umzugskarton ausgepackt. Danke für deine Muskeln."
+      "text": "Der letzte Umzugskarton ist ausgepackt. Danke für deine starken Arme, Schatz."
     },
     {
       "id": "de-thanks-034",
       "category": "thanks",
-      "text": "Dein Päckchen ist angekommen. Danke, ich grins seitdem die ganze Zeit."
+      "text": "Dein Päckchen ist angekommen, und seitdem lächle ich die ganze Zeit. Danke dir."
     },
     {
       "id": "de-thanks-035",
       "category": "thanks",
-      "text": "Danke für die Massage gestern. Ich fühl mich wie neu."
+      "text": "Danke für die Massage gestern. Ich fühl mich wie neugeboren."
     },
     {
       "id": "de-thanks-036",
       "category": "thanks",
-      "text": "Du hast heute an alles gedacht. Danke, das war so entspannt."
+      "text": "Du hast heute an alles gedacht, und dadurch war der Tag so entspannt. Danke, Schatz."
     },
     {
       "id": "de-thanks-037",
       "category": "thanks",
-      "text": "Merci für den schönen Ausflug. Den Tag behalt ich lange im Kopf."
+      "text": "Danke für den schönen Ausflug. An diesen Tag werde ich noch lange denken."
     },
     {
       "id": "de-thanks-038",
       "category": "thanks",
-      "text": "Mein Fahrrad läuft wieder, und ich musste nicht mal fragen. Danke!"
+      "text": "Mein Fahrrad läuft wieder, und ich musste dich nicht einmal darum bitten. Danke!"
     },
     {
       "id": "de-thanks-039",
       "category": "thanks",
-      "text": "Nach dem Spaziergang mit dir ist mein Kopf frei. Danke."
+      "text": "Nach dem Spaziergang mit dir ist mein Kopf wieder ganz frei. Danke dafür."
     },
     {
       "id": "de-thanks-040",
@@ -2520,147 +2520,147 @@
     {
       "id": "de-thanks-041",
       "category": "thanks",
-      "text": "Die Überraschung zum Jahrestag hat mich umgehauen. Danke dir."
+      "text": "Deine Überraschung zum Jahrestag hat mich überwältigt. Danke, Schatz."
     },
     {
       "id": "de-thanks-042",
       "category": "thanks",
-      "text": "Lieb, dass du dich gemeldet hast, als du angekommen bist."
+      "text": "Es war so lieb, dass du dich gleich gemeldet hast, als du angekommen bist."
     },
     {
       "id": "de-thanks-043",
       "category": "thanks",
-      "text": "Dank dir hab ich den Zug noch erwischt. Was würd ich ohne dich machen?"
+      "text": "Dank dir hab ich den Zug noch erwischt. Was würde ich nur ohne dich machen?"
     },
     {
       "id": "de-thanks-044",
       "category": "thanks",
-      "text": "Danke, dass du meine Pflanzen gegossen hast, während ich weg war."
+      "text": "Meine Pflanzen sehen prächtig aus. Danke, dass du sie gegossen hast, während ich unterwegs war."
     },
     {
       "id": "de-thanks-045",
       "category": "thanks",
-      "text": "Was für ein schönes Wochenende. Danke dafür 🌞"
+      "text": "Das war ein wunderschönes Wochenende mit dir. Vielen Dank dafür 🌞"
     },
     {
       "id": "de-thanks-046",
       "category": "thanks",
-      "text": "Mit der Schokolade hast du mir den Tag versüßt. Danke 🍫"
+      "text": "Mit der Schokolade hast du mir den ganzen Tag versüßt. Danke, Schatz 🍫"
     },
     {
       "id": "de-thanks-047",
       "category": "thanks",
-      "text": "Ein riesiges Danke für das Picknick im Park 🌳"
+      "text": "Ein riesiges Dankeschön für das Picknick im Park 🌳"
     },
     {
       "id": "de-apology-028",
       "category": "apology",
-      "text": "Heute Abend hab ich nur Zeit für dich. Lass uns in Ruhe reden."
+      "text": "Heute Abend hab ich nur Zeit für dich, und dann reden wir in aller Ruhe."
     },
     {
       "id": "de-apology-029",
       "category": "apology",
-      "text": "Was du gesagt hast, nehm ich mir zu Herzen. Wirklich."
+      "text": "Was du gesagt hast, nehme ich mir wirklich zu Herzen, Schatz."
     },
     {
       "id": "de-apology-030",
       "category": "apology",
-      "text": "Sorry, Anruf verpasst. Ich ruf dich gleich zurück."
+      "text": "Entschuldige, ich hab deinen Anruf verpasst. Ich rufe dich gleich zurück."
     },
     {
       "id": "de-apology-031",
       "category": "apology",
-      "text": "Ich hab dir einen Kuchen gebacken. Mit extra viel Sorry."
+      "text": "Ich hab dir einen Kuchen gebacken, und zwar mit einer extra großen Portion Entschuldigung."
     },
     {
       "id": "de-apology-032",
       "category": "apology",
-      "text": "Verzeihst du mir? Ich hab Schokolade dabei."
+      "text": "Verzeihst du mir, Schatz? Ich hab auch Schokolade mitgebracht."
     },
     {
       "id": "de-apology-033",
       "category": "apology",
-      "text": "Hab drüber nachgedacht. Du hast da einen guten Punkt."
+      "text": "Ich hab darüber nachgedacht, und du hast damit einen wirklich guten Punkt."
     },
     {
       "id": "de-apology-034",
       "category": "apology",
-      "text": "Lass uns heute noch einen schönen Abend draus machen, ja?"
+      "text": "Lass uns aus dem heutigen Tag noch einen schönen Abend machen, ja?"
     },
     {
       "id": "de-apology-035",
       "category": "apology",
-      "text": "Nächstes Mal sag ich dir früher Bescheid. Versprochen."
+      "text": "Beim nächsten Mal sag ich dir früher Bescheid, versprochen."
     },
     {
       "id": "de-apology-036",
       "category": "apology",
-      "text": "Bei mir sollst du dich immer wohlfühlen. Entschuldige wegen vorhin."
+      "text": "Bei mir sollst du dich immer wohlfühlen. Entschuldige bitte wegen vorhin."
     },
     {
       "id": "de-apology-037",
       "category": "apology",
-      "text": "Lass uns morgen was Schönes unternehmen. Nur wir zwei, zur Versöhnung."
+      "text": "Lass uns morgen zur Versöhnung etwas Schönes unternehmen, nur wir zwei."
     },
     {
       "id": "de-apology-038",
       "category": "apology",
-      "text": "Tut mir leid wegen gestern. Heute bin ich pünktlich da."
+      "text": "Es tut mir leid wegen gestern, Schatz. Heute bin ich ganz pünktlich bei dir."
     },
     {
       "id": "de-apology-039",
       "category": "apology",
-      "text": "Ich hör dir jetzt richtig zu. Erzähl mir alles noch mal von vorn."
+      "text": "Ich höre dir jetzt ganz aufmerksam zu. Erzählst du mir alles noch einmal von vorn?"
     },
     {
       "id": "de-apology-040",
       "category": "apology",
-      "text": "Komm her, lass dich drücken. Dann reden wir weiter."
+      "text": "Komm her und lass dich drücken, Schatz. Danach reden wir in Ruhe weiter."
     },
     {
       "id": "de-apology-041",
       "category": "apology",
-      "text": "Sorry für heute Morgen. Ich mach's heute Abend mit Küssen wieder gut."
+      "text": "Entschuldige wegen heute Morgen. Heute Abend mach ich es mit vielen Küssen wieder gut."
     },
     {
       "id": "de-apology-042",
       "category": "apology",
-      "text": "Wir finden zusammen eine Lösung. Da bin ich mir sicher."
+      "text": "Zusammen finden wir immer eine gute Lösung, da bin ich mir sicher."
     },
     {
       "id": "de-apology-043",
       "category": "apology",
-      "text": "Wünsch dir was fürs Wochenende. Ich mach's dir schön."
+      "text": "Wünsch dir etwas fürs Wochenende, Schatz. Ich mach es dir so richtig schön."
     },
     {
       "id": "de-apology-044",
       "category": "apology",
-      "text": "Sag mir immer, wenn dich was beschäftigt. Dafür bin ich da."
+      "text": "Sag mir bitte immer, wenn dich etwas beschäftigt. Dafür bin ich da."
     },
     {
       "id": "de-apology-045",
       "category": "apology",
-      "text": "Mir ist wichtig, wie es dir geht. Was brauchst du gerade? 🤗"
+      "text": "Mir ist wichtig, wie es dir geht. Was brauchst du gerade von mir? 🤗"
     },
     {
       "id": "de-apology-046",
       "category": "apology",
-      "text": "Frieden? Ich bring Kaffee mit ☕"
+      "text": "Schließen wir Frieden, Schatz? Ich bringe auch Kaffee mit ☕"
     },
     {
       "id": "de-apology-047",
       "category": "apology",
-      "text": "Wir dürfen verschiedener Meinung sein. Lieb hab ich dich trotzdem 💕"
+      "text": "Wir dürfen verschiedener Meinung sein, und lieb hab ich dich immer 💕"
     },
     {
       "id": "de-emoji-031",
       "category": "emoji",
-      "text": "Süße Träume 🌙⭐"
+      "text": "Süße Träume, Schatz 🌙⭐"
     },
     {
       "id": "de-emoji-032",
       "category": "emoji",
-      "text": "Kaffee ist fertig ☕😊"
+      "text": "Der Kaffee ist fertig ☕😊"
     },
     {
       "id": "de-emoji-033",
@@ -2670,27 +2670,27 @@
     {
       "id": "de-emoji-034",
       "category": "emoji",
-      "text": "Eis essen? 🍦😋"
+      "text": "Gehen wir Eis essen? 🍦😋"
     },
     {
       "id": "de-emoji-035",
       "category": "emoji",
-      "text": "Endlich Wochenende 🙌😊"
+      "text": "Endlich Wochenende mit dir 🙌😊"
     },
     {
       "id": "de-emoji-036",
       "category": "emoji",
-      "text": "Dicker Schmatzer 😘😘"
+      "text": "Dicker Schmatzer für dich 😘😘"
     },
     {
       "id": "de-emoji-037",
       "category": "emoji",
-      "text": "Freu mich auf heute Abend 🍷🕯️"
+      "text": "Ich freu mich auf heute Abend 🍷🕯️"
     },
     {
       "id": "de-emoji-038",
       "category": "emoji",
-      "text": "Daumen sind gedrückt 🤞🍀"
+      "text": "Meine Daumen sind gedrückt 🤞🍀"
     },
     {
       "id": "de-emoji-039",
@@ -2700,32 +2700,32 @@
     {
       "id": "de-emoji-040",
       "category": "emoji",
-      "text": "Geburtstagskuss für dich 🎂😘"
+      "text": "Ein Geburtstagskuss für dich 🎂😘"
     },
     {
       "id": "de-emoji-041",
       "category": "emoji",
-      "text": "Ausflug am Sonntag? 🚲☀️"
+      "text": "Machen wir am Sonntag einen Ausflug? 🚲☀️"
     },
     {
       "id": "de-emoji-042",
       "category": "emoji",
-      "text": "Filmabend? 🎬🍿"
+      "text": "Filmabend mit dir? 🎬🍿"
     },
     {
       "id": "de-emoji-043",
       "category": "emoji",
-      "text": "Alles Gute zum Jahrestag 🎉💕"
+      "text": "Alles Gute zum Jahrestag, Schatz 🎉💕"
     },
     {
       "id": "de-emoji-044",
       "category": "emoji",
-      "text": "Auf uns 🥂❤️"
+      "text": "Auf uns zwei 🥂❤️"
     },
     {
       "id": "de-emoji-045",
       "category": "emoji",
-      "text": "Frühstück ans Bett? 🥐☕"
+      "text": "Frühstück ans Bett für dich? 🥐☕"
     },
     {
       "id": "de-emoji-046",
@@ -2735,22 +2735,22 @@
     {
       "id": "de-emoji-047",
       "category": "emoji",
-      "text": "Mein Glücksgriff 🎁💛"
+      "text": "Du bist mein Glücksgriff 🎁💛"
     },
     {
       "id": "de-emoji-048",
       "category": "emoji",
-      "text": "Bis nachher 👋😘"
+      "text": "Bis nachher, Schatz 👋😘"
     },
     {
       "id": "de-emoji-049",
       "category": "emoji",
-      "text": "Gute Fahrt 🚗💕"
+      "text": "Gute Fahrt, Schatz 🚗💕"
     },
     {
       "id": "de-emoji-050",
       "category": "emoji",
-      "text": "Kuschelzeit 🤗🛋️"
+      "text": "Kuschelzeit mit dir 🤗🛋️"
     },
     {
       "id": "de-ascii-031",
@@ -2780,12 +2780,12 @@
     {
       "id": "de-ascii-036",
       "category": "ascii",
-      "text": "Ab ins Bett zzZ <3"
+      "text": "Schlaf schön, Schatz zzZ <3"
     },
     {
       "id": "de-ascii-037",
       "category": "ascii",
-      "text": "Moin (^_^)/"
+      "text": "Hallo, Schatz (^_^)/"
     },
     {
       "id": "de-ascii-038",
@@ -2830,7 +2830,7 @@
     {
       "id": "de-ascii-046",
       "category": "ascii",
-      "text": "Bis heute Abend ^_^"
+      "text": "Bis heute Abend, Schatz ^_^"
     },
     {
       "id": "de-ascii-047",
@@ -2845,7 +2845,7 @@
     {
       "id": "de-ascii-049",
       "category": "ascii",
-      "text": "Verliebt ♥‿♥"
+      "text": "Verliebt in dich ♥‿♥"
     },
     {
       "id": "de-ascii-050",
@@ -2855,482 +2855,482 @@
     {
       "id": "de-love-048",
       "category": "love",
-      "text": "Beim Film schläfst du ein, ich deck dich zu. Meine liebsten Abende."
+      "text": "Wenn du beim Film einschläfst und ich dich zudecke, sind das meine liebsten Abende."
     },
     {
       "id": "de-love-049",
       "category": "love",
-      "text": "Lieber sag ich's einmal zu oft. Ich liebe dich."
+      "text": "Ich sag es lieber einmal zu oft als einmal zu wenig: Ich liebe dich, Schatz."
     },
     {
       "id": "de-love-050",
       "category": "love",
-      "text": "Weißt du, was ich an uns mag? Dass wir über dieselben Sachen lachen."
+      "text": "Weißt du, was ich an uns so mag? Dass wir über dieselben Dinge lachen können."
     },
     {
       "id": "de-love-051",
       "category": "love",
-      "text": "Dein Kopf auf meiner Schulter. Genau so soll der Abend sein."
+      "text": "Wenn dein Kopf auf meiner Schulter liegt, ist der Abend genau so, wie er sein soll."
     },
     {
       "id": "de-love-052",
       "category": "love",
-      "text": "Wie du mir zuhörst, mit dem Kinn in der Hand. Ich liebe dich dafür."
+      "text": "Ich liebe es, wie aufmerksam du mir zuhörst, auch bei meinen längsten Geschichten."
     },
     {
       "id": "de-love-053",
       "category": "love",
-      "text": "Jede Runde um den Block mit dir ist ein kleines Date."
+      "text": "Jede Runde um den Block ist mit dir wie ein kleines Date."
     },
     {
       "id": "de-love-054",
       "category": "love",
-      "text": "Sogar Schweigen ist mit dir gemütlich."
+      "text": "Mit dir muss ich nicht einmal reden, um mich rundum wohlzufühlen."
     },
     {
       "id": "de-love-055",
       "category": "love",
-      "text": "Unsere Insider versteht keiner außer uns. Ich liebe das."
+      "text": "Ich liebe es, dass wir unsere eigenen kleinen Witze haben, die nur wir zwei verstehen."
     },
     {
       "id": "de-love-056",
       "category": "love",
-      "text": "Ich glaub, wir machen das ziemlich gut, wir zwei."
+      "text": "Ich finde, wir zwei machen das ziemlich gut zusammen, Schatz."
     },
     {
       "id": "de-love-057",
       "category": "love",
-      "text": "Ein ganz normaler Tag mit dir fühlt sich an wie Urlaub."
+      "text": "Ein ganz normaler Tag fühlt sich mit dir an wie ein kleiner Urlaub."
     },
     {
       "id": "de-love-058",
       "category": "love",
-      "text": "Du wippst beim Kochen zur Musik. Ich könnt dir ewig zuschauen."
+      "text": "Wenn du beim Kochen zur Musik wippst, könnte ich dir ewig zuschauen."
     },
     {
       "id": "de-love-059",
       "category": "love",
-      "text": "Lieb hab ich dich. Ganz ohne Kleingedrucktes."
+      "text": "Meine Liebe zu dir kommt ganz ohne Kleingedrucktes aus, Schatz."
     },
     {
       "id": "de-love-060",
       "category": "love",
-      "text": "Ich lieb dich, klar. Aber ich mag dich auch einfach gern."
+      "text": "Schatz, ich liebe dich, und außerdem mag ich dich einfach unheimlich gern."
     },
     {
       "id": "de-love-061",
       "category": "love",
-      "text": "Kein Emoji kann sagen, wie lieb ich dich hab. Das hier versucht's ❤️"
+      "text": "Kein Emoji kann zeigen, wie lieb ich dich hab, aber dieses hier gibt sich Mühe ❤️"
     },
     {
       "id": "de-love-062",
       "category": "love",
-      "text": "Unser Lied lief grad im Radio 🎶 Ich hab sofort an dich gedacht"
+      "text": "Gerade lief unser Lied im Radio, und ich hab sofort an dich gedacht 🎶"
     },
     {
       "id": "de-love-063",
       "category": "love",
-      "text": "Heute nichts vorhaben, nur du und ich. Besser wird's nicht ☀️"
+      "text": "Heute haben wir nichts vor und nur Zeit für uns zwei. Schöner kann ein Tag nicht sein ☀️"
     },
     {
       "id": "de-love-064",
       "category": "love",
-      "text": "So viele Orte will ich noch mit dir sehen 🗺️"
+      "text": "Schatz, ich möchte noch so viele Orte zusammen mit dir sehen 🗺️"
     },
     {
       "id": "de-love-065",
       "category": "love",
-      "text": "Neben dir aufwachen ist jedes Mal wieder schön."
+      "text": "Neben dir aufzuwachen ist jeden Morgen wieder schön."
     },
     {
       "id": "de-love-066",
       "category": "love",
-      "text": "Hab ich dir heute schon gesagt, dass ich dich liebe? Dann jetzt."
+      "text": "Hab ich dir heute schon gesagt, dass ich dich liebe? Falls nicht, sag ich es dir jetzt."
     },
     {
       "id": "de-love-067",
       "category": "love",
-      "text": "Ich drück dich heute Abend so lange, bis du lachst 🤗"
+      "text": "Heute Abend nehm ich dich ganz lange in den Arm, Schatz 🤗"
     },
     {
       "id": "de-appreciation-048",
       "category": "appreciation",
-      "text": "Sogar beim Busfahrer bedankst du dich. Find ich schön."
+      "text": "Du bedankst dich sogar beim Busfahrer, und genau solche Dinge liebe ich an dir."
     },
     {
       "id": "de-appreciation-049",
       "category": "appreciation",
-      "text": "Du bringst mir immer was vom Bäcker mit, ohne dass ich frag."
+      "text": "Du bringst mir immer etwas vom Bäcker mit, ohne dass ich darum bitten muss."
     },
     {
       "id": "de-appreciation-050",
       "category": "appreciation",
-      "text": "In den wichtigen Momenten findest du die richtigen Worte."
+      "text": "In den wichtigen Momenten findest du immer die richtigen Worte, Schatz."
     },
     {
       "id": "de-appreciation-051",
       "category": "appreciation",
-      "text": "Neben dir im Auto fühl ich mich sicher."
+      "text": "Wenn du am Steuer sitzt, fühl ich mich neben dir vollkommen sicher."
     },
     {
       "id": "de-appreciation-052",
       "category": "appreciation",
-      "text": "Jeden Abend hörst du dir meine Arbeitsgeschichten an. Das ist echt lieb."
+      "text": "Du hörst dir jeden Abend meine Geschichten von der Arbeit an, und danach geht es mir immer richtig gut."
     },
     {
       "id": "de-appreciation-053",
       "category": "appreciation",
-      "text": "Irgendwie hast du immer ein Taschentuch dabei, wenn ich eins brauch."
+      "text": "Schatz, du hast immer genau dann ein Taschentuch dabei, wenn ich eins brauche."
     },
     {
       "id": "de-appreciation-054",
       "category": "appreciation",
-      "text": "Die Geburtstage von allen hast du im Kopf. Ich bin jedes Mal beeindruckt."
+      "text": "Du hast die Geburtstage von allen im Kopf, und das beeindruckt mich jedes Mal."
     },
     {
       "id": "de-appreciation-055",
       "category": "appreciation",
-      "text": "Mit meiner Familie verstehst du dich so gut. Das bedeutet mir viel."
+      "text": "Du verstehst dich so gut mit meiner Familie, und das macht mich richtig glücklich."
     },
     {
       "id": "de-appreciation-056",
       "category": "appreciation",
-      "text": "Meistens hast du schon einen Plan, bevor ich überhaupt frage."
+      "text": "Meistens hast du schon einen Plan, bevor ich überhaupt fragen kann, Schatz."
     },
     {
       "id": "de-appreciation-057",
       "category": "appreciation",
-      "text": "Über dich selbst lachen kannst du so gut. Das mag ich sehr."
+      "text": "Du bist so humorvoll, Schatz, und bringst damit alle um dich herum zum Lächeln."
     },
     {
       "id": "de-appreciation-058",
       "category": "appreciation",
-      "text": "Wenn du von deinen Freunden erzählst, hört man, wie gern du sie hast."
+      "text": "Wenn du von deinen Freunden erzählst, hört man sofort, wie gern du sie hast."
     },
     {
       "id": "de-appreciation-059",
       "category": "appreciation",
-      "text": "Du hast mir so viel Zeit gelassen, wie ich gebraucht hab. Danke."
+      "text": "Du hast mir so viel Zeit gelassen, wie ich gebraucht hab. Das war sehr lieb von dir."
     },
     {
       "id": "de-appreciation-060",
       "category": "appreciation",
-      "text": "Kaum ist was zu tun, packst du schon mit an."
+      "text": "Sobald es etwas zu tun gibt, packst du ganz selbstverständlich mit an."
     },
     {
       "id": "de-appreciation-061",
       "category": "appreciation",
-      "text": "An meine Lieblingssorte hast du gedacht 🍦 So aufmerksam von dir"
+      "text": "Du hast sogar an meine Lieblingssorte gedacht. Das ist so aufmerksam von dir, Schatz 🍦"
     },
     {
       "id": "de-appreciation-062",
       "category": "appreciation",
-      "text": "Abwasch mit dir geht doppelt so schnell 🍽️"
+      "text": "Wenn wir zusammen abwaschen, sind wir doppelt so schnell fertig 🍽️"
     },
     {
       "id": "de-appreciation-063",
       "category": "appreciation",
-      "text": "Von dir hab ich so viel gelernt 📚"
+      "text": "Schatz, von dir hab ich schon so viel gelernt 📚"
     },
     {
       "id": "de-appreciation-064",
       "category": "appreciation",
-      "text": "Beim Einkaufen denkst du auch an mich 🛒"
+      "text": "Beim Einkaufen denkst du immer auch an mich, und darüber freu ich mich sehr 🛒"
     },
     {
       "id": "de-appreciation-065",
       "category": "appreciation",
-      "text": "Bei uns fühlt sich jeder Besuch wohl. Dein Verdienst 🏡"
+      "text": "Bei uns fühlt sich jeder Besuch sofort wohl, und das ist dein Verdienst 🏡"
     },
     {
       "id": "de-appreciation-066",
       "category": "appreciation",
-      "text": "Du gibst so gute Ratschläge. Und drängst sie keinem auf."
+      "text": "Du gibst so gute Ratschläge, und ich höre immer gern auf dich."
     },
     {
       "id": "de-appreciation-067",
       "category": "appreciation",
-      "text": "Freunde ziehen um, und du schleppst ganz selbstverständlich mit."
+      "text": "Wenn Freunde umziehen, bist du sofort zur Stelle und hilfst beim Tragen. Du bist einfach großartig."
     },
     {
       "id": "de-morning-048",
       "category": "morning",
-      "text": "Hab dein Handtuch auf die Heizung gehängt. Schön warm für dich."
+      "text": "Ich hab dein Handtuch auf die Heizung gelegt, damit es schön warm für dich ist."
     },
     {
       "id": "de-morning-049",
       "category": "morning",
-      "text": "Auf deiner Zahnbürste ist schon Zahnpasta. Kleiner Service von mir."
+      "text": "Auf deiner Zahnbürste ist schon Zahnpasta. Das ist mein kleiner Morgengruß an dich."
     },
     {
       "id": "de-morning-050",
       "category": "morning",
-      "text": "Dein Pausenbrot ist geschmiert. Mit einem kleinen Extra drin."
+      "text": "Dein Pausenbrot ist fertig, und ich hab dir noch eine kleine Überraschung dazugepackt."
     },
     {
       "id": "de-morning-051",
       "category": "morning",
-      "text": "Als Erstes heute früh deine Nachricht gelesen. So darf jeder Tag anfangen."
+      "text": "Heute früh hab ich als Erstes deine Nachricht gelesen. So darf gern jeder Tag anfangen."
     },
     {
       "id": "de-morning-052",
       "category": "morning",
-      "text": "Du hast im Schlaf gelächelt 😊 Was hast du geträumt?"
+      "text": "Du hast im Schlaf gelächelt. Was hast du denn Schönes geträumt? 😊"
     },
     {
       "id": "de-morning-053",
       "category": "morning",
-      "text": "Dein Lächeln von heute früh hält bei mir bis mittags."
+      "text": "Dein Lächeln von heute früh begleitet mich durch den ganzen Vormittag."
     },
     {
       "id": "de-morning-054",
       "category": "morning",
-      "text": "Nur ein Termin steht heute im Kalender. Du."
+      "text": "In meinem Kalender steht heute nur ein wichtiger Termin, und das bist du."
     },
     {
       "id": "de-morning-055",
       "category": "morning",
-      "text": "Werd in Ruhe wach. Der Rest kommt von allein."
+      "text": "Wach ganz in Ruhe auf, Schatz. Alles andere ergibt sich von allein."
     },
     {
       "id": "de-morning-056",
       "category": "morning",
-      "text": "Ich muss los, aber ein Gruß an dich geht immer."
+      "text": "Ich muss gleich los, aber für einen lieben Gruß an dich ist immer Zeit."
     },
     {
       "id": "de-morning-057",
       "category": "morning",
-      "text": "Ich bin gespannt, was du mir nachher alles erzählst."
+      "text": "Ich bin schon gespannt, was du mir heute Abend alles erzählst."
     },
     {
       "id": "de-morning-058",
       "category": "morning",
-      "text": "Ich hab uns Rührei gemacht 🍳 Komm, solange es warm ist"
+      "text": "Ich hab uns Rührei gemacht. Komm, solange es noch warm ist 🍳"
     },
     {
       "id": "de-morning-059",
       "category": "morning",
-      "text": "Aufstehen geht leichter, wenn ich weiß, dass du da bist 🌅"
+      "text": "Das Aufstehen fällt mir leichter, weil ich weiß, dass es dich gibt 🌅"
     },
     {
       "id": "de-morning-060",
       "category": "morning",
-      "text": "Heute ist ein guter Tag für eine lange Umarmung."
+      "text": "Heute ist ein guter Tag für eine lange Umarmung, Schatz."
     },
     {
       "id": "de-morning-061",
       "category": "morning",
-      "text": "Mittags ruf ich dich an 📞 Halt dir fünf Minuten frei"
+      "text": "Ich ruf dich heute Mittag an. Hältst du dir fünf Minuten für mich frei? 📞"
     },
     {
       "id": "de-morning-062",
       "category": "morning",
-      "text": "Ich fahr dich heute 🚗 Du hast also noch Zeit fürs Frühstück"
+      "text": "Ich fahr dich heute, Schatz. Du hast also noch genug Zeit fürs Frühstück 🚗"
     },
     {
       "id": "de-morning-063",
       "category": "morning",
-      "text": "Viel Spaß heute bei allem, was du vorhast."
+      "text": "Ich wünsch dir heute viel Freude bei allem, was du vorhast."
     },
     {
       "id": "de-morning-064",
       "category": "morning",
-      "text": "Du hast heute Nacht meine Hand gehalten. Hab ich gemerkt."
+      "text": "Du hast heute Nacht im Schlaf meine Hand gehalten, und das war so schön."
     },
     {
       "id": "de-morning-065",
       "category": "morning",
-      "text": "Du bist schon weg, und ich lieg noch hier und lächle."
+      "text": "Du bist schon aus dem Haus, und ich liege noch hier und lächle."
     },
     {
       "id": "de-morning-066",
       "category": "morning",
-      "text": "Lust auf einen Spaziergang vor der Arbeit? Ich bin schon angezogen."
+      "text": "Hast du Lust auf einen kleinen Spaziergang vor der Arbeit? Ich bin schon fertig angezogen."
     },
     {
       "id": "de-morning-067",
       "category": "morning",
-      "text": "Das Bad gehört heute zuerst dir."
+      "text": "Das Bad gehört heute Morgen zuerst dir, Schatz."
     },
     {
       "id": "de-goodnight-048",
       "category": "goodnight",
-      "text": "Wenn du nicht einschlafen kannst, ruf mich ruhig an."
+      "text": "Falls du nicht einschlafen kannst, darfst du mich jederzeit anrufen."
     },
     {
       "id": "de-goodnight-049",
       "category": "goodnight",
-      "text": "Kopf aufs Kissen und an was Schönes denken. An uns zum Beispiel."
+      "text": "Leg den Kopf aufs Kissen und denk an etwas Schönes, zum Beispiel an uns beide."
     },
     {
       "id": "de-goodnight-050",
       "category": "goodnight",
-      "text": "Schäfchen zählen? Ich denk lieber an dich 🐑"
+      "text": "Statt Schäfchen zu zählen, denk ich heute Abend lieber an dich 🐑"
     },
     {
       "id": "de-goodnight-051",
       "category": "goodnight",
-      "text": "Dein Gute-Nacht am Telefon klingt bei mir noch nach."
+      "text": "Dein liebes Gute Nacht am Telefon klingt in mir noch nach."
     },
     {
       "id": "de-goodnight-052",
       "category": "goodnight",
-      "text": "Ich freu mich jetzt schon aufs Frühstück mit dir."
+      "text": "Ich freu mich jetzt schon auf das Frühstück mit dir, Schatz."
     },
     {
       "id": "de-goodnight-053",
       "category": "goodnight",
-      "text": "Noch eine Folge? Ach komm, ab ins Bett mit uns zwei 📺"
+      "text": "Die nächste Folge schauen wir morgen. Jetzt kuscheln wir uns ins Bett 📺"
     },
     {
       "id": "de-goodnight-054",
       "category": "goodnight",
-      "text": "Du hast heute Abend so schön gelacht. Daran denk ich beim Einschlafen."
+      "text": "Du hast heute Abend so schön gelacht, und daran denk ich jetzt beim Einschlafen."
     },
     {
       "id": "de-goodnight-055",
       "category": "goodnight",
-      "text": "Wenn du neben mir atmest, schlaf ich sofort ein."
+      "text": "Wenn ich dich neben mir atmen höre, schlaf ich sofort ein."
     },
     {
       "id": "de-goodnight-056",
       "category": "goodnight",
-      "text": "Ich bleib noch wach, bis du zu Hause bist."
+      "text": "Ich bleib noch wach, bis du gut zu Hause angekommen bist."
     },
     {
       "id": "de-goodnight-057",
       "category": "goodnight",
-      "text": "Du schläfst schon, oder? Dann lies das morgen früh. Ich liebe dich."
+      "text": "Du schläfst bestimmt schon. Dann liest du eben morgen früh, dass ich dich liebe."
     },
     {
       "id": "de-goodnight-058",
       "category": "goodnight",
-      "text": "Dein Gähnen eben war ansteckend. Ich geh jetzt auch schlafen."
+      "text": "Dein Gähnen eben war ansteckend, Schatz. Ich geh jetzt auch schlafen."
     },
     {
       "id": "de-goodnight-059",
       "category": "goodnight",
-      "text": "Der Rest hat Zeit bis morgen. Jetzt wird geschlafen."
+      "text": "Alles andere hat Zeit bis morgen. Jetzt darfst du dich ausruhen, Schatz."
     },
     {
       "id": "de-goodnight-060",
       "category": "goodnight",
-      "text": "Hast du's warm genug? Dann schlaf gut."
+      "text": "Ich hoffe, du hast es schön warm unter deiner Decke. Schlaf gut."
     },
     {
       "id": "de-goodnight-061",
       "category": "goodnight",
-      "text": "Ich hab heute so gern Zeit mit dir verbracht 💛"
+      "text": "Ich hab heute so gern Zeit mit dir verbracht, Schatz 💛"
     },
     {
       "id": "de-goodnight-062",
       "category": "goodnight",
-      "text": "Wärm mir schon mal die Decke vor 🛏️ Ich komm gleich"
+      "text": "Wärmst du mir schon mal die Decke vor? Ich komm gleich zu dir 🛏️"
     },
     {
       "id": "de-goodnight-063",
       "category": "goodnight",
-      "text": "Schlaf gut vor deinem großen Tag. Morgen Abend stoßen wir an."
+      "text": "Schlaf gut vor deinem großen Tag. Morgen Abend stoßen wir darauf an."
     },
     {
       "id": "de-goodnight-064",
       "category": "goodnight",
-      "text": "Lies nicht mehr zu lange. Dein Buch ist morgen auch noch da."
+      "text": "Lies ruhig noch ein paar Seiten, und dann schlaf schön. Dein Buch wartet morgen auf dich."
     },
     {
       "id": "de-goodnight-065",
       "category": "goodnight",
-      "text": "Ich lieg im Bett und schau mir noch unsere Urlaubsfotos an. Gute Nacht."
+      "text": "Ich lieg im Bett und schau mir noch unsere Urlaubsfotos an. Gute Nacht, Schatz."
     },
     {
       "id": "de-goodnight-066",
       "category": "goodnight",
-      "text": "Die Nacht ist kurz, also schnell ins Bett. Ich lieb dich."
+      "text": "Kuschel dich schnell ins Bett, damit du morgen ausgeruht bist. Ich lieb dich."
     },
     {
       "id": "de-goodnight-067",
       "category": "goodnight",
-      "text": "Bis morgen 💤 Und träum nicht zu viel von mir 😉"
+      "text": "Bis morgen, Schatz. Ich hoffe, du träumst etwas Schönes von uns 💤"
     },
     {
       "id": "de-encouragement-048",
       "category": "encouragement",
-      "text": "Für die Pause hab ich dir Schokolade eingepackt. Nervennahrung 🍫"
+      "text": "Ich hab dir für die Pause ein Stück Schokolade eingepackt, Schatz 🍫"
     },
     {
       "id": "de-encouragement-049",
       "category": "encouragement",
-      "text": "Schreib mir einfach zwischendurch, wenn du kurz durchschnaufen willst."
+      "text": "Schreib mir ruhig zwischendurch, wenn du kurz durchatmen möchtest."
     },
     {
       "id": "de-encouragement-050",
       "category": "encouragement",
-      "text": "Lass dir ruhig helfen. Ich mach das gern."
+      "text": "Lass dir ruhig von mir helfen, Schatz. Ich mach das wirklich gern."
     },
     {
       "id": "de-encouragement-051",
       "category": "encouragement",
-      "text": "Ich hab mir deinen Termin notiert. Genau dann denk ich an dich."
+      "text": "Ich hab mir deinen Termin notiert und denk genau dann ganz fest an dich."
     },
     {
       "id": "de-encouragement-052",
       "category": "encouragement",
-      "text": "Neue Sachen brauchen ein bisschen. Du findest da schnell rein."
+      "text": "Neue Dinge brauchen ein bisschen Zeit, und du findest dich immer schnell hinein."
     },
     {
       "id": "de-encouragement-053",
       "category": "encouragement",
-      "text": "Für sowas hast du ein Händchen. Das weiß ich."
+      "text": "Für so etwas hast du ein gutes Händchen, das weiß ich genau."
     },
     {
       "id": "de-encouragement-054",
       "category": "encouragement",
-      "text": "Lange Listen hast du schon oft abgehakt. Diese auch."
+      "text": "Du hast schon so viele lange Listen abgehakt, und diese schaffst du genauso."
     },
     {
       "id": "de-encouragement-055",
       "category": "encouragement",
-      "text": "Ich koch heute, du kannst dich auf dein Projekt konzentrieren."
+      "text": "Ich koch heute für uns, damit du dich ganz auf dein Projekt konzentrieren kannst."
     },
     {
       "id": "de-encouragement-056",
       "category": "encouragement",
-      "text": "Lampenfieber haben die Besten auch. Du bist in guter Gesellschaft."
+      "text": "Lampenfieber haben auch die Besten. Du bist also in bester Gesellschaft, Schatz."
     },
     {
       "id": "de-encouragement-057",
       "category": "encouragement",
-      "text": "Ich trau dir das voll zu. Ehrlich."
+      "text": "Ich trau dir das voll und ganz zu, Schatz."
     },
     {
       "id": "de-encouragement-058",
       "category": "encouragement",
-      "text": "Bewerbung ist raus? Dann ist der erste Schritt schon gemacht."
+      "text": "Deine Bewerbung ist abgeschickt, und damit ist der erste Schritt schon gemacht."
     },
     {
       "id": "de-encouragement-059",
       "category": "encouragement",
-      "text": "Auf deine Ideen kommt sonst keiner. Die helfen dir jetzt."
+      "text": "Du bist so einfallsreich, und genau das hilft dir jetzt weiter."
     },
     {
       "id": "de-encouragement-060",
       "category": "encouragement",
-      "text": "Dein Tempo ist genau richtig."
+      "text": "Dein Tempo ist genau richtig, Schatz."
     },
     {
       "id": "de-encouragement-061",
       "category": "encouragement",
-      "text": "Ich wette, das wird ein Volltreffer 🎯"
+      "text": "Ich bin mir sicher, dass das ein Volltreffer wird 🎯"
     },
     {
       "id": "de-encouragement-062",
       "category": "encouragement",
-      "text": "Du machst das schon so lange so gut 👏 Heute auch"
+      "text": "Du machst das schon so lange so gut, und heute wird es genauso sein 👏"
     },
     {
       "id": "de-encouragement-063",
       "category": "encouragement",
-      "text": "Seite für Seite wird das was 📝 Ich seh's doch"
+      "text": "Seite für Seite wird etwas richtig Gutes daraus, das sehe ich doch 📝"
     },
     {
       "id": "de-encouragement-064",
@@ -3340,517 +3340,517 @@
     {
       "id": "de-encouragement-065",
       "category": "encouragement",
-      "text": "Ich wart nachher draußen auf dich. Dann gehen wir zusammen heim."
+      "text": "Ich warte nachher draußen auf dich, und dann gehen wir zusammen nach Hause."
     },
     {
       "id": "de-encouragement-066",
       "category": "encouragement",
-      "text": "Dein Bauchgefühl hat bisher meistens gestimmt. Hör ruhig drauf."
+      "text": "Dein Bauchgefühl hat dich bisher gut geleitet. Hör ruhig weiter darauf."
     },
     {
       "id": "de-encouragement-067",
       "category": "encouragement",
-      "text": "Heute bist du dran, und ich sitz in Gedanken in der ersten Reihe."
+      "text": "Heute ist dein großer Auftritt, und in Gedanken sitz ich in der ersten Reihe."
     },
     {
       "id": "de-missyou-048",
       "category": "missyou",
-      "text": "Hab aus Versehen wieder für zwei gekocht 🍝"
+      "text": "Aus Gewohnheit hab ich wieder für zwei gekocht 🍝"
     },
     {
       "id": "de-missyou-049",
       "category": "missyou",
-      "text": "Unsere Serie ist pausiert ⏸️ Ohne dich schau ich nicht weiter"
+      "text": "Unsere Serie hab ich pausiert, weil ich sie nur mit dir weiterschauen möchte ⏸️"
     },
     {
       "id": "de-missyou-050",
       "category": "missyou",
-      "text": "Bei dir ist schon Abend, oder? 🌍 Ich wär so gern in deiner Zeitzone"
+      "text": "Bei dir ist bestimmt schon Abend. Ich wäre so gern in deiner Zeitzone 🌍"
     },
     {
       "id": "de-missyou-051",
       "category": "missyou",
-      "text": "Ich stell mir schon den Moment am Bahnhof vor, wenn du aussteigst."
+      "text": "Ich stell mir schon den Moment am Bahnhof vor, in dem du aus dem Zug steigst."
     },
     {
       "id": "de-missyou-052",
       "category": "missyou",
-      "text": "Ich schreib dir einfach, weil ich deine Antworten so mag."
+      "text": "Ich schreib dir einfach, weil ich deine Antworten so gern lese."
     },
     {
       "id": "de-missyou-053",
       "category": "missyou",
-      "text": "Fast hätte ich grad nach dir gerufen. Macht die Gewohnheit."
+      "text": "Beinahe hätte ich gerade nach dir gerufen, so sehr bin ich an dich gewöhnt."
     },
     {
       "id": "de-missyou-054",
       "category": "missyou",
-      "text": "Wenn du zurück bist, gehen wir als Erstes zum Italiener."
+      "text": "Wenn du zurück bist, gehen wir als Erstes zu unserem Italiener, Schatz."
     },
     {
       "id": "de-missyou-055",
       "category": "missyou",
-      "text": "Ich hab dich heute zehnmal fast angerufen 📱"
+      "text": "Ich hätte dich heute am liebsten zehnmal angerufen 📱"
     },
     {
       "id": "de-missyou-056",
       "category": "missyou",
-      "text": "So sehr fehlst du mir, ich red schon mit deinem Kissen."
+      "text": "Du fehlst mir so sehr, dass ich schon dein Kissen in den Arm nehme."
     },
     {
       "id": "de-missyou-057",
       "category": "missyou",
-      "text": "Bin grad an unserem Café vorbei ☕ Nächstes Mal gehen wir zusammen rein"
+      "text": "Ich bin gerade an unserem Café vorbeigekommen. Beim nächsten Mal gehen wir zusammen hinein ☕"
     },
     {
       "id": "de-missyou-058",
       "category": "missyou",
-      "text": "Mit dir über Quatsch lachen, das fehlt mir grad am meisten."
+      "text": "Am meisten fehlt mir gerade, mit dir über lauter Kleinigkeiten zu lachen."
     },
     {
       "id": "de-missyou-059",
       "category": "missyou",
-      "text": "Wenn dein Koffer wieder im Flur steht, ist alles gut."
+      "text": "Wenn dein Koffer wieder im Flur steht, ist mein Glück komplett."
     },
     {
       "id": "de-missyou-060",
       "category": "missyou",
-      "text": "Ein Brief für dich ist fertig. Den kriegst du persönlich."
+      "text": "Für dich liegt ein Brief bereit, und den bekommst du von mir persönlich."
     },
     {
       "id": "de-missyou-061",
       "category": "missyou",
-      "text": "Hab einen alten Zettel von dir gefunden. Jetzt hängt er am Kühlschrank."
+      "text": "Ein alter Zettel von dir hängt jetzt an unserem Kühlschrank, und ich lächle jedes Mal."
     },
     {
       "id": "de-missyou-062",
       "category": "missyou",
-      "text": "Kaum bist du los, vermiss ich dich schon."
+      "text": "Du bist kaum aus der Tür, und schon vermisse ich dich."
     },
     {
       "id": "de-missyou-063",
       "category": "missyou",
-      "text": "Heute Nacht warst du in meinem Traum. Bald hoffentlich wieder neben mir."
+      "text": "Heute Nacht hab ich von dir geträumt, und bald liegst du hoffentlich wieder neben mir."
     },
     {
       "id": "de-missyou-064",
       "category": "missyou",
-      "text": "Sag mir, wann genau du ankommst. Ich will dich abholen."
+      "text": "Sag mir bitte, wann genau du ankommst, Schatz, denn ich möchte dich abholen."
     },
     {
       "id": "de-missyou-065",
       "category": "missyou",
-      "text": "Jemand hat deinen Namen gerufen, und ich hab sofort hochgeschaut."
+      "text": "Jemand hat deinen Namen gerufen, und ich hab sofort aufgeschaut und an dich gedacht."
     },
     {
       "id": "de-missyou-066",
       "category": "missyou",
-      "text": "Ich mag unsere Telefonate. Aber dich in echt mag ich mehr."
+      "text": "Ich mag unsere Telefonate sehr, aber dich im Arm zu halten ist noch viel schöner."
     },
     {
       "id": "de-missyou-067",
       "category": "missyou",
-      "text": "Du fehlst mir. Nicht dramatisch, nur so den ganzen Tag ein bisschen."
+      "text": "Du fehlst mir, Schatz, den ganzen Tag über immer ein kleines bisschen."
     },
     {
       "id": "de-compliment-048",
       "category": "compliment",
-      "text": "Ich mag, wie sehr du dich über Kleinigkeiten freuen kannst."
+      "text": "Du hast einen Blick für die kleinen schönen Dinge, und davon lerne ich jeden Tag."
     },
     {
       "id": "de-compliment-049",
       "category": "compliment",
-      "text": "Kinder mögen dich sofort. Die merken eben, wer nett ist."
+      "text": "Kinder mögen dich sofort, weil sie spüren, wie herzlich du bist."
     },
     {
       "id": "de-compliment-050",
       "category": "compliment",
-      "text": "Einparken in einem Zug. Davon kann ich nur träumen."
+      "text": "Du parkst in einem einzigen Zug ein, und ich bin jedes Mal beeindruckt."
     },
     {
       "id": "de-compliment-051",
       "category": "compliment",
-      "text": "Sogar die Orchidee blüht bei dir wieder. Grüner Daumen eben."
+      "text": "Bei dir blüht sogar die Orchidee wieder. Du hast eben einen grünen Daumen, Schatz."
     },
     {
       "id": "de-compliment-052",
       "category": "compliment",
-      "text": "Beim Zähneputzen gut aussehen, das kannst nur du."
+      "text": "Du siehst sogar beim Zähneputzen gut aus, und das schafft sonst niemand."
     },
     {
       "id": "de-compliment-053",
       "category": "compliment",
-      "text": "Dein trockener Humor erwischt mich immer mit zwei Sekunden Verspätung."
+      "text": "Dein trockener Humor bringt mich immer wieder zum Lachen, Schatz."
     },
     {
       "id": "de-compliment-054",
       "category": "compliment",
-      "text": "Deine Umarmungen sind die besten. Sorry an alle anderen."
+      "text": "Deine Umarmungen sind die schönsten, die ich kenne."
     },
     {
       "id": "de-compliment-055",
       "category": "compliment",
-      "text": "In meinem Hoodie siehst du besser aus als ich."
+      "text": "In meinem Hoodie siehst du noch viel besser aus als ich."
     },
     {
       "id": "de-compliment-056",
       "category": "compliment",
-      "text": "Deine Playlist läuft bei mir seit Tagen rauf und runter. Guter Geschmack."
+      "text": "Deine Playlist läuft bei mir seit Tagen rauf und runter. Du hast einen tollen Geschmack."
     },
     {
       "id": "de-compliment-057",
       "category": "compliment",
-      "text": "Meine Eltern mögen dich total. Ich kann sie verstehen."
+      "text": "Meine Eltern mögen dich sehr, und ich kann sie so gut verstehen."
     },
     {
       "id": "de-compliment-058",
       "category": "compliment",
-      "text": "Alle Geburtstage hast du im Kopf. Ich brauch dafür drei Wecker."
+      "text": "Du merkst dir alles, was mir wichtig ist, und das finde ich bewundernswert."
     },
     {
       "id": "de-compliment-059",
       "category": "compliment",
-      "text": "Dein Apfelkuchen schlägt sogar den von meiner Oma."
+      "text": "Dein Apfelkuchen schmeckt so gut wie der von meiner Oma, und das ist mein größtes Lob."
     },
     {
       "id": "de-compliment-060",
       "category": "compliment",
-      "text": "Du schreibst so schöne Nachrichten. Ich les sie meistens zweimal."
+      "text": "Du schreibst so schöne Nachrichten, dass ich sie meistens gleich zweimal lese."
     },
     {
       "id": "de-compliment-061",
       "category": "compliment",
-      "text": "Du küsst so gut. Ich denk den ganzen Tag dran."
+      "text": "Deine Küsse sind so schön, dass ich den ganzen Tag daran denken muss."
     },
     {
       "id": "de-compliment-062",
       "category": "compliment",
-      "text": "Auf deinen Fotos seh ich immer gut aus. Du hast ein Auge dafür."
+      "text": "Auf deinen Fotos sehe ich immer gut aus, weil du einfach ein Auge dafür hast."
     },
     {
       "id": "de-compliment-063",
       "category": "compliment",
-      "text": "So schlagfertig wie du bin ich höchstens unter der Dusche."
+      "text": "Du bist so schlagfertig, Schatz, und ich bewundere das jedes Mal aufs Neue."
     },
     {
       "id": "de-compliment-064",
       "category": "compliment",
-      "text": "Ich wollte was sagen, aber dann hast du mich angeschaut. Weg war's."
+      "text": "Ich wollte gerade etwas sagen, aber dann hast du mich angeschaut, und ich hab alles vergessen."
     },
     {
       "id": "de-compliment-065",
       "category": "compliment",
-      "text": "Schöne Ohren hast du. Komisches Kompliment, ich weiß."
+      "text": "Du hast die schönsten Augen, in die ich je geschaut hab."
     },
     {
       "id": "de-compliment-066",
       "category": "compliment",
-      "text": "Bei uns fühlen sich alle Gäste sofort wohl. Das liegt an dir."
+      "text": "Du bringst jede Runde zum Lachen, und alle sind gern in deiner Nähe."
     },
     {
       "id": "de-compliment-067",
       "category": "compliment",
-      "text": "Du redest so lieb über andere, auch wenn sie nicht dabei sind."
+      "text": "Du sprichst so liebevoll über andere, auch wenn sie gar nicht dabei sind."
     },
     {
       "id": "de-humor-048",
       "category": "humor",
-      "text": "Drei Leuten hab ich heute schon von dir erzählt. Ohne dass einer gefragt hat."
+      "text": "Drei Leuten hab ich heute schon von dir erzählt, obwohl keiner gefragt hat."
     },
     {
       "id": "de-humor-049",
       "category": "humor",
-      "text": "Grad deinen Namen auf einen Notizzettel gekritzelt. Wie mit vierzehn."
+      "text": "Gerade hab ich deinen Namen auf einen Zettel gekritzelt, so wie früher mit vierzehn."
     },
     {
       "id": "de-humor-050",
       "category": "humor",
-      "text": "Meine Pflanzen haben gefragt, wann du wieder vorbeikommst."
+      "text": "Meine Pflanzen haben gefragt, wann du endlich wieder vorbeikommst."
     },
     {
       "id": "de-humor-051",
       "category": "humor",
-      "text": "Wichtige Durchsage. Ich hab dich lieb. Das war's schon."
+      "text": "Achtung, es folgt eine wichtige Durchsage: Ich hab dich lieb. Das war schon alles."
     },
     {
       "id": "de-humor-052",
       "category": "humor",
-      "text": "Du gähnst, ich gähn mit. Wir sind halt perfekt synchron."
+      "text": "Wenn du gähnst, gähne ich gleich mit. Wir sind eben perfekt aufeinander abgestimmt."
     },
     {
       "id": "de-humor-053",
       "category": "humor",
-      "text": "Bin schon wieder aus Versehen in dich verliebt. Passiert mir dauernd."
+      "text": "Ich hab mich schon wieder in dich verliebt, Schatz. Das passiert mir andauernd."
     },
     {
       "id": "de-humor-054",
       "category": "humor",
-      "text": "Mein Milchschaum-Herz sieht aus wie eine Kartoffel. Ist trotzdem für dich."
+      "text": "Mein Herz aus Milchschaum sieht aus wie eine Kartoffel, aber es ist mit viel Liebe für dich gemacht."
     },
     {
       "id": "de-humor-055",
       "category": "humor",
-      "text": "Wenn ich groß bin, will ich so cool sein wie du."
+      "text": "Wenn ich groß bin, möchte ich so wunderbar sein wie du."
     },
     {
       "id": "de-humor-056",
       "category": "humor",
-      "text": "So süß, wie du bist, brauch ich bald einen Zahnarzttermin."
+      "text": "Du bist so süß, Schatz, dass ich bald einen Termin beim Zahnarzt brauche."
     },
     {
       "id": "de-humor-057",
       "category": "humor",
-      "text": "Die Nachbarn hören uns ständig lachen. Ich glaub, die freuen sich mit."
+      "text": "Die Nachbarn hören uns ständig lachen, und ich glaube, sie freuen sich mit uns."
     },
     {
       "id": "de-humor-058",
       "category": "humor",
-      "text": "Du stehst jetzt in meinem Kalender. Jeden Tag, ganztägig."
+      "text": "Du stehst jetzt in meinem Kalender, jeden Tag und ganztägig."
     },
     {
       "id": "de-humor-059",
       "category": "humor",
-      "text": "Ich wär gern eine Katze. Die darf den ganzen Tag auf deinem Schoß liegen."
+      "text": "Ich wäre gern eine Katze, denn die darf den ganzen Tag auf deinem Schoß liegen."
     },
     {
       "id": "de-humor-060",
       "category": "humor",
-      "text": "Hab einen Fanclub für dich gegründet. Ein Mitglied, aber sehr engagiert."
+      "text": "Für dich gibt es jetzt einen Fanclub. Er hat nur ein Mitglied, aber das ist sehr engagiert."
     },
     {
       "id": "de-humor-061",
       "category": "humor",
-      "text": "Füße wärmen heute Abend? Ich bring die kalten mit."
+      "text": "Wollen wir heute Abend zusammen unsere Füße wärmen? Ich bringe die Kuscheldecke mit."
     },
     {
       "id": "de-humor-062",
       "category": "humor",
-      "text": "Laut deinem Horoskop triffst du heute jemand Tolles. Also mich, heute Abend."
+      "text": "Laut deinem Horoskop triffst du heute jemanden, der dich sehr liebt. Das bin dann wohl ich."
     },
     {
       "id": "de-humor-063",
       "category": "humor",
-      "text": "Du hast gestern im Schlaf gelächelt. Ich nehm einfach mal an, wegen mir."
+      "text": "Der beste Platz auf dem Sofa ist für dich reserviert, nämlich der direkt neben mir."
     },
     {
       "id": "de-humor-064",
       "category": "humor",
-      "text": "Schrank steht, zwei Schrauben sind übrig. Wir sind trotzdem ein Dreamteam."
+      "text": "Der Schrank steht, und wir haben beim Aufbauen die ganze Zeit gelacht. Wir sind ein echtes Dreamteam."
     },
     {
       "id": "de-humor-065",
       "category": "humor",
-      "text": "Was ich an dir ändern würde? Hab nachgedacht. Nichts."
+      "text": "Was ich an dir ändern würde? Ich hab lange überlegt, und mir ist nichts eingefallen."
     },
     {
       "id": "de-humor-066",
       "category": "humor",
-      "text": "Die Kollegen fragen, ob ich im Lotto gewonnen hab. So ähnlich, ich hab dich."
+      "text": "Die Kollegen fragen, ob ich im Lotto gewonnen hab. So ähnlich, hab ich gesagt, ich hab ja dich."
     },
     {
       "id": "de-humor-067",
       "category": "humor",
-      "text": "Achtung, Umarmung im Anflug 🤗 Die wird fest"
+      "text": "Achtung, Schatz, eine ganz feste Umarmung ist im Anflug 🤗"
     },
     {
       "id": "de-thanks-048",
       "category": "thanks",
-      "text": "Gut, dass du mich geweckt hast. Sonst hätt ich verschlafen."
+      "text": "Wie gut, dass du mich geweckt hast. Dank dir war ich pünktlich."
     },
     {
       "id": "de-thanks-049",
       "category": "thanks",
-      "text": "Auto vollgetankt? Ich hab da so eine Vermutung. Danke."
+      "text": "Das Auto ist vollgetankt, und ich ahne schon, wem ich das zu verdanken hab. Danke, Schatz."
     },
     {
       "id": "de-thanks-050",
       "category": "thanks",
-      "text": "Die Spinne ist draußen. Das Eis heute geht auf mich."
+      "text": "Danke, dass du die Spinne nach draußen gebracht hast. Dafür lade ich dich auf ein Eis ein."
     },
     {
       "id": "de-thanks-051",
       "category": "thanks",
-      "text": "Vorgewärmte Socken von der Heizung. Herrlich, danke."
+      "text": "Du hast meine Socken auf der Heizung vorgewärmt. Das ist herrlich, danke."
     },
     {
       "id": "de-thanks-052",
       "category": "thanks",
-      "text": "Mein Handy lebt wieder. Danke fürs Ladekabel."
+      "text": "Mein Handy hat wieder Strom. Danke, dass du mir dein Ladekabel geliehen hast."
     },
     {
       "id": "de-thanks-053",
       "category": "thanks",
-      "text": "Dein Zettel in der Brotdose. Ich hab die ganze Pause gegrinst. Danke."
+      "text": "Ich hab deinen Zettel in der Brotdose gefunden und die ganze Pause über gelächelt. Danke."
     },
     {
       "id": "de-thanks-054",
       "category": "thanks",
-      "text": "Mit dir beim Arzt war alles viel entspannter. Danke fürs Mitkommen."
+      "text": "Mit dir an meiner Seite war der Arzttermin viel entspannter. Danke fürs Mitkommen."
     },
     {
       "id": "de-thanks-055",
       "category": "thanks",
-      "text": "Du guckst meine Serie mit. Danke, ich weiß, das ist Liebe."
+      "text": "Du schaust sogar meine Serie mit mir an, und ich weiß, dass das Liebe ist. Danke, Schatz."
     },
     {
       "id": "de-thanks-056",
       "category": "thanks",
-      "text": "Extra freigenommen, nur für mich? Danke, ich freu mich so."
+      "text": "Du hast dir extra für mich freigenommen? Danke, ich freu mich riesig."
     },
     {
       "id": "de-thanks-057",
       "category": "thanks",
-      "text": "Frisch bezogenes Bett, und ich weiß, wem ich das verdanke."
+      "text": "Das Bett ist frisch bezogen, und darin schlafe ich gleich doppelt so gut. Danke dir."
     },
     {
       "id": "de-thanks-058",
       "category": "thanks",
-      "text": "Dein Abfragen gestern hat geholfen. Ich kann jetzt alles. Danke."
+      "text": "Dein Abfragen gestern hat mir sehr geholfen. Jetzt fühle ich mich richtig gut vorbereitet, danke."
     },
     {
       "id": "de-thanks-059",
       "category": "thanks",
-      "text": "Nach unserem langen Telefonat hab ich so gut geschlafen. Danke."
+      "text": "Nach unserem langen Telefonat hab ich so gut geschlafen. Danke dafür, Schatz."
     },
     {
       "id": "de-thanks-060",
       "category": "thanks",
-      "text": "Danke fürs Kofferpacken. Sogar an die Zahnbürste hast du gedacht."
+      "text": "Danke fürs Kofferpacken. Du hast sogar an meine Zahnbürste gedacht."
     },
     {
       "id": "de-thanks-061",
       "category": "thanks",
-      "text": "Danke fürs Ausschlafenlassen. Das war Gold wert."
+      "text": "Dass du mich hast ausschlafen lassen, war Gold wert. Danke dir."
     },
     {
       "id": "de-thanks-062",
       "category": "thanks",
-      "text": "Heimlich den Schirm eingepackt? Dank dir bin ich trocken geblieben."
+      "text": "Du hast mir heimlich den Schirm eingepackt, und dank dir bin ich trocken geblieben."
     },
     {
       "id": "de-thanks-063",
       "category": "thanks",
-      "text": "Danke, dass du mir das zugetraut hast. Sonst hätt ich mich nie getraut."
+      "text": "Du hast mir das zugetraut, und das hat mir den nötigen Mut gegeben. Danke dafür."
     },
     {
       "id": "de-thanks-064",
       "category": "thanks",
-      "text": "Für mich in der Schlange gestanden? Das ist so lieb. Danke."
+      "text": "Du hast dich für mich in die Schlange gestellt? Das ist so lieb von dir, danke."
     },
     {
       "id": "de-thanks-065",
       "category": "thanks",
-      "text": "Danke für die Feier. Alle waren begeistert, ich am meisten."
+      "text": "Danke für die schöne Feier. Alle waren begeistert, und ich am allermeisten."
     },
     {
       "id": "de-thanks-066",
       "category": "thanks",
-      "text": "Danke fürs Daumendrücken 🤞 Hat geklappt!"
+      "text": "Danke fürs Daumendrücken, es hat geklappt 🤞"
     },
     {
       "id": "de-thanks-067",
       "category": "thanks",
-      "text": "Revanche am Wochenende? 🎲 Danke für den Spieleabend"
+      "text": "Danke für den schönen Spieleabend. Spielen wir am Wochenende wieder? 🎲"
     },
     {
       "id": "de-apology-048",
       "category": "apology",
-      "text": "Meine Antwort vorhin war zu schnell. Ich versuch's noch mal."
+      "text": "Meine Antwort vorhin kam zu schnell. Ich möchte es gern noch einmal versuchen."
     },
     {
       "id": "de-apology-049",
       "category": "apology",
-      "text": "Sorry, dass ich erst jetzt schreib. Gedacht hab ich dauernd an dich."
+      "text": "Entschuldige, dass ich mich erst jetzt melde. Gedacht hab ich die ganze Zeit an dich."
     },
     {
       "id": "de-apology-050",
       "category": "apology",
-      "text": "Den Haushalt übernehm ich heute. Du legst die Füße hoch."
+      "text": "Den Haushalt übernehme ich heute, Schatz, und du legst einfach die Füße hoch."
     },
     {
       "id": "de-apology-051",
       "category": "apology",
-      "text": "Heute klappt's nicht, sorry. Den Abend hol ich doppelt nach."
+      "text": "Heute klappt es leider nicht, entschuldige. Wir holen den Abend doppelt so schön nach."
     },
     {
       "id": "de-apology-052",
       "category": "apology",
-      "text": "Schön, dass du's mir gleich gesagt hast. So kann ich's besser machen."
+      "text": "Es ist schön, dass du es mir gleich gesagt hast. So kann ich es besser machen."
     },
     {
       "id": "de-apology-053",
       "category": "apology",
-      "text": "Ich lern grad noch, wie du's am liebsten hast. Danke, dass du mir Zeit gibst."
+      "text": "Ich lerne noch, wie du es am liebsten hast. Danke, dass du mir die Zeit dafür gibst."
     },
     {
       "id": "de-apology-054",
       "category": "apology",
-      "text": "Noch wach? So will ich nicht einschlafen. Ich hab dich lieb."
+      "text": "Bist du noch wach, Schatz? Ich möchte dir vor dem Einschlafen sagen, dass ich dich lieb hab."
     },
     {
       "id": "de-apology-055",
       "category": "apology",
-      "text": "Im Flur liegt ein Brief von mir. Lies ihn, wenn du magst."
+      "text": "Im Flur liegt ein Brief von mir. Lies ihn, wann immer du magst."
     },
     {
       "id": "de-apology-056",
       "category": "apology",
-      "text": "So viel Geduld mit mir. Das rechne ich dir hoch an."
+      "text": "Du hast so viel Geduld mit mir, und das rechne ich dir hoch an."
     },
     {
       "id": "de-apology-057",
       "category": "apology",
-      "text": "Sorry sagen fällt mir nicht leicht. Bei dir sag ich's gern."
+      "text": "Entschuldigungen fallen mir sonst nicht leicht, aber dir sage ich sie von Herzen."
     },
     {
       "id": "de-apology-058",
       "category": "apology",
-      "text": "Heute Abend erzähl ich dir alles, in Ruhe und von Anfang an."
+      "text": "Heute Abend erzähle ich dir alles in Ruhe und ganz von Anfang an."
     },
     {
       "id": "de-apology-059",
       "category": "apology",
-      "text": "Genug von mir erzählt. Jetzt will ich alles von dir wissen."
+      "text": "Jetzt hab ich genug von mir erzählt, Schatz. Ich möchte alles von dir wissen."
     },
     {
       "id": "de-apology-060",
       "category": "apology",
-      "text": "Dein Lachen hätte ich gern zurück. Was kann ich dafür tun?"
+      "text": "Ich möchte dich so gern wieder lachen sehen. Was kann ich dafür tun?"
     },
     {
       "id": "de-apology-061",
       "category": "apology",
-      "text": "Hab deine Nachricht erst missverstanden. Jetzt hab ich's, sorry."
+      "text": "Ich hatte deine Nachricht zuerst anders verstanden. Jetzt weiß ich, was du meinst, entschuldige."
     },
     {
       "id": "de-apology-062",
       "category": "apology",
-      "text": "Mein Ton vorhin tut mir leid. Das Ganze noch mal in nett?"
+      "text": "Mein Ton vorhin tut mir leid. Darf ich es noch einmal freundlicher sagen?"
     },
     {
       "id": "de-apology-063",
       "category": "apology",
-      "text": "Deine Meinung ist mir wichtig, auch wenn ich erst mal widerspreche."
+      "text": "Deine Meinung ist mir wichtig, Schatz, und ich höre sie immer gern."
     },
     {
       "id": "de-apology-064",
       "category": "apology",
-      "text": "Ich war vorhin total durch den Wind 🙈 Sorry"
+      "text": "Ich war vorhin ganz durcheinander. Entschuldige bitte 🙈"
     },
     {
       "id": "de-apology-065",
       "category": "apology",
-      "text": "Deine Sofaecke ist frei. Und ich bin heute ganz lieb."
+      "text": "Deine Lieblingsecke auf dem Sofa ist frei, und ich bin heute besonders lieb zu dir."
     },
     {
       "id": "de-apology-066",
       "category": "apology",
-      "text": "Du darfst heute zuerst ins Bad. Kleines Friedensangebot."
+      "text": "Ich hab dir ein Bad eingelassen. Das ist mein kleines Friedensangebot, Schatz."
     },
     {
       "id": "de-apology-067",
       "category": "apology",
-      "text": "Ab jetzt frag ich öfter nach, bevor ich loslege."
+      "text": "Von jetzt an frage ich lieber einmal mehr nach, bevor ich loslege."
     },
     {
       "id": "de-emoji-051",
@@ -3860,22 +3860,22 @@
     {
       "id": "de-emoji-052",
       "category": "emoji",
-      "text": "Rührei für zwei 🍳😋"
+      "text": "Rührei für uns zwei 🍳😋"
     },
     {
       "id": "de-emoji-053",
       "category": "emoji",
-      "text": "Einfach so 💛"
+      "text": "Einfach so, weil ich dich mag 💛"
     },
     {
       "id": "de-emoji-054",
       "category": "emoji",
-      "text": "Gleich zu Hause 🏃💨"
+      "text": "Ich bin gleich zu Hause 🏡💨"
     },
     {
       "id": "de-emoji-055",
       "category": "emoji",
-      "text": "Geschafft 🎉👏"
+      "text": "Du hast es geschafft 🎉👏"
     },
     {
       "id": "de-emoji-056",
@@ -3890,12 +3890,12 @@
     {
       "id": "de-emoji-058",
       "category": "emoji",
-      "text": "Toi, toi, toi 🍀"
+      "text": "Toi, toi, toi für dich 🍀"
     },
     {
       "id": "de-emoji-059",
       "category": "emoji",
-      "text": "Ich bring Blumen mit 💐"
+      "text": "Ich bringe dir Blumen mit 💐"
     },
     {
       "id": "de-emoji-060",
@@ -3905,17 +3905,17 @@
     {
       "id": "de-emoji-061",
       "category": "emoji",
-      "text": "Erster Schnee ❄️⛄"
+      "text": "Der erste Schnee ❄️⛄"
     },
     {
       "id": "de-emoji-062",
       "category": "emoji",
-      "text": "Herzklopfen 💓"
+      "text": "Herzklopfen wegen dir 💓"
     },
     {
       "id": "de-emoji-063",
       "category": "emoji",
-      "text": "Ab an den See ☀️🌊"
+      "text": "Ab an den See mit dir ☀️🌊"
     },
     {
       "id": "de-emoji-064",
@@ -3940,12 +3940,12 @@
     {
       "id": "de-emoji-068",
       "category": "emoji",
-      "text": "Schreib mir, wenn du da bist 📱💕"
+      "text": "Schreib mir, wenn du angekommen bist 📱💕"
     },
     {
       "id": "de-emoji-069",
       "category": "emoji",
-      "text": "Kuss auf die Nase 😚👃"
+      "text": "Ein Kuss auf die Nase 😚👃"
     },
     {
       "id": "de-emoji-070",
@@ -3990,7 +3990,7 @@
     {
       "id": "de-ascii-058",
       "category": "ascii",
-      "text": "Ich lieb dich <3"
+      "text": "Ich lieb dich, Schatz <3"
     },
     {
       "id": "de-ascii-059",
@@ -4025,7 +4025,7 @@
     {
       "id": "de-ascii-065",
       "category": "ascii",
-      "text": "Merci :-)"
+      "text": "Danke, Schatz :-)"
     },
     {
       "id": "de-ascii-066",
@@ -4035,7 +4035,7 @@
     {
       "id": "de-ascii-067",
       "category": "ascii",
-      "text": "Freu mich :-))"
+      "text": "Ich freu mich auf dich :-))"
     },
     {
       "id": "de-ascii-068",
