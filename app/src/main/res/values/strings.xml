@@ -161,4 +161,6 @@
     <string name="translation_revoke_text">Translating stops right away. You can also delete the downloaded language models to free space.</string>
     <string name="translation_revoke_delete">Turn off and delete models</string>
     <string name="translation_revoke_keep">Turn off, keep models</string>
+    <string name="speech_no_voices_hint">No installed voice found for this language. Install the language data in the text-to-speech settings. On Samsung devices it can help to switch the engine to Speech Services by Google.</string>
+    <string name="speech_open_tts_settings">Text-to-speech settings</string>
 </resources>

@@ -311,6 +311,9 @@ fun SettingsScreen(vm: MainViewModel, modifier: Modifier = Modifier) {
         }
         val sample = stringResource(R.string.speech_sample)
         OutlinedButton(onClick = { vm.speakSample(sample, uiLang) }) { Text(stringResource(R.string.speech_listen)) }
+        val voiceContext = androidx.compose.ui.platform.LocalContext.current
+        if (voices.isEmpty()) Text(stringResource(R.string.speech_no_voices_hint), style = MaterialTheme.typography.bodyMedium)
+        OutlinedButton(onClick = { app.rpkindwords.speech.VoiceSetup.open(voiceContext) }) { Text(stringResource(R.string.speech_open_tts_settings)) }
 
         val donateUrl = stringResource(R.string.donate_url)
         if (donateUrl.startsWith("https://")) {

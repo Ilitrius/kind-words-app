@@ -161,4 +161,6 @@
     <string name="translation_revoke_text">Das Übersetzen stoppt sofort. Du kannst auch die geladenen Sprachmodelle löschen, um Speicher freizugeben.</string>
     <string name="translation_revoke_delete">Ausschalten und Modelle löschen</string>
     <string name="translation_revoke_keep">Ausschalten, Modelle behalten</string>
+    <string name="speech_no_voices_hint">Für diese Sprache wurde keine installierte Stimme gefunden. Installiere die Sprachdaten in den Einstellungen der Sprachausgabe. Auf Samsung-Geräten hilft oft der Wechsel zur Engine „Sprachdienste von Google“.</string>
+    <string name="speech_open_tts_settings">Einstellungen der Sprachausgabe</string>
 </resources>

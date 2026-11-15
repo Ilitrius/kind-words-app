@@ -16,6 +16,10 @@ import androidx.compose.material3.Icon
 import androidx.compose.material3.NavigationBar
 import androidx.compose.material3.NavigationBarItem
 import androidx.compose.material3.Scaffold
+import androidx.compose.material3.ScaffoldDefaults
+import androidx.compose.foundation.layout.WindowInsets
+import androidx.compose.foundation.layout.displayCutout
+import androidx.compose.foundation.layout.union
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.SnackbarHost
 import androidx.compose.material3.SnackbarHostState
@@ -98,12 +102,7 @@ fun MainScreen(
         vm.speechProblems.collect { problem ->
             android.widget.Toast.makeText(speechContext, speechMessages[problem].orEmpty(), android.widget.Toast.LENGTH_LONG).show()
             if (problem == app.rpkindwords.speech.Speaker.Problem.MISSING_VOICE_DATA) {
-                try {
-                    speechContext.startActivity(
-                        android.content.Intent(android.speech.tts.TextToSpeech.Engine.ACTION_INSTALL_TTS_DATA).addFlags(android.content.Intent.FLAG_ACTIVITY_NEW_TASK),
-                    )
-                } catch (_: Exception) {
-                }
+                app.rpkindwords.speech.VoiceSetup.open(speechContext)
             }
         }
     }
@@ -117,6 +116,8 @@ fun MainScreen(
     }
     if (donatePrompt && !onboardingShownThisStart && stringResource(R.string.donate_url).startsWith("https://")) DonateDialog(onDismiss = vm::dismissDonatePrompt)
     Scaffold(
+        // Ausschnitte (Kamera-Notch) im Querformat nicht überdecken
+        contentWindowInsets = ScaffoldDefaults.contentWindowInsets.union(WindowInsets.displayCutout),
         snackbarHost = { SnackbarHost(snackbar) },
         bottomBar = {
             // Große Systemschrift: Labels der Leiste begrenzen, damit sie nicht mitten im Wort umbrechen.

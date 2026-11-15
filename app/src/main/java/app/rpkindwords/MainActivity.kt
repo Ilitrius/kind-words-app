@@ -4,11 +4,11 @@ import android.content.Context
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.activity.enableEdgeToEdge
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.activity.viewModels
 import androidx.compose.runtime.getValue
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
+import androidx.core.view.WindowCompat
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.lifecycleScope
 import app.rpkindwords.data.LocaleContext
@@ -34,7 +34,8 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         installSplashScreen()
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
+        // Randlos ohne die veralteten Statusleisten-/Navigationsleisten-Farb-APIs (Play-Hinweis, Android 15)
+        WindowCompat.setDecorFitsSystemWindows(window, false)
         updates.register()
         lifecycleScope.launch {
             if (SettingsRepository(applicationContext).shouldCheckUpdate()) updates.check()

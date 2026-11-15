@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="Theme.KindWords" parent="android:Theme.Material.Light.NoActionBar" />
+    <!-- Randlose Anzeige: Statusleiste und Navigationsleiste durchsichtig (Android 8-14); ab Android 15 ist sie Standard.
+         Bewusst als Theme-Eintrag statt Window.setStatusBarColor/setNavigationBarColor (in Android 15 veraltet, Play-Hinweis). -->
+    <style name="Theme.KindWords" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+    </style>
 
     <!-- Splash-Screen beim Start: Logo auf Markenfarbe, ohne Animation (akkuschonend); danach Theme.KindWords -->
     <style name="Theme.KindWords.Starting" parent="Theme.SplashScreen">

@@ -137,3 +137,8 @@ Das „Gehirn“ des Projekts: Entscheidungen, Fakten, Fallstricke. Wird von Men
 - Paar-Emojis (💑 👫 👬 👭 💏) vermeiden: auf Android 8-10 Mann/Frau. Merge-Skript prüft darauf.
 - Stolperstein: `testDebugUnitTest` kann UP-TO-DATE sein, obwohl Assets sich geändert haben -> `--rerun-tasks` nutzen. Python unter Windows: `PYTHONIOENCODING=utf-8` für Emoji-Ausgabe; Git-Bash `/tmp` ist für Python ein anderer Pfad (`cygpath -w`).
 - Agentenlimit: bei "5-hour limit" liegen Ergebnisdateien oft schon fertig im Scratchpad; vor dem Neustart prüfen, ob sie vorhanden sind.
+
+## 2026-11-15 Randlose Anzeige (Play-Hinweise), Release 1.0.14
+- Ursache: `androidx.activity.EdgeToEdge*` (hinter `enableEdgeToEdge()`) ruft `Window.setStatusBarColor/setNavigationBarColor` auf; auch activity 1.13.0 tut das, ein Update hilft nicht. R8 entfernt die Klassen, wenn `enableEdgeToEdge()` nirgends genutzt wird.
+- Lösung: `WindowCompat.setDecorFitsSystemWindows(window, false)`; Leistenfarben nur per Theme (`android:statusBarColor/navigationBarColor` transparent, `values-v29`: `enforce*Contrast=false`); Symbolfarbe via `WindowCompat.getInsetsController` in `KindWordsTheme` (SideEffect, folgt Hell/Dunkel); Scaffold/Onboarding mit `displayCutout`-Insets. Prüfweg: Release-APK entpacken, `dexdump -d` (Build-Tools), nach `setStatusBarColor|setNavigationBarColor|setNavigationBarDividerColor|LAYOUT_IN_DISPLAY_CUTOUT` suchen, Klasse über `mapping.txt` auflösen; Treffer 0.
+- Nicht in unserer Hand: Aufrufer in Fremdbibliotheken (Play `app-update` 2.1.0: `PlayCoreDialogWrapperActivity` nutzt setSystemUiVisibility, steht nicht auf der Play-Liste).
