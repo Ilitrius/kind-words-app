@@ -14,6 +14,7 @@
 ## 2. Store-Texte (de/en)
 - `full_description.txt`: Zeilen "Kein Konto, keine Werbung, kein Tracking" ersetzen durch "Kein Konto. Kostenlos, mit einem dezenten Werbebanner (in der EU nur mit deiner Einwilligung)"; "Das Widget ... zeigt keine Werbung" bleibt (stimmt weiter). Absatz "Kind Words ist kostenlos. Wenn es dir gefällt ..." ergänzen: "Die App finanziert sich über ein dezentes Banner".
 - Neuigkeiten: "Neu: ein dezentes Werbebanner finanziert die App; in den ersten drei Tagen bleibt sie werbefrei, in der EU nur nach deiner Einwilligung."
+- **Altersangabe:** Die Store-Texte bleiben zur Zielgruppe neutral (Entscheidung René, 2026-11-23): keine Formulierung wie "ab 16". Das Alter steht nur in Console (Zielgruppe 16-17 und 18+) und Datenschutzerklärung (Abschnitt 10).
 - Längen prüfen (Titel <=30, Kurz <=80, Beschreibung <=4000).
 
 ## 3. Play Console (am Release-Tag)
