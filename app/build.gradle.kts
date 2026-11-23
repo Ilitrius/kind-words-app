@@ -45,16 +45,16 @@ android {
     }
 
     buildTypes {
-        // AdMob: Debug immer mit Googles Test-IDs. Release nutzt bis zum Ende der AdMob-Kontosperre ebenfalls
-        // die Test-IDs (zeigt nur Test-Anzeigen, Klicks sind unschädlich). Vor dem Werbe-Release hier die echten
-        // IDs der App "RP Kind Words" eintragen (docs/PLAN-WERBUNG.md, Abschnitt 4).
+        // AdMob: Debug immer mit Googles Test-IDs (echte IDs im Test können das Konto sperren).
         debug {
             resValue("string", "admob_app_id", "ca-app-pub-3940256099942544~3347511713")
             resValue("string", "admob_banner_unit_id", "ca-app-pub-3940256099942544/9214589741")
         }
         release {
-            resValue("string", "admob_app_id", "ca-app-pub-3940256099942544~3347511713")
-            resValue("string", "admob_banner_unit_id", "ca-app-pub-3940256099942544/9214589741")
+            // Echte IDs von RP Kind Words (AdMob-Herausgeber pub-2109805482260954). Release-Builds liefern echte Anzeigen:
+            // nie auf eigene Anzeigen klicken, eigenes Gerät in res/values/ads.xml als Testgerät eintragen.
+            resValue("string", "admob_app_id", "ca-app-pub-2109805482260954~7836980498")
+            resValue("string", "admob_banner_unit_id", "ca-app-pub-2109805482260954/2155077277")
             signingConfigs.findByName("release")?.let { signingConfig = it }
             // Symboltabelle für nativen Code (AndroidX-Libs) im Bundle: bessere Absturz-/ANR-Analyse in der Play Console
             ndk.debugSymbolLevel = "SYMBOL_TABLE"
