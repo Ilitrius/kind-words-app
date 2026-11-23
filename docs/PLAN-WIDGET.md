@@ -19,7 +19,7 @@ Ziel: mehr Bindung und Sichtbarkeit im Alltag, ohne neue Berechtigung, ohne Date
 ## Qualität und Prüfung
 - Unit-Tests: Tagesauswahl (gleicher Tag = gleicher Satz, Tageswechsel, Sprachwechsel).
 - Lint (HardcodedText, MissingTranslation), Release-Build mit R8 (Glance-Regeln prüfen), Emulator API 35 und API 26: Widget hinzufügen, Neu/Teilen/Öffnen, Sprachwechsel, Dunkelmodus, Neustart, App-Update.
-- Merged-Manifest prüfen: keine neue Berechtigung.
+- Merged-Manifest geprüft (2026-11-23): Glance zieht WorkManager mit; neu im Manifest sind WAKE_LOCK und FOREGROUND_SERVICE (normale Berechtigungen, kein Foreground-Service-Typ deklariert). Entscheidung offen: so lassen oder auf RemoteViews wechseln.
 
 ## Release
 - Neue Version 1.1.0 (versionCode erhöhen), Store-Texte de/en um "Widget" ergänzen (Titel <=30, Kurzbeschreibung <=80, Beschreibung <=4000), neue Screenshots mit Widget; Datenschutz unverändert (nur Hinweis, dass das Widget lokal arbeitet).

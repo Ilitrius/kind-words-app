@@ -77,6 +77,8 @@ dependencies {
     implementation(libs.play.app.update)
     implementation(libs.androidx.fragment) // Play-Update zieht Fragment 1.0.0 mit; ActivityResult braucht >= 1.3.0
     implementation(libs.mlkit.translate)
+    implementation(libs.glance.appwidget)
+    implementation(libs.glance.material3)
     implementation(libs.androidx.activity.compose)
     implementation(libs.androidx.lifecycle.runtime.compose)
     implementation(platform(libs.androidx.compose.bom))

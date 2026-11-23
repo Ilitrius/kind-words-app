@@ -1,6 +1,7 @@
 package app.rpkindwords
 
 import android.app.Application
+import androidx.glance.appwidget.updateAll
 import androidx.room.Room
 import app.rpkindwords.data.AppDatabase
 import app.rpkindwords.data.AssetContentSource
@@ -31,6 +32,8 @@ class KindWordsApp : Application() {
         NotificationHelper.createChannel(this)
         appScope.launch {
             messages.ensureSeeded()
+            // Widgets neu zeichnen (neuer Tag, geänderte Sprache/Inhalte); ohne Widgets kostet das fast nichts.
+            runCatching { app.rpkindwords.widget.KindWordsWidget().updateAll(this@KindWordsApp) }
             // Plan sicherstellen, aber einen vorhandenen (ggf. gerade laufenden) Auftrag NICHT ersetzen:
             // Startet WorkManager den Prozess für einen fälligen Worker, würde REPLACE ihn sofort abbrechen.
             ReminderScheduler.reschedule(this@KindWordsApp, settings.reminder.first(), replace = false)
