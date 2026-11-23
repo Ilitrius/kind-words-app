@@ -146,4 +146,5 @@ Legende: `[ ]` offen · `[x]` erledigt · Agent in Klammern
 - [ ] Offen unverändert: Keystore extern sichern, Muttersprachler-Prüfung EN, V10-Stichprobe lesen, Fold-Screenshots (unversioniert in `store/graphics/`) einsortieren.
 - [x] (2026-11-23) Release-APK im Emulator getestet; zwei R8-Fehler im Widget behoben (Keep-Regeln), `dist/` neu gebaut.
 - [ ] Nutzer: AdMob: Datenschutz-Nachricht (EWR/UK/CH) für app.rpkindwords anlegen und veröffentlichen; sonst fragt UMP im EWR nichts ab.
-- [ ] Widget-Konfigurationsdialog: Insets (Titel unter Statusleiste) beheben; Dunkelmodus, Sprachwechsel, Neustart, API 26 testen; "Datenschutzoptionen" erscheint ohne UMP-Formular (Ursache vermutlich die fehlende AdMob-Nachricht, nach Veröffentlichung neu prüfen).
+- [x] (2026-11-23) Widget-Konfigurationsdialog: Insets behoben (im Release-APK geprüft).
+- [ ] Widget: Dunkelmodus, Sprachwechsel, Neustart, API 26 testen; "Datenschutzoptionen" erscheint ohne UMP-Formular (Ursache vermutlich die fehlende AdMob-Nachricht, nach Veröffentlichung neu prüfen).
