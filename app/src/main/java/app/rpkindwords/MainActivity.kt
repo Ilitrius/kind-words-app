@@ -23,6 +23,7 @@ import kotlinx.coroutines.runBlocking
 class MainActivity : ComponentActivity() {
     private val vm: MainViewModel by viewModels()
     private val updates by lazy { UpdateController(this) }
+    private val ads = app.rpkindwords.ads.AdsController()
     private val updateLauncher = registerForActivityResult(ActivityResultContracts.StartIntentSenderForResult()) { /* Status kommt über den Install-Listener */ }
 
     /** Oberfläche in der gewählten Sprache anzeigen (Einstellungen > Sprache), sonst Systemsprache. */
@@ -48,6 +49,7 @@ class MainActivity : ComponentActivity() {
                     updateStatus = updateStatus,
                     onUpdate = { updates.startUpdate(updateLauncher) },
                     onRestartForUpdate = { updates.completeUpdate() },
+                    ads = ads,
                 )
             }
         }

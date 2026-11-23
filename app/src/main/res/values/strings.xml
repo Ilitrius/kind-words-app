@@ -70,10 +70,10 @@
     <string name="lang_en">English</string>
 
     <string name="donate_title">Support Kind Words</string>
-    <string name="donate_text">Kind Words is free, has no ads and no tracking. If you like it, you can make a voluntary donation. It is not required, unlocks nothing and is handled by an external provider in your browser. Tapping the button sends nothing from the app itself.</string>
+    <string name="donate_text">Kind Words is free and is supported by a discreet banner. If you like it, you can make a voluntary donation. It is not required, unlocks nothing and is handled by an external provider in your browser. Tapping the button sends nothing from the app itself.</string>
     <string name="donate_button">Donate (opens browser)</string>
     <string name="donate_prompt_title">Enjoying Kind Words?</string>
-    <string name="donate_prompt_text">Kind Words is free and has no ads. If it makes your days a little kinder, a small donation helps keep it that way. It is voluntary and unlocks nothing.</string>
+    <string name="donate_prompt_text">Kind Words is free and is supported by a discreet banner. If it makes your days a little kinder, a small donation helps keep it that way. It is voluntary and unlocks nothing.</string>
     <string name="donate_prompt_donate">Donate</string>
     <string name="donate_prompt_cancel">Cancel</string>
     <string name="donate_error">No browser found to open the link.</string>
@@ -171,4 +171,7 @@
     <string name="widget_config_title">Choose a category</string>
     <string name="widget_config_hint">Which kind of words should this widget show?</string>
     <string name="widget_config_done">Done</string>
+    <string name="ads_privacy_title">Ad privacy settings</string>
+    <string name="ads_privacy_text">Kind Words shows a discreet banner on the suggestions and favorites screens. Here you can change your consent for personalized ads at any time.</string>
+    <string name="ads_privacy_button">Change ad choices</string>
 </resources>

@@ -124,7 +124,7 @@ private fun openNotificationSettings(context: Context) {
 
 @Composable
 @OptIn(ExperimentalLayoutApi::class)
-fun SettingsScreen(vm: MainViewModel, modifier: Modifier = Modifier) {
+fun SettingsScreen(vm: MainViewModel, modifier: Modifier = Modifier, ads: app.rpkindwords.ads.AdsController? = null) {
     val context = LocalContext.current
     val appLocale = LocalConfiguration.current.locales[0]
     val s by vm.reminder.collectAsStateWithLifecycle()
@@ -332,6 +332,14 @@ fun SettingsScreen(vm: MainViewModel, modifier: Modifier = Modifier) {
                     }) { Text(stringResource(R.string.donate_button)) }
                 }
             }
+        }
+
+        val adsActivity = androidx.activity.compose.LocalActivity.current
+        if (ads != null && ads.privacyOptionsRequired && adsActivity != null) {
+            HorizontalDivider()
+            SectionTitle(R.string.ads_privacy_title)
+            Text(stringResource(R.string.ads_privacy_text), style = MaterialTheme.typography.bodyMedium)
+            OutlinedButton(onClick = { ads.showPrivacyOptions(adsActivity) }) { Text(stringResource(R.string.ads_privacy_button)) }
         }
 
         HorizontalDivider()

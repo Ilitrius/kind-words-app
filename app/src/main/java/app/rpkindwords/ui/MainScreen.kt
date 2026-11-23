@@ -79,6 +79,7 @@ fun MainScreen(
     updateStatus: UpdateStatus = UpdateStatus.NONE,
     onUpdate: () -> Unit = {},
     onRestartForUpdate: () -> Unit = {},
+    ads: app.rpkindwords.ads.AdsController? = null,
 ) {
     var tab by rememberSaveable { mutableIntStateOf(0) }
     var bannerDismissed by rememberSaveable { mutableStateOf(false) }
@@ -114,6 +115,15 @@ fun MainScreen(
         false -> { OnboardingScreen(onFinished = vm::markOnboardingSeen); return }
         else -> Unit
     }
+    // Werbung erst nach der Einführung und erst nach dem werbefreien Beginn (AdsEligibility); sonst auch kein Einwilligungsformular.
+    val adsActivity = androidx.activity.compose.LocalActivity.current
+    val adsAppContext = androidx.compose.ui.platform.LocalContext.current.applicationContext
+    androidx.compose.runtime.LaunchedEffect(onboardingSeen) {
+        if (ads != null && adsActivity != null) {
+            val first = app.rpkindwords.data.SettingsRepository(adsAppContext).firstRunAt()
+            ads.start(adsActivity, first)
+        }
+    }
     if (donatePrompt && !onboardingShownThisStart && stringResource(R.string.donate_url).startsWith("https://")) DonateDialog(onDismiss = vm::dismissDonatePrompt)
     Scaffold(
         // Ausschnitte (Kamera-Notch) im Querformat nicht überdecken
@@ -123,6 +133,11 @@ fun MainScreen(
             // Große Systemschrift: Labels der Leiste begrenzen, damit sie nicht mitten im Wort umbrechen.
             val density = LocalDensity.current
             CompositionLocalProvider(LocalDensity provides Density(density.density, density.fontScale.coerceAtMost(1.3f))) {
+            Column {
+            // Nur ein Banner, nur auf Vorschläge und Favoriten, mit Abstand zu den Knöpfen (versehentliche Klicks vermeiden).
+            if (ads != null && ads.canRequestAds && (tab == Tab.Home.ordinal || tab == Tab.Favorites.ordinal)) {
+                Box(Modifier.fillMaxWidth().padding(top = 24.dp)) { app.rpkindwords.ads.AdBanner() }
+            }
             NavigationBar {
                 Tab.entries.forEachIndexed { i, t ->
                     NavigationBarItem(
@@ -132,6 +147,7 @@ fun MainScreen(
                         label = { Text(stringResource(t.label), maxLines = 1, softWrap = false, overflow = TextOverflow.Ellipsis) },
                     )
                 }
+            }
             }
             }
         },
@@ -145,7 +161,7 @@ fun MainScreen(
                     Tab.Home -> HomeScreen(vm, snackbar)
                     Tab.Favorites -> FavoritesScreen(vm)
                     Tab.Mine -> MineScreen(vm)
-                    Tab.Settings -> SettingsScreen(vm)
+                    Tab.Settings -> SettingsScreen(vm, ads = ads)
                 }
             }
         }

@@ -45,7 +45,16 @@ android {
     }
 
     buildTypes {
+        // AdMob: Debug immer mit Googles Test-IDs. Release nutzt bis zum Ende der AdMob-Kontosperre ebenfalls
+        // die Test-IDs (zeigt nur Test-Anzeigen, Klicks sind unschädlich). Vor dem Werbe-Release hier die echten
+        // IDs der App "RP Kind Words" eintragen (docs/PLAN-WERBUNG.md, Abschnitt 4).
+        debug {
+            resValue("string", "admob_app_id", "ca-app-pub-3940256099942544~3347511713")
+            resValue("string", "admob_banner_unit_id", "ca-app-pub-3940256099942544/9214589741")
+        }
         release {
+            resValue("string", "admob_app_id", "ca-app-pub-3940256099942544~3347511713")
+            resValue("string", "admob_banner_unit_id", "ca-app-pub-3940256099942544/9214589741")
             signingConfigs.findByName("release")?.let { signingConfig = it }
             // Symboltabelle für nativen Code (AndroidX-Libs) im Bundle: bessere Absturz-/ANR-Analyse in der Play Console
             ndk.debugSymbolLevel = "SYMBOL_TABLE"
@@ -62,6 +71,7 @@ android {
 
     buildFeatures {
         compose = true
+        resValues = true
     }
 
     lint {
@@ -79,6 +89,7 @@ dependencies {
     implementation(libs.mlkit.translate)
     implementation(libs.glance.appwidget)
     implementation(libs.glance.material3)
+    implementation(libs.admob.nextgen) // Werbung (AdMob + UMP-Einwilligung), siehe docs/PLAN-WERBUNG.md
     implementation(libs.androidx.activity.compose)
     implementation(libs.androidx.lifecycle.runtime.compose)
     implementation(platform(libs.androidx.compose.bom))

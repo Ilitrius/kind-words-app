@@ -48,3 +48,10 @@ Ziel: die App über Werbung mitfinanzieren, ohne den warmen Charakter der App un
 1. Zielgruppe: 16+/18+ anheben oder 13+ mit nur nicht personalisierter Werbung?
 2. Banner nur auf Vorschläge/Favoriten, werbefreier Start (3 Tage): einverstanden?
 3. Entwicklung jetzt (Test-IDs, nicht mergen) oder erst nach Ende der Sperre?
+
+## Stand 2026-11-23 (Entscheidungen von René und Umsetzung)
+- Entschieden: Zielgruppe 16+ (nur 16-17 und 18+), Banner nur auf Vorschläge/Favoriten mit werbefreiem Start von 3 Tagen, Entwicklung jetzt mit Test-IDs.
+- Umgesetzt auf dem Branch `ccr-345fd84b-1leqix` (nicht in `main` mergen, bevor die AdMob-Sperre beendet ist und echte IDs eingetragen sind): Next-Gen-SDK 1.6.0, `ads/AdsController` (UMP, Init, Inhaltsstufe Teen, Testgeräte), `ads/AdBanner`, `ads/AdsEligibility` (3 Tage, getestet), Banner im `MainScreen` über der Navigationsleiste (nur Vorschläge/Favoriten, 24 dp Abstand), "Werbe-Datenschutzeinstellungen" in den Einstellungen, Spendentexte ohne "keine Werbung", `res/values/ads.xml` (Testgeräte), Debug und Release mit Test-IDs.
+- Geprüft: Unit-Tests, `lintDebug`, `assembleDebug`, `assembleRelease` (R8) grün. Neue Berechtigungen im Release-Manifest: `AD_ID`, `READ_BASIC_PHONE_STATE` (zusätzlich zu `INTERNET`, `ACCESS_NETWORK_STATE`, `WAKE_LOCK`, `FOREGROUND_SERVICE`). Release-APK 104,6 MB (vorher 102,8 MB).
+- Rechts-/Store-Texte und Console-Schritte vorbereitet in `store/werbung-release-paket.md` (noch nicht in `docs/` oder `store/listings/` übernommen).
+- Noch offen: Emulatortest, Testgeräte-ID eintragen, AdMob-Konto nach der Sperre, echte IDs, Texte live, Release.

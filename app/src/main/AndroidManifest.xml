@@ -21,6 +21,10 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.KindWords">
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/admob_app_id" />
+
         <!-- Google ML Kit startet nicht von selbst: erst nach Einwilligung zur Übersetzung (TranslationService.init). -->
         <provider
             android:name="com.google.mlkit.common.internal.MlKitInitProvider"

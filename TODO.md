@@ -136,3 +136,4 @@ Legende: `[ ]` offen · `[x]` erledigt · Agent in Klammern
 - [ ] (2026-11-23) Satzrunde Content v10 geplant: `docs/PLAN-SAETZE-V10.md` (Umfang A/B/C und Audio-Ablage vom Nutzer zu entscheiden).
 - [x] (2026-11-23) Content v10: je Sprache 300 neue Sätze (30 je Kategorie), zweite Lesung erledigt (de 71, en 78 Sätze überarbeitet/ersetzt), Tests grün. Offen: Stichprobe `docs/V10-STICHPROBE.md` (René), Muttersprachler-Prüfung EN, Aufnahmen für 600 Sätze (nach ElevenLabs-Lizenz/Schlüssel), danach Version 1.2.0 und Store-Zahl "rund 970 Sätze".
 - [ ] (2026-11-23) Werbung geplant: `docs/PLAN-WERBUNG.md` (Entscheidungen offen: Zielgruppe, Banner-Platzierung, Startzeitpunkt; AdMob-Sperre beachten).
+- [ ] (2026-11-23) Werbung: Code auf Branch umgesetzt (Test-IDs, 16+, Banner nur Vorschläge/Favoriten, 3 Tage werbefrei). NICHT nach `main` mergen vor Ende der AdMob-Sperre + echten IDs. Offen: Emulatortest, Testgerät, `store/werbung-release-paket.md` abarbeiten.

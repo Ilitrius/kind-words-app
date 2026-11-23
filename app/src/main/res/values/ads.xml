@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Test-Geräte-IDs für AdMob, kommagetrennt (nicht übersetzbar). So kommst du an deine ID: Debug-Build auf dem Gerät starten, nach
+         "Use RequestConfiguration.Builder().setTestDeviceIds" in Logcat suchen und die ID hier eintragen. Dieses Gerät bekommt dann
+         immer nur Test-Anzeigen (Klicks sind unschädlich), auch im Release-Build. Leer = keine Testgeräte. -->
+    <string name="admob_test_device_ids" translatable="false"></string>
+</resources>

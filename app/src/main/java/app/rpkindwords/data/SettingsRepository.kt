@@ -30,6 +30,7 @@ object Languages {
 class SettingsRepository(private val context: Context) {
     private object K {
         val startCount = intPreferencesKey("start_count")
+        val firstRunAt = longPreferencesKey("first_run_at")
         val trConsentVersion = intPreferencesKey("tr_consent_version")
         val trConsentAt = longPreferencesKey("tr_consent_at")
         val trTarget = stringPreferencesKey("tr_target")
@@ -159,9 +160,20 @@ class SettingsRepository(private val context: Context) {
         context.dataStore.edit { p ->
             count = (p[K.startCount] ?: 0) + 1
             p[K.startCount] = count
+            if (p[K.firstRunAt] == null) p[K.firstRunAt] = clockNow()
         }
         return isDonatePromptDue(count)
     }
+
+    /** Zeitpunkt des ersten Starts (für den werbefreien Beginn); fehlt der Eintrag, gilt jetzt als erster Start. */
+    suspend fun firstRunAt(): Long {
+        val now = clockNow()
+        var value = now
+        context.dataStore.edit { p -> value = p[K.firstRunAt] ?: now.also { p[K.firstRunAt] = it } }
+        return value
+    }
+
+    private fun clockNow(): Long = System.currentTimeMillis()
 
     private companion object {
         const val DEFAULT_SPEECH_RATE_PCT = 80
