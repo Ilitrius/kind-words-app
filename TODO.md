@@ -133,3 +133,4 @@ Legende: `[ ]` offen · `[x]` erledigt · Agent in Klammern
 - [ ] Nutzer: `.\gradlew.bat lintRelease bundleRelease`, 1.1.0 + `mapping.txt` hochladen; Datenschutz-Seiten gehen mit dem Merge in `main` live (GitHub Pages).
 - [ ] Qualitätsrunde: weitere warme, natürliche Sätze (Content v10; Aufnahmen per `tools/gen_voice.py` nachziehen, Hash je Satz).
 - [ ] Werbung planen (später): siehe BRAIN.md.
+- [ ] (2026-11-23) Satzrunde Content v10 geplant: `docs/PLAN-SAETZE-V10.md` (Umfang A/B/C und Audio-Ablage vom Nutzer zu entscheiden).
