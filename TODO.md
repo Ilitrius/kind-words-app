@@ -135,3 +135,4 @@ Legende: `[ ]` offen · `[x]` erledigt · Agent in Klammern
 - [ ] Werbung planen (später): siehe BRAIN.md.
 - [ ] (2026-11-23) Satzrunde Content v10 geplant: `docs/PLAN-SAETZE-V10.md` (Umfang A/B/C und Audio-Ablage vom Nutzer zu entscheiden).
 - [x] (2026-11-23) Content v10: je Sprache 300 neue Sätze (30 je Kategorie), zweite Lesung erledigt (de 71, en 78 Sätze überarbeitet/ersetzt), Tests grün. Offen: Stichprobe `docs/V10-STICHPROBE.md` (René), Muttersprachler-Prüfung EN, Aufnahmen für 600 Sätze (nach ElevenLabs-Lizenz/Schlüssel), danach Version 1.2.0 und Store-Zahl "rund 970 Sätze".
+- [ ] (2026-11-23) Werbung geplant: `docs/PLAN-WERBUNG.md` (Entscheidungen offen: Zielgruppe, Banner-Platzierung, Startzeitpunkt; AdMob-Sperre beachten).
