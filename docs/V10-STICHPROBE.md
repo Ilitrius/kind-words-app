@@ -1,146 +1,146 @@
-# Stichprobe Content v10 (zum Gegenlesen)
-Je Kategorie 5 zufällige neue Sätze pro Sprache (fester Zufall, reproduzierbar). Markiere Sätze, die nicht passen; sie werden ersetzt.
+# Stichprobe Content v10 (nach zweiter Lesung, zum Gegenlesen)
+Je Kategorie 5 zufällige neue Sätze pro Sprache (fester Zufall). Markiere Sätze, die nicht passen; sie werden ersetzt.
 
 ## Deutsch
 
 **love**
-- `de-love-086` Schatz, du bist mein Lieblingsort, ganz egal, wo wir gerade sind.
-- `de-love-069` Schatz, ich mag es so, wenn du beim Lesen ganz nebenbei deine Hand auf mein Knie legst.
-- `de-love-081` Jedes Mal, wenn du mich zum Abschied küsst, freu ich mich schon auf das Wiedersehen.
-- `de-love-083` Schon bei unserem ersten Kaffee hatte ich ein gutes Gefühl mit dir, und das ist bis heute geblieben.
-- `de-love-068` Wenn du mit zerzausten Haaren in die Küche kommst, verliebe ich mich gleich noch einmal in dich.
+- `de-love-082` Du bist mir so vertraut, und trotzdem überraschst du mich immer wieder aufs Neue.
+- `de-love-095` Ich freu mich so auf heute Abend, wenn wir es uns zu zweit gemütlich machen 💛
+- `de-love-085` Wenn wir zusammen Pläne für den Sommer machen, freu ich mich wie ein Kind.
+- `de-love-097` Ich schick dir einen dicken Kuss in die Mittagspause 😘
+- `de-love-092` Ich mag es, dass wir uns sogar beim Zähneputzen noch etwas zu erzählen haben.
 
 **appreciation**
-- `de-appreciation-074` Was du versprichst, das hältst du auch, Schatz, und das schätze ich so an dir.
 - `de-appreciation-082` Du findest für fast alles eine gute Lösung, Schatz, und das in aller Ruhe.
-- `de-appreciation-094` Du nimmst dir für jeden Menschen Zeit, Schatz, und das macht dich so besonders 💛
-- `de-appreciation-083` Du bist so fleißig und hast abends trotzdem noch ein Lächeln für mich übrig.
-- `de-appreciation-076` Dass du unsere Urlaube so liebevoll planst, macht die Vorfreude für mich doppelt so schön.
+- `de-appreciation-084` Ich finde es schön, wie offen du auf neue Leute zugehst.
+- `de-appreciation-095` An alles für den Ausflug hast du gedacht, sogar an die Sonnencreme ☀️
+- `de-appreciation-086` Du hilfst sofort mit, wenn dich jemand fragt, und machst das mit so viel Freude.
+- `de-appreciation-074` Was du versprichst, das hältst du auch, Schatz, und das schätze ich so an dir.
 
 **morning**
-- `de-morning-088` Nach dem Duschen wartet ein warmer Tee auf dich, Schatz.
-- `de-morning-093` Heute scheint die Sonne, Schatz, genau wie du es dir gewünscht hast ☀️
 - `de-morning-073` Heute klingelt kein Wecker, also frühstücken wir ganz gemütlich im Bett.
-- `de-morning-069` Ich hab dir deine Lieblingstasse rausgestellt, Schatz, und der Kaffee läuft schon durch.
+- `de-morning-093` Heute scheint die Sonne, Schatz, genau wie du es dir gewünscht hast ☀️
 - `de-morning-084` Bevor du aus dem Haus gehst, bekommst du noch eine lange Umarmung von mir.
+- `de-morning-083` Hast du schon aus dem Fenster geschaut? Der Himmel ist heute ganz blau.
+- `de-morning-088` Nach dem Duschen wartet ein warmer Tee auf dich, Schatz.
 
 **goodnight**
-- `de-goodnight-083` Ich hab deine Bettseite schon glatt gestrichen, damit du dich gleich gemütlich hineinlegen kannst.
-- `de-goodnight-078` Dein Kopfkissen ist aufgeschüttelt und wartet schon auf dich.
-- `de-goodnight-070` Schlaf gut, Schatz, und lass dir morgen früh ruhig Zeit mit dem Aufstehen.
-- `de-goodnight-075` Du bist bestimmt schon ganz müde, also kuschel dich ein und schlaf gut.
-- `de-goodnight-091` Schick mir noch ein Herz, bevor du einschläfst, Schatz ❤️
+- `de-goodnight-087` Hast du deinen Wecker gestellt? Dann kannst du jetzt ganz beruhigt einschlafen.
+- `de-goodnight-093` Ich nehm dich in Gedanken ganz fest in den Arm und schlaf jetzt auch ein 🤗
+- `de-goodnight-073` Danke, dass du mir vorhin noch so lange zugehört hast. Jetzt schlaf schön, Schatz.
+- `de-goodnight-071` Ich mach jetzt das Licht aus und freu mich schon darauf, morgen neben dir aufzuwachen.
+- `de-goodnight-082` Stell dir beim Einschlafen unseren nächsten Urlaub vor, Schatz, ich mach das gerade auch.
 
 **encouragement**
-- `de-encouragement-079` Ich weiß, wie viel dir das bedeutet, und genau deshalb wirst du es gut machen.
-- `de-encouragement-069` Auf deinem Schreibtisch stehen ein Glas Wasser und etwas Nervennahrung für dich bereit.
-- `de-encouragement-081` Heute bist du schon ein ganzes Stück weiter als letzte Woche, und das sieht man.
-- `de-encouragement-095` Ich hab mir den Abend freigehalten, damit wir danach zusammen feiern können 🎉
-- `de-encouragement-072` Heute ist dein erster Lauf über fünf Kilometer, und ich warte mit einem Schild am Ziel auf dich.
+- `de-encouragement-077` Du bleibst so beharrlich dran, Schatz, und damit kommst du deinem Ziel jeden Tag näher.
+- `de-encouragement-072` Ich hab dir heute früh extra fest die Hand gedrückt, damit du ein bisschen Mut mitnimmst.
+- `de-encouragement-070` Ich bin so stolz, dass du dich für den Kurs angemeldet hast, Schatz.
+- `de-encouragement-085` Den ersten Teil hast du schon geschafft, und der Rest geht dir bestimmt leichter von der Hand.
+- `de-encouragement-093` Deine gute Laune steckt alle an, und damit hast du heute schon halb gewonnen 🌟
 
 **missyou**
-- `de-missyou-087` Unsere Pflanze auf der Fensterbank hat eine neue Blüte, und ich möchte sie dir unbedingt zeigen.
-- `de-missyou-079` Ich hab schon nachgeschaut, wann dein Flug landet, und weiß die Uhrzeit jetzt auswendig.
-- `de-missyou-080` Schatz, deine Jacke hängt noch an der Garderobe, und ich streiche im Vorbeigehen jedes Mal darüber.
-- `de-missyou-081` Hier blühen gerade die Kirschbäume, und ich wünsch mir so, dass du sie mit mir anschaust.
-- `de-missyou-077` Du bist auch aus der Ferne der Mensch, der mich am meisten zum Lächeln bringt.
+- `de-missyou-096` Ich vermiss dein Lachen am Esstisch, Schatz, und freu mich so darauf, es bald wieder zu hören 😊
+- `de-missyou-090` Bald bist du wieder hier, Schatz, und dann holen wir uns zusammen ein Eis 🍦
+- `de-missyou-088` Ich hab heute ein Lied gehört, das dir gefallen würde, und spiel es dir vor, sobald du da bist.
+- `de-missyou-069` Schatz, ich freu mich schon so auf unseren ersten Abend, wenn du wieder da bist.
+- `de-missyou-087` Ich hab angefangen, eine Liste mit allem zu schreiben, was wir machen, wenn du wieder da bist.
 
 **compliment**
-- `de-compliment-094` Du siehst heute aus, als wärst du direkt aus einem Film gestiegen, Schatz 🌟
-- `de-compliment-089` Sogar im Regenmantel siehst du umwerfend aus ☔
-- `de-compliment-076` Du empfiehlst mir immer genau die richtigen Bücher, als könntest du in meinen Kopf schauen.
+- `de-compliment-080` Du gehst so selbstbewusst durch die Welt, und das find ich unglaublich anziehend.
 - `de-compliment-082` Du bist so schön, Schatz, besonders wenn du dich über etwas freust.
-- `de-compliment-073` Wenn du mir vorliest, klingt jede Geschichte gleich doppelt so schön.
+- `de-compliment-088` Du hast so ein schönes Lachen, dass ich extra lustige Dinge erzähle, nur um es zu hören 😊
+- `de-compliment-091` Du kannst so herrlich über dich selbst lachen, und das finde ich wunderbar.
+- `de-compliment-087` Du hast ein gutes Gespür für Farben, und alles, was du aussuchst, sieht einfach schön aus.
 
 **humor**
-- `de-humor-089` Jeder Kuss, den ich dir heute schicke, kommt heute Abend mit Zinsen zurück.
-- `de-humor-077` Seit ich dich kenne, summe ich beim Staubsaugen Liebeslieder.
-- `de-humor-079` Beim Telefonieren mit dir wird mein Tee jedes Mal kalt, weil ich ihn völlig vergesse.
-- `de-humor-072` Ich übe gerade, dir einen Liebesbrief in Schönschrift zu schreiben, und bin schon beim dritten Entwurf.
-- `de-humor-082` Kuscheln ist mein Lieblingssport, Schatz, und mit dir trainiere ich am liebsten.
+- `de-humor-088` Eigentlich wollte ich nur Milch holen und kam mit deinem Lieblingseis und drei Sorten Schokolade heim.
+- `de-humor-073` Du bist der einzige Mensch, für den ich den Wecker gern eine halbe Stunde früher stelle.
+- `de-humor-087` Wenn wir zusammen kochen, naschen wir mehr, als im Topf landet, und genau das mag ich so.
+- `de-humor-068` Laut meinen Berechnungen bist du heute schon wieder ein bisschen liebenswerter geworden.
+- `de-humor-094` Heute hab ich dir schon so viele Herzen geschickt, dass mein Handy bestimmt bald rot wird ❤️
 
 **thanks**
-- `de-thanks-092` Der Abend im Kino war so schön mit dir, vielen Dank für die Einladung 🍿
-- `de-thanks-095` Meine Brille war heute frisch geputzt, Schatz, und ich hab mich gleich gefreut ✨
-- `de-thanks-075` Du bist extra früh aufgestanden, um mich zum Flughafen zu fahren, und dafür bekommst du einen dicken Kuss.
-- `de-thanks-082` Als ich heimkam, war die Küche schon aufgeräumt, und darüber hab ich mich so gefreut.
-- `de-thanks-087` Danke, Schatz, dass du mir heute den Fensterplatz überlassen hast.
+- `de-thanks-084` Ich bin dir so dankbar, dass du die Gäste empfangen hast, während ich noch unterwegs war.
+- `de-thanks-070` Dein Anruf in der Mittagspause kam genau im richtigen Moment, danke, Schatz.
+- `de-thanks-069` Ich danke dir so sehr, dass du dir gestern Abend Zeit für meine Präsentation genommen hast.
+- `de-thanks-074` Herzlichen Dank für den Kuchen, Schatz, der war nach einer Stunde schon aufgegessen.
+- `de-thanks-096` In den letzten Wochen hast du mir so viel Halt gegeben, und ich danke dir sehr 💛
 
 **apology**
-- `de-apology-080` Unseren Jahrestag hol ich mit einem ganz besonderen Abend für dich nach, versprochen.
-- `de-apology-069` Entschuldige, dass ich so spät dran bin, zur Wiedergutmachung bring ich dir dein Lieblingsgebäck mit.
-- `de-apology-086` Dein Lieblingsessen steht heute Abend auf dem Tisch, weil mir das von vorhin leidtut.
-- `de-apology-068` Heute Abend lass ich das Handy in der Tasche, Schatz, und bin nur für dich da.
 - `de-apology-075` Schatz, lass uns das Missverständnis bei einer Tasse Kakao aus der Welt schaffen.
+- `de-apology-087` Ich sehe jetzt, wie viel Mühe du dir gegeben hast, und hätte dir das vorhin schon sagen sollen.
+- `de-apology-068` Heute Abend lass ich das Handy in der Tasche, Schatz, und bin nur für dich da.
+- `de-apology-092` Ich höre dir zu, so lange du möchtest 👂
+- `de-apology-082` Entschuldige, ich hab dich unterbrochen. Erzähl bitte weiter, ich möchte alles hören.
 
 ## Englisch
 
 **love**
-- `en-love-086` My heart still does a little jump when I see you waiting for me at the station.
-- `en-love-069` You're my favorite part of every ordinary weekday, sweetheart.
-- `en-love-081` Your hand in my coat pocket on a cold walk warms me more than any scarf.
-- `en-love-083` I keep falling for the little ways you take care of us.
-- `en-love-068` I love the way you hand me the first sip of your coffee without even asking.
+- `en-love-082` I love how you always save me a spot right next to you, wherever we are.
+- `en-love-095` We've built such a cozy little life together, sweetheart 🏡
+- `en-love-085` I hope we're still laughing at the same little things when we're both old and gray.
+- `en-love-097` Our slow walks after dinner are some of the happiest minutes of my day.
+- `en-love-092` I could say I love you a hundred times a day and still mean it every time 💕
 
 **appreciation**
-- `en-appreciation-074` You're so generous with your time, sweetheart, and everyone around you can feel it.
 - `en-appreciation-082` You make every decision with both of us in mind, sweetheart.
-- `en-appreciation-094` Your hard work this year has been so impressive to watch 🌟
-- `en-appreciation-083` You're the reason our evenings feel so relaxed.
-- `en-appreciation-076` You always give me the comfy chair, honey, and you think I don't see it.
+- `en-appreciation-084` You wish me luck before every big moment, and I carry it with me all day.
+- `en-appreciation-095` You make sure everyone at the table feels included 😊
+- `en-appreciation-086` You can turn an ordinary Sunday into something special, and I love that.
+- `en-appreciation-074` You're so generous with your time, sweetheart, and everyone around you can feel it.
 
 **morning**
-- `en-morning-088` Good morning, sweetheart. I already can't wait to hear about your day tonight.
-- `en-morning-093` Good morning, you. I'm sending a big hug to get your day started 🤗
 - `en-morning-073` You left for work ten minutes ago, and I already can't wait for tonight.
-- `en-morning-069` I put a little note on the bathroom mirror for you, sweetheart.
+- `en-morning-093` Good morning, you. I'm sending a big hug to get your day started 🤗
 - `en-morning-084` Your alarm is about to go off, so here's a kiss before it does 😘
+- `en-morning-083` Have a good day at work, and save a few stories for me tonight.
+- `en-morning-088` Good morning, sweetheart. I'm so glad you're the first person I get to talk to today.
 
 **goodnight**
-- `en-goodnight-083` You worked so hard today, and you've earned a long, deep sleep.
-- `en-goodnight-078` You're the one I want to tell about my day before I fall asleep.
-- `en-goodnight-070` I'll call you as soon as I wake up, so you can hear my sleepy voice.
-- `en-goodnight-075` The heater's on low and the blanket is thick, so you're going to sleep so well.
-- `en-goodnight-091` Sleep tight, sweetheart, and I'll see you bright and early 🌙
+- `en-goodnight-087` Sleep well, and dream of somewhere warm and sunny 🌴
+- `en-goodnight-093` I'm off to bed with a cup of cocoa and happy thoughts of you 🌟
+- `en-goodnight-073` Sweet dreams, sweetheart. I'll be right here when you wake up.
+- `en-goodnight-071` I hope you get the deep, cozy sleep you deserve tonight, honey.
+- `en-goodnight-082` Good night, my love. Let's sleep in a little tomorrow, since we can.
 
 **encouragement**
-- `en-encouragement-079` Your business idea is a really good one, honey, and I'd love to help you make it happen.
-- `en-encouragement-069` Your new project sounds wonderful, honey, and I'd love to watch it grow.
-- `en-encouragement-081` You've trained for months, and your legs know exactly what to do today.
-- `en-encouragement-095` I packed you a lunch and a little note for luck today 🍀
-- `en-encouragement-072` You're so close to finishing your thesis, sweetheart, and I'm cheering for every last page.
+- `en-encouragement-077` Tomorrow's meeting is going to go well, because you always come prepared.
+- `en-encouragement-072` You're almost there, sweetheart, and I'm cheering for you all the way.
+- `en-encouragement-070` You'll get there at your own pace, and I'll be right beside you the whole way.
+- `en-encouragement-085` You can always call me during your break, and I'll pick up right away.
+- `en-encouragement-093` You've been ready for this for a while, sweetheart, and now everyone else will see it too 💪
 
 **missyou**
-- `en-missyou-087` I miss the way you look at me across the table.
-- `en-missyou-079` Your messages are what I look forward to most while you're away, honey.
-- `en-missyou-080` The evenings are when I miss you most, because that's when we'd be cooking together.
-- `en-missyou-081` I wore the sweater you gave me today, and it felt like a hug from you.
-- `en-missyou-077` When you're back, let's cook that big pasta dinner we keep talking about.
+- `en-missyou-096` Just one more week, and then we're back to our evenings together 💕
+- `en-missyou-090` I'm sending you a big hug across all those miles, sweetheart 🤗
+- `en-missyou-088` Video calls are lovely, but nothing beats having you right here.
+- `en-missyou-069` Three more days, sweetheart, and then I'm not letting go of you for a while.
+- `en-missyou-087` Nobody looks at me across the table the way you do, and I miss it.
 
 **compliment**
-- `en-compliment-094` You're such a good friend to everyone you know 💛
-- `en-compliment-089` You always know how to cheer up a friend who's having a long day.
-- `en-compliment-076` Your instincts are so good, honey, and I trust them completely.
+- `en-compliment-080` You always see the good in people, sweetheart, and it makes me want to do the same.
 - `en-compliment-082` Even carrying the groceries in, you look so graceful.
-- `en-compliment-073` You tell stories so well that everyone at the table stops to listen.
+- `en-compliment-088` You look so good in that color, and I keep stealing glances at you.
+- `en-compliment-091` You look so lovely all wrapped up in that big scarf 😍
+- `en-compliment-087` You're such a good cook that our friends keep asking when they can come over again.
 
 **humor**
-- `en-humor-089` Every time you laugh, I feel like I just won a little prize 🎁
-- `en-humor-077` Our love story would make a great sitcom, mostly because of all the snacks.
-- `en-humor-079` I'm thinking about you so much today that I put the milk in the cupboard.
-- `en-humor-072` I've rehearsed a very smooth compliment for you, but I'm saving it for when I see you.
-- `en-humor-082` You're the only person I'd happily get up early for on a Sunday, honey.
+- `en-humor-088` I bought two of the same mug so we can be adorable together ☕
+- `en-humor-073` I did a little research, and texting you makes me a hundred percent happier.
+- `en-humor-087` We're like socks, sweetheart, so much better as a pair.
+- `en-humor-068` If hugging you were a sport, I'd have a shelf full of trophies by now 🏆
+- `en-humor-094` How about a blanket fort tonight, with just enough room for you and me? 😄
 
 **thanks**
-- `en-thanks-092` You surprised me with tickets to the show, and I'm still so happy about it 🎁
-- `en-thanks-095` You brought me hot chocolate for the walk home, and it warmed me right up ☕
-- `en-thanks-075` All the presents are wrapped so beautifully, honey. Thank you for doing that.
-- `en-thanks-082` That was a wonderful dinner, and I loved every bite.
-- `en-thanks-087` You fixed my bike so I could ride to work this morning. Thank you so much.
+- `en-thanks-084` You remembered how I like my eggs, and that small thing made my morning.
+- `en-thanks-070` Thanks for the ride to the airport so early in the morning, sweetheart.
+- `en-thanks-069` I came home to a clean fridge and a full pantry, and I owe you a big hug for it.
+- `en-thanks-074` Thanks for keeping me company while I cooked tonight, sweetheart.
+- `en-thanks-096` You remembered to buy my favorite tea, and it made my evening so cozy 🍵
 
 **apology**
-- `en-apology-080` You had so much on your plate this week, and from now on I'll help more.
-- `en-apology-069` My phone stays in the drawer at dinner from now on, because you deserve all of my attention.
-- `en-apology-086` Can I take you out for breakfast and say sorry properly?
-- `en-apology-068` Our dinner reservation slipped my mind, so tonight I'm cooking for you instead.
 - `en-apology-075` Next time I'm running late, you'll get a text from me right away, I promise.
+- `en-apology-087` I'm writing the little things down from now on, sweetheart, because they matter to you.
+- `en-apology-068` Our dinner reservation slipped my mind, so tonight I'm cooking for you instead.
+- `en-apology-092` I wrote you a little note to say I'm sorry, and it's under your pillow 💌
+- `en-apology-082` The last slice of cake was meant for you, so I'm baking you a whole one this weekend.
