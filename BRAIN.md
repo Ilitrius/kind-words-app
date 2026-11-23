@@ -154,3 +154,9 @@ Das „Gehirn“ des Projekts: Entscheidungen, Fakten, Fallstricke. Wird von Men
 - Nutzerwahl: Jessica (ElevenLabs, eleven_multilingual_v2, stability 0.6, similarity 0.75, style 0.1, speed 0.92, mp3_44100_64, ca. 30 KB/Satz). Erzeugung per `tools/gen_voice.py`; Verbrauch 1 Credit je Zeichen, de ca. 45k + en ca. 39k Zeichen; Tarif payg (Free-Tarif schließt kommerzielle Nutzung aus).
 - App: `Speaker.playClip` (MediaPlayer aus Assets, Dateiname mit SHA-1-Hash des Textes, `SpeechText.clipHash`), `MainViewModel.speak` nutzt es nur ohne Übersetzung. Ohne passende Datei springt die Gerätestimme ein (nach Qualität sortiert, Satzpausen 350 ms). Tempo-Einstellung gilt nur für die Gerätestimme.
 - Hörprobe-Dateien und Schlüssel liegen nur im Session-Scratchpad, nie im Repo. APK wächst auf 102 MB (AAB 68 MB).
+
+## Stand 2026-11-23 (Hauptprojekt)
+- 2026-11-23 · Version · 1.0.16 (Build 16, mit natürlicher Stimme) ist gebaut; Upload (AAB + `dist/mapping.txt`) und weitere Schritte liegen beim Nutzer · Play-Upload macht der Nutzer.
+- 2026-11-23 · Play Console · Geschlossener Test läuft; es fehlen >=12 Tester über 14 Tage, dann Produktionszugriff beantragen.
+- 2026-11-23 · Offen · ElevenLabs-Lizenz prüfen und Schlüssel widerrufen; Audio (40 MB) ins Git oder LFS entscheiden; Vorlesen auf Galaxy Tab S6 Lite prüfen; Optik API < 35; Keystore extern sichern.
+- 2026-11-23 · Lehre aus RPCT · Eigene Klicks auf eigene AdMob-Anzeigen führten zur AdMob-Sperre. Falls je Werbung in Kind Words: nur Test-IDs im Debug-Build, nie im Release auf eigene Anzeigen klicken · Richtlinienverstoß.
