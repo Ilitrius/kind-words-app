@@ -157,6 +157,6 @@ Das „Gehirn“ des Projekts: Entscheidungen, Fakten, Fallstricke. Wird von Men
 
 ## Stand 2026-11-23 (Hauptprojekt)
 - 2026-11-23 · Version · 1.0.16 (Build 16, mit natürlicher Stimme) ist gebaut; Upload (AAB + `dist/mapping.txt`) und weitere Schritte liegen beim Nutzer · Play-Upload macht der Nutzer.
-- 2026-11-23 · Play Console · Geschlossener Test läuft; es fehlen >=12 Tester über 14 Tage, dann Produktionszugriff beantragen.
+- 2026-11-23 · Play Console · Tester-Anforderung (>=12 Tester, 14 Tage) erledigt (Nutzer); alle drei Apps (Kind Words, RPCT, Idle RPG) sind laut Nutzer produktiv in der Beta-Phase. Genauer Track noch festhalten.
 - 2026-11-23 · Offen · ElevenLabs-Lizenz prüfen und Schlüssel widerrufen; Audio (40 MB) ins Git oder LFS entscheiden; Vorlesen auf Galaxy Tab S6 Lite prüfen; Optik API < 35; Keystore extern sichern.
 - 2026-11-23 · Lehre aus RPCT · Eigene Klicks auf eigene AdMob-Anzeigen führten zur AdMob-Sperre. Falls je Werbung in Kind Words: nur Test-IDs im Debug-Build, nie im Release auf eigene Anzeigen klicken · Richtlinienverstoß.
