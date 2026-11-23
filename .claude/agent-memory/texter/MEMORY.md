@@ -4,3 +4,5 @@
 - [Content v9](project_content_v9.md) — Stilwechsel: fließende ganze Sätze, "Schatz"/"Du bist", Emoji nur am Ende; 708 de / 639 en geändert, Prüfskript-Checks
 - [Content v10](project_content_v10.md) — +30 je Textkategorie (ids 068-097), EN/DE parallel getrennt geschrieben, Prüfskript und häufigste eigene Treffer
 - [Content v10 DE](project_content_v10_de.md) — DE +30 je Textkategorie (ids 068-097), version 10, 1110 Einträge; Prüf-/Build-Skripte, gesättigte Themen
+- [Content v10 EN 2. Lesung](project_content_v10_en_review.md) — 300 neue EN geprüft, 78 geändert; Situations-Spezifik, Motiv-Häufung (coffee), Opener
+- [Zweite Lesung](feedback_second_reading.md) — strenger Review v10 DE: 71/300 geändert, häufigste Mängel (zu spezielle Situationen, gesättigte Motive), Ersatzsätze erneut auf Dubletten prüfen
