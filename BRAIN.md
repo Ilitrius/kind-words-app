@@ -179,3 +179,4 @@ Das „Gehirn“ des Projekts: Entscheidungen, Fakten, Fallstricke. Wird von Men
 - Store-Texte nennen keine Satzzahl mehr; "rund 970" ist nirgends nötig.
 - Regel: Im Release nie auf eigene Anzeigen klicken (AdMob-Sperre bei RPCT).
 - Offen/ungetestet: Widget und Banner im Emulator (API 35 und 26), Release-APK mit echter ID nicht auf Gerät geprüft.
+- 2026-11-23 Emulatortest Release-APK 1.1.0 (Pixel_API35, ohne Play Store): Start ohne Absturz, Home/Einstellungen/Favoriten ohne FATAL im Log, AdMob-SDK initialisiert, UMP lief ohne Formular (Region nicht EWR). Banner lädt dort nicht ("Ad failed to load: 3", HTTP 400 = kein Anzeigenangebot; neuer Anzeigenblock/Emulator, kein Codefehler). Eintrag "Privacy options for ads" ist in den Einstellungen sichtbar, obwohl UMP kein Formular verlangte: gegen die Annahme "nur wo UMP ihn verlangt" prüfen. Nicht getestet: Widget, API 26, Update von 1.0.16, echte Anzeige auf Gerät mit Play Store.
