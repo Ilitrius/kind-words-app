@@ -2,3 +2,4 @@
 - [Content v7](project_content_v7.md) — 240 neue Sätze je Sprache, ids 028-047/031-050, seit 2026-11 eingebaut (570 je Sprache)
 - [Content v8](project_content_v8.md) — Verfeinern + 20 neu je Kategorie (ids 048-067/051-070), parallel von texter-Instanzen, Merge durch Hauptagent
 - [Content v9](project_content_v9.md) — Stilwechsel: fließende ganze Sätze, "Schatz"/"Du bist", Emoji nur am Ende; 708 de / 639 en geändert, Prüfskript-Checks
+- [Content v10](project_content_v10.md) — +30 je Textkategorie (ids 068-097), EN/DE parallel getrennt geschrieben, Prüfskript und häufigste eigene Treffer

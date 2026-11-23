@@ -1,6 +1,6 @@
 {
   "language": "en",
-  "version": 9,
+  "version": 10,
   "messages": [
     {
       "id": "en-love-001",
@@ -2953,6 +2953,156 @@
       "text": "You made me tea, so you're getting extra love today ❤️"
     },
     {
+      "id": "en-love-068",
+      "category": "love",
+      "text": "I love the way you hand me the first sip of your coffee without even asking."
+    },
+    {
+      "id": "en-love-069",
+      "category": "love",
+      "text": "You're my favorite part of every ordinary weekday, sweetheart."
+    },
+    {
+      "id": "en-love-070",
+      "category": "love",
+      "text": "I love you, honey, and I'm still amazed that I get to say it every day."
+    },
+    {
+      "id": "en-love-071",
+      "category": "love",
+      "text": "Hearing you sing in the shower when you think I can't hear always makes me smile."
+    },
+    {
+      "id": "en-love-072",
+      "category": "love",
+      "text": "Every year with you has been better than the one before, sweetheart."
+    },
+    {
+      "id": "en-love-073",
+      "category": "love",
+      "text": "I still remember what you wore on our first date, and I smile every time I think of it."
+    },
+    {
+      "id": "en-love-074",
+      "category": "love",
+      "text": "Making plans with you is so much fun, whether it's next weekend or ten years from now."
+    },
+    {
+      "id": "en-love-075",
+      "category": "love",
+      "text": "Whenever you fall asleep before me, I lie there for a while just feeling grateful."
+    },
+    {
+      "id": "en-love-076",
+      "category": "love",
+      "text": "You're in every happy plan I make, honey, and I wouldn't have it any other way."
+    },
+    {
+      "id": "en-love-077",
+      "category": "love",
+      "text": "You always slide the corner piece of the lasagna onto my plate, and I adore you for it."
+    },
+    {
+      "id": "en-love-078",
+      "category": "love",
+      "text": "Even with all these miles between us, you feel closer to me than anyone."
+    },
+    {
+      "id": "en-love-079",
+      "category": "love",
+      "text": "Sitting in the car for ten more minutes just to finish our conversation is so us."
+    },
+    {
+      "id": "en-love-080",
+      "category": "love",
+      "text": "I love you more now than I did in our first year together."
+    },
+    {
+      "id": "en-love-081",
+      "category": "love",
+      "text": "Your hand in my coat pocket on a cold walk warms me more than any scarf."
+    },
+    {
+      "id": "en-love-082",
+      "category": "love",
+      "text": "When you make the bed, you tuck my side in just the way I like it."
+    },
+    {
+      "id": "en-love-083",
+      "category": "love",
+      "text": "I keep falling for the little ways you take care of us."
+    },
+    {
+      "id": "en-love-084",
+      "category": "love",
+      "text": "Every evening with you feels a bit like Sunday, honey."
+    },
+    {
+      "id": "en-love-085",
+      "category": "love",
+      "text": "I hope we're still laughing at the same little things when we're both old and gray."
+    },
+    {
+      "id": "en-love-086",
+      "category": "love",
+      "text": "My heart still does a little jump when I see you waiting for me at the station."
+    },
+    {
+      "id": "en-love-087",
+      "category": "love",
+      "text": "You're such a good partner, sweetheart, and I feel so lucky to be loved by you."
+    },
+    {
+      "id": "en-love-088",
+      "category": "love",
+      "text": "You still wave from the window every time I leave, and I wave back like a kid."
+    },
+    {
+      "id": "en-love-089",
+      "category": "love",
+      "text": "Cooking dinner next to you never feels like a chore, honey."
+    },
+    {
+      "id": "en-love-090",
+      "category": "love",
+      "text": "I'd take a night in with you over any party in town."
+    },
+    {
+      "id": "en-love-091",
+      "category": "love",
+      "text": "Every time I come back from a trip, yours is the face I look for first."
+    },
+    {
+      "id": "en-love-092",
+      "category": "love",
+      "text": "I could say I love you a hundred times a day and still mean it every time 💕"
+    },
+    {
+      "id": "en-love-093",
+      "category": "love",
+      "text": "I'd happily share every slice of pizza with you for the rest of my life 🍕"
+    },
+    {
+      "id": "en-love-094",
+      "category": "love",
+      "text": "Every time you call me by that pet name of yours, I melt a little 😊"
+    },
+    {
+      "id": "en-love-095",
+      "category": "love",
+      "text": "We've built such a cozy little life together, sweetheart 🏡"
+    },
+    {
+      "id": "en-love-096",
+      "category": "love",
+      "text": "I love you, honey, today and on all the ordinary days still ahead of us 💛"
+    },
+    {
+      "id": "en-love-097",
+      "category": "love",
+      "text": "Our slow walks after dinner are some of the happiest minutes of my day."
+    },
+    {
       "id": "en-appreciation-048",
       "category": "appreciation",
       "text": "When I come home late, the hall light is always on for me. Thank you, sweetheart."
@@ -3051,6 +3201,156 @@
       "id": "en-appreciation-067",
       "category": "appreciation",
       "text": "Watching you help a stranger with their bags made my whole day 🌟"
+    },
+    {
+      "id": "en-appreciation-068",
+      "category": "appreciation",
+      "text": "You plan ahead for both of us, honey, and it makes everything feel easier."
+    },
+    {
+      "id": "en-appreciation-069",
+      "category": "appreciation",
+      "text": "You give such thoughtful advice, and I always come away seeing things more clearly."
+    },
+    {
+      "id": "en-appreciation-070",
+      "category": "appreciation",
+      "text": "Our home smells like fresh bread on Sundays, and I know that's all you."
+    },
+    {
+      "id": "en-appreciation-071",
+      "category": "appreciation",
+      "text": "You work so hard all week and still have energy for us on the weekend."
+    },
+    {
+      "id": "en-appreciation-072",
+      "category": "appreciation",
+      "text": "You put me first so often, honey, and I see it every single time."
+    },
+    {
+      "id": "en-appreciation-073",
+      "category": "appreciation",
+      "text": "There's always a spare charger in your bag for me, which is so thoughtful."
+    },
+    {
+      "id": "en-appreciation-074",
+      "category": "appreciation",
+      "text": "You're so generous with your time, sweetheart, and everyone around you can feel it."
+    },
+    {
+      "id": "en-appreciation-075",
+      "category": "appreciation",
+      "text": "I admire how you never stop learning, from new recipes to whole languages."
+    },
+    {
+      "id": "en-appreciation-076",
+      "category": "appreciation",
+      "text": "You always give me the comfy chair, honey, and you think I don't see it."
+    },
+    {
+      "id": "en-appreciation-077",
+      "category": "appreciation",
+      "text": "The way you take care of your parents shows me what kind of heart you have."
+    },
+    {
+      "id": "en-appreciation-078",
+      "category": "appreciation",
+      "text": "You keep our calendar in order, so we never end up double-booked on a weekend."
+    },
+    {
+      "id": "en-appreciation-079",
+      "category": "appreciation",
+      "text": "You've taught me so much without ever making a big deal of it."
+    },
+    {
+      "id": "en-appreciation-080",
+      "category": "appreciation",
+      "text": "You're always the one who brings the board games and gets everyone laughing."
+    },
+    {
+      "id": "en-appreciation-081",
+      "category": "appreciation",
+      "text": "Even when your week is packed, you find time to call your friends back."
+    },
+    {
+      "id": "en-appreciation-082",
+      "category": "appreciation",
+      "text": "You make every decision with both of us in mind, sweetheart."
+    },
+    {
+      "id": "en-appreciation-083",
+      "category": "appreciation",
+      "text": "You're the reason our evenings feel so relaxed."
+    },
+    {
+      "id": "en-appreciation-084",
+      "category": "appreciation",
+      "text": "You wish me luck before every big moment, and I carry it with me all day."
+    },
+    {
+      "id": "en-appreciation-085",
+      "category": "appreciation",
+      "text": "You write the loveliest birthday cards, honey, and I've kept every single one."
+    },
+    {
+      "id": "en-appreciation-086",
+      "category": "appreciation",
+      "text": "Every spring you turn our tiny balcony into a garden, and I love sitting out there with you."
+    },
+    {
+      "id": "en-appreciation-087",
+      "category": "appreciation",
+      "text": "You always walk on the street side of the sidewalk, and I feel so looked after."
+    },
+    {
+      "id": "en-appreciation-088",
+      "category": "appreciation",
+      "text": "You've cheered me on through every step of my new job, honey."
+    },
+    {
+      "id": "en-appreciation-089",
+      "category": "appreciation",
+      "text": "You take the time to really understand my work, and I love talking to you about it."
+    },
+    {
+      "id": "en-appreciation-090",
+      "category": "appreciation",
+      "text": "Your sense of fairness is something I really admire, sweetheart."
+    },
+    {
+      "id": "en-appreciation-091",
+      "category": "appreciation",
+      "text": "You make room for my hobbies, even the ones that take over the whole living room."
+    },
+    {
+      "id": "en-appreciation-092",
+      "category": "appreciation",
+      "text": "Your trip planning is so good that every holiday with you feels easy ✨"
+    },
+    {
+      "id": "en-appreciation-093",
+      "category": "appreciation",
+      "text": "You bring so much joy into our little home, honey 🏡"
+    },
+    {
+      "id": "en-appreciation-094",
+      "category": "appreciation",
+      "text": "Your hard work this year has been so impressive to watch 🌟"
+    },
+    {
+      "id": "en-appreciation-095",
+      "category": "appreciation",
+      "text": "You make sure everyone at the table feels included 😊"
+    },
+    {
+      "id": "en-appreciation-096",
+      "category": "appreciation",
+      "text": "You always have a plan B, and somehow it's even better than plan A 🙌"
+    },
+    {
+      "id": "en-appreciation-097",
+      "category": "appreciation",
+      "text": "Whenever I'm cold, your jacket somehow ends up around my shoulders 💛"
     },
     {
       "id": "en-morning-048",
@@ -3153,6 +3453,156 @@
       "text": "I opened the window, and it smells like spring out there 🌷"
     },
     {
+      "id": "en-morning-068",
+      "category": "morning",
+      "text": "Good morning, honey. I hope you wake up feeling rested and happy."
+    },
+    {
+      "id": "en-morning-069",
+      "category": "morning",
+      "text": "I put a little note on the bathroom mirror for you, sweetheart."
+    },
+    {
+      "id": "en-morning-070",
+      "category": "morning",
+      "text": "The coffee's ready, and I made yours with extra milk ☕"
+    },
+    {
+      "id": "en-morning-071",
+      "category": "morning",
+      "text": "It's the weekend, honey, so how about pancakes and pajamas until noon?"
+    },
+    {
+      "id": "en-morning-072",
+      "category": "morning",
+      "text": "Good morning, sweetheart. It's already noon here, and I've been thinking of you all morning."
+    },
+    {
+      "id": "en-morning-073",
+      "category": "morning",
+      "text": "You left for work ten minutes ago, and I already can't wait for tonight."
+    },
+    {
+      "id": "en-morning-074",
+      "category": "morning",
+      "text": "Your sleepy voice before breakfast is one of the sweetest sounds I know."
+    },
+    {
+      "id": "en-morning-075",
+      "category": "morning",
+      "text": "I made your favorite breakfast, so take your time coming into the kitchen."
+    },
+    {
+      "id": "en-morning-076",
+      "category": "morning",
+      "text": "The radio says it's going to be a lovely day, and I believe it."
+    },
+    {
+      "id": "en-morning-077",
+      "category": "morning",
+      "text": "You were still asleep when I left, so I hope you got a little extra rest."
+    },
+    {
+      "id": "en-morning-078",
+      "category": "morning",
+      "text": "You're the reason I don't mind early mornings, honey."
+    },
+    {
+      "id": "en-morning-079",
+      "category": "morning",
+      "text": "I hope today brings you good news and at least one reason to laugh."
+    },
+    {
+      "id": "en-morning-080",
+      "category": "morning",
+      "text": "There's fresh orange juice in the fridge, so your day can start with something sweet."
+    },
+    {
+      "id": "en-morning-081",
+      "category": "morning",
+      "text": "Our holiday starts today, and I'm far too excited to stay in bed."
+    },
+    {
+      "id": "en-morning-082",
+      "category": "morning",
+      "text": "I've already done the dishes, so you can enjoy your coffee in peace."
+    },
+    {
+      "id": "en-morning-083",
+      "category": "morning",
+      "text": "Have a good day at work, and save a few stories for me tonight."
+    },
+    {
+      "id": "en-morning-084",
+      "category": "morning",
+      "text": "Your alarm is about to go off, so here's a kiss before it does 😘"
+    },
+    {
+      "id": "en-morning-085",
+      "category": "morning",
+      "text": "May your first sip of coffee taste just right this morning."
+    },
+    {
+      "id": "en-morning-086",
+      "category": "morning",
+      "text": "Tonight we're cooking together, honey, and I can't wait."
+    },
+    {
+      "id": "en-morning-087",
+      "category": "morning",
+      "text": "I've got a full day ahead, and you'll be on my mind through every bit of it."
+    },
+    {
+      "id": "en-morning-088",
+      "category": "morning",
+      "text": "Good morning, sweetheart. I already can't wait to hear about your day tonight."
+    },
+    {
+      "id": "en-morning-089",
+      "category": "morning",
+      "text": "I love the mornings when we have time for a slow breakfast together."
+    },
+    {
+      "id": "en-morning-090",
+      "category": "morning",
+      "text": "Happy birthday, sweetheart! I wanted to be the first to say it this morning 🎁"
+    },
+    {
+      "id": "en-morning-091",
+      "category": "morning",
+      "text": "Good morning. I hope you smile at least once before you've even had breakfast 😊"
+    },
+    {
+      "id": "en-morning-092",
+      "category": "morning",
+      "text": "Have a wonderful first day back after the holidays 🌻"
+    },
+    {
+      "id": "en-morning-093",
+      "category": "morning",
+      "text": "Good morning, you. I'm sending a big hug to get your day started 🤗"
+    },
+    {
+      "id": "en-morning-094",
+      "category": "morning",
+      "text": "The sky is so clear this morning, and it made me think of our last trip ☀️"
+    },
+    {
+      "id": "en-morning-095",
+      "category": "morning",
+      "text": "I hope you have a gentle start to the day, honey, with no rushing at all 🌷"
+    },
+    {
+      "id": "en-morning-096",
+      "category": "morning",
+      "text": "The kitchen still smells like the cookies we baked last night."
+    },
+    {
+      "id": "en-morning-097",
+      "category": "morning",
+      "text": "I hope you find a little time today for something that makes you happy."
+    },
+    {
       "id": "en-goodnight-048",
       "category": "goodnight",
       "text": "The alarm is set for both of us, so all we have to do now is sleep."
@@ -3251,6 +3701,156 @@
       "id": "en-goodnight-067",
       "category": "goodnight",
       "text": "Wrap up warm tonight, honey, and sleep well ❄️"
+    },
+    {
+      "id": "en-goodnight-068",
+      "category": "goodnight",
+      "text": "Good night, sweetheart. Tomorrow morning the first coffee is mine to make for you."
+    },
+    {
+      "id": "en-goodnight-069",
+      "category": "goodnight",
+      "text": "I loved every minute of today with you, and I'm going to sleep with a smile."
+    },
+    {
+      "id": "en-goodnight-070",
+      "category": "goodnight",
+      "text": "I'll call you as soon as I wake up, so you can hear my sleepy voice."
+    },
+    {
+      "id": "en-goodnight-071",
+      "category": "goodnight",
+      "text": "I hope you get the deep, cozy sleep you deserve tonight, honey."
+    },
+    {
+      "id": "en-goodnight-072",
+      "category": "goodnight",
+      "text": "The dishwasher is running and the doors are locked, so all that's left is cuddling."
+    },
+    {
+      "id": "en-goodnight-073",
+      "category": "goodnight",
+      "text": "Sweet dreams, sweetheart. I'll be right here when you wake up."
+    },
+    {
+      "id": "en-goodnight-074",
+      "category": "goodnight",
+      "text": "We laughed so much tonight, honey, and I'm still smiling in the dark."
+    },
+    {
+      "id": "en-goodnight-075",
+      "category": "goodnight",
+      "text": "The heater's on low and the blanket is thick, so you're going to sleep so well."
+    },
+    {
+      "id": "en-goodnight-076",
+      "category": "goodnight",
+      "text": "Good night from my hotel room, honey. I'd trade this big bed for our little one any day."
+    },
+    {
+      "id": "en-goodnight-077",
+      "category": "goodnight",
+      "text": "I'll set up the coffee machine tonight so it's ready when you wake up."
+    },
+    {
+      "id": "en-goodnight-078",
+      "category": "goodnight",
+      "text": "You're the one I want to tell about my day before I fall asleep."
+    },
+    {
+      "id": "en-goodnight-079",
+      "category": "goodnight",
+      "text": "Good night. I hope tomorrow starts slow and sunny for you."
+    },
+    {
+      "id": "en-goodnight-080",
+      "category": "goodnight",
+      "text": "Let's leave the dishes for the morning and just go to sleep."
+    },
+    {
+      "id": "en-goodnight-081",
+      "category": "goodnight",
+      "text": "This evening was so cozy, and I'd love lots more just like it."
+    },
+    {
+      "id": "en-goodnight-082",
+      "category": "goodnight",
+      "text": "Good night, my love. Let's sleep in a little tomorrow, since we can."
+    },
+    {
+      "id": "en-goodnight-083",
+      "category": "goodnight",
+      "text": "You worked so hard today, and you've earned a long, deep sleep."
+    },
+    {
+      "id": "en-goodnight-084",
+      "category": "goodnight",
+      "text": "I'll tuck the blanket around your feet, just how you like it."
+    },
+    {
+      "id": "en-goodnight-085",
+      "category": "goodnight",
+      "text": "Good night, sweetheart. Today was ordinary in the nicest possible way."
+    },
+    {
+      "id": "en-goodnight-086",
+      "category": "goodnight",
+      "text": "One more hug, and then I promise I'll let you sleep 🤗"
+    },
+    {
+      "id": "en-goodnight-087",
+      "category": "goodnight",
+      "text": "My flight lands early, so sleep well and I'll text you when I'm on the ground ✈️"
+    },
+    {
+      "id": "en-goodnight-088",
+      "category": "goodnight",
+      "text": "I'm reading in bed and waiting for you, so take your time."
+    },
+    {
+      "id": "en-goodnight-089",
+      "category": "goodnight",
+      "text": "Good night. I loved hearing about your day, every little bit of it."
+    },
+    {
+      "id": "en-goodnight-090",
+      "category": "goodnight",
+      "text": "Before you drift off, I just want to say I love you."
+    },
+    {
+      "id": "en-goodnight-091",
+      "category": "goodnight",
+      "text": "Sleep tight, sweetheart, and I'll see you bright and early 🌙"
+    },
+    {
+      "id": "en-goodnight-092",
+      "category": "goodnight",
+      "text": "Our big day is tomorrow, so let's get some good sleep tonight 💤"
+    },
+    {
+      "id": "en-goodnight-093",
+      "category": "goodnight",
+      "text": "I'm off to bed with a cup of cocoa and happy thoughts of you 🌟"
+    },
+    {
+      "id": "en-goodnight-094",
+      "category": "goodnight",
+      "text": "Good night from the couch, where I almost fell asleep thinking of you 😴"
+    },
+    {
+      "id": "en-goodnight-095",
+      "category": "goodnight",
+      "text": "The candles are out and the house is calm. Good night, honey 💛"
+    },
+    {
+      "id": "en-goodnight-096",
+      "category": "goodnight",
+      "text": "The weekend starts tomorrow, so no alarm and lots of cuddles for us 💕"
+    },
+    {
+      "id": "en-goodnight-097",
+      "category": "goodnight",
+      "text": "I love it when you fall asleep with your head on my chest, honey."
     },
     {
       "id": "en-encouragement-048",
@@ -3353,6 +3953,156 @@
       "text": "Is your deadline tomorrow? You'll make it, and the coffee is on me ☕"
     },
     {
+      "id": "en-encouragement-068",
+      "category": "encouragement",
+      "text": "You've explained this topic to me three times now, sweetheart, so the exam will be easy."
+    },
+    {
+      "id": "en-encouragement-069",
+      "category": "encouragement",
+      "text": "Your new project sounds wonderful, honey, and I'd love to watch it grow."
+    },
+    {
+      "id": "en-encouragement-070",
+      "category": "encouragement",
+      "text": "You'll get there at your own pace, and I'll be right beside you the whole way."
+    },
+    {
+      "id": "en-encouragement-071",
+      "category": "encouragement",
+      "text": "I read your draft last night, and it's even better than you said."
+    },
+    {
+      "id": "en-encouragement-072",
+      "category": "encouragement",
+      "text": "You're so close to finishing your thesis, sweetheart, and I'm cheering for every last page."
+    },
+    {
+      "id": "en-encouragement-073",
+      "category": "encouragement",
+      "text": "Whatever you decide, I'll be proud of you for thinking it through so carefully."
+    },
+    {
+      "id": "en-encouragement-074",
+      "category": "encouragement",
+      "text": "You've practiced your toast so many times that the wedding guests are in for a treat."
+    },
+    {
+      "id": "en-encouragement-075",
+      "category": "encouragement",
+      "text": "The people on your new team are going to love working with you."
+    },
+    {
+      "id": "en-encouragement-076",
+      "category": "encouragement",
+      "text": "You've wanted to try pottery for years, and this is the week you finally start."
+    },
+    {
+      "id": "en-encouragement-077",
+      "category": "encouragement",
+      "text": "Tomorrow's meeting is going to go well, because you always come prepared."
+    },
+    {
+      "id": "en-encouragement-078",
+      "category": "encouragement",
+      "text": "I hope you're proud of yourself today, sweetheart, because I certainly am."
+    },
+    {
+      "id": "en-encouragement-079",
+      "category": "encouragement",
+      "text": "Your business idea is a really good one, honey, and I'd love to help you make it happen."
+    },
+    {
+      "id": "en-encouragement-080",
+      "category": "encouragement",
+      "text": "I'll quiz you on the flashcards tonight, and you'll know them all by morning."
+    },
+    {
+      "id": "en-encouragement-081",
+      "category": "encouragement",
+      "text": "You've trained for months, and your legs know exactly what to do today."
+    },
+    {
+      "id": "en-encouragement-082",
+      "category": "encouragement",
+      "text": "I'm so excited for your big day tomorrow, and I know you'll do beautifully."
+    },
+    {
+      "id": "en-encouragement-083",
+      "category": "encouragement",
+      "text": "This new city is going to feel like home before you know it."
+    },
+    {
+      "id": "en-encouragement-084",
+      "category": "encouragement",
+      "text": "Your talk is going to be great, and I'll be sitting in the front row."
+    },
+    {
+      "id": "en-encouragement-085",
+      "category": "encouragement",
+      "text": "You can always call me during your break, and I'll pick up right away."
+    },
+    {
+      "id": "en-encouragement-086",
+      "category": "encouragement",
+      "text": "I love watching you paint, and every picture shows how much you've grown."
+    },
+    {
+      "id": "en-encouragement-087",
+      "category": "encouragement",
+      "text": "Your new recipe is going to be delicious, so let's invite everyone over to try it."
+    },
+    {
+      "id": "en-encouragement-088",
+      "category": "encouragement",
+      "text": "Your students are going to love you, honey, just like everyone else does."
+    },
+    {
+      "id": "en-encouragement-089",
+      "category": "encouragement",
+      "text": "Whatever tomorrow brings, tonight we'll celebrate how hard you've worked."
+    },
+    {
+      "id": "en-encouragement-090",
+      "category": "encouragement",
+      "text": "That new role suits you perfectly, and you'll grow into it so fast."
+    },
+    {
+      "id": "en-encouragement-091",
+      "category": "encouragement",
+      "text": "I'm so glad you're giving yourself this chance, honey."
+    },
+    {
+      "id": "en-encouragement-092",
+      "category": "encouragement",
+      "text": "I can already picture how happy you'll be once this is finished 🌱"
+    },
+    {
+      "id": "en-encouragement-093",
+      "category": "encouragement",
+      "text": "Go get that promotion, sweetheart. You've been ready for a while 💪"
+    },
+    {
+      "id": "en-encouragement-094",
+      "category": "encouragement",
+      "text": "You've worked hard for this, and now it's your turn 🌟"
+    },
+    {
+      "id": "en-encouragement-095",
+      "category": "encouragement",
+      "text": "I packed you a lunch and a little note for luck today 🍀"
+    },
+    {
+      "id": "en-encouragement-096",
+      "category": "encouragement",
+      "text": "You've already done the hardest part, which was deciding to start 🙌"
+    },
+    {
+      "id": "en-encouragement-097",
+      "category": "encouragement",
+      "text": "It makes me so happy to see you following your dream, sweetheart 💛"
+    },
+    {
       "id": "en-missyou-048",
       "category": "missyou",
       "text": "I cooked for two again out of habit, sweetheart."
@@ -3451,6 +4201,156 @@
       "id": "en-missyou-067",
       "category": "missyou",
       "text": "I'm writing you a real letter, honey, the old-fashioned way 💌"
+    },
+    {
+      "id": "en-missyou-068",
+      "category": "missyou",
+      "text": "I keep turning to tell you things, honey, and then I remember you're away this week."
+    },
+    {
+      "id": "en-missyou-069",
+      "category": "missyou",
+      "text": "Three more days, sweetheart, and then I'm not letting go of you for a while."
+    },
+    {
+      "id": "en-missyou-070",
+      "category": "missyou",
+      "text": "Work was busy today, but every break I had, I thought about you."
+    },
+    {
+      "id": "en-missyou-071",
+      "category": "missyou",
+      "text": "Walking around the block tonight made me miss our evening walks, honey."
+    },
+    {
+      "id": "en-missyou-072",
+      "category": "missyou",
+      "text": "I watched your favorite show tonight just to feel a little closer to you."
+    },
+    {
+      "id": "en-missyou-073",
+      "category": "missyou",
+      "text": "I bought tickets for the concert, so now we both have something to look forward to."
+    },
+    {
+      "id": "en-missyou-074",
+      "category": "missyou",
+      "text": "I'd give a lot for one of your hugs right now."
+    },
+    {
+      "id": "en-missyou-075",
+      "category": "missyou",
+      "text": "It's only been one day, honey, and I'm already counting down to the weekend."
+    },
+    {
+      "id": "en-missyou-076",
+      "category": "missyou",
+      "text": "I'm sitting in our favorite spot in the park and saving the other half of the bench for you."
+    },
+    {
+      "id": "en-missyou-077",
+      "category": "missyou",
+      "text": "When you're back, let's cook that big pasta dinner we keep talking about."
+    },
+    {
+      "id": "en-missyou-078",
+      "category": "missyou",
+      "text": "I can't wait for our Sunday breakfasts again, with the paper and far too much coffee."
+    },
+    {
+      "id": "en-missyou-079",
+      "category": "missyou",
+      "text": "Your messages are what I look forward to most while you're away, honey."
+    },
+    {
+      "id": "en-missyou-080",
+      "category": "missyou",
+      "text": "The evenings are when I miss you most, because that's when we'd be cooking together."
+    },
+    {
+      "id": "en-missyou-081",
+      "category": "missyou",
+      "text": "I wore the sweater you gave me today, and it felt like a hug from you."
+    },
+    {
+      "id": "en-missyou-082",
+      "category": "missyou",
+      "text": "Send me a picture of where you are right now, sweetheart. I'd love to see your view."
+    },
+    {
+      "id": "en-missyou-083",
+      "category": "missyou",
+      "text": "Next time you travel, I'm packing myself in your suitcase."
+    },
+    {
+      "id": "en-missyou-084",
+      "category": "missyou",
+      "text": "I miss our little chats in the car on the way home."
+    },
+    {
+      "id": "en-missyou-085",
+      "category": "missyou",
+      "text": "Let's plan a trip together as soon as you're back, somewhere with a beach."
+    },
+    {
+      "id": "en-missyou-086",
+      "category": "missyou",
+      "text": "I've been hugging my coffee mug all morning, but it's no match for you."
+    },
+    {
+      "id": "en-missyou-087",
+      "category": "missyou",
+      "text": "I miss the way you look at me across the table."
+    },
+    {
+      "id": "en-missyou-088",
+      "category": "missyou",
+      "text": "Video calls are lovely, but nothing beats having you right here."
+    },
+    {
+      "id": "en-missyou-089",
+      "category": "missyou",
+      "text": "The flowers you left are still blooming, and they remind me of you every morning."
+    },
+    {
+      "id": "en-missyou-090",
+      "category": "missyou",
+      "text": "I'm sending you a big hug across all those miles, sweetheart 🤗"
+    },
+    {
+      "id": "en-missyou-091",
+      "category": "missyou",
+      "text": "You're on my mind from the first coffee to the last light off 💭"
+    },
+    {
+      "id": "en-missyou-092",
+      "category": "missyou",
+      "text": "I miss you even on regular workdays, honey, so this week I miss you twice as much ❤️"
+    },
+    {
+      "id": "en-missyou-093",
+      "category": "missyou",
+      "text": "I wish you were here to share this pizza with me 🍕"
+    },
+    {
+      "id": "en-missyou-094",
+      "category": "missyou",
+      "text": "Your mug is still on the shelf, ready for your first coffee back home ☕"
+    },
+    {
+      "id": "en-missyou-095",
+      "category": "missyou",
+      "text": "Today I miss you extra, and I'm counting on a long hug when you're back 💛"
+    },
+    {
+      "id": "en-missyou-096",
+      "category": "missyou",
+      "text": "Just one more week, and then we're back to our evenings together 💕"
+    },
+    {
+      "id": "en-missyou-097",
+      "category": "missyou",
+      "text": "I miss your morning hugs in the kitchen, sweetheart."
     },
     {
       "id": "en-compliment-048",
@@ -3553,6 +4453,156 @@
       "text": "You were wonderful with my friends tonight, honey. They loved you 🥂"
     },
     {
+      "id": "en-compliment-068",
+      "category": "compliment",
+      "text": "You have the kindest eyes, sweetheart, and I could look into them all day."
+    },
+    {
+      "id": "en-compliment-069",
+      "category": "compliment",
+      "text": "You're one of the most thoughtful people I've ever met."
+    },
+    {
+      "id": "en-compliment-070",
+      "category": "compliment",
+      "text": "You're so good at keeping secrets, honey, and my surprise party proved it."
+    },
+    {
+      "id": "en-compliment-071",
+      "category": "compliment",
+      "text": "Talking to you is so easy, and I always feel lighter afterwards."
+    },
+    {
+      "id": "en-compliment-072",
+      "category": "compliment",
+      "text": "You smell so good, honey, that I want to hug you every time you walk by."
+    },
+    {
+      "id": "en-compliment-073",
+      "category": "compliment",
+      "text": "You tell stories so well that everyone at the table stops to listen."
+    },
+    {
+      "id": "en-compliment-074",
+      "category": "compliment",
+      "text": "You look so good when you're concentrating on something, sweetheart."
+    },
+    {
+      "id": "en-compliment-075",
+      "category": "compliment",
+      "text": "The garden looks amazing, and it's all thanks to your green thumb."
+    },
+    {
+      "id": "en-compliment-076",
+      "category": "compliment",
+      "text": "Your instincts are so good, honey, and I trust them completely."
+    },
+    {
+      "id": "en-compliment-077",
+      "category": "compliment",
+      "text": "You're such a good travel companion, sweetheart, calm at airports and fun everywhere else."
+    },
+    {
+      "id": "en-compliment-078",
+      "category": "compliment",
+      "text": "Since you organized the kitchen, I can find everything in seconds."
+    },
+    {
+      "id": "en-compliment-079",
+      "category": "compliment",
+      "text": "You know the answer to nearly every quiz question, and it's so impressive."
+    },
+    {
+      "id": "en-compliment-080",
+      "category": "compliment",
+      "text": "You always see the good in people, sweetheart, and it makes me want to do the same."
+    },
+    {
+      "id": "en-compliment-081",
+      "category": "compliment",
+      "text": "Your hands are so soft, and I love holding them."
+    },
+    {
+      "id": "en-compliment-082",
+      "category": "compliment",
+      "text": "Even carrying the groceries in, you look so graceful."
+    },
+    {
+      "id": "en-compliment-083",
+      "category": "compliment",
+      "text": "Thanks to your eye for decorating, our place looks like a magazine page."
+    },
+    {
+      "id": "en-compliment-084",
+      "category": "compliment",
+      "text": "Somehow you find the perfect word every time, even in the middle of a crossword."
+    },
+    {
+      "id": "en-compliment-085",
+      "category": "compliment",
+      "text": "You have such a warm way of saying hello to people."
+    },
+    {
+      "id": "en-compliment-086",
+      "category": "compliment",
+      "text": "You looked so confident up there today, sweetheart."
+    },
+    {
+      "id": "en-compliment-087",
+      "category": "compliment",
+      "text": "You're such a good cook that our friends keep asking when they can come over again."
+    },
+    {
+      "id": "en-compliment-088",
+      "category": "compliment",
+      "text": "Those new glasses look wonderful on you, and they suit your face perfectly."
+    },
+    {
+      "id": "en-compliment-089",
+      "category": "compliment",
+      "text": "You always know how to cheer up a friend who's having a long day."
+    },
+    {
+      "id": "en-compliment-090",
+      "category": "compliment",
+      "text": "Your weekend ideas are always so much fun, and I never want to miss one."
+    },
+    {
+      "id": "en-compliment-091",
+      "category": "compliment",
+      "text": "You look so lovely all wrapped up in that big scarf 😍"
+    },
+    {
+      "id": "en-compliment-092",
+      "category": "compliment",
+      "text": "You're so talented, honey, and I'm your biggest fan 🌟"
+    },
+    {
+      "id": "en-compliment-093",
+      "category": "compliment",
+      "text": "Somehow your tea always tastes better than mine ☕"
+    },
+    {
+      "id": "en-compliment-094",
+      "category": "compliment",
+      "text": "You're such a good friend to everyone you know 💛"
+    },
+    {
+      "id": "en-compliment-095",
+      "category": "compliment",
+      "text": "Your smile in that photo is so lovely that I made it my background 📱"
+    },
+    {
+      "id": "en-compliment-096",
+      "category": "compliment",
+      "text": "Everyone you talk to walks away feeling a little more important 💛"
+    },
+    {
+      "id": "en-compliment-097",
+      "category": "compliment",
+      "text": "Your little shortcuts make life so much easier, and I'm always impressed 🙌"
+    },
+    {
       "id": "en-humor-048",
       "category": "humor",
       "text": "I've been practicing my happy-to-see-you face all afternoon, and it's ready."
@@ -3651,6 +4701,156 @@
       "id": "en-humor-067",
       "category": "humor",
       "text": "I ordered one hug to go, honey. Please deliver it in person 🤗"
+    },
+    {
+      "id": "en-humor-068",
+      "category": "humor",
+      "text": "If hugging you were a sport, I'd have a shelf full of trophies by now 🏆"
+    },
+    {
+      "id": "en-humor-069",
+      "category": "humor",
+      "text": "I've been smiling so much today that my cheeks need a vacation."
+    },
+    {
+      "id": "en-humor-070",
+      "category": "humor",
+      "text": "I added hugging you to my to-do list, and it's the only thing I'm excited to check off."
+    },
+    {
+      "id": "en-humor-071",
+      "category": "humor",
+      "text": "I'd text you more often, but then I'd never get anything done."
+    },
+    {
+      "id": "en-humor-072",
+      "category": "humor",
+      "text": "I've rehearsed a very smooth compliment for you, but I'm saving it for when I see you."
+    },
+    {
+      "id": "en-humor-073",
+      "category": "humor",
+      "text": "I did a little research, and texting you makes me a hundred percent happier."
+    },
+    {
+      "id": "en-humor-074",
+      "category": "humor",
+      "text": "I'm accepting hugs and kisses at any time today, sweetheart, no appointment needed."
+    },
+    {
+      "id": "en-humor-075",
+      "category": "humor",
+      "text": "My favorite exercise is walking over to give you a hug."
+    },
+    {
+      "id": "en-humor-076",
+      "category": "humor",
+      "text": "I think my phone is in love with you too, since it lights up every time you text."
+    },
+    {
+      "id": "en-humor-077",
+      "category": "humor",
+      "text": "Our love story would make a great sitcom, mostly because of all the snacks."
+    },
+    {
+      "id": "en-humor-078",
+      "category": "humor",
+      "text": "If you need a hand today, I have two, and they both want to hold yours."
+    },
+    {
+      "id": "en-humor-079",
+      "category": "humor",
+      "text": "I'm thinking about you so much today that I put the milk in the cupboard."
+    },
+    {
+      "id": "en-humor-080",
+      "category": "humor",
+      "text": "Let's be the kind of couple, sweetheart, who shares dessert and still orders a second one."
+    },
+    {
+      "id": "en-humor-081",
+      "category": "humor",
+      "text": "If cuddling burned calories, we'd be the fittest people on the block, honey."
+    },
+    {
+      "id": "en-humor-082",
+      "category": "humor",
+      "text": "You're the only person I'd happily get up early for on a Sunday, honey."
+    },
+    {
+      "id": "en-humor-083",
+      "category": "humor",
+      "text": "I made you pancakes in the shape of hearts, honey, or at least that was the plan."
+    },
+    {
+      "id": "en-humor-084",
+      "category": "humor",
+      "text": "You're the reason I've started saying good morning to strangers."
+    },
+    {
+      "id": "en-humor-085",
+      "category": "humor",
+      "text": "Someone stole my heart, and I have a very cute suspect."
+    },
+    {
+      "id": "en-humor-086",
+      "category": "humor",
+      "text": "I've checked, honey, and there's no limit on how many times I can say I love you today."
+    },
+    {
+      "id": "en-humor-087",
+      "category": "humor",
+      "text": "We're like socks, sweetheart, so much better as a pair."
+    },
+    {
+      "id": "en-humor-088",
+      "category": "humor",
+      "text": "I bought two of the same mug so we can be adorable together ☕"
+    },
+    {
+      "id": "en-humor-089",
+      "category": "humor",
+      "text": "Every time you laugh, I feel like I just won a little prize 🎁"
+    },
+    {
+      "id": "en-humor-090",
+      "category": "humor",
+      "text": "I'm taking applications for a cuddle buddy, and you're the only one I'm hiring 😉"
+    },
+    {
+      "id": "en-humor-091",
+      "category": "humor",
+      "text": "Dinner is ready, or at least the takeout menu is open, honey 🍕"
+    },
+    {
+      "id": "en-humor-092",
+      "category": "humor",
+      "text": "I'd climb a mountain for you, or at least the stairs to the third floor 😄"
+    },
+    {
+      "id": "en-humor-093",
+      "category": "humor",
+      "text": "I tried to play it cool when you walked in, but my smile gave me away 😊"
+    },
+    {
+      "id": "en-humor-094",
+      "category": "humor",
+      "text": "How about a blanket fort tonight, with just enough room for you and me? 😄"
+    },
+    {
+      "id": "en-humor-095",
+      "category": "humor",
+      "text": "I'd happily wait in any line in the world if you're standing in it with me."
+    },
+    {
+      "id": "en-humor-096",
+      "category": "humor",
+      "text": "I've counted, and you've made me laugh at least five times today."
+    },
+    {
+      "id": "en-humor-097",
+      "category": "humor",
+      "text": "You're so huggable, honey, that one hug a day just isn't going to cover it."
     },
     {
       "id": "en-thanks-048",
@@ -3753,6 +4953,156 @@
       "text": "You carried all the groceries up. You're a star, thank you 🛍️"
     },
     {
+      "id": "en-thanks-068",
+      "category": "thanks",
+      "text": "You let me have the last bite of dessert, and I noticed. Thank you, honey."
+    },
+    {
+      "id": "en-thanks-069",
+      "category": "thanks",
+      "text": "I came home to a clean fridge and a full pantry, and I owe you a big hug for it."
+    },
+    {
+      "id": "en-thanks-070",
+      "category": "thanks",
+      "text": "Thanks for the ride to the airport so early in the morning, sweetheart."
+    },
+    {
+      "id": "en-thanks-071",
+      "category": "thanks",
+      "text": "You booked that restaurant I've been wanting to try. Thank you so much."
+    },
+    {
+      "id": "en-thanks-072",
+      "category": "thanks",
+      "text": "You put gas in my car without saying a word, and that was so kind."
+    },
+    {
+      "id": "en-thanks-073",
+      "category": "thanks",
+      "text": "You put the new shelf together all by yourself, and it looks great. Thank you!"
+    },
+    {
+      "id": "en-thanks-074",
+      "category": "thanks",
+      "text": "Thanks for keeping me company while I cooked tonight, sweetheart."
+    },
+    {
+      "id": "en-thanks-075",
+      "category": "thanks",
+      "text": "All the presents are wrapped so beautifully, honey. Thank you for doing that."
+    },
+    {
+      "id": "en-thanks-076",
+      "category": "thanks",
+      "text": "You ironed my shirt for the interview, and I felt great all day."
+    },
+    {
+      "id": "en-thanks-077",
+      "category": "thanks",
+      "text": "You drove all the way across town to bring me my charger, and I'm so grateful."
+    },
+    {
+      "id": "en-thanks-078",
+      "category": "thanks",
+      "text": "You saved me a plate of dinner, and it was still warm when I got in. Thank you."
+    },
+    {
+      "id": "en-thanks-079",
+      "category": "thanks",
+      "text": "Thanks for sharing your headphones with me on the train, honey. That song was perfect."
+    },
+    {
+      "id": "en-thanks-080",
+      "category": "thanks",
+      "text": "You picked up my favorite ice cream on the way home, and it was the nicest surprise."
+    },
+    {
+      "id": "en-thanks-081",
+      "category": "thanks",
+      "text": "Thank you for believing in me, honey, long before I believed in myself."
+    },
+    {
+      "id": "en-thanks-082",
+      "category": "thanks",
+      "text": "That was a wonderful dinner, and I loved every bite."
+    },
+    {
+      "id": "en-thanks-083",
+      "category": "thanks",
+      "text": "I'm grateful for every cup of coffee you've ever made me."
+    },
+    {
+      "id": "en-thanks-084",
+      "category": "thanks",
+      "text": "You remembered how I like my eggs, and that small thing made my morning."
+    },
+    {
+      "id": "en-thanks-085",
+      "category": "thanks",
+      "text": "My friend loved the gift you helped me pick out. Thank you for that."
+    },
+    {
+      "id": "en-thanks-086",
+      "category": "thanks",
+      "text": "You let me sleep on your shoulder the whole train ride. Thank you, sweetheart."
+    },
+    {
+      "id": "en-thanks-087",
+      "category": "thanks",
+      "text": "You fixed my bike so I could ride to work this morning. Thank you so much."
+    },
+    {
+      "id": "en-thanks-088",
+      "category": "thanks",
+      "text": "Thanks for the long walk and the even longer talk tonight."
+    },
+    {
+      "id": "en-thanks-089",
+      "category": "thanks",
+      "text": "You washed my car, and now it sparkles. Thank you."
+    },
+    {
+      "id": "en-thanks-090",
+      "category": "thanks",
+      "text": "Thank you for always telling me to drive safely, honey. I feel so cared for every time."
+    },
+    {
+      "id": "en-thanks-091",
+      "category": "thanks",
+      "text": "You made room in your busy day just to have lunch with me. Thank you 💛"
+    },
+    {
+      "id": "en-thanks-092",
+      "category": "thanks",
+      "text": "You surprised me with tickets to the show, and I'm still so happy about it 🎁"
+    },
+    {
+      "id": "en-thanks-093",
+      "category": "thanks",
+      "text": "Thanks for the lovely picnic in the park today 🌷"
+    },
+    {
+      "id": "en-thanks-094",
+      "category": "thanks",
+      "text": "You did all the dishes after the party. Thank you, you're wonderful 🙌"
+    },
+    {
+      "id": "en-thanks-095",
+      "category": "thanks",
+      "text": "You brought me hot chocolate for the walk home, and it warmed me right up ☕"
+    },
+    {
+      "id": "en-thanks-096",
+      "category": "thanks",
+      "text": "You remembered to buy my favorite tea, and it made my evening so cozy 🍵"
+    },
+    {
+      "id": "en-thanks-097",
+      "category": "thanks",
+      "text": "Thank you for the cozy weekend at home, sweetheart. It was exactly right 🏡"
+    },
+    {
       "id": "en-apology-048",
       "category": "apology",
       "text": "I missed your call, sorry. I'll call you back the second I'm out."
@@ -3851,6 +5201,156 @@
       "id": "en-apology-067",
       "category": "apology",
       "text": "I spoke more sharply than I meant to. I'm sorry, and I'm all ears now."
+    },
+    {
+      "id": "en-apology-068",
+      "category": "apology",
+      "text": "Our dinner reservation slipped my mind, so tonight I'm cooking for you instead."
+    },
+    {
+      "id": "en-apology-069",
+      "category": "apology",
+      "text": "My phone stays in the drawer at dinner from now on, because you deserve all of my attention."
+    },
+    {
+      "id": "en-apology-070",
+      "category": "apology",
+      "text": "I wasn't home when you got back, and I'm sorry. A long hug is waiting for you tonight."
+    },
+    {
+      "id": "en-apology-071",
+      "category": "apology",
+      "text": "I said no to your idea too quickly. Can we look at it again together?"
+    },
+    {
+      "id": "en-apology-072",
+      "category": "apology",
+      "text": "I forgot to pick up your package, honey, so it's the first thing I'll do tomorrow."
+    },
+    {
+      "id": "en-apology-073",
+      "category": "apology",
+      "text": "From now on we decide our weekend plans together, and I'm sorry I went ahead without you."
+    },
+    {
+      "id": "en-apology-074",
+      "category": "apology",
+      "text": "I'm sorry I missed your big moment today. I want to hear every detail tonight."
+    },
+    {
+      "id": "en-apology-075",
+      "category": "apology",
+      "text": "Next time I'm running late, you'll get a text from me right away, I promise."
+    },
+    {
+      "id": "en-apology-076",
+      "category": "apology",
+      "text": "I'm sorry I kept you up so late last night, sweetheart. Tonight you get your early night."
+    },
+    {
+      "id": "en-apology-077",
+      "category": "apology",
+      "text": "I mixed up the date, so let's celebrate twice to make up for it."
+    },
+    {
+      "id": "en-apology-078",
+      "category": "apology",
+      "text": "What you said stayed with me, sweetheart, and I took it to heart."
+    },
+    {
+      "id": "en-apology-079",
+      "category": "apology",
+      "text": "I borrowed your charger and forgot to bring it back. Sorry, honey, it's on your nightstand now."
+    },
+    {
+      "id": "en-apology-080",
+      "category": "apology",
+      "text": "You had so much on your plate this week, and from now on I'll help more."
+    },
+    {
+      "id": "en-apology-081",
+      "category": "apology",
+      "text": "My reaction to your news was far too small, and I'm sorry, because I think it's wonderful."
+    },
+    {
+      "id": "en-apology-082",
+      "category": "apology",
+      "text": "The last slice of cake was meant for you, so I'm baking you a whole one this weekend."
+    },
+    {
+      "id": "en-apology-083",
+      "category": "apology",
+      "text": "I watched the next episode without you, sorry. I'll gladly watch it again with you tonight."
+    },
+    {
+      "id": "en-apology-084",
+      "category": "apology",
+      "text": "How about a whole Sunday of doing exactly what you love, as my way of saying sorry?"
+    },
+    {
+      "id": "en-apology-085",
+      "category": "apology",
+      "text": "I forgot to say thank you for dinner last night, honey, and it was wonderful."
+    },
+    {
+      "id": "en-apology-086",
+      "category": "apology",
+      "text": "Can I take you out for breakfast and say sorry properly?"
+    },
+    {
+      "id": "en-apology-087",
+      "category": "apology",
+      "text": "I'm writing the little things down from now on, sweetheart, because they matter to you."
+    },
+    {
+      "id": "en-apology-088",
+      "category": "apology",
+      "text": "I promised to fix the shelf, so this Saturday it's at the top of my list."
+    },
+    {
+      "id": "en-apology-089",
+      "category": "apology",
+      "text": "I'm sorry I made you wait for an answer. Yes, I'd love to come with you."
+    },
+    {
+      "id": "en-apology-090",
+      "category": "apology",
+      "text": "I'm sorry I took the car without asking. It's back with a full tank for you 🚗"
+    },
+    {
+      "id": "en-apology-091",
+      "category": "apology",
+      "text": "I'm sorry, honey. Can we curl up on the couch and talk? 🛋️"
+    },
+    {
+      "id": "en-apology-092",
+      "category": "apology",
+      "text": "I wrote you a little note to say I'm sorry, and it's under your pillow 💌"
+    },
+    {
+      "id": "en-apology-093",
+      "category": "apology",
+      "text": "I'm sorry, sweetheart. I've cleared my whole evening for you 🌷"
+    },
+    {
+      "id": "en-apology-094",
+      "category": "apology",
+      "text": "You were so understanding about it, and I'll make sure tonight is lovely 💐"
+    },
+    {
+      "id": "en-apology-095",
+      "category": "apology",
+      "text": "I'm sorry I didn't notice your new haircut right away. It looks wonderful on you 😊"
+    },
+    {
+      "id": "en-apology-096",
+      "category": "apology",
+      "text": "You're so important to me, honey, and I'm going to make tonight all about you 💛"
+    },
+    {
+      "id": "en-apology-097",
+      "category": "apology",
+      "text": "I gave away the end of the movie, sorry. Next time my lips are sealed 🙈"
     },
     {
       "id": "en-emoji-051",
