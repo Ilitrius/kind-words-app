@@ -343,6 +343,13 @@ fun SettingsScreen(vm: MainViewModel, modifier: Modifier = Modifier) {
         }
 
         HorizontalDivider()
+        val ads = (context.applicationContext as app.rpkindwords.KindWordsApp).ads
+        val adsPrivacyRequired by ads.privacyOptionsRequired.collectAsStateWithLifecycle()
+        if (adsPrivacyRequired) {
+            TextButton(onClick = { (context as? Activity)?.let { ads.showPrivacyOptions(it) } }) {
+                Text(stringResource(R.string.ads_privacy_options))
+            }
+        }
         val privacyUrl = stringResource(R.string.privacy_url)
         val privacyError = stringResource(R.string.donate_error)
         TextButton(onClick = {

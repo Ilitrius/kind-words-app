@@ -20,6 +20,8 @@ class KindWordsApp : Application() {
     lateinit var messages: MessageRepository
     lateinit var translation: app.rpkindwords.translate.TranslationService
         private set
+    lateinit var ads: app.rpkindwords.ads.AdsConsent
+        private set
     private val appScope = CoroutineScope(SupervisorJob() + Dispatchers.Default)
 
     override fun onCreate() {
@@ -28,6 +30,7 @@ class KindWordsApp : Application() {
         settings = SettingsRepository(this)
         messages = MessageRepository(db.messageDao(), settings, AssetContentSource(this))
         translation = app.rpkindwords.translate.TranslationService(this, settings)
+        ads = app.rpkindwords.ads.AdsConsent(this)
         NotificationHelper.createChannel(this)
         appScope.launch {
             messages.ensureSeeded()

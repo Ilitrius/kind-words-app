@@ -154,3 +154,11 @@ Das „Gehirn“ des Projekts: Entscheidungen, Fakten, Fallstricke. Wird von Men
 - Nutzerwahl: Jessica (ElevenLabs, eleven_multilingual_v2, stability 0.6, similarity 0.75, style 0.1, speed 0.92, mp3_44100_64, ca. 30 KB/Satz). Erzeugung per `tools/gen_voice.py`; Verbrauch 1 Credit je Zeichen, de ca. 45k + en ca. 39k Zeichen; Tarif payg (Free-Tarif schließt kommerzielle Nutzung aus).
 - App: `Speaker.playClip` (MediaPlayer aus Assets, Dateiname mit SHA-1-Hash des Textes, `SpeechText.clipHash`), `MainViewModel.speak` nutzt es nur ohne Übersetzung. Ohne passende Datei springt die Gerätestimme ein (nach Qualität sortiert, Satzpausen 350 ms). Tempo-Einstellung gilt nur für die Gerätestimme.
 - Hörprobe-Dateien und Schlüssel liegen nur im Session-Scratchpad, nie im Repo. APK wächst auf 102 MB (AAB 68 MB).
+
+## 2026-11-23 Werbung: Texte und Recht (Schritt 2)
+- Rechtstexte beschreiben jetzt AdMob-Banner (nur Home/Favoriten), UMP-Einwilligung EWR/UK/CH, Widerruf in Einstellungen, Datenarten (Werbe-ID, IP/ungefährer Standort, Geräteinfos, Anzeigeninteraktionen, Diagnose), Drittland USA, Art. 6 Abs. 1 lit. a DSGVO + § 25 TDDDG. "Keine Werbung" in Datenschutz, Über-uns, Store-Texten entfernt; Datenschutz sagte außerdem fälschlich "keine eigene Internetberechtigung" (seit Build 12 falsch) und ist korrigiert.
+- Annahmen in den Texten, die der Code einhalten muss: Banner nur Home + Favoriten; kein Altersflag an AdMob; SDK startet erst nach `canRequestAds()`; Eintrag "Datenschutzoptionen für Werbung" nur wo UMP ihn verlangt (genau so benannt in strings.xml). Weicht der Code ab, Texte anpassen.
+- Offen: Zielgruppe 13-15 vs. DSGVO-Einwilligungsalter 16 (Text benennt es; sauberste Lösung 16+). BayLDA-Anschrift und Google-Links vor Veröffentlichung prüfen.
+
+## 2026-11-23 AdMob Schritt 1 (Code)
+- Adaptiver Banner (Home + Favoriten, über NavigationBar), UMP-Einwilligung nach Onboarding, SDK-Start erst nach `canRequestAds` (MobileAdsInitProvider entfernt). IDs per gradle.properties (`ADMOB_APP_ID`, `ADMOB_BANNER_ID`, Standard Test-IDs; Release nutzt dieselben, Gradle warnt bei Test-IDs im Release). Release-APK (R8) im Emulator geprüft. Refresh-Rate im AdMob-Konto auf >= 60 s stellen. Neue Permissions: AD_ID, ACCESS_ADSERVICES_*, WAKE_LOCK, FOREGROUND_SERVICE.

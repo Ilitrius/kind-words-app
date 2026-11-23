@@ -40,7 +40,7 @@ Ergänzende Dokumente: `PRODUCT.md` (Funktionen), `../BRAIN.md` (Entscheidungen)
   - Kaltstart < 1,5 s auf Mittelklasse-Gerät (Prüfung mit `adb shell am start -W`).
   - Dark Mode unterstützt.
 - **Offline:** Die gesamte App ist offline-first (Room + gebündelte JSON-Inhalte). Netzabhängig sind nur die Update-Prüfung (stilles Überspringen) und das einmalige Laden der Sprachmodelle; nach dem Laden übersetzt die App offline (im Flugmodus getestet). Fehlt das Modell, erscheint ein Hinweis statt eines Absturzes.
-- **Datenschutz/DSGVO:** Die App selbst sendet keine Daten; Sätze verlassen das Gerät nie. Einzige Ausnahme: optionale Übersetzung, bei der Google ML Kit nach Einwilligung technische Diagnosedaten an Google senden kann (Datenschutz 12d, Data Safety). Lernen auf dem Gerät bleibt lokal. `allowBackup=false`; Export liegt in der Hand des Nutzers (Dateiauswahl über Storage Access Framework).
+- **Datenschutz/DSGVO:** Sätze, Favoriten und Einstellungen verlassen das Gerät nie. Ab Build 17: Werbebanner (Google AdMob, nur Home und Favoriten) mit Einwilligung über Google UMP (EWR/UK/CH), Widerruf in den Einstellungen; Google verarbeitet Werbe-ID, IP/ungefähren Standort, Geräteinfos, Anzeigeninteraktionen, Diagnose (Drittland USA; Datenschutz 5b, Rechtsgrundlage Art. 6 Abs. 1 lit. a DSGVO und § 25 TDDDG). Zweite Ausnahme: optionale Übersetzung, bei der Google ML Kit nach Einwilligung technische Diagnosedaten an Google senden kann (Datenschutz 12d, Data Safety). Lernen auf dem Gerät bleibt lokal. `allowBackup=false`; Export liegt in der Hand des Nutzers (Dateiauswahl über Storage Access Framework).
 
 ## 5. Architektur & Tech-Stack
 Kotlin, Jetpack Compose, Material 3, Room, DataStore, AlarmManager. Manuelle DI in `KindWordsApp`, eine `MainViewModel`, State-Routing mit 4 Tabs.
@@ -78,11 +78,11 @@ Gilt nur für den Entwicklungsprozess, die App enthält keine KI.
 - **Crash-Reporting (Should):** bewusst nicht eingebaut – würde `INTERNET`, Einwilligungsdialog und Datenschutz-Änderungen erfordern. Stattdessen Play Console Android Vitals (anonym, ohne App-SDK). Entscheidung 2026-10-27, Revision möglich.
 
 ## 9. Rechtliches & Altersfreigabe
-- Angestrebt: **13+**. Begründung: keine Gewalt, keine Glücksspiel-Elemente, keine Werbung, keine Nutzerinteraktion/Chat, kein Standort, nur freiwillige Spende über externen Browser-Link.
+- Angestrebt: **13+**. Begründung: keine Gewalt, keine Glücksspiel-Elemente, keine Nutzerinteraktion/Chat (ab Build 17 mit AdMob-Banner, kein Kinderprogramm, keine Altersangaben an AdMob), kein Standort, nur freiwillige Spende über externen Browser-Link.
 - DSGVO Art. 8 (DE: unter 16): Die App verarbeitet keine personenbezogenen Daten und holt keine Einwilligung ein; deshalb keine Elternzustimmung nötig. Bei jeder künftigen Datenverarbeitung (Crash-Reporting, Konten) neu bewerten.
-- Google Play: IARC-Antworten und Zielgruppe in `store/play-console-answers.md`; Familienrichtlinien beachten, da 13–15-Jährige adressiert werden (keine Werbung, keine Werbe-ID).
+- Google Play: IARC-Antworten und Zielgruppe in `store/play-console-answers.md`; Ab Build 17 gilt: Werbung = Ja, Werbe-ID = Ja (Zweck Werbung), Data Safety mit Google-Weitergabe (Nachtrag 2026-11-23 in `play-console-answers.md`). 13-15-Jährige gehören zur Zielgruppe; DSGVO-Einwilligung in DE erst ab 16 allein wirksam (Risiko, offen: Zielgruppe auf 16+ anheben?).
 - Datenschutz, Über uns, Impressum: `docs/` (de/en), öffentlich unter https://ilitrius.github.io/kind-words-app/ – Anbieterdaten aus RPCT übernommen, **Nutzer soll bestätigen**.
-- Einwilligungsdialog: entfällt, solange keine optionale Datenverarbeitung existiert.
+- Einwilligung: für ML Kit eigener Dialog; für Werbung Google UMP (EWR/UK/CH) plus AdMob-Datenschutz-Nachricht (in AdMob anlegen und veröffentlichen). Widerruf: Einstellungen > "Datenschutzoptionen für Werbung".
 - Datenschutz-Textbausteine bei Änderungen: Update-Prüfung (Google Play Services, nur Versionsabgleich durch Google, keine Daten der App) und Export/Import (lokal, Datei liegt beim Nutzer).
 
 ## 10. Risiken & Annahmen
@@ -120,3 +120,4 @@ Gilt nur für den Entwicklungsprozess, die App enthält keine KI.
 - 2026-11-08 · Release 1.0.11 (Build 11): Content v7 (570 Sätze je Sprache), Lernen auf dem Gerät (Gewichte aus Teilen/Kopieren/Favorit/Überspringen), "Satz vorschlagen" per Mail, texter-Agent (Opus). Datenschutz 12b/12c. Build, Lint, Tests, Emulator durch Claude; zweite KI-Prüfung offen.
 - 2026-11-08 · Release 1.0.12 (Build 12): Vorlesen (lokale TTS) und optionale Übersetzung mit Google ML Kit (Einwilligung, INTERNET nur dafür). Datenschutz 12d, Store-Text und Data-Safety-Entwurf angepasst. R8-Keep-Regeln für ML Kit. Tests: Build, Lint, Unit-Tests, Emulator (Debug + Release, Flugmodus).
 - 2026-11-15 · Release 1.0.15 (Build 15): randlose Anzeige ohne veraltete Fenster-APIs, Hilfe bei fehlenden Sprachdaten, Content v9 (alle Sätze als fließende ganze Sätze, Anrede "Schatz", 810 je Sprache). Tests: Unit-Tests, Lint, Release-Build, Emulator-Update 1.0.13 -> 1.0.15.
+- 2026-11-23 · Werbung (Plan `docs/PLAN-WERBUNG.md`, Schritt 2 Texte/Recht): Datenschutz de/en (Abschnitt 5b, Stand 23.11.2026), Über-uns/About, Store-Beschreibungen und Play-Console-Antworten (Werbung ja, Werbe-ID ja, Data Safety mit Google) auf AdMob-Banner umgestellt. Code (Build 17) separat; vor Upload Console-Schritte aus `store/play-console-answers.md` erledigen.

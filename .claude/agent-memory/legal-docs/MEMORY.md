@@ -1,0 +1,1 @@
+- [Werbung/AdMob Rechtstexte](project_werbung_admob.md) — Build 17: Annahmen, Risiken (Alter 16, Anschrift prüfen), veraltete Aussagen suchen

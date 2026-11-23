@@ -114,7 +114,15 @@ fun MainScreen(
         false -> { OnboardingScreen(onFinished = vm::markOnboardingSeen); return }
         else -> Unit
     }
-    if (donatePrompt && !onboardingShownThisStart && stringResource(R.string.donate_url).startsWith("https://")) DonateDialog(onDismiss = vm::dismissDonatePrompt)
+    val donateDialogOpen = donatePrompt && !onboardingShownThisStart && stringResource(R.string.donate_url).startsWith("https://")
+    if (donateDialogOpen) DonateDialog(onDismiss = vm::dismissDonatePrompt)
+
+    // Werbung: Einwilligung erst nach der Einführung abfragen; Banner nur auf Home und Favoriten, nie unter dem Spendendialog.
+    val ads = (androidx.compose.ui.platform.LocalContext.current.applicationContext as app.rpkindwords.KindWordsApp).ads
+    val adsActivity = androidx.activity.compose.LocalActivity.current
+    androidx.compose.runtime.LaunchedEffect(Unit) { adsActivity?.let { ads.gather(it) } }
+    val canRequestAds by ads.adsReady.collectAsStateWithLifecycle()
+    val showAd = canRequestAds && !donateDialogOpen && (tab == Tab.Home.ordinal || tab == Tab.Favorites.ordinal)
     Scaffold(
         // Ausschnitte (Kamera-Notch) im Querformat nicht überdecken
         contentWindowInsets = ScaffoldDefaults.contentWindowInsets.union(WindowInsets.displayCutout),
@@ -122,6 +130,8 @@ fun MainScreen(
         bottomBar = {
             // Große Systemschrift: Labels der Leiste begrenzen, damit sie nicht mitten im Wort umbrechen.
             val density = LocalDensity.current
+            Column {
+            if (showAd) app.rpkindwords.ads.AdBanner(app.rpkindwords.BuildConfig.ADMOB_BANNER_ID)
             CompositionLocalProvider(LocalDensity provides Density(density.density, density.fontScale.coerceAtMost(1.3f))) {
             NavigationBar {
                 Tab.entries.forEachIndexed { i, t ->
@@ -132,6 +142,7 @@ fun MainScreen(
                         label = { Text(stringResource(t.label), maxLines = 1, softWrap = false, overflow = TextOverflow.Ellipsis) },
                     )
                 }
+            }
             }
             }
         },

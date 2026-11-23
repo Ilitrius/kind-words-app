@@ -27,6 +27,15 @@
             android:authorities="${applicationId}.mlkitinitprovider"
             tools:node="remove" />
 
+        <!-- AdMob-App-ID; das SDK startet nicht von selbst, sondern erst nach der Einwilligung (AdsConsent). -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="${admobAppId}" />
+        <provider
+            android:name="com.google.android.gms.ads.MobileAdsInitProvider"
+            android:authorities="${applicationId}.mobileadsinitprovider"
+            tools:node="remove" />
+
         <receiver
             android:name=".reminder.ReminderReceiver"
             android:exported="false">

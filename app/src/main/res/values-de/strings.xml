@@ -70,10 +70,10 @@
     <string name="lang_en">English</string>
 
     <string name="donate_title">Kind Words unterstützen</string>
-    <string name="donate_text">Kind Words ist kostenlos, ohne Werbung und ohne Tracking. Wenn dir die App gefällt, kannst du freiwillig spenden. Das ist nicht nötig, schaltet nichts frei und läuft über einen externen Anbieter in deinem Browser. Beim Antippen sendet die App selbst nichts.</string>
+    <string name="donate_text">Kind Words ist kostenlos und finanziert sich über ein kleines Werbebanner. Wenn dir die App gefällt, kannst du freiwillig spenden. Das ist nicht nötig, schaltet nichts frei und läuft über einen externen Anbieter in deinem Browser. Beim Antippen sendet die App selbst nichts.</string>
     <string name="donate_button">Spenden (öffnet Browser)</string>
     <string name="donate_prompt_title">Gefällt dir Kind Words?</string>
-    <string name="donate_prompt_text">Kind Words ist kostenlos und ohne Werbung. Wenn die App deine Tage ein bisschen freundlicher macht, hilft eine kleine Spende, dass das so bleibt. Sie ist freiwillig und schaltet nichts frei.</string>
+    <string name="donate_prompt_text">Kind Words ist kostenlos. Wenn die App deine Tage ein bisschen freundlicher macht, hilft eine kleine Spende, sie weiter zu pflegen. Sie ist freiwillig und schaltet nichts frei.</string>
     <string name="donate_prompt_donate">Spenden</string>
     <string name="donate_prompt_cancel">Abbrechen</string>
     <string name="donate_error">Kein Browser zum Öffnen des Links gefunden.</string>
@@ -92,6 +92,8 @@
     <string name="backup_import_invalid">Diese Datei ist keine gültige Kind-Words-Sicherung.</string>
 
     <string name="privacy_link">Datenschutzerklärung</string>
+    <string name="ads_privacy_options">Datenschutzoptionen für Werbung</string>
+    <string name="ads_banner_description">Werbung</string>
     <string name="privacy_url">https://ilitrius.github.io/kind-words-app/datenschutz.html</string>
 
     <string name="update_available">Eine neue Version ist verfügbar.</string>

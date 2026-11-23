@@ -6,6 +6,10 @@ plugins {
     alias(libs.plugins.ksp)
 }
 
+// Googles öffentliche AdMob-Test-IDs (Debug, und Release-Standard falls keine echten IDs gesetzt sind)
+val TEST_APP_ID = "ca-app-pub-3940256099942544~3347511713"
+val TEST_BANNER_ID = "ca-app-pub-3940256099942544/9214589741"
+
 ksp {
     arg("room.schemaLocation", "$projectDir/schemas")
 }
@@ -20,6 +24,11 @@ android {
         targetSdk = 36
         versionCode = 16
         versionName = "1.0.16"
+
+        // AdMob: Debug nutzt immer Googles Test-IDs (nie echte Anzeigen im Test); Release nimmt die echten IDs aus gradle.properties.
+        manifestPlaceholders["admobAppId"] = TEST_APP_ID
+        buildConfigField("String", "ADMOB_BANNER_ID", "\"" + TEST_BANNER_ID + "\"")
+        buildConfigField("boolean", "ADMOB_CONSENT_DEBUG_EEA", providers.gradleProperty("ADMOB_CONSENT_DEBUG_EEA").getOrElse("false"))
     }
 
     androidResources {
@@ -47,6 +56,8 @@ android {
     buildTypes {
         release {
             signingConfigs.findByName("release")?.let { signingConfig = it }
+            manifestPlaceholders["admobAppId"] = providers.gradleProperty("ADMOB_APP_ID").getOrElse(TEST_APP_ID)
+            buildConfigField("String", "ADMOB_BANNER_ID", "\"" + providers.gradleProperty("ADMOB_BANNER_ID").getOrElse(TEST_BANNER_ID) + "\"")
             // Symboltabelle für nativen Code (AndroidX-Libs) im Bundle: bessere Absturz-/ANR-Analyse in der Play Console
             ndk.debugSymbolLevel = "SYMBOL_TABLE"
             isMinifyEnabled = true
@@ -62,6 +73,7 @@ android {
 
     buildFeatures {
         compose = true
+        buildConfig = true
     }
 
     lint {
@@ -77,6 +89,8 @@ dependencies {
     implementation(libs.play.app.update)
     implementation(libs.androidx.fragment) // Play-Update zieht Fragment 1.0.0 mit; ActivityResult braucht >= 1.3.0
     implementation(libs.mlkit.translate)
+    implementation(libs.play.services.ads)
+    implementation(libs.user.messaging.platform)
     implementation(libs.androidx.activity.compose)
     implementation(libs.androidx.lifecycle.runtime.compose)
     implementation(platform(libs.androidx.compose.bom))
@@ -91,4 +105,13 @@ dependencies {
     debugImplementation(libs.androidx.compose.ui.tooling)
     testImplementation(libs.junit)
     testImplementation(libs.org.json)
+}
+
+// Warnung, solange im Release noch Googles Test-IDs stehen (dann gibt es keine Einnahmen).
+gradle.taskGraph.whenReady {
+    val releaseBuild = allTasks.any { it.name.contains("Release") && (it.name.startsWith("bundle") || it.name.startsWith("assemble")) }
+    val appId = providers.gradleProperty("ADMOB_APP_ID").getOrElse("")
+    if (releaseBuild && (appId.isEmpty() || appId.startsWith("ca-app-pub-3940256099942544"))) {
+        logger.warn("WARNUNG: Release mit AdMob-Test-IDs (ADMOB_APP_ID/ADMOB_BANNER_ID in gradle.properties echte IDs eintragen).")
+    }
 }

@@ -70,10 +70,10 @@
     <string name="lang_en">English</string>
 
     <string name="donate_title">Support Kind Words</string>
-    <string name="donate_text">Kind Words is free, has no ads and no tracking. If you like it, you can make a voluntary donation. It is not required, unlocks nothing and is handled by an external provider in your browser. Tapping the button sends nothing from the app itself.</string>
+    <string name="donate_text">Kind Words is free and funded by a small ad banner. If you like it, you can make a voluntary donation. It is not required, unlocks nothing and is handled by an external provider in your browser. Tapping the button sends nothing from the app itself.</string>
     <string name="donate_button">Donate (opens browser)</string>
     <string name="donate_prompt_title">Enjoying Kind Words?</string>
-    <string name="donate_prompt_text">Kind Words is free and has no ads. If it makes your days a little kinder, a small donation helps keep it that way. It is voluntary and unlocks nothing.</string>
+    <string name="donate_prompt_text">Kind Words is free. If it makes your days a little kinder, a small donation helps keep it going. It is voluntary and unlocks nothing.</string>
     <string name="donate_prompt_donate">Donate</string>
     <string name="donate_prompt_cancel">Cancel</string>
     <string name="donate_error">No browser found to open the link.</string>
@@ -92,6 +92,8 @@
     <string name="backup_import_invalid">This file is not a valid Kind Words backup.</string>
 
     <string name="privacy_link">Privacy policy</string>
+    <string name="ads_privacy_options">Privacy options for ads</string>
+    <string name="ads_banner_description">Advertisement</string>
     <string name="privacy_url">https://ilitrius.github.io/kind-words-app/privacy-policy.html</string>
 
     <string name="update_available">A new version is available.</string>

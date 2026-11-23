@@ -13,6 +13,8 @@ splashscreen = "1.2.0"
 playAppUpdate = "2.1.0"
 fragment = "1.8.9"
 mlkitTranslate = "17.0.3"
+playServicesAds = "25.5.0"
+userMessagingPlatform = "4.0.0"
 
 [libraries]
 androidx-core-ktx = { module = "androidx.core:core-ktx", version.ref = "coreKtx" }
@@ -32,6 +34,8 @@ androidx-core-splashscreen = { module = "androidx.core:core-splashscreen", versi
 play-app-update = { module = "com.google.android.play:app-update", version.ref = "playAppUpdate" }
 androidx-fragment = { module = "androidx.fragment:fragment", version.ref = "fragment" }
 mlkit-translate = { module = "com.google.mlkit:translate", version.ref = "mlkitTranslate" }
+play-services-ads = { module = "com.google.android.gms:play-services-ads", version.ref = "playServicesAds" }
+user-messaging-platform = { module = "com.google.android.ump:user-messaging-platform", version.ref = "userMessagingPlatform" }
 junit = { module = "junit:junit", version = "4.13.2" }
 org-json = { module = "org.json:json", version.ref = "orgJson" }
 

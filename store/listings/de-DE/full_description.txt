@@ -1,4 +1,4 @@
-Ein nettes Wort kostet nichts und bedeutet oft viel. Nur fällt einem im Alltag nicht immer das Richtige ein. Kind Words schlägt dir kurze, warme Sätze für deine Partnerin oder deinen Partner vor. Du schickst sie per Nachricht ab oder sagst sie laut, und die App erinnert dich ab und zu daran.
+Ein nettes Wort kostet nichts und bedeutet oft viel. Nur fällt einem im Alltag nicht immer das Richtige ein. Kind Words schlägt dir kurze, warme Sätze für deine Partnerin oder deinen Partner vor: Liebesnachrichten, Liebessprüche und Komplimente für jeden Tag. Du schickst sie per WhatsApp oder SMS ab oder sagst sie laut, und die App erinnert dich ab und zu daran.
 
 SO FUNKTIONIERT'S
 1. Tippe auf „Neuer Vorschlag“ und lies den Satz.
@@ -6,11 +6,11 @@ SO FUNKTIONIERT'S
 3. Gefällt er dir, merk ihn dir als Favorit. Favoriten bekommst du öfter vorgeschlagen.
 
 WANN PASST DAS?
-• Zum Guten Morgen oder zur Guten Nacht, wenn man getrennt aufwacht oder einschläft
-• Für ein Kompliment, ein Danke oder ein „Ich denk an dich“ zwischendurch
+• Für Guten-Morgen-Sprüche und Gute-Nacht-Nachrichten, wenn man getrennt aufwacht oder einschläft
+• Für ein Kompliment, ein Danke, ein „Ich vermisse dich“ oder ein „Ich denk an dich“ zwischendurch
 • Wenn du jemanden aufmuntern oder um Entschuldigung bitten willst und die Worte fehlen
-• In einer Fernbeziehung, wenn du den Alltag trotzdem teilen möchtest
-• Zum Jahrestag, für kleine Überraschungen oder einfach so
+• In einer Fernbeziehung, wenn du dem Freund oder der Freundin den Alltag trotzdem nah sein lassen möchtest
+• Zum Jahrestag, für kleine Überraschungen oder einfach so, als süße Nachricht für deinen Schatz
 
 DAS KANNST DU
 • Rund 810 Sätze in 12 Kategorien: Liebe, Wertschätzung, Guten Morgen, Gute Nacht, Ermutigung, Vermissen, Komplimente, Humor, Danke, Entschuldigung, Emoji und Textsymbole
@@ -24,13 +24,18 @@ DAS KANNST DU
 • Sätze vorlesen, langsam und warm, mit wählbarer Stimme und Tempo, auf Wunsch zuerst in eine von 12 Sprachen übersetzt (zum Beispiel Deutsch nach Italienisch)
 • Heller und dunkler Modus
 
+FÜR JEDEN MOMENT
+Romantische Sprüche, Liebeserklärungen und Komplimente für sie und für ihn. Liebe Grüße für frisch Verliebte, Verlobte, Verheiratete und Paare, die schon lange zusammen sind. Dazu Worte zum Aufmuntern und Trösten, ein ehrliches Sorry oder ein Danke von Herzen. Passende Texte für Valentinstag, Hochzeitstag und Geburtstag, kleine Liebesbotschaften, Beziehungstipps im Alltag und Emojis oder Textsymbole zum Verschicken.
+
 DATENSCHUTZ
 • Deine Sätze, Favoriten und Einstellungen bleiben auf deinem Gerät
-• Kein Konto, keine Werbung, kein Tracking
+• Kein Konto nötig
+• Die App enthält Werbung: ein kleines Banner von Google AdMob, nur auf der Startseite und bei den Favoriten. In der EU, in Großbritannien und in der Schweiz fragen wir dich vorher um Erlaubnis, und du kannst sie jederzeit in den Einstellungen unter „Datenschutzoptionen für Werbung“ ändern. Sagst du nein, siehst du keine Werbung
+• Für die Werbung verarbeitet Google zum Beispiel Werbe-ID, ungefähren Standort, Geräteinfos und Anzeigeninteraktionen
 • Vorlesen läuft mit der Sprachausgabe deines Geräts, ohne Internet
 • Das Übersetzen ist optional und standardmäßig aus. Erst nach deiner Einwilligung nutzt die App Google ML Kit: Sätze werden auf dem Gerät übersetzt, die Sprachmodelle lädt die App einmalig aus dem Internet, und Google kann dabei technische Diagnosedaten erhalten
-• Ohne Übersetzen sendet die App selbst keine Daten; Hinweise auf neue Versionen kommen über Google Play
+• Deine Sätze und Favoriten sendet die App nie; Hinweise auf neue Versionen kommen über Google Play
 • Bewerten, Spenden und Feedback öffnen den Play Store, den Browser oder deine Mail-App, nur wenn du es antippst
 • Die Datenschutzerklärung findest du in den Einstellungen
 
-Kind Words ist kostenlos. Wenn es dir gefällt, kannst du die App bewerten oder in den Einstellungen etwas spenden. Du musst nicht, und dafür gibt es auch nichts extra. Ideen oder Fehler? Schreib uns über „Feedback senden“.
+Kind Words ist kostenlos und finanziert sich über das kleine Werbebanner. Wenn es dir gefällt, kannst du die App bewerten oder in den Einstellungen etwas spenden. Ideen oder Fehler? Schreib uns über „Feedback senden“.
