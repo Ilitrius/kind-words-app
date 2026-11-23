@@ -165,4 +165,12 @@
     <string name="translation_revoke_keep">Ausschalten, Modelle behalten</string>
     <string name="speech_no_voices_hint">Für diese Sprache wurde keine installierte Stimme gefunden. Installiere die Sprachdaten in den Einstellungen der Sprachausgabe. Auf Samsung-Geräten hilft oft der Wechsel zur Engine „Sprachdienste von Google“.</string>
     <string name="speech_open_tts_settings">Einstellungen der Sprachausgabe</string>
+    <string name="widget_label">Nettes Wort des Tages</string>
+    <string name="widget_description">Ein liebes Wort auf deinem Startbildschirm, jeden Tag neu.</string>
+    <string name="widget_new">Neu</string>
+    <string name="widget_empty">Öffne die App einmal, um deine Sätze zu laden.</string>
+    <string name="widget_preview_text">Du machst meine Tage heller, Schatz. ❤️</string>
+    <string name="widget_config_title">Kategorie wählen</string>
+    <string name="widget_config_hint">Welche Art von Worten soll dieses Widget zeigen?</string>
+    <string name="widget_config_done">Fertig</string>
 </resources>

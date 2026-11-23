@@ -47,7 +47,7 @@ Legende: `[ ]` offen · `[x]` erledigt · Agent in Klammern
 - [x] App "RP Kind Words" (app.rpkindwords) angelegt, kostenlos; alle App-Inhalte-Erklärungen gespeichert (Datenschutz, Anzeigen, Zugang, Altersfreigabe, Zielgruppe 13+, Datensicherheit, Werbe-ID, Behörden, Finanzen, Gesundheit)
 - [x] Store-Einstellungen (Kategorie Lifestyle, Kontakt), Store-Eintrag en-US + de-DE als Entwurf (Texte, Icon, Vorstellungsgrafik, 4 Screenshots je Sprache)
 - [x] Release-Bundle `app/build/outputs/bundle/release/app-release.aab` (versionCode 4) + `mapping.txt` in der Console hochladen (Automatisierung vom Auto-Mode blockiert → manuell per Drag & Drop) (ersetzt durch Build 12)
-- [ ] Geschlossener Test: ≥12 Tester, ≥14 Tage, danach Produktionszugriff beantragen; Zahlungskonto-Hinweis in der Console prüfen
+- [x] (2026-11-23, Nutzer) Geschlossener Test: ≥12 Tester, ≥14 Tage erledigt; App ist in der Beta-Phase live; Zahlungskonto-Hinweis in der Console prüfen
 - [x] Grafiken/Screenshots mit dem neuen Namen "RP Kind Words" neu erzeugen (hochauflösend, "cool/genial" laut Nutzer) (neue Screenshots 2026-11-06)
 - [x] Favoriten häufiger vorschlagen (gewichtete Zufallsauswahl) (umgesetzt, 40 % Favoritenanteil)
 
@@ -126,3 +126,14 @@ Legende: `[ ]` offen · `[x]` erledigt · Agent in Klammern
 - [x] (2026-11-23) `app-ads.txt` unter https://ilitrius.github.io/app-ads.txt (Repo Ilitrius/Ilitrius.github.io, Publisher pub-2109805482260954); Kopie `docs/app-ads.txt`.
 - [ ] Werbung per AdMob, adaptiver Banner: Plan in `docs/PLAN-WERBUNG.md`. Wartet auf AdMob-App-ID, Banner-ID, Datenschutz-Nachricht in AdMob und Tab-Auswahl (Nutzer); danach Code, Texte/Rechtliches, QA, Release 1.0.17.
 - [ ] Datenschutz/Store: Vorlesen bleibt offline und ohne Datenübertragung; Beschreibung ggf. um "natürliche Stimme" ergänzen. Aufnahme-Download aus Sicht Data Safety unverändert (Audio liegt im App-Paket).
+
+## Stand 2026-11-23 (Widget, Version 1.1.0)
+- [x] (2026-11-23) Widget "Nettes Wort des Tages" (Glance, Kategorie wählbar) umgesetzt; Debug/Release-Build, Lint, Unit-Tests grün (Cloud, SDK 36).
+- [x] (2026-11-23) Version 1.1.0 / versionCode 17, Store-Texte de/en + Neuigkeiten, Datenschutz de/en (Abschnitte 4, 12d, 12e), Console-Nachtrag.
+- [ ] Emulatortest Widget (API 35 und 26): hinzufügen, Kategorie wechseln/ändern, Neu, Teilen, Dunkelmodus, Sprachwechsel, Neustart, Update von 1.0.16.
+- [ ] Store-Screenshots mit Widget (de/en), danach Store-Eintrag aktualisieren.
+- [ ] Nutzer: `.\gradlew.bat lintRelease bundleRelease`, 1.1.0 + `mapping.txt` hochladen; Datenschutz-Seiten gehen mit dem Merge in `main` live (GitHub Pages).
+- [ ] Qualitätsrunde: weitere warme, natürliche Sätze (Content v10; Aufnahmen per `tools/gen_voice.py` nachziehen, Hash je Satz).
+- [ ] Werbung planen (später): siehe BRAIN.md.
+- [ ] (2026-11-23) Satzrunde Content v10 geplant: `docs/PLAN-SAETZE-V10.md` (Umfang A/B/C und Audio-Ablage vom Nutzer zu entscheiden).
+- [x] (2026-11-23) Content v10: je Sprache 300 neue Sätze (30 je Kategorie), zweite Lesung erledigt (de 71, en 78 Sätze überarbeitet/ersetzt), Tests grün. Offen: Stichprobe `docs/V10-STICHPROBE.md` (René), Muttersprachler-Prüfung EN, Aufnahmen für 600 Sätze (nach ElevenLabs-Lizenz/Schlüssel), danach Version 1.2.0 und Store-Zahl "rund 970 Sätze".

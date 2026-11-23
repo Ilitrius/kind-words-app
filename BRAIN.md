@@ -162,3 +162,11 @@ Das „Gehirn“ des Projekts: Entscheidungen, Fakten, Fallstricke. Wird von Men
 
 ## 2026-11-23 AdMob Schritt 1 (Code)
 - Adaptiver Banner (Home + Favoriten, über NavigationBar), UMP-Einwilligung nach Onboarding, SDK-Start erst nach `canRequestAds` (MobileAdsInitProvider entfernt). IDs per gradle.properties (`ADMOB_APP_ID`, `ADMOB_BANNER_ID`, Standard Test-IDs; Release nutzt dieselben, Gradle warnt bei Test-IDs im Release). Release-APK (R8) im Emulator geprüft. Refresh-Rate im AdMob-Konto auf >= 60 s stellen. Neue Permissions: AD_ID, ACCESS_ADSERVICES_*, WAKE_LOCK, FOREGROUND_SERVICE.
+## Stand 2026-11-23 (Hauptprojekt)
+- 2026-11-23 · Version · 1.0.16 (Build 16, mit natürlicher Stimme) ist gebaut; Upload (AAB + `dist/mapping.txt`) und weitere Schritte liegen beim Nutzer · Play-Upload macht der Nutzer.
+- 2026-11-23 · Play Console · Tester-Anforderung (>=12 Tester, 14 Tage) erledigt (Nutzer); alle drei Apps (Kind Words, RPCT, Idle RPG) sind laut Nutzer produktiv in der Beta-Phase. Genauer Track noch festhalten.
+- 2026-11-23 · Offen · ElevenLabs-Lizenz prüfen und Schlüssel widerrufen; Audio (40 MB) ins Git oder LFS entscheiden; Vorlesen auf Galaxy Tab S6 Lite prüfen; Optik API < 35; Keystore extern sichern.
+- 2026-11-23 · Lehre aus RPCT · Eigene Klicks auf eigene AdMob-Anzeigen führten zur AdMob-Sperre. Falls je Werbung in Kind Words: nur Test-IDs im Debug-Build, nie im Release auf eigene Anzeigen klicken · Richtlinienverstoß.
+- 2026-11-23 · Widget · Jetpack Glance 1.1.1, `widget/` (KindWordsWidget, Receiver, WidgetConfigActivity, WidgetStore, WidgetRules); Satz pro Kalendertag und Sprache, Kategorie je Widget-ID, eigene DataStore-Datei `widgets`; Update beim App-Start (`updateAll`) und alle 6 h (`updatePeriodMillis`, inexakt) · Glance bringt WorkManager mit: neu `WAKE_LOCK`, `FOREGROUND_SERVICE` (bewusst akzeptiert, Datenschutz Abschnitt 4 vermerkt).
+- 2026-11-23 · Version 1.1.0 (Build 17) · Widget, Store-Texte, Datenschutz 12e; Bundle baut der Nutzer lokal; Pläne: `docs/PLAN-WIDGET.md`.
+- 2026-11-23 · Werbung (Wunsch des Nutzers, später) · Folgen: AdMob, UMP-Einwilligung, Datenschutz, Data Safety, Altersangaben, Store-Angabe "enthält Werbung", `app-ads.txt`; nur Test-IDs im Debug-Build.

@@ -22,8 +22,8 @@ android {
         applicationId = "app.rpkindwords"
         minSdk = 26
         targetSdk = 36
-        versionCode = 16
-        versionName = "1.0.16"
+        versionCode = 17
+        versionName = "1.1.0"
 
         // AdMob: Debug nutzt immer Googles Test-IDs (nie echte Anzeigen im Test); Release nimmt die echten IDs aus gradle.properties.
         manifestPlaceholders["admobAppId"] = TEST_APP_ID
@@ -91,6 +91,8 @@ dependencies {
     implementation(libs.mlkit.translate)
     implementation(libs.play.services.ads)
     implementation(libs.user.messaging.platform)
+    implementation(libs.glance.appwidget)
+    implementation(libs.glance.material3)
     implementation(libs.androidx.activity.compose)
     implementation(libs.androidx.lifecycle.runtime.compose)
     implementation(platform(libs.androidx.compose.bom))
