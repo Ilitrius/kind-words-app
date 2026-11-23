@@ -1,0 +1,3 @@
+# app-ads.txt (IAB Tech Lab, Spezifikation 1.0)
+# Format: <Werbesystem-Domain>, <Publisher-ID>, <DIRECT|RESELLER>, <Zertifizierungs-ID>
+google.com, pub-2109805482260954, DIRECT, f08c47fec0942fa0
