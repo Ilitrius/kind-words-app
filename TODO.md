@@ -124,3 +124,12 @@ Legende: `[ ]` offen · `[x]` erledigt · Agent in Klammern
 - [ ] Wichtig: Wird ein Satz geändert, passt der Hash nicht mehr, die Aufnahme wird übergangen. Neu erzeugen mit `tools/gen_voice.py <lang> <voice_id> --max-chars N` (Schlüssel nur per Umgebungsvariable ELEVENLABS_API_KEY).
 - [ ] Nutzer: ElevenLabs-Lizenz (kommerzielle Nutzung im Tarif payg) und Namensnennung prüfen; Schlüssel widerrufen/erneuern (stand im Chat). Entscheiden, ob die 40 MB Audio ins Git-Repo sollen (bläht die Historie dauerhaft auf) oder per Git LFS/Release-Asset.
 - [ ] Datenschutz/Store: Vorlesen bleibt offline und ohne Datenübertragung; Beschreibung ggf. um "natürliche Stimme" ergänzen. Aufnahme-Download aus Sicht Data Safety unverändert (Audio liegt im App-Paket).
+
+## Stand 2026-11-23 (Widget, Version 1.1.0)
+- [x] (2026-11-23) Widget "Nettes Wort des Tages" (Glance, Kategorie wählbar) umgesetzt; Debug/Release-Build, Lint, Unit-Tests grün (Cloud, SDK 36).
+- [x] (2026-11-23) Version 1.1.0 / versionCode 17, Store-Texte de/en + Neuigkeiten, Datenschutz de/en (Abschnitte 4, 12d, 12e), Console-Nachtrag.
+- [ ] Emulatortest Widget (API 35 und 26): hinzufügen, Kategorie wechseln/ändern, Neu, Teilen, Dunkelmodus, Sprachwechsel, Neustart, Update von 1.0.16.
+- [ ] Store-Screenshots mit Widget (de/en), danach Store-Eintrag aktualisieren.
+- [ ] Nutzer: `.\gradlew.bat lintRelease bundleRelease`, 1.1.0 + `mapping.txt` hochladen; Datenschutz-Seiten gehen mit dem Merge in `main` live (GitHub Pages).
+- [ ] Qualitätsrunde: weitere warme, natürliche Sätze (Content v10; Aufnahmen per `tools/gen_voice.py` nachziehen, Hash je Satz).
+- [ ] Werbung planen (später): siehe BRAIN.md.

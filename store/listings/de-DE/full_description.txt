@@ -17,17 +17,19 @@ DAS KANNST DU
 • Mit einem Tipp in jedem Messenger teilen oder kopieren
 • Favoriten speichern, sie werden dir öfter vorgeschlagen
 • Eigene Sätze schreiben, ändern und behalten. Die Vorschläge passen sich nach und nach deinem Stil an
+• Ein Widget für den Startbildschirm mit einem netten Wort des Tages, jeden Tag neu, mit Kategorie nach Wahl sowie den Knöpfen „Neu“ und „Teilen“
 • Erinnerungen zu festen Uhrzeiten oder zufällig in einem Zeitfenster, an den Tagen, die du willst
 • Sicherung deiner Sätze, Favoriten und Einstellungen als Datei, zum Beispiel für ein neues Handy
 • Kurze Einführung beim ersten Start, die du überspringen kannst
 • Auf Deutsch und Englisch, die Sprache stellst du in den Einstellungen um
-• Sätze vorlesen, langsam und warm, mit wählbarer Stimme und Tempo, auf Wunsch zuerst in eine von 12 Sprachen übersetzt (zum Beispiel Deutsch nach Italienisch)
+• Sätze vorlesen, langsam und warm, mit natürlich klingender Stimme und wählbarem Tempo, auf Wunsch zuerst in eine von 12 Sprachen übersetzt (zum Beispiel Deutsch nach Italienisch)
 • Heller und dunkler Modus
 
 DATENSCHUTZ
 • Deine Sätze, Favoriten und Einstellungen bleiben auf deinem Gerät
 • Kein Konto, keine Werbung, kein Tracking
-• Vorlesen läuft mit der Sprachausgabe deines Geräts, ohne Internet
+• Vorlesen läuft ohne Internet: die natürlichen Sprachaufnahmen gehören zur App (synthetische Stimme), eigene Sätze liest die Sprachausgabe deines Geräts
+• Das Widget arbeitet nur auf dem Gerät und zeigt keine Werbung
 • Das Übersetzen ist optional und standardmäßig aus. Erst nach deiner Einwilligung nutzt die App Google ML Kit: Sätze werden auf dem Gerät übersetzt, die Sprachmodelle lädt die App einmalig aus dem Internet, und Google kann dabei technische Diagnosedaten erhalten
 • Ohne Übersetzen sendet die App selbst keine Daten; Hinweise auf neue Versionen kommen über Google Play
 • Bewerten, Spenden und Feedback öffnen den Play Store, den Browser oder deine Mail-App, nur wenn du es antippst
