@@ -13,7 +13,7 @@ import android.app.Activity
 import androidx.compose.ui.graphics.Color
 
 // Markenfarben passend zum App-Icon (Rose/Orange); bewusst kein Dynamic Color.
-private val LightColors: ColorScheme = lightColorScheme(
+internal val LightColors: ColorScheme = lightColorScheme(
     primary = Color(0xFFD6245F),
     onPrimary = Color(0xFFFFFFFF),
     primaryContainer = Color(0xFFFFDDE4),
@@ -38,7 +38,7 @@ private val LightColors: ColorScheme = lightColorScheme(
     outlineVariant = Color(0xFFDDBFB8),
 )
 
-private val DarkColors: ColorScheme = darkColorScheme(
+internal val DarkColors: ColorScheme = darkColorScheme(
     primary = Color(0xFFFFB1C4),
     onPrimary = Color(0xFF5C0A25),
     primaryContainer = Color(0xFF8C1442),

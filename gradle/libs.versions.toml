@@ -13,6 +13,7 @@ splashscreen = "1.2.0"
 playAppUpdate = "2.1.0"
 fragment = "1.8.9"
 mlkitTranslate = "17.0.3"
+glance = "1.1.1"
 
 [libraries]
 androidx-core-ktx = { module = "androidx.core:core-ktx", version.ref = "coreKtx" }
@@ -32,6 +33,8 @@ androidx-core-splashscreen = { module = "androidx.core:core-splashscreen", versi
 play-app-update = { module = "com.google.android.play:app-update", version.ref = "playAppUpdate" }
 androidx-fragment = { module = "androidx.fragment:fragment", version.ref = "fragment" }
 mlkit-translate = { module = "com.google.mlkit:translate", version.ref = "mlkitTranslate" }
+glance-appwidget = { module = "androidx.glance:glance-appwidget", version.ref = "glance" }
+glance-material3 = { module = "androidx.glance:glance-material3", version.ref = "glance" }
 junit = { module = "junit:junit", version = "4.13.2" }
 org-json = { module = "org.json:json", version.ref = "orgJson" }
 

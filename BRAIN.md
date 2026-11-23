@@ -154,3 +154,12 @@ Das „Gehirn“ des Projekts: Entscheidungen, Fakten, Fallstricke. Wird von Men
 - Nutzerwahl: Jessica (ElevenLabs, eleven_multilingual_v2, stability 0.6, similarity 0.75, style 0.1, speed 0.92, mp3_44100_64, ca. 30 KB/Satz). Erzeugung per `tools/gen_voice.py`; Verbrauch 1 Credit je Zeichen, de ca. 45k + en ca. 39k Zeichen; Tarif payg (Free-Tarif schließt kommerzielle Nutzung aus).
 - App: `Speaker.playClip` (MediaPlayer aus Assets, Dateiname mit SHA-1-Hash des Textes, `SpeechText.clipHash`), `MainViewModel.speak` nutzt es nur ohne Übersetzung. Ohne passende Datei springt die Gerätestimme ein (nach Qualität sortiert, Satzpausen 350 ms). Tempo-Einstellung gilt nur für die Gerätestimme.
 - Hörprobe-Dateien und Schlüssel liegen nur im Session-Scratchpad, nie im Repo. APK wächst auf 102 MB (AAB 68 MB).
+
+## Stand 2026-11-23 (Hauptprojekt)
+- 2026-11-23 · Version · 1.0.16 (Build 16, mit natürlicher Stimme) ist gebaut; Upload (AAB + `dist/mapping.txt`) und weitere Schritte liegen beim Nutzer · Play-Upload macht der Nutzer.
+- 2026-11-23 · Play Console · Tester-Anforderung (>=12 Tester, 14 Tage) erledigt (Nutzer); alle drei Apps (Kind Words, RPCT, Idle RPG) sind laut Nutzer produktiv in der Beta-Phase. Genauer Track noch festhalten.
+- 2026-11-23 · Offen · ElevenLabs-Lizenz prüfen und Schlüssel widerrufen; Audio (40 MB) ins Git oder LFS entscheiden; Vorlesen auf Galaxy Tab S6 Lite prüfen; Optik API < 35; Keystore extern sichern.
+- 2026-11-23 · Lehre aus RPCT · Eigene Klicks auf eigene AdMob-Anzeigen führten zur AdMob-Sperre. Falls je Werbung in Kind Words: nur Test-IDs im Debug-Build, nie im Release auf eigene Anzeigen klicken · Richtlinienverstoß.
+- 2026-11-23 · Widget · Jetpack Glance 1.1.1, `widget/` (KindWordsWidget, Receiver, WidgetConfigActivity, WidgetStore, WidgetRules); Satz pro Kalendertag und Sprache, Kategorie je Widget-ID, eigene DataStore-Datei `widgets`; Update beim App-Start (`updateAll`) und alle 6 h (`updatePeriodMillis`, inexakt) · Glance bringt WorkManager mit: neu `WAKE_LOCK`, `FOREGROUND_SERVICE` (bewusst akzeptiert, Datenschutz Abschnitt 4 vermerkt).
+- 2026-11-23 · Version 1.1.0 (Build 17) · Widget, Store-Texte, Datenschutz 12e; Bundle baut der Nutzer lokal; Pläne: `docs/PLAN-WIDGET.md`.
+- 2026-11-23 · Werbung (Wunsch des Nutzers, später) · Folgen: AdMob, UMP-Einwilligung, Datenschutz, Data Safety, Altersangaben, Store-Angabe "enthält Werbung", `app-ads.txt`; nur Test-IDs im Debug-Build.
