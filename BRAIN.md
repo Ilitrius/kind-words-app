@@ -170,3 +170,12 @@ Das „Gehirn“ des Projekts: Entscheidungen, Fakten, Fallstricke. Wird von Men
 - 2026-11-23 · Widget · Jetpack Glance 1.1.1, `widget/` (KindWordsWidget, Receiver, WidgetConfigActivity, WidgetStore, WidgetRules); Satz pro Kalendertag und Sprache, Kategorie je Widget-ID, eigene DataStore-Datei `widgets`; Update beim App-Start (`updateAll`) und alle 6 h (`updatePeriodMillis`, inexakt) · Glance bringt WorkManager mit: neu `WAKE_LOCK`, `FOREGROUND_SERVICE` (bewusst akzeptiert, Datenschutz Abschnitt 4 vermerkt).
 - 2026-11-23 · Version 1.1.0 (Build 17) · Widget, Store-Texte, Datenschutz 12e; Bundle baut der Nutzer lokal; Pläne: `docs/PLAN-WIDGET.md`.
 - 2026-11-23 · Werbung (Wunsch des Nutzers, später) · Folgen: AdMob, UMP-Einwilligung, Datenschutz, Data Safety, Altersangaben, Store-Angabe "enthält Werbung", `app-ads.txt`; nur Test-IDs im Debug-Build.
+
+## 2026-11-23 Release 1.1.0 (Build 17) gebaut
+- Stand: Branch `feature/admob-build17` enthält Merge von `main` (Widget 1.1.0 + Content v10, via PR #2) in den AdMob-Code (Commit db27def). Konflikte gelöst, `lintDebug`, `testDebugUnitTest`, `lintRelease`, `bundleRelease`, `assembleRelease` grün.
+- Release: `dist/kindwords-1.1.0-release.aab` (74 MB) / `.apk` (105 MB), `dist/mapping.txt` gehört zu 1.1.0 (alte: `mapping-1.0.16.txt`). Merged Manifest im Release: echte AdMob-App-ID (`~7836980498`), versionCode 17 / 1.1.0. Debug nutzt immer Test-IDs.
+- Inhalt: 1110 Sätze je Sprache (Content v10, davon 970 Textsätze), AdMob-Banner (Home/Favoriten) + UMP, Widget "Nettes Wort des Tages".
+- Audio: nur 670 Textsätze je Sprache haben eine natürliche Aufnahme; die 300 neuen v10-Sätze je Sprache fallen auf die Gerätestimme zurück (Hash passt nicht). Nachziehen mit `tools/gen_voice.py`, wenn ElevenLabs-Lizenz/Schlüssel geklärt sind.
+- Store-Texte nennen keine Satzzahl mehr; "rund 970" ist nirgends nötig.
+- Regel: Im Release nie auf eigene Anzeigen klicken (AdMob-Sperre bei RPCT).
+- Offen/ungetestet: Widget und Banner im Emulator (API 35 und 26), Release-APK mit echter ID nicht auf Gerät geprüft.
