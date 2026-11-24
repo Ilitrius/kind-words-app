@@ -103,7 +103,7 @@ fun HomeScreen(vm: MainViewModel, snackbar: SnackbarHostState, modifier: Modifie
     val copiedText = stringResource(R.string.copied)
 
     Column(modifier.fillMaxSize().verticalScroll(rememberScrollState()).padding(16.dp), verticalArrangement = Arrangement.spacedBy(16.dp)) {
-        Text(stringResource(R.string.home_title), style = MaterialTheme.typography.headlineMedium)
+        ScreenTitle(R.string.home_title)
         LazyRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
             item {
                 FilterChip(selected = category == null, onClick = { vm.selectCategory(null) }, label = { Text(stringResource(R.string.category_all)) })
@@ -166,7 +166,7 @@ fun FavoritesScreen(vm: MainViewModel, modifier: Modifier = Modifier) {
     val context = LocalContext.current
     val items by vm.favorites.collectAsStateWithLifecycle()
     Column(modifier.fillMaxSize().padding(horizontal = 16.dp)) {
-        Text(stringResource(R.string.nav_favorites), style = MaterialTheme.typography.headlineMedium, modifier = Modifier.padding(vertical = 16.dp))
+        ScreenTitle(R.string.nav_favorites, Modifier.padding(vertical = 16.dp))
         if (items.isEmpty()) {
             Text(stringResource(R.string.favorites_empty), style = MaterialTheme.typography.bodyLarge)
         } else {
@@ -202,7 +202,7 @@ fun MineScreen(vm: MainViewModel, modifier: Modifier = Modifier) {
 
     Box(modifier.fillMaxSize()) {
         Column(Modifier.fillMaxSize().padding(horizontal = 16.dp)) {
-            Text(stringResource(R.string.nav_mine), style = MaterialTheme.typography.headlineMedium, modifier = Modifier.padding(vertical = 16.dp))
+            ScreenTitle(R.string.nav_mine, Modifier.padding(vertical = 16.dp))
             if (items.isEmpty()) {
                 Text(stringResource(R.string.mine_empty), style = MaterialTheme.typography.bodyLarge)
             } else {

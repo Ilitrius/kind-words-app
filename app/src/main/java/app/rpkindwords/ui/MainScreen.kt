@@ -41,6 +41,28 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.Density
+import androidx.compose.ui.unit.LayoutDirection
+import androidx.compose.ui.platform.LocalLayoutDirection
+import androidx.compose.ui.input.pointer.PointerEventPass
+import androidx.compose.ui.input.pointer.pointerInput
+import androidx.compose.ui.input.pointer.positionChanged
+import androidx.compose.foundation.gestures.awaitEachGesture
+import androidx.compose.foundation.gestures.awaitFirstDown
+import kotlin.math.abs
+import kotlin.math.roundToInt
+import androidx.compose.animation.core.Animatable
+import androidx.compose.foundation.background
+import androidx.compose.material3.NavigationBarDefaults
+import androidx.compose.material3.NavigationBarItemDefaults
+import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.MutableIntState
+import androidx.compose.runtime.rememberCoroutineScope
+import androidx.compose.ui.draw.drawBehind
+import androidx.compose.ui.geometry.CornerRadius
+import androidx.compose.ui.geometry.Offset
+import androidx.compose.ui.geometry.Size
+import androidx.compose.ui.graphics.Color
+import kotlinx.coroutines.launch
 import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.ui.unit.dp
 import app.rpkindwords.MainViewModel
@@ -80,7 +102,8 @@ fun MainScreen(
     onUpdate: () -> Unit = {},
     onRestartForUpdate: () -> Unit = {},
 ) {
-    var tab by rememberSaveable { mutableIntStateOf(0) }
+    val tabState = rememberSaveable { mutableIntStateOf(0) }
+    var tab by tabState
     var bannerDismissed by rememberSaveable { mutableStateOf(false) }
     val snackbar = remember { SnackbarHostState() }
     BackHandler(enabled = tab != 0) { tab = 0 }
@@ -133,16 +156,7 @@ fun MainScreen(
             Column {
             if (showAd) app.rpkindwords.ads.AdBanner(app.rpkindwords.BuildConfig.ADMOB_BANNER_ID)
             CompositionLocalProvider(LocalDensity provides Density(density.density, density.fontScale.coerceAtMost(1.3f))) {
-            NavigationBar {
-                Tab.entries.forEachIndexed { i, t ->
-                    NavigationBarItem(
-                        selected = tab == i,
-                        onClick = { tab = i },
-                        icon = { Icon(t.icon, contentDescription = null) },
-                        label = { Text(stringResource(t.label), maxLines = 1, softWrap = false, overflow = TextOverflow.Ellipsis) },
-                    )
-                }
-            }
+            TabBar(tabState)
             }
             }
         },
@@ -158,6 +172,64 @@ fun MainScreen(
                     Tab.Mine -> MineScreen(vm)
                     Tab.Settings -> SettingsScreen(vm)
                 }
+            }
+        }
+    }
+}
+
+/** Untere Leiste: ein Balken zeigt den Reiter und folgt beim Ziehen (gedrückt halten) dem Finger; beim Loslassen rastet er ein. */
+@Composable
+private fun TabBar(tabState: MutableIntState) {
+    val rtl = LocalLayoutDirection.current == LayoutDirection.Rtl
+    val count = Tab.entries.size
+    val scope = rememberCoroutineScope()
+    val position = remember { Animatable(tabState.intValue.toFloat()) }
+    var dragging by remember { mutableStateOf(false) }
+    LaunchedEffect(tabState.intValue, dragging) {
+        if (!dragging) position.animateTo(tabState.intValue.toFloat())
+    }
+    val indicator = MaterialTheme.colorScheme.secondaryContainer
+    Box(Modifier.background(NavigationBarDefaults.containerColor)) {
+        NavigationBar(
+            Modifier
+                .drawBehind {
+                    val itemWidth = size.width / count
+                    val centerX = (position.value + 0.5f) * itemWidth
+                    val x = if (rtl) size.width - centerX else centerX
+                    val w = 64.dp.toPx()
+                    val h = 32.dp.toPx()
+                    drawRoundRect(indicator, Offset(x - w / 2, 12.dp.toPx()), Size(w, h), CornerRadius(h / 2))
+                }
+                .pointerInput(rtl) {
+                    // Einfache Taps bleiben bei den Items; erst eine Bewegung startet das Ziehen.
+                    awaitEachGesture {
+                        awaitFirstDown(requireUnconsumed = false, pass = PointerEventPass.Initial)
+                        do {
+                            val event = awaitPointerEvent(PointerEventPass.Initial)
+                            val change = event.changes.firstOrNull() ?: break
+                            if (change.positionChanged() && abs(change.position.x - change.previousPosition.x) > 0f) {
+                                dragging = true
+                                val fraction = (change.position.x / size.width).coerceIn(0f, 1f)
+                                val p = ((if (rtl) 1f - fraction else fraction) * count - 0.5f).coerceIn(0f, count - 1f)
+                                scope.launch { position.snapTo(p) }
+                                val target = p.roundToInt()
+                                if (target != tabState.intValue) tabState.intValue = target
+                                change.consume()
+                            }
+                        } while (event.changes.any { it.pressed })
+                        dragging = false
+                    }
+                },
+            containerColor = Color.Transparent,
+        ) {
+            Tab.entries.forEachIndexed { i, t ->
+                NavigationBarItem(
+                    selected = tabState.intValue == i,
+                    onClick = { tabState.intValue = i },
+                    icon = { Icon(t.icon, contentDescription = null) },
+                    label = { Text(stringResource(t.label), maxLines = 1, softWrap = false, overflow = TextOverflow.Ellipsis) },
+                    colors = NavigationBarItemDefaults.colors(indicatorColor = Color.Transparent),
+                )
             }
         }
     }
