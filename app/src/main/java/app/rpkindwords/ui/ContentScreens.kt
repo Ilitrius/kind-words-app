@@ -16,7 +16,6 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
@@ -35,7 +34,6 @@ import androidx.compose.material3.Button
 import androidx.compose.material3.Card
 import androidx.compose.material3.ExtendedFloatingActionButton
 import androidx.compose.material3.FilledTonalButton
-import androidx.compose.material3.FilterChip
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
@@ -104,22 +102,21 @@ fun HomeScreen(vm: MainViewModel, snackbar: SnackbarHostState, modifier: Modifie
 
     Column(modifier.fillMaxSize().verticalScroll(rememberScrollState()).padding(16.dp), verticalArrangement = Arrangement.spacedBy(16.dp)) {
         ScreenTitle(R.string.home_title)
-        LazyRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-            item {
-                FilterChip(selected = category == null, onClick = { vm.selectCategory(null) }, label = { Text(stringResource(R.string.category_all)) })
-            }
-            items(MessageRepository.categories) { c ->
-                FilterChip(selected = category == c, onClick = { vm.selectCategory(c) }, label = { Text(categoryLabel(c)) })
-            }
-        }
+        CategoryBar(selected = category, onSelect = vm::selectCategory)
         val msg = current
         Card(Modifier.fillMaxWidth()) {
             Column(Modifier.fillMaxWidth().padding(24.dp), horizontalAlignment = Alignment.CenterHorizontally, verticalArrangement = Arrangement.spacedBy(12.dp)) {
                 if (msg != null) {
+                    when (msg.category) {
+                        "goodnight" -> Mascot(R.drawable.kiko_pose5_nacht, size = 120.dp)
+                        "humor" -> Mascot(R.drawable.kiko_pose8_brille, size = 120.dp)
+                    }
                     Text(categoryLabel(msg.category), style = MaterialTheme.typography.labelLarge, color = MaterialTheme.colorScheme.primary)
                     Text(msg.text, style = MaterialTheme.typography.headlineSmall, textAlign = TextAlign.Center)
-                } else if (loaded) {
-                    Text(stringResource(R.string.home_empty), style = MaterialTheme.typography.bodyLarge, textAlign = TextAlign.Center)
+                } else {
+                    // Kiko lugt über die Kante: beim Laden und wenn nichts passt.
+                    Mascot(R.drawable.kiko_pose3_kante, size = 120.dp)
+                    if (loaded) Text(stringResource(R.string.home_empty), style = MaterialTheme.typography.bodyLarge, textAlign = TextAlign.Center)
                 }
             }
         }

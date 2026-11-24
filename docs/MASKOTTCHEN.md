@@ -134,5 +134,5 @@ Kiko the baby leopard gecko, head and shoulders only, head tilted, big golden-ri
 - Einführung: Seite 1 Pose 1 (winkt), Seite 2 Pose 2 (Herz), Seite 3 Pose 7 (jubelt), je 200 dp.
 - Leerer Zustand Favoriten: Pose 6 (fragend); "Meine Worte" leer: Pose 4 (Stift), je 160 dp.
 - Geprüft auf dem Emulator (Pixel API 35, Debug-Build, Englisch); Dunkelmodus, Deutsch und kleine Displays noch nicht.
-- Noch ohne Einsatz: Pose 3 (Kante), 5 (Nacht), 8 (Brille). Titelzeile und App-Symbol bleiben vorerst wie bisher.
 - Titelzeile (alle Bildschirme mit `ScreenTitle`): rechts Pose 2 (`MascotOffering` in `ui/Mascot.kt`), 56 dp. Das Herz wird "nach vorn gestreckt" durch Wachsen der ganzen Figur um 24 % (Ankerpunkt unten Mitte, 0,8 s), 0,4 s halten, 0,8 s zurück, 0,6 s Pause. Bei ANIMATOR_DURATION_SCALE = 0 bleibt das Bild ruhig. Grenze: Die Figur ist ein Rasterbild, Arme und Herz bewegen sich nicht einzeln. Echte Armbewegung ginge nur mit einer Vektorversion mit getrenntem Herz.
+- Home-Karte (`HomeScreen`, 120 dp): Kategorie "goodnight" zeigt Pose 5 (Nacht), "humor" Pose 8 (Brille); ohne Satz (beim Laden oder wenn nichts passt) lugt Pose 3 über die Kante. Auf dem Emulator geprüft: Gute Nacht und Humor; der Zustand ohne Satz wurde nicht gesehen. Alle 8 Posen sind damit im Einsatz.
