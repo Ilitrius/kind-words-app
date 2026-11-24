@@ -150,3 +150,9 @@ Legende: `[ ]` offen · `[x]` erledigt · Agent in Klammern
 - [ ] Widget: Dunkelmodus, Sprachwechsel, Neustart, API 26 testen; "Datenschutzoptionen" erscheint ohne UMP-Formular (Ursache vermutlich die fehlende AdMob-Nachricht, nach Veröffentlichung neu prüfen).
 - [x] (2026-11-24) Widget: App-Name im Widget; Sprachwechsel aktualisiert das Widget live (reaktiver Inhalt); Dunkelmodus geprüft. Release neu gebaut (`dist/`).
 - [ ] Widget: Neustart des Geräts (Update danach), API 26 und Update von 1.0.16 noch ungetestet.
+
+## Stand 2026-11-24 (Release 1.1.0 final)
+- [x] Widget "Teilen" repariert (eigene Activity), AdMob-Banner im Debug (Test-ID) geprüft: Position, nur Home/Favoriten, UMP-Test-Dialog, Test-Anzeige lädt.
+- [x] Finales Release gebaut und geprüft: `dist/kindwords-1.1.0-release.aab` + `dist/mapping.txt` (Details in BRAIN.md).
+- [ ] Nutzer: Reihenfolge siehe BRAIN.md (AdMob-Nachricht, PR #3 mergen, Data Safety, Upload, Neuigkeiten).
+- [ ] Offen: Widget nach Geräteneustart, API 26, Update von 1.0.16; echte Anzeige auf Gerät mit Play Store (nie selbst klicken); Aufnahmen für 300 neue Sätze je Sprache.
