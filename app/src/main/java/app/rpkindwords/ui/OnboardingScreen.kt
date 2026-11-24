@@ -34,12 +34,12 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import app.rpkindwords.R
 
-private data class Step(val title: Int, val text: Int)
+private data class Step(val title: Int, val text: Int, val pose: Int)
 
 private val steps = listOf(
-    Step(R.string.onboarding_1_title, R.string.onboarding_1_text),
-    Step(R.string.onboarding_2_title, R.string.onboarding_2_text),
-    Step(R.string.onboarding_3_title, R.string.onboarding_3_text),
+    Step(R.string.onboarding_1_title, R.string.onboarding_1_text, R.drawable.kiko_pose1_winken),
+    Step(R.string.onboarding_2_title, R.string.onboarding_2_text, R.drawable.kiko_pose2_herz),
+    Step(R.string.onboarding_3_title, R.string.onboarding_3_text, R.drawable.kiko_pose7_jubel),
 )
 
 /** Kurze Einführung beim ersten Start (nach dem Splash), jederzeit überspringbar. */
@@ -54,6 +54,8 @@ fun OnboardingScreen(onFinished: () -> Unit) {
                 TextButton(onClick = onFinished) { Text(stringResource(R.string.onboarding_skip)) }
             }
             Column(Modifier.weight(1f), horizontalAlignment = Alignment.CenterHorizontally, verticalArrangement = Arrangement.Center) {
+                Mascot(step.pose, size = 200.dp)
+                Spacer(Modifier.height(16.dp))
                 Text(stringResource(step.title), style = MaterialTheme.typography.headlineMedium, textAlign = TextAlign.Center)
                 Spacer(Modifier.height(16.dp))
                 Text(stringResource(step.text), style = MaterialTheme.typography.bodyLarge, textAlign = TextAlign.Center)

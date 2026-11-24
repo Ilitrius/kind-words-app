@@ -168,7 +168,10 @@ fun FavoritesScreen(vm: MainViewModel, modifier: Modifier = Modifier) {
     Column(modifier.fillMaxSize().padding(horizontal = 16.dp)) {
         ScreenTitle(R.string.nav_favorites, Modifier.padding(vertical = 16.dp))
         if (items.isEmpty()) {
-            Text(stringResource(R.string.favorites_empty), style = MaterialTheme.typography.bodyLarge)
+            Column(Modifier.fillMaxWidth(), horizontalAlignment = Alignment.CenterHorizontally) {
+                Mascot(R.drawable.kiko_pose6_fragend)
+                Text(stringResource(R.string.favorites_empty), style = MaterialTheme.typography.bodyLarge, textAlign = TextAlign.Center)
+            }
         } else {
             LazyColumn(verticalArrangement = Arrangement.spacedBy(8.dp), contentPadding = PaddingValues(bottom = 16.dp)) {
                 items(items, key = { it.id }) { m ->
@@ -204,7 +207,10 @@ fun MineScreen(vm: MainViewModel, modifier: Modifier = Modifier) {
         Column(Modifier.fillMaxSize().padding(horizontal = 16.dp)) {
             ScreenTitle(R.string.nav_mine, Modifier.padding(vertical = 16.dp))
             if (items.isEmpty()) {
-                Text(stringResource(R.string.mine_empty), style = MaterialTheme.typography.bodyLarge)
+                Column(Modifier.fillMaxWidth(), horizontalAlignment = Alignment.CenterHorizontally) {
+                    Mascot(R.drawable.kiko_pose4_stift)
+                    Text(stringResource(R.string.mine_empty), style = MaterialTheme.typography.bodyLarge, textAlign = TextAlign.Center)
+                }
             } else {
                 LazyColumn(verticalArrangement = Arrangement.spacedBy(8.dp), contentPadding = PaddingValues(bottom = 96.dp)) {
                     items(items, key = { it.id }) { m ->
