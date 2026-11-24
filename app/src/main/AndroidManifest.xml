@@ -27,6 +27,15 @@
             android:authorities="${applicationId}.mlkitinitprovider"
             tools:node="remove" />
 
+        <!-- AdMob-App-ID; das SDK startet nicht von selbst, sondern erst nach der Einwilligung (AdsConsent). -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="${admobAppId}" />
+        <provider
+            android:name="com.google.android.gms.ads.MobileAdsInitProvider"
+            android:authorities="${applicationId}.mobileadsinitprovider"
+            tools:node="remove" />
+
         <receiver
             android:name=".reminder.ReminderReceiver"
             android:exported="false">
@@ -58,6 +67,13 @@
                 <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".widget.WidgetShareActivity"
+            android:exported="false"
+            android:excludeFromRecents="true"
+            android:noHistory="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
 
         <activity
             android:name=".MainActivity"

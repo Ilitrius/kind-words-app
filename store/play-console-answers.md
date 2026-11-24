@@ -9,6 +9,8 @@ STAND BIS BUILD 11 (ab Build 12 gilt der Nachtrag am Ende dieser Datei, INTERNET
 - URL (en): https://ilitrius.github.io/kind-words-app/privacy-policy.html
 - Für das Formularfeld eine URL angeben (empfohlen: die englische; die Seite verlinkt auf Deutsch). Seite muss öffentlich erreichbar sein (GitHub Pages: aktiv).
 
+> **Ab Build 17 (AdMob) gelten die Abschnitte 2 und 5 NICHT mehr in der Form unten, sondern der Nachtrag 2026-11-23 am Dateiende.** Die Tabellen unten zeigen den Stand bis Build 16 und bleiben nur als Verlauf stehen.
+
 ## 2. Data safety (Datensicherheit)
 | Frage | Antwort |
 |---|---|
@@ -41,9 +43,9 @@ STAND BIS BUILD 11 (ab Build 12 gilt der Nachtrag am Ende dieser Datei, INTERNET
 ## 5. Weitere Deklarationen
 | Bereich | Antwort |
 |---|---|
-| Werbung | **Keine Werbung** |
+| Werbung | **Ja, die App enthält Werbung** (ab Build 17, AdMob-Banner; siehe Nachtrag ganz unten) |
 | App-Zugriff | **Alle Funktionen ohne Anmeldung/Sonderzugang nutzbar** |
-| Werbe-ID | **Nein** (App nutzt sie nicht; `AD_ID` nicht im Manifest) |
+| Werbe-ID | **Ja** (ab Build 17; Zweck: Werbung oder Marketing; `AD_ID` kommt mit dem Werbe-SDK ins Manifest) |
 | Finanzfunktionen / Kredite / Krypto | Nein |
 | Gesundheits-Apps | Nein |
 | Nachrichten-App / COVID-19 / Behörden-App | Nein |
@@ -77,6 +79,39 @@ STAND BIS BUILD 11 (ab Build 12 gilt der Nachtrag am Ende dieser Datei, INTERNET
 > - Sätze und Texte verlassen das Gerät nicht (On-Device-Übersetzung); Modelle laden nur auf Knopfdruck (WLAN-Standard).
 > - Datenschutzerklärung de/en Abschnitt 12d, Store-Beschreibung de/en und In-App-Einwilligungstext sind angepasst. Ohne Aktualisierung der Data Safety nicht hochladen (Richtlinienverstoß-Risiko).
 
+
+> **WICHTIG, Nachtrag 2026-11-23 (Build 17, Werbung per Google AdMob). Gilt ab dem Upload von Build 17 und ersetzt Data Safety, "Werbung" und "Werbe-ID" oben.**
+>
+> Verhalten laut Plan (`docs/PLAN-WERBUNG.md`): ein adaptiver Banner, nur auf Home und Favoriten, kein Interstitial, keine Anzeige im Onboarding. Einwilligungsabfrage über Google UMP (EWR/UK/CH), Widerruf in den Einstellungen ("Datenschutzoptionen für Werbung"). `MobileAdsInitProvider` ist entfernt, das SDK startet erst, wenn `canRequestAds()` wahr ist. Altersangaben und `tagForChildDirectedTreatment` werden nicht gesetzt; Zielgruppe bleibt 13+, kein Kinderprogramm. Manifest: `INTERNET`, `ACCESS_NETWORK_STATE`, `AD_ID` (Werbe-ID) und ggf. `ACCESS_ADSERVICES_*`-Berechtigungen vom SDK (nach dem Bau mit `aapt dump permissions` am AAB prüfen).
+>
+> ### Vor dem Upload in der Play Console erledigen (Reihenfolge)
+> 1. **App-Inhalte > Werbung:** "Ja, meine App enthält Werbung".
+> 2. **App-Inhalte > Werbe-ID:** "Ja, die App nutzt die Werbe-ID"; Zweck: **Werbung oder Marketing** (kein Analyse-/Entwicklerzweck angeben, außer das gebaute Manifest zeigt es anders).
+> 3. **App-Inhalte > Datensicherheit** neu ausfüllen (Entwurf unten) und absenden. Erst danach den Build hochladen; das Manifest enthält sonst `AD_ID`, ohne dass es deklariert ist, und der Upload wird blockiert.
+> 4. **Zielgruppe:** bleibt 13+; bestätigen, dass die App kein Kinderprogramm ist (Altersgruppen unter 13 abgewählt). Nicht an "Für Familien" teilnehmen.
+> 5. **Store-Eintrag:** `store/listings/de-DE` und `en-US` `full_description.txt` ersetzen (neue Datenschutz-Absätze, Hinweis "enthält Werbung"); Play zeigt "Enthält Werbung" ohnehin automatisch.
+> 6. **Datenschutz-URL** bleibt; vorher prüfen, dass `datenschutz.html`/`privacy-policy.html` (Stand 23.11.2026, Abschnitt 5b) live auf GitHub Pages sind.
+> 7. **AdMob:** Datenschutz-Nachricht (Einwilligung, EWR/UK/CH) unter "Datenschutz und Mitteilungen" anlegen UND veröffentlichen, sonst zeigt UMP nichts; App-ID und Banner-Block-ID für Release eintragen; `app-ads.txt` (https://ilitrius.github.io/app-ads.txt) erreichbar halten. AdMob-App erst nach der Play-Freigabe mit Play verknüpfen.
+> 8. Eigene Klicks auf echte Anzeigen vermeiden (Kontosperre); Debug nur mit Test-IDs.
+>
+> ### Data Safety, Entwurf (von dir zu prüfen, du bist für die Angaben verantwortlich)
+> - "Erhebt oder teilt deine App erforderliche Nutzerdaten?" **Ja**. Datenerhebung ist teils optional: Werbedaten in EWR/UK/CH nur mit Einwilligung (Antwort bei "erforderlich/optional": **Nutzer kann wählen**, für die Werbe-Datentypen "optional" wählen, soweit die Console es zulässt; sonst "erforderlich").
+> - Verschlüsselung bei der Übertragung: **Ja**. Löschanfrage: Nutzer können keine Löschung der Daten bei Google über die App anfordern; Verweis auf Datenschutzerklärung Abschnitt 5b (Widerruf, Werbe-ID zurücksetzen).
+>
+> | Datentyp (Kategorie > Typ) | Erhoben | Geteilt | Zweck | Optional |
+> |---|---|---|---|---|
+> | Geräte- oder andere Kennungen > Geräte- oder andere Kennungen (Werbe-ID, Kennung pro Installation) | ja | **ja, mit Google (AdMob)** | Werbung oder Marketing; (Analysen/Fehlerbehebung für ML Kit, siehe Nachtrag Build 12) | ja |
+> | Standort > Ungefährer Standort (aus IP-Adresse abgeleitet) | ja | **ja, mit Google** | Werbung oder Marketing | ja |
+> | App-Aktivitäten > App-Interaktionen (Anzeige geladen/angetippt) | ja | **ja, mit Google** | Werbung oder Marketing | ja |
+> | App-Info und -Leistung > Diagnose, Absturzprotokolle, sonstige Leistungsdaten (Ladezeiten, Fehler, Geräteinfos) | ja | **ja, mit Google** | Werbung oder Marketing; Analysen | ja |
+>
+> - Nicht angeben (verlassen das Gerät nie): Sätze, Favoriten, Einstellungen, eigene Texte, Lernen auf dem Gerät.
+> - "Geteilt": Google als Werbe-SDK-Anbieter gilt laut Google-Hilfe ("Data safety") als Dritter, mit dem Daten **geteilt** werden, wenn das SDK die Daten nicht ausschließlich im Auftrag der App verarbeitet (bei AdMob der Fall); daher "Geteilt: Ja". Aktuelle Google-Angaben "Datenoffenlegung Google Mobile Ads SDK" (https://developers.google.com/admob/android/privacy/play-data-disclosure) vor dem Absenden gegenprüfen und ggf. Datentypen angleichen.
+> - Das ML-Kit-Verhalten aus dem Nachtrag Build 12 bleibt zusätzlich bestehen (Diagnose/Kennung, optional, nur nach Einwilligung); die Zeilen oben decken diese Typen bereits ab.
+>
+> ### Zielgruppe-/Richtlinien-Risiken
+> - Google Play "Families"-Richtlinie greift nur bei Kindern als Zielgruppe; hier 13+. Trotzdem: 13 bis 15-Jährige gehören zur Zielgruppe; die DSGVO-Einwilligung ist in DE erst ab 16 allein wirksam. In der Datenschutzerklärung ist das benannt; Entwickler entscheidet, ob die Zielgruppe auf 16+ angehoben wird (sauberste Lösung, vermeidet das Problem).
+> - Ads-Richtlinie: keine Anzeigen im Onboarding, kein Banner neben Teilen-/Spenden-Schaltflächen (Fehlklick-Gefahr).
 > **Nachtrag 2026-11-23 (Version 1.1.0, Build 17) – VOR dem Upload prüfen:**
 > - **Neu:** Startbildschirm-Widget "Nettes Wort des Tages" (Jetpack Glance 1.1.1, Kategorie wählbar). Läuft nur lokal, keine Datenübertragung, keine Werbung. Daten je Widget (Kategorie, aktueller Satz) in eigener lokaler DataStore-Datei.
 > - **Manifest (gemergtes Release-Manifest geprüft):** Glance zieht WorkManager 2.7.1 mit; dadurch zusätzlich `WAKE_LOCK` und `FOREGROUND_SERVICE` (normale Berechtigungen, keine Nutzerabfrage). Es ist kein Foreground-Service-Typ deklariert und die App startet keinen eigenen Vordergrunddienst. Der frühere Satz "kein WorkManager" gilt nicht mehr. Falls die Console eine Erklärung zu Vordergrunddiensten verlangt: nicht genutzt, nur durch die Bibliothek mitgebracht.

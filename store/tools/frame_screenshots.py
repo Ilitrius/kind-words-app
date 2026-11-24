@@ -1,6 +1,9 @@
 """Setzt die rohen Emulator-Screenshots in moderne Store-Bilder (Verlauf, Headline, Geraeterahmen-Schatten).
 
 Aufruf:  python -I store/tools/frame_screenshots.py   (nach capture_screenshots.py)
+Foldable: FOLD=square|43|outer setzen -> Ausgabe play-screenshots-fold/<modus>/<lang>:
+  square = aufgeklappt 1:1 (2400x2400), 43 = aufgeklappt 4:3 (2400x1800), outer = zugeklappt Aussendisplay 10:16 (1500x2400).
+  Eingabe: screenshots-fold (aufgeklappt) bzw. screenshots-fold-outer.
 Eingabe: store/graphics/screenshots/<lang>_<n>_<name>.png
 Ausgabe: store/graphics/play-screenshots/<lang>/<n>_<name>.png  (1350x2400, 9:16 wie von Play verlangt)
 """
@@ -10,8 +13,16 @@ import numpy as np
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 BASE = os.path.join(os.path.dirname(__file__), "..", "graphics")
-SRC = os.path.join(BASE, "screenshots")
-W, H = 1350, 2400
+FOLD = os.environ.get("FOLD", "")
+# Modus: (Quellordner, Breite, Hoehe, Screenshot-Breite, Oberkante, Eckenradius)
+MODES = {
+    "": ("screenshots", 1350, 2400, 880, 470, 80),
+    "square": ("screenshots-fold", 2400, 2400, 2000, 420, 60),
+    "43": ("screenshots-fold", 2400, 1800, 1650, 380, 60),
+    "outer": ("screenshots-fold-outer", 1500, 2400, 960, 450, 80),
+}
+SRC_DIR, W, H, PW, TOP, RAD = MODES[FOLD]
+SRC = os.path.join(BASE, SRC_DIR)
 SS = 2
 
 CAPTIONS = {
@@ -58,26 +69,26 @@ def frame(shot_path, caption, out_path):
     d = ImageDraw.Draw(img)
     d.multiline_text((90 * SS, 120 * SS), caption, font=font(96 * SS), fill=(255, 255, 255), spacing=14 * SS)
     shot = Image.open(shot_path).convert("RGB")
-    pw = 880 * SS
+    pw = PW * SS
     ph = int(shot.height * pw / shot.width)
     shot = shot.resize((pw, ph), Image.LANCZOS)
     mask = Image.new("L", (pw, ph), 0)
-    ImageDraw.Draw(mask).rounded_rectangle((0, 0, pw - 1, ph - 1), radius=80 * SS, fill=255)
-    x, y = (w - pw) // 2, 470 * SS
+    ImageDraw.Draw(mask).rounded_rectangle((0, 0, pw - 1, ph - 1), radius=RAD * SS, fill=255)
+    x, y = (w - pw) // 2, TOP * SS
     sh = Image.new("L", (w, h), 0)
     sh.paste(mask.point(lambda v: int(v * 0.45)), (x, y + 30 * SS))
     sh = sh.filter(ImageFilter.GaussianBlur(40 * SS))
     img.paste(Image.new("RGB", (w, h), (90, 10, 40)), (0, 0), sh)
     # heller Rand wie Geraetekante
     edge = Image.new("L", (pw, ph), 0)
-    ImageDraw.Draw(edge).rounded_rectangle((0, 0, pw - 1, ph - 1), radius=80 * SS, outline=255, width=6 * SS)
+    ImageDraw.Draw(edge).rounded_rectangle((0, 0, pw - 1, ph - 1), radius=RAD * SS, outline=255, width=6 * SS)
     img.paste(Image.new("RGB", (pw, ph), (40, 20, 20)), (x, y), edge)
     img.paste(shot, (x, y), mask)
     img.resize((W, H), Image.LANCZOS).save(out_path)
 
 
 for lang, caps in CAPTIONS.items():
-    out_dir = os.path.join(BASE, "play-screenshots", lang)
+    out_dir = os.path.join(BASE, "play-screenshots-fold" if FOLD else "play-screenshots", *([FOLD] if FOLD else []), lang)
     os.makedirs(out_dir, exist_ok=True)
     for key, cap in caps.items():
         frame(os.path.join(SRC, f"{lang}_{key}.png"), cap, os.path.join(out_dir, f"{key}.png"))

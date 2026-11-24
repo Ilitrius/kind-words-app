@@ -16,4 +16,6 @@ Listings: `store/listings/en-US/`, `store/listings/de-DE/` (Titel ≤30, Kurzbes
 - `icon-512.png` (Play-Icon), `icon-1024-master.png`
 - `feature-graphic-en.png`, `feature-graphic-de.png` (1024×500)
 - `play-screenshots/<en|de>/1..4_*.png` (1200×2400, gerahmt) · Rohscreenshots in `screenshots/`
+- Foldable (Pixel Fold, AVD `Fold_API35`, android-35 google_apis), je 6 Bilder pro Sprache in `play-screenshots-fold/<modus>/<en|de>/`: `square` aufgeklappt 1:1 (2400x2400), `43` aufgeklappt 4:3 (2400x1800), `outer` zugeklappt Aussendisplay 10:16 (1500x2400). Play-Vorgabe: je 1x 1:1 und 4:3 aufgeklappt + 1x 10:16 zugeklappt Pflicht; PNG/JPEG, max. 8 MB, Seiten 960-3840 px.
+  Neu erzeugen: Display-IDs per `adb shell dumpsys SurfaceFlinger --display-id` (0 = innen 2208x1840, 1 = aussen 1080x2092). Aufgeklappt: `$env:FOLD_DISPLAY='<innen-id>'`, zugeklappt (`adb emu fold`): `$env:FOLD_DISPLAY='<aussen-id>'; $env:FOLD_OUT='screenshots-fold-outer'; $env:FAB='910,1690'`; dann `python -I store/tools/capture_screenshots.py`. Rahmen: `$env:FOLD='square'` (bzw. `43`, `outer`); `python -I store/tools/frame_screenshots.py`
 - Neu erzeugen: `python -I store/tools/make_graphics.py`, `capture_screenshots.py` (Emulator + installierte Debug-App), `frame_screenshots.py`

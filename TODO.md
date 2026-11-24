@@ -123,6 +123,8 @@ Legende: `[ ]` offen · `[x]` erledigt · Agent in Klammern
 - [x] (2026-11-15) Vorlesen mit natürlicher Stimme (Option C): ElevenLabs Stimme Jessica (multilingual_v2, Tempo 0.92), alle 670 Textsätze je Sprache (de 21 MB, en 19 MB) als `app/src/main/assets/voice/<lang>/<id>-<hash8>.mp3`; Speaker spielt sie per MediaPlayer, sonst Gerätestimme (Option A: beste Stimme zuerst, Satzpausen). Emoji/Textsymbole, eigene Sätze und übersetzte Sätze weiter per Gerätestimme. Release 1.0.16 (Build 16): AAB 68 MB, APK 102 MB. Im Emulator geprüft (MediaPlayer startet).
 - [ ] Wichtig: Wird ein Satz geändert, passt der Hash nicht mehr, die Aufnahme wird übergangen. Neu erzeugen mit `tools/gen_voice.py <lang> <voice_id> --max-chars N` (Schlüssel nur per Umgebungsvariable ELEVENLABS_API_KEY).
 - [ ] Nutzer: ElevenLabs-Lizenz (kommerzielle Nutzung im Tarif payg) und Namensnennung prüfen; Schlüssel widerrufen/erneuern (stand im Chat). Entscheiden, ob die 40 MB Audio ins Git-Repo sollen (bläht die Historie dauerhaft auf) oder per Git LFS/Release-Asset.
+- [x] (2026-11-23) `app-ads.txt` unter https://ilitrius.github.io/app-ads.txt (Repo Ilitrius/Ilitrius.github.io, Publisher pub-2109805482260954); Kopie `docs/app-ads.txt`.
+- [x] (2026-11-23) Werbung per AdMob (Banner Home/Favoriten, UMP): Code, Texte, echte IDs in `gradle.properties`, in Release 1.1.0 enthalten. Offen: Datenschutz-Nachricht in AdMob und Refresh >= 60 s im Konto prüfen (Nutzer).
 - [ ] Datenschutz/Store: Vorlesen bleibt offline und ohne Datenübertragung; Beschreibung ggf. um "natürliche Stimme" ergänzen. Aufnahme-Download aus Sicht Data Safety unverändert (Audio liegt im App-Paket).
 
 ## Stand 2026-11-23 (Widget, Version 1.1.0)
@@ -130,8 +132,27 @@ Legende: `[ ]` offen · `[x]` erledigt · Agent in Klammern
 - [x] (2026-11-23) Version 1.1.0 / versionCode 17, Store-Texte de/en + Neuigkeiten, Datenschutz de/en (Abschnitte 4, 12d, 12e), Console-Nachtrag.
 - [ ] Emulatortest Widget (API 35 und 26): hinzufügen, Kategorie wechseln/ändern, Neu, Teilen, Dunkelmodus, Sprachwechsel, Neustart, Update von 1.0.16.
 - [ ] Store-Screenshots mit Widget (de/en), danach Store-Eintrag aktualisieren.
-- [ ] Nutzer: `.\gradlew.bat lintRelease bundleRelease`, 1.1.0 + `mapping.txt` hochladen; Datenschutz-Seiten gehen mit dem Merge in `main` live (GitHub Pages).
+- [x] (2026-11-23) Release 1.1.0 gebaut (`lintRelease bundleRelease`): `dist/kindwords-1.1.0-release.aab/.apk`, `dist/mapping.txt`. Nutzer: hochladen; Datenschutz-Seiten gehen mit dem Merge in `main` live (GitHub Pages).
 - [ ] Qualitätsrunde: weitere warme, natürliche Sätze (Content v10; Aufnahmen per `tools/gen_voice.py` nachziehen, Hash je Satz).
-- [ ] Werbung planen (später): siehe BRAIN.md.
+- [x] Werbung umgesetzt (siehe oben).
 - [ ] (2026-11-23) Satzrunde Content v10 geplant: `docs/PLAN-SAETZE-V10.md` (Umfang A/B/C und Audio-Ablage vom Nutzer zu entscheiden).
 - [x] (2026-11-23) Content v10: je Sprache 300 neue Sätze (30 je Kategorie), zweite Lesung erledigt (de 71, en 78 Sätze überarbeitet/ersetzt), Tests grün. Offen: Stichprobe `docs/V10-STICHPROBE.md` (René), Muttersprachler-Prüfung EN, Aufnahmen für 600 Sätze (nach ElevenLabs-Lizenz/Schlüssel), danach Version 1.2.0 und Store-Zahl "rund 970 Sätze".
+
+## Stand 2026-11-23 (Abend, Release 1.1.0)
+- [x] Merge `main` -> `feature/admob-build17` committet (db27def); Lint/Tests/Release-Build grün.
+- [ ] Nutzer: Play Console: Data Safety (Werbung + Widget, siehe `store/play-console-answers.md`) und Anzeigen-Angabe "enthält Werbung" prüfen, dann 1.1.0 + `dist/mapping.txt` hochladen, Store-Texte und "Neuigkeiten" eintragen; Branch per PR in `main` mergen (Datenschutz-Seiten gehen dann live).
+- [ ] Emulatortest Release-APK: Banner (Echt-ID, nicht anklicken), UMP, Widget (API 35 und 26), Update von 1.0.16.
+- [ ] Aufnahmen für 300 neue Textsätze je Sprache (`tools/gen_voice.py`) nach ElevenLabs-Klärung; bis dahin Gerätestimme.
+- [ ] Offen unverändert: Keystore extern sichern, Muttersprachler-Prüfung EN, V10-Stichprobe lesen, Fold-Screenshots (unversioniert in `store/graphics/`) einsortieren.
+- [x] (2026-11-23) Release-APK im Emulator getestet; zwei R8-Fehler im Widget behoben (Keep-Regeln), `dist/` neu gebaut.
+- [ ] Nutzer: AdMob: Datenschutz-Nachricht (EWR/UK/CH) für app.rpkindwords anlegen und veröffentlichen; sonst fragt UMP im EWR nichts ab.
+- [x] (2026-11-23) Widget-Konfigurationsdialog: Insets behoben (im Release-APK geprüft).
+- [ ] Widget: Dunkelmodus, Sprachwechsel, Neustart, API 26 testen; "Datenschutzoptionen" erscheint ohne UMP-Formular (Ursache vermutlich die fehlende AdMob-Nachricht, nach Veröffentlichung neu prüfen).
+- [x] (2026-11-24) Widget: App-Name im Widget; Sprachwechsel aktualisiert das Widget live (reaktiver Inhalt); Dunkelmodus geprüft. Release neu gebaut (`dist/`).
+- [ ] Widget: Neustart des Geräts (Update danach), API 26 und Update von 1.0.16 noch ungetestet.
+
+## Stand 2026-11-24 (Release 1.1.0 final)
+- [x] Widget "Teilen" repariert (eigene Activity), AdMob-Banner im Debug (Test-ID) geprüft: Position, nur Home/Favoriten, UMP-Test-Dialog, Test-Anzeige lädt.
+- [x] Finales Release gebaut und geprüft: `dist/kindwords-1.1.0-release.aab` + `dist/mapping.txt` (Details in BRAIN.md).
+- [ ] Nutzer: Reihenfolge siehe BRAIN.md (AdMob-Nachricht, PR #3 mergen, Data Safety, Upload, Neuigkeiten).
+- [ ] Offen: Widget nach Geräteneustart, API 26, Update von 1.0.16; echte Anzeige auf Gerät mit Play Store (nie selbst klicken); Aufnahmen für 300 neue Sätze je Sprache.

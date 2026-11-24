@@ -1,8 +1,12 @@
 package app.rpkindwords.widget
 
 import android.content.Context
-import android.content.Intent
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.unit.DpSize
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -10,6 +14,7 @@ import androidx.glance.GlanceId
 import androidx.glance.GlanceModifier
 import androidx.glance.GlanceTheme
 import androidx.glance.action.Action
+import androidx.glance.action.actionParametersOf
 import androidx.glance.action.actionStartActivity
 import androidx.glance.action.clickable
 import androidx.glance.appwidget.GlanceAppWidget
@@ -17,7 +22,6 @@ import androidx.glance.appwidget.GlanceAppWidgetManager
 import androidx.glance.appwidget.SizeMode
 import androidx.glance.appwidget.action.ActionCallback
 import androidx.glance.appwidget.action.actionRunCallback
-import androidx.glance.appwidget.action.actionStartActivity as actionStartIntent
 import androidx.glance.appwidget.cornerRadius
 import androidx.glance.appwidget.provideContent
 import androidx.glance.background
@@ -42,18 +46,18 @@ import app.rpkindwords.MainActivity
 import app.rpkindwords.R
 import app.rpkindwords.data.Languages
 import app.rpkindwords.data.LocaleContext
-import app.rpkindwords.reminder.ShareIntents
 import app.rpkindwords.ui.theme.DarkColors
 import app.rpkindwords.ui.theme.LightColors
 import java.time.LocalDate
 import java.util.Locale
+import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.first
 
 private val SMALL = DpSize(110.dp, 110.dp)
 private val WIDE = DpSize(250.dp, 110.dp)
 
 /** Anzeige des Widgets: der Satz in der Inhaltssprache der App, passend zur gewählten Kategorie. */
-private class WidgetView(val text: String?, val newLabel: String, val shareLabel: String, val emptyLabel: String, val shareAction: Action?)
+private class WidgetView(val appName: String, val text: String?, val newLabel: String, val shareLabel: String, val emptyLabel: String, val shareAction: Action?)
 
 object WidgetContent {
     /** Inhaltssprache wie bei den Erinnerungen: gewählte Sprache oder Systemsprache. */
@@ -88,23 +92,39 @@ class KindWordsWidget : GlanceAppWidget() {
     override suspend fun provideGlance(context: Context, id: GlanceId) {
         val app = context.applicationContext as KindWordsApp
         val widgetId = GlanceAppWidgetManager(context).getAppWidgetId(id)
-        val lang = WidgetContent.language(app)
-        val data = runCatching { WidgetContent.ensure(app, WidgetStore(context), widgetId, lang) }.getOrNull()
-        val ctx = LocaleContext.wrap(context, lang)
-        val share = data?.takeIf { it.text.isNotBlank() }?.let {
-            actionStartIntent(Intent.createChooser(ShareIntents.send(it.text), null).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK))
+
+        suspend fun load(): WidgetView {
+            val lang = WidgetContent.language(app)
+            val data = runCatching { WidgetContent.ensure(app, WidgetStore(context), widgetId, lang) }.getOrNull()
+            val ctx = LocaleContext.wrap(context, lang)
+            val share = data?.takeIf { it.text.isNotBlank() }?.let {
+                actionStartActivity<WidgetShareActivity>(actionParametersOf(WidgetShareActivity.TEXT to it.text))
+            }
+            return WidgetView(
+                appName = ctx.getString(R.string.app_name),
+                text = data?.text?.takeIf { it.isNotBlank() },
+                newLabel = ctx.getString(R.string.widget_new),
+                shareLabel = ctx.getString(R.string.action_share),
+                emptyLabel = ctx.getString(R.string.widget_empty),
+                shareAction = share,
+            )
         }
-        val view = WidgetView(
-            text = data?.text?.takeIf { it.isNotBlank() },
-            newLabel = ctx.getString(R.string.widget_new),
-            shareLabel = ctx.getString(R.string.action_share),
-            emptyLabel = ctx.getString(R.string.widget_empty),
-            shareAction = share,
-        )
+
+        val first = load()
         provideContent {
+            // Glance hält die Sitzung eine Weile offen; ein Update berechnet dann nur neu zusammen, nicht provideGlance.
+            // Deshalb lädt der Inhalt bei jedem Signal (Sprachwechsel, "Neu") selbst neu.
+            var view by remember { mutableStateOf(first) }
+            LaunchedEffect(Unit) { WidgetRefresh.signal.collect { view = load() } }
             GlanceTheme(colors = ColorProviders(light = LightColors, dark = DarkColors)) { WidgetBody(view) }
         }
     }
+}
+
+/** Meldet laufenden Widget-Sitzungen, dass sich Sprache oder Satz geändert haben und neu geladen werden muss. */
+object WidgetRefresh {
+    val signal = MutableSharedFlow<Unit>(extraBufferCapacity = 1)
+    fun notifyChanged() { signal.tryEmit(Unit) }
 }
 
 @Composable
@@ -119,6 +139,12 @@ private fun WidgetBody(v: WidgetView) {
             .clickable(actionStartActivity<MainActivity>()),
     ) {
         Column(modifier = GlanceModifier.fillMaxSize()) {
+            Text(
+                text = v.appName,
+                maxLines = 1,
+                style = TextStyle(color = colors.primary, fontSize = 12.sp, fontWeight = FontWeight.Bold),
+            )
+            Spacer(GlanceModifier.height(6.dp))
             Box(modifier = GlanceModifier.fillMaxWidth().defaultWeight(), contentAlignment = Alignment.CenterStart) {
                 Text(
                     text = v.text ?: v.emptyLabel,
@@ -165,5 +191,6 @@ class NextSentenceAction : ActionCallback {
         val store = WidgetStore(context)
         runCatching { WidgetContent.pickNew(app, store, widgetId, store.get(widgetId), WidgetContent.language(app)) }
         KindWordsWidget().update(context, glanceId)
+        WidgetRefresh.notifyChanged()
     }
 }

@@ -3,6 +3,9 @@
 Voraussetzung: Emulator laeuft, Debug-APK ist installiert (app.rpkindwords).
 Aufruf: python -I store/tools/capture_screenshots.py
 Ausgabe: store/graphics/screenshots/<lang>_<n>_<name>.png (rohe 1080x2400 Screenshots)
+Foldable: FOLD_DISPLAY=<display-id> setzen (inneres Display, siehe `dumpsys SurfaceFlinger --display-id`);
+Ausgabe dann in graphics/screenshots-fold. Nur Sprachen per LANGS=en,de waehlbar.
+Aussendisplay (zugeklappt, `adb emu fold`): FOLD_OUT=screenshots-fold-outer, FAB=910,1690.
 Hinweis: Buttons werden ueber ihre (lokalisierte) Beschriftung gefunden, nicht ueber Koordinaten.
 """
 import os
@@ -13,7 +16,8 @@ import xml.etree.ElementTree as ET
 
 ADB = r"D:\Android\Sdk\platform-tools\adb.exe"
 PKG = "app.rpkindwords"
-OUT = os.path.join(os.path.dirname(__file__), "..", "graphics", "screenshots")
+FOLD = os.environ.get("FOLD_DISPLAY")
+OUT = os.path.join(os.path.dirname(__file__), "..", "graphics", os.environ.get("FOLD_OUT", "screenshots-fold") if FOLD else "screenshots")
 os.makedirs(OUT, exist_ok=True)
 
 L = {
@@ -59,7 +63,7 @@ def tap(label, wait=1.2, last=False):
 
 def shot(lang, n, name):
     time.sleep(0.8)
-    png = adb("exec-out", "screencap", "-p", binary=True)
+    png = adb("exec-out", "screencap", "-p", *(["-d", FOLD] if FOLD else []), binary=True)
     with open(os.path.join(OUT, f"{lang}_{n}_{name}.png"), "wb") as f:
         f.write(png)
 
@@ -104,8 +108,13 @@ def run(lang):
     # Eigene Saetze
     tap(s["nav_mine"], 1.5, last=True)
     for text in s["own"]:
-        adb("shell", "input", "tap", "910", "2010")
-        time.sleep(1.5)
+        if FOLD:
+            fx, fy = os.environ.get("FAB", "2030,1424").split(",")  # FAB ohne Beschriftung im UI-Baum
+            adb("shell", "input", "tap", fx, fy)
+            time.sleep(1.5)
+        else:
+            adb("shell", "input", "tap", "910", "2010")
+            time.sleep(1.5)
         adb("shell", "input", "text", text)
         time.sleep(0.5)
         tap(s["save"])
@@ -115,6 +124,6 @@ def run(lang):
     shot(lang, 6, "settings")
 
 
-for lg in ("en", "de"):
+for lg in os.environ.get("LANGS", "en,de").split(","):
     run(lg)
 print("ok", sorted(os.listdir(OUT)))
