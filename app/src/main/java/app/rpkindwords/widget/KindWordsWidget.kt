@@ -1,7 +1,6 @@
 package app.rpkindwords.widget
 
 import android.content.Context
-import android.content.Intent
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
@@ -15,6 +14,7 @@ import androidx.glance.GlanceId
 import androidx.glance.GlanceModifier
 import androidx.glance.GlanceTheme
 import androidx.glance.action.Action
+import androidx.glance.action.actionParametersOf
 import androidx.glance.action.actionStartActivity
 import androidx.glance.action.clickable
 import androidx.glance.appwidget.GlanceAppWidget
@@ -22,7 +22,6 @@ import androidx.glance.appwidget.GlanceAppWidgetManager
 import androidx.glance.appwidget.SizeMode
 import androidx.glance.appwidget.action.ActionCallback
 import androidx.glance.appwidget.action.actionRunCallback
-import androidx.glance.appwidget.action.actionStartActivity as actionStartIntent
 import androidx.glance.appwidget.cornerRadius
 import androidx.glance.appwidget.provideContent
 import androidx.glance.background
@@ -47,7 +46,6 @@ import app.rpkindwords.MainActivity
 import app.rpkindwords.R
 import app.rpkindwords.data.Languages
 import app.rpkindwords.data.LocaleContext
-import app.rpkindwords.reminder.ShareIntents
 import app.rpkindwords.ui.theme.DarkColors
 import app.rpkindwords.ui.theme.LightColors
 import java.time.LocalDate
@@ -100,7 +98,7 @@ class KindWordsWidget : GlanceAppWidget() {
             val data = runCatching { WidgetContent.ensure(app, WidgetStore(context), widgetId, lang) }.getOrNull()
             val ctx = LocaleContext.wrap(context, lang)
             val share = data?.takeIf { it.text.isNotBlank() }?.let {
-                actionStartIntent(Intent.createChooser(ShareIntents.send(it.text), null).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK))
+                actionStartActivity<WidgetShareActivity>(actionParametersOf(WidgetShareActivity.TEXT to it.text))
             }
             return WidgetView(
                 appName = ctx.getString(R.string.app_name),
