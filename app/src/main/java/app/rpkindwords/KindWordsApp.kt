@@ -12,6 +12,7 @@ import app.rpkindwords.reminder.NotificationHelper
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.SupervisorJob
+import kotlinx.coroutines.flow.distinctUntilChanged
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.launch
 
@@ -35,8 +36,14 @@ class KindWordsApp : Application() {
         NotificationHelper.createChannel(this)
         appScope.launch {
             messages.ensureSeeded()
-            // Widgets neu zeichnen (neuer Tag, geänderte Sprache/Inhalte); ohne Widgets kostet das fast nichts.
-            runCatching { app.rpkindwords.widget.KindWordsWidget().updateAll(this@KindWordsApp) }
+            // Widgets neu zeichnen: beim Start (neuer Tag, geänderte Inhalte) und bei jedem Sprachwechsel in der App.
+            // Ohne Widgets kostet das fast nichts.
+            launch {
+                settings.contentLanguageOverride.distinctUntilChanged().collect {
+                    runCatching { app.rpkindwords.widget.KindWordsWidget().updateAll(this@KindWordsApp) }
+                    app.rpkindwords.widget.WidgetRefresh.notifyChanged()
+                }
+            }
             // Plan sicherstellen, aber einen vorhandenen (ggf. gerade laufenden) Auftrag NICHT ersetzen:
             // Startet WorkManager den Prozess für einen fälligen Worker, würde REPLACE ihn sofort abbrechen.
             ReminderScheduler.reschedule(this@KindWordsApp, settings.reminder.first(), replace = false)

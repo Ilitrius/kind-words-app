@@ -148,3 +148,5 @@ Legende: `[ ]` offen · `[x]` erledigt · Agent in Klammern
 - [ ] Nutzer: AdMob: Datenschutz-Nachricht (EWR/UK/CH) für app.rpkindwords anlegen und veröffentlichen; sonst fragt UMP im EWR nichts ab.
 - [x] (2026-11-23) Widget-Konfigurationsdialog: Insets behoben (im Release-APK geprüft).
 - [ ] Widget: Dunkelmodus, Sprachwechsel, Neustart, API 26 testen; "Datenschutzoptionen" erscheint ohne UMP-Formular (Ursache vermutlich die fehlende AdMob-Nachricht, nach Veröffentlichung neu prüfen).
+- [x] (2026-11-24) Widget: App-Name im Widget; Sprachwechsel aktualisiert das Widget live (reaktiver Inhalt); Dunkelmodus geprüft. Release neu gebaut (`dist/`).
+- [ ] Widget: Neustart des Geräts (Update danach), API 26 und Update von 1.0.16 noch ungetestet.
