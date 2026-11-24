@@ -168,8 +168,8 @@ Legende: `[ ]` offen · `[x]` erledigt · Agent in Klammern
 - [ ] Supabase: alle Texte in eine Datenbank (Plan zuerst; Offline, ids, Datenschutz klären).
 
 
-## Stand 2026-11-24 (Release 1.1.1)
+## Stand 2026-11-24 (Release 1.1.1, Build 19)
 - [x] Maskottchen eingebaut (Einführung, leere Zustände, Titelzeile, Gute Nacht/Humor), Kategorie-Balken, Widget-Größen committet.
-- [x] Release 1.1.1 / Build 18 gebaut: `dist/kindwords-1.1.1-release.aab` + `dist/mapping.txt`.
+- [x] Release 1.1.1 / Build 19 gebaut: `dist/kindwords-1.1.1-release.aab` + `dist/mapping.txt`.
 - [ ] Nutzer: AAB + Mapping hochladen, `store/listings/*/whats_new.txt` eintragen (Upload-Reihenfolge siehe BRAIN, 1.1.0-Abschnitt).
 - [ ] Offen: Namen "Kiko" und Marke prüfen, Rechte der imagine-Bilder (Free-Plan) klären, vor dem Store-Auftritt mit dem Maskottchen.

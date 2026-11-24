@@ -22,7 +22,7 @@ android {
         applicationId = "app.rpkindwords"
         minSdk = 26
         targetSdk = 36
-        versionCode = 18
+        versionCode = 19
         versionName = "1.1.1"
 
         // AdMob: Debug nutzt immer Googles Test-IDs (nie echte Anzeigen im Test); Release nimmt die echten IDs aus gradle.properties.
