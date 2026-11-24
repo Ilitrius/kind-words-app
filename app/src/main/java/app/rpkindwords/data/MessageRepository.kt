@@ -92,6 +92,7 @@ class MessageRepository(
     fun userMessages(): Flow<List<MessageEntity>> = dao.observeUserMessages()
 
     suspend fun setFavorite(id: String, favorite: Boolean) = dao.setFavorite(id, favorite)
+    suspend fun isFavorite(id: String): Boolean = dao.get(id)?.favorite == true
 
     suspend fun addUser(language: String, text: String) {
         val t = text.trim()

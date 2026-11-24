@@ -156,3 +156,14 @@ Legende: `[ ]` offen · `[x]` erledigt · Agent in Klammern
 - [x] Finales Release gebaut und geprüft: `dist/kindwords-1.1.0-release.aab` + `dist/mapping.txt` (Details in BRAIN.md).
 - [ ] Nutzer: Reihenfolge siehe BRAIN.md (AdMob-Nachricht, PR #3 mergen, Data Safety, Upload, Neuigkeiten).
 - [ ] Offen: Widget nach Geräteneustart, API 26, Update von 1.0.16; echte Anzeige auf Gerät mit Play Store (nie selbst klicken); Aufnahmen für 300 neue Sätze je Sprache.
+
+## Stand 2026-11-24 (Abend: UI, Widget-Größen, Planung)
+- [x] Untere Leiste: Balken folgt dem Finger beim Ziehen (`TabBar`), im Emulator geprüft.
+- [x] App-Symbol in der Titelzeile (links) auf allen vier Bildschirmen.
+- [x] Play-Hinweis randlose Anzeige (zwei Meldungen) untersucht: nur Fremdbibliotheken (Werbe-SDK, Play Core), Bibliotheken schon aktuell; Widget-Konfiguration angeglichen.
+- [x] Widget in drei Größen (klein/breit/groß) mit Neu, Teilen, Favorit-Herz; Lint und Unit-Tests grün; Emulator: klein und breit geprüft.
+- [ ] Widget: breites 4x2 mit niedriger Höhe (Stufe 250x110), Sprachwechsel, API 26, Neustart noch ungetestet.
+- [ ] Commit und PR: Branch `feature/nav-slide-title-icon` (Widget-Größen, Symbol links, Maskottchen-Entwurf noch uncommittet).
+- [ ] Maskottchen Gecko: Bilder erzeugen, Rechte klären, einbauen (`docs/MASKOTTCHEN.md`).
+- [ ] Supabase: alle Texte in eine Datenbank (Plan zuerst; Offline, ids, Datenschutz klären).
+

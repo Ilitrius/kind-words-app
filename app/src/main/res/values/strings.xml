@@ -166,6 +166,9 @@
     <string name="speech_no_voices_hint">No installed voice found for this language. Install the language data in the text-to-speech settings. On Samsung devices it can help to switch the engine to Speech Services by Google.</string>
     <string name="speech_open_tts_settings">Text-to-speech settings</string>
     <string name="widget_label">Kind word of the day</string>
+    <string name="widget_label_small">Kind word · small</string>
+    <string name="widget_label_wide">Kind word · wide</string>
+    <string name="widget_label_large">Kind word · large</string>
     <string name="widget_description">A warm sentence on your home screen, new every day.</string>
     <string name="widget_new">New</string>
     <string name="widget_empty">Open the app once to load your sentences.</string>

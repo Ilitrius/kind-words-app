@@ -10,7 +10,10 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.unit.DpSize
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.glance.ColorFilter
 import androidx.glance.GlanceId
+import androidx.glance.Image
+import androidx.glance.ImageProvider
 import androidx.glance.GlanceModifier
 import androidx.glance.GlanceTheme
 import androidx.glance.action.Action
@@ -34,6 +37,7 @@ import androidx.glance.layout.fillMaxSize
 import androidx.glance.layout.fillMaxWidth
 import androidx.glance.layout.height
 import androidx.glance.layout.padding
+import androidx.glance.layout.size
 import androidx.glance.layout.width
 import androidx.glance.material3.ColorProviders
 import androidx.glance.text.FontWeight
@@ -55,9 +59,19 @@ import kotlinx.coroutines.flow.first
 
 private val SMALL = DpSize(110.dp, 110.dp)
 private val WIDE = DpSize(250.dp, 110.dp)
+private val LARGE = DpSize(250.dp, 180.dp)
 
 /** Anzeige des Widgets: der Satz in der Inhaltssprache der App, passend zur gewählten Kategorie. */
-private class WidgetView(val appName: String, val text: String?, val newLabel: String, val shareLabel: String, val emptyLabel: String, val shareAction: Action?)
+private class WidgetView(
+    val appName: String,
+    val text: String?,
+    val newLabel: String,
+    val shareLabel: String,
+    val favoriteLabel: String,
+    val emptyLabel: String,
+    val shareAction: Action?,
+    val favorite: Boolean,
+)
 
 object WidgetContent {
     /** Inhaltssprache wie bei den Erinnerungen: gewählte Sprache oder Systemsprache. */
@@ -87,7 +101,7 @@ object WidgetContent {
 }
 
 class KindWordsWidget : GlanceAppWidget() {
-    override val sizeMode = SizeMode.Responsive(setOf(SMALL, WIDE))
+    override val sizeMode = SizeMode.Responsive(setOf(SMALL, WIDE, LARGE))
 
     override suspend fun provideGlance(context: Context, id: GlanceId) {
         val app = context.applicationContext as KindWordsApp
@@ -100,13 +114,16 @@ class KindWordsWidget : GlanceAppWidget() {
             val share = data?.takeIf { it.text.isNotBlank() }?.let {
                 actionStartActivity<WidgetShareActivity>(actionParametersOf(WidgetShareActivity.TEXT to it.text))
             }
+            val favorite = data?.messageId?.takeIf { it.isNotBlank() }?.let { runCatching { app.messages.isFavorite(it) }.getOrDefault(false) } ?: false
             return WidgetView(
                 appName = ctx.getString(R.string.app_name),
                 text = data?.text?.takeIf { it.isNotBlank() },
                 newLabel = ctx.getString(R.string.widget_new),
                 shareLabel = ctx.getString(R.string.action_share),
+                favoriteLabel = ctx.getString(if (favorite) R.string.favorite_remove else R.string.favorite_add),
                 emptyLabel = ctx.getString(R.string.widget_empty),
                 shareAction = share,
+                favorite = favorite,
             )
         }
 
@@ -127,59 +144,88 @@ object WidgetRefresh {
     fun notifyChanged() { signal.tryEmit(Unit) }
 }
 
+/**
+ * Drei Größenstufen (klein, breit, groß). Die Knopfleiste (Neu, Teilen, Favorit) steht immer unten und hat Vorrang vor dem Satz:
+ * klein nur mit Symbolen, breit und groß mit Beschriftung; der App-Name erscheint nur in der großen Stufe.
+ */
 @Composable
 private fun WidgetBody(v: WidgetView) {
-    val wide = LocalSize.current.width >= WIDE.width
+    val size = LocalSize.current
+    val wide = size.width >= WIDE.width
+    val large = size.height >= LARGE.height
     val colors = GlanceTheme.colors
     Box(
         modifier = GlanceModifier.fillMaxSize()
             .background(colors.primaryContainer)
             .cornerRadius(24.dp)
-            .padding(if (wide) 16.dp else 12.dp)
+            .padding(if (wide) 12.dp else 10.dp)
             .clickable(actionStartActivity<MainActivity>()),
     ) {
         Column(modifier = GlanceModifier.fillMaxSize()) {
-            Text(
-                text = v.appName,
-                maxLines = 1,
-                style = TextStyle(color = colors.primary, fontSize = 12.sp, fontWeight = FontWeight.Bold),
-            )
-            Spacer(GlanceModifier.height(6.dp))
+            if (large) {
+                Text(
+                    text = v.appName,
+                    maxLines = 1,
+                    style = TextStyle(color = colors.primary, fontSize = 12.sp, fontWeight = FontWeight.Bold),
+                )
+                Spacer(GlanceModifier.height(6.dp))
+            }
             Box(modifier = GlanceModifier.fillMaxWidth().defaultWeight(), contentAlignment = Alignment.CenterStart) {
                 Text(
                     text = v.text ?: v.emptyLabel,
-                    maxLines = if (wide) 5 else 6,
+                    maxLines = if (large) 6 else if (wide) 4 else 5,
                     style = TextStyle(
                         color = colors.onPrimaryContainer,
-                        fontSize = if (wide) 18.sp else 15.sp,
+                        fontSize = if (large) 22.sp else if (wide) 16.sp else 14.sp,
                         fontWeight = FontWeight.Medium,
                         textAlign = TextAlign.Start,
                     ),
                 )
             }
             if (v.text != null) {
-                Spacer(GlanceModifier.height(8.dp))
+                Spacer(GlanceModifier.height(6.dp))
                 Row(modifier = GlanceModifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
-                    ChipButton(v.newLabel, actionRunCallback<NextSentenceAction>())
-                    Spacer(GlanceModifier.width(8.dp))
-                    v.shareAction?.let { ChipButton(v.shareLabel, it) }
+                    ActionButton(R.drawable.ic_widget_refresh, if (wide) v.newLabel else null, v.newLabel, actionRunCallback<NextSentenceAction>(), GlanceModifier.defaultWeight())
+                    Spacer(GlanceModifier.width(if (wide) 8.dp else 4.dp))
+                    v.shareAction?.let {
+                        ActionButton(R.drawable.ic_widget_share, if (wide) v.shareLabel else null, v.shareLabel, it, GlanceModifier.defaultWeight())
+                        Spacer(GlanceModifier.width(if (wide) 8.dp else 4.dp))
+                    }
+                    ActionButton(
+                        if (v.favorite) R.drawable.ic_widget_heart else R.drawable.ic_widget_heart_outline,
+                        null, v.favoriteLabel, actionRunCallback<FavoriteAction>(),
+                        if (wide) GlanceModifier.width(44.dp) else GlanceModifier.defaultWeight(),
+                    )
                 }
             }
         }
     }
 }
 
+/** Runder Knopf der Leiste: Symbol, auf breiten Widgets mit Beschriftung. */
 @Composable
-private fun ChipButton(label: String, action: Action) {
+private fun ActionButton(icon: Int, label: String?, description: String, action: Action, modifier: GlanceModifier) {
+    val colors = GlanceTheme.colors
     Box(
-        modifier = GlanceModifier
-            .background(GlanceTheme.colors.primary)
-            .cornerRadius(16.dp)
-            .padding(horizontal = 14.dp, vertical = 6.dp)
+        modifier = modifier
+            .height(34.dp)
+            .background(colors.primary)
+            .cornerRadius(17.dp)
             .clickable(action),
         contentAlignment = Alignment.Center,
     ) {
-        Text(label, style = TextStyle(color = GlanceTheme.colors.onPrimary, fontSize = 13.sp, fontWeight = FontWeight.Medium))
+        Row(verticalAlignment = Alignment.CenterVertically) {
+            Image(
+                provider = ImageProvider(icon),
+                contentDescription = description,
+                colorFilter = ColorFilter.tint(colors.onPrimary),
+                modifier = GlanceModifier.size(18.dp),
+            )
+            if (label != null) {
+                Spacer(GlanceModifier.width(4.dp))
+                Text(label, maxLines = 1, style = TextStyle(color = colors.onPrimary, fontSize = 13.sp, fontWeight = FontWeight.Medium))
+            }
+        }
     }
 }
 
@@ -190,6 +236,18 @@ class NextSentenceAction : ActionCallback {
         val widgetId = GlanceAppWidgetManager(context).getAppWidgetId(glanceId)
         val store = WidgetStore(context)
         runCatching { WidgetContent.pickNew(app, store, widgetId, store.get(widgetId), WidgetContent.language(app)) }
+        KindWordsWidget().update(context, glanceId)
+        WidgetRefresh.notifyChanged()
+    }
+}
+
+/** Herz: merkt den angezeigten Satz als Favorit vor oder nimmt ihn wieder heraus (gleiche Daten wie die Favoriten in der App). */
+class FavoriteAction : ActionCallback {
+    override suspend fun onAction(context: Context, glanceId: GlanceId, parameters: androidx.glance.action.ActionParameters) {
+        val app = context.applicationContext as KindWordsApp
+        val widgetId = GlanceAppWidgetManager(context).getAppWidgetId(glanceId)
+        val id = WidgetStore(context).get(widgetId).messageId
+        if (id.isNotBlank()) runCatching { app.messages.setFavorite(id, !app.messages.isFavorite(id)) }
         KindWordsWidget().update(context, glanceId)
         WidgetRefresh.notifyChanged()
     }
