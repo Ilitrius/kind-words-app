@@ -1,6 +1,6 @@
 {
   "language": "de",
-  "version": 10,
+  "version": 11,
   "messages": [
     {
       "id": "de-love-001",
@@ -3103,6 +3103,56 @@
       "text": "Ich schick dir einen dicken Kuss in die Mittagspause 😘"
     },
     {
+      "id": "de-love-098",
+      "category": "love",
+      "text": "Wenn du mir auf der Autofahrt eine Mandarine schälst, bin ich einfach glücklich."
+    },
+    {
+      "id": "de-love-099",
+      "category": "love",
+      "text": "Ich höre dich im Nebenzimmer lachen und muss sofort mitlächeln, obwohl ich gar nicht weiß, worüber."
+    },
+    {
+      "id": "de-love-100",
+      "category": "love",
+      "text": "Schatz, unter einem Regenschirm mit dir ist mir jedes Wetter recht ☔"
+    },
+    {
+      "id": "de-love-101",
+      "category": "love",
+      "text": "Du hältst mir immer noch die Tür auf wie bei unserem ersten Date, und das berührt mich bis heute."
+    },
+    {
+      "id": "de-love-102",
+      "category": "love",
+      "text": "Im Kino schau ich manchmal lieber zu dir als auf die Leinwand, Schatz 🍿"
+    },
+    {
+      "id": "de-love-103",
+      "category": "love",
+      "text": "Wenn du mir morgens noch schnell den Kragen richtest, weiß ich, dass du mich liebst."
+    },
+    {
+      "id": "de-love-104",
+      "category": "love",
+      "text": "Bei dir fühle ich mich so geborgen, dass ich sogar bei Gewitter ruhig einschlafe."
+    },
+    {
+      "id": "de-love-105",
+      "category": "love",
+      "text": "Nach all der Zeit sagen wir uns jeden Abend noch Gute Nacht, und ich hoffe, das bleibt immer so."
+    },
+    {
+      "id": "de-love-106",
+      "category": "love",
+      "text": "Ich mag sogar die Art, wie du deinen Tee umrührst, Schatz, und das sagt wohl alles."
+    },
+    {
+      "id": "de-love-107",
+      "category": "love",
+      "text": "Ich hebe die Eintrittskarten von unseren Ausflügen auf, weil an jeder ein schöner Tag mit dir hängt."
+    },
+    {
       "id": "de-appreciation-048",
       "category": "appreciation",
       "text": "Du bedankst dich sogar beim Busfahrer, und genau solche Dinge liebe ich an dir."
@@ -3351,6 +3401,91 @@
       "id": "de-appreciation-097",
       "category": "appreciation",
       "text": "Deine Gelassenheit färbt jeden Tag ein bisschen mehr auf mich ab, Schatz 🌷"
+    },
+    {
+      "id": "de-appreciation-098",
+      "category": "appreciation",
+      "text": "Wenn ich dir etwas anvertraue, weiß ich, dass es bei dir gut aufgehoben ist."
+    },
+    {
+      "id": "de-appreciation-099",
+      "category": "appreciation",
+      "text": "Ich bin so froh, dich in meinem Leben zu haben, besonders morgens beim Frühstück zu zweit."
+    },
+    {
+      "id": "de-appreciation-100",
+      "category": "appreciation",
+      "text": "Mit dir kann ich wunderbar zusammen schweigen, Schatz, und reden können wir sowieso über alles."
+    },
+    {
+      "id": "de-appreciation-101",
+      "category": "appreciation",
+      "text": "Du tust mir einfach gut, Schatz, und das spüre ich jedes Mal, wenn ich abends heimkomme."
+    },
+    {
+      "id": "de-appreciation-102",
+      "category": "appreciation",
+      "text": "Vor jeder großen Entscheidung frag ich zuerst dich, weil du mir immer ehrlich sagst, was du denkst."
+    },
+    {
+      "id": "de-appreciation-103",
+      "category": "appreciation",
+      "text": "Mit dir ist vieles doppelt so schön, sogar der kurze Weg zum Briefkasten."
+    },
+    {
+      "id": "de-appreciation-104",
+      "category": "appreciation",
+      "text": "Du bist ein echter Glücksgriff, Schatz, und das merke ich an jedem Sonntagmorgen neben dir."
+    },
+    {
+      "id": "de-appreciation-105",
+      "category": "appreciation",
+      "text": "Bei allem Neuen, das ich ausprobiere, bist du sofort mein größter Fan."
+    },
+    {
+      "id": "de-appreciation-106",
+      "category": "appreciation",
+      "text": "Wenn ich laut nachdenke, hörst du so geduldig zu, dass ich am Ende immer weiß, was ich will."
+    },
+    {
+      "id": "de-appreciation-107",
+      "category": "appreciation",
+      "text": "Die frischen Blumen auf dem Tisch sind deine Idee, Schatz, und jeden Morgen freu ich mich darüber 🌷"
+    },
+    {
+      "id": "de-appreciation-108",
+      "category": "appreciation",
+      "text": "Du reparierst so vieles selbst, statt es gleich wegzuwerfen, und ich finde das großartig."
+    },
+    {
+      "id": "de-appreciation-109",
+      "category": "appreciation",
+      "text": "Bei Regenwetter holst du einfach ein Brettspiel heraus, und schon wird es ein schöner Nachmittag 🎲"
+    },
+    {
+      "id": "de-appreciation-110",
+      "category": "appreciation",
+      "text": "Du merkst dir die Namen aller Kollegen, von denen ich erzähle, und fragst später sogar nach."
+    },
+    {
+      "id": "de-appreciation-111",
+      "category": "appreciation",
+      "text": "Am Tisch siehst du als Erstes, wer noch nichts zu trinken hat, und kümmerst dich gleich darum."
+    },
+    {
+      "id": "de-appreciation-112",
+      "category": "appreciation",
+      "text": "Deine Komplimente kommen so ehrlich von Herzen, dass man sich tagelang darüber freut."
+    },
+    {
+      "id": "de-appreciation-113",
+      "category": "appreciation",
+      "text": "Dass du immer Bescheid sagst, wenn es bei dir später wird, finde ich so rücksichtsvoll, Schatz."
+    },
+    {
+      "id": "de-appreciation-114",
+      "category": "appreciation",
+      "text": "Allen Menschen begegnest du auf Augenhöhe, und davon kann ich mir eine Scheibe abschneiden."
     },
     {
       "id": "de-morning-048",
@@ -3603,6 +3738,86 @@
       "text": "Beim Frühstück hab ich dein Lieblingslied aufgelegt, damit du gut gelaunt in den Tag startest 🎶"
     },
     {
+      "id": "de-morning-098",
+      "category": "morning",
+      "text": "Guten Morgen! Hab einen entspannten Start in den Tag und genug Zeit für ein zweites Brötchen."
+    },
+    {
+      "id": "de-morning-099",
+      "category": "morning",
+      "text": "Zwischen zwei Terminen hab ich an dich gedacht und wollte dir schnell einen schönen Tag wünschen."
+    },
+    {
+      "id": "de-morning-100",
+      "category": "morning",
+      "text": "Lass es dir heute richtig gut gehen, Schatz, und am Abend hören wir uns!"
+    },
+    {
+      "id": "de-morning-101",
+      "category": "morning",
+      "text": "Ich hoffe, dein Kaffee ist heute genau so, wie du ihn magst, und der Rest vom Tag auch."
+    },
+    {
+      "id": "de-morning-102",
+      "category": "morning",
+      "text": "Mindestens eine Sache soll dich heute zum Lächeln bringen, vielleicht ja schon diese Nachricht."
+    },
+    {
+      "id": "de-morning-103",
+      "category": "morning",
+      "text": "Pass gut auf dich auf, Schatz, denn heute Abend möchte ich dich gesund und munter wiedersehen."
+    },
+    {
+      "id": "de-morning-104",
+      "category": "morning",
+      "text": "Noch bevor du richtig wach bist, hab ich schon dreimal an dich gedacht, Schatz."
+    },
+    {
+      "id": "de-morning-105",
+      "category": "morning",
+      "text": "Dein Wecker klingelt erst in zehn Minuten, aber mein Gruß an dich ist schon jetzt unterwegs."
+    },
+    {
+      "id": "de-morning-106",
+      "category": "morning",
+      "text": "Der Sonnenaufgang war heute so schön, dass ich ihn dir am liebsten gezeigt hätte 🌅"
+    },
+    {
+      "id": "de-morning-107",
+      "category": "morning",
+      "text": "Draußen riecht es heute nach frischem Gras, und ich hab sofort an unser letztes Picknick gedacht."
+    },
+    {
+      "id": "de-morning-108",
+      "category": "morning",
+      "text": "Heute hast du frei, Schatz, und der Morgen darf ganz langsam und gemütlich anfangen."
+    },
+    {
+      "id": "de-morning-109",
+      "category": "morning",
+      "text": "Für deine Fahrt heute hab ich dir eine neue Folge von deinem Lieblingspodcast herausgesucht 🚗"
+    },
+    {
+      "id": "de-morning-110",
+      "category": "morning",
+      "text": "Ich mag die Morgen, an denen du mir beim Frühstück lustige Meldungen aus der Zeitung vorliest."
+    },
+    {
+      "id": "de-morning-111",
+      "category": "morning",
+      "text": "Hoffentlich lachst du heute öfter, als du auf die Uhr schaust."
+    },
+    {
+      "id": "de-morning-112",
+      "category": "morning",
+      "text": "Heute früh hast du beim Anziehen gesummt, und seitdem hab ich die Melodie im Kopf 🎶"
+    },
+    {
+      "id": "de-morning-113",
+      "category": "morning",
+      "text": "Es ist noch ganz früh, und trotzdem ist der Tag schon schön, weil du darin vorkommst."
+    },
+    {
       "id": "de-goodnight-048",
       "category": "goodnight",
       "text": "Falls du nicht einschlafen kannst, darfst du mich jederzeit anrufen."
@@ -3851,6 +4066,66 @@
       "id": "de-goodnight-097",
       "category": "goodnight",
       "text": "Ich hoffe, du hattest einen schönen Abend mit deinen Freunden. Schlaf gut, Schatz."
+    },
+    {
+      "id": "de-goodnight-098",
+      "category": "goodnight",
+      "text": "Ich wünsch dir einen wundervollen Feierabend und einen Abend mit hochgelegten Füßen, Schatz."
+    },
+    {
+      "id": "de-goodnight-099",
+      "category": "goodnight",
+      "text": "Träum heute Nacht etwas so Schönes, dass du morgen früh mit einem Lächeln aufwachst."
+    },
+    {
+      "id": "de-goodnight-100",
+      "category": "goodnight",
+      "text": "Ich hab die Rollläden schon heruntergelassen, damit dich morgen früh nicht die Sonne weckt."
+    },
+    {
+      "id": "de-goodnight-101",
+      "category": "goodnight",
+      "text": "Wenn du magst, les ich dir noch ein Kapitel vor, bis dir die Augen zufallen 📚"
+    },
+    {
+      "id": "de-goodnight-102",
+      "category": "goodnight",
+      "text": "Die Spülmaschine läuft, die Tür ist zu, und jetzt gehört der Rest des Abends nur uns zwei."
+    },
+    {
+      "id": "de-goodnight-103",
+      "category": "goodnight",
+      "text": "Wenn du im Halbschlaf noch murmelst, dass du mich lieb hast, schlafe ich so glücklich ein."
+    },
+    {
+      "id": "de-goodnight-104",
+      "category": "goodnight",
+      "text": "Hier kommt die kürzeste Gute-Nacht-Geschichte: Es war einmal jemand, der dich über alles liebt."
+    },
+    {
+      "id": "de-goodnight-105",
+      "category": "goodnight",
+      "text": "Ich mag es so, wenn wir im Dunkeln noch ein paar Minuten reden, bis einer von uns einschläft."
+    },
+    {
+      "id": "de-goodnight-106",
+      "category": "goodnight",
+      "text": "Bei uns brennt als Letztes in der Straße noch Licht, und das gefällt mir irgendwie."
+    },
+    {
+      "id": "de-goodnight-107",
+      "category": "goodnight",
+      "text": "Falls ich schon schlafe, wenn du heimkommst, steht noch Suppe für dich auf dem Herd, Schatz."
+    },
+    {
+      "id": "de-goodnight-108",
+      "category": "goodnight",
+      "text": "Die Nachtluft ist so mild, dass ich am liebsten noch eine Runde mit dir um den Block drehen würde."
+    },
+    {
+      "id": "de-goodnight-109",
+      "category": "goodnight",
+      "text": "Dein Schlafgesicht ist das Schönste, was ich heute gesehen hab, Schatz 🌙"
     },
     {
       "id": "de-encouragement-048",
@@ -4103,6 +4378,106 @@
       "text": "Lass dich noch einmal fest von mir drücken, bevor du losgehst 🤗"
     },
     {
+      "id": "de-encouragement-098",
+      "category": "encouragement",
+      "text": "Du machst das großartig, und ich wünschte, du könntest dich gerade einmal mit meinen Augen sehen."
+    },
+    {
+      "id": "de-encouragement-099",
+      "category": "encouragement",
+      "text": "Heute hast du ganz in Ruhe Schritt für Schritt alles erledigt, und ich bin so stolz auf dich."
+    },
+    {
+      "id": "de-encouragement-100",
+      "category": "encouragement",
+      "text": "Wenn du heute Abend zurückdenkst, Schatz, hoffe ich, dass du auch ein bisschen stolz auf dich bist."
+    },
+    {
+      "id": "de-encouragement-101",
+      "category": "encouragement",
+      "text": "Ich hab dich schon so vieles packen sehen, dass ich mir bei dieser Sache ganz sicher bin."
+    },
+    {
+      "id": "de-encouragement-102",
+      "category": "encouragement",
+      "text": "Nach diesem fleißigen Vormittag steht ein Tee für dich bereit, damit du kurz verschnaufen kannst."
+    },
+    {
+      "id": "de-encouragement-103",
+      "category": "encouragement",
+      "text": "Deine Zuversicht reicht heute locker für uns beide, Schatz."
+    },
+    {
+      "id": "de-encouragement-104",
+      "category": "encouragement",
+      "text": "Du bist mit allen so geduldig, Schatz, und ich wünsch mir, dass du heute genauso lieb zu dir bist."
+    },
+    {
+      "id": "de-encouragement-105",
+      "category": "encouragement",
+      "text": "Du musst heute nicht alles lösen, und den Rest schauen wir uns morgen zusammen in Ruhe an."
+    },
+    {
+      "id": "de-encouragement-106",
+      "category": "encouragement",
+      "text": "Ich glaube fest an dich, seit ich dich kenne, und du gibst mir jeden Tag wieder recht."
+    },
+    {
+      "id": "de-encouragement-107",
+      "category": "encouragement",
+      "text": "Du bist auf einem richtig guten Weg, und ich sehe jeden Tag, wie viel du dafür tust."
+    },
+    {
+      "id": "de-encouragement-108",
+      "category": "encouragement",
+      "text": "Du findest immer einen Weg, Schatz, und ich hab das schon so oft miterlebt."
+    },
+    {
+      "id": "de-encouragement-109",
+      "category": "encouragement",
+      "text": "Weil du die Dinge so überlegt angehst, kommt am Ende immer etwas Gutes dabei heraus."
+    },
+    {
+      "id": "de-encouragement-110",
+      "category": "encouragement",
+      "text": "Erinnerst du dich, wie aufgeregt du beim letzten Mal warst? Und dann lief alles wunderbar."
+    },
+    {
+      "id": "de-encouragement-111",
+      "category": "encouragement",
+      "text": "Bei dir ist heute so viel los, Schatz, also kümmere ich mich am Abend um alles andere."
+    },
+    {
+      "id": "de-encouragement-112",
+      "category": "encouragement",
+      "text": "Ich seh dich heute Abend schon fröhlich hereinkommen und erzählen, wie gut alles gelaufen ist."
+    },
+    {
+      "id": "de-encouragement-113",
+      "category": "encouragement",
+      "text": "Die neuen Leute werden dich bestimmt schnell mögen, so offen und herzlich, wie du bist."
+    },
+    {
+      "id": "de-encouragement-114",
+      "category": "encouragement",
+      "text": "Wenn es heute etwas länger dauert, macht das gar nichts, denn ich warte gern mit dem Essen auf dich."
+    },
+    {
+      "id": "de-encouragement-115",
+      "category": "encouragement",
+      "text": "Ruf mich zwischendurch ruhig an, dann lachen wir kurz zusammen, und danach geht alles leichter."
+    },
+    {
+      "id": "de-encouragement-116",
+      "category": "encouragement",
+      "text": "Für heute wünsch ich dir so viel Glück, wie in ein vierblättriges Kleeblatt passt 🍀"
+    },
+    {
+      "id": "de-encouragement-117",
+      "category": "encouragement",
+      "text": "Du hast mir schon so oft Mut gemacht, und heute bin ich mal dran, dir welchen zu schicken 💪"
+    },
+    {
       "id": "de-missyou-048",
       "category": "missyou",
       "text": "Aus Gewohnheit hab ich wieder für zwei gekocht 🍝"
@@ -4351,6 +4726,61 @@
       "id": "de-missyou-097",
       "category": "missyou",
       "text": "Wenn du heimkommst, nehmen wir uns den ganzen Abend Zeit nur für uns zwei 💛"
+    },
+    {
+      "id": "de-missyou-098",
+      "category": "missyou",
+      "text": "Ich weiß schon, was ich als Erstes mache, wenn ich dich wiedersehe, nämlich dich ganz lange umarmen."
+    },
+    {
+      "id": "de-missyou-099",
+      "category": "missyou",
+      "text": "Ich schau heute Abend deinen Lieblingsfilm, damit du mir ganz nah bist."
+    },
+    {
+      "id": "de-missyou-100",
+      "category": "missyou",
+      "text": "Heute trag ich den Schal, den du mir geschenkt hast, und so bist du ein bisschen bei mir."
+    },
+    {
+      "id": "de-missyou-101",
+      "category": "missyou",
+      "text": "Ich hab heute unsere alten Nachrichten durchgelesen und dabei die ganze Zeit gelächelt, Schatz."
+    },
+    {
+      "id": "de-missyou-102",
+      "category": "missyou",
+      "text": "Auf meinem Spaziergang lag ein herzförmiger Stein am Weg, und den hab ich für dich eingesteckt."
+    },
+    {
+      "id": "de-missyou-103",
+      "category": "missyou",
+      "text": "In deinem Briefkasten landet bald eine Postkarte von mir, und darauf steht, wie sehr du mir fehlst 💌"
+    },
+    {
+      "id": "de-missyou-104",
+      "category": "missyou",
+      "text": "Schatz, ich vermisse dich, und das Schöne daran ist, dass ich mich jetzt so sehr auf dich freue."
+    },
+    {
+      "id": "de-missyou-105",
+      "category": "missyou",
+      "text": "Ich lass das Handy heute Nacht neben dem Kopfkissen liegen, falls du mir noch schreibst."
+    },
+    {
+      "id": "de-missyou-106",
+      "category": "missyou",
+      "text": "Ich freu mich so auf unser Wiedersehen, dass ich jetzt schon überlege, was ich anziehe 😊"
+    },
+    {
+      "id": "de-missyou-107",
+      "category": "missyou",
+      "text": "Mein Wecker spielt jetzt dein Lieblingslied, damit ich morgens mit dir im Kopf aufwache."
+    },
+    {
+      "id": "de-missyou-108",
+      "category": "missyou",
+      "text": "Am Telefon klingst du so nah, dass ich mich fast nach dir umdrehen möchte, Schatz."
     },
     {
       "id": "de-compliment-048",
@@ -4603,6 +5033,106 @@
       "text": "Bei dir hat alles seinen Platz, Schatz, und deshalb finde ich in unserer Küche alles sofort 💫"
     },
     {
+      "id": "de-compliment-098",
+      "category": "compliment",
+      "text": "Du hast ein Lächeln, bei dem sogar fremde Leute in der Bahn zurücklächeln, Schatz."
+    },
+    {
+      "id": "de-compliment-099",
+      "category": "compliment",
+      "text": "Mit deiner guten Laune macht sogar das Warten an der Supermarktkasse Spaß."
+    },
+    {
+      "id": "de-compliment-100",
+      "category": "compliment",
+      "text": "Deine fröhliche Art ist so ansteckend, dass ich nach jedem Telefonat mit dir gut gelaunt auflege."
+    },
+    {
+      "id": "de-compliment-101",
+      "category": "compliment",
+      "text": "Dein Gespür für Menschen ist so fein, dass du sofort merkst, wer ein freundliches Wort braucht."
+    },
+    {
+      "id": "de-compliment-102",
+      "category": "compliment",
+      "text": "Es ist schön zu sehen, wie viel Herzblut du in alles steckst, sogar in eine Geburtstagskarte."
+    },
+    {
+      "id": "de-compliment-103",
+      "category": "compliment",
+      "text": "Du machst die Welt um dich herum ein kleines Stück wärmer, und ich darf jeden Tag mittendrin sein."
+    },
+    {
+      "id": "de-compliment-104",
+      "category": "compliment",
+      "text": "Deine Ideen bringen immer frischen Wind rein, ob beim Wochenendplan oder beim Umstellen der Möbel."
+    },
+    {
+      "id": "de-compliment-105",
+      "category": "compliment",
+      "text": "Du hast eine Art, Dinge zu erklären, bei der sich jeder traut, noch einmal nachzufragen."
+    },
+    {
+      "id": "de-compliment-106",
+      "category": "compliment",
+      "text": "Wie schön, dass es genau dich gibt, denn so jemanden wie dich hätte ich mir nie ausdenken können."
+    },
+    {
+      "id": "de-compliment-107",
+      "category": "compliment",
+      "text": "Zwischendurch muss ich dir einfach kurz sagen, dass du toll bist, Schatz!"
+    },
+    {
+      "id": "de-compliment-108",
+      "category": "compliment",
+      "text": "Im Winter mit Mütze und roten Wangen siehst du einfach zum Knuddeln aus, Schatz 🤗"
+    },
+    {
+      "id": "de-compliment-109",
+      "category": "compliment",
+      "text": "Du suchst im Restaurant immer das Leckerste aus, und inzwischen bestell ich einfach dasselbe."
+    },
+    {
+      "id": "de-compliment-110",
+      "category": "compliment",
+      "text": "Beim Nachdenken legst du den Kopf ein wenig zur Seite, und das finde ich unglaublich süß, Schatz."
+    },
+    {
+      "id": "de-compliment-111",
+      "category": "compliment",
+      "text": "Auf Feiern bringst du Leute zusammen, die sich nicht kannten, und am Ende verstehen sich alle."
+    },
+    {
+      "id": "de-compliment-112",
+      "category": "compliment",
+      "text": "Wenn du begeistert erzählst, redest du mit den Händen, und ich schau dir dabei so gern zu."
+    },
+    {
+      "id": "de-compliment-113",
+      "category": "compliment",
+      "text": "Weil du so herrlich spontan bist, wird aus einem kurzen Spaziergang schnell ein ganzer Ausflug."
+    },
+    {
+      "id": "de-compliment-114",
+      "category": "compliment",
+      "text": "Wenn du mit älteren Leuten sprichst, bist du so herzlich, dass mir ganz warm ums Herz wird."
+    },
+    {
+      "id": "de-compliment-115",
+      "category": "compliment",
+      "text": "Mit dir ist alles so wunderbar unkompliziert, Schatz, sogar die Frage nach dem Abendessen."
+    },
+    {
+      "id": "de-compliment-116",
+      "category": "compliment",
+      "text": "Sogar morgens um sechs bist du schon so freundlich, dass ich nur staunen kann."
+    },
+    {
+      "id": "de-compliment-117",
+      "category": "compliment",
+      "text": "Du weißt beim Fernsehquiz so viele Antworten, dass ich jedes Mal stolz auf dich bin 🌟"
+    },
+    {
       "id": "de-humor-048",
       "category": "humor",
       "text": "Drei Leuten hab ich heute schon von dir erzählt, obwohl keiner gefragt hat."
@@ -4851,6 +5381,56 @@
       "id": "de-humor-097",
       "category": "humor",
       "text": "Du bist so gemütlich, Schatz, dass ich dich am liebsten als Kissen behalten würde 🤗"
+    },
+    {
+      "id": "de-humor-098",
+      "category": "humor",
+      "text": "Ich hab heute im Bus so verliebt vor mich hin gegrinst, dass mir jemand seinen Platz angeboten hat."
+    },
+    {
+      "id": "de-humor-099",
+      "category": "humor",
+      "text": "Mein Plan war ein fleißiger Vormittag, aber dann bist du mir eingefallen, und schon war er vorbei."
+    },
+    {
+      "id": "de-humor-100",
+      "category": "humor",
+      "text": "In meinem Herzen hattest du erst ein Zimmer, Schatz, und inzwischen gehört dir das ganze Haus."
+    },
+    {
+      "id": "de-humor-101",
+      "category": "humor",
+      "text": "Die Wettervorhersage für heute Abend: Eine Kuschelfront zieht auf und kommt direkt auf dich zu 🤗"
+    },
+    {
+      "id": "de-humor-102",
+      "category": "humor",
+      "text": "Wenn ich deinen Namen tippe, schlägt mir das Handy schon automatisch drei Herzen vor."
+    },
+    {
+      "id": "de-humor-103",
+      "category": "humor",
+      "text": "Ich hab lange überlegt, womit ich dich überrasche, und mich dann für mich mit Schleife entschieden 🎁"
+    },
+    {
+      "id": "de-humor-104",
+      "category": "humor",
+      "text": "Mein Bauch kribbelt schon den ganzen Tag, Schatz, und am Mittagessen liegt es bestimmt nicht."
+    },
+    {
+      "id": "de-humor-105",
+      "category": "humor",
+      "text": "Falls du heute jemanden suchst, der dich ganz toll findet, Schatz, ich melde mich freiwillig."
+    },
+    {
+      "id": "de-humor-106",
+      "category": "humor",
+      "text": "Beim Abschmecken hab ich gemerkt, dass der Soße nur noch eine Zutat fehlt, und die bist du."
+    },
+    {
+      "id": "de-humor-107",
+      "category": "humor",
+      "text": "Für einen pünktlichen Feierabend hab ich die schönste Ausrede der Welt, und sie wartet zu Hause."
     },
     {
       "id": "de-thanks-048",
@@ -5103,6 +5683,76 @@
       "text": "Du hast heute für uns beide Frühstück gemacht, während ich noch geschlafen hab, danke 🙏"
     },
     {
+      "id": "de-thanks-098",
+      "category": "thanks",
+      "text": "Danke, dass du mir zuhörst, auch wenn ich zum dritten Mal von derselben Sache erzähle."
+    },
+    {
+      "id": "de-thanks-099",
+      "category": "thanks",
+      "text": "Was du neben der Arbeit noch alles für uns erledigst, ist nicht selbstverständlich. Danke, Schatz!"
+    },
+    {
+      "id": "de-thanks-100",
+      "category": "thanks",
+      "text": "Danke, dass du dich bei mir nie verstellst, so mag ich dich nämlich am liebsten."
+    },
+    {
+      "id": "de-thanks-101",
+      "category": "thanks",
+      "text": "Danke für die vielen kleinen Momente, vor allem für dein Winken am Fenster, wenn ich morgens losgehe."
+    },
+    {
+      "id": "de-thanks-102",
+      "category": "thanks",
+      "text": "Du hast heute die Spülmaschine ausgeräumt, obwohl ich dran war, danke, Schatz."
+    },
+    {
+      "id": "de-thanks-103",
+      "category": "thanks",
+      "text": "Meine Lieblingsjacke sieht wie neu aus, seit du sie zur Schneiderei gebracht hast, vielen Dank."
+    },
+    {
+      "id": "de-thanks-104",
+      "category": "thanks",
+      "text": "Danke, dass du die Fotos von unserem Ausflug so liebevoll in ein Album geklebt hast."
+    },
+    {
+      "id": "de-thanks-105",
+      "category": "thanks",
+      "text": "Die Wohnung ist so schön geschmückt, dass ich staunend in der Tür stehen blieb. Danke, Schatz!"
+    },
+    {
+      "id": "de-thanks-106",
+      "category": "thanks",
+      "text": "Für mich hast du die ganze Warteschleife der Hotline abgewartet, und das verdient einen Orden."
+    },
+    {
+      "id": "de-thanks-107",
+      "category": "thanks",
+      "text": "Dank deiner Geduld kann ich das neue Handy jetzt sogar selbst bedienen, Schatz."
+    },
+    {
+      "id": "de-thanks-108",
+      "category": "thanks",
+      "text": "Der Keller ist aufgeräumt, und ich finde endlich alles wieder. Danke für deine Hilfe."
+    },
+    {
+      "id": "de-thanks-109",
+      "category": "thanks",
+      "text": "Du bist extra noch mal ins Café zurückgelaufen, um meine Sonnenbrille zu holen. Danke dir."
+    },
+    {
+      "id": "de-thanks-110",
+      "category": "thanks",
+      "text": "Den ganzen Tag bist du mit mir durch Möbelhäuser gelaufen und hattest bis zum Schluss gute Laune 💛"
+    },
+    {
+      "id": "de-thanks-111",
+      "category": "thanks",
+      "text": "Dein Tipp für das Geschenk war goldrichtig, und die Freude war riesig."
+    },
+    {
       "id": "de-apology-048",
       "category": "apology",
       "text": "Meine Antwort vorhin kam zu schnell. Ich möchte es gern noch einmal versuchen."
@@ -5351,6 +6001,56 @@
       "id": "de-apology-097",
       "category": "apology",
       "text": "Ab heute zeig ich dir noch öfter, wie wichtig du mir bist, Schatz ❤️"
+    },
+    {
+      "id": "de-apology-098",
+      "category": "apology",
+      "text": "Deine Frage von vorhin hab ich überhört, Schatz, magst du sie mir noch einmal stellen?"
+    },
+    {
+      "id": "de-apology-099",
+      "category": "apology",
+      "text": "Dass du mir so schnell verzeihst, rührt mich sehr, Schatz."
+    },
+    {
+      "id": "de-apology-100",
+      "category": "apology",
+      "text": "Entschuldige die laute Musik, als du telefoniert hast, und beim nächsten Mal frag ich dich vorher."
+    },
+    {
+      "id": "de-apology-101",
+      "category": "apology",
+      "text": "Dein Lieblingsshirt ist beim Waschen etwas eingelaufen, und am Wochenende kaufen wir ein neues."
+    },
+    {
+      "id": "de-apology-102",
+      "category": "apology",
+      "text": "Ich hab aus Versehen dein Ladekabel eingesteckt, und heute Abend bring ich dir ein zweites mit."
+    },
+    {
+      "id": "de-apology-103",
+      "category": "apology",
+      "text": "Unser Telefonat war viel zu kurz, Schatz, und heute Abend nehm ich mir dafür alle Zeit der Welt 📞"
+    },
+    {
+      "id": "de-apology-104",
+      "category": "apology",
+      "text": "Dein liebes Kompliment hab ich in der Eile kaum beachtet, dabei hat es mich so sehr gefreut."
+    },
+    {
+      "id": "de-apology-105",
+      "category": "apology",
+      "text": "Ich hab heute wieder meine Schuhe im Flur stehen lassen, und ab morgen kommen sie brav ins Regal."
+    },
+    {
+      "id": "de-apology-106",
+      "category": "apology",
+      "text": "Entschuldige, dass ich heute so lange das Bad belegt hab, und morgen bist du als Erstes dran."
+    },
+    {
+      "id": "de-apology-107",
+      "category": "apology",
+      "text": "Heute früh hab ich vergessen, dir viel Glück zu wünschen, also bekommst du jetzt doppelt so viel 🤞"
     },
     {
       "id": "de-emoji-051",

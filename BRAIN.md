@@ -230,3 +230,12 @@ Das „Gehirn“ des Projekts: Entscheidungen, Fakten, Fallstricke. Wird von Men
 - Geprüft: `lintRelease`, `testDebugUnitTest`, `bundleRelease`, `assembleRelease` grün; Bundle mit Upload-Zertifikat (SHA-256 9B:C5:0C:86...) signiert; Release-Manifest versionCode 19 / 1.1.1, echte AdMob-App-ID, Berechtigungen unverändert zu 1.1.0; Release-APK startet im Emulator ohne FATAL.
 - Nicht getestet: Widget 4x2 niedrig, Sprachwechsel, API 26, Dunkelmodus und RTL bei Kategorie-Balken, Update von 1.0.16.
 - `whats_new.txt` de/en aktualisiert (ohne Namen "Kiko": Name/Marke noch ungeprüft). Datenschutz/Data Safety unverändert (reine Grafik).
+
+## 2026-11-25 Emulator-Test 1.1.1
+- Update 1.0.16 -> 1.1.1, Widget (breit), Dunkelmodus, Sprachwechsel und Neu/Teilen bestanden (Details in TODO.md). Systemsprache pro App (`cmd locale set-app-locales`) ändert die App nicht; die Sprache steht in der App-Einstellung. `adb install` braucht Windows-Pfade (`D:/...`), nicht `/d/...`. Tippen auf das Datum im Startbildschirm öffnet Kalender.
+
+## 2026-11-25 Entwicklername
+- Entwicklername ist **rpdev911 Studios**. Er steht auf den Über-uns-Seiten (de/en). Impressum und Verantwortlicher im Datenschutz bleiben bei der natürlichen Person René Puf (gesetzlich nötig). GitHub-Konto `Ilitrius` bleibt (URLs). Offen für René: Play Console / AdMob Entwicklername, Rechtsform, zweiter Kontaktweg. Doku: Obsidian `Firma/`.
+
+## 2026-11-25 Release 1.1.2 (Build 20)
+- Content v11: de und en je 1250 Sätze (1110 Textsätze + 70 Emoji + 70 ASCII), Store-Zahl "rund 1250". AAB: `dist/kindwords-1.1.2-release.aab`. Content-Tests laufen nach reiner JSON-Änderung nur mit `--rerun` (sonst UP-TO-DATE).
