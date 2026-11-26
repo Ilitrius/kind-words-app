@@ -55,7 +55,9 @@ class MessageRepository(
 
     /**
      * Zufälliger Vorschlag. Favoriten werden bevorzugt: in [FavoriteBias.SHARE] der Fälle kommt – falls vorhanden –
-     * ein Favorit (passend zu Sprache/Kategorie), sonst ein beliebiger Satz.
+     * ein Favorit (passend zu Sprache/Kategorie), sonst ein beliebiger Satz. Die zuletzt gezeigten
+     * [LearningState.NO_REPEAT] Sätze werden fest ausgeschlossen; nur wenn dadurch nichts übrig bleibt (sehr kleine Auswahl),
+     * gilt die Sperre nicht, damit immer ein Satz erscheint.
      */
     suspend fun random(
         language: String,
@@ -65,12 +67,16 @@ class MessageRepository(
         rng: Random = Random.Default,
     ): MessageEntity? {
         val exclude = excludeId ?: ""
-        if (FavoriteBias.preferFavorite(roll)) dao.randomFavorite(language, category, exclude)?.let { return it }
-        // Sonst: passend zum Stil der eigenen Sätze gewichtet (ohne eigene Sätze: gleichverteilt)
-        val candidates = dao.candidates(language, category, exclude)
         val learning = settings.learning()
+        val recent = learning.recentIds(LearningState.NO_REPEAT)
+        if (FavoriteBias.preferFavorite(roll)) {
+            dao.favoriteCandidates(language, category, exclude).filter { it.id !in recent }.randomOrNull(rng)?.let { return it }
+        }
+        val all = dao.candidates(language, category, exclude)
+        val fresh = all.filter { it.id !in recent }
+        // Sonst: passend zum Stil der eigenen Sätze gewichtet (ohne eigene Sätze: gleichverteilt)
         val now = clock()
-        return StyleMatcher.pick(candidates, tasteProfile(), rng, extraWeight = { learning.weight(it.id, it.category, now) }) { it.text }
+        return StyleMatcher.pick(fresh.ifEmpty { all }, tasteProfile(), rng, extraWeight = { learning.weight(it.id, it.category, now) }) { it.text }
     }
 
     /** Geschmacksprofil für die Auswahl: eigene Sätze plus als Favorit gemerkte Sätze (beides lokal). */
@@ -92,6 +98,7 @@ class MessageRepository(
     fun userMessages(): Flow<List<MessageEntity>> = dao.observeUserMessages()
 
     suspend fun setFavorite(id: String, favorite: Boolean) = dao.setFavorite(id, favorite)
+    suspend fun isFavorite(id: String): Boolean = dao.get(id)?.favorite == true
 
     suspend fun addUser(language: String, text: String) {
         val t = text.trim()

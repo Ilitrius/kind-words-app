@@ -15,3 +15,6 @@ metadata:
 - Backup-Testdateien (valid/broken/empty/huge >1 MB/notjson/wrong) lagen in scratchpad; Generator war ein Python-Heredoc (PYTHONUTF8=1 nötig).
 - Chrome sperren für "kein Browser": `pm disable-user --user 0 com.android.chrome` (danach `pm enable`).
 - Dark/Schrift: `cmd uimode night yes|no`, `settings put system font_scale 2.0`; Rotation: accelerometer_rotation 0 + user_rotation 1. `low_power 1` schaltet im Emulator auch Dunkelmodus ein.
+- Widget auf dem Pixel-Launcher hinzufügen (2026-11-24): Startbildschirm lang drücken (`input swipe 540 1200 540 1200 900`) -> "Widgets" -> Suche "Kind" -> Eintrag aufklappen -> Vorschau antippen -> "Add" (Ziehen per `input swipe`/`draganddrop` platziert nichts). BACK schließt erst die Tastatur, ein zweites BACK leert die Suche. Tippen neben das Widget kann Apps öffnen (Datum -> Kalender).
+- Neustart: `emulator.exe -avd Pixel_API35 -no-snapshot-load` im Hintergrund, dann `adb wait-for-device` und auf `sys.boot_completed=1` warten. Beim Start erscheint der Spendendialog ("Cancel" bei etwa 606,1410 auf 1080x2400).
+- Wischgeste mit Zwischenbild: `adb shell input swipe 130 2200 700 2200 1500 &`, nach 0,8 s `screencap`.

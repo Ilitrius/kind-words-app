@@ -156,3 +156,42 @@ Legende: `[ ]` offen · `[x]` erledigt · Agent in Klammern
 - [x] Finales Release gebaut und geprüft: `dist/kindwords-1.1.0-release.aab` + `dist/mapping.txt` (Details in BRAIN.md).
 - [ ] Nutzer: Reihenfolge siehe BRAIN.md (AdMob-Nachricht, PR #3 mergen, Data Safety, Upload, Neuigkeiten).
 - [ ] Offen: Widget nach Geräteneustart, API 26, Update von 1.0.16; echte Anzeige auf Gerät mit Play Store (nie selbst klicken); Aufnahmen für 300 neue Sätze je Sprache.
+
+## Stand 2026-11-24 (Abend: UI, Widget-Größen, Planung)
+- [x] Untere Leiste: Balken folgt dem Finger beim Ziehen (`TabBar`), im Emulator geprüft.
+- [x] App-Symbol in der Titelzeile (links) auf allen vier Bildschirmen.
+- [x] Play-Hinweis randlose Anzeige (zwei Meldungen) untersucht: nur Fremdbibliotheken (Werbe-SDK, Play Core), Bibliotheken schon aktuell; Widget-Konfiguration angeglichen.
+- [x] Widget in drei Größen (klein/breit/groß) mit Neu, Teilen, Favorit-Herz; Lint und Unit-Tests grün; Emulator: klein und breit geprüft.
+- [ ] Widget: breites 4x2 mit niedriger Höhe (Stufe 250x110), Sprachwechsel, API 26, Neustart noch ungetestet.
+- [ ] Commit und PR: Branch `feature/nav-slide-title-icon` (Widget-Größen, Symbol links, Maskottchen-Entwurf noch uncommittet).
+- [ ] Maskottchen Gecko: Bilder erzeugen, Rechte klären, einbauen (`docs/MASKOTTCHEN.md`).
+- [ ] Supabase: alle Texte in eine Datenbank (Plan zuerst; Offline, ids, Datenschutz klären).
+
+
+## Stand 2026-11-24 (Release 1.1.1, Build 19)
+- [x] Maskottchen eingebaut (Einführung, leere Zustände, Titelzeile, Gute Nacht/Humor), Kategorie-Balken, Widget-Größen committet.
+- [x] Release 1.1.1 / Build 19 gebaut: `dist/kindwords-1.1.1-release.aab` + `dist/mapping.txt`.
+- [ ] Nutzer: AAB + Mapping hochladen, `store/listings/*/whats_new.txt` eintragen (Upload-Reihenfolge siehe BRAIN, 1.1.0-Abschnitt).
+- [ ] Offen: Namen "Kiko" und Marke prüfen, Rechte der imagine-Bilder (Free-Plan) klären, vor dem Store-Auftritt mit dem Maskottchen.
+
+## Emulator-Test 2026-11-25 (Release-APK 1.1.1, Pixel API 35)
+- [x] Update 1.0.16 -> 1.1.1: Favorit bleibt, Start ohne Absturz, Widget zeigt den Favoriten mit gefülltem Herz.
+- [x] Widget breit (4x2) hinzufügen: Satz, Neu, Teilen, Herz; Dunkelmodus ok; Sprachwechsel (App-Einstellung Deutsch) aktualisiert Widget live (Satz + Beschriftung); Neu nach `force-stop` ok; Teilen öffnet das Systemmenü. Kein FATAL.
+- [x] API 26 (neues AVD `Pixel_API26`, google_apis x86_64): Update 1.0.16 -> 1.1.1 mit Favorit, Widget breit per `input draganddrop` platziert (alter Launcher zeigt nur Symbol als Vorschau), Konfigurationsdialog, Neu, Teilen, Herz (Favorit synchron zur App) ok, kein FATAL.
+- [ ] Weiter ungetestet: Widget niedrig (4x2 mit < 180 dp Höhe; Pixel-Launcher gibt 4x2 immer die große Stufe, Resize per adb nicht möglich), Geräteneustart, RTL beim Kategorie-Balken.
+
+## Content v11 (2026-11-25, nur Deutsch, ungebaut, nicht committet)
+- [x] 40 Nutzersätze (de) geprüft, überarbeitet und importiert, dazu eigene Ergänzungen: +140 Sätze in `messages_de.json` (1250 gesamt, version 11), Tests grün. Neue Sätze haben keine Aufnahmen (Gerätestimme).
+- [x] (2026-11-25) Englisch: +140 eigenständige Sätze (Filmzitate nicht übernommen), 1250 gesamt, version 11, je Kategorie gleich wie de; Tests grün (mit `--rerun`, sonst UP-TO-DATE). Offen: Store-Zahl ("rund 1250 Sätze"), Muttersprachler-Prüfung EN, Build/Release 1.1.2 (versionCode 20).
+- [ ] René: Stichprobe der neuen deutschen Sätze lesen.
+
+## Release 1.1.2 (Build 20, 2026-11-25)
+- [x] Content v11 (1250 Sätze je Sprache), Store-Zahl "rund 1250" (de/en), `whats_new.txt` de/en, versionCode 20 / 1.1.2. `lintRelease`, Unit-Tests (`--rerun`) und `bundleRelease` grün: `dist/kindwords-1.1.2-release.aab` + `dist/mapping.txt` (Code unverändert, Mapping gleich 1.1.1 = `mapping-1.1.1.txt`).
+- [ ] Nutzer: AAB + Mapping hochladen, Beschreibung und Neuigkeiten de/en eintragen. Noch nicht im Emulator geprüft (Update 1.1.1 -> 1.1.2, neue Sätze sichtbar), nicht committet.
+- [x] (2026-11-25) Entwickler rpdev911 Studios, Kontakt-E-Mail rpdev911@gmail.com (App `links.xml`, Webseiten, Play Console Konto + Store-Einstellungen aller drei Apps). Release 1.1.2 mit neuer Adresse neu gebaut. Impressum/Datenschutz: Name René Puf bleibt (natürliche Person).
+- [x] (2026-11-26) Keine Wiederholung in den letzten 20 Vorschlägen: `LearningState.recentIds(NO_REPEAT=20)`, `MessageRepository.random` schließt sie fest aus (auch bei Favoriten; nur bei zu kleiner Auswahl, z. B. Kategorie mit wenigen Sätzen, gilt die Sperre nicht). Gilt für App und Widget (beide nutzen `random` + `recordShown`), bleibt nach App-Neustart erhalten (Learning-Daten in den Einstellungen). Tests grün, Lint grün. Emulator-Test steht aus.
+
+## Release 1.1.2 (Build 21, 2026-11-26)
+- [x] Keine Wiederholung in 20 Klicks: Emulator (API 26, Debug, 50 Klicks per uiautomator, Satztext je Klick protokolliert): kein Satz innerhalb von 20 Klicks wiederholt, zwei Wiederholungen erst nach 22 und 31 Klicks (erlaubt); bei 2 Favoriten ebenfalls ok.
+- [x] Build 21 (1.1.2, versionCode 21; 1.1.2/20 wurde nie hochgeladen): `lintRelease`, Unit-Tests (alle grün, `--rerun-tasks`), `bundleRelease`, `assembleRelease` grün. `dist/kindwords-1.1.2-release.aab` (74 MB, Upload-Zertifikat 9B:C5:0C:86...) + neue `dist/mapping.txt` (Code geändert; alter Stand = `mapping-1.1.2-build20.txt`), Test-APK `dist/kindwords-1.1.2-release.apk` startet im Emulator ohne FATAL. `whats_new.txt` de/en nennt die 20-Sätze-Sperre.
+- [ ] Nutzer: AAB + `dist/mapping.txt` hochladen, Neuigkeiten und Beschreibung de/en eintragen. Noch nicht committet.

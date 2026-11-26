@@ -21,7 +21,7 @@ STAND BIS BUILD 11 (ab Build 12 gilt der Nachtrag am Ende dieser Datei, INTERNET
 | Sicherheitsüberprüfung/Badges | nicht nötig |
 
 ## 3. Inhaltsfreigabe (IARC-Fragebogen)
-- E-Mail für IARC: rene.puf@gmail.com
+- E-Mail für IARC: rpdev911@gmail.com
 - Kategorie: **Dienstprogramm, Produktivität, Kommunikation oder sonstige App** (die App ist kein Spiel, kein Social/Dating, kein Messenger).
 - Gewalt, Blut, Angst, sexuelle Inhalte, Nacktheit, Kraftausdrücke/Obszönes: **Nein**
 - Drogen, Alkohol, Tabak (Darstellung/Verweis): **Nein**
@@ -52,7 +52,7 @@ STAND BIS BUILD 11 (ab Build 12 gilt der Nachtrag am Ende dieser Datei, INTERNET
 | Kontolöschung | nicht zutreffend (keine Konten) |
 | Datenschutz-/Spenden | Spenden-Link extern, freiwillig; falls Google nachfragt: kein Zugang zu Funktionen, keine digitalen Güter |
 | Kategorie im Store | z. B. „Lifestyle“ oder „Soziales/Beziehungen“; Tags frei wählbar |
-| Kontakt-E-Mail (öffentlich) | rene.puf@gmail.com |
+| Kontakt-E-Mail (öffentlich) | rpdev911@gmail.com |
 | Ausrichtung | Deutsch (de-DE) und Englisch (en-US); Standardsprache festlegen |
 | Preis | Kostenlos (später nicht auf kostenpflichtig änderbar) |
 

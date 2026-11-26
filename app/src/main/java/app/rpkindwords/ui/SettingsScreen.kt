@@ -183,7 +183,7 @@ fun SettingsScreen(vm: MainViewModel, modifier: Modifier = Modifier) {
     }
 
     Column(modifier.fillMaxSize().verticalScroll(rememberScrollState()).padding(16.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
-        Text(stringResource(R.string.nav_settings), style = MaterialTheme.typography.headlineMedium)
+        ScreenTitle(R.string.nav_settings)
 
         SectionTitle(R.string.settings_reminders)
         Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {

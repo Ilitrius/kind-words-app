@@ -55,6 +55,8 @@ class WidgetConfigActivity : ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        // Wie MainActivity randlos auf allen Android-Versionen; Insets behandelt ConfigScreen selbst.
+        androidx.core.view.WindowCompat.setDecorFitsSystemWindows(window, false)
         setResult(RESULT_CANCELED)
         val widgetId = intent?.extras?.getInt(AppWidgetManager.EXTRA_APPWIDGET_ID, AppWidgetManager.INVALID_APPWIDGET_ID)
             ?: AppWidgetManager.INVALID_APPWIDGET_ID

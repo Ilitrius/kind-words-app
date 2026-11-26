@@ -66,10 +66,9 @@ interface MessageDao {
 
     @Query(
         "SELECT * FROM messages WHERE language = :language AND hidden = 0 AND favorite = 1 " +
-            "AND (:category IS NULL OR category = :category) AND id != :excludeId " +
-            "ORDER BY RANDOM() LIMIT 1",
+            "AND (:category IS NULL OR category = :category) AND id != :excludeId",
     )
-    suspend fun randomFavorite(language: String, category: String?, excludeId: String): MessageEntity?
+    suspend fun favoriteCandidates(language: String, category: String?, excludeId: String): List<MessageEntity>
 
     @Query(
         "SELECT * FROM messages WHERE language = :language AND hidden = 0 " +

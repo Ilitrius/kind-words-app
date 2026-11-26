@@ -4,6 +4,7 @@ Android-App (Kotlin, Jetpack Compose, Material 3). Package `app.rpkindwords`, co
 Sprachen: **Englisch (Standard, `values/`) und Deutsch (`values-de/`)**. Zweck/Funktionen der App: siehe `docs/PRODUCT.md` (wird ergänzt).
 
 Wissen: `BRAIN.md` (Entscheidungen/Fakten, beim Start lesen, laufend pflegen) · Aufgaben: `TODO.md` (Status aktuell halten).
+Obsidian-Vault (`C:\Users\renep\Documents\Obsidian\rpdev911`, Ordner `Development/Androis Apps/RP Kind Words/`): Übersichtsnotizen und Renés Wunschliste `ToDo´s für RP Kind Words.md`; nach Releases und größeren Schritten nachziehen.
 
 ## Harte Regeln
 - **Keine statischen Texte im Code.** Jeder sichtbare Text liegt in `strings.xml` (beide Sprachen) und wird per `stringResource()` / `getString()` genutzt. Lint (`HardcodedText`, `MissingTranslation`, `ExtraTranslation`) bricht den Build bei Verstößen ab.

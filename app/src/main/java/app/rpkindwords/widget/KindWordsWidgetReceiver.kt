@@ -8,7 +8,7 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
-class KindWordsWidgetReceiver : GlanceAppWidgetReceiver() {
+open class KindWordsWidgetReceiver : GlanceAppWidgetReceiver() {
     override val glanceAppWidget: GlanceAppWidget = KindWordsWidget()
 
     /** Entfernte Widgets räumen ihre gespeicherten Daten auf. */
@@ -20,3 +20,7 @@ class KindWordsWidgetReceiver : GlanceAppWidgetReceiver() {
         }
     }
 }
+
+/** Zweiter und dritter Eintrag in der Widget-Auswahl: dieselbe Anzeige, andere Startgröße (breit 4x2, groß 4x3). */
+class KindWordsWidgetWideReceiver : KindWordsWidgetReceiver()
+class KindWordsWidgetLargeReceiver : KindWordsWidgetReceiver()

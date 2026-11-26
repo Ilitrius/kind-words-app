@@ -166,6 +166,9 @@
     <string name="speech_no_voices_hint">Für diese Sprache wurde keine installierte Stimme gefunden. Installiere die Sprachdaten in den Einstellungen der Sprachausgabe. Auf Samsung-Geräten hilft oft der Wechsel zur Engine „Sprachdienste von Google“.</string>
     <string name="speech_open_tts_settings">Einstellungen der Sprachausgabe</string>
     <string name="widget_label">Nettes Wort des Tages</string>
+    <string name="widget_label_small">Nettes Wort · klein</string>
+    <string name="widget_label_wide">Nettes Wort · breit</string>
+    <string name="widget_label_large">Nettes Wort · groß</string>
     <string name="widget_description">Ein liebes Wort auf deinem Startbildschirm, jeden Tag neu.</string>
     <string name="widget_new">Neu</string>
     <string name="widget_empty">Öffne die App einmal, um deine Sätze zu laden.</string>

@@ -22,6 +22,10 @@ data class LearningState(val stats: Map<String, Stat> = emptyMap()) {
         return LearningState(if (next.size > MAX_ENTRIES) next.entries.sortedByDescending { it.value.lastShown }.take(MAX_ENTRIES).associate { it.key to it.value } else next)
     }
 
+    /** Die zuletzt gezeigten [n] Sätze (neueste zuerst); sie dürfen nicht gleich wieder vorgeschlagen werden. */
+    fun recentIds(n: Int): Set<String> =
+        stats.entries.filter { it.value.lastShown > 0L }.sortedByDescending { it.value.lastShown }.take(n).map { it.key }.toSet()
+
     /** Beliebtheit eines einzelnen Satzes: 0.55 (oft gezeigt, nie genutzt) bis 1.6 (meist genutzt). Ohne Daten 1.0. */
     fun messageFactor(id: String): Double {
         val s = stats[id] ?: return 1.0
@@ -60,6 +64,8 @@ data class LearningState(val stats: Map<String, Stat> = emptyMap()) {
 
     companion object {
         const val MAX_ENTRIES = 600
+        /** So viele zuletzt gezeigte Sätze werden nicht wiederholt (feste Sperre, Mindestwert aus der Aufgabenliste). */
+        const val NO_REPEAT = 20
         const val RECENT_MS = 24L * 60 * 60 * 1000
         const val MIN_SHOWN_FOR_CATEGORY = 20
 
