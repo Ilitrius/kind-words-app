@@ -195,3 +195,11 @@ Legende: `[ ]` offen · `[x]` erledigt · Agent in Klammern
 - [x] Keine Wiederholung in 20 Klicks: Emulator (API 26, Debug, 50 Klicks per uiautomator, Satztext je Klick protokolliert): kein Satz innerhalb von 20 Klicks wiederholt, zwei Wiederholungen erst nach 22 und 31 Klicks (erlaubt); bei 2 Favoriten ebenfalls ok.
 - [x] Build 21 (1.1.2, versionCode 21; 1.1.2/20 wurde nie hochgeladen): `lintRelease`, Unit-Tests (alle grün, `--rerun-tasks`), `bundleRelease`, `assembleRelease` grün. `dist/kindwords-1.1.2-release.aab` (74 MB, Upload-Zertifikat 9B:C5:0C:86...) + neue `dist/mapping.txt` (Code geändert; alter Stand = `mapping-1.1.2-build20.txt`), Test-APK `dist/kindwords-1.1.2-release.apk` startet im Emulator ohne FATAL. `whats_new.txt` de/en nennt die 20-Sätze-Sperre.
 - [ ] Nutzer: AAB + `dist/mapping.txt` hochladen, Neuigkeiten und Beschreibung de/en eintragen. Noch nicht committet.
+
+## Release 1.1.2 (Build 23, 2026-11-26): Supabase
+- [x] Supabase Update-Kanal fertig: Schema/RLS/Import v11, `RemoteContent` (Tests grün), Datenschutz de/en + Über-uns, Data-Safety-Nachtrag, versionCode 23, AAB-Name mit Build-Nummer. Nach `main` gemergt (PR 5 bis 7).
+- [x] AVV geprüft: Teil der Supabase-Nutzungsbedingungen, nichts zu unterschreiben; Vertragspartner Supabase Pte. Ltd. (Singapur) in den Datenschutzseiten korrigiert. Logs Free-Tarif 1 Tag.
+- [x] Emulator Debug (API 35): Erststart, Update 11 auf 12 auf 13, leerer Fehlstand abgelehnt, Flugmodus ohne Absturz. Emulator Release-APK: Remote-Update sichtbar, 5 Klicks und Neustart ohne FATAL.
+- [x] Release gebaut: `dist/kindwords-1.1.2-build23-release.aab` (SHA1 cfd2bc9c0ead) + `dist/mapping.txt` (SHA1 6c381459c889), Test-APK `...-build23-release.apk`; altes Mapping `mapping-1.1.2-build21.txt`.
+- [ ] Nutzer: in der Play Console bei Data Safety "Ungefährer Standort" den Zweck "App-Funktionen" ergänzen, dann AAB + `dist/mapping.txt` hochladen, Neuigkeiten und Beschreibung de/en eintragen.
+- [ ] Supabase offen: Stimme für neue Sätze (Aufnahmen), nur bestehende Kategorien remote, Widget in der Release-Version und Geräteneustart noch ungetestet.
