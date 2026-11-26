@@ -55,4 +55,32 @@ class LearningTest {
         assertEquals("love", LearningState.categoryOf("de-love-012"))
         assertEquals("custom", LearningState.categoryOf("user-1234"))
     }
+
+    @Test fun recentIdsAreTheLastTwentyShownOnly() {
+        var s = LearningState()
+        for (i in 1..30) s = s.shown("m$i", now + i)
+        val recent = s.recentIds(LearningState.NO_REPEAT)
+        assertEquals(20, recent.size)
+        assertTrue((11..30).all { "m$it" in recent })
+        assertTrue((1..10).none { "m$it" in recent })
+    }
+
+    @Test fun unshownEntriesAreNeverRecent() {
+        val s = LearningState().positive("a")
+        assertTrue(s.recentIds(20).isEmpty())
+    }
+
+    @Test fun twentyConsecutivePicksNeverRepeatWithAPoolOfFifty() {
+        val pool = (1..50).map { "m$it" }
+        val rnd = kotlin.random.Random(7)
+        var s = LearningState()
+        val shown = mutableListOf<String>()
+        repeat(200) { n ->
+            val recent = s.recentIds(LearningState.NO_REPEAT)
+            val pick = pool.filter { it !in recent }.random(rnd)
+            assertTrue("Wiederholung bei Klick $n: $pick", pick !in shown.takeLast(LearningState.NO_REPEAT))
+            shown += pick
+            s = s.shown(pick, now + n)
+        }
+    }
 }

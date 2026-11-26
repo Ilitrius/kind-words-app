@@ -239,3 +239,7 @@ Das „Gehirn“ des Projekts: Entscheidungen, Fakten, Fallstricke. Wird von Men
 
 ## 2026-11-25 Release 1.1.2 (Build 20)
 - Content v11: de und en je 1250 Sätze (1110 Textsätze + 70 Emoji + 70 ASCII), Store-Zahl "rund 1250". AAB: `dist/kindwords-1.1.2-release.aab`. Content-Tests laufen nach reiner JSON-Änderung nur mit `--rerun` (sonst UP-TO-DATE).
+
+## 2026-11-26 Keine Wiederholung (20 Klicks)
+- Feste Sperre statt nur Gewichtung: `LearningState.recentIds(20)` = die 20 zuletzt gezeigten Satz-IDs (nach `lastShown`, in den Learning-Daten persistent, max. 600 Einträge). `MessageRepository.random` filtert sie aus Favoriten- und Normalpfad (neue DAO-Abfrage `favoriteCandidates` statt `randomFavorite`); ist die Auswahl danach leer, fällt sie auf alle Kandidaten zurück. Erinnerungs-Benachrichtigungen zählen nicht als "gezeigt" (kein recordShown).
+- 2026-11-26 Build 21 (1.1.2): enthält die 20er-Sperre. Emulator-Test ohne Fremdhilfe: `uiautomator dump` je Klick, "New suggestion" aus den Bounds lesen (Position springt mit der Satzlänge, feste Koordinaten treffen sonst Copy/Share und verfälschen die Lerndaten), Satztext mitschreiben, Abstände auswerten; Skript lag im Scratchpad (clicks.py). Lerndaten lesen: `adb exec-out run-as app.rpkindwords cat files/datastore/settings.preferences_pb` (Debug-Build). UMP-Dialog beim ersten Start blockiert Taps ("Do not consent").

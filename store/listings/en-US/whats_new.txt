@@ -1,1 +1,1 @@
-New: over 1,250 sentences, 140 more kind words in every language, written fresh and warm. Fixes and polish.
+New: over 1,250 sentences, 140 more kind words in every language, written fresh and warm. Also, a sentence now waits for 20 new suggestions before it can show up again.
