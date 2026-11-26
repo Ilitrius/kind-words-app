@@ -165,7 +165,7 @@ Legende: `[ ]` offen · `[x]` erledigt · Agent in Klammern
 - [ ] Widget: breites 4x2 mit niedriger Höhe (Stufe 250x110), Sprachwechsel, API 26, Neustart noch ungetestet.
 - [ ] Commit und PR: Branch `feature/nav-slide-title-icon` (Widget-Größen, Symbol links, Maskottchen-Entwurf noch uncommittet).
 - [ ] Maskottchen Gecko: Bilder erzeugen, Rechte klären, einbauen (`docs/MASKOTTCHEN.md`).
-- [ ] Supabase: alle Texte in eine Datenbank. Plan steht in `docs/PLAN-SUPABASE.md` (2026-11-26); Schema, RLS, Import v11 und App-Abruf (`RemoteContent`, Tests grün) sind fertig (2026-11-26), Datenschutz de/en + Über-uns angepasst, versionCode 23 (AAB heißt jetzt `kindwords-1.1.2-build23-release.aab`). Offen: `TODO:` in Datenschutz Abschnitt 5c (AVV mit Supabase), Supabase-Log-Aufbewahrung prüfen (Data Safety), Emulator-Test, Merge nach `main` vor Play-Upload, Entscheidungen 2-4 im Plan.
+- [ ] Supabase: alle Texte in eine Datenbank. Plan steht in `docs/PLAN-SUPABASE.md` (2026-11-26); Schema, RLS, Import v11 und App-Abruf (`RemoteContent`, Tests grün) sind fertig (2026-11-26), Datenschutz de/en + Über-uns angepasst, versionCode 23 (AAB heißt jetzt `kindwords-1.1.2-build23-release.aab`). Offen: AVV mit Supabase bestätigen und Angaben zu SCC/Unterauftragsverarbeitern in Datenschutz 5c prüfen (sichtbares `TODO:` im Text ist entfernt), Supabase-Log-Aufbewahrung prüfen (Data Safety), Emulator-Test, Merge nach `main` vor Play-Upload, Entscheidungen 2-4 im Plan.
 
 
 ## Stand 2026-11-24 (Release 1.1.1, Build 19)
