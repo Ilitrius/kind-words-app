@@ -16,7 +16,7 @@ Obsidian-Vault (`C:\Users\renep\Documents\Obsidian\rpdev911`, Ordner `Developmen
 
 ## Befehle
 - Build: `.\gradlew.bat assembleDebug` · Lint: `.\gradlew.bat lintDebug` · Release-Bundle: `.\gradlew.bat bundleRelease`
-- Release-Ablage: `dist/kindwords-<version>-release.aab` (Play), `.apk` (Test), `mapping.txt` (R8, mit hochladen); `dist/` ist gitignored. Version steht in `app/build.gradle.kts`.
+- Release-Ablage: `dist/kindwords-<version>-build<versionCode>-release.aab` (Play), `.apk` (Test), `mapping.txt` (R8, mit hochladen); `dist/` ist gitignored. Version steht nur in `app/build.gradle.kts` (`APP_VERSION_CODE` / `APP_VERSION_NAME`); Gradle benennt AAB/APK damit automatisch (`base.archivesName`). **Vor jedem Upload versionCode erhöhen.**
 - SDK: `ANDROID_HOME=D:\Android\Sdk` (`local.properties` ist gitignored), JDK 17.
 
 ## Agenten (`.claude/agents/`)

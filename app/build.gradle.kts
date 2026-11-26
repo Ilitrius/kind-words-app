@@ -10,6 +10,12 @@ plugins {
 val TEST_APP_ID = "ca-app-pub-3940256099942544~3347511713"
 val TEST_BANNER_ID = "ca-app-pub-3940256099942544/9214589741"
 
+// Eine Quelle für die Version: steht auch im Dateinamen von AAB/APK (kindwords-<version>-build<code>-release.aab).
+val APP_VERSION_CODE = 23
+val APP_VERSION_NAME = "1.1.2"
+
+base.archivesName.set("kindwords-$APP_VERSION_NAME-build$APP_VERSION_CODE")
+
 ksp {
     arg("room.schemaLocation", "$projectDir/schemas")
 }
@@ -22,12 +28,15 @@ android {
         applicationId = "app.rpkindwords"
         minSdk = 26
         targetSdk = 36
-        versionCode = 21
-        versionName = "1.1.2"
+        versionCode = APP_VERSION_CODE
+        versionName = APP_VERSION_NAME
 
         // AdMob: Debug nutzt immer Googles Test-IDs (nie echte Anzeigen im Test); Release nimmt die echten IDs aus gradle.properties.
         manifestPlaceholders["admobAppId"] = TEST_APP_ID
         buildConfigField("String", "ADMOB_BANNER_ID", "\"" + TEST_BANNER_ID + "\"")
+        // Supabase (nur Lesen für anon, RLS): Satz-Updates. Der publishable Key ist öffentlich gedacht, kein Geheimnis.
+        buildConfigField("String", "SUPABASE_URL", "\"https://jqpmwwjffmtlhrnyatlc.supabase.co\"")
+        buildConfigField("String", "SUPABASE_KEY", "\"sb_publishable_U52Oh0f_lz0bIXzBMyIu6Q_dggPMCu2\"")
         buildConfigField("boolean", "ADMOB_CONSENT_DEBUG_EEA", providers.gradleProperty("ADMOB_CONSENT_DEBUG_EEA").getOrElse("false"))
     }
 

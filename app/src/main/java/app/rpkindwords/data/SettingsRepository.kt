@@ -46,6 +46,7 @@ class SettingsRepository(private val context: Context) {
         val days = stringPreferencesKey("rem_days")
         val contentLang = stringPreferencesKey("content_lang")
         val lastUpdateCheck = longPreferencesKey("last_update_check")
+        val lastRemoteCheck = longPreferencesKey("last_remote_check")
         fun contentVersion(lang: String) = intPreferencesKey("content_version_$lang")
     }
 
@@ -97,6 +98,16 @@ class SettingsRepository(private val context: Context) {
         if (now - last in 0 until UPDATE_CHECK_INTERVAL_MS) return false
         context.dataStore.edit { it[K.lastUpdateCheck] = now }
         return true
+    }
+
+    /** Neue Sätze aus Supabase höchstens alle 24 h abfragen; der Zeitpunkt wird erst nach erfolgreicher Prüfung gespeichert. */
+    suspend fun shouldCheckRemote(now: Long = System.currentTimeMillis()): Boolean {
+        val last = context.dataStore.data.first()[K.lastRemoteCheck] ?: 0L
+        return now - last !in 0 until UPDATE_CHECK_INTERVAL_MS
+    }
+
+    suspend fun markRemoteChecked(now: Long = System.currentTimeMillis()) {
+        context.dataStore.edit { it[K.lastRemoteCheck] = now }
     }
 
     /** Sprechtempo beim Vorlesen in Prozent (Standard 80: ruhig und langsam). */
