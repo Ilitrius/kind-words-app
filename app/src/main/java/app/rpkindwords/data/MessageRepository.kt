@@ -42,15 +42,46 @@ class MessageRepository(
             for (lang in Languages.supported) {
                 val file = source.read(lang)?.let { ContentParser.parse(it) } ?: continue
                 if (file.language != lang) continue
-                val installed = settings.contentVersion(lang)
-                if (!ContentSync.needsSync(installed, file)) continue
-                val plan = ContentSync.plan(dao.bundledForLanguage(lang), dao.userIds().toSet(), file, clock())
-                if (plan.deleteIds.isNotEmpty()) dao.deleteByIds(plan.deleteIds)
-                if (plan.updates.isNotEmpty()) dao.updateAll(plan.updates)
-                if (plan.inserts.isNotEmpty()) dao.insertAll(plan.inserts)
-                settings.setContentVersion(lang, file.version)
+                applyIfNewer(lang, file)
             }
         }
+    }
+
+    /**
+     * Holt neuere Sätze aus Supabase (Update-Kanal über den gebündelten Dateien), höchstens einmal pro Tag.
+     * Jeder Fehler (kein Netz, Timeout, unvollständig, unplausibel) lässt den Bestand unverändert; die nächste Prüfung folgt später.
+     * @return true, wenn Inhalte geändert wurden
+     */
+    suspend fun refreshFromRemote(api: RemoteApi): Boolean = seedMutex.withLock {
+        withContext(Dispatchers.IO) {
+            if (!settings.shouldCheckRemote(clock())) return@withContext false
+            var changed = false
+            var allReached = true
+            for (lang in Languages.supported) {
+                val installed = settings.contentVersion(lang)
+                val version = RemoteContent.parseVersion(api.get("content_version?language=eq.$lang&select=version"))
+                if (version == null) { allReached = false; continue }
+                if (version <= installed) continue
+                val file = RemoteContent.fetch(api, lang, installed)
+                if (file == null || !RemoteContent.plausible(dao.bundledForLanguage(lang).size, file.items.size)) {
+                    allReached = false
+                    continue
+                }
+                changed = applyIfNewer(lang, file) || changed
+            }
+            if (allReached) settings.markRemoteChecked(clock())
+            changed
+        }
+    }
+
+    private suspend fun applyIfNewer(lang: String, file: ContentFile): Boolean {
+        if (!ContentSync.needsSync(settings.contentVersion(lang), file)) return false
+        val plan = ContentSync.plan(dao.bundledForLanguage(lang), dao.userIds().toSet(), file, clock())
+        if (plan.deleteIds.isNotEmpty()) dao.deleteByIds(plan.deleteIds)
+        if (plan.updates.isNotEmpty()) dao.updateAll(plan.updates)
+        if (plan.inserts.isNotEmpty()) dao.insertAll(plan.inserts)
+        settings.setContentVersion(lang, file.version)
+        return true
     }
 
     /**

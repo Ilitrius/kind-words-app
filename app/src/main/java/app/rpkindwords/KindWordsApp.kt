@@ -36,6 +36,15 @@ class KindWordsApp : Application() {
         NotificationHelper.createChannel(this)
         appScope.launch {
             messages.ensureSeeded()
+            // Update-Kanal: neue Sätze aus Supabase (höchstens einmal pro Tag, Fehler lassen den Bestand unberührt).
+            launch {
+                val api = app.rpkindwords.data.SupabaseApi(BuildConfig.SUPABASE_URL, BuildConfig.SUPABASE_KEY)
+                val changed = runCatching { messages.refreshFromRemote(api) }.getOrDefault(false)
+                if (changed) {
+                    runCatching { app.rpkindwords.widget.KindWordsWidget().updateAll(this@KindWordsApp) }
+                    app.rpkindwords.widget.WidgetRefresh.notifyChanged()
+                }
+            }
             // Widgets neu zeichnen: beim Start (neuer Tag, geänderte Inhalte) und bei jedem Sprachwechsel in der App.
             // Ohne Widgets kostet das fast nichts.
             launch {
