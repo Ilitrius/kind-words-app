@@ -3,7 +3,7 @@
 Legende: `[ ]` offen · `[x]` erledigt · `[→]` offen, übernommen in "Aktuell offen" · Agent in Klammern
 
 ## Aktuell offen (Stand 2026-11-27, nach Upload Build 23)
-1. [ ] Play Console, Data Safety: bei "Ungefährer Standort" zusätzlich den Zweck "App-Funktionen" ergänzen (wegen Supabase-Logs, Nutzer).
+1. [ ] Play Console, Data Safety: Zweck "Funktionen der App" bei "Ungefährer Standort" ist ergänzt und gespeichert (2026-11-27, durch Claude im Browser); Nutzer reicht die Änderung unter "Veröffentlichungen – Übersicht" zur Überprüfung ein.
 2. [ ] AdMob: Datenschutz-Nachricht (EWR/UK/CH) für `app.rpkindwords` anlegen und veröffentlichen, danach den Eintrag "Datenschutzoptionen" neu prüfen (Nutzer).
 3. [ ] Keystore + Passwörter extern sichern (Nutzer).
 4. [ ] Sätze lesen: Stichprobe der neuen deutschen Sätze, Muttersprachler-Prüfung Englisch ("sweetheart"/"honey") und der Übersetzungen (Nutzer).
